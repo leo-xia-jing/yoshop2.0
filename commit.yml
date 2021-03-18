@@ -2,10 +2,19 @@
 branches: {
   }
 fileChange:
-  /README.md:
-    newFile: !uuid 'f1fff84f03887276ec7e912a69bbbb1b7de04495'
-    oldFile: !uuid '8335bb8ace7ba8136313935b387b982f11ec88b6'
-gitCommitId: !uuid '0c1ec65e47eec53ab1dc877e593e652a114334a9'
+  /public:
+    newFile: !uuid '8de6d94d01165900edab74cbd9214f2757e148d8'
+    oldFile: !uuid '8447d8f2a6dcd2992bdaa98286b0a55d792986d6'
+  /public/install:
+    newFile: !uuid '3c0581926fda7b6eb112d4eaa782a98107132e40'
+    oldFile: !uuid '26a3392b4322c8e462bf2f6512d79ca78ddf0fe9'
+  /public/install/data:
+    newFile: !uuid '41a6cc901167e36fde479c1cdc7125297ad94032'
+    oldFile: !uuid 'fe52fabd7ec80c7433d0d9b53428a86792a49dec'
+  /public/install/data/install_struct.sql:
+    newFile: !uuid 'fc673a558a8193008c0420272ac1d25d08510041'
+    oldFile: !uuid 'dbb17b884f8011feb8aa20c8ac48ee9e9d0dbbb5'
+gitCommitId: !uuid 'ce85470051ea89cedfc56c6c9b6ee7035ea97246'
 renames: {
   }
-revisionId: 2
+revisionId: 3
