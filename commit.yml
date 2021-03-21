@@ -2,19 +2,40 @@
 branches: {
   }
 fileChange:
+  /0001-H5.patch:
+    newFile: !uuid 'b6cecee656126611a28b375d32a3aa9dc727bc93'
+    oldFile: null
   /public:
-    newFile: !uuid '8de6d94d01165900edab74cbd9214f2757e148d8'
-    oldFile: !uuid '8447d8f2a6dcd2992bdaa98286b0a55d792986d6'
-  /public/install:
-    newFile: !uuid '3c0581926fda7b6eb112d4eaa782a98107132e40'
-    oldFile: !uuid '26a3392b4322c8e462bf2f6512d79ca78ddf0fe9'
-  /public/install/data:
-    newFile: !uuid '41a6cc901167e36fde479c1cdc7125297ad94032'
-    oldFile: !uuid 'fe52fabd7ec80c7433d0d9b53428a86792a49dec'
-  /public/install/data/install_struct.sql:
-    newFile: !uuid 'fc673a558a8193008c0420272ac1d25d08510041'
-    oldFile: !uuid 'dbb17b884f8011feb8aa20c8ac48ee9e9d0dbbb5'
-gitCommitId: !uuid 'ce85470051ea89cedfc56c6c9b6ee7035ea97246'
-renames: {
-  }
-revisionId: 3
+    newFile: !uuid '7698b01682783c02f240ba44c3bdcd1aab1b15d7'
+    oldFile: !uuid '8de6d94d01165900edab74cbd9214f2757e148d8'
+  /public/index.html:
+    newFile: !uuid 'cb212f73ba215a7dad9a1c99d4f4f28d1f1c9d14'
+    oldFile: !uuid '07b3cf5a94df517de31af523c92bddbb91c91287'
+  /public/static:
+    newFile: !uuid '1572075fb2df0b6d7b729eb9aacaaf592aac8c4c'
+    oldFile: !uuid 'c895e2a43ae799204dcfdc594a261da59680021a'
+  /public/static/js:
+    newFile: !uuid '91e771cbe8695e2ebd3a449878b585671705feb1'
+    oldFile: !uuid '91dd16be32d7d3bcda60ac24f4b01510ed9f71c9'
+  /public/static/js/index.966b0c49.js:
+    newFile: !uuid 'cca39b9865224f32343c04aaa8240ed146112835'
+    oldFile: null
+  /public/static/js/index.ff5f6fb1.js:
+    newFile: null
+    oldFile: !uuid '2ba972a8e6f68792bffb3d3ca4f7aa003dfb5731'
+  /public/static/js/pages-address-create~pages-address-update.384b961c.js:
+    newFile: null
+    oldFile: !uuid 'b5cb75652788a081c7bed2f3bd9657c50569af44'
+  /public/static/js/pages-address-create~pages-address-update.75172f7f.js:
+    newFile: !uuid '6f14ea0c4ae92a4185cd2739e74c64990fa40dad'
+    oldFile: null
+  /public/static/js/pages-goods-detail.1b7e72cc.js:
+    newFile: !uuid '9143609af03b5f5effa9ffb3c71c81bbfef182e9'
+    oldFile: null
+  /public/static/js/pages-goods-detail.f5588e80.js:
+    newFile: null
+    oldFile: !uuid '63f9cb6bcbda332068479095c496edcc3728e97f'
+gitCommitId: !uuid '255682fc843819d0a348cba0ed043e293edce4c6'
+renames:
+  /public/static/js/pages-address-create~pages-address-update.75172f7f.js: /public/static/js/pages-address-create~pages-address-update.384b961c.js
+revisionId: 4
