@@ -2,31 +2,28 @@
 branches: {
   }
 fileChange:
-  /app:
-    newFile: !uuid '5699c34751f842bdad447e28831441f639a2959a'
-    oldFile: !uuid '49e4c61e1795e90ebc7bed366d0ae14e261df586'
-  /app/common:
-    newFile: !uuid '82979b01e92d6b874c355110c73a4bb6d4176941'
-    oldFile: !uuid 'd741bb1e5c6330bd945689e375f1b283c37a6ba5'
-  /app/common/library:
-    newFile: !uuid '7821e2afe0522ec64a72750b7379aaade4861288'
-    oldFile: !uuid '9272915668572b3eaa22d2d726602249af5b25b9'
-  /app/common/library/storage:
-    newFile: !uuid '3b3b8341c0ac6af907c1f6d74dcc6c6595291845'
-    oldFile: !uuid '44150ebe8d47af82e527578e7d64312eb49c92d1'
-  /app/common/library/storage/engine:
-    newFile: !uuid '25fa22f9ac5235576418d7405b710b7c181f3939'
-    oldFile: !uuid '69271155f1eab7d6f45e8fa9785ade0974306c6c'
-  /app/common/library/storage/engine/Aliyun.php:
-    newFile: !uuid '20dba6e3d8737cd12b79acbeac3b741563002276'
-    oldFile: !uuid 'df8d08da94555e45338c5d2094af12f4fb0c1f87'
-  /app/common/library/storage/engine/Basics.php:
-    newFile: !uuid '3e531911c81d13229cec0a39ce49063512f71755'
-    oldFile: !uuid 'e059126412be37ecd1643276893e7f40a74e9cb0'
-  /app/common/library/storage/engine/Qcloud.php:
-    newFile: !uuid '36deb76fa93323b08e260e13ff25f037a7a61b1d'
-    oldFile: !uuid '706d24e692d936a4f805a36d678d591d69b1fcba'
-gitCommitId: !uuid 'c068ca9b03ea3d086e23ae8a9232be9fc2e799b8'
+  /vendor:
+    newFile: !uuid '5cc52d6a02924786386c6cd6e3f7cfa40b48b695'
+    oldFile: !uuid 'eb90db083d7a4f5944db9ebefe6e26bad572d23e'
+  /vendor/aliyuncs:
+    newFile: !uuid 'e93a279742e2e592de2b6ce188433ebaf3e32b00'
+    oldFile: !uuid '4024ce2a41510f4e2dccc22c9f41c70737629d95'
+  /vendor/aliyuncs/oss-sdk-php:
+    newFile: !uuid '7e83ab1f1526cba12f76a5b34cac8b0d02b486f4'
+    oldFile: !uuid '9b477773482bda63a1655f4c53620834bf82cdc7'
+  /vendor/aliyuncs/oss-sdk-php/src:
+    newFile: !uuid 'd8fc2decd26324f4ad8cfff1b036e4080f8e0103'
+    oldFile: !uuid 'bb6732783eb843654a7c304993b76e321a917ed0'
+  /vendor/aliyuncs/oss-sdk-php/src/OSS:
+    newFile: !uuid 'df97695659e45754cb3843333a6660a2119f9d46'
+    oldFile: !uuid 'c895cf26b9bd2118ef02f6140543b5fcd2c1d33c'
+  /vendor/aliyuncs/oss-sdk-php/src/OSS/Http:
+    newFile: !uuid '04b9ec9fb2261a286d56e60cb4c28aa40e34762f'
+    oldFile: !uuid '762524075a97d8d1e44ce509ae6f78e85271d859'
+  /vendor/aliyuncs/oss-sdk-php/src/OSS/Http/RequestCore.php:
+    newFile: !uuid 'eee9bd4e07901e96acd7cdca0c737d7d89ae0bef'
+    oldFile: !uuid 'e1d221e25b3e846c325d63f2c886b9892a94efce'
+gitCommitId: !uuid 'd4b6493d416443a17f70e04e240cd12461c061d1'
 renames: {
   }
-revisionId: 5
+revisionId: 6
