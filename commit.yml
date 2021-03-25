@@ -2,40 +2,31 @@
 branches: {
   }
 fileChange:
-  /0001-H5.patch:
-    newFile: !uuid 'b6cecee656126611a28b375d32a3aa9dc727bc93'
-    oldFile: null
-  /public:
-    newFile: !uuid '7698b01682783c02f240ba44c3bdcd1aab1b15d7'
-    oldFile: !uuid '8de6d94d01165900edab74cbd9214f2757e148d8'
-  /public/index.html:
-    newFile: !uuid 'cb212f73ba215a7dad9a1c99d4f4f28d1f1c9d14'
-    oldFile: !uuid '07b3cf5a94df517de31af523c92bddbb91c91287'
-  /public/static:
-    newFile: !uuid '1572075fb2df0b6d7b729eb9aacaaf592aac8c4c'
-    oldFile: !uuid 'c895e2a43ae799204dcfdc594a261da59680021a'
-  /public/static/js:
-    newFile: !uuid '91e771cbe8695e2ebd3a449878b585671705feb1'
-    oldFile: !uuid '91dd16be32d7d3bcda60ac24f4b01510ed9f71c9'
-  /public/static/js/index.966b0c49.js:
-    newFile: !uuid 'cca39b9865224f32343c04aaa8240ed146112835'
-    oldFile: null
-  /public/static/js/index.ff5f6fb1.js:
-    newFile: null
-    oldFile: !uuid '2ba972a8e6f68792bffb3d3ca4f7aa003dfb5731'
-  /public/static/js/pages-address-create~pages-address-update.384b961c.js:
-    newFile: null
-    oldFile: !uuid 'b5cb75652788a081c7bed2f3bd9657c50569af44'
-  /public/static/js/pages-address-create~pages-address-update.75172f7f.js:
-    newFile: !uuid '6f14ea0c4ae92a4185cd2739e74c64990fa40dad'
-    oldFile: null
-  /public/static/js/pages-goods-detail.1b7e72cc.js:
-    newFile: !uuid '9143609af03b5f5effa9ffb3c71c81bbfef182e9'
-    oldFile: null
-  /public/static/js/pages-goods-detail.f5588e80.js:
-    newFile: null
-    oldFile: !uuid '63f9cb6bcbda332068479095c496edcc3728e97f'
-gitCommitId: !uuid '255682fc843819d0a348cba0ed043e293edce4c6'
-renames:
-  /public/static/js/pages-address-create~pages-address-update.75172f7f.js: /public/static/js/pages-address-create~pages-address-update.384b961c.js
-revisionId: 4
+  /app:
+    newFile: !uuid '5699c34751f842bdad447e28831441f639a2959a'
+    oldFile: !uuid '49e4c61e1795e90ebc7bed366d0ae14e261df586'
+  /app/common:
+    newFile: !uuid '82979b01e92d6b874c355110c73a4bb6d4176941'
+    oldFile: !uuid 'd741bb1e5c6330bd945689e375f1b283c37a6ba5'
+  /app/common/library:
+    newFile: !uuid '7821e2afe0522ec64a72750b7379aaade4861288'
+    oldFile: !uuid '9272915668572b3eaa22d2d726602249af5b25b9'
+  /app/common/library/storage:
+    newFile: !uuid '3b3b8341c0ac6af907c1f6d74dcc6c6595291845'
+    oldFile: !uuid '44150ebe8d47af82e527578e7d64312eb49c92d1'
+  /app/common/library/storage/engine:
+    newFile: !uuid '25fa22f9ac5235576418d7405b710b7c181f3939'
+    oldFile: !uuid '69271155f1eab7d6f45e8fa9785ade0974306c6c'
+  /app/common/library/storage/engine/Aliyun.php:
+    newFile: !uuid '20dba6e3d8737cd12b79acbeac3b741563002276'
+    oldFile: !uuid 'df8d08da94555e45338c5d2094af12f4fb0c1f87'
+  /app/common/library/storage/engine/Basics.php:
+    newFile: !uuid '3e531911c81d13229cec0a39ce49063512f71755'
+    oldFile: !uuid 'e059126412be37ecd1643276893e7f40a74e9cb0'
+  /app/common/library/storage/engine/Qcloud.php:
+    newFile: !uuid '36deb76fa93323b08e260e13ff25f037a7a61b1d'
+    oldFile: !uuid '706d24e692d936a4f805a36d678d591d69b1fcba'
+gitCommitId: !uuid 'c068ca9b03ea3d086e23ae8a9232be9fc2e799b8'
+renames: {
+  }
+revisionId: 5
