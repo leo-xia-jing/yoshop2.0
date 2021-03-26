@@ -2,10 +2,31 @@
 branches: {
   }
 fileChange:
-  /数据库修改记录.txt:
-    newFile: !uuid 'e8056b0928322bf70892ba87d896ea54acfd655f'
+  /app:
+    newFile: !uuid '0dce7853568e72737823757201f30e4d5664e6d4'
+    oldFile: !uuid 'b5531719676998706b6af33e47b22799e1cd786a'
+  /app/common:
+    newFile: !uuid 'b1f231b463ced4e5648582c98cd0438d5eed87b1'
+    oldFile: !uuid 'd621c5c5a6c3e8ff630ac5c80419447f5958d992'
+  /app/common/model:
+    newFile: !uuid 'a1c46a7e5438b92f24e0b539bbfcaecefff72e93'
+    oldFile: !uuid 'eb4bbee3707e2737a2ba7b60d3392afb5e19191f'
+  /app/common/model/UserOauth.php:
+    newFile: !uuid '4e063ab7404533774ca2f28e33003ead1be7a2a0'
+    oldFile: !uuid '0e527e241579bdf400a6825d194e4a3b2774f517'
+  /app/store:
+    newFile: !uuid 'c88cfc65c4b77278ded2a4e4774b31b65e2938d1'
+    oldFile: !uuid '23eead710fe6ed8d227849fbac792c3b3a345479'
+  /app/store/model:
+    newFile: !uuid '91d590ea880a155586e0c58763244c8f571fdb45'
+    oldFile: !uuid 'be3cf6c158b3a1de79ca010a275100e194d3490e'
+  /app/store/model/User.php:
+    newFile: !uuid 'ae5d062a727389252780275da68cb9cfb38af6fb'
+    oldFile: !uuid '5e1ae47560904a10e65773896b07e8fd503a63ec'
+  /app/store/model/UserOauth.php:
+    newFile: !uuid 'ec5df62530a839cd3682b6d7ddf9b1b4f72e05d5'
     oldFile: null
-gitCommitId: !uuid '671e8952a6187e58cd0c3cbfb56795eab3bd5ce5'
+gitCommitId: !uuid '88a690d87d7b1bd38f16221f7fcb7894ebc1f73f'
 renames: {
   }
-revisionId: 10
+revisionId: 11
