@@ -3,18 +3,18 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid '04ba79b4b04aafa0082bf713362a3fc129d3ddcf'
-    oldFile: !uuid '791c0993fdd5b3cb0ecb3ef157e72e8abcaff1b9'
+    newFile: !uuid 'caf51cae8bf5cc38bde30e7d4429ad597713da7e'
+    oldFile: !uuid '04ba79b4b04aafa0082bf713362a3fc129d3ddcf'
   /app/store:
-    newFile: !uuid '21f891e61644774d430d1ee839efe35c04ae1c5d'
-    oldFile: !uuid '74e99568456d8f622a91b1fe04d9876623d4b494'
+    newFile: !uuid 'c54a3a4d2438dd5d8f45de717bfc143f26519b21'
+    oldFile: !uuid '21f891e61644774d430d1ee839efe35c04ae1c5d'
   /app/store/model:
-    newFile: !uuid '98d30cd50bb7ec3839a8a12756fe9137723d4571'
-    oldFile: !uuid '53d6e233af57b22953a69a5b7d76d8b4839ce056'
-  /app/store/model/Goods.php:
-    newFile: !uuid '035ec684ef3279fdb529fc66760ddd97b32e7721'
-    oldFile: !uuid 'fc68eb17a66eab19262b856980ad66f23beb1630'
-gitCommitId: !uuid 'ec5fba7fa1d71aa356c131999cb272a92a7ed913'
+    newFile: !uuid '24653b753c22fb0c11a9a2674068c247b7ce493e'
+    oldFile: !uuid '98d30cd50bb7ec3839a8a12756fe9137723d4571'
+  /app/store/model/Wxapp.php:
+    newFile: !uuid '6ea9a5bb012aebed048adad4dc958bd8cf01855d'
+    oldFile: !uuid '1178fd0b4f8f237d204cebfe806a8c844a0de51c'
+gitCommitId: !uuid '409d570e21d9bd9682f0d5c2edc60220d85a37a3'
 renames: {
   }
-revisionId: 24
+revisionId: 25
