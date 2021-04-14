@@ -3,21 +3,18 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid '145851a28e8007b487cbca729b944880a5a3c1be'
-    oldFile: !uuid 'caf51cae8bf5cc38bde30e7d4429ad597713da7e'
-  /app/common:
-    newFile: !uuid '1c56e59775e5463f5b0cb22d76c959a07f92e48c'
-    oldFile: !uuid 'e33dbd96e4a35817590f062efb3d1942c9a0f1f0'
-  /app/common/library:
-    newFile: !uuid '3f78a9eeb92a9465cc381ea47a81b2137a6f36db'
-    oldFile: !uuid 'e1c311d0f2efe3ec2f5692c71587d7a5df51cf50'
-  /app/common/library/wechat:
-    newFile: !uuid 'aa7e1360f28bc85db1ce11e63ae44b447c48c61e'
-    oldFile: !uuid 'e872298eaebda0536bfdbea48036fd286b640766'
-  /app/common/library/wechat/WxBase.php:
-    newFile: !uuid 'ac71c4b395d5010284606e45492245ae18a55673'
-    oldFile: !uuid '721b6c0278d2c353199fef82744b6d2c91487037'
-gitCommitId: !uuid '70f182e39da638c528680a87a0ce5a1abccd2500'
+    newFile: !uuid '50f655f2cde68131611749a08157904f686ec521'
+    oldFile: !uuid '145851a28e8007b487cbca729b944880a5a3c1be'
+  /app/store:
+    newFile: !uuid '60caa1be8a2e9d61328b123c16e830dd3644f0db'
+    oldFile: !uuid 'c54a3a4d2438dd5d8f45de717bfc143f26519b21'
+  /app/store/model:
+    newFile: !uuid '2250d72af473229bdf0472e8f16760c357315fbe'
+    oldFile: !uuid '24653b753c22fb0c11a9a2674068c247b7ce493e'
+  /app/store/model/Order.php:
+    newFile: !uuid '4d2026b7549678165e00da1094aa51dc8cdce2b6'
+    oldFile: !uuid '17a3791ddf19f06472b4b59bfd0a7d8192e467b0'
+gitCommitId: !uuid '85e85a1d49a572e65c0928b96847cf97ed57f7bd'
 renames: {
   }
-revisionId: 26
+revisionId: 27
