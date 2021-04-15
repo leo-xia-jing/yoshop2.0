@@ -2,19 +2,514 @@
 branches: {
   }
 fileChange:
-  /public:
-    newFile: !uuid 'b754f50e57ea29fcad7ddddfa815f5c4ea9e9b14'
-    oldFile: !uuid '24697d51265321d26db74054187a94747237eebc'
-  /public/install:
-    newFile: !uuid 'efb13f12b4a81ef1774ccd79081d78a5dc2d4098'
-    oldFile: !uuid '26dd93e542ae294b6ee1c5122255425af4d6fef6'
-  /public/install/data:
-    newFile: !uuid '6c4cd756ff32311bbbb880e420d991f78a930617'
-    oldFile: !uuid '41a6cc901167e36fde479c1cdc7125297ad94032'
-  /public/install/data/install_struct.sql:
-    newFile: !uuid '9b3dd809a0c0ce6146c2e9cb244f74710a1983b1'
-    oldFile: !uuid 'fc673a558a8193008c0420272ac1d25d08510041'
-gitCommitId: !uuid 'e9631f384ff2283c6b197e77e03b69610bed7dea'
+  /composer.lock:
+    newFile: !uuid '6a7df84c6a8e9be895e6ee4883716faaa1189ed3'
+    oldFile: !uuid '0da83f20cbf7ddd1af4e2da078cc7f34775afb6e'
+  /config:
+    newFile: !uuid '94761a44d8ab9851b68288b21f33db3f3ff912df'
+    oldFile: !uuid '1d3047ffdb07b428f1afa9e4b47908fcea2b2f93'
+  /config/captcha.php:
+    newFile: !uuid 'ac741dc881c2ddfae46bb2fc80f1101afe215547'
+    oldFile: null
+  /config/gateway_worker.php:
+    newFile: !uuid '21d1ebe29ec0aca0fa5e3ba151c1f27926e881a4'
+    oldFile: null
+  /config/worker.php:
+    newFile: !uuid '498812c7751e28b348527133145da983a959363f'
+    oldFile: null
+  /config/worker_server.php:
+    newFile: !uuid '292328f24c5a61c616238e650a0489df15f92c47'
+    oldFile: null
+  /vendor:
+    newFile: !uuid '438c39972b9fda0cf5ea6d6f23ce965e6fb33c9a'
+    oldFile: !uuid '5cc52d6a02924786386c6cd6e3f7cfa40b48b695'
+  /vendor/composer:
+    newFile: !uuid 'ab370ec4ae8504a5a3a1bf08be09ce30f32ff499'
+    oldFile: !uuid '5beac8731be9860ea4ed58c20d8b147040b4eeb8'
+  /vendor/composer/InstalledVersions.php:
+    newFile: !uuid '51f5b3019c2bb618d52613bc8cadd75912a5a29f'
+    oldFile: !uuid '4d1e834be2dc11e844d7a69b8febb4b75e793818'
+  /vendor/composer/autoload_psr4.php:
+    newFile: !uuid '4e2cae0f840dd9df2e100e9ac946be5926a2cf1c'
+    oldFile: !uuid 'e89f481134996965bf41b54a42c9586915106bd2'
+  /vendor/composer/autoload_static.php:
+    newFile: !uuid '5ea4e748574a4688a07e27bcbda68694bdcbae3b'
+    oldFile: !uuid '284fd3d05aaa8ca2185692eb37bb6b189424ec51'
+  /vendor/composer/installed.json:
+    newFile: !uuid '6388469754cad84b4a0ddc3fd085fb173323f2dc'
+    oldFile: !uuid 'b6a8959fc7a306524dcc8a07eb9f6814f7929429'
+  /vendor/composer/installed.php:
+    newFile: !uuid 'e28634bef62b697348f0458ca069a5f64e4e498a'
+    oldFile: !uuid '680a9659712aeaddcb00aa9812a6d3051330a024'
+  /vendor/services.php:
+    newFile: !uuid '0c2d2b25cb1395ce99c560410789ad0cefa4c04c'
+    oldFile: !uuid '0fcb7cae445dd430ec5058a5bd4846cbcb0ee394'
+  /vendor/topthink:
+    newFile: !uuid '786404a8f7338a7455fad1f6842f9664ca85b317'
+    oldFile: !uuid 'd8a64802428b4c443a06488ec12d2bc9659af34c'
+  /vendor/topthink/framework:
+    newFile: !uuid '76543c5798c688de079c575da5c1a3ef9efaa976'
+    oldFile: !uuid '4380094eb55b6cea2b8a35dc5a163d85227cb7ff'
+  /vendor/topthink/framework/.travis.yml:
+    newFile: !uuid '28987af82211a2ca08191999dc76ec29c479f6b9'
+    oldFile: !uuid '73e6681ffbce71fa3f780a20123029dc119c9ae8'
+  /vendor/topthink/framework/README.md:
+    newFile: !uuid '0ea03c9872d9fbb831aa9e5284142f423766632c'
+    oldFile: !uuid '6bb78e9b95c6ab026fb8af71926bc566463ebd56'
+  /vendor/topthink/framework/src:
+    newFile: !uuid 'cd2b8e83bcd99f534528b8f332c7c8f96c58fec3'
+    oldFile: !uuid '47772874d85cae5be8518b33b2f2805a53c7d973'
+  /vendor/topthink/framework/src/helper.php:
+    newFile: !uuid '650edcb9fefb06d42836bd36c6736b0145eafbbb'
+    oldFile: !uuid '8b2899889995cbd4f5710a3e7ae68506a6e7bf58'
+  /vendor/topthink/framework/src/lang:
+    newFile: !uuid '6b1697559e25992611315d902951ad4042d627a5'
+    oldFile: !uuid 'c164338a6e805ccf08dc9dcc5d646dc57ade986c'
+  /vendor/topthink/framework/src/lang/zh-cn.php:
+    newFile: !uuid 'a546330a06202d7356035a02679c77b33b3a0698'
+    oldFile: !uuid '83d8a1e89a2a006c1078ae1150d6664845a83f59'
+  /vendor/topthink/framework/src/think:
+    newFile: !uuid 'cf34e907e863563d98b96f1d994ae121394ae3ca'
+    oldFile: !uuid 'ebf33fcceba703b609d0427d459e4382178d368c'
+  /vendor/topthink/framework/src/think/App.php:
+    newFile: !uuid '69e9b9539f26948d970afe400a62230b6fca7a83'
+    oldFile: !uuid 'c47e016441a52f561fa4da69d8a5a11e51fbf639'
+  /vendor/topthink/framework/src/think/Cache.php:
+    newFile: !uuid 'f802b556fab9632d5bdba76d156e3493098e20f5'
+    oldFile: !uuid '4bc99c27c86c1a3991fce2e5b3e78d56a11c7226'
+  /vendor/topthink/framework/src/think/Config.php:
+    newFile: !uuid '9162e82fd91b36e7e34eae129ebe769eb17c6fad'
+    oldFile: !uuid '3a15755558852f0d388900a417d3f75870ef4b76'
+  /vendor/topthink/framework/src/think/Container.php:
+    newFile: !uuid '74026bb095785ec6c7d5dda49372e1dd251513be'
+    oldFile: !uuid '7910bb3d676a9da03fe997b2db6b5ee293030c10'
+  /vendor/topthink/framework/src/think/Cookie.php:
+    newFile: !uuid 'ebbfd64e0fc19d90aa56b0498634c3033c838ada'
+    oldFile: !uuid '6eb85b61c1fe00ff5ea0b43d73191e179a21a3d3'
+  /vendor/topthink/framework/src/think/Db.php:
+    newFile: !uuid '0048874fb837df692337bde9b9fa75f582a05f70'
+    oldFile: !uuid 'fac8d072fda96458ca7fecab1a93e3c0cf1c1304'
+  /vendor/topthink/framework/src/think/Env.php:
+    newFile: !uuid '4c26b33a9e21597ffa13f262f17180cab532662d'
+    oldFile: !uuid '05228aaf2f87605e5c2096aee8541a4519b6b281'
+  /vendor/topthink/framework/src/think/Event.php:
+    newFile: !uuid '6a0eb1f0e25b523bd8125cb5aeb9e0bb01442bce'
+    oldFile: !uuid 'edef54cc3634ec8c35441f0eae8e1d8f2396e4b7'
+  /vendor/topthink/framework/src/think/Exception.php:
+    newFile: !uuid '5cf79548a7ab4d3f7175d2d6c1729e9fddeb287c'
+    oldFile: !uuid '468e29df903ccfca39b61fdc9d7af6a99462c4e9'
+  /vendor/topthink/framework/src/think/Facade.php:
+    newFile: !uuid '9a0e33394902d44f005354a9059ce5fc8e878a2c'
+    oldFile: !uuid '79212980b45f27cf5efda9aceb53655ad9753b40'
+  /vendor/topthink/framework/src/think/File.php:
+    newFile: !uuid 'f7c37bdbe54e1ba3e4c404c27b95ce61183b75d3'
+    oldFile: !uuid '77bec891cdeb730cdc7509fcf65a80d3c89abb4a'
+  /vendor/topthink/framework/src/think/Filesystem.php:
+    newFile: !uuid '0aee929f5b6d58d4f9abb1757a112382c873d781'
+    oldFile: !uuid 'a443f74a2cc237e0ac8e9f2b16f25c66bb0c6cd0'
+  /vendor/topthink/framework/src/think/Http.php:
+    newFile: !uuid '4e49c88cb8689331a6e91655e91f2b467bd9c6b3'
+    oldFile: !uuid '4bc632c4f00f27747ed710024aafd24d68274487'
+  /vendor/topthink/framework/src/think/Lang.php:
+    newFile: !uuid '0b79b7604ddd088072340cd5975ad3cfe20c0637'
+    oldFile: !uuid 'd811ea71508b3045ed2a8a74110b642f3cc69238'
+  /vendor/topthink/framework/src/think/Log.php:
+    newFile: !uuid 'c31210ce454a40573b5c02059056ef2032bfb01b'
+    oldFile: !uuid 'e9031c766faf2b0f12d513b10d9074d16af85913'
+  /vendor/topthink/framework/src/think/Manager.php:
+    newFile: !uuid 'ca3f6a5a9e4e05644786e2b41fe2eff627599cd8'
+    oldFile: !uuid '741f7028f2b1d268b1c7c0a0c928b01c617628e9'
+  /vendor/topthink/framework/src/think/Middleware.php:
+    newFile: !uuid 'a3db0f2f3035bf01ea1b5f21c0c5861575072eca'
+    oldFile: !uuid '0868fb2ece64e28a52ba9aa2c281b3781623218f'
+  /vendor/topthink/framework/src/think/Pipeline.php:
+    newFile: !uuid '77151f3acbf2b2b8cac3da2ee8015678a3a93558'
+    oldFile: !uuid '73036f35d4113a9afce6ef854e72020227efab98'
+  /vendor/topthink/framework/src/think/Request.php:
+    newFile: !uuid '2787b99a0f27616a9e5fdedc4109ab0cf920c828'
+    oldFile: !uuid '0181ab89306f2bc6022d41f135deb92a9e0f3cc6'
+  /vendor/topthink/framework/src/think/Response.php:
+    newFile: !uuid '2c07f53480ad51bc99b4897ba1c6952cc8c9c2da'
+    oldFile: !uuid '556696aa5ed139ac41cf318da801d93084cd8cde'
+  /vendor/topthink/framework/src/think/Route.php:
+    newFile: !uuid 'a3acf85b51218e8bc35707851cff4b97622d8d2c'
+    oldFile: !uuid '5e2881b109f0fc6c1abb67157bc30cff0d3b59b0'
+  /vendor/topthink/framework/src/think/Service.php:
+    newFile: !uuid 'd9e89601acd6ef6c1202061afb55f04211d7cfe1'
+    oldFile: !uuid '68c6789072bb36641d3bbf71d68bd8cfdb9d744c'
+  /vendor/topthink/framework/src/think/Session.php:
+    newFile: !uuid '6c84faf8f8f3ecc4fd6bccb6e327483f49d44035'
+    oldFile: !uuid 'c344f0bd6ae5bd756db8569d16cf2f11756de5fd'
+  /vendor/topthink/framework/src/think/Validate.php:
+    newFile: !uuid 'b7033cc643fd26c7ba23c4757878aafa6658d2ab'
+    oldFile: !uuid '10428c6038ddabab83dd86b1edbc4d9a2620a68d'
+  /vendor/topthink/framework/src/think/View.php:
+    newFile: !uuid '2e7108840f06dcf5720e5017097b95213ad89038'
+    oldFile: !uuid 'c2e7368e58d446f3df0b932753ee150541a8502f'
+  /vendor/topthink/framework/src/think/cache:
+    newFile: !uuid '38b085f5dd84bc22a96b76bfb85f1236f9e4f461'
+    oldFile: !uuid '2a8af11d3a9d34ca1e7b964a7d69fdf26b932fc5'
+  /vendor/topthink/framework/src/think/cache/Driver.php:
+    newFile: !uuid '5813c7b34c6fa73af65663263c610fbfdcd40fee'
+    oldFile: !uuid '06d522d649e27f11802188670c3b6bc81a7210b9'
+  /vendor/topthink/framework/src/think/cache/TagSet.php:
+    newFile: !uuid '5ba20769acb411e0951cfc751b76783be29e88b7'
+    oldFile: !uuid 'db5768b377ba7773bc0e5f07f6ecc42c9dcdacfd'
+  /vendor/topthink/framework/src/think/cache/driver:
+    newFile: !uuid '64ad67001c6ad67fcaf7cf754dd650d2c172545c'
+    oldFile: !uuid 'edbc2aff81c4e25271a6b0386ee13727fafa3e30'
+  /vendor/topthink/framework/src/think/cache/driver/File.php:
+    newFile: !uuid 'b36b0696545dc69973d4906ca6084869aa5d3afd'
+    oldFile: !uuid 'ccec3ea8e4d157f8ef2a13847b3b0d47ed233cdb'
+  /vendor/topthink/framework/src/think/cache/driver/Memcache.php:
+    newFile: !uuid '2fbbb9c7296f34212521e841f3f112979c3af2a5'
+    oldFile: !uuid '81b988f68c554f839f2171e808ec578e377657bd'
+  /vendor/topthink/framework/src/think/cache/driver/Memcached.php:
+    newFile: !uuid '71edb058f681d551cee1a86af78c1a751d7bb7da'
+    oldFile: !uuid 'e6c56064eaeaff86890bfebc2af76072116db5ce'
+  /vendor/topthink/framework/src/think/cache/driver/Redis.php:
+    newFile: !uuid '791b27b88f55dbcd37aa9d5aae11ee73daab8658'
+    oldFile: !uuid 'a87f02da5693f8ad67ad3c773c8cd1cc85e24dcb'
+  /vendor/topthink/framework/src/think/cache/driver/Wincache.php:
+    newFile: !uuid '8b3e8b8631d5e3fd3015cd2afb3cfdba6f0dc4b5'
+    oldFile: !uuid '8b8e26df491c22d89fa73af2adb740785f364fc2'
+  /vendor/topthink/framework/src/think/console:
+    newFile: !uuid '42ba8db5c5d88068345276cd386736782ddfec16'
+    oldFile: !uuid 'e3e0bd5917f2f0f98a8eed3ffbd7542a7320dd99'
+  /vendor/topthink/framework/src/think/console/command:
+    newFile: !uuid 'c750a434ef4bc1c8006f900686a01108c1b446fc'
+    oldFile: !uuid '88e985a1da1779937f8eab1e235f9f1c5b7ba16c'
+  /vendor/topthink/framework/src/think/console/command/ServiceDiscover.php:
+    newFile: !uuid 'e90f43398376e21e6ec28da9bf2855405c2879b0'
+    oldFile: !uuid '16eafcebc7020c8a0589a5a0719e0ab5de0fb05e'
+  /vendor/topthink/framework/src/think/console/command/VendorPublish.php:
+    newFile: !uuid '3998765759699a1e0381be11095f0075228818fd'
+    oldFile: !uuid '7b4376216fb08fd6a87d9b42222464975ab434c9'
+  /vendor/topthink/framework/src/think/console/command/make:
+    newFile: !uuid '77940ec0a0293ccbeaea4700e4e2a3c016cf0603'
+    oldFile: !uuid '73dba58ab93560145084b23867463530421dbdca'
+  /vendor/topthink/framework/src/think/console/command/make/Command.php:
+    newFile: !uuid '9549a02153ee21aa387cf271a3958e4eb7f3c785'
+    oldFile: !uuid '88e665a56e62a44f7ac4299a44a9e42c85efb150'
+  /vendor/topthink/framework/src/think/console/command/make/Controller.php:
+    newFile: !uuid '4a8d226c09cabd3ba686485f11c152876bf39d81'
+    oldFile: !uuid '582cffbb6069505c5aefa4c73b174332bde280b0'
+  /vendor/topthink/framework/src/think/console/command/make/Event.php:
+    newFile: !uuid '6b16689842ce2dc3dd9ead07a52418dc6cd69cc4'
+    oldFile: !uuid 'a4676d8f630289f788806f60472c2d1c6a859a9a'
+  /vendor/topthink/framework/src/think/console/command/make/Listener.php:
+    newFile: !uuid '5c926736844eb080f48638373e832c967802d061'
+    oldFile: !uuid 'bb2966835c0e34da05b1de2001b0164e6c5b1293'
+  /vendor/topthink/framework/src/think/console/command/make/Middleware.php:
+    newFile: !uuid '3b68b4a7f3517f6348f45915fbb4f2affcf9412e'
+    oldFile: !uuid '80f4563393f2d7ce9e64fb6bc6de0221087e9d79'
+  /vendor/topthink/framework/src/think/console/command/make/Model.php:
+    newFile: !uuid 'cb7a23c4f804fbb47640cd1b782821bc8b933649'
+    oldFile: !uuid 'acb37e7c3d7e0514f004f0b06db7d852b43c875b'
+  /vendor/topthink/framework/src/think/console/command/make/Service.php:
+    newFile: !uuid 'c4bbaa0eb740c6c24f0cf7a4295bc402a56a0d05'
+    oldFile: !uuid '18bd54eb29cdb5cb2c92627cf38ed348c4468f6d'
+  /vendor/topthink/framework/src/think/console/command/make/Subscribe.php:
+    newFile: !uuid 'a1dc2a820552b797d18ecfa7c87eb96b04b48a73'
+    oldFile: !uuid '4203986e4e2970ebea9c9c8eb87e3686d6d52ccb'
+  /vendor/topthink/framework/src/think/console/command/make/Validate.php:
+    newFile: !uuid '8d364316139243538a0d86bf08a0dd0274c91e16'
+    oldFile: !uuid '4926e20df96c3aa0c2c5604767ffb99f3661d425'
+  /vendor/topthink/framework/src/think/console/command/optimize:
+    newFile: !uuid 'f8338c248c6c9983fb706d2ca81fb1430f84ee54'
+    oldFile: !uuid '71a5ac7ea11e6ba6f8811a0fa1dbc3c025a69d6c'
+  /vendor/topthink/framework/src/think/console/command/optimize/Schema.php:
+    newFile: !uuid '6ce3e64a85b8c15f89063d9b346653b5ee2394dc'
+    oldFile: !uuid 'e61c2bc61d2f32c10db8689c49ad3cd618082342'
+  /vendor/topthink/framework/src/think/contract:
+    newFile: !uuid 'dce0fb25012842d5c9eee831337aaf8fb61d6996'
+    oldFile: !uuid '7bc9f02074abde36586cf62892806bf251d50365'
+  /vendor/topthink/framework/src/think/contract/CacheHandlerInterface.php:
+    newFile: !uuid 'da5e696328b6a5537b7ad3b65b816afcd997f69b'
+    oldFile: !uuid 'e953f663fb37f3548cb5ca449b33746386f43220'
+  /vendor/topthink/framework/src/think/contract/ModelRelationInterface.php:
+    newFile: !uuid '1f6f994e890cc31f38cb80e9cf4788ed32e24963'
+    oldFile: !uuid '49cfa75d35aab54e098f55b9dd1f812cbedaee1f'
+  /vendor/topthink/framework/src/think/contract/SessionHandlerInterface.php:
+    newFile: !uuid '0b2e4142476d409464e0e1de5506aa91e3287bbc'
+    oldFile: !uuid 'caed32221d559e4125606f099e4c3e6d82ed7197'
+  /vendor/topthink/framework/src/think/contract/TemplateHandlerInterface.php:
+    newFile: !uuid '9be93d2e45a4084936ff563fb7cdf45c3712209a'
+    oldFile: !uuid 'f01820dd4f5bbb73dd2040142336c46638517100'
+  /vendor/topthink/framework/src/think/event:
+    newFile: !uuid 'da87f2c51791b82f4f0bbe7d9084722fa4653bb6'
+    oldFile: !uuid '7f9124562c2f41e2c98a1324ff775390fbcc45cd'
+  /vendor/topthink/framework/src/think/event/AppInit.php:
+    newFile: !uuid 'dda820b5ecac9b099c656ac7222278f003eddeac'
+    oldFile: !uuid '83d75e7d40a258313f6c85bc955f05801935ad5d'
+  /vendor/topthink/framework/src/think/event/HttpEnd.php:
+    newFile: !uuid 'c40da57d715d65e425e242ed51b15bfcf8facc0f'
+    oldFile: !uuid '5296ef17529a819999d477faa9098fcc923d955f'
+  /vendor/topthink/framework/src/think/event/HttpRun.php:
+    newFile: !uuid 'ce67e93e41fa41d3bd26f7252e155c92f063889e'
+    oldFile: !uuid 'a9cd7c397684c2ff2cc74cb97ae6b5da2b8d00ef'
+  /vendor/topthink/framework/src/think/event/LogWrite.php:
+    newFile: !uuid 'a7873018d85ab1cd71a5e94e1f76314061a4ea25'
+    oldFile: !uuid '470e119837f3d2c97fe83b71e9df689b9f184c6c'
+  /vendor/topthink/framework/src/think/event/RouteLoaded.php:
+    newFile: !uuid 'ace7992f38cfba87aa1e8b4730fdf8731ab87a93'
+    oldFile: !uuid 'eee1f3ef2f251365255cb42c211721871b2ea4d0'
+  /vendor/topthink/framework/src/think/exception:
+    newFile: !uuid 'f121a6941f0bce6f55c2b2fdf7848c4636ba7ab7'
+    oldFile: !uuid '4e53a8a8374ebe5431b2596f97fa786af91ec031'
+  /vendor/topthink/framework/src/think/exception/ClassNotFoundException.php:
+    newFile: !uuid 'c4cda77d5a25e1d07c81d505cf6c85280e0fecdf'
+    oldFile: !uuid '2fa1f5811fe522229c9f29578b841955a5a1c931'
+  /vendor/topthink/framework/src/think/exception/ErrorException.php:
+    newFile: !uuid 'd1a237803a9f96947dc95b3f176028029f8f5cdd'
+    oldFile: !uuid '54de0fee22ecc295e77b754e6b60a4917d4f42e5'
+  /vendor/topthink/framework/src/think/exception/FileException.php:
+    newFile: !uuid '228a1898cff2bbcd24399aaa9dbca16eb21feb19'
+    oldFile: !uuid '22544728cccd0ece42420324099a5d478e6d5b73'
+  /vendor/topthink/framework/src/think/exception/Handle.php:
+    newFile: !uuid '1f783bc52e83741a558272c379141fbd9acbf3f7'
+    oldFile: !uuid '8484b6fa6c0efbd0820a08656309242090d89c3c'
+  /vendor/topthink/framework/src/think/exception/HttpException.php:
+    newFile: !uuid '45302e587ce0b8d9fc02d5e944d3bd5b7cab080c'
+    oldFile: !uuid '74fabfc697a7ddf3f3a1cd4410e2da31f47ae1fd'
+  /vendor/topthink/framework/src/think/exception/HttpResponseException.php:
+    newFile: !uuid '607813d97b6484af2080e1ee62e3a63fb165c0f7'
+    oldFile: !uuid '759254c1fdabb657eb62398a3b7032bdc7076d66'
+  /vendor/topthink/framework/src/think/exception/InvalidArgumentException.php:
+    newFile: !uuid '8ccd6f6a73cdc38fa3ecccb4c38a1f3be9cf9d7a'
+    oldFile: !uuid 'd317278b5647e4674efd5b5f49d1aa22b0396f54'
+  /vendor/topthink/framework/src/think/exception/RouteNotFoundException.php:
+    newFile: !uuid '7a2ee879032adbe9158f5132f567d2ed390de8a6'
+    oldFile: !uuid 'f50dff678ac4465a75d4da383833bc09050a81b9'
+  /vendor/topthink/framework/src/think/exception/ValidateException.php:
+    newFile: !uuid '89b4e4d5847304c4ede000f716b9d7a87bff3270'
+    oldFile: !uuid 'cc79e191203dfd7e06bf5fe287b07e5732ffe361'
+  /vendor/topthink/framework/src/think/facade:
+    newFile: !uuid '2326bc51c939302e1b3ba1127bb855ea33fb6194'
+    oldFile: !uuid '1cf7ffddd5adbdea990408ac9c85d1299bd91ed1'
+  /vendor/topthink/framework/src/think/facade/App.php:
+    newFile: !uuid 'e9f81050e47a517eac12ef78d8b6d482159e1328'
+    oldFile: !uuid 'fe3de4da8bab92ec76d014ee90060f4dda456b8c'
+  /vendor/topthink/framework/src/think/facade/Cache.php:
+    newFile: !uuid 'aac105d44debb317db5da6fc4554cdd38458a476'
+    oldFile: !uuid '425b370b7b7fcf5e393579054dfd1e3d2f7e7bed'
+  /vendor/topthink/framework/src/think/facade/Config.php:
+    newFile: !uuid '4ce73dd6e3d41822e2e0e96697fc0569a7596c40'
+    oldFile: !uuid '604414af4c2fb5377b0619512355b0813ab8fc5b'
+  /vendor/topthink/framework/src/think/facade/Console.php:
+    newFile: !uuid '30dd935e967d28d1d8c7f8d4e7cbf612076f47b6'
+    oldFile: !uuid '0d953f2f0e8e36bae99b01f47fa614bb94acb5a7'
+  /vendor/topthink/framework/src/think/facade/Cookie.php:
+    newFile: !uuid '960f4a3dfcd1ac70e9f38cbbf3a2a1dc67ffc13c'
+    oldFile: !uuid 'b2956f83a3c145228afb19845c29bedb20c7a3ba'
+  /vendor/topthink/framework/src/think/facade/Env.php:
+    newFile: !uuid 'bed253805dd455f20f7d943dce6e967be92ee732'
+    oldFile: !uuid '721881d771eb0983fc8fe71af8306a1a187d2189'
+  /vendor/topthink/framework/src/think/facade/Event.php:
+    newFile: !uuid 'c09d816678f142cc6b9b79ed8c3a7c60d5aae062'
+    oldFile: !uuid 'c65690b18e3d398a34fa4ef0621182dc05d0df96'
+  /vendor/topthink/framework/src/think/facade/Filesystem.php:
+    newFile: !uuid '53706a8418bd59467ec39ef5e2d3e0d1b545aeab'
+    oldFile: !uuid 'ac0223aee63af8bdab61fbf2b0d89849aa29ff28'
+  /vendor/topthink/framework/src/think/facade/Lang.php:
+    newFile: !uuid 'b460fe2f9b2b0a1143c853f01aef7b49983f858c'
+    oldFile: !uuid 'fa5c6911bf544243bc433d47e6bb3a8a478f94ab'
+  /vendor/topthink/framework/src/think/facade/Log.php:
+    newFile: !uuid '7c43d37e76374aa56928955b46bc8682ea6fdc03'
+    oldFile: !uuid 'eaf104d3e8e3ba82c4b3f7db4ad0a36ecce512f4'
+  /vendor/topthink/framework/src/think/facade/Middleware.php:
+    newFile: !uuid '4203f821ea5348855a442d31443b775742257e71'
+    oldFile: !uuid '6f1eac598a2c7e1f07a12e72c385ba5ba0a4da6b'
+  /vendor/topthink/framework/src/think/facade/Request.php:
+    newFile: !uuid '6531f4678b1c96c1a866f4f266ec86ec609909c6'
+    oldFile: !uuid '7c3b18069acc273c18c2f9db913b0214de66dc00'
+  /vendor/topthink/framework/src/think/facade/Route.php:
+    newFile: !uuid '46bd7469ccd41364d0c1545848cec266a680baba'
+    oldFile: !uuid '24ad3c82e007f882cf79bb4549e4c4b9a69afe51'
+  /vendor/topthink/framework/src/think/facade/Session.php:
+    newFile: !uuid '68bf9936231f7a5d5d991b8bb8ef156515afea0e'
+    oldFile: !uuid '33cbf6303bd9a305b57a4da8941b70aa6bab8ae6'
+  /vendor/topthink/framework/src/think/facade/Validate.php:
+    newFile: !uuid '6db6d34a4cccd71b508da61883bcc644d9e9e486'
+    oldFile: !uuid '133116d5ab7636255c5f076356ff7b68ba6eedd8'
+  /vendor/topthink/framework/src/think/facade/View.php:
+    newFile: !uuid 'acde3b5771e4dee00786f8ae8fe7abdd1582b5ca'
+    oldFile: !uuid 'a27463be34e0ef0bd9a03d7e8ff2f62a143a9047'
+  /vendor/topthink/framework/src/think/file:
+    newFile: !uuid '5b92f8411ea517c3a9847d8f2f8ed99e5aedd016'
+    oldFile: !uuid 'd9174f77fc62bd50080fea327319a15107d9b81e'
+  /vendor/topthink/framework/src/think/file/UploadedFile.php:
+    newFile: !uuid '7dff766e13d517573098296f07c58c2e343145a1'
+    oldFile: !uuid '66d061e141ea9eb4cadb0d4821e9e8b17bc58e6f'
+  /vendor/topthink/framework/src/think/filesystem:
+    newFile: !uuid '0d356b2bce8b2fc9302cbe7ee10a562240a3d1ae'
+    oldFile: !uuid 'ead346d4dfc4e9498b05def7ab5f6c95eceaeaf7'
+  /vendor/topthink/framework/src/think/filesystem/CacheStore.php:
+    newFile: !uuid '0a62399e054d18e989ec0cdc3309796f0e513b49'
+    oldFile: !uuid '46659ba7b79f7759ee9b5d9487d2f98840966b55'
+  /vendor/topthink/framework/src/think/filesystem/Driver.php:
+    newFile: !uuid '67129592cf19713be7118254f29c6e603d91a56c'
+    oldFile: !uuid '26826adf8bffb41a95484332f5f4553239ff1b73'
+  /vendor/topthink/framework/src/think/filesystem/driver:
+    newFile: !uuid '8ced95c0044ce54d65e97d66f518bfa30b2ed96c'
+    oldFile: !uuid '2ca2f8dbecf5cb90400c1d0d9dffaa2114314292'
+  /vendor/topthink/framework/src/think/filesystem/driver/Local.php:
+    newFile: !uuid 'c10ccc3b6ce2d2b491d2952d6ccc20eeca6e50ed'
+    oldFile: !uuid '5bcc08b5cafb736218177361f0a141fc265328f0'
+  /vendor/topthink/framework/src/think/initializer:
+    newFile: !uuid '2e8e8b9b813fb5415858f09128a21ba581fbedb5'
+    oldFile: !uuid 'ed0aaf65a83400ffff6e4c04ad0bebcaffd8a998'
+  /vendor/topthink/framework/src/think/initializer/BootService.php:
+    newFile: !uuid 'bab6d3904c52d58f9dde5a093ce6d27332bb086b'
+    oldFile: !uuid 'ef9b25e523e72dcf7fd8e9a8ad1c2b53d97eb455'
+  /vendor/topthink/framework/src/think/initializer/Error.php:
+    newFile: !uuid '201d94732f00ce6c822b23b5d3cc23bd10ca5ea6'
+    oldFile: !uuid '27fef6455327f5cffec32a0a71dce601e4316c26'
+  /vendor/topthink/framework/src/think/initializer/RegisterService.php:
+    newFile: !uuid 'b682a0b0ee3f3b609ff7d3ad624360a38ca0db10'
+    oldFile: !uuid 'c63ab355fd0ec452b622cbdd7aa99f47bfa07f4a'
+  /vendor/topthink/framework/src/think/log:
+    newFile: !uuid '09ce4a3ef94a04a4348bcea8980c973a352596ba'
+    oldFile: !uuid 'fabfca530999489ae4830fcd12d103b2e3d201a6'
+  /vendor/topthink/framework/src/think/log/Channel.php:
+    newFile: !uuid '505d838705367f38c7cc7d25e9bf5384e96eac58'
+    oldFile: !uuid '2660a6034260d778af71e6199eb73f3ca144de61'
+  /vendor/topthink/framework/src/think/log/ChannelSet.php:
+    newFile: !uuid '6dcb0bdb0ec026e7526c95eecfbed2aaf99216d0'
+    oldFile: !uuid 'e38811c0023771a66cc8a6384cbed9d7abb6b6e7'
+  /vendor/topthink/framework/src/think/log/driver:
+    newFile: !uuid '56f4c67eb6a85784acebff9669e867d1885b8026'
+    oldFile: !uuid '1f55e66c3dca2fde544fca436041e6a4bbe6fc8d'
+  /vendor/topthink/framework/src/think/log/driver/File.php:
+    newFile: !uuid 'e5682fc007f7135b4695c79b6276dccf0f2e2191'
+    oldFile: !uuid '6f075b95ac1b1118fd6d4f2a2732e884dfe7750f'
+  /vendor/topthink/framework/src/think/log/driver/Socket.php:
+    newFile: !uuid '2cfb943392497065347ade05fb3dc065a14d7a0a'
+    oldFile: !uuid 'b78ebfb5bbd0020ec51458af77d06cc9759f7b29'
+  /vendor/topthink/framework/src/think/middleware:
+    newFile: !uuid '4270b2a49997cb0b46857893c3163ea6ebdf8bb9'
+    oldFile: !uuid '4e7d249526c3a92462bd2c5c4a2ce1857e4e8ab5'
+  /vendor/topthink/framework/src/think/middleware/AllowCrossDomain.php:
+    newFile: !uuid 'b7ab842c4c3f618a77b9786170ea7dc184f8fe75'
+    oldFile: !uuid '68c3ace71e30282ca8606bf1077be162bf2cad42'
+  /vendor/topthink/framework/src/think/middleware/CheckRequestCache.php:
+    newFile: !uuid 'b1143519c8256a78225b2ef16dab55b4975fb061'
+    oldFile: !uuid '6e2205621441056bff98e50567a937de5b40a5bb'
+  /vendor/topthink/framework/src/think/middleware/FormTokenCheck.php:
+    newFile: !uuid 'efbb77b1729bde2e0fc13a91f7624d958c9e0a47'
+    oldFile: !uuid 'f507903cb330be1baf0c6254a2d10eb6b99010ce'
+  /vendor/topthink/framework/src/think/middleware/LoadLangPack.php:
+    newFile: !uuid '478e29c906ed4cbc6ae40b6319066d06fe52c351'
+    oldFile: !uuid 'c9e7a9d3fcb58d36852815008ce42b63b299f8ba'
+  /vendor/topthink/framework/src/think/middleware/SessionInit.php:
+    newFile: !uuid '3cb2fad96196b536be47634794e9a62003e4582c'
+    oldFile: !uuid '8c2a7b448d4c566e9ed2381611acad9c15d2595e'
+  /vendor/topthink/framework/src/think/response:
+    newFile: !uuid '5532b790b5cd34d77690e6fd63c036b98af28da1'
+    oldFile: !uuid '3323a3830cf4e45f4c32cb73485a3d4a576ad6dc'
+  /vendor/topthink/framework/src/think/response/File.php:
+    newFile: !uuid '1e45f2f488d015766e8335a574d7a6d1afb2f189'
+    oldFile: !uuid '45d7196cee76088e2d882aa32004b7ffcd16f756'
+  /vendor/topthink/framework/src/think/response/Html.php:
+    newFile: !uuid 'c158f781580adacee589f5385542b92cd7424475'
+    oldFile: !uuid 'dbf23c78b8c522e56ca03d09c7fe6ee0f33e16fd'
+  /vendor/topthink/framework/src/think/response/Json.php:
+    newFile: !uuid 'a84501f55e7e9663be773feb34ab70e1d59e790a'
+    oldFile: !uuid '85d2d228b0e714f547f2642a43cb7f54858f1d07'
+  /vendor/topthink/framework/src/think/response/Jsonp.php:
+    newFile: !uuid '81d3a06e1848d5a316a5660f8d47b15fb37706fb'
+    oldFile: !uuid '35f26f2c3953a8fb5eed41e7a90d0f87e7b1690d'
+  /vendor/topthink/framework/src/think/response/Redirect.php:
+    newFile: !uuid '1f38764c9022037002b89491d6c2697f5ae6441f'
+    oldFile: !uuid '3d201aadf8f2d37dc957102dac7833aa8cf6795d'
+  /vendor/topthink/framework/src/think/response/View.php:
+    newFile: !uuid '2c116c778ae3ecaeba2272e74e122808206b982b'
+    oldFile: !uuid '0b1ae88cef35463647ec7ff2586d07e5d9ea0e6a'
+  /vendor/topthink/framework/src/think/response/Xml.php:
+    newFile: !uuid 'bddbb48b5e0744bdd4921fb1ea18bf9ff63ca0c4'
+    oldFile: !uuid '3597548731859be8bceb48474fef722f3e785460'
+  /vendor/topthink/framework/src/think/route:
+    newFile: !uuid '331feb76d9e5338c3c9d90480f56762ae73ab584'
+    oldFile: !uuid '0c653d5f1c8989afe54bd1844e99814fe24444ea'
+  /vendor/topthink/framework/src/think/route/Dispatch.php:
+    newFile: !uuid 'e77e299a60b89b2af15dfcbb756721e6d49c72c8'
+    oldFile: !uuid '9884a476cab3ef2e7a5185755fdfda7576fe1b84'
+  /vendor/topthink/framework/src/think/route/Domain.php:
+    newFile: !uuid '84f1d463b42622554ff45d67e56317ffbb00d79a'
+    oldFile: !uuid '8c04af00366053ff95b9bc23d4d0cca662c6f182'
+  /vendor/topthink/framework/src/think/route/Resource.php:
+    newFile: !uuid 'bb37cb6d959b56274dfadfd0447ce9cb240eac83'
+    oldFile: !uuid '01565fc73f85e1d5ed3d86236fe8f6202c8f7749'
+  /vendor/topthink/framework/src/think/route/Rule.php:
+    newFile: !uuid '31b2e0e59e513cc665029e05a27d09fdc99fc866'
+    oldFile: !uuid 'df99fe9de7968f12445af59dadcf6ce4697e7b05'
+  /vendor/topthink/framework/src/think/route/RuleGroup.php:
+    newFile: !uuid '7b9deea4098e384334405e94fa4ef7417f649737'
+    oldFile: !uuid '94bf2b9821ab2b937af3860caa2ceb73fda08a2c'
+  /vendor/topthink/framework/src/think/route/RuleItem.php:
+    newFile: !uuid '1f9aa52a1016d0515d10947069d7a3f8f1f47d93'
+    oldFile: !uuid '3ca4885ebd3c914fa1130834bd90d6acc36eeb9f'
+  /vendor/topthink/framework/src/think/route/RuleName.php:
+    newFile: !uuid '0684367cd9e03723e7859ec2b4d1ba39ce3da855'
+    oldFile: !uuid '5ddc7a7b67f5597583b3e440d4e255ca71b05c13'
+  /vendor/topthink/framework/src/think/route/Url.php:
+    newFile: !uuid '8dd410cbe0bc08ae649d9f5fc768ad09342bf4f3'
+    oldFile: !uuid '270439edb41607285d834eeb6d02d6bc56fc06ce'
+  /vendor/topthink/framework/src/think/route/dispatch:
+    newFile: !uuid 'ac72b735809bc2e63e4ae5e51ba99cd1c27b2581'
+    oldFile: !uuid 'ec8cc8ea86727d39a89eaf4091db696e0af697ad'
+  /vendor/topthink/framework/src/think/route/dispatch/Callback.php:
+    newFile: !uuid '2044ef8e7f58ed42f4f1d3653d4f4de1b20e20d5'
+    oldFile: !uuid '7658c3dff08063074302e1f51ae6df71143938fe'
+  /vendor/topthink/framework/src/think/route/dispatch/Controller.php:
+    newFile: !uuid '611101bdef2026ca3b375cad205c5b0c8c296d98'
+    oldFile: !uuid '9182dec22dbe33b54ce3223a65a7404884fc92a5'
+  /vendor/topthink/framework/src/think/route/dispatch/Url.php:
+    newFile: !uuid '147f5cb75a9a8bfba0c0872de91dd9a0ec030867'
+    oldFile: !uuid 'eb89f5410c7890ac4b36abfc3326d674771ca9a9'
+  /vendor/topthink/framework/src/think/service:
+    newFile: !uuid 'de0f131122256ba38197ab5e571e51b1f22f603f'
+    oldFile: !uuid 'fa298d99e4c7e00bece2ba940f0c44bac16d75ad'
+  /vendor/topthink/framework/src/think/service/ModelService.php:
+    newFile: !uuid '87cfaf980af1703566e4f972376782dd43eca008'
+    oldFile: !uuid 'a212a58ec9c3abd2c456a8f222defcd98dfe56ec'
+  /vendor/topthink/framework/src/think/service/PaginatorService.php:
+    newFile: !uuid 'a01977d01ab5166f49c9b6f7068d1e486124d468'
+    oldFile: !uuid 'b13dc1dfb6c1007e0c86ca8c1bef1af0974076c4'
+  /vendor/topthink/framework/src/think/service/ValidateService.php:
+    newFile: !uuid '94d7638a6a00241b46f7767a186935a2de044834'
+    oldFile: !uuid 'd96dea01063911b0cbf858082f7ec91f5011d99b'
+  /vendor/topthink/framework/src/think/session:
+    newFile: !uuid '53fec840a5b9ca6f7bd27daeb33be52a11290bc2'
+    oldFile: !uuid 'ab08b2bd27ee11c7e62b0e4d2682d2e2eb785f5f'
+  /vendor/topthink/framework/src/think/session/Store.php:
+    newFile: !uuid '49e1ba909951a539d17b5bf62edb15160650a24e'
+    oldFile: !uuid '03ece29e3943c4e74c3e2b285ac418586e44b810'
+  /vendor/topthink/framework/src/think/session/driver:
+    newFile: !uuid '12f2fe3a3f77f9e057558fd6a81969dd34723eb8'
+    oldFile: !uuid 'f4f916a10594274e35eda7ebeb0a86bf85bfeba8'
+  /vendor/topthink/framework/src/think/session/driver/Cache.php:
+    newFile: !uuid '4fabc799aebecc69755255a2abed1e4b1475236d'
+    oldFile: !uuid 'c25e2efeec806ae98ff8ad10af8d008c251fa480'
+  /vendor/topthink/framework/src/think/session/driver/File.php:
+    newFile: !uuid '1a0734ed817ff2f37f704765e271634bd5153f52'
+    oldFile: !uuid '258458a6aeb933ab5aea29c93bce70769faf51e8'
+  /vendor/topthink/framework/src/think/validate:
+    newFile: !uuid 'e0ce06071bb8f338802ca192fd3370cdb2d03094'
+    oldFile: !uuid '3e02222df9bf71178657a90b073f4407f38fdce2'
+  /vendor/topthink/framework/src/think/validate/ValidateRule.php:
+    newFile: !uuid 'b741f5301764ce20c4bb156c502d0795be3354f6'
+    oldFile: !uuid '05e275fe3dbf65d8d7ea247e4ccce950929fb201'
+  /vendor/topthink/framework/src/think/view:
+    newFile: !uuid 'c8396fcf3d2cacf70e63c622d8d137d57a4cc9f2'
+    oldFile: !uuid '55abe0b6c0f43367d4a571f38f4b0197db8e667e'
+  /vendor/topthink/framework/src/think/view/driver:
+    newFile: !uuid '239899b16dde33355367bf044b5891871755930f'
+    oldFile: !uuid '389fee6299a79e12e467934c81a3e84a10b2ec9b'
+  /vendor/topthink/framework/src/think/view/driver/Php.php:
+    newFile: !uuid '9e6e54aa3eac2409aacca1544b1d4ecf50c8747d'
+    oldFile: !uuid '0713a56c4b0cfa6ffc0b3ad52e76204e0df60eb3'
+gitCommitId: !uuid 'ddb3e0f2849990b0657cd0f3e8185f939471d19b'
 renames: {
   }
-revisionId: 32
+revisionId: 33
