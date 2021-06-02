@@ -3,12 +3,18 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid '8028b78949ff172e271dbc9dc7db8ec9758bed3c'
-    oldFile: !uuid '6c7cbc7300078aac6e565e1e153e1a0b9c0c702e'
-  /app/common.php:
-    newFile: !uuid '6fba832b81343b357d0d888d7d59a537a5fa1215'
-    oldFile: !uuid '9a4fb58d3be5ad73cf82e5a27bc963b513032b10'
-gitCommitId: !uuid '6f4845e9dd1cc91e0354ae5c579af4c8f4edc157'
+    newFile: !uuid 'dd4c6b15b8b5d3a5a466d5e21ea7a22f6797edfc'
+    oldFile: !uuid '8028b78949ff172e271dbc9dc7db8ec9758bed3c'
+  /app/store:
+    newFile: !uuid '88d712f5229628d182751d670625002d63dd8e61'
+    oldFile: !uuid 'df2c3f363085498d3a0288eab8c129856ae727ad'
+  /app/store/model:
+    newFile: !uuid 'f99b260e61df0fdc95e03bfbbb3f729a0168110d'
+    oldFile: !uuid '48a958406bccdca92f8a85329aac89cb389d61a1'
+  /app/store/model/GoodsCategoryRel.php:
+    newFile: !uuid 'a845d42fb36c82f2387ad8cdeeedbcd16a232331'
+    oldFile: !uuid '473ab6e699e6a875f485496279c2db01c7e88415'
+gitCommitId: !uuid '8a93ab6ccf38ed71e681ae34403a387869cfd89a'
 renames: {
   }
-revisionId: 41
+revisionId: 42
