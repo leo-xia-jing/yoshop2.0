@@ -2,22 +2,19 @@
 branches: {
   }
 fileChange:
-  /public:
-    newFile: !uuid '450b7f48e9844d3a9dd5f38fb73082cb67e8532c'
-    oldFile: !uuid 'b754f50e57ea29fcad7ddddfa815f5c4ea9e9b14'
-  /public/install:
-    newFile: !uuid 'd43c92fd1c256265a2b0a8696089673de7a940a6'
-    oldFile: !uuid 'efb13f12b4a81ef1774ccd79081d78a5dc2d4098'
-  /public/install/data:
-    newFile: !uuid '7a0ac542f8390e5cd242a3e119a84004c2488d21'
-    oldFile: !uuid '6c4cd756ff32311bbbb880e420d991f78a930617'
-  /public/install/data/install_data.sql:
-    newFile: !uuid '2bf0ba761ef433836b5092f4edb173e156908a31'
-    oldFile: !uuid '0de6e563d3241bcd39b164834e165b79f723c255'
-  /数据库修改记录.txt:
-    newFile: !uuid '3fe46863eeff8699f98d89a1e6cec1427c1855c5'
-    oldFile: !uuid 'e8056b0928322bf70892ba87d896ea54acfd655f'
-gitCommitId: !uuid 'dea769674769342cfb835ba546f3903303f93b70'
+  /app:
+    newFile: !uuid 'b5b56a75a4c13b0b672f6ce0c6d4272c740c0c48'
+    oldFile: !uuid 'd111d9e831f1c2dd0fd3cd4998660bcaec0cf132'
+  /app/store:
+    newFile: !uuid 'baae8d229b53fc4d1d441dedf7d5e6c6296d2d69'
+    oldFile: !uuid '88d712f5229628d182751d670625002d63dd8e61'
+  /app/store/model:
+    newFile: !uuid '81a7dad89587b26e284ea94246bd40f949c02370'
+    oldFile: !uuid 'f99b260e61df0fdc95e03bfbbb3f729a0168110d'
+  /app/store/model/GoodsCategoryRel.php:
+    newFile: !uuid '6d788123f0841733ad59eb11a48aec20225460ff'
+    oldFile: !uuid 'a845d42fb36c82f2387ad8cdeeedbcd16a232331'
+gitCommitId: !uuid '0fe5645bd7d0e9f921992e704970de586f0518e6'
 renames: {
   }
-revisionId: 44
+revisionId: 45
