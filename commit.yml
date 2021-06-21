@@ -2,10 +2,43 @@
 branches: {
   }
 fileChange:
-  /version.json:
-    newFile: !uuid 'acbd75dd060322bee5116410acfb526062798150'
-    oldFile: !uuid '4928ba5355f34f7fa8c2ffdab895c8b03bf104b2'
-gitCommitId: !uuid 'bc6dff3592bdd41cb807a3d5fe4fdf4ff4e3b98b'
-renames: {
-  }
-revisionId: 49
+  /public:
+    newFile: !uuid 'ea7e3c7aebb97eef235b8330f3c26cb6030cb113'
+    oldFile: !uuid '450b7f48e9844d3a9dd5f38fb73082cb67e8532c'
+  /public/index.html:
+    newFile: !uuid '41e3df7731dd0ea55a028cf5f00d7658d24a7c9b'
+    oldFile: !uuid '5df08a5459c01789f58d22b88d98cc11d2b56c09'
+  /public/static:
+    newFile: !uuid '9e944892344bc25e4f395ceb7bb02410f8252c43'
+    oldFile: !uuid '2448868c062a51dc4747638ee963df781b724959'
+  /public/static/js:
+    newFile: !uuid '8703c6f4fb45fce8692b745bd9724c5d786beef5'
+    oldFile: !uuid '9da0b2dfe14fd909cd70c89bf99e6e46d9ec2090'
+  /public/static/js/index.520a97da.js:
+    newFile: null
+    oldFile: !uuid 'f0f54398aed495f3a7214464b512e98872d441bb'
+  /public/static/js/index.8e1ffbee.js:
+    newFile: !uuid 'e72c01fe0ccdf0fa00cdf8be9fff88218686c8d4'
+    oldFile: null
+  /public/static/js/pages-address-create~pages-address-update.80be2381.js:
+    newFile: null
+    oldFile: !uuid '99db722ab11af78cf2af48325a324dd33ad5c450'
+  /public/static/js/pages-address-create~pages-address-update.a0a7d180.js:
+    newFile: !uuid '11085c1a6cb91f31799a0161a865ce2123254322'
+    oldFile: null
+  /public/static/js/pages-login-index.5ac7d56f.js:
+    newFile: null
+    oldFile: !uuid '68fc4019d7b2d866921fd1700552e2d046a2acec'
+  /public/static/js/pages-login-index.ac303044.js:
+    newFile: !uuid '965a2f8f10592d702db80c59426caa3d39ad9a5d'
+    oldFile: null
+  /public/static/js/pages-user-index.922c05e3.js:
+    newFile: null
+    oldFile: !uuid '03e2ba483b2b1d41220cc2c6c850b0231e4a97d8'
+  /public/static/js/pages-user-index.a9957d14.js:
+    newFile: !uuid '94fdc5d7264c6ec58b0786eaba639b7d6a56eb83'
+    oldFile: null
+gitCommitId: !uuid '4626f81b5f5bb2068492494fe892fb38ab28513f'
+renames:
+  /public/static/js/pages-address-create~pages-address-update.a0a7d180.js: /public/static/js/pages-address-create~pages-address-update.80be2381.js
+revisionId: 50
