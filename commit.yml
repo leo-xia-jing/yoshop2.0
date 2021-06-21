@@ -2,37 +2,10 @@
 branches: {
   }
 fileChange:
-  /app:
-    newFile: !uuid '8cc88b683dbbdf419e0f65884641ca1bb5a93c62'
-    oldFile: !uuid '8e1e13b0b0f8d4b639bd37cd64a07858717cc30c'
-  /app/api:
-    newFile: !uuid 'dbc70fe06dbf5e0bff82f99c404c68c2216348a4'
-    oldFile: !uuid '8cf88ced5c76e23723ac123db8c1cd4d522a00c7'
-  /app/api/model:
-    newFile: !uuid 'db6bddabe381802639276b2d3b5a32b07425bcc9'
-    oldFile: !uuid '24b4bc595f1d3b9de876ee2a28a86a7c2e00afe6'
-  /app/api/model/UserOauth.php:
-    newFile: !uuid '8e93c4de8e85cdcb8b6cb20ab72af6dfb5969974'
-    oldFile: !uuid '5d544def07cc14dee8c1e75f1ca0d060257e27fb'
-  /app/api/service:
-    newFile: !uuid '1b2cfd49ad5c34d8b0874c9edc5d102492d576ef'
-    oldFile: !uuid '8f5b6a9bba500bc1ac313a88808b836a46f2090b'
-  /app/api/service/user:
-    newFile: !uuid '282bab17f077a36b984985c6fbda50c295db0739'
-    oldFile: !uuid '36061797b7f2d2cb36e906d50d42efa1a8b4f511'
-  /app/api/service/user/Oauth.php:
-    newFile: !uuid '32913ae2eff697136a354f6a32da925d710d7ec4'
-    oldFile: !uuid '3b32ee8bd19927276fd0c59b6a1bb220b01603de'
-  /app/common:
-    newFile: !uuid '339ee5da7d703c8655fc631d5f879a07d1832e2d'
-    oldFile: !uuid 'f4d2ad70e355c2dec2ed837c9d9349aff36fdd2b'
-  /app/common/model:
-    newFile: !uuid 'e856a9b427bd953328d59e414c2e66fbd2d3750a'
-    oldFile: !uuid 'f755556c2c7968255202920c4ed80fa163b93e77'
-  /app/common/model/UserOauth.php:
-    newFile: !uuid '7f4611cc955c9549ff1e952b26ffdc48d6e22fc2'
-    oldFile: !uuid '4e063ab7404533774ca2f28e33003ead1be7a2a0'
-gitCommitId: !uuid '60252addaf13a7ab50a03d44812422cf8e4ddbf9'
+  /version.json:
+    newFile: !uuid 'acbd75dd060322bee5116410acfb526062798150'
+    oldFile: !uuid '4928ba5355f34f7fa8c2ffdab895c8b03bf104b2'
+gitCommitId: !uuid 'bc6dff3592bdd41cb807a3d5fe4fdf4ff4e3b98b'
 renames: {
   }
-revisionId: 48
+revisionId: 49
