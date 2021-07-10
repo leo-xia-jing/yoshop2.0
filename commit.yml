@@ -3,30 +3,18 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid '479245f450bde2afed06c9f22d6ca65a73df2263'
-    oldFile: !uuid '4776a2f65b17b6d02d6b36eaeff59f8e3a6c3324'
+    newFile: !uuid 'de34af7bf75900ac8d5b290c790844b29ae82369'
+    oldFile: !uuid '479245f450bde2afed06c9f22d6ca65a73df2263'
   /app/api:
-    newFile: !uuid '3b6fad92a5d3192bb5ba9dd3033e22870c985f5a'
-    oldFile: !uuid '930a5d5cf488178df0e9c2657426601c12d56148'
+    newFile: !uuid '883b6e8b88d25ccd98119ceb53ea77a4d03e608f'
+    oldFile: !uuid '3b6fad92a5d3192bb5ba9dd3033e22870c985f5a'
   /app/api/model:
-    newFile: !uuid 'b1ff9abe6a4e1f124bfcbc343dd82acb93548e33'
-    oldFile: !uuid 'e56ac33818de40340287cfd05c6d16ff6de2d432'
+    newFile: !uuid 'a0f0e58cefe6f6c7c72685f869100c917acc99ca'
+    oldFile: !uuid 'b1ff9abe6a4e1f124bfcbc343dd82acb93548e33'
   /app/api/model/UserCoupon.php:
-    newFile: !uuid '4b4674af3b0dea897d87ed3b180c2154a49378ae'
-    oldFile: !uuid 'a7316a99777251347c8127725c325991de95ba08'
-  /app/common:
-    newFile: !uuid 'e8e774522711247fe536aec0e59d51a0f1fc0e40'
-    oldFile: !uuid '600b0214855ff4bea4d6ee963990a1fdcc6a4580'
-  /app/common/model:
-    newFile: !uuid '51968f23e855df6d503e650f7b96889486664791'
-    oldFile: !uuid 'd6ad6b8d04b5902516e03df0be524a92bcbe47aa'
-  /app/common/model/Coupon.php:
-    newFile: !uuid '15cb3fbc4cb3db208522b9f212c1a95dcfb55f2f'
-    oldFile: !uuid 'ba1a09b82fe9164f0e142e3eee36f68df59620c5'
-  /app/common/model/UserCoupon.php:
-    newFile: !uuid '3bb0e778587414cfb645ed1606e00fe3b04f46ce'
-    oldFile: !uuid '8f81bd9685efe0a4943b19bb8e0a74f0c69c12d6'
-gitCommitId: !uuid '56ca2615f9602b47855dbde9e8551f08ee165e5b'
+    newFile: !uuid '3c655b1d37a40229bee5ce102ee6c01d8beb2c98'
+    oldFile: !uuid '4b4674af3b0dea897d87ed3b180c2154a49378ae'
+gitCommitId: !uuid '62634fed911240a94ec134be19f4e44272876491'
 renames: {
   }
-revisionId: 63
+revisionId: 64
