@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f2ea2b0d24531b234b13638094b3d58c",
+    "content-hash": "24f2db67992aa9e0a0a2d7fa4d2ea49a",
     "packages": [
         {
             "name": "aliyuncs/oss-sdk-php",
@@ -770,6 +770,46 @@
                 "qcloud"
             ],
             "time": "2019-09-02T12:08:44+00:00"
+        },
+        {
+            "name": "qcloudsms/qcloudsms_php",
+            "version": "v0.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/qcloudsms/qcloudsms_php.git",
+                "reference": "48822045772d343b93c3d505d8a187cd51153c5a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/qcloudsms/qcloudsms_php/zipball/48822045772d343b93c3d505d8a187cd51153c5a",
+                "reference": "48822045772d343b93c3d505d8a187cd51153c5a",
+                "shasum": ""
+            },
+            "require-dev": {
+                "sami/sami": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Qcloud\\Sms\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "qcloud sms php sdk",
+            "keywords": [
+                "php",
+                "qcloud",
+                "sdk",
+                "sms"
+            ],
+            "support": {
+                "issues": "https://github.com/qcloudsms/qcloudsms_php/issues",
+                "source": "https://github.com/qcloudsms/qcloudsms_php/tree/master"
+            },
+            "time": "2018-09-19T07:19:17+00:00"
         },
         {
             "name": "qiniu/php-sdk",
@@ -1661,5 +1701,5 @@
         "ext-mysqli": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
