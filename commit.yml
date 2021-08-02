@@ -3,63 +3,27 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid 'fa05ae4f202a5085f12d5502c337ee8a25899daf'
-    oldFile: !uuid 'aacfc7bbcc91f938ca0c7b7430578c30257a0d69'
-  /app/admin:
-    newFile: !uuid '4335186bdc455db5b7274ae884f367e26fad13bb'
-    oldFile: !uuid 'd3c1fee24dfe5c59c309f07e607eb14d946e05d8'
-  /app/admin/model:
-    newFile: !uuid '24ce6bb8d33eed815f3af3f54cdaf87d88cd8a39'
-    oldFile: !uuid 'af63a771b19aeb803052d5764bfb56ec42cf4f4a'
-  /app/admin/model/store:
-    newFile: !uuid 'e4bd0e64eb4c3177d7f4069b0ca3b4fb97d4208d'
-    oldFile: !uuid '1d27d1dc148c1bf06671c67af716288c75197d6f'
-  /app/admin/model/store/Api.php:
-    newFile: !uuid 'd4ec3492822d1e47bbbb77976d95d4e23ef7b657'
-    oldFile: !uuid 'ed43d9ac5fc2be90fea1553f1a5d24c8ae4e2621'
-  /app/common:
-    newFile: !uuid 'fea37cbc33d6ee490488be4284cbacda4016031c'
-    oldFile: !uuid 'af75749a178cb14054cae3956ca33f9e92caba36'
-  /app/common/model:
-    newFile: !uuid 'b57e348486db8cf77ab02fc2617057095b930eef'
-    oldFile: !uuid '6b94d341c120dade9722ef523282f20926983787'
-  /app/common/model/store:
-    newFile: !uuid '21c1431b0d5393dee8f7405abc77fc8dd065d2df'
-    oldFile: !uuid 'ee55ffc0785e8fe0316248b60334e605a3e1dbe5'
-  /app/common/model/store/Menu.php:
-    newFile: !uuid '88491fc1bae168e11f9f0829160e8f48f11c4bf6'
-    oldFile: !uuid 'de2b53410f277fc971cbc531717d5728f0f76c8f'
-  /app/common/model/store/User.php:
-    newFile: !uuid 'b078835516144f100d45410053baed96f96f0a43'
-    oldFile: !uuid 'ebf95a823e11114e752b4c170f495256f366fd34'
-  /app/common/service:
-    newFile: !uuid '67145dad0adb0b5db88f9f36475cbd37809f9c02'
-    oldFile: !uuid 'eafd4393501c618d97d99ff8165834b9f27bceaf'
-  /app/common/service/store:
-    newFile: !uuid 'f8d8f21ec42e3c461d11cba3e2cdebbd5daa3f8e'
-    oldFile: !uuid 'c99854d9c4f478ca96b3d2fd463d5c0017e56ff1'
-  /app/common/service/store/User.php:
-    newFile: !uuid '324f1f2bbbedfd43b3dc33d445c4cb9e10c25689'
-    oldFile: !uuid '029778d281e7d370e0c47dae0c6ecbf564eb7e91'
+    newFile: !uuid 'd979b9d2f3effdbb3c273d1dcf13163ecb3f0c2b'
+    oldFile: !uuid 'fa05ae4f202a5085f12d5502c337ee8a25899daf'
   /app/store:
-    newFile: !uuid 'e8d897fa0bf98a20d1a00f3c74ebb16770944f34'
-    oldFile: !uuid 'b1377592da42295cc0befa2d85f1e48286002b18'
+    newFile: !uuid 'f56176b6a0e7aab421856e2f801cdbaf0ff04db6'
+    oldFile: !uuid 'e8d897fa0bf98a20d1a00f3c74ebb16770944f34'
   /app/store/controller:
-    newFile: !uuid 'fe6dff0b6dc5932c677e459c5d0ae2dc79b39ce3'
-    oldFile: !uuid '602cce0fc8e7a06d89d218c660431b5673f98614'
-  /app/store/controller/Passport.php:
-    newFile: !uuid 'c33f99d767ba89fc546b400c4b708043b3c5fca3'
-    oldFile: !uuid '01fffc28db051c6e403d8c70c58ee083739a8d30'
-  /app/store/service:
-    newFile: !uuid '728a9847fcd12cf7aadffff6f232810312980b63'
-    oldFile: !uuid '683fd6701bb23db0776c020aa227063791f9ef92'
-  /app/store/service/store:
-    newFile: !uuid 'd9b795722ff33778086af86431191ef8ddded931'
-    oldFile: !uuid '7d6a6a9106523f0a1b3e0cd191fa4683f26eaf3c'
-  /app/store/service/store/Role.php:
-    newFile: !uuid '11f4f5eb7149e9b0137893db7a113a17e37d426e'
-    oldFile: !uuid '60daecfa7bf1dc98036676015f116526d18a17bf'
-gitCommitId: !uuid '04f21d21993e81425fc2cfe590be4f66d999b8d8'
+    newFile: !uuid 'a1f71a4c3a662604b6ecde2453501e01d13a94a3'
+    oldFile: !uuid 'fe6dff0b6dc5932c677e459c5d0ae2dc79b39ce3'
+  /app/store/controller/Goods.php:
+    newFile: !uuid '4f4a489dfd0af5121f60a7ca5e66292bfabe88b6'
+    oldFile: !uuid '01eb5e3f6c738a6594c156aa8269107dfc250739'
+  /app/store/model:
+    newFile: !uuid 'a163bdac376c52f19ddc2f725a369bc32e226455'
+    oldFile: !uuid '0fbf1201b997723fee9188b7c0fd36474c5a7abe'
+  /app/store/model/Goods.php:
+    newFile: !uuid 'b17a6ff7cfcfe326031f40279789f02cee76779b'
+    oldFile: !uuid '035ec684ef3279fdb529fc66760ddd97b32e7721'
+  /app/store/model/Spec.php:
+    newFile: !uuid '397593ddc4159a50f2ae8edc32b200aa0299d182'
+    oldFile: !uuid '951e315459825005d38ec63bdb879cfd69d2c3de'
+gitCommitId: !uuid '326dd66cb8e9552824e88fab96fda8437a4bf22a'
 renames: {
   }
-revisionId: 76
+revisionId: 77
