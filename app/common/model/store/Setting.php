@@ -206,6 +206,12 @@ class Setting extends BaseModel
                             'AccessKeyId' => '',
                             'AccessKeySecret' => '',
                             'sign' => '萤火商城'   // 短信签名
+                        ],
+                        // 腾讯云
+                        'qcloud' => [
+                            'AppId' => '',
+                            'AppKey' => '',
+                            'sign' => '萤火商城'   // 短信签名
                         ]
                     ],
                     // 短信通知场景

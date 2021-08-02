@@ -47,6 +47,7 @@ class ComposerStaticInitb17d9cf9df517c3dd2f492a1c933c315
         'Q' => 
         array (
             'Qiniu\\' => 6,
+            'Qcloud\\Sms\\' => 11,
         ),
         'P' => 
         array (
@@ -91,9 +92,9 @@ class ComposerStaticInitb17d9cf9df517c3dd2f492a1c933c315
         ),
         'think\\' => 
         array (
-            0 => __DIR__ . '/..' . '/topthink/think-helper/src',
-            1 => __DIR__ . '/..' . '/topthink/think-orm/src',
-            2 => __DIR__ . '/..' . '/topthink/framework/src/think',
+            0 => __DIR__ . '/..' . '/topthink/framework/src/think',
+            1 => __DIR__ . '/..' . '/topthink/think-helper/src',
+            2 => __DIR__ . '/..' . '/topthink/think-orm/src',
         ),
         'edward\\captcha\\' => 
         array (
@@ -130,6 +131,10 @@ class ComposerStaticInitb17d9cf9df517c3dd2f492a1c933c315
         'Qiniu\\' => 
         array (
             0 => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu',
+        ),
+        'Qcloud\\Sms\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/qcloudsms/qcloudsms_php/src',
         ),
         'Psr\\SimpleCache\\' => 
         array (
