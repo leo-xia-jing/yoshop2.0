@@ -3,27 +3,18 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid 'd979b9d2f3effdbb3c273d1dcf13163ecb3f0c2b'
-    oldFile: !uuid 'fa05ae4f202a5085f12d5502c337ee8a25899daf'
-  /app/store:
-    newFile: !uuid 'f56176b6a0e7aab421856e2f801cdbaf0ff04db6'
-    oldFile: !uuid 'e8d897fa0bf98a20d1a00f3c74ebb16770944f34'
-  /app/store/controller:
-    newFile: !uuid 'a1f71a4c3a662604b6ecde2453501e01d13a94a3'
-    oldFile: !uuid 'fe6dff0b6dc5932c677e459c5d0ae2dc79b39ce3'
-  /app/store/controller/Goods.php:
-    newFile: !uuid '4f4a489dfd0af5121f60a7ca5e66292bfabe88b6'
-    oldFile: !uuid '01eb5e3f6c738a6594c156aa8269107dfc250739'
-  /app/store/model:
-    newFile: !uuid 'a163bdac376c52f19ddc2f725a369bc32e226455'
-    oldFile: !uuid '0fbf1201b997723fee9188b7c0fd36474c5a7abe'
-  /app/store/model/Goods.php:
-    newFile: !uuid 'b17a6ff7cfcfe326031f40279789f02cee76779b'
-    oldFile: !uuid '035ec684ef3279fdb529fc66760ddd97b32e7721'
-  /app/store/model/Spec.php:
-    newFile: !uuid '397593ddc4159a50f2ae8edc32b200aa0299d182'
-    oldFile: !uuid '951e315459825005d38ec63bdb879cfd69d2c3de'
-gitCommitId: !uuid '326dd66cb8e9552824e88fab96fda8437a4bf22a'
+    newFile: !uuid '66c7704a03b3db9f2818c399777a0149d37ea555'
+    oldFile: !uuid 'd979b9d2f3effdbb3c273d1dcf13163ecb3f0c2b'
+  /app/console:
+    newFile: !uuid 'c9195f35fac0b59da17270d2ba9bb342ddaa8e1c'
+    oldFile: !uuid '6c5827772f031b149be9b5ccb2e1eabcfc05a598'
+  /app/console/service:
+    newFile: !uuid '3424bbb30de20930a481e968b49e6a409a77efc0'
+    oldFile: !uuid '035cf0e12dda9c20ed3a54fdc932b0e67ffab2fd'
+  /app/console/service/UserGrade.php:
+    newFile: !uuid 'd8f452257110f84c89840f5ab0ef23f1fcade642'
+    oldFile: !uuid '9d097624f98c61270e9519bcec50e7ddb4eed28f'
+gitCommitId: !uuid '9e49073b5d101ebcecaac5d2eb9d2982ae73e513'
 renames: {
   }
-revisionId: 77
+revisionId: 78
