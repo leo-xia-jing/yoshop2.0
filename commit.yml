@@ -3,15 +3,15 @@ branches: {
   }
 fileChange:
   /public:
-    newFile: !uuid '055d414884ab16354d274cd9f31b194342b41bc7'
-    oldFile: !uuid '90899888593c8cc36afcfa3ce3ae65874fffe7be'
-  /public/admin:
-    newFile: !uuid '9fa6b2f991947c0727c0b0fde074e3ea410c31bf'
-    oldFile: !uuid '134bc0dc95d87af75d557f8e21c5389054135a0b'
-  /public/admin/config.js:
-    newFile: !uuid '5fe9ddbc33b65cd180b0f0fa191a616acb7e926d'
-    oldFile: !uuid '877f323c0bd78cff75e587660dab41d0fd305f3d'
-gitCommitId: !uuid '3a34ea4f0acda22e2963bac34eb33dac9a3af372'
+    newFile: !uuid '336ade227da98f0df5ec36455f7390d66ba762ae'
+    oldFile: !uuid '055d414884ab16354d274cd9f31b194342b41bc7'
+  /public/store:
+    newFile: !uuid '068d85de958016c546f8a61882f426d89f9818e2'
+    oldFile: !uuid '8ddd417eea474678eb08dfe5393e21240036fcad'
+  /public/store/config.js:
+    newFile: !uuid '339627a3be5ba0bb806f79af1221cd868e90754f'
+    oldFile: !uuid '7f7a5dea4eaf53c849a9e948340d8874d4835acd'
+gitCommitId: !uuid '008aba124617326242e700a17e5c859e8d541029'
 renames: {
   }
-revisionId: 83
+revisionId: 84
