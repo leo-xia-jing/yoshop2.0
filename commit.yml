@@ -2,232 +2,31 @@
 branches: {
   }
 fileChange:
-  /app:
-    newFile: !uuid 'c57fa0c8f835079ea01f1bc769fac12fc0b3461b'
-    oldFile: !uuid 'aaf9f935a6ba9f5d9302d8dbd6402bac9b598045'
-  /app/admin:
-    newFile: !uuid '65991bd88379052bce4ffd37995e08f9756789d0'
-    oldFile: !uuid '11fe67d3d7e4705148c02801ffef78118d36f226'
-  /app/admin/controller:
-    newFile: !uuid 'd229e8a98cff1565c3eddec7e807f8b6be02c2cf'
-    oldFile: !uuid '94efca65614408ec861299b8388143f4650982f7'
-  /app/admin/controller/Controller.php:
-    newFile: !uuid 'ee0e88effa8c682254fdff10e3815afcb3c556bd'
-    oldFile: !uuid 'bb5a50479a43f5b96b49392e241162d66cd60e10'
-  /app/api:
-    newFile: !uuid '409df746e7eb62bc5ebe63067b8ecbb60a985e88'
-    oldFile: !uuid '0e5a155f7a27dd25d5f15341ff7c28264dab30e8'
-  /app/api/controller:
-    newFile: !uuid '3a377b549847631e4028ad4000e0b58fa99dbb7a'
-    oldFile: !uuid '03c885d598090551a93abbe82fde764f0167191b'
-  /app/api/controller/Controller.php:
-    newFile: !uuid '8e599925e744dc0eadf01b45187238e41b82aacf'
-    oldFile: !uuid 'b7a74c47de58e434f4d13f60259dd769b503ef69'
-  /app/common:
-    newFile: !uuid 'f48b73b9702e6c6fa597b7371493ea9990e2159b'
-    oldFile: !uuid '6e0cddd6c0d03153aba1c685f8d640f425813e16'
-  /app/common/model:
-    newFile: !uuid 'ed31060f53ff926a0dd50d044d463d57cc1d255e'
-    oldFile: !uuid 'd42ed477d75e8e7a1a58b7b4e686779810d566d6'
-  /app/common/model/Article.php:
-    newFile: !uuid '71c1ed386f1d91ab7962019837c426c61cde78f5'
-    oldFile: !uuid 'b9ef644c3132462a49fa8275d79564d0bae0e961'
-  /app/common/model/BaseModel.php:
-    newFile: null
-    oldFile: !uuid 'f5d1b879f4e9c2c14df685611a7758a3732d67f5'
-  /app/common/model/Cart.php:
-    newFile: !uuid '6a748cb76a0bf49aaa748be4fc873ef250b7faed'
-    oldFile: !uuid 'df533f4c5a3d855fc5dbfee544c127a2e31a288f'
-  /app/common/model/Category.php:
-    newFile: !uuid '23159f7cda59a1218ccac13e08760ea8af49002b'
-    oldFile: !uuid '3114f1af95ae98fcd96ca86ad6c8e0071993cc93'
-  /app/common/model/Comment.php:
-    newFile: !uuid 'ebd81462b9eead0f1f1eab06465fc7fcdf420b6a'
-    oldFile: !uuid '88e17781e7202f304e90e282c0e744330fb86f51'
-  /app/common/model/CommentImage.php:
-    newFile: !uuid '642c6e789ed597098a99c8805c613332e1c6dc65'
-    oldFile: !uuid 'ddda1b1623ca32dea034fc8cf063fad48993b0e8'
-  /app/common/model/Coupon.php:
-    newFile: !uuid '326a20a7ed57af57fdfdeb54f49bed8d0ad27e99'
-    oldFile: !uuid '3c22b57c626a1235dc4bc48d145000593f06a59c'
-  /app/common/model/Delivery.php:
-    newFile: !uuid 'e3c13b5d8184b5f9f9aebd8b22e358f290e859ea'
-    oldFile: !uuid '7093efd05b15154dbd7bec1800e77c3eb451452a'
-  /app/common/model/DeliveryRule.php:
-    newFile: !uuid 'a74ae2af294d67345dc72fcdd83c37d8da98f48e'
-    oldFile: !uuid '23a1e51481b4905b48491d5b0dd19a60959ab223'
-  /app/common/model/Express.php:
-    newFile: !uuid '1a1632c746cf939299455f3dc5f14baee3b4cb5b'
-    oldFile: !uuid 'a824682ed190bcd32e3a5bb14895cea675d223fe'
-  /app/common/model/Goods.php:
-    newFile: !uuid 'b544cd6e45d529b78735edfca308b3ab633bd2c8'
-    oldFile: !uuid '7e75684b7ee790a3e1a24b4d9d591820f8bb7161'
-  /app/common/model/GoodsCategoryRel.php:
-    newFile: !uuid '3b4e56e14e3ef456cdc1f58e9754b219cffa6311'
-    oldFile: !uuid '50719cfa4d17283a8d1f76df7422a610b0d446d6'
-  /app/common/model/GoodsImage.php:
-    newFile: !uuid 'a8a7978d9baa3d38492e52b5eae2fdbd9aa175d4'
-    oldFile: !uuid '4daaf017afd6fcf15f74e35565e13c6baa6b449c'
-  /app/common/model/GoodsSku.php:
-    newFile: !uuid '211c1c4865094fdc5dc37da581aada1cc34a38c3'
-    oldFile: !uuid 'e510be56b2e5d24f8590ed2af90b4f031dfced19'
-  /app/common/model/GoodsSpecRel.php:
-    newFile: !uuid '7412ac243b5d002f584f870386e0f5a08710aee3'
-    oldFile: !uuid '6d98d2ca6fa1a5d77bcec6254728dcd487eb7c05'
-  /app/common/model/Help.php:
-    newFile: !uuid '6d483650749c1fc2aaced4814a508cce5c3002e2'
-    oldFile: !uuid '43830d519ca6011ffc63b03d986199a0003cee6f'
-  /app/common/model/Order.php:
-    newFile: !uuid '0221cf7bd05f6618ef980a42cd48593542a20f42'
-    oldFile: !uuid '2b85dc0c9b8f1a71c75ef659c98af41e6a2aaa1f'
-  /app/common/model/OrderAddress.php:
-    newFile: !uuid 'd87ce511efa5923765883345295949bb103b469e'
-    oldFile: !uuid '720cf4aea72bcb4bf347989f2893a29507364ad6'
-  /app/common/model/OrderGoods.php:
-    newFile: !uuid 'a8ec863fc39b5207cf3f33b9dc5ac05b54874614'
-    oldFile: !uuid 'e00d386be84381526ac349698f92c688fc8d45ae'
-  /app/common/model/OrderRefund.php:
-    newFile: !uuid '6261761da2120fc5dcd92e9b1e24260c348d7c55'
-    oldFile: !uuid '09428a4807bf6f6b1731f21b37cf8918ab35d16b'
-  /app/common/model/OrderRefundAddress.php:
-    newFile: !uuid '44385929d65d487f093e4cccef5dc34e0bfa6060'
-    oldFile: !uuid '40bfa1d2ad3e209912da8038c9f850b09f36ef19'
-  /app/common/model/OrderRefundImage.php:
-    newFile: !uuid 'f50b4ed6a7302b33592942424e7e7d1e4e1ce3c1'
-    oldFile: !uuid '5be585b3289582a077e6bb59d8b0135a9b13f1b1'
-  /app/common/model/Page.php:
-    newFile: !uuid '8b74b120147e0763e84685d8552984fa5322d2f8'
-    oldFile: !uuid '98f285c2d0d280b3146d68d6079fc518b9e8d5d8'
-  /app/common/model/Region.php:
-    newFile: !uuid '0195e2a592242d5c9e23d4045f7f6d9869741119'
-    oldFile: !uuid 'cb37c8db70ea357ff3d85241632a733206444ef5'
-  /app/common/model/Spec.php:
-    newFile: !uuid '2a5727c2008bb056ebfcbf1e94f622877597c276'
-    oldFile: !uuid 'f96faac293b17e082397d0252d8472ecbcb90bdf'
-  /app/common/model/SpecValue.php:
-    newFile: !uuid '0ccc659d5ebdffdcc5e8eb4a7564cf8eeffd02f2'
-    oldFile: !uuid '84688a63d90e2bff56e1f32cb874cb51ce3a9e96'
-  /app/common/model/Store.php:
-    newFile: !uuid 'ab3e3c7993d80d7ff07f88af5933ee65074b7a53'
-    oldFile: !uuid '4a820c1a29274e49d387345c4d8685bce4d34df3'
-  /app/common/model/UploadFile.php:
-    newFile: !uuid '89429f1ffa7c4caa6ab00cff7ed87f68a268b916'
-    oldFile: !uuid '8dc70817b2bbf10bd0b4368e487976bf6b73da46'
-  /app/common/model/UploadGroup.php:
-    newFile: !uuid 'c6d3cb606a4f39c808022a1e8c05a872d0d85991'
-    oldFile: !uuid '726479f4f3c865875b56b30e95105e51bec13ba2'
-  /app/common/model/User.php:
-    newFile: !uuid '122cbdb9be3a74445dbca3c85e706f48c974b520'
-    oldFile: !uuid 'd603a1aa65b508aa971b80b97bab8bf28e7fe73d'
-  /app/common/model/UserAddress.php:
-    newFile: !uuid '29e1d24e870ff47449f397a1ad5ca698a9c1ed92'
-    oldFile: !uuid 'e1464020196ae772d7da21fe4d4c8f3a86eaf0f9'
-  /app/common/model/UserCoupon.php:
-    newFile: !uuid '04f54f4b9698593189dcfcd9568638ca256ffeab'
-    oldFile: !uuid '8b6e394c266befe2952ab5038344d6a360473e66'
-  /app/common/model/UserOauth.php:
-    newFile: !uuid 'af0f2bbc2330284f9061cf82ee232d7c8381a7ad'
-    oldFile: !uuid '5f5e5839036826c29dc2a372861ad6d56b1822fc'
-  /app/common/model/Wxapp.php:
-    newFile: !uuid 'eae0685db70caed0244b15ded89c4f9f86c34483'
-    oldFile: !uuid '510b4d18dabcb7eec78ed24b609553c5d8cc996e'
-  /app/common/model/admin:
-    newFile: !uuid 'c57621e3b21a1880ed4ab971cc2bc4de0518e7f5'
-    oldFile: !uuid 'd897f01278175046393926307e9556638f61896d'
-  /app/common/model/admin/User.php:
-    newFile: !uuid 'fe17cd8182efb85f934104e566e38d7df2bddfd3'
-    oldFile: !uuid '879742434e1d24b536f96640ab3a4b1a7a11033d'
-  /app/common/model/article:
-    newFile: !uuid '8ad22de2c970519e2d6737d876372fc68bdccf47'
-    oldFile: !uuid '98f40a270d25d2ea985ace432df8da02f8d42bbf'
-  /app/common/model/article/Category.php:
-    newFile: !uuid 'ad27944ae57b5b2931aa7c53696ebefeb6c1e516'
-    oldFile: !uuid '51245018cfa1e505485075f06376447b23ab63c0'
-  /app/common/model/goods:
-    newFile: !uuid '95168bd3397000e3fdcb431b07a3249bcc70e08b'
-    oldFile: !uuid 'abfa12203b7ec83c93e849c5798869d6e6cc4783'
-  /app/common/model/goods/Service.php:
-    newFile: !uuid '3b5ac997c1788c9ac446d04401e90494b8bcf8ee'
-    oldFile: !uuid 'b5558c3796dfd2e3a40c1d0e174997678505cb09'
-  /app/common/model/goods/ServiceRel.php:
-    newFile: !uuid '9d3910618b8242c741d15cc77e467b6179231a2e'
-    oldFile: !uuid 'ca35551ae2bd76fb45f098783364b7147eafef46'
-  /app/common/model/recharge:
-    newFile: !uuid '21876271301c88a4eb5866fb584d6931bd70fd73'
-    oldFile: !uuid 'b684385cde02753ec0869cb5f2418e8a95fa0d60'
-  /app/common/model/recharge/Order.php:
-    newFile: !uuid '54f4b4c9dc6812ff41eb0794fb83c167e69d4c75'
-    oldFile: !uuid '0d590037549d2bd003e337e368c72d2a8188e691'
-  /app/common/model/recharge/OrderPlan.php:
-    newFile: !uuid 'd719240d21e1c02f2433344d77ccac0573ff0e38'
-    oldFile: !uuid '5a3b30205a7a345880969ff4b01b4580b3730ea2'
-  /app/common/model/recharge/Plan.php:
-    newFile: !uuid 'a20dd6327ca95e7c745ef7a0d4ee2341d9566268'
-    oldFile: !uuid '1d761d9de10d4e6980f64a98cce7412cbcab0456'
-  /app/common/model/store:
-    newFile: !uuid '392ab42fd0edbbe25c307528b00a84541596fd44'
-    oldFile: !uuid '6c97318e7924ae91e2e6b88bbc136fe3381821bb'
-  /app/common/model/store/Address.php:
-    newFile: !uuid '3591cfece6f41ac1211805b77f5b55be6d83e015'
-    oldFile: !uuid '677eec8c3398a40113adc7d68d1415695a939b87'
-  /app/common/model/store/Api.php:
-    newFile: !uuid '5671e725700d9ed06d9467ffff4633a3f32054b1'
-    oldFile: !uuid 'f95f7a36744f5b034fce97166c8948d1a505fd69'
-  /app/common/model/store/Menu.php:
-    newFile: !uuid '86008d74f3f353af468d1e934d31c732c9691ac1'
-    oldFile: !uuid 'c11f3efd3c52d2ffc78044098bc2d5d1cbb63dd9'
-  /app/common/model/store/MenuApi.php:
-    newFile: !uuid '0811507f596d468922400ffbf9e5ad3f7588a691'
-    oldFile: !uuid '5dcf64c62243087c17318d4555b065f39aaa6e35'
-  /app/common/model/store/Role.php:
-    newFile: !uuid 'f30756c05ff7f0ca1e561fa9cc67bd06a09cea45'
-    oldFile: !uuid '10cb889c5a2a1163346f2a3ab9892428b079f649'
-  /app/common/model/store/RoleMenu.php:
-    newFile: !uuid '9c8f67b4c1040b13d066b059fe83d7d2ce561db2'
-    oldFile: !uuid '83d55dbdacc4c962b2c1ecf7a11078d5643ec720'
-  /app/common/model/store/Setting.php:
-    newFile: !uuid '068f89367f33752b20fb0d80db3228c64054ddf5'
-    oldFile: !uuid '462d32a8df53e8334c0489e7015aca9266653a1c'
-  /app/common/model/store/User.php:
-    newFile: !uuid 'abb818f36580550b512628a0a38a6d5ac3a05068'
-    oldFile: !uuid 'aa6b78e0da95e545bd6a482653af5b5cef698305'
-  /app/common/model/store/UserRole.php:
-    newFile: !uuid 'f853fe1fb92f03ca7dfb723a860a043575873562'
-    oldFile: !uuid '119b137e55708d860ae2e5dda7e4eccb34970a69'
-  /app/common/model/user:
-    newFile: !uuid 'a498fbf7ff565e4d502d7edc0ac0564dd566ae5e'
-    oldFile: !uuid '9efbf9774ec151b83ce36773094533cc6843228e'
-  /app/common/model/user/BalanceLog.php:
-    newFile: !uuid 'ff4bd5087f7054fef339db2c777567c981df8dc9'
-    oldFile: !uuid '031d9156769e02b5bce9806661569bee27c3d8aa'
-  /app/common/model/user/Grade.php:
-    newFile: !uuid 'a0ce11d4400e140d1ba8136102eb7421733631ce'
-    oldFile: !uuid '9f222be65966b12c1e5536f7958865b5a799a771'
-  /app/common/model/user/GradeLog.php:
-    newFile: !uuid '18438b6d05e406800fe628a1f6fd1470ddb6cbb4'
-    oldFile: !uuid 'de057d1721f82cdb943d66dab520169da37cf0a0'
-  /app/common/model/user/PointsLog.php:
-    newFile: !uuid 'a0d6af51c47df8102988c58de46e879d25901dea'
-    oldFile: !uuid '87dcbe947d508850df3a88f5cbb0110b31e263bf'
-  /app/store:
-    newFile: !uuid 'f44bfe0d3a6466e528a4ff8e0c53c3a4b87c9de3'
-    oldFile: !uuid 'bd4e13c7c01ede36eb1ca043265aaea2a4335fb9'
-  /app/store/controller:
-    newFile: !uuid '5b216e171cd7f0508844bf00615a53b6d7e59fe5'
-    oldFile: !uuid '6eee7531d144c1627f3079796221709901e6eb75'
-  /app/store/controller/Controller.php:
-    newFile: !uuid '25471f9fed9091626be4c656d31f78de37761a10'
-    oldFile: !uuid 'a5eee023606fbb6401f3ee576126763c77e890b6'
-  /cores:
-    newFile: !uuid '0920231b506175bc3ca978e85a56c016e23d68e6'
-    oldFile: !uuid '771d5fe513d9c439bcac34b4752543291da1c7e5'
-  /cores/BaseController.php:
-    newFile: !uuid '33453560d2c866871c3cd9d10116c62aa720df61'
-    oldFile: !uuid '8152dddba9b351f3d8ebc522841f932854e121bf'
-  /cores/BaseModel.php:
-    newFile: !uuid 'fa2110657092e001cba3937601952a1a5a0630f1'
-    oldFile: !uuid '70f08d4401c357048fb3948ee572b2a0b05b854a'
-gitCommitId: !uuid '8cf4a97876427727c16d0fbd8bcdfb00adfb1f11'
+  /composer.json:
+    newFile: !uuid '90c56a7d016ff4c21d74572309a1cdafd1adbcaf'
+    oldFile: !uuid '025e61228516eb7d0b219e01655f12c16359ec07'
+  /vendor:
+    newFile: !uuid 'e2a61d8b08c94ba38e043ea8902471e2c76e95d3'
+    oldFile: !uuid 'b8813d99ba252361b25c21d03db0e5d480751518'
+  /vendor/composer:
+    newFile: !uuid '26d0ee2b90fe075fb216bd07660e080af2e52343'
+    oldFile: !uuid 'db3d97f7bc6e67ca46c41a581b268bc139e999d7'
+  /vendor/composer/ClassLoader.php:
+    newFile: !uuid '0cd6055d1b7943ea1a8c5f45630517b4f2d56b59'
+    oldFile: !uuid '1a58957d25d4a5fd00be8d9f086a4ece3bf8371e'
+  /vendor/composer/autoload_psr4.php:
+    newFile: !uuid '744598e004525aaad322f37d001fc70e49965d13'
+    oldFile: !uuid '4e2cae0f840dd9df2e100e9ac946be5926a2cf1c'
+  /vendor/composer/autoload_real.php:
+    newFile: !uuid '50fbdf93b1bd4eaab7d218f4d8910d52214230c9'
+    oldFile: !uuid '4f82ac208c15b0962f692174d92398b1d754f196'
+  /vendor/composer/autoload_static.php:
+    newFile: !uuid '8f6aa1dbdf371938dfd16ba39effeb506b41d0a3'
+    oldFile: !uuid '5ea4e748574a4688a07e27bcbda68694bdcbae3b'
+  /vendor/services.php:
+    newFile: !uuid '0a61ff0bc67ddaf663072734f05fbf79f8fc2b32'
+    oldFile: !uuid '841cea2f2f4c939136298f711d0fa596cb15eeef'
+gitCommitId: !uuid 'e6dd9a77b80d8cf973ee59dd32c8d806a7e2d34f'
 renames: {
   }
-revisionId: 87
+revisionId: 88
