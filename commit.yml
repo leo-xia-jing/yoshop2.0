@@ -2,16 +2,52 @@
 branches: {
   }
 fileChange:
-  /public:
-    newFile: !uuid '336ade227da98f0df5ec36455f7390d66ba762ae'
-    oldFile: !uuid '055d414884ab16354d274cd9f31b194342b41bc7'
-  /public/store:
-    newFile: !uuid '068d85de958016c546f8a61882f426d89f9818e2'
-    oldFile: !uuid '8ddd417eea474678eb08dfe5393e21240036fcad'
-  /public/store/config.js:
-    newFile: !uuid '339627a3be5ba0bb806f79af1221cd868e90754f'
-    oldFile: !uuid '7f7a5dea4eaf53c849a9e948340d8874d4835acd'
-gitCommitId: !uuid '008aba124617326242e700a17e5c859e8d541029'
-renames: {
-  }
-revisionId: 84
+  /app:
+    newFile: !uuid '78dcd9c292291f78a1ce94e6b4c61c5511f32e9e'
+    oldFile: !uuid '527b33577b8992eea78f1aef857648f62a139356'
+  /app/AppService.php:
+    newFile: null
+    oldFile: !uuid 'd9f164fa90750c4dfa4f0d8eea6cd576574b538f'
+  /app/BaseController.php:
+    newFile: null
+    oldFile: !uuid 'de1a9739613058e3d9186201d62bb4e0f5e6dc1b'
+  /app/ExceptionHandle.php:
+    newFile: null
+    oldFile: !uuid 'dbd67cefc575aa3c412f70f8ed5126d14630e25a'
+  /app/Request.php:
+    newFile: null
+    oldFile: !uuid '3d31afdfba535e5c824450881e28050b656b0f54'
+  /app/provider.php:
+    newFile: !uuid '049d9ef425f3f123daa03f35a61bc86f58461781'
+    oldFile: !uuid 'f50c3677c6b827818a4c444512c86c16f0bdcf3e'
+  /app/service.php:
+    newFile: !uuid 'f11d2314511648e5a7f99230e9d714f58547752e'
+    oldFile: !uuid 'f08a935b0761cd53866f171e80e24ee85bc48de0'
+  /cores:
+    newFile: !uuid '771d5fe513d9c439bcac34b4752543291da1c7e5'
+    oldFile: null
+  /cores/AppService.php:
+    newFile: !uuid '9a3fc8df11e6570e23aa6f6e06b7fc42ca56730c'
+    oldFile: null
+  /cores/BaseController.php:
+    newFile: !uuid '8152dddba9b351f3d8ebc522841f932854e121bf'
+    oldFile: null
+  /cores/BaseModel.php:
+    newFile: !uuid '70f08d4401c357048fb3948ee572b2a0b05b854a'
+    oldFile: null
+  /cores/ExceptionHandle.php:
+    newFile: !uuid '2823a21c5d005ad35d81f4173d61020356cb3963'
+    oldFile: null
+  /cores/Request.php:
+    newFile: !uuid '8aaf94badd269cbde4ad2ba930d64517089cef61'
+    oldFile: null
+  /cores/middleware:
+    newFile: !uuid 'f930d9d12a12f07c138622b6c6bbccc176abc007'
+    oldFile: null
+  /cores/middleware/AllowCrossDomain.php:
+    newFile: !uuid 'a28d664bc24605b32f4d060af1c74a8fea619dc7'
+    oldFile: null
+gitCommitId: !uuid '29dbc248908327f408e4ff0df29e21755c505484'
+renames:
+  /cores/ExceptionHandle.php: /app/ExceptionHandle.php
+revisionId: 85
