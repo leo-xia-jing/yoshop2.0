@@ -2,10 +2,10 @@
 branches: {
   }
 fileChange:
-  /version.json:
-    newFile: !uuid 'aec971afb9b0aa9ae4026d74a815fbfb97371b1c'
-    oldFile: !uuid '5c99fb32f380401889e79d1e9fe5c10dfe1f9920'
-gitCommitId: !uuid '573b9b3c0807a85c75b00bcbf3d2c5106e56e489'
+  /数据库修改记录.txt:
+    newFile: !uuid '581d7c5c4c398cd3e4bece131ac272989ffc1b5b'
+    oldFile: !uuid 'de07ae74ae9ac386b8a13a2170f766d948d6a3eb'
+gitCommitId: !uuid '6c5d7dd71491b392dd94a9d3639ea6806cec1c22'
 renames: {
   }
-revisionId: 107
+revisionId: 108
