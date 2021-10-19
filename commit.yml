@@ -2,10 +2,13 @@
 branches: {
   }
 fileChange:
-  /composer.json:
-    newFile: !uuid '0ef6025af9fc109961a2f3d37639aed883f625ad'
-    oldFile: !uuid '90c56a7d016ff4c21d74572309a1cdafd1adbcaf'
-gitCommitId: !uuid 'b4cdcf95a786d0361497ab67acd900e0fe4bdf03'
+  /cores:
+    newFile: !uuid 'a905f008caed8d3ce9968fd1cfcbc4db1b507fdf'
+    oldFile: !uuid 'f14c714bfbda2a2814c65dd3c3e558dfd927afcf'
+  /cores/AppService.php:
+    newFile: !uuid '122e4f87e48e450ba343bfcb131b71b5e7512219'
+    oldFile: !uuid '9a3fc8df11e6570e23aa6f6e06b7fc42ca56730c'
+gitCommitId: !uuid '770ec8f9dcd978220678e32b2466fb86d73e10aa'
 renames: {
   }
-revisionId: 92
+revisionId: 93
