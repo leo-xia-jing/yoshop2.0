@@ -3,18 +3,24 @@ branches: {
   }
 fileChange:
   /public:
-    newFile: !uuid '7c680847b57a458957aa5cbfa2c64c0fa1a1fcb5'
-    oldFile: !uuid '336ade227da98f0df5ec36455f7390d66ba762ae'
+    newFile: !uuid '973d95af055d3d415e20b78b58f2e825379fa93d'
+    oldFile: !uuid '7c680847b57a458957aa5cbfa2c64c0fa1a1fcb5'
   /public/install:
-    newFile: !uuid '3daf75b8d97972e8f035edb94f2f4b1c884bda36'
-    oldFile: !uuid '57718d661b421db92bc291a6ba5b8efa4401b354'
-  /public/install/templates:
-    newFile: !uuid '608787ec59079331f95fc5d10ab1cef9db397157'
-    oldFile: !uuid 'd99a40004d33037569974723813ef0a5b47e27c4'
-  /public/install/templates/step_1.php:
-    newFile: !uuid '0e727f74c07bfb52b8b31492de6d226ee40b0013'
-    oldFile: !uuid '81a6eb6da36effbfc0c72a5ed34462e80300db79'
-gitCommitId: !uuid '0f97897289520c1cdfca2e4bcaef15e1e96026dd'
+    newFile: !uuid '4a1d6d972114206ffacc90cf2125d4140ba84829'
+    oldFile: !uuid '3daf75b8d97972e8f035edb94f2f4b1c884bda36'
+  /public/install/data:
+    newFile: !uuid '51e7cf1b9d271835ae92e31ef04aeb6e032eea1c'
+    oldFile: !uuid 'c3b8bb1182ccf66ab3f1bf8182defb5fc348fcfc'
+  /public/install/data/install_data.sql:
+    newFile: !uuid 'c30cca7f28c027ece7609c59642eb19d4a4321b1'
+    oldFile: !uuid 'b00ebc4470172320973a7451f105d14e6cbc78c6'
+  /public/install/data/install_struct.sql:
+    newFile: !uuid '6ecd5e5f84621f0af75abc9814e8c6c626320fb2'
+    oldFile: !uuid '9b2c529cd4aa852ab497650bf215bf7ae7a29041'
+  /数据库修改记录.txt:
+    newFile: !uuid 'ecf9c82ac1e5674e5c872301670a1dca807f6c73'
+    oldFile: !uuid 'bbab7b59f8cbd66eda72f5219c1da680fa2ea8f9'
+gitCommitId: !uuid '4d88803be5005820c2c33872035e3e1e73d998aa'
 renames: {
   }
-revisionId: 98
+revisionId: 99
