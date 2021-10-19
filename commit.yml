@@ -2,79 +2,22 @@
 branches: {
   }
 fileChange:
-  /app:
-    newFile: !uuid 'c2855444d7e8a64fc2172e15331e891e1d74bd4e'
-    oldFile: !uuid 'a5ebdc3378451e7ab6b38753da29d1e108097eda'
-  /app/common:
-    newFile: !uuid '997d1f039b20f85fa063595fe05ed1cbfee9401b'
-    oldFile: !uuid '69969b195a07ead89c983180c3599a7b30248f8b'
-  /app/common.php:
-    newFile: !uuid '201bab6536acef6ce5d009d489f43df511e63737'
-    oldFile: !uuid 'd4933961d6f60e9b0d0993c0bd76207ba0429723'
-  /app/common/enum:
-    newFile: !uuid 'c8c1ee151ec85bc1177748a42d726e3f3aada918'
-    oldFile: !uuid '9a9fc4edffb32966b8c37040df6acd705d52bf5f'
-  /app/common/enum/order:
-    newFile: !uuid 'b225b381b7dd2c2e4c056349404470ee31e13ec8'
-    oldFile: !uuid 'e7850e692258401077b8468e04202ee536d6d88c'
-  /app/common/enum/order/ReceiptStatus.php:
-    newFile: !uuid '9a063b0fc623b699226fbed529e937425be90c90'
-    oldFile: !uuid 'cb552a2dff01a8b1a74d80e1bdf6fa9012d31e39'
-  /app/common/enum/order/export:
-    newFile: !uuid '66622ca1179003374ff2fde37a80f4a93d75ee1b'
-    oldFile: null
-  /app/common/enum/order/export/ExportStatus.php:
-    newFile: !uuid '6dc3d055dc5e4bf6268540044bb244ecb33822c8'
-    oldFile: null
-  /app/common/model:
-    newFile: !uuid '421cd9f4b4cb7d302393700105c81f86674de6f6'
-    oldFile: !uuid '0d2aa24c0eb632ba97a6163cb8a29e15cfb6f351'
-  /app/common/model/OrderAddress.php:
-    newFile: !uuid '65e0fc1fd2f6d84c6d45c0d0b916edcff6dfdd89'
-    oldFile: !uuid 'd87ce511efa5923765883345295949bb103b469e'
-  /app/common/model/UploadFile.php:
-    newFile: !uuid 'cd9c9c279c5ffffc98826cb975683dc94a653426'
-    oldFile: !uuid '89429f1ffa7c4caa6ab00cff7ed87f68a268b916'
-  /app/common/model/order:
-    newFile: !uuid '778847abe2c49277b74d6c6d5904c08bd018ba7f'
-    oldFile: null
-  /app/common/model/order/Export.php:
-    newFile: !uuid 'dcb3080e655b88df521d31d54bf1f5983f259f25'
-    oldFile: null
-  /app/store:
-    newFile: !uuid 'ac8be6e2acc96db6184668fc1c6240137d6ef483'
-    oldFile: !uuid '8c75edfc8f2c0d1ed38fd36ef2cca9aa5dc35ad5'
-  /app/store/controller:
-    newFile: !uuid '7cf8d1563ad26b70b790a3de61254ae39e64648b'
-    oldFile: !uuid 'a11cf4bd9331ff2c9deb7ce27bd59eaf981979bf'
-  /app/store/controller/order:
-    newFile: !uuid '51cbde2edad30a03d77e0c1a6bf4695d8b7d812e'
-    oldFile: !uuid '9478a16b48659780927a58529dd6063696d2b776'
-  /app/store/controller/order/Export.php:
-    newFile: !uuid '5b77f587f923933d8b34d257eee9397484644ce5'
-    oldFile: null
-  /app/store/model:
-    newFile: !uuid '04ee7bcccb4e7b42f39ba5212c013a8f938827cf'
-    oldFile: !uuid 'b85e4bd78c9e9d928d4dfc25d26cf33f0f7120e3'
-  /app/store/model/Order.php:
-    newFile: !uuid '01bc2df1aa8e0364ca5aa3fbb76607425b6434ea'
-    oldFile: !uuid 'b46907995f8e1f721a24aec7c5922cf631d65298'
-  /app/store/model/order:
-    newFile: !uuid '1a20a8c12ca08bd644525483db234d4d2be94b4e'
-    oldFile: null
-  /app/store/model/order/Export.php:
-    newFile: !uuid '02357e3fdeabf72dc1797efe39fbd5d16d2c98e2'
-    oldFile: null
-  /app/store/service:
-    newFile: !uuid '288b4a6e2f2a190b2b24c51a8a1cb77e273d23b0'
-    oldFile: !uuid '762a18325db576a9363073eba1d297270e04cb55'
-  /app/store/service/order:
-    newFile: !uuid 'b702ce7a524b3745b5a0e2c78c6d136187ed87fc'
-    oldFile: null
-  /app/store/service/order/Export.php:
-    newFile: !uuid '96df41fbcd8da8232648e798bf1f44797e57e777'
-    oldFile: null
-gitCommitId: !uuid '3088a3b5cba47c26c8d7f8a3457b8ea33daca24e'
+  /public:
+    newFile: !uuid 'd66556afd48360b6477c85ad1081e5428638cad6'
+    oldFile: !uuid '973d95af055d3d415e20b78b58f2e825379fa93d'
+  /public/install:
+    newFile: !uuid '81f069f87828964f24f1904e1de15d8c44cd7930'
+    oldFile: !uuid '4a1d6d972114206ffacc90cf2125d4140ba84829'
+  /public/install/data:
+    newFile: !uuid '1da14fd0185085edf828575a5eeb43143eba9685'
+    oldFile: !uuid '51e7cf1b9d271835ae92e31ef04aeb6e032eea1c'
+  /public/install/data/install_struct.sql:
+    newFile: !uuid '3fa4757b85dac97643a9bc12b86ba382e9d836ea'
+    oldFile: !uuid '6ecd5e5f84621f0af75abc9814e8c6c626320fb2'
+  /数据库修改记录.txt:
+    newFile: !uuid 'de07ae74ae9ac386b8a13a2170f766d948d6a3eb'
+    oldFile: !uuid 'ecf9c82ac1e5674e5c872301670a1dca807f6c73'
+gitCommitId: !uuid 'acbc8156116aeafc56021c96d45664893c056a9b'
 renames: {
   }
-revisionId: 101
+revisionId: 102
