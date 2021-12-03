@@ -3,39 +3,24 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid 'bbdb875f0417e9ac79d9524e0838ddf7fe21ed47'
-    oldFile: !uuid '3fef7c8ced3ee08280df993c563c50e9bedf0715'
-  /app/common:
-    newFile: !uuid '24ff71b80abb28bb2baa13bc85c60a96d8b950e1'
-    oldFile: !uuid 'acd0bc1fc67cf5e7a94198d1baa508eeadf10f39'
+    newFile: !uuid '5b889efc28fa27830c56b94141aafcfc586388b8'
+    oldFile: !uuid 'bbdb875f0417e9ac79d9524e0838ddf7fe21ed47'
   /app/common.php:
-    newFile: !uuid '2c2a68f3cf7c2aa7dea1cc1b49cbefb022b1bf02'
-    oldFile: !uuid '201bab6536acef6ce5d009d489f43df511e63737'
-  /app/common/exception:
-    newFile: !uuid 'eed74cb57bf81b86a18e58ace2d11c5cd9f6405c'
-    oldFile: !uuid 'abd6b82cd96fa560503610d1a94d39e6643552a5'
-  /app/common/exception/BaseException.php:
-    newFile: !uuid 'ef7234244781e5730fc7c5408d12b5481c510c77'
-    oldFile: !uuid 'f2d97334d9e76a974c16a958fcc18179093f369f'
-  /composer.json:
-    newFile: !uuid '92b486dce72420921f255e358e03aa4aefac96d3'
-    oldFile: !uuid '593673a755f96d1f9d482c3f1155bd323ca24b61'
+    newFile: !uuid '12a25c8d2264e451da649d13f6ef2a0b2c5ab37b'
+    oldFile: !uuid '2c2a68f3cf7c2aa7dea1cc1b49cbefb022b1bf02'
+  /config:
+    newFile: !uuid '67f5c6784e0ec0f1b0e8bad27c5e007b24e8423c'
+    oldFile: !uuid 'd7f70de1f925ce41e0a6be8640bc6602e155e2db'
+  /config/trace.php:
+    newFile: !uuid '87caae99fa587c0a0d4718a483f3cb5e3a52a0e4'
+    oldFile: !uuid '0fd4b4c0e9852ca6ecfac5d87638df34afc674fd'
   /cores:
-    newFile: !uuid '28a074cf17cf8028b43ff234751e4b1c1364da31'
-    oldFile: !uuid '8b0d76b2efc5698e9bbff841fba3e56c4371cb11'
+    newFile: !uuid '6125602bdefa1006c575e58a3ed3b80f0bdca6d8'
+    oldFile: !uuid '28a074cf17cf8028b43ff234751e4b1c1364da31'
   /cores/ExceptionHandle.php:
-    newFile: !uuid '0f7502081e68894020c8ae1676aca33cd94295e0'
-    oldFile: !uuid 'e11405373c7b4ac4cb442ac1a40b067091110089'
-  /cores/exception:
-    newFile: !uuid '35fc179c00d3767f722ed79cad536adae9b110f3'
-    oldFile: null
-  /cores/exception/BaseException.php:
-    newFile: !uuid 'b5c1ade4c2829ab5bbcecf4ba7ada9dcdaf51664'
-    oldFile: null
-  /cores/exception/DebugException.php:
-    newFile: !uuid 'e8d85afb06c74d9ffe581c15d4cd1c45237fce98'
-    oldFile: null
-gitCommitId: !uuid '90d0cef94bd02ebf577990b7260196c3a879207f'
+    newFile: !uuid 'ad158fd7bea6f17fd03e4e01ba5ce7d7dc9f0dcc'
+    oldFile: !uuid '0f7502081e68894020c8ae1676aca33cd94295e0'
+gitCommitId: !uuid 'dd4eac46c0919800dca2f7f55ea003b47bdf92c6'
 renames: {
   }
-revisionId: 128
+revisionId: 129
