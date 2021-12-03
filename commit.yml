@@ -3,33 +3,18 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid 'e15a24474b0d224f070f9c69d84f170fe81a23be'
-    oldFile: !uuid '0ef1f7356297ab0525f96147a721a19e49b7832c'
+    newFile: !uuid '0b881f347b93081af6b8840b182ccb867385b078'
+    oldFile: !uuid 'e15a24474b0d224f070f9c69d84f170fe81a23be'
   /app/api:
-    newFile: !uuid '5db2aeadcbc0eae85a7a1f2a8c0070554da1225c'
-    oldFile: !uuid '471b609db5e3578e0c526d0ffd2019bd6126466e'
+    newFile: !uuid '9e1dd17e400f3d96fd12b044a0049512e32431bd'
+    oldFile: !uuid '5db2aeadcbc0eae85a7a1f2a8c0070554da1225c'
   /app/api/model:
-    newFile: !uuid '4bade5b6e520077cdf9fe237c3bb6cc91b84f72a'
-    oldFile: !uuid '0c04883afc1d7e7668e4e3e42b8aa989ab912a40'
+    newFile: !uuid '9d06cc0eb675ac41fb90ea320f119d9f6f9e812f'
+    oldFile: !uuid '4bade5b6e520077cdf9fe237c3bb6cc91b84f72a'
   /app/api/model/UserCoupon.php:
-    newFile: !uuid 'dc4ff1a70057c512238ec59260a65ecc473ce501'
-    oldFile: !uuid '84c1ea0d811b99c9dd97e4d41fdbc1eba8e6ecee'
-  /app/console:
-    newFile: !uuid '6f644e178e36b69d13a1760ec004502fb1cff144'
-    oldFile: !uuid '16cc16e0d905ec093f7971b9a04a6908d56d1294'
-  /app/console/model:
-    newFile: !uuid 'f2932bea88f7cedddb5f0ca4a29504568d9b7ced'
-    oldFile: !uuid 'a2d365d6914da4f96a2338ab8b7d7980a7452c12'
-  /app/console/model/UserCoupon.php:
-    newFile: !uuid 'b4d545fece36722bd61f107ae98aff2844816c01'
-    oldFile: !uuid 'f08ca7de312aa2a8ab972d638b4850a51e25aa68'
-  /app/console/service:
-    newFile: !uuid '71b9d32a78c98e455f33a755ad1ad3ffbac54a7c'
-    oldFile: !uuid '20a45d48a4c376fa05352778e20e5c020fa63966'
-  /app/console/service/UserCoupon.php:
-    newFile: !uuid 'b9ec06e0bac4bc2743503e08ab99e22bcb95ddf6'
-    oldFile: !uuid '813a9ea26b65114031c6b89c13d8846365f6b0f9'
-gitCommitId: !uuid 'fbacddec309c4374aa629100b56b2dc3800e7cb1'
+    newFile: !uuid 'd8195a88af72c62a891d65f4bfbddeb9c44f5ee8'
+    oldFile: !uuid 'dc4ff1a70057c512238ec59260a65ecc473ce501'
+gitCommitId: !uuid '108f2189ad45cda971424a925e26949bf2eef99c'
 renames: {
   }
-revisionId: 138
+revisionId: 139
