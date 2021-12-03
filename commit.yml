@@ -3,27 +3,33 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid '86be659b751410579c63e0ee88ddc366e0c7063b'
-    oldFile: !uuid '5b889efc28fa27830c56b94141aafcfc586388b8'
-  /app/console:
-    newFile: !uuid '16cc16e0d905ec093f7971b9a04a6908d56d1294'
-    oldFile: !uuid 'faf6342aec3ab8c960f494525997aba8daa3f307'
-  /app/console/command:
-    newFile: !uuid 'b4b24641c09dd0eb67713defc84a63c99f260191'
-    oldFile: !uuid '9bf0b1b68c68c1ad94bbcbf9320597e5c9afa745'
-  /app/console/command/Timer.php:
-    newFile: !uuid 'ee66f0b36aff808d34d0566e16dfb3d6a0c93705'
-    oldFile: !uuid '34f61146949c013bec379f03d73df59543395f15'
-  /app/console/task:
-    newFile: !uuid 'a4d49bb8cbe90f9d1be198f8dbb13cce1488ff2f'
-    oldFile: !uuid 'c354c2222ccb181c6fdb61257430c7c2b4a8a8e1'
-  /app/console/task/Store.php:
-    newFile: !uuid '9d53aa8f6689763940f2b0716699fc7d606506c6'
-    oldFile: !uuid 'ab7c41af06a6e4366453cb2a4eb725c11331f136'
-  /app/console/task/Task.php:
-    newFile: !uuid '6afadd5429e75e02007ed847401d003affde5ac6'
-    oldFile: !uuid '06e7a617585cc73ce12a5eab479e10798a9a4d89'
-gitCommitId: !uuid '97c3f0fd70aa3de3437be92d3c380a19d1882ff0'
+    newFile: !uuid '7045b98d802a2e63560780fdc34768e995f9fe57'
+    oldFile: !uuid '86be659b751410579c63e0ee88ddc366e0c7063b'
+  /app/common:
+    newFile: !uuid '48bf703f0e7b2dd74a67c0a24e9ae20a29591fcb'
+    oldFile: !uuid '24ff71b80abb28bb2baa13bc85c60a96d8b950e1'
+  /app/common/library:
+    newFile: !uuid '84a2821dfb311bc4dfbb635af1e40fadfcb80974'
+    oldFile: !uuid '14742073fd68c7d117e977af29418d23c48591bc'
+  /app/common/library/sms:
+    newFile: !uuid 'd4f7cf51851ee88c6c50428d70e900499c5cdb59'
+    oldFile: !uuid 'd86c3615d658f1a61f7ef83d6bd712df7ab8006b'
+  /app/common/library/sms/engine:
+    newFile: !uuid '86272a3068e3a496d94893b9edddeb3cabac79f1'
+    oldFile: !uuid 'ebec9ff1e2c125ffb3c5cb000344566d78314c67'
+  /app/common/library/sms/engine/Aliyun.php:
+    newFile: !uuid '0a5d0eff07ae61b669128cb24db39ec170fe4777'
+    oldFile: !uuid 'cd01b6d7a05c7462f8bbe947a2761acade27dee3'
+  /app/common/model:
+    newFile: !uuid '75dc89192a471e7e6f049487931cb9f06d85c071'
+    oldFile: !uuid '6d2d2ac4966c04f98b670d26b129ba339ec94596'
+  /app/common/model/store:
+    newFile: !uuid 'da4523eaba19c4b7b3ba29ca7e88d139e5502ca1'
+    oldFile: !uuid 'b716f401aff789af97d29bdd3629f940a84894ad'
+  /app/common/model/store/Setting.php:
+    newFile: !uuid 'f8fe5e751a6c757379952e2433f5e342828a226d'
+    oldFile: !uuid '6002bbcd2b028ba1469a023703e8f8415e1875f7'
+gitCommitId: !uuid '14cb0f287bf6a772e0cfb9c98234aa021eb27255'
 renames: {
   }
-revisionId: 130
+revisionId: 131
