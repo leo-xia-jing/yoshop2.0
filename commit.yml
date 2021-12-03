@@ -2,16 +2,10 @@
 branches: {
   }
 fileChange:
-  /vendor:
-    newFile: !uuid 'b77ceb364e9c43956dfde27b13cb0fcf328ad9d9'
-    oldFile: !uuid '72feece5e2c3275ed83f3dc1028aa0e0e4f4629f'
-  /vendor/composer:
-    newFile: !uuid 'd9dc0fa30d5caa86ab397cdef939351642d985da'
-    oldFile: !uuid 'ea6eed6e52c76bfbdd5404cb77b5ff600467145b'
-  /vendor/composer/platform_check.php:
-    newFile: !uuid '63417f8db2da96a3da7c614fb9f23b352c180a71'
-    oldFile: !uuid 'a8b98d5ceb1e2651c6b52984bfd44cfb97347d10'
-gitCommitId: !uuid '1d6934c6eccf5e811d1087e8b3ac6ef57628bb86'
+  /更新日志.txt:
+    newFile: !uuid '08b8b9e823816c95b8ac31fb5e0afdf44edaa44a'
+    oldFile: null
+gitCommitId: !uuid '561cc9d4531b052ba52c9a9e7e13a4a3729d4d6a'
 renames: {
   }
-revisionId: 163
+revisionId: 164
