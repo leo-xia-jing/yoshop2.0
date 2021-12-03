@@ -3,27 +3,27 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid '1b1f8400fbfc22a91a2ceff4270e150b62da39f8'
-    oldFile: !uuid 'b0d48c3e69d9b94f5be6e603e1efac669682a5b9'
-  /app/api:
-    newFile: !uuid '43da27ea2566c51cf3ad172172dfd5068bd79cce'
-    oldFile: !uuid 'df363d00bdc03f3456202833b69def18b28e650f'
-  /app/api/controller:
-    newFile: !uuid 'e323d31fb5e186ba04ec7c95912522c705a2a6f3'
-    oldFile: !uuid 'a04b06ee14b61036fe6ff5bb5e49207b5fbbcbd1'
-  /app/api/controller/Captcha.php:
-    newFile: !uuid '4e38331d3059345c4c661f29e5f6c2233624470b'
-    oldFile: null
-  /app/api/service:
-    newFile: !uuid '23f0fb9c68fa957d39da2803c8c5b82f38cfd054'
-    oldFile: !uuid 'b0e5f01cbdfd81a0d8eb7e326ab6d612025b3ad5'
-  /app/api/service/passport:
-    newFile: !uuid 'ac33852fc0dd8e187633218b21d5982964fee1f5'
-    oldFile: !uuid '51af29443e40a043a433fc19424feda28cc9da78'
-  /app/api/service/passport/SmsCaptcha.php:
-    newFile: !uuid '57f866bea9a20b27c3957340fcbb76213c863438'
-    oldFile: !uuid '92f15d651651229569275f67ef5e62639c047c98'
-gitCommitId: !uuid 'add5914a1090f2625fd50850d3f2ba58d5647b88'
+    newFile: !uuid 'a80e568b30acb51f6e3fa966eb5d64e674667116'
+    oldFile: !uuid '1b1f8400fbfc22a91a2ceff4270e150b62da39f8'
+  /app/store:
+    newFile: !uuid 'd0a99b1919fbddbea4d81ba4f0bc9aaa707ce613'
+    oldFile: !uuid 'ee25bae936f1cb34f2c8597c653b25b9cbb7a56e'
+  /app/store/controller:
+    newFile: !uuid '7eec0bfa4e62612800d462ad9ca38eaa1efcf943'
+    oldFile: !uuid 'ec4d9496f4c08f35828998d718f50fddb6ac365b'
+  /app/store/controller/Setting.php:
+    newFile: !uuid '00e3eec49a880bc0bc95899b523ba7076d904162'
+    oldFile: !uuid '0798b9c36fba8fe5ea4aeddbbfc1f47bbb53e938'
+  /app/store/model:
+    newFile: !uuid 'c19a0e45178f3c8f9c16eba0a7247665311b68d5'
+    oldFile: !uuid '96b97c0a6ccf55b4cb87459bbd4e9150fcab4f3d'
+  /app/store/model/wxapp:
+    newFile: !uuid '87c09abd4ffba14c805443161207cde258c4f00e'
+    oldFile: !uuid '8ff4a63a3436c98391de8ce03cb3a10e113c8cdd'
+  /app/store/model/wxapp/Setting.php:
+    newFile: !uuid 'e4fd9f0cb7d3177cc5ab77e054ca16886c5c1f90'
+    oldFile: !uuid '3e2a3d9ffbf2aa9d4da7a283069bc7ec53c5bd0f'
+gitCommitId: !uuid '08fa8d2fdd38a99ce9200a1c7cab221c253d188f'
 renames: {
   }
-revisionId: 144
+revisionId: 145
