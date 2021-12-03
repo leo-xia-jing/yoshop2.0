@@ -3,60 +3,69 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid '18527204f3653b6b86f8032b9b131d6545131f3f'
-    oldFile: !uuid 'f306ec04cbf6cfd297a5db3151cefa6a4f01f420'
+    newFile: !uuid '2c127c7b741ff1fda5813ee51eed5cbcb01c6306'
+    oldFile: !uuid '18527204f3653b6b86f8032b9b131d6545131f3f'
+  /app/api:
+    newFile: !uuid '03bfebfda37cad45ea96b96676a600022d0f3879'
+    oldFile: !uuid '4b3c63eef5a0722717f5327e9d63b1a6edc1c29c'
+  /app/api/model:
+    newFile: !uuid '1cc2ce49b48885ca33f80c048adec9593f6d4ad5'
+    oldFile: !uuid '842896d4cd2f801bdea3780754f028a8b85ce64c'
+  /app/api/model/Order.php:
+    newFile: !uuid '4ecbc418ba8410ee33b7ef05f2c2399fbeb37b49'
+    oldFile: !uuid '905e39018ecf894c26cc60b2ce93a6028bdb4b6c'
+  /app/api/service:
+    newFile: !uuid '092a00fba0fc04c46bbe22fd09aa318e247a81b1'
+    oldFile: !uuid 'cc03f1284d5c181c44ab36f18b997c21f3c442dc'
+  /app/api/service/order:
+    newFile: !uuid '517c6da47245912ff4a2b17d3abbe40aedec3e17'
+    oldFile: !uuid 'b834b1be12395da2389ecb5e56f40dea135f820c'
+  /app/api/service/order/Checkout.php:
+    newFile: !uuid '6a6d754bd8c9d549fef8883bfb2164cd2bbff0a2'
+    oldFile: !uuid 'b904054429e41efd06931a156f2faa532bd7c265'
   /app/common:
-    newFile: !uuid '5ebc575f7d27d86869ad0a5683686815140e4081'
-    oldFile: !uuid '21e9126940761d32e44bc6aa3fe6a61fc1a7229b'
+    newFile: !uuid '64e0f59984ce22cbeaf27004fbc6a8ea9629c762'
+    oldFile: !uuid '5ebc575f7d27d86869ad0a5683686815140e4081'
   /app/common/library:
-    newFile: !uuid 'ad9d92540416ededce81b577898599f795f992b5'
-    oldFile: !uuid '26fea8f2837f1520d5c7a6e623ee2f8b7cb8c675'
-  /app/common/library/sms:
-    newFile: !uuid 'fd55d78380fa3f6f0b474104fade88f165bced35'
-    oldFile: !uuid 'd4f7cf51851ee88c6c50428d70e900499c5cdb59'
-  /app/common/library/sms/Config.php:
-    newFile: !uuid '75796724d22d3568f895682d63c11b9c02ec2d37'
-    oldFile: null
-  /app/common/library/sms/Driver.php:
-    newFile: !uuid 'c4c79e39cfa66f5d945a4af5acca568e1cfba8c1'
-    oldFile: !uuid '9a6b4cf28732d954b936f618596b63785cc5485f'
-  /app/common/model:
-    newFile: !uuid '9a056f8e9d38f8641efc75530456e23f44cdf356'
-    oldFile: !uuid '75dc89192a471e7e6f049487931cb9f06d85c071'
-  /app/common/model/store:
-    newFile: !uuid '3006d60e6147410403c6e1bef2800c356ffb571c'
-    oldFile: !uuid 'da4523eaba19c4b7b3ba29ca7e88d139e5502ca1'
-  /app/common/model/store/Setting.php:
-    newFile: !uuid 'c4b7ff93799f6e6464b28cdbfd37961514877aa2'
-    oldFile: !uuid 'f8fe5e751a6c757379952e2433f5e342828a226d'
-  /app/common/service:
-    newFile: !uuid 'b67a059b0b68a98bbdb6ffff6a30d95bc9e51772'
-    oldFile: !uuid 'cb7b4238ec72724d2f291ceaf80c9d86140efe0f'
-  /app/common/service/delivery:
-    newFile: !uuid '489eb8485499255c6501b6397f5ba58a6b38a3f3'
-    oldFile: !uuid '6bce924b322adb39c19cff4b8766c1cd8fd82ad6'
-  /app/common/service/delivery/Express.php:
-    newFile: !uuid '411d96ad20774fdc5a6c791fccad867c39e6ab10'
-    oldFile: !uuid '9e74b132a4a424698fae4082e4384c6bee875a13'
-  /app/common/service/message:
-    newFile: !uuid 'dd0df009376a5aba8c99afffc66a815ee3159a66'
-    oldFile: !uuid '75148dac9c104c7c5206b9ecb135485bbca16b94'
-  /app/common/service/message/Basics.php:
-    newFile: !uuid '04983b3e3719fea94f2f0c8b755070f41e3ccd45'
-    oldFile: !uuid '08d9f148701339dee3ebd032f919e64bfce1881c'
-  /app/common/service/message/order:
-    newFile: !uuid '2e7169b48aae0598061aa00b9d1b088c1f49290a'
-    oldFile: !uuid '61d9cc01c9ca70fc0ef97a7386584e38496803fe'
-  /app/common/service/message/order/Payment.php:
-    newFile: !uuid 'b80adf224d26135fb8792da90b3e6de8885891b1'
-    oldFile: !uuid 'cc40da29149333bf1c7cb71a08446c30257ff85a'
-  /app/common/service/message/passport:
-    newFile: !uuid '2340ac0bbbf01565d0c139d19c3468eef720cd8f'
-    oldFile: !uuid 'f17ff80df59e5745e771ef3374ca3bfacd0641b3'
-  /app/common/service/message/passport/Captcha.php:
-    newFile: !uuid '2be5fb3b3053bfa967ceccde5f7d178680b0e2f0'
-    oldFile: !uuid 'c2b0c22bbecc23662d5312c441c8e59258f3be27'
-gitCommitId: !uuid 'b3a1ee381c758641a442962a3822893b77cbc3ea'
+    newFile: !uuid '5c2617b65ebb0d3e85475c75542b63b22c945c50'
+    oldFile: !uuid 'ad9d92540416ededce81b577898599f795f992b5'
+  /app/common/library/storage:
+    newFile: !uuid '1d71e3b2ac4c62b048f5c9a2ee52d11efac732f4'
+    oldFile: !uuid '2e912a89862be516db0059c91e454e6ae7ea0938'
+  /app/common/library/storage/engine:
+    newFile: !uuid '31babd802d5f19c501bf40767dca0d7fc3b169b2'
+    oldFile: !uuid '8cf1de2d537888a7c79521f1d4d544e9ab32e2c7'
+  /app/common/library/storage/engine/Basics.php:
+    newFile: !uuid '9e49623498d2dbdbd5eac182b04f07d572ca8ab7'
+    oldFile: !uuid 'e0b663ab66f20d5033fde065308d38945a85b5f2'
+  /app/common/library/storage/engine/Local.php:
+    newFile: !uuid '7ff4dd2e88d77bc076d13954829e6dfdff165455'
+    oldFile: !uuid '6598a1c1b42d954e1d3dd74d690779a4e4704f2b'
+  /app/common/library/storage/engine/Qcloud.php:
+    newFile: !uuid 'f48b484c20f4c2e8f7a14acb5da2c84c51384c2b'
+    oldFile: !uuid 'abc90ebca0261fefedc827e0daedff37e440d78b'
+  /app/store:
+    newFile: !uuid 'ee25bae936f1cb34f2c8597c653b25b9cbb7a56e'
+    oldFile: !uuid '5b4980f4246382d25ae725e60f73ab3eac6f61d6'
+  /app/store/model:
+    newFile: !uuid '96b97c0a6ccf55b4cb87459bbd4e9150fcab4f3d'
+    oldFile: !uuid '6d1eaa96dae93f1a2b0b0c931a3c6cb8389ced90'
+  /app/store/model/Order.php:
+    newFile: !uuid '9002b126b3efe41ddb4869806259366e9ab150b7'
+    oldFile: !uuid '01bc2df1aa8e0364ca5aa3fbb76607425b6434ea'
+  /cores:
+    newFile: !uuid '0f846334b0bb7c568fc59a75eee60b69e34e6ce5'
+    oldFile: !uuid 'b993e163be9c7c03fe4428f3581837622e42cbac'
+  /cores/BaseModel.php:
+    newFile: !uuid '9d8e62e37e9f80cece5d5a9b4e0d9fc3003a2d08'
+    oldFile: !uuid '9904303f8e5b4b94fe619f6811a1b205db1d2cb3'
+  /cores/traits:
+    newFile: !uuid 'bfcc065f417f05c89887b532e637f5f9f88bb4c9'
+    oldFile: !uuid '71b3720b8823da717dee52584cf5a79df091e1bf'
+  /cores/traits/ErrorTrait.php:
+    newFile: !uuid 'd17996a7a6be0f9ae056ac151a0cc53dbc82a141'
+    oldFile: !uuid '307f2055ecf41de420cdc72d26175b5274ae7ed6'
+gitCommitId: !uuid '35f507c6a258c727f9e5becdc9e82046bdb7a4c8'
 renames: {
   }
-revisionId: 134
+revisionId: 135
