@@ -2,19 +2,43 @@
 branches: {
   }
 fileChange:
-  /app:
-    newFile: !uuid 'e94a6d3fc91360dd342d1ce7da5cd4addf9eaa88'
-    oldFile: !uuid '04f82c3d444fbdc8bce79eea98ae87ad811a72a3'
-  /app/api:
-    newFile: !uuid 'f6b7fcbca8f2a8d016489e3b9c285a5a9d4304ab'
-    oldFile: !uuid '43da27ea2566c51cf3ad172172dfd5068bd79cce'
-  /app/api/service:
-    newFile: !uuid 'f8954d6943f5cb6e8594fb90b194c15b6f6012d5'
-    oldFile: !uuid '23f0fb9c68fa957d39da2803c8c5b82f38cfd054'
-  /app/api/service/Setting.php:
-    newFile: !uuid 'e8976b00b8921621dbbb04a280a3c39e25cdd09d'
-    oldFile: !uuid '141aa1364df14b2ad2b42fa1cbcf59d66744dd7c'
-gitCommitId: !uuid '2bd6854e54fbf730d096f629242964c889f68f21'
+  /composer.lock:
+    newFile: !uuid 'c046a2f88a63b54158fe9e04c99eb47e23cccee6'
+    oldFile: !uuid '2d134473039fc73e9a0c10fc7c8ed04bb27eaafd'
+  /vendor:
+    newFile: !uuid '72feece5e2c3275ed83f3dc1028aa0e0e4f4629f'
+    oldFile: !uuid 'bd0efafc18bc6a5e98319898baf7d3fee75b4478'
+  /vendor/composer:
+    newFile: !uuid 'ea6eed6e52c76bfbdd5404cb77b5ff600467145b'
+    oldFile: !uuid 'c18628b3b0784e37f3d4fa384676d759335a3af3'
+  /vendor/composer/autoload_files.php:
+    newFile: !uuid '46fabe4cd9878cb5c462b90620d1ce08dbd2baf9'
+    oldFile: !uuid '039814a29a48dbe67c0fe14096e6caed7fe2d990'
+  /vendor/composer/autoload_static.php:
+    newFile: !uuid '6b88623342a3654299ddc9d29ccfa37819a845d1'
+    oldFile: !uuid 'f6c0099e04f9505c1723f12198920284ba65abf2'
+  /vendor/composer/installed.json:
+    newFile: !uuid '46a387b323beff0fb43a31ad2bf708a442aab143'
+    oldFile: !uuid '78500b7b10aa8829ee3fbecc7f106acb0c1b8d17'
+  /vendor/composer/installed.php:
+    newFile: !uuid 'b4e806ab7c123cc3bb62e10d8194fe9205e52055'
+    oldFile: !uuid '44afa7bcf1424d6bd48558738b98dc5c5dd3979c'
+  /vendor/services.php:
+    newFile: !uuid '03d8beed56c400532bb7829701a9e8d35df2843c'
+    oldFile: !uuid 'c7596cffae941d864e8f762d07b38c2017272da9'
+  /vendor/yiovo:
+    newFile: !uuid '18cba2ff4ec396ecc0ad4684d20687e26194d7d4'
+    oldFile: !uuid '28098db7342a608ef8f59c0cc4d387631a39e384'
+  /vendor/yiovo/tp6-captcha:
+    newFile: !uuid 'b0c59364986697825111a7fece2f8a3692c54f83'
+    oldFile: !uuid 'dc1241ff54ada7392514160a6b2d49f376938c51'
+  /vendor/yiovo/tp6-captcha/src:
+    newFile: !uuid '12f29313edb79892309ea93734d6c34b30d4d207'
+    oldFile: !uuid '915abed6d55e22e97d4a79b56a9310d9f0664e9d'
+  /vendor/yiovo/tp6-captcha/src/CaptchaApi.php:
+    newFile: !uuid '8d0ac1ac9fae9b4831dd19d2a5a6534485d04e04'
+    oldFile: !uuid '85d188b09f9e331275d5406d88b7441b24291193'
+gitCommitId: !uuid 'b081eb7030e5854351e6928941ea25e2d98812f9'
 renames: {
   }
-revisionId: 157
+revisionId: 158
