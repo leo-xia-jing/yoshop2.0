@@ -2,46 +2,151 @@
 branches: {
   }
 fileChange:
-  /app:
-    newFile: !uuid 'd7bc4a46c7f270c8fc92b815acb0d36ff9e1699c'
-    oldFile: !uuid '0b881f347b93081af6b8840b182ccb867385b078'
-  /app/api:
-    newFile: !uuid 'f43b2fc721a3e1a263494148ae05afcb434992be'
-    oldFile: !uuid '9e1dd17e400f3d96fd12b044a0049512e32431bd'
-  /app/api/model:
-    newFile: !uuid '9fab441527559efd94eb271101d129eb94406711'
-    oldFile: !uuid '9d06cc0eb675ac41fb90ea320f119d9f6f9e812f'
-  /app/api/model/User.php:
-    newFile: !uuid 'ef2a1a4bfb9329e32f0d29d161c56f187a38d160'
-    oldFile: !uuid '82a618026f5a15f9dabcd0b6c953047307cd7f66'
+  /composer.json:
+    newFile: !uuid 'f3d5ca1a2dc341354f62432a0893b5e9eb0baf1f'
+    oldFile: !uuid '8ba47ac06778f88e50058cd7f01da1d25b8efb57'
+  /composer.lock:
+    newFile: !uuid '96f4bf3f2c1f81087687ded3e3848444e5278bbb'
+    oldFile: !uuid 'e9f4ec7d86b2c260a6be40a8e1ab00761bc60aeb'
   /cores:
-    newFile: !uuid 'ac9f3908b310fd45391de6fadd14333d9d967a75'
-    oldFile: !uuid '0f846334b0bb7c568fc59a75eee60b69e34e6ce5'
-  /cores/AppService.php:
-    newFile: !uuid '344618c375c986f505c801fdae04d11dc9f0ee98'
-    oldFile: !uuid '122e4f87e48e450ba343bfcb131b71b5e7512219'
-  /public:
-    newFile: !uuid '747bc3a1fc13d71c1d187572c7d48fb665a9581a'
-    oldFile: !uuid '236f7a38fe530222f978fd0bcbb4550ae5038ca0'
-  /public/install:
-    newFile: !uuid 'ee4a0b19d5586ab3ac709f661949705d6398d908'
-    oldFile: !uuid 'f0658286cf8d7f9de123a49b0423ffaf56078e75'
-  /public/install/index.php:
-    newFile: !uuid '1092438557a6b0e63db7d7d9a4a53d321853fab8'
-    oldFile: !uuid '9f00ba6186047c995688e7574e333e7fea5ef38f'
-  /public/install/templates:
-    newFile: !uuid '8f30bbe3ad1afbc8f4d341abee99867cf8faeaea'
-    oldFile: !uuid '608787ec59079331f95fc5d10ab1cef9db397157'
-  /public/install/templates/js:
-    newFile: !uuid 'd2052f9c6d9e12a5f32dd212c17f4493d3ba17b0'
-    oldFile: !uuid '5f0dbe822aaaca8dcab727552c615451a69c61d1'
-  /public/install/templates/js/forms.js:
-    newFile: !uuid '3457d9a2732a82c43e055f16979c46fdf1353f80'
-    oldFile: !uuid '49012a56622c0c92aaa7b1e1174d6bc4ba61b4cc'
-  /public/install/templates/step_2.php:
-    newFile: !uuid '417ce3f468438ce4b63d8803569aa4e53c50607e'
-    oldFile: !uuid 'dffb867618f6b67d1f68a52a536ef92f85968726'
-gitCommitId: !uuid 'ef92fa0fbb51e77eb616c9e5a1e50956f9fc2885'
+    newFile: !uuid 'c3314a4acbb355cbc1726d172861df9ff65cd033'
+    oldFile: !uuid 'ac9f3908b310fd45391de6fadd14333d9d967a75'
+  /cores/library:
+    newFile: !uuid '139d9865a68c1ea8d6ab36ee3e4b1f9f96a6239e'
+    oldFile: null
+  /cores/library/Version.php:
+    newFile: !uuid '01dc9f2f55e9039fa9a7f2891d1461729edd4a9b'
+    oldFile: null
+  /vendor:
+    newFile: !uuid '80f2af3d8727bbbe7d761603c109b3982be0f176'
+    oldFile: !uuid '27c9f7cba4d52ce088d99360586c5cef19041367'
+  /vendor/composer:
+    newFile: !uuid '59791dc165bb7b6b9fe0c3c078b53096658321c4'
+    oldFile: !uuid '63ec90d3b5ac36608754b943879cdb7927f04a78'
+  /vendor/composer/autoload_files.php:
+    newFile: !uuid 'aa3461611c6cc5a9c121180d8f489b23f8f3db72'
+    oldFile: !uuid '2c6b429f1fbcfad3ad024a9929818a15902edc02'
+  /vendor/composer/autoload_psr4.php:
+    newFile: !uuid 'e3c94426c66b4763f8dd6118359c5683ed1af263'
+    oldFile: !uuid '640133cb78beeff13e838664324f6e6f0c63c7d5'
+  /vendor/composer/autoload_static.php:
+    newFile: !uuid '1d23a9bc6821e4f21443cef85597aa27860f45c9'
+    oldFile: !uuid '37302bee69c5fcd8ef3cd23217846161179602b1'
+  /vendor/composer/installed.json:
+    newFile: !uuid '5e1300afd362f63b2eea4d506ae34d90c4b16573'
+    oldFile: !uuid '3b88f78ef06b5b41c44a62d86a5c20c493145c5f'
+  /vendor/composer/installed.php:
+    newFile: !uuid 'b08c9a60282300a253be023f0bfc3929974ac92e'
+    oldFile: !uuid '5e2a8e4b6ac0475dcf683e19e0402e821a80fadc'
+  /vendor/edward1108:
+    newFile: null
+    oldFile: !uuid 'fa7dbca6115499eeaecd9273d45c92eda97bafba'
+  /vendor/edward1108/edward-captcha:
+    newFile: null
+    oldFile: !uuid 'f8aff45429ee925f0c05ea78dc65be173eadc2d2'
+  /vendor/edward1108/edward-captcha/.gitignore:
+    newFile: null
+    oldFile: !uuid 'cb4c3b9be052e7d15625b6e7d2ac3d8e388767bc'
+  /vendor/edward1108/edward-captcha/LICENSE:
+    newFile: null
+    oldFile: !uuid '2f43bbde32a641eba1a81785ca3053d23f216fcf'
+  /vendor/edward1108/edward-captcha/README.md:
+    newFile: null
+    oldFile: !uuid 'dae0729af20c8285f28c1b1759716b41a4f5d254'
+  /vendor/edward1108/edward-captcha/assets:
+    newFile: null
+    oldFile: !uuid 'dc5a587191e1aec3049cdc8ee8b562aa2fbd5fdc'
+  /vendor/edward1108/edward-captcha/assets/bgs:
+    newFile: null
+    oldFile: !uuid 'cf25cf03b533ddd2b9ab963647645fcf6b287e99'
+  /vendor/edward1108/edward-captcha/assets/bgs/1.jpg:
+    newFile: null
+    oldFile: !uuid 'd417136bb4613984dd88ac25590d2794344c990f'
+  /vendor/edward1108/edward-captcha/assets/bgs/2.jpg:
+    newFile: null
+    oldFile: !uuid '56640bde4ed9a02c4e46b951f2108e5e4814b14a'
+  /vendor/edward1108/edward-captcha/assets/bgs/3.jpg:
+    newFile: null
+    oldFile: !uuid '83e5bd9026f9d46c96738a4209f1abb91f7e1e6f'
+  /vendor/edward1108/edward-captcha/assets/bgs/4.jpg:
+    newFile: null
+    oldFile: !uuid '97a3721bc777a569c6665e38dec04a82df9176da'
+  /vendor/edward1108/edward-captcha/assets/bgs/5.jpg:
+    newFile: null
+    oldFile: !uuid '220a17a22dc522e8545b71a43b433e66ffcef363'
+  /vendor/edward1108/edward-captcha/assets/bgs/6.jpg:
+    newFile: null
+    oldFile: !uuid 'be53ea0a2ced37089db7978fe6d68a1859a70031'
+  /vendor/edward1108/edward-captcha/assets/bgs/7.jpg:
+    newFile: null
+    oldFile: !uuid 'fbf537fab3713a921716385145ed273b2572a9aa'
+  /vendor/edward1108/edward-captcha/assets/bgs/8.jpg:
+    newFile: null
+    oldFile: !uuid 'e10cf28115e47d1f5413e76efeccc39cd655b6cc'
+  /vendor/edward1108/edward-captcha/assets/ttfs:
+    newFile: null
+    oldFile: !uuid '700527688b1b772c78114f7e0cf8c65644aa6642'
+  /vendor/edward1108/edward-captcha/assets/ttfs/1.ttf:
+    newFile: null
+    oldFile: !uuid '9eae6f25e4cc49edc868d45c8dc9d4f85b4a37db'
+  /vendor/edward1108/edward-captcha/assets/ttfs/2.ttf:
+    newFile: null
+    oldFile: !uuid '6386c6bd2adc00ba4f1aeb6bc5e01e1059071885'
+  /vendor/edward1108/edward-captcha/assets/ttfs/3.ttf:
+    newFile: null
+    oldFile: !uuid '678a49178687e2fed4a35839fec9d8018ca0252f'
+  /vendor/edward1108/edward-captcha/assets/ttfs/4.ttf:
+    newFile: null
+    oldFile: !uuid 'db433349b7047f72f40072630c1bc110620bf09e'
+  /vendor/edward1108/edward-captcha/assets/ttfs/5.ttf:
+    newFile: null
+    oldFile: !uuid '8c082c8de090865264d37594e396c4d6c0099fe4'
+  /vendor/edward1108/edward-captcha/assets/ttfs/6.ttf:
+    newFile: null
+    oldFile: !uuid '45a038bade527cbbf30f197c5a116be3cfb2f0a3'
+  /vendor/edward1108/edward-captcha/assets/zhttfs:
+    newFile: null
+    oldFile: !uuid 'c64760aa5efcc63349fb61e130a9a05b8a0f35c0'
+  /vendor/edward1108/edward-captcha/assets/zhttfs/1.ttf:
+    newFile: null
+    oldFile: !uuid '1c14f7fab9287c0746119a6c1de788f9b8e8bd93'
+  /vendor/edward1108/edward-captcha/composer.json:
+    newFile: null
+    oldFile: !uuid 'be8976976a8aa8187b38591aac49379d0020636c'
+  /vendor/edward1108/edward-captcha/src:
+    newFile: null
+    oldFile: !uuid '975be81fcdf7586f8bc8ebb7178106ebe57524e8'
+  /vendor/edward1108/edward-captcha/src/Captcha.php:
+    newFile: null
+    oldFile: !uuid '4722d8bc353af7520da5138bac1113f889fd5be2'
+  /vendor/edward1108/edward-captcha/src/CaptchaApi.php:
+    newFile: null
+    oldFile: !uuid 'e42f5fc335eb4ea02b62ef8ffe1752242962190f'
+  /vendor/edward1108/edward-captcha/src/CaptchaController.php:
+    newFile: null
+    oldFile: !uuid '898ee3fca3a8db1a4fccd4f01968fa233f326bc1'
+  /vendor/edward1108/edward-captcha/src/CaptchaService.php:
+    newFile: null
+    oldFile: !uuid '1a81e865d823373a45af7f3abf244c00cbc2ff58'
+  /vendor/edward1108/edward-captcha/src/config.php:
+    newFile: null
+    oldFile: !uuid 'ac741dc881c2ddfae46bb2fc80f1101afe215547'
+  /vendor/edward1108/edward-captcha/src/facade:
+    newFile: null
+    oldFile: !uuid '8cea31a0674eaba0e1e249dfc6031875dc179a67'
+  /vendor/edward1108/edward-captcha/src/facade/Captcha.php:
+    newFile: null
+    oldFile: !uuid '13c95f8edb99c283b6227a457e1b852810bcce56'
+  /vendor/edward1108/edward-captcha/src/facade/CaptchaApi.php:
+    newFile: null
+    oldFile: !uuid '75dd237c78aae7a1bcbfd1fcddaff3ce1188ea96'
+  /vendor/edward1108/edward-captcha/src/helper.php:
+    newFile: null
+    oldFile: !uuid '21a10c768f1c49bdec13fa02177aaaa2376d476e'
+  /vendor/services.php:
+    newFile: !uuid '53cd254b8bcbb0f893b413bc6b979ef8252fa8cc'
+    oldFile: !uuid 'ec029d62b4f173c4ba29e70e14f3fb35d2b01366'
+gitCommitId: !uuid 'a3c9d131b5404d2c21a183c1a647f58e3d8db097'
 renames: {
   }
-revisionId: 141
+revisionId: 142
