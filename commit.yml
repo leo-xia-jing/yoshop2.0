@@ -2,43 +2,43 @@
 branches: {
   }
 fileChange:
-  /composer.lock:
-    newFile: !uuid 'c046a2f88a63b54158fe9e04c99eb47e23cccee6'
-    oldFile: !uuid '2d134473039fc73e9a0c10fc7c8ed04bb27eaafd'
-  /vendor:
-    newFile: !uuid '72feece5e2c3275ed83f3dc1028aa0e0e4f4629f'
-    oldFile: !uuid 'bd0efafc18bc6a5e98319898baf7d3fee75b4478'
-  /vendor/composer:
-    newFile: !uuid 'ea6eed6e52c76bfbdd5404cb77b5ff600467145b'
-    oldFile: !uuid 'c18628b3b0784e37f3d4fa384676d759335a3af3'
-  /vendor/composer/autoload_files.php:
-    newFile: !uuid '46fabe4cd9878cb5c462b90620d1ce08dbd2baf9'
-    oldFile: !uuid '039814a29a48dbe67c0fe14096e6caed7fe2d990'
-  /vendor/composer/autoload_static.php:
-    newFile: !uuid '6b88623342a3654299ddc9d29ccfa37819a845d1'
-    oldFile: !uuid 'f6c0099e04f9505c1723f12198920284ba65abf2'
-  /vendor/composer/installed.json:
-    newFile: !uuid '46a387b323beff0fb43a31ad2bf708a442aab143'
-    oldFile: !uuid '78500b7b10aa8829ee3fbecc7f106acb0c1b8d17'
-  /vendor/composer/installed.php:
-    newFile: !uuid 'b4e806ab7c123cc3bb62e10d8194fe9205e52055'
-    oldFile: !uuid '44afa7bcf1424d6bd48558738b98dc5c5dd3979c'
-  /vendor/services.php:
-    newFile: !uuid '03d8beed56c400532bb7829701a9e8d35df2843c'
-    oldFile: !uuid 'c7596cffae941d864e8f762d07b38c2017272da9'
-  /vendor/yiovo:
-    newFile: !uuid '18cba2ff4ec396ecc0ad4684d20687e26194d7d4'
-    oldFile: !uuid '28098db7342a608ef8f59c0cc4d387631a39e384'
-  /vendor/yiovo/tp6-captcha:
-    newFile: !uuid 'b0c59364986697825111a7fece2f8a3692c54f83'
-    oldFile: !uuid 'dc1241ff54ada7392514160a6b2d49f376938c51'
-  /vendor/yiovo/tp6-captcha/src:
-    newFile: !uuid '12f29313edb79892309ea93734d6c34b30d4d207'
-    oldFile: !uuid '915abed6d55e22e97d4a79b56a9310d9f0664e9d'
-  /vendor/yiovo/tp6-captcha/src/CaptchaApi.php:
-    newFile: !uuid '8d0ac1ac9fae9b4831dd19d2a5a6534485d04e04'
-    oldFile: !uuid '85d188b09f9e331275d5406d88b7441b24291193'
-gitCommitId: !uuid 'b081eb7030e5854351e6928941ea25e2d98812f9'
+  /app:
+    newFile: !uuid 'df25208c3f780ba1d74267d784ffe27cc54a14c7'
+    oldFile: !uuid 'e94a6d3fc91360dd342d1ce7da5cd4addf9eaa88'
+  /app/api:
+    newFile: !uuid '7fc71188f3e9a54f2e3e826c9258e77bec83a79f'
+    oldFile: !uuid 'f6b7fcbca8f2a8d016489e3b9c285a5a9d4304ab'
+  /app/api/controller:
+    newFile: !uuid '17df3bdceec5e89e08c9ef86dd95aa79aabb92d1'
+    oldFile: !uuid 'e323d31fb5e186ba04ec7c95912522c705a2a6f3'
+  /app/api/controller/Passport.php:
+    newFile: !uuid 'ea3d5dc5267c6a635451fc809338f7ad7b5141e9'
+    oldFile: !uuid '3c40115dfed447d1f0ba5f8ea423126d5cd38c22'
+  /app/api/service:
+    newFile: !uuid '16005906cf5283a6b6abddf70691fee5a91fc439'
+    oldFile: !uuid 'f8954d6943f5cb6e8594fb90b194c15b6f6012d5'
+  /app/api/service/passport:
+    newFile: !uuid '96300969a198733f65d58bd7879f3bf6cf12c827'
+    oldFile: !uuid 'ac33852fc0dd8e187633218b21d5982964fee1f5'
+  /app/api/service/passport/Captcha.php:
+    newFile: !uuid '5ee59e1d6ed0f3c4e3b62c1aa8945376f2d30c94'
+    oldFile: !uuid '9b8088f295db50ebe353ea21cf1db8933f2d64ba'
+  /app/api/service/passport/Login.php:
+    newFile: !uuid '374259ea4b3dd19d9baadb66e1e6e91173d8ffee'
+    oldFile: !uuid 'd2335f3299bdaf9a53216830296de3b913c5a66e'
+  /app/api/service/passport/Party.php:
+    newFile: !uuid '745040bb2d46f891446dfce93781729494286968'
+    oldFile: null
+  /app/api/service/user:
+    newFile: !uuid '0b99dff2387a3b554f3cce9713ba6b31a5ee8a12'
+    oldFile: !uuid 'b155ecc99a25a6db465cde080f46404fb03912bf'
+  /app/api/service/user/Avatar.php:
+    newFile: !uuid '9a894db24370ac30c2141a9b31e8c4b7ea3e60e9'
+    oldFile: !uuid '57c5ed05eeabae3a333b9959094ba27016f621f7'
+  /app/api/service/user/Oauth.php:
+    newFile: !uuid 'd2d64511b0e24a8b67fe78b6b3487df41af8abd8'
+    oldFile: !uuid '029f9c7a5a572949ac04b5858de17e353e70d4fc'
+gitCommitId: !uuid '278bb7fef3dc7ea460d19099afabdca7eff0d96d'
 renames: {
   }
-revisionId: 158
+revisionId: 159
