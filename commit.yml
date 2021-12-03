@@ -2,49 +2,16 @@
 branches: {
   }
 fileChange:
-  /app:
-    newFile: !uuid 'e7dcc764f7c704a3a88fe7de0f2e5bfd84cb7962'
-    oldFile: !uuid '67611750ebb45874b524c248bc1a5b29e05ffb6c'
-  /app/api:
-    newFile: !uuid '19fe3a2841483b07e78f4567e150b7e581386f62'
-    oldFile: !uuid '68d38ecb3f1bc49ff09856b8692e96f0fb36c429'
-  /app/api/service:
-    newFile: !uuid '8d63a2a6e82985749392e61490ac2ce8e97f3a40'
-    oldFile: !uuid '2e5955bc14303cdb9f868da4091a3b3289406656'
-  /app/api/service/passport:
-    newFile: !uuid '5da4b020ecf55f5b7578946b3abd75e29d03056f'
-    oldFile: !uuid '4ee9e4c93c806e999354bca080afd55d6cacc13f'
-  /app/api/service/passport/Login.php:
-    newFile: !uuid '8df7515696112afc784e18705241cc9c3c77eb55'
-    oldFile: !uuid 'a3b1c569a5ba7b9a83e4381c0a06e490f13a16fc'
-  /app/common:
-    newFile: !uuid '1449ded4198799c97df350159eed0425da64689d'
-    oldFile: !uuid '98193aacc41e5fd9e972177efbc89d7f7667778f'
-  /app/common/library:
-    newFile: !uuid '04bd1fbffb097dc303fe616ca84b5e648475df79'
-    oldFile: !uuid '5c2617b65ebb0d3e85475c75542b63b22c945c50'
-  /app/common/library/wechat:
-    newFile: !uuid '18375c47910831d07a948284bbf920881fc0c749'
-    oldFile: !uuid '5072f0475937e945a9934fa8f68e180ed53b7617'
-  /app/common/library/wechat/ErrorCode.php:
-    newFile: !uuid '95f57a04abb95ab05a1e407ef3124e306ec65f44'
-    oldFile: null
-  /app/common/library/wechat/WXBizDataCrypt.php:
-    newFile: !uuid '921cfb9e509a47c11bd47b0d38fddfe3ffb6fd94'
-    oldFile: null
-  /app/common/model:
-    newFile: !uuid 'e7e6279254cdee48e69196b7051c011dcbd1436d'
-    oldFile: !uuid 'a2ef86d57ea817cf92f1f55da7b59942ed423859'
-  /app/common/model/User.php:
-    newFile: !uuid '3a3ba0513d503d7fc9694349a81996de302cfc05'
-    oldFile: !uuid '2c875543c4713d93c2db5ce72b315dbd1b5428da'
-  /cores:
-    newFile: !uuid '8f8d9e988655693aec00e25f686d01bfe9c64c25'
-    oldFile: !uuid 'c3314a4acbb355cbc1726d172861df9ff65cd033'
-  /cores/BaseModel.php:
-    newFile: !uuid '0ccf50493d1da7f5179a1b59eb13cf09c1daa8ea'
-    oldFile: !uuid '9d8e62e37e9f80cece5d5a9b4e0d9fc3003a2d08'
-gitCommitId: !uuid '43b5bb6742ec7d0d5144cf98643bb7c405b01c23'
+  /vendor:
+    newFile: !uuid 'b77ceb364e9c43956dfde27b13cb0fcf328ad9d9'
+    oldFile: !uuid '72feece5e2c3275ed83f3dc1028aa0e0e4f4629f'
+  /vendor/composer:
+    newFile: !uuid 'd9dc0fa30d5caa86ab397cdef939351642d985da'
+    oldFile: !uuid 'ea6eed6e52c76bfbdd5404cb77b5ff600467145b'
+  /vendor/composer/platform_check.php:
+    newFile: !uuid '63417f8db2da96a3da7c614fb9f23b352c180a71'
+    oldFile: !uuid 'a8b98d5ceb1e2651c6b52984bfd44cfb97347d10'
+gitCommitId: !uuid '1d6934c6eccf5e811d1087e8b3ac6ef57628bb86'
 renames: {
   }
-revisionId: 162
+revisionId: 163
