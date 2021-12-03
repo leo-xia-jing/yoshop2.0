@@ -2,19 +2,22 @@
 branches: {
   }
 fileChange:
-  /app:
-    newFile: !uuid '0b881f347b93081af6b8840b182ccb867385b078'
-    oldFile: !uuid 'e15a24474b0d224f070f9c69d84f170fe81a23be'
-  /app/api:
-    newFile: !uuid '9e1dd17e400f3d96fd12b044a0049512e32431bd'
-    oldFile: !uuid '5db2aeadcbc0eae85a7a1f2a8c0070554da1225c'
-  /app/api/model:
-    newFile: !uuid '9d06cc0eb675ac41fb90ea320f119d9f6f9e812f'
-    oldFile: !uuid '4bade5b6e520077cdf9fe237c3bb6cc91b84f72a'
-  /app/api/model/UserCoupon.php:
-    newFile: !uuid 'd8195a88af72c62a891d65f4bfbddeb9c44f5ee8'
-    oldFile: !uuid 'dc4ff1a70057c512238ec59260a65ecc473ce501'
-gitCommitId: !uuid '108f2189ad45cda971424a925e26949bf2eef99c'
+  /vendor:
+    newFile: !uuid '27c9f7cba4d52ce088d99360586c5cef19041367'
+    oldFile: !uuid '26a97b3e14be7205029e1858c04716d9332265bb'
+  /vendor/edward1108:
+    newFile: !uuid 'fa7dbca6115499eeaecd9273d45c92eda97bafba'
+    oldFile: !uuid 'ca05d1a20598a48a98f950d2df2eef610eeb0327'
+  /vendor/edward1108/edward-captcha:
+    newFile: !uuid 'f8aff45429ee925f0c05ea78dc65be173eadc2d2'
+    oldFile: !uuid '7dd1ae19e2a67e0477bcfa40b074a788b5cada73'
+  /vendor/edward1108/edward-captcha/src:
+    newFile: !uuid '975be81fcdf7586f8bc8ebb7178106ebe57524e8'
+    oldFile: !uuid '2b1af9e1f7efe08b9d6435ef588c9145b21eb96d'
+  /vendor/edward1108/edward-captcha/src/CaptchaApi.php:
+    newFile: !uuid 'e42f5fc335eb4ea02b62ef8ffe1752242962190f'
+    oldFile: !uuid 'da641f749bafba9482b129469e70644a5f620ff1'
+gitCommitId: !uuid '3817dc5193c39bfa9bb5180540557af0f27c8a1b'
 renames: {
   }
-revisionId: 139
+revisionId: 140
