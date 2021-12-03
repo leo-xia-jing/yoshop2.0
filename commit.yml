@@ -2,10 +2,204 @@
 branches: {
   }
 fileChange:
-  /更新日志.txt:
-    newFile: !uuid '08b8b9e823816c95b8ac31fb5e0afdf44edaa44a'
+  /public:
+    newFile: !uuid 'cdda80b020179249a8a5f39cdf7643c2fefe646b'
+    oldFile: !uuid '747bc3a1fc13d71c1d187572c7d48fb665a9581a'
+  /public/store:
+    newFile: !uuid '6861d6111e74ffe3b39aef4c1679ca8b252b079e'
+    oldFile: !uuid '1e473115f83f3c897348fb5e31bb6d5bc2ab5b3b'
+  /public/store/config.js:
+    newFile: !uuid '339627a3be5ba0bb806f79af1221cd868e90754f'
+    oldFile: !uuid 'acac7728ad04d459f178f0b811fe325d3f1a10cf'
+  /public/store/css:
+    newFile: !uuid '90b0eb0c444a32d5c251a4b9a8e5182431d48926'
+    oldFile: !uuid '85b5d89389e989fca5789ead95eed6452627c91c'
+  /public/store/css/app.1fa111ce.css:
+    newFile: null
+    oldFile: !uuid 'dfbcca6306c1d215b2483b6482f0d9dd06a542a8'
+  /public/store/css/app.ae1abea3.css:
+    newFile: !uuid '9c37055091f3c9a49975d3b4b7fddb3e624212c3'
     oldFile: null
-gitCommitId: !uuid '561cc9d4531b052ba52c9a9e7e13a4a3729d4d6a'
-renames: {
-  }
-revisionId: 164
+  /public/store/css/client.902ce5d5.css:
+    newFile: !uuid 'e44466c0030965672b0e94bb1afe39052be06d92'
+    oldFile: null
+  /public/store/css/content~goods~manage~market~order~page~store~user.295b3a51.css:
+    newFile: null
+    oldFile: !uuid '1af6fe4f2197f802560cfa8e68662262d5f7bb62'
+  /public/store/css/content~goods~manage~market~order~page~store~user.a333418a.css:
+    newFile: !uuid '5d8aa85576a886e10c79b9dddb970950e57ab830'
+    oldFile: null
+  /public/store/css/content~goods~manage~market~page~store~user.9a14e6d3.css:
+    newFile: null
+    oldFile: !uuid '6c9fbf790be796b6b36336c0878a026884fa9aaa'
+  /public/store/css/goods.00fcef57.css:
+    newFile: !uuid 'c3a41246470c4ca56ade164adf160d76143ebfb5'
+    oldFile: null
+  /public/store/css/goods.b666d673.css:
+    newFile: null
+    oldFile: !uuid 'fdfad83515269759998ce05ec297817af54e7ecd'
+  /public/store/css/index.1d814823.css:
+    newFile: null
+    oldFile: !uuid 'fb9143d2ba5b5fd9d56d43b5fd751cf9033aaf37'
+  /public/store/css/index.53606e31.css:
+    newFile: !uuid '6331bc335b6f1f1e280b2ca78be1481437595c30'
+    oldFile: null
+  /public/store/css/market.8935de8a.css:
+    newFile: !uuid '7107d0d10348ca4daf9a247581bf37aa09cfd08e'
+    oldFile: null
+  /public/store/css/market.fdb5b1c1.css:
+    newFile: null
+    oldFile: !uuid 'dea241740a0efe25657e52a6cd2d64c4449ba35e'
+  /public/store/css/mp.8b706b78.css:
+    newFile: null
+    oldFile: !uuid 'd7259cfe58f3374a794a1e0d1c93bff9a896c603'
+  /public/store/css/order.27b861f2.css:
+    newFile: null
+    oldFile: !uuid 'fbe17ab201c353d674ebb7c192f4b1ea924dc4bb'
+  /public/store/css/order.d6e20d30.css:
+    newFile: !uuid '3ecc948c10dcb5f7bec327944aa2b635b7393985'
+    oldFile: null
+  /public/store/css/page.9ffe19ec.css:
+    newFile: !uuid '91978c3a80870ff659f3e0ae72c3ec1b8a5cc4f3'
+    oldFile: null
+  /public/store/css/page.f7ba3c4b.css:
+    newFile: null
+    oldFile: !uuid '2df701a7d23359c0cfd85574eac8bf328868efb8'
+  /public/store/css/setting.37208cab.css:
+    newFile: null
+    oldFile: !uuid '631a0bc1c2cb967184d2f4bb0bd97a35da770267'
+  /public/store/css/setting.c8a0b7e5.css:
+    newFile: !uuid '9f081b575412b422cbd923795a0cd39c9a469e34'
+    oldFile: null
+  /public/store/css/statistics.2b9a5c56.css:
+    newFile: !uuid '9024e7ef3c1dc1f9691d97a8698df7c129f7717a'
+    oldFile: null
+  /public/store/css/statistics.b5ef08f4.css:
+    newFile: null
+    oldFile: !uuid '11389fe0ad76d75afa72daca10ec4a3f9af0bfb5'
+  /public/store/css/user.6c8012fe.css:
+    newFile: null
+    oldFile: !uuid 'ffd19b4d20cbf6e262e8fc9dfecbcac5df7f9343'
+  /public/store/css/user.97163f50.css:
+    newFile: !uuid '47b63760b2885dbf396b353deb687850c560f74b'
+    oldFile: null
+  /public/store/index.html:
+    newFile: !uuid '2355ee6835825edd9d8326fe2e51ebd211fa84d7'
+    oldFile: !uuid '52e525f02816b5860873008732b49b7bd9b46c12'
+  /public/store/js:
+    newFile: !uuid 'c9e0b0907b89fc779113af050d048f9fa0d64bd2'
+    oldFile: !uuid '687d0166f84eedc20dee1c7826ef5a4cf569d318'
+  /public/store/js/app.4b474f1b.js:
+    newFile: !uuid '3c63a7e7fdc976e708521e231706ff415d6f71d2'
+    oldFile: null
+  /public/store/js/app.754bb7e6.js:
+    newFile: null
+    oldFile: !uuid '8dd373be931bfbeeed5b1bfddaf3825930f43c1d'
+  /public/store/js/client.3bc01d7a.js:
+    newFile: !uuid 'e0b1fea36e5e8ea87856fd21a9bc1079f79404c8'
+    oldFile: null
+  /public/store/js/content.64a3ef81.js:
+    newFile: !uuid 'c4a705087669531bd8467513570eeaab40ac6ab1'
+    oldFile: null
+  /public/store/js/content.6f516271.js:
+    newFile: null
+    oldFile: !uuid 'c4a705087669531bd8467513570eeaab40ac6ab1'
+  /public/store/js/content~goods~manage~market~order~page~store~user.07dc5abc.js:
+    newFile: null
+    oldFile: !uuid 'c04a0e62955022ab6e311657529dee8fcbd43d04'
+  /public/store/js/content~goods~manage~market~order~page~store~user.76a45bde.js:
+    newFile: !uuid '6c0ebdc9b60cb6b061b3e6c8c936e9b307ef9b83'
+    oldFile: null
+  /public/store/js/content~goods~manage~market~page~store~user.f0cd38e2.js:
+    newFile: null
+    oldFile: !uuid '39ec2e8ff50a6e210f49b6d9cf02d69818a561ed'
+  /public/store/js/exception.850b89a6.js:
+    newFile: null
+    oldFile: !uuid 'eeb1725dcaf8d049e010a16a56ca4eb3c6e12643'
+  /public/store/js/exception.dcec1f65.js:
+    newFile: !uuid 'eeb1725dcaf8d049e010a16a56ca4eb3c6e12643'
+    oldFile: null
+  /public/store/js/goods.6b95ce79.js:
+    newFile: !uuid 'd07f7be541c877babda565bdc9511f715bad4282'
+    oldFile: null
+  /public/store/js/goods.e009c938.js:
+    newFile: null
+    oldFile: !uuid 'd31c88833c174f40b943650f0781a8deb44444be'
+  /public/store/js/index.42688053.js:
+    newFile: !uuid 'c0e6f7c1d1d87cb1443641539e5639f4ef707f61'
+    oldFile: null
+  /public/store/js/index.49de93a5.js:
+    newFile: null
+    oldFile: !uuid '0ebc0f23da5a9b0dd852a0313a35bcb44d4c9b38'
+  /public/store/js/manage.3cb17ff0.js:
+    newFile: null
+    oldFile: !uuid '47d73861801a2f6262ff10be3ae46b2622f34e0e'
+  /public/store/js/manage.4fedeadc.js:
+    newFile: !uuid '47d73861801a2f6262ff10be3ae46b2622f34e0e'
+    oldFile: null
+  /public/store/js/market.2e984303.js:
+    newFile: null
+    oldFile: !uuid '4ecdd196a4d59523838cc130b851bfe0aed09482'
+  /public/store/js/market.9eb2fbe7.js:
+    newFile: !uuid '87f677c59e06b70eedc90d141ac9b5318a9babd1'
+    oldFile: null
+  /public/store/js/mp.04fe334b.js:
+    newFile: null
+    oldFile: !uuid '393e974a7223882410be9a2d68b6dac8c052758b'
+  /public/store/js/order.0216e8cb.js:
+    newFile: null
+    oldFile: !uuid '69e5c149c266a6f8de9ce4fc735c11cf9a36bd72'
+  /public/store/js/order.34c3c19b.js:
+    newFile: !uuid '693f504943d857bedd1ee72f191764b1dd21adf9'
+    oldFile: null
+  /public/store/js/page.7db4503c.js:
+    newFile: !uuid '3e5d71cba6fe6c2e713e4b2851c819da0f823ad7'
+    oldFile: null
+  /public/store/js/page.f1bc7d5c.js:
+    newFile: null
+    oldFile: !uuid '3e5d71cba6fe6c2e713e4b2851c819da0f823ad7'
+  /public/store/js/passport.3e32be09.js:
+    newFile: null
+    oldFile: !uuid '122aae0873299f7474f35d8410b8cccde59fcc7b'
+  /public/store/js/passport.e6218de4.js:
+    newFile: !uuid '122aae0873299f7474f35d8410b8cccde59fcc7b'
+    oldFile: null
+  /public/store/js/setting.6a045b1a.js:
+    newFile: !uuid '0f1ed5c3fb33a6a332385e2384c2c084ade2ffad'
+    oldFile: null
+  /public/store/js/setting.c4c23d3e.js:
+    newFile: null
+    oldFile: !uuid 'b0bc9c7dd7e21eba8ec2450f169306a861ad4128'
+  /public/store/js/statistics.05c2e479.js:
+    newFile: null
+    oldFile: !uuid '576f4ce096b65538ff2c5efb7364da20b20a1b21'
+  /public/store/js/statistics.6c44f7a1.js:
+    newFile: !uuid '4313472cfbc1df0d82a3b297adf98c52426ad9e0'
+    oldFile: null
+  /public/store/js/store.3d442672.js:
+    newFile: !uuid '79ddc520b7dcb5f1c4d2a9b62679d64c8d0c6a0d'
+    oldFile: null
+  /public/store/js/store.78a41d9b.js:
+    newFile: null
+    oldFile: !uuid '79ddc520b7dcb5f1c4d2a9b62679d64c8d0c6a0d'
+  /public/store/js/user.066cbfa0.js:
+    newFile: !uuid 'bbfcbd7c4b57f2b571f805034d98d37eb0c5f501'
+    oldFile: null
+  /public/store/js/user.46c580bf.js:
+    newFile: null
+    oldFile: !uuid '3c5d4ad9e051fe491356d8b886eab90635579e1c'
+gitCommitId: !uuid 'ec0b4c684845b68e83a05cb71151e4f88335f311'
+renames:
+  /public/store/css/app.ae1abea3.css: /public/store/css/app.1fa111ce.css
+  /public/store/css/goods.00fcef57.css: /public/store/css/goods.b666d673.css
+  /public/store/css/market.8935de8a.css: /public/store/css/market.fdb5b1c1.css
+  /public/store/css/order.d6e20d30.css: /public/store/css/order.27b861f2.css
+  /public/store/css/page.9ffe19ec.css: /public/store/css/page.f7ba3c4b.css
+  /public/store/css/setting.c8a0b7e5.css: /public/store/css/setting.37208cab.css
+  /public/store/js/content.64a3ef81.js: /public/store/js/content.6f516271.js
+  /public/store/js/exception.dcec1f65.js: /public/store/js/exception.850b89a6.js
+  /public/store/js/manage.4fedeadc.js: /public/store/js/manage.3cb17ff0.js
+  /public/store/js/page.7db4503c.js: /public/store/js/page.f1bc7d5c.js
+  /public/store/js/passport.e6218de4.js: /public/store/js/passport.3e32be09.js
+  /public/store/js/store.3d442672.js: /public/store/js/store.78a41d9b.js
+revisionId: 165
