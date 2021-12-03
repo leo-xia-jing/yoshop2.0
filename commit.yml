@@ -3,75 +3,63 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid 'c4d932c94b2beba5f942e155f4e219c26d67dd3c'
-    oldFile: !uuid 'bba38d5b5c859eb700f177bc7b438663c2a1cbeb'
+    newFile: !uuid '087aadeaf5f22567596fb4559fb53d6213bf6040'
+    oldFile: !uuid 'c4d932c94b2beba5f942e155f4e219c26d67dd3c'
   /app/api:
-    newFile: !uuid '5afe6423c6d05d1473bb6192cabd37b9a1e3bafc'
-    oldFile: !uuid '15ecd626ed86f592250680e92c66ccada3811c98'
+    newFile: !uuid '13a56945b98089d5792a9a8934ac5571c3f64f52'
+    oldFile: !uuid '5afe6423c6d05d1473bb6192cabd37b9a1e3bafc'
   /app/api/model:
-    newFile: !uuid 'f0a6e5a2ab910718e4c5b5d4a5a76da4e3c2719b'
-    oldFile: !uuid 'dc7e9d4ad1aa6f498c3a71c2c875a12b7c05b7a6'
-  /app/api/model/wxapp:
-    newFile: !uuid 'b6c51b77be5e7b38d0b140d8fa9f6883f6d466a3'
+    newFile: !uuid '3fd391236b00fa9cf7d5525c4b24fc60b9fe38bd'
+    oldFile: !uuid 'f0a6e5a2ab910718e4c5b5d4a5a76da4e3c2719b'
+  /app/api/model/h5:
+    newFile: !uuid '5044f159fe2a2a6eafa40eba881020d0131388ca'
     oldFile: null
-  /app/api/model/wxapp/Setting.php:
-    newFile: !uuid '3383b7f460d6713ac6f5cb230c508a19e8182a9d'
+  /app/api/model/h5/Setting.php:
+    newFile: !uuid '9c703bb64e4cabce6d3dcc26394a68e6695ed821'
     oldFile: null
   /app/common:
-    newFile: !uuid '3038cb148707e1acd9f578094d60af44fafcbaae'
-    oldFile: !uuid '997d1f039b20f85fa063595fe05ed1cbfee9401b'
-  /app/common/library:
-    newFile: !uuid '4e5a98b5fd8b76200e71d0424f5f0ee9093fad99'
-    oldFile: !uuid 'c19872b758545020c5fa5190655c4acbbb9a69dd'
-  /app/common/library/helper.php:
-    newFile: !uuid 'e2d289922ba851365dbe9821c48128b7d1f4c41f'
-    oldFile: !uuid 'cdea52eed1c3336cc1085852f19a3136b4acae5b'
+    newFile: !uuid '4753da188a9d4d0f5e4d49e25a6373610b6d6935'
+    oldFile: !uuid '3038cb148707e1acd9f578094d60af44fafcbaae'
   /app/common/model:
-    newFile: !uuid '686047675c840c59f80f80c37a57d91400bf4a6b'
-    oldFile: !uuid '421cd9f4b4cb7d302393700105c81f86674de6f6'
-  /app/common/model/Wxapp.php:
-    newFile: !uuid '29d786255226dad3d913ae0fcd0df61f18557779'
-    oldFile: !uuid 'dd38175c2d8e6f4c1e7d8b354bfea5f4f870a701'
+    newFile: !uuid '678cdef6b5fb899fe488f78afe1a124c01dcd7b0'
+    oldFile: !uuid '686047675c840c59f80f80c37a57d91400bf4a6b'
+  /app/common/model/h5:
+    newFile: !uuid '25ff2b4013212cc4ddfdbbc079b61cacc35a6a5f'
+    oldFile: null
+  /app/common/model/h5/Setting.php:
+    newFile: !uuid 'ddca5efd2770d31d625b2e3fe3416593af2f3dec'
+    oldFile: null
   /app/common/model/wxapp:
-    newFile: !uuid 'aa0ab07830be749eaf2875131687bc83ef33d250'
-    oldFile: null
+    newFile: !uuid '0e3d3c2e78098798ac75621d526df4b5e85c7642'
+    oldFile: !uuid 'aa0ab07830be749eaf2875131687bc83ef33d250'
   /app/common/model/wxapp/Setting.php:
-    newFile: !uuid 'fa1ea99534564315860ff5160a5debe2f175a5c3'
-    oldFile: null
+    newFile: !uuid '8626d8b66d840bdc48d616b393beef5bdabb983f'
+    oldFile: !uuid 'fa1ea99534564315860ff5160a5debe2f175a5c3'
   /app/store:
-    newFile: !uuid '3630029c5d419aaf38c7d40de36de569f35a8085'
-    oldFile: !uuid '96dafb10de78fb0f6b44f722e41be61df3bfaddb'
+    newFile: !uuid '469bd67f207f30aec1a2395868cc9d6d571ec603'
+    oldFile: !uuid '3630029c5d419aaf38c7d40de36de569f35a8085'
   /app/store/controller:
-    newFile: !uuid 'eb47cb915545977fc59b8eb5b728f0d5e48c1f83'
-    oldFile: !uuid '7cf8d1563ad26b70b790a3de61254ae39e64648b'
-  /app/store/controller/Controller.php:
-    newFile: !uuid '3b663e632052db973d64fa005957b0c1caddc854'
-    oldFile: !uuid '25471f9fed9091626be4c656d31f78de37761a10'
+    newFile: !uuid '111e64d54f2068876b37b8d3a2aec5f817505595'
+    oldFile: !uuid 'eb47cb915545977fc59b8eb5b728f0d5e48c1f83'
   /app/store/controller/client:
-    newFile: !uuid '216789750df653e3b2fb29f8dd6605c14df20816'
-    oldFile: !uuid '29677f6aceb576db6e8aebbfdcc48028db45341a'
-  /app/store/controller/client/Wxapp.php:
-    newFile: null
-    oldFile: !uuid '4b8f5ec5794ceaf5842ab55b7d569bc23c20d8ef'
-  /app/store/controller/client/wxapp:
-    newFile: !uuid '5de90da7a6268ce5adbf8aeea2aeb3f43ac4aae3'
+    newFile: !uuid '5684c0aad518c0b6c3692ae4caeb614143821445'
+    oldFile: !uuid '216789750df653e3b2fb29f8dd6605c14df20816'
+  /app/store/controller/client/h5:
+    newFile: !uuid 'c143ab8dae8a1dbfe833dcd4420100477fcc132d'
     oldFile: null
-  /app/store/controller/client/wxapp/Setting.php:
-    newFile: !uuid '5f730d478b851c78e68b369ccdcc1f0e0317afef'
+  /app/store/controller/client/h5/Setting.php:
+    newFile: !uuid '485f4a3e1aceb78d461280e092520f4571c4437b'
     oldFile: null
   /app/store/model:
-    newFile: !uuid 'edd109e4d98659a937eea2f244c3d974e30cd92f'
-    oldFile: !uuid '09bcc19d98b2d0a8cabb757c29b573b770c6a92d'
-  /app/store/model/wxapp:
-    newFile: !uuid '8ff4a63a3436c98391de8ce03cb3a10e113c8cdd'
+    newFile: !uuid 'babedd7ac4f0136172e91cee317c2bd815de42bb'
+    oldFile: !uuid 'edd109e4d98659a937eea2f244c3d974e30cd92f'
+  /app/store/model/h5:
+    newFile: !uuid '3b3bc065d01b1b4ec9de5e3f2c8fd8a2ec186045'
     oldFile: null
-  /app/store/model/wxapp/Setting.php:
-    newFile: !uuid '3e2a3d9ffbf2aa9d4da7a283069bc7ec53c5bd0f'
+  /app/store/model/h5/Setting.php:
+    newFile: !uuid 'ea959a0dbd215e2a77de21ff903368c036594ffa'
     oldFile: null
-  /数据库修改记录.txt:
-    newFile: !uuid 'a3ee92d8d4cd3a3ee521a0c7ddd9860e69aac961'
-    oldFile: !uuid '581d7c5c4c398cd3e4bece131ac272989ffc1b5b'
-gitCommitId: !uuid '875a8daa760a88bb55fdafb364e2d79bde6149c8'
+gitCommitId: !uuid 'ade736d22117a84b289185cc5b91c20b50677903'
 renames: {
   }
-revisionId: 114
+revisionId: 115
