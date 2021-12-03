@@ -3,24 +3,27 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid '5b889efc28fa27830c56b94141aafcfc586388b8'
-    oldFile: !uuid 'bbdb875f0417e9ac79d9524e0838ddf7fe21ed47'
-  /app/common.php:
-    newFile: !uuid '12a25c8d2264e451da649d13f6ef2a0b2c5ab37b'
-    oldFile: !uuid '2c2a68f3cf7c2aa7dea1cc1b49cbefb022b1bf02'
-  /config:
-    newFile: !uuid '67f5c6784e0ec0f1b0e8bad27c5e007b24e8423c'
-    oldFile: !uuid 'd7f70de1f925ce41e0a6be8640bc6602e155e2db'
-  /config/trace.php:
-    newFile: !uuid '87caae99fa587c0a0d4718a483f3cb5e3a52a0e4'
-    oldFile: !uuid '0fd4b4c0e9852ca6ecfac5d87638df34afc674fd'
-  /cores:
-    newFile: !uuid '6125602bdefa1006c575e58a3ed3b80f0bdca6d8'
-    oldFile: !uuid '28a074cf17cf8028b43ff234751e4b1c1364da31'
-  /cores/ExceptionHandle.php:
-    newFile: !uuid 'ad158fd7bea6f17fd03e4e01ba5ce7d7dc9f0dcc'
-    oldFile: !uuid '0f7502081e68894020c8ae1676aca33cd94295e0'
-gitCommitId: !uuid 'dd4eac46c0919800dca2f7f55ea003b47bdf92c6'
+    newFile: !uuid '86be659b751410579c63e0ee88ddc366e0c7063b'
+    oldFile: !uuid '5b889efc28fa27830c56b94141aafcfc586388b8'
+  /app/console:
+    newFile: !uuid '16cc16e0d905ec093f7971b9a04a6908d56d1294'
+    oldFile: !uuid 'faf6342aec3ab8c960f494525997aba8daa3f307'
+  /app/console/command:
+    newFile: !uuid 'b4b24641c09dd0eb67713defc84a63c99f260191'
+    oldFile: !uuid '9bf0b1b68c68c1ad94bbcbf9320597e5c9afa745'
+  /app/console/command/Timer.php:
+    newFile: !uuid 'ee66f0b36aff808d34d0566e16dfb3d6a0c93705'
+    oldFile: !uuid '34f61146949c013bec379f03d73df59543395f15'
+  /app/console/task:
+    newFile: !uuid 'a4d49bb8cbe90f9d1be198f8dbb13cce1488ff2f'
+    oldFile: !uuid 'c354c2222ccb181c6fdb61257430c7c2b4a8a8e1'
+  /app/console/task/Store.php:
+    newFile: !uuid '9d53aa8f6689763940f2b0716699fc7d606506c6'
+    oldFile: !uuid 'ab7c41af06a6e4366453cb2a4eb725c11331f136'
+  /app/console/task/Task.php:
+    newFile: !uuid '6afadd5429e75e02007ed847401d003affde5ac6'
+    oldFile: !uuid '06e7a617585cc73ce12a5eab479e10798a9a4d89'
+gitCommitId: !uuid '97c3f0fd70aa3de3437be92d3c380a19d1882ff0'
 renames: {
   }
-revisionId: 129
+revisionId: 130
