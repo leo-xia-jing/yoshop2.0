@@ -2,31 +2,28 @@
 branches: {
   }
 fileChange:
-  /app:
-    newFile: !uuid '4c2fa7204d6105f69fc3f02b2e2f9ba8d3cb290d'
-    oldFile: !uuid '0bfa3c4b5cdd57753bb37fd7c8d2deb5a4444f67'
-  /app/api:
-    newFile: !uuid '9c0008dc19b3fbeed498db3c49c6cd21a89bebfa'
-    oldFile: !uuid 'a695b466509e09dd279789a0f8e9432ca30e0a5d'
-  /app/api/service:
-    newFile: !uuid 'cc03f1284d5c181c44ab36f18b997c21f3c442dc'
-    oldFile: !uuid 'be90e3a13234f80906b8d4d37c54627bcebfd031'
-  /app/api/service/Setting.php:
-    newFile: !uuid '141aa1364df14b2ad2b42fa1cbcf59d66744dd7c'
-    oldFile: !uuid 'e2c9aa25c6f354975a906807487baa12ef2f4cb9'
-  /app/common:
-    newFile: !uuid '5b5a1e38b02d16e1e4828ce7b94403ed5243cfcd'
-    oldFile: !uuid 'ca31fe7e08863094551eddac2068467946f0d2b3'
-  /app/common/model:
-    newFile: !uuid '6d2d2ac4966c04f98b670d26b129ba339ec94596'
-    oldFile: !uuid 'b71f20431fefff86ac51a5b87b8a39d7a7a6415b'
-  /app/common/model/h5:
-    newFile: !uuid '978885e75e8e98cfd8fd3c6a2d5a39ee69ba2098'
-    oldFile: !uuid '53a93078ce29759332ab0355d506f6622699a8d1'
-  /app/common/model/h5/Setting.php:
-    newFile: !uuid 'a085bed3ba8bccd0718c62806d129159b75e4fe0'
-    oldFile: !uuid 'e0e394948b977bb36532780cf2a0928357f745bc'
-gitCommitId: !uuid '7f2dd1f08115f5f6bee5108e625d19fc3e6d2425'
+  /.env:
+    newFile: !uuid '9208514ea6bdea296f5c8708662c1a1646f4db55'
+    oldFile: !uuid '2042af2618494e33bd8694606eefe90299cadb52'
+  /config:
+    newFile: !uuid 'd7f70de1f925ce41e0a6be8640bc6602e155e2db'
+    oldFile: !uuid '9547f9b742a8b5a6e5049d54f09db7576268da78'
+  /config/cache.php:
+    newFile: !uuid '9bf6c569a38358d719838caf3d51bd78981aa226'
+    oldFile: !uuid 'a834e1bbd6c95129ed3a140bb5ad9139b20a2f4e'
+  /public:
+    newFile: !uuid '5c43f49b06c7a541e408c06dadc52e14c0a18a24'
+    oldFile: !uuid 'dc408da0af2e104beb6f379b862f19018265f9df'
+  /public/install:
+    newFile: !uuid '6a3fe59d6d6ce594a58ace0b6d31535f928522ee'
+    oldFile: !uuid '81f069f87828964f24f1904e1de15d8c44cd7930'
+  /public/install/data:
+    newFile: !uuid '49653f8aa73b407ec41d7573153aceabf344b089'
+    oldFile: !uuid '1da14fd0185085edf828575a5eeb43143eba9685'
+  /public/install/data/.env.tpl:
+    newFile: !uuid 'f0b58995425a2c4c0719ef25bd09a1bd9b7159f3'
+    oldFile: !uuid '8bc0fe90f67c3d9f8087e36d44400b6db82486d3'
+gitCommitId: !uuid 'c434265703ba7c9991e167c8c425f060ecf7b81d'
 renames: {
   }
-revisionId: 119
+revisionId: 120
