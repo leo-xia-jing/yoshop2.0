@@ -3,30 +3,21 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid 'e08bc5c2252373fd3ebfdeff34ce542bae67b4af'
-    oldFile: !uuid '0678366f7de276ef51bd90331ea376fb0cfd44ff'
+    newFile: !uuid '3cae1bc20e5ae976fece9c4309665a53ab1f25c3'
+    oldFile: !uuid 'e08bc5c2252373fd3ebfdeff34ce542bae67b4af'
   /app/common:
-    newFile: !uuid 'b120601fb58e869c1d39f3e7a6b2455d499f704d'
-    oldFile: !uuid '6d22c386b605d41c22fba13b18bc8b43f322ca21'
-  /app/common/service:
-    newFile: !uuid 'f45e3fe4706a23c1050248ddd54ef003d4c435c9'
-    oldFile: !uuid '453897d33d2d380fd1221ad050f029533c788186'
-  /app/common/service/Goods.php:
-    newFile: !uuid '2c4d4cb82f5b77b0915637bdb29df5d95dbb0b1a'
-    oldFile: !uuid 'e2a2e996f77372524b79235c3b312bb956046edb'
-  /app/store:
-    newFile: !uuid '74454550ac84e53259c0b832641ed7b4c338bf9d'
-    oldFile: !uuid '125586cf6b7b57126f72dc9f1e5b32e96aa93eca'
-  /app/store/service:
-    newFile: !uuid 'f3f14e81cfd3ab8028bb856151a40198712e6cf2'
-    oldFile: !uuid '83fc6bc40dcc1a7d6f51927bb301b9ede604451c'
-  /app/store/service/order:
-    newFile: !uuid '7991798e7062aedfa275396521c0aecfcdb104d4'
-    oldFile: !uuid '7d56e497a1ace88760dd15329f279584013c175e'
-  /app/store/service/order/Export.php:
-    newFile: !uuid '67d5169198fd1b303e245755d50bdf2b39686b86'
-    oldFile: !uuid '01b970d74d6816219b010980e589408f51978478'
-gitCommitId: !uuid 'ac456052df90524c92382bba62e01edb0eafb2c2'
+    newFile: !uuid 'e7e7db62655ee68bb8e921a90b13a0cf3466b228'
+    oldFile: !uuid 'b120601fb58e869c1d39f3e7a6b2455d499f704d'
+  /app/common/library:
+    newFile: !uuid '4c9e5efb80a49b42771d5689f4d26931f8e10685'
+    oldFile: !uuid '7071d142c3f1ad7f367acb8de6ab123743fa69e1'
+  /app/common/library/express:
+    newFile: !uuid 'ad4478e2a9879f758a0d1380f11b788058861198'
+    oldFile: !uuid '930b5c22065a0d186b8b887553c4624296341b4f'
+  /app/common/library/express/Kuaidi100.php:
+    newFile: !uuid '191a1df2a333725f99b986946144837a0a273ef4'
+    oldFile: !uuid 'cbfa252b0fbae82a4976e934f47e26243f5daaa6'
+gitCommitId: !uuid '2689e965a3ac23bf63ceda5009ab947bad7c28b5'
 renames: {
   }
-revisionId: 177
+revisionId: 178
