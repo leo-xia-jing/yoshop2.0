@@ -3,72 +3,24 @@ branches: {
   }
 fileChange:
   /public:
-    newFile: !uuid 'e974cf45abff5674b61f4bd1513b930c7b1cf36d'
-    oldFile: !uuid '71ee782b6790e52cea6ef14e00f12dc0ea8e2769'
-  /public/store:
-    newFile: !uuid '49e49ab00e679df6a5fce67131a62fe06e365b89'
-    oldFile: !uuid '6861d6111e74ffe3b39aef4c1679ca8b252b079e'
-  /public/store/css:
-    newFile: !uuid 'a0dbbc610e8bc31071b03eb5c6fa5f1207600817'
-    oldFile: !uuid '90b0eb0c444a32d5c251a4b9a8e5182431d48926'
-  /public/store/css/app.296430b1.css:
-    newFile: !uuid '9c37055091f3c9a49975d3b4b7fddb3e624212c3'
+    newFile: !uuid '78800d4d191ec157762e8c24b607574d373cca05'
+    oldFile: !uuid 'e974cf45abff5674b61f4bd1513b930c7b1cf36d'
+  /public/admin:
+    newFile: !uuid '75a98c1f7c14ffc7188eebdbe801946d8ce5f8e2'
+    oldFile: !uuid '9fa6b2f991947c0727c0b0fde074e3ea410c31bf'
+  /public/admin/config.js:
+    newFile: !uuid '5d4ff4486c0be132c59ef52143c6e6b026a688ef'
+    oldFile: !uuid '5fe9ddbc33b65cd180b0f0fa191a616acb7e926d'
+  /public/admin/css:
+    newFile: !uuid 'f43fe17335fbaf84f459567b8402fb25a96744b5'
+    oldFile: !uuid '04c85949ccb98d51e935e3e341da4d32bed4a978'
+  /public/admin/css/app.cf03b734.css:
+    newFile: !uuid '0044e9d9f7f27252a46bb1739388c1db516f2a79'
     oldFile: null
-  /public/store/index.html:
-    newFile: !uuid 'c961f592db150bc549816ffda92d2f77b05521eb'
-    oldFile: !uuid '2355ee6835825edd9d8326fe2e51ebd211fa84d7'
-  /public/store/js:
-    newFile: !uuid '6a78b940ed0cbf03bb09e1106fdecac70fac23be'
-    oldFile: !uuid 'c9e0b0907b89fc779113af050d048f9fa0d64bd2'
-  /public/store/js/app.0ea3be54.js:
-    newFile: !uuid '8ac44ef4859aa2d3721c8bbc33b3f7b6edcf8a27'
-    oldFile: null
-  /public/store/js/client.f477bb17.js:
-    newFile: !uuid 'e0b1fea36e5e8ea87856fd21a9bc1079f79404c8'
-    oldFile: null
-  /public/store/js/content.6a50f443.js:
-    newFile: !uuid 'c4a705087669531bd8467513570eeaab40ac6ab1'
-    oldFile: null
-  /public/store/js/content~goods~manage~market~order~page~store~user.4a986d23.js:
-    newFile: !uuid '6c0ebdc9b60cb6b061b3e6c8c936e9b307ef9b83'
-    oldFile: null
-  /public/store/js/exception.a0bfc94b.js:
-    newFile: !uuid 'eeb1725dcaf8d049e010a16a56ca4eb3c6e12643'
-    oldFile: null
-  /public/store/js/goods.206ffb91.js:
-    newFile: !uuid 'd07f7be541c877babda565bdc9511f715bad4282'
-    oldFile: null
-  /public/store/js/index.7f9e2749.js:
-    newFile: !uuid 'c0e6f7c1d1d87cb1443641539e5639f4ef707f61'
-    oldFile: null
-  /public/store/js/manage.b5be6c5a.js:
-    newFile: !uuid '47d73861801a2f6262ff10be3ae46b2622f34e0e'
-    oldFile: null
-  /public/store/js/market.cf9daf80.js:
-    newFile: !uuid '87f677c59e06b70eedc90d141ac9b5318a9babd1'
-    oldFile: null
-  /public/store/js/order.d76ab7d9.js:
-    newFile: !uuid '693f504943d857bedd1ee72f191764b1dd21adf9'
-    oldFile: null
-  /public/store/js/page.c7d73225.js:
-    newFile: !uuid '3e5d71cba6fe6c2e713e4b2851c819da0f823ad7'
-    oldFile: null
-  /public/store/js/passport.212cdb80.js:
-    newFile: !uuid '122aae0873299f7474f35d8410b8cccde59fcc7b'
-    oldFile: null
-  /public/store/js/setting.ba50c70f.js:
-    newFile: !uuid '0f1ed5c3fb33a6a332385e2384c2c084ade2ffad'
-    oldFile: null
-  /public/store/js/statistics.254688a9.js:
-    newFile: !uuid '4313472cfbc1df0d82a3b297adf98c52426ad9e0'
-    oldFile: null
-  /public/store/js/store.5f678ba9.js:
-    newFile: !uuid '79ddc520b7dcb5f1c4d2a9b62679d64c8d0c6a0d'
-    oldFile: null
-  /public/store/js/user.3ade871f.js:
-    newFile: !uuid 'bbfcbd7c4b57f2b571f805034d98d37eb0c5f501'
-    oldFile: null
-gitCommitId: !uuid 'dc4be7bc8889f6a53971201e42dcbdb28ded2f93'
+  /public/admin/index.html:
+    newFile: !uuid 'fdba9e65e4c5f1b971c5e5ac88434a6232834e73'
+    oldFile: !uuid '3902858ebc012d58380208c147916e4923d46a3d'
+gitCommitId: !uuid 'ce7cf8bb12be4c9dc40b286fa48c3503ab219eb4'
 renames: {
   }
-revisionId: 179
+revisionId: 180
