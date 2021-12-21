@@ -2,10 +2,16 @@
 branches: {
   }
 fileChange:
-  /数据库修改记录.txt:
-    newFile: !uuid '20de4caa30a888ca64c628f78841185d6782bc2b'
-    oldFile: !uuid '696b4fece28f290cc4fe49d248ee8371b9c36dd3'
-gitCommitId: !uuid '92e60a993800fc0f9fcbb17544e25f320cb3a84e'
+  /public:
+    newFile: !uuid '4ae0164e287373a54725443cdb691f746649aa71'
+    oldFile: !uuid '78800d4d191ec157762e8c24b607574d373cca05'
+  /public/admin:
+    newFile: !uuid 'e62ad5f33b31878ef8b5184a607b80376c9e1400'
+    oldFile: !uuid '75a98c1f7c14ffc7188eebdbe801946d8ce5f8e2'
+  /public/admin/config.js:
+    newFile: !uuid '3537c46a69a1bb1ddddf41804d239772195f867a'
+    oldFile: !uuid '5d4ff4486c0be132c59ef52143c6e6b026a688ef'
+gitCommitId: !uuid 'e83c1539f475a87d58c5956bcfc1019bbf99a620'
 renames: {
   }
-revisionId: 181
+revisionId: 182
