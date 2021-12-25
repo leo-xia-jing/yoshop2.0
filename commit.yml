@@ -2,25 +2,34 @@
 branches: {
   }
 fileChange:
-  /vendor:
-    newFile: !uuid '09a91457e2df80525c125231a8f6243b5266c300'
-    oldFile: !uuid 'b77ceb364e9c43956dfde27b13cb0fcf328ad9d9'
-  /vendor/topthink:
-    newFile: !uuid '35fc5dcb5a9c7bfcae49e3f4cbbfc74c053a5df7'
-    oldFile: !uuid '4f1b5e25a40e08ffa89343364512ed6531aa2ed0'
-  /vendor/topthink/think-multi-app:
-    newFile: !uuid 'b96655bce7bac7dbc033aef31cbd742125b6e97b'
-    oldFile: !uuid '757452d9e017e58f7b174d2dfefba3ab79fcb918'
-  /vendor/topthink/think-multi-app/src:
-    newFile: !uuid 'b4a2c9b2d1495095e49c7df2ae8c6e52aa49d9bb'
-    oldFile: !uuid '9f6bfae81ac72c5a639799b9b2a955eb3f351a74'
-  /vendor/topthink/think-multi-app/src/command:
-    newFile: !uuid '0390f1df26f3fe3a130b481eedefedae9ac98def'
-    oldFile: !uuid '8b24760fbf6cdd0c82c776c8c9ae9a1de4329527'
-  /vendor/topthink/think-multi-app/src/command/Clear.php:
-    newFile: !uuid '8bc497b9bca62b112fd00f1e9a81483a0eb82b77'
-    oldFile: !uuid 'f5283a372a948454e3df5b570fc2d19d2f2653ed'
-gitCommitId: !uuid '104e6c5a29fc2dd0bef4d65d4232eded33f3fa42'
+  /app:
+    newFile: !uuid '0e239bb6311c9a30c507665d3e23c8927c9bb685'
+    oldFile: !uuid '3cae1bc20e5ae976fece9c4309665a53ab1f25c3'
+  /app/api:
+    newFile: !uuid 'dc4007d69073e28dfa361c3a5e4cdf97b256c27b'
+    oldFile: !uuid '666c147e05a9e3550e5fa66ec6b9a14fd24d55b6'
+  /app/api/model:
+    newFile: !uuid 'a8fb86b754a6d0f09a18e765a6a2590ed896a8f4'
+    oldFile: !uuid '92a791f27a0992acc5acc61b5e14595cea5fec5f'
+  /app/api/model/UserCoupon.php:
+    newFile: !uuid 'a52e06d058a4213fd53d9f423c22cd858246d184'
+    oldFile: !uuid 'd8195a88af72c62a891d65f4bfbddeb9c44f5ee8'
+  /app/api/service:
+    newFile: !uuid '477ec59899a085b9446be5e4458838c50e9f3081'
+    oldFile: !uuid '8d63a2a6e82985749392e61490ac2ce8e97f3a40'
+  /app/api/service/coupon:
+    newFile: !uuid '92b186be7cff0a9467b7a7d3f1211cd70774171e'
+    oldFile: !uuid 'fb127f4c560b8a75b72e5b28b44d595d9db8337b'
+  /app/api/service/coupon/GoodsDeduct.php:
+    newFile: !uuid 'cfc8f3c2648dff1df6092f35c81249d33b191550'
+    oldFile: !uuid 'b67f677e059fa5b0d12863b95857537f72a2026f'
+  /app/api/service/order:
+    newFile: !uuid '9e2a42abac6bda2fb54866ee465abcb4dc4f3589'
+    oldFile: !uuid '517c6da47245912ff4a2b17d3abbe40aedec3e17'
+  /app/api/service/order/Checkout.php:
+    newFile: !uuid '75f7343ac6f66070f1767bce162d6178d1834358'
+    oldFile: !uuid '6a6d754bd8c9d549fef8883bfb2164cd2bbff0a2'
+gitCommitId: !uuid 'c70498a885c4139577e335f7b2c2398fe9f7e741'
 renames: {
   }
-revisionId: 183
+revisionId: 184
