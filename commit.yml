@@ -2,16 +2,25 @@
 branches: {
   }
 fileChange:
-  /public:
-    newFile: !uuid '4ae0164e287373a54725443cdb691f746649aa71'
-    oldFile: !uuid '78800d4d191ec157762e8c24b607574d373cca05'
-  /public/admin:
-    newFile: !uuid 'e62ad5f33b31878ef8b5184a607b80376c9e1400'
-    oldFile: !uuid '75a98c1f7c14ffc7188eebdbe801946d8ce5f8e2'
-  /public/admin/config.js:
-    newFile: !uuid '3537c46a69a1bb1ddddf41804d239772195f867a'
-    oldFile: !uuid '5d4ff4486c0be132c59ef52143c6e6b026a688ef'
-gitCommitId: !uuid 'e83c1539f475a87d58c5956bcfc1019bbf99a620'
+  /vendor:
+    newFile: !uuid '09a91457e2df80525c125231a8f6243b5266c300'
+    oldFile: !uuid 'b77ceb364e9c43956dfde27b13cb0fcf328ad9d9'
+  /vendor/topthink:
+    newFile: !uuid '35fc5dcb5a9c7bfcae49e3f4cbbfc74c053a5df7'
+    oldFile: !uuid '4f1b5e25a40e08ffa89343364512ed6531aa2ed0'
+  /vendor/topthink/think-multi-app:
+    newFile: !uuid 'b96655bce7bac7dbc033aef31cbd742125b6e97b'
+    oldFile: !uuid '757452d9e017e58f7b174d2dfefba3ab79fcb918'
+  /vendor/topthink/think-multi-app/src:
+    newFile: !uuid 'b4a2c9b2d1495095e49c7df2ae8c6e52aa49d9bb'
+    oldFile: !uuid '9f6bfae81ac72c5a639799b9b2a955eb3f351a74'
+  /vendor/topthink/think-multi-app/src/command:
+    newFile: !uuid '0390f1df26f3fe3a130b481eedefedae9ac98def'
+    oldFile: !uuid '8b24760fbf6cdd0c82c776c8c9ae9a1de4329527'
+  /vendor/topthink/think-multi-app/src/command/Clear.php:
+    newFile: !uuid '8bc497b9bca62b112fd00f1e9a81483a0eb82b77'
+    oldFile: !uuid 'f5283a372a948454e3df5b570fc2d19d2f2653ed'
+gitCommitId: !uuid '104e6c5a29fc2dd0bef4d65d4232eded33f3fa42'
 renames: {
   }
-revisionId: 182
+revisionId: 183
