@@ -3,33 +3,27 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid 'b18d7417de79de7872bf44c23f0267fe022208a4'
-    oldFile: !uuid 'b352c787e63899a97683721d4555eef107d5178b'
+    newFile: !uuid '027c75af5f7f16a4ca0568bf65f7c66030a52787'
+    oldFile: !uuid 'b18d7417de79de7872bf44c23f0267fe022208a4'
   /app/api:
-    newFile: !uuid '1b9a74e5ccf3d85071f110f5edf6ab7160ae0bfc'
-    oldFile: !uuid '58e04e0492ec3d30e725e83aebbd16876e46e70d'
-  /app/api/controller:
-    newFile: !uuid '464b46a538edc87fe6adf353d500bb8b265ea40f'
-    oldFile: !uuid '9689c4c8f7949d27a44160616e6118fcea784044'
-  /app/api/controller/Checkout.php:
-    newFile: !uuid '3b5740196df9b6b38c65ff2044dedb38e0fe9b29'
-    oldFile: !uuid 'f5f76940d996c12462768f40360632175349af90'
+    newFile: !uuid '80c0884e2b6ad781e6db517678af669206da1e94'
+    oldFile: !uuid '1b9a74e5ccf3d85071f110f5edf6ab7160ae0bfc'
   /app/api/service:
-    newFile: !uuid '53b795146afe67b4a5065d6c0ba131714cc01276'
-    oldFile: !uuid '1c93cae3c7c924317082c954858f04b272862000'
-  /app/api/service/order:
-    newFile: !uuid '212f8b4dc69a373b7d61daeb0f0118ef30bcd39f'
-    oldFile: !uuid '761f67326a3d2841ae5a3e4773fb531169c25e4b'
-  /app/api/service/order/Checkout.php:
-    newFile: !uuid '53d2a68e470ef814d865f52666cd3a1f0321bac4'
-    oldFile: !uuid '42f419f85ead9aed8ad69029ad943123b4f3e708'
+    newFile: !uuid '68a3c9ae31aa2bd94e8f10539d677090284fe0b3'
+    oldFile: !uuid '53b795146afe67b4a5065d6c0ba131714cc01276'
+  /app/api/service/passport:
+    newFile: !uuid '882a7e849b34d51f6f5a82dce5091f394a7e6a05'
+    oldFile: !uuid '5da4b020ecf55f5b7578946b3abd75e29d03056f'
+  /app/api/service/passport/Party.php:
+    newFile: !uuid '7463848761ef89c22f8a0c09ec385c958f5b01dd'
+    oldFile: !uuid '745040bb2d46f891446dfce93781729494286968'
   /app/api/service/user:
-    newFile: !uuid '79e380441625ca19a926dd6c1c08332f4f0ece03'
-    oldFile: !uuid 'b59c7e3db5dd21dcc306e728c40e4d82d7b6a016'
-  /app/api/service/user/Grade.php:
-    newFile: !uuid '3e6c1bdac0650d95ea4cbabc2ddc0485543ea239'
-    oldFile: !uuid '2bf2518352bd6f466f2a0ab2f3de71d6b87bf405'
-gitCommitId: !uuid '4b9a79329565b5351492b518a5e76a924b206c21'
+    newFile: !uuid 'd0e79a5ab5093c98118fe44ad33ba01c81c08067'
+    oldFile: !uuid '79e380441625ca19a926dd6c1c08332f4f0ece03'
+  /app/api/service/user/Avatar.php:
+    newFile: !uuid '16c9eb9d3bd7d83b9d797bea4cec0ee0f27cd483'
+    oldFile: !uuid '9a894db24370ac30c2141a9b31e8c4b7ea3e60e9'
+gitCommitId: !uuid '78efbf652ae33546c52de323c4c4f7b18d875218'
 renames: {
   }
-revisionId: 195
+revisionId: 196
