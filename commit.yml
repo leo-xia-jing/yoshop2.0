@@ -2,34 +2,13 @@
 branches: {
   }
 fileChange:
-  /app:
-    newFile: !uuid 'e218fc29afdb4107632273aec62b2501ed33778f'
-    oldFile: !uuid '5628886cbb657f438f6532471f20468068664303'
-  /app/common.php:
-    newFile: !uuid 'c359371c032519e7baa120009dd0d9ba70389ace'
-    oldFile: !uuid '719e5242380dee882d9310653295cbf480802062'
-  /app/store:
-    newFile: !uuid '17b69ab82b31392c357cf749fec8336e7ba80d3c'
-    oldFile: !uuid '74454550ac84e53259c0b832641ed7b4c338bf9d'
-  /app/store/controller:
-    newFile: !uuid 'e7f9d93d8090298cf49e1be19fc8b1af36e204d0'
-    oldFile: !uuid '59ab1510dcd2aded5c6ca881ba644b30c972fdee'
-  /app/store/controller/setting:
-    newFile: !uuid 'a02e42db9280a9edfbee18b40bbed38422c15d4a'
-    oldFile: !uuid '57ca74fe5b07f73c9471f3aae487e47c5bce0a50'
-  /app/store/controller/setting/Cache.php:
-    newFile: !uuid '003daf9c469bfd18be4cebc32beab25b68261caf'
-    oldFile: !uuid 'b30aa904e7dce69d1c81355511a679f616a5d5a7'
-  /app/store/service:
-    newFile: !uuid '392d67d455630928b4c513fd66dd3eb1c8da387a'
-    oldFile: !uuid 'f3f14e81cfd3ab8028bb856151a40198712e6cf2'
-  /app/store/service/setting:
-    newFile: !uuid 'd31e19803f4361c3a99d190c3bda780a3ea9b13e'
-    oldFile: null
-  /app/store/service/setting/Clear.php:
-    newFile: !uuid '2e2146e7062e019bc69374ecca754f201bbd8a65'
-    oldFile: null
-gitCommitId: !uuid '558183e9b4e06bf77ed9cfd889920f92a45a511a'
+  /cores:
+    newFile: !uuid '5825415026145ea45f9aaf7b6d4df57a66ff0443'
+    oldFile: !uuid 'e51d9e6607b7514fa1e7529d130012e35f256526'
+  /cores/BaseModel.php:
+    newFile: !uuid 'a0762539024f0298425fe8de4b9b66809bd27159'
+    oldFile: !uuid '78196c64170b5225b49958c320a88cec33e1602a'
+gitCommitId: !uuid '975aa5750be108fb6d5a1f1d4bc89f7e2ea6d467'
 renames: {
   }
-revisionId: 187
+revisionId: 188
