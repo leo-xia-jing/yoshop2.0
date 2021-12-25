@@ -2,13 +2,22 @@
 branches: {
   }
 fileChange:
-  /cores:
-    newFile: !uuid '5825415026145ea45f9aaf7b6d4df57a66ff0443'
-    oldFile: !uuid 'e51d9e6607b7514fa1e7529d130012e35f256526'
-  /cores/BaseModel.php:
-    newFile: !uuid 'a0762539024f0298425fe8de4b9b66809bd27159'
-    oldFile: !uuid '78196c64170b5225b49958c320a88cec33e1602a'
-gitCommitId: !uuid '975aa5750be108fb6d5a1f1d4bc89f7e2ea6d467'
+  /vendor:
+    newFile: !uuid 'c462c67c1a836cb7a005b98b7da245fb19a4038d'
+    oldFile: !uuid '09a91457e2df80525c125231a8f6243b5266c300'
+  /vendor/guzzlehttp:
+    newFile: !uuid '878861a116c6f2251edfabc9792fcfded06256a7'
+    oldFile: !uuid '0fcc738130fe377eb78b69973e4f7e80c2b8bac4'
+  /vendor/guzzlehttp/guzzle:
+    newFile: !uuid '2d3552445a054e727f41a92416f6649ca5a38cb3'
+    oldFile: !uuid '384be369483e16b1c2558580a278d5c82d749e7a'
+  /vendor/guzzlehttp/guzzle/src:
+    newFile: !uuid '38f9dd2c0e737170ec6f82fba12772be071812d1'
+    oldFile: !uuid '4b130dc544906b01f1907840d4fd6789b9c6aa35'
+  /vendor/guzzlehttp/guzzle/src/Client.php:
+    newFile: !uuid '2115cf0fe1b6804b8a4d6ddf9abd854af3d74673'
+    oldFile: !uuid '58f1d891a74008ec798e918030236895c9e9fdd3'
+gitCommitId: !uuid '9f096498267d1730b269700ccc625eb4f1e2cb33'
 renames: {
   }
-revisionId: 188
+revisionId: 189
