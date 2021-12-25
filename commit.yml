@@ -3,27 +3,33 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid 'ba04a48869961f7c74b2b2cdbcf434bb77bb1b1d'
-    oldFile: !uuid '5e1b61a67a48bb8141db6993ef0e77399134f0ae'
-  /app/api:
-    newFile: !uuid 'ec29270b6226438a4d4935b6b5d7cc8485dd27da'
-    oldFile: !uuid '42a7b24ecca13c0ea5d05821a2dd55af130b0f7e'
-  /app/api/model:
-    newFile: !uuid 'c6cffc26a886872a7bffc5c6ad3cd1870cce3755'
-    oldFile: !uuid '5801509fccf440b572d84a9cab9e9cb6a53347aa'
-  /app/api/model/User.php:
-    newFile: !uuid 'a5da94659f131d79ca5d41132f689bee581ed050'
-    oldFile: !uuid 'd3418cd2b05bc75a7ceea0f72f73bd0624ec135f'
-  /app/api/model/UserOauth.php:
-    newFile: !uuid '33cbd9ac135fdd4fca3f03f6745cec680ba504af'
-    oldFile: !uuid '392d9e746f3a17514aa87b429921e6209c9edb47'
-  /app/api/service:
-    newFile: !uuid '1c93cae3c7c924317082c954858f04b272862000'
-    oldFile: !uuid '8c73acaddbc0ac340397118d18874af3b9a8e11f'
-  /app/api/service/User.php:
-    newFile: !uuid '52580f828ddd643ec2472c47b0b36e292e437fcb'
-    oldFile: !uuid '580287dc6e0b08b2a9130a5c95fcf6214df3af4a'
-gitCommitId: !uuid '7972bc22a93ad207b677b6a15d9a8c35b2604985'
+    newFile: !uuid '2efcf04d8ca9b021157f4798b32b0d2ee3814e7c'
+    oldFile: !uuid 'ba04a48869961f7c74b2b2cdbcf434bb77bb1b1d'
+  /app/common:
+    newFile: !uuid '9abd6b6340c5fd246a8076212f1a78297134f975'
+    oldFile: !uuid 'd560e1a41cfb120a1bd603e0bd1b578661f390c1'
+  /app/common/library:
+    newFile: !uuid 'f5e313d1c975ba86addf08f3e350530891f5cda5'
+    oldFile: !uuid '20c77c6a9f7aa6c23158cc4645845f9f8040ba25'
+  /app/common/library/Log.php:
+    newFile: !uuid 'e5bce6420e5d3a162d336864993879cf06152128'
+    oldFile: null
+  /app/middleware.php:
+    newFile: !uuid 'a6e97f9d288a6f6fe684ab55da9e9a5a2ed9738a'
+    oldFile: !uuid '1a3f46324373075ea33ca6783caad2c303efaadf'
+  /cores:
+    newFile: !uuid 'f7d30bfca5cfc45ed72eac778a83f6386d09edee'
+    oldFile: !uuid '5825415026145ea45f9aaf7b6d4df57a66ff0443'
+  /cores/AppService.php:
+    newFile: !uuid '472edc26e700d56b554640cd1e1998c0595ae7bb'
+    oldFile: !uuid '344618c375c986f505c801fdae04d11dc9f0ee98'
+  /cores/middleware:
+    newFile: !uuid 'd2702736d838880cb29db4881b818af6b7aecd94'
+    oldFile: !uuid 'f930d9d12a12f07c138622b6c6bbccc176abc007'
+  /cores/middleware/AppLog.php:
+    newFile: !uuid 'd7f74e21f52ec1fce0d671c75a043c52235bab7d'
+    oldFile: null
+gitCommitId: !uuid 'c2a88fd08772790bf5441cb0d3b593aa6fac7a4e'
 renames: {
   }
-revisionId: 192
+revisionId: 193
