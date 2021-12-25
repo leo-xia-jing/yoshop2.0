@@ -3,27 +3,42 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid 'd60c2ad27c3ba4fbaa155321121ac8d344653227'
-    oldFile: !uuid '0e239bb6311c9a30c507665d3e23c8927c9bb685'
+    newFile: !uuid '5628886cbb657f438f6532471f20468068664303'
+    oldFile: !uuid 'd60c2ad27c3ba4fbaa155321121ac8d344653227'
   /app/api:
-    newFile: !uuid '71d54092e04c9b8e4caa6178d4f5d0b8597e5dea'
-    oldFile: !uuid 'dc4007d69073e28dfa361c3a5e4cdf97b256c27b'
-  /app/api/controller:
-    newFile: !uuid '9689c4c8f7949d27a44160616e6118fcea784044'
-    oldFile: !uuid '4c087af782a5856f90402bd7ce7f6f73889ae819'
-  /app/api/controller/Checkout.php:
-    newFile: !uuid 'f5f76940d996c12462768f40360632175349af90'
-    oldFile: !uuid 'b9af04f7d8536e717862758bf846f7a8fc58f4e2'
+    newFile: !uuid '63beb1dc9fe188a4e20e6748cd2def0cba1a6551'
+    oldFile: !uuid '71d54092e04c9b8e4caa6178d4f5d0b8597e5dea'
+  /app/api/model:
+    newFile: !uuid 'b09cf47d4fd913da461fabce0ef22f1c0cb70cc4'
+    oldFile: !uuid 'a8fb86b754a6d0f09a18e765a6a2590ed896a8f4'
+  /app/api/model/Goods.php:
+    newFile: !uuid '797c576df07d76065d207999f321d24bfb4eabff'
+    oldFile: !uuid '048f843544365077f5b22a7b5d84ea8cbbd91cd1'
   /app/api/service:
-    newFile: !uuid '449b30c20d435af54fe4a8c696b3ec2b944478cc'
-    oldFile: !uuid '477ec59899a085b9446be5e4458838c50e9f3081'
+    newFile: !uuid '8c73acaddbc0ac340397118d18874af3b9a8e11f'
+    oldFile: !uuid '449b30c20d435af54fe4a8c696b3ec2b944478cc'
   /app/api/service/order:
-    newFile: !uuid '6f16e47dc7df22c4c3d681566b3a92f07ec2c4f6'
-    oldFile: !uuid '9e2a42abac6bda2fb54866ee465abcb4dc4f3589'
+    newFile: !uuid '761f67326a3d2841ae5a3e4773fb531169c25e4b'
+    oldFile: !uuid '6f16e47dc7df22c4c3d681566b3a92f07ec2c4f6'
   /app/api/service/order/Checkout.php:
-    newFile: !uuid 'baad2da0e6c4fdb66081eb9977d76fb55687eb04'
-    oldFile: !uuid '75f7343ac6f66070f1767bce162d6178d1834358'
-gitCommitId: !uuid '413877205a08a57edfd5f755f1e174d6eaa4159c'
+    newFile: !uuid '42f419f85ead9aed8ad69029ad943123b4f3e708'
+    oldFile: !uuid 'baad2da0e6c4fdb66081eb9977d76fb55687eb04'
+  /app/api/service/user:
+    newFile: !uuid 'b59c7e3db5dd21dcc306e728c40e4d82d7b6a016'
+    oldFile: !uuid '0b99dff2387a3b554f3cce9713ba6b31a5ee8a12'
+  /app/api/service/user/Grade.php:
+    newFile: !uuid '2bf2518352bd6f466f2a0ab2f3de71d6b87bf405'
+    oldFile: null
+  /app/common:
+    newFile: !uuid 'd560e1a41cfb120a1bd603e0bd1b578661f390c1'
+    oldFile: !uuid 'e7e7db62655ee68bb8e921a90b13a0cf3466b228'
+  /app/common/library:
+    newFile: !uuid '20c77c6a9f7aa6c23158cc4645845f9f8040ba25'
+    oldFile: !uuid '4c9e5efb80a49b42771d5689f4d26931f8e10685'
+  /app/common/library/helper.php:
+    newFile: !uuid '8300ac46f3ed0871783232425478f66380998556'
+    oldFile: !uuid '3c6cc621ad2794e169adceddc31bc447689ff8de'
+gitCommitId: !uuid 'd4250e5c7fa51fc0ae039e175f00eaa358514520'
 renames: {
   }
-revisionId: 185
+revisionId: 186
