@@ -2,40 +2,67 @@
 branches: {
   }
 fileChange:
-  /app:
-    newFile: !uuid '0892680b572868fd1ccfdb09d84cb194e930d771'
-    oldFile: !uuid '91b59a98c71f88fd8118e7ec456025d8ebf126f1'
-  /app/common:
-    newFile: !uuid '7ab1fad43c6d4409de6c5da6f0a343245faafb5f'
-    oldFile: !uuid '95aeeda51993b0d9e8aa0b00a194c5459e5c39dc'
-  /app/common/model:
-    newFile: !uuid '59de897f8e99a0cf485270d675a6de02aa2336e1'
-    oldFile: !uuid '98aa9e1ef91735baf49372016f40e153d1f830a9'
-  /app/common/model/Coupon.php:
-    newFile: !uuid '6edf4096a7ce5d3a9faac8c0e556db35a6811b35'
-    oldFile: !uuid '326a20a7ed57af57fdfdeb54f49bed8d0ad27e99'
-  /app/common/model/UserCoupon.php:
-    newFile: !uuid '42f22707b52e1e0488687fc68e9f34ebf44a10c4'
-    oldFile: !uuid '04f54f4b9698593189dcfcd9568638ca256ffeab'
-  /app/store:
-    newFile: !uuid '63a203ccbfd6ae7ed33ad31a5263b368bf106aa5'
-    oldFile: !uuid '17b69ab82b31392c357cf749fec8336e7ba80d3c'
-  /app/store/controller:
-    newFile: !uuid 'b8d3d91322c924c60966f8c520882649ae7cf153'
-    oldFile: !uuid 'e7f9d93d8090298cf49e1be19fc8b1af36e204d0'
-  /app/store/controller/market:
-    newFile: !uuid '1b8e99e295da12efb12a7050b3375f268fe9b7b5'
-    oldFile: !uuid 'e806079227a371531a8cc6c10eda012336d5ac56'
-  /app/store/controller/market/Coupon.php:
-    newFile: !uuid '4494025fd285551d0ba728e49791a531ebe132a2'
-    oldFile: !uuid '1b157c44f369e13b32685cfeeb4ff353828a514c'
-  /app/store/model:
-    newFile: !uuid 'c7c9d689daf93f44b3b293f5ac1ae60b2db30ca0'
-    oldFile: !uuid '119464eed4aac3cc1879cc97663a1efd35a8530a'
-  /app/store/model/Coupon.php:
-    newFile: !uuid '59b7a84a73274f70f097e746e8df436bd7c70c8c'
-    oldFile: !uuid 'd7d265301d919968774ef31a30b5db6dbf2248b2'
-gitCommitId: !uuid '594102a4874683f51d69fac2f86d2baed82fecf1'
+  /public:
+    newFile: !uuid '6a9521d7d990f30be33402ab42796ca597ca9af2'
+    oldFile: !uuid '4ae0164e287373a54725443cdb691f746649aa71'
+  /public/index.html:
+    newFile: !uuid 'f5ba5ef8fb17e7429c6fd1988ce4036ec6fd9799'
+    oldFile: !uuid '04c8efff54c2e122cc532578a1e2fae9324b35f2'
+  /public/static:
+    newFile: !uuid 'cf77387a90b7456f3e217b3851274451865e61aa'
+    oldFile: !uuid 'f085e837e918fa2fc6e0d1f7d752bf73ee5fe4d5'
+  /public/static/js:
+    newFile: !uuid '762a87763ab2624a766f3c574bfe28e31159151a'
+    oldFile: !uuid '4dc839f477c1eea4734b8c71a5db1538075454c4'
+  /public/static/js/index.09f67022.js:
+    newFile: !uuid '27ff4bc78abddbb38e1d44d8dd84bf96070a9cdf'
+    oldFile: null
+  /public/static/js/pages-article-detail~pages-goods-detail.bfd9612e.js:
+    newFile: !uuid 'cb48c89b7be1d9cdee03a3c62c65a8e55bf7adb7'
+    oldFile: null
+  /public/static/js/pages-article-index.78d60581.js:
+    newFile: !uuid '529bf4130771b82b5381a4c8d5d2f5f04f9e1b1f'
+    oldFile: null
+  /public/static/js/pages-category-index.43c8c75d.js:
+    newFile: !uuid 'db3b7f18831f53eb140e82bf7cd09df835f305bb'
+    oldFile: null
+  /public/static/js/pages-checkout-index.2cf56325.js:
+    newFile: !uuid 'ee09ea319e0bc4efe8c64e98a0bd33cbc05316ae'
+    oldFile: null
+  /public/static/js/pages-custom-index~pages-index-index.3ceb8f0a.js:
+    newFile: !uuid '9dbf0b3b95d77af1ae7561f282be2f7d795d783b'
+    oldFile: null
+  /public/static/js/pages-goods-detail.7f06e325.js:
+    newFile: !uuid '21927b2808522b872ce6a5259e1b2d9c73219e37'
+    oldFile: null
+  /public/static/js/pages-login-index.5b3cccec.js:
+    newFile: !uuid 'c14af968d9d6877c7a03dfba06ffee8105a45d5f'
+    oldFile: null
+  /public/static/js/pages-order-detail.2a09abdd.js:
+    newFile: !uuid '8a66e11c9a22c2e82aae7fdc7852edf7888b868a'
+    oldFile: null
+  /public/static/js/pages-order-express-index.c909e068.js:
+    newFile: !uuid 'a0950e0fccf1bc0345a2af31115c4e2ab5b4132b'
+    oldFile: null
+  /public/static/js/pages-order-index.c2097ee0.js:
+    newFile: !uuid 'fdfcbd886b07e8857bb5954819f9530d18126529'
+    oldFile: null
+  /public/static/js/pages-refund-detail.3c99f213.js:
+    newFile: !uuid 'afe4b034fd262f5cc6d05d844e45167df52a8467'
+    oldFile: null
+  /public/static/js/pages-user-bind-index.38a55662.js:
+    newFile: !uuid '357daa24ceb85c6207bd14ccce0206decf5151f7'
+    oldFile: null
+  /public/static/js/pages-user-index.2a7b35f0.js:
+    newFile: !uuid '998411920e316bea52fe6131a09b17b581ad5fcb'
+    oldFile: null
+  /public/static/js/pages-wallet-index.e0a72f5c.js:
+    newFile: !uuid 'bd3ea2d043d4a18d6c18f30ad384419e6ba1874e'
+    oldFile: null
+  /public/static/js/pages-wallet-recharge-index.2d0429b8.js:
+    newFile: !uuid '2eb86d221106a28a9c9fd20d626901c436bbd317'
+    oldFile: null
+gitCommitId: !uuid 'a3d1eed18a0388f17d612e7018638478fe84cd49'
 renames: {
   }
-revisionId: 198
+revisionId: 199
