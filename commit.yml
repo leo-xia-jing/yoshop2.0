@@ -2,28 +2,70 @@
 branches: {
   }
 fileChange:
-  /app:
-    newFile: !uuid 'f56653c880a7107d4cec1d20f42ff45e5ab5a618'
-    oldFile: !uuid '0892680b572868fd1ccfdb09d84cb194e930d771'
-  /app/api:
-    newFile: !uuid 'fe9ad634473f30fb8b58111ebde84cad0f3b2559'
-    oldFile: !uuid '80c0884e2b6ad781e6db517678af669206da1e94'
-  /app/api/service:
-    newFile: !uuid '02929d23e168e3dc1e2a1ebee847a822f970eb54'
-    oldFile: !uuid '68a3c9ae31aa2bd94e8f10539d677090284fe0b3'
-  /app/api/service/passport:
-    newFile: !uuid '54d0886f26f9203c8601c87dc1e55ca4c9dc995a'
-    oldFile: !uuid '882a7e849b34d51f6f5a82dce5091f394a7e6a05'
-  /app/api/service/passport/Party.php:
-    newFile: !uuid '75e044462921fb5cdbed5a0efb8c3e2d23accd01'
-    oldFile: !uuid '7463848761ef89c22f8a0c09ec385c958f5b01dd'
-  /app/api/service/user:
-    newFile: !uuid 'eff2be39454766ec193a68f03defea24f845a0a2'
-    oldFile: !uuid 'd0e79a5ab5093c98118fe44ad33ba01c81c08067'
-  /app/api/service/user/Oauth.php:
-    newFile: !uuid '5ddb1c086801c0921d856f2746f98c144c6bbc54'
-    oldFile: !uuid 'd2d64511b0e24a8b67fe78b6b3487df41af8abd8'
-gitCommitId: !uuid 'b93d499f3e7b6469520b4a4c0edf5900c2a59e4a'
+  /public:
+    newFile: !uuid 'fbc258b03a7118af1f077576a6897cff952b0664'
+    oldFile: !uuid '6a9521d7d990f30be33402ab42796ca597ca9af2'
+  /public/store:
+    newFile: !uuid '442aa2e950bc4d472db32a5ca643882a8acbe0f5'
+    oldFile: !uuid '49e49ab00e679df6a5fce67131a62fe06e365b89'
+  /public/store/css:
+    newFile: !uuid '587e8864728370ad96cecfa821bda45aa7a44b7a'
+    oldFile: !uuid 'a0dbbc610e8bc31071b03eb5c6fa5f1207600817'
+  /public/store/css/app.af97c129.css:
+    newFile: !uuid '9123115c352d7c0be6020c3d65b66fae78e5b6c4'
+    oldFile: null
+  /public/store/css/content.c2b45277.css:
+    newFile: !uuid '5409187ca4eced81d8894fcd01779876de9f881e'
+    oldFile: null
+  /public/store/css/goods.6b31e457.css:
+    newFile: !uuid '85ba55dcff510e462579a0569157c21e2959caa5'
+    oldFile: null
+  /public/store/css/page.3faf267b.css:
+    newFile: !uuid 'cd4e0cfe91e6fcd4354ef90e96ad0b0eeab1b04e'
+    oldFile: null
+  /public/store/css/setting.e97d18f1.css:
+    newFile: !uuid '4901e89fc950d4c6d1d328b03a5f7a80b3bbd187'
+    oldFile: null
+  /public/store/index.html:
+    newFile: !uuid '53cfa76f284e6f9bdc61c3dfe0f1f4fe79eda43f'
+    oldFile: !uuid 'c961f592db150bc549816ffda92d2f77b05521eb'
+  /public/store/js:
+    newFile: !uuid '5dbac53985553e6aff8490e8da130029840f87d8'
+    oldFile: !uuid '6a78b940ed0cbf03bb09e1106fdecac70fac23be'
+  /public/store/js/app.bbb3f7c5.js:
+    newFile: !uuid 'c13ba759128538542d0ec74024d558edb9820467'
+    oldFile: null
+  /public/store/js/client.35ef8d67.js:
+    newFile: !uuid 'e0b1fea36e5e8ea87856fd21a9bc1079f79404c8'
+    oldFile: null
+  /public/store/js/content.f77eb67b.js:
+    newFile: !uuid '87406e5b1ed4a8f83b399bfd5361aea7b67aa72d'
+    oldFile: null
+  /public/store/js/content~goods~manage~market~order~page~store~user.06bc361c.js:
+    newFile: !uuid '6c0ebdc9b60cb6b061b3e6c8c936e9b307ef9b83'
+    oldFile: null
+  /public/store/js/goods.9de530cb.js:
+    newFile: !uuid '56eae6d0c39e5b4747962f8b022fd40d1a12d38b'
+    oldFile: null
+  /public/store/js/market.08122049.js:
+    newFile: !uuid '87f677c59e06b70eedc90d141ac9b5318a9babd1'
+    oldFile: null
+  /public/store/js/order.4ce47f0e.js:
+    newFile: !uuid 'a83d378eabed6c5b3649567c36e760c624f95aae'
+    oldFile: null
+  /public/store/js/page.20130cdf.js:
+    newFile: !uuid 'f1cb30b255535295295229ff2fe7e950864e2027'
+    oldFile: null
+  /public/store/js/passport.2bf84ec4.js:
+    newFile: !uuid '0c997529b46d380958bcefa03a700c67455a0e1f'
+    oldFile: null
+  /public/store/js/setting.5fc15367.js:
+    newFile: !uuid 'eb075aed6e8016f1c3c1338942cfb3bd47fb089f'
+    oldFile: null
+  /public/store/js/statistics.bddf2df3.js:
+    newFile: !uuid '4313472cfbc1df0d82a3b297adf98c52426ad9e0'
+    oldFile: null
+gitCommitId: !uuid 'e79bda0f0131ca8dc737f8807b6fd2322ebeac51'
 renames: {
   }
-revisionId: 200
+revisionId: 201
