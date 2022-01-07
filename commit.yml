@@ -3,27 +3,27 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid 'd7dd4b4caef141585c203f433c98b826c1ad3062'
-    oldFile: !uuid 'f56653c880a7107d4cec1d20f42ff45e5ab5a618'
+    newFile: !uuid '92b272f12d2d61bae89be4242311594d46b16ced'
+    oldFile: !uuid 'd7dd4b4caef141585c203f433c98b826c1ad3062'
   /app/api:
-    newFile: !uuid '0e0fd8d0ff887279706461063c1db0d6b18d695a'
-    oldFile: !uuid 'fe9ad634473f30fb8b58111ebde84cad0f3b2559'
+    newFile: !uuid '85a65c18423743cd75c606620b78e3410a7432a7'
+    oldFile: !uuid '0e0fd8d0ff887279706461063c1db0d6b18d695a'
   /app/api/service:
-    newFile: !uuid '77918eee3d1bdbc3fe988edf6aa26508fccf912a'
-    oldFile: !uuid '02929d23e168e3dc1e2a1ebee847a822f970eb54'
+    newFile: !uuid '1ccb7b708486106b4055218406d5ea0196de4998'
+    oldFile: !uuid '77918eee3d1bdbc3fe988edf6aa26508fccf912a'
   /app/api/service/coupon:
-    newFile: !uuid '43b29fb4910bc3877078eda99b664f3c72e24457'
-    oldFile: !uuid '92b186be7cff0a9467b7a7d3f1211cd70774171e'
+    newFile: !uuid '45a6c8eeba1644826f8173a91b35febf57a09228'
+    oldFile: !uuid '43b29fb4910bc3877078eda99b664f3c72e24457'
   /app/api/service/coupon/GoodsDeduct.php:
-    newFile: !uuid 'a55a4595f94e4f9e67cea7099f40b4c368fb96da'
-    oldFile: !uuid 'cfc8f3c2648dff1df6092f35c81249d33b191550'
+    newFile: !uuid '89de34a9d8cb5e64ab4a68626a613e0e93954c40'
+    oldFile: !uuid 'a55a4595f94e4f9e67cea7099f40b4c368fb96da'
   /app/api/service/order:
-    newFile: !uuid '7bd5849758fe3b92086e66fd738ff368c1a9213b'
-    oldFile: !uuid '212f8b4dc69a373b7d61daeb0f0118ef30bcd39f'
+    newFile: !uuid '9f3faa0e767c5cffb631f249561463b0de333d58'
+    oldFile: !uuid '7bd5849758fe3b92086e66fd738ff368c1a9213b'
   /app/api/service/order/Checkout.php:
-    newFile: !uuid '12854f7e44fed1cda87ecf3ea95e11689ff4c3ac'
-    oldFile: !uuid '53d2a68e470ef814d865f52666cd3a1f0321bac4'
-gitCommitId: !uuid '65fa285fe1afd637d32f572c3172b02538bc49c4'
+    newFile: !uuid '04e212a431e71887e145b13b2fdc72f662e98c14'
+    oldFile: !uuid '12854f7e44fed1cda87ecf3ea95e11689ff4c3ac'
+gitCommitId: !uuid '88f163b74a73458793aff92382e02c2eb4c693a1'
 renames: {
   }
-revisionId: 202
+revisionId: 203
