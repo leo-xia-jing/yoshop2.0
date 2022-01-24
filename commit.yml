@@ -2,19 +2,10 @@
 branches: {
   }
 fileChange:
-  /public:
-    newFile: !uuid 'de2c00a294adef5a317ef33d88058e6b85cce7f5'
-    oldFile: !uuid '89d91e06cba642bf69bbee808310da7f39adb489'
-  /public/install:
-    newFile: !uuid '7bdd5b84719a3fe2967773b55da571f1833b456f'
-    oldFile: !uuid '61e2c989925d7b36a231d32cdc550ef90dba301b'
-  /public/install/data:
-    newFile: !uuid '85504684fe658048ebc7b91b585bef2b586043e0'
-    oldFile: !uuid 'acd4970db9bfed2bb3f47161bfe12c3f4ea5f6d5'
-  /public/install/data/install_struct.sql:
-    newFile: !uuid '9ef9380f1cc78ce8e8a747f5eee1837a4af7a2fe'
-    oldFile: !uuid '1d4b5295815f80d5c8997cca75fa278628b80abd'
-gitCommitId: !uuid '1a4c52b05ea4d785db5d750d651f85b2d9ec7737'
+  /数据库修改记录.txt:
+    newFile: !uuid 'd05a23647bf13950603180228eb8028c0473ba76'
+    oldFile: !uuid '20de4caa30a888ca64c628f78841185d6782bc2b'
+gitCommitId: !uuid 'c243382ef70390b0ba79fb7dd2ed22e949328b23'
 renames: {
   }
-revisionId: 213
+revisionId: 214
