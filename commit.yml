@@ -3,21 +3,54 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid '652545fa7d7289d50c279e475969534c45761a96'
-    oldFile: !uuid '17e72d3e75ecf5ceff89519555454c0bf3516cd6'
+    newFile: !uuid '2811d16523323fc0c3e1a250b86cdc0df74a686f'
+    oldFile: !uuid '652545fa7d7289d50c279e475969534c45761a96'
+  /app/api:
+    newFile: !uuid 'd53ac5a349a1f8218a45cc529c3e534410bd8c99'
+    oldFile: !uuid '01f0470f79a4df9a2e443dc71ed2e11c07a4cafb'
+  /app/api/controller:
+    newFile: !uuid 'e704bd3ad3e653478f961761c795a8964dd96b44'
+    oldFile: !uuid '6ea9abb5c12890025d6d902cc06f30a5a41d1098'
+  /app/api/controller/Upload.php:
+    newFile: !uuid '9493e9f98dffb2522387768d42a4eed27d7fc87d'
+    oldFile: !uuid '65328478e623910fa037da9133aafed4d1d40acf'
+  /app/common:
+    newFile: !uuid 'ed925b2564c4cf7c9ccf70cf4a38d3a34559b3fb'
+    oldFile: !uuid 'bfeeea31f9e83125a87922321d94a839de098d78'
+  /app/common/library:
+    newFile: !uuid '3290b980f754a9f3d2196564e23d332b82c1662c'
+    oldFile: !uuid 'b028d135f026713877e83949a69c5062517d7212'
+  /app/common/library/storage:
+    newFile: !uuid 'f9efccf8048e3982d231d59503ef1ee643b43768'
+    oldFile: !uuid '1d71e3b2ac4c62b048f5c9a2ee52d11efac732f4'
+  /app/common/library/storage/FileValidate.php:
+    newFile: !uuid '49246113dd20d26ff0db45ca475cc5efe40809e9'
+    oldFile: !uuid 'fa232af99612a4bb33435cbf9ee4983f0ce93ce4'
+  /app/common/library/storage/engine:
+    newFile: !uuid 'c1582616427d0c2047367e2817ca26713ca8a4aa'
+    oldFile: !uuid '31babd802d5f19c501bf40767dca0d7fc3b169b2'
+  /app/common/library/storage/engine/Basics.php:
+    newFile: !uuid 'aa6312df73c6dd7ffee56bae3d04a6603ff4940c'
+    oldFile: !uuid '9e49623498d2dbdbd5eac182b04f07d572ca8ab7'
   /app/store:
-    newFile: !uuid '3a9f79f247c6e8ccab51684bf15cb45151ac236a'
-    oldFile: !uuid '63a203ccbfd6ae7ed33ad31a5263b368bf106aa5'
+    newFile: !uuid 'd8c885d594e6d8b86e800810840dee83080af0cc'
+    oldFile: !uuid '3a9f79f247c6e8ccab51684bf15cb45151ac236a'
+  /app/store/controller:
+    newFile: !uuid '971907f038a65393afe7fc57d67346a660d9de54'
+    oldFile: !uuid 'b8d3d91322c924c60966f8c520882649ae7cf153'
+  /app/store/controller/Files.php:
+    newFile: !uuid 'dc4c49adaa41b7a580766e7a8c9bb8693aa1f210'
+    oldFile: !uuid 'fe56e09d5de7833bdc6e1bc51c28ca513197d9dd'
+  /app/store/controller/Upload.php:
+    newFile: !uuid '4955ff7a571260086e38bdcce30da5b7d54911cf'
+    oldFile: !uuid 'b93674181648880d37255deabafcbab7efd53b1c'
   /app/store/model:
-    newFile: !uuid '13c8bfba3036e0b7141968ea7ec55a7c24b0034d'
-    oldFile: !uuid 'c7c9d689daf93f44b3b293f5ac1ae60b2db30ca0'
-  /app/store/model/Goods.php:
-    newFile: !uuid '3dafd86c3d9118bcee15953b932b67e7126fe1ae'
-    oldFile: !uuid 'b795d0fc5e8309f1eae6e255665e2a09c5d45dcb'
-  /app/store/model/Spec.php:
-    newFile: !uuid '5d6ceebeaa5d83b1f93410f50ce6afb6c2774f81'
-    oldFile: !uuid 'cac7805c77fb9ed43f63a24265a0d4cadec75e6b'
-gitCommitId: !uuid 'a3a22a6e4517a7d1e8bf5a3c8a4fe4edb1cf8144'
+    newFile: !uuid 'b387027ba5f9b120d62d669daa750dfce725bcd3'
+    oldFile: !uuid '13c8bfba3036e0b7141968ea7ec55a7c24b0034d'
+  /app/store/model/UploadFile.php:
+    newFile: !uuid 'd0b11f7ba576fd6dba605994f12b4e919243bfe2'
+    oldFile: !uuid '91e103b4d0a5f9c9a2dfa398e87db2771d737e71'
+gitCommitId: !uuid '7c6d052693e6cade17303bd47074c64f138d6167'
 renames: {
   }
-revisionId: 207
+revisionId: 208
