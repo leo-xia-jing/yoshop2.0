@@ -2,10 +2,136 @@
 branches: {
   }
 fileChange:
-  /数据库修改记录.txt:
-    newFile: !uuid 'd05a23647bf13950603180228eb8028c0473ba76'
-    oldFile: !uuid '20de4caa30a888ca64c628f78841185d6782bc2b'
-gitCommitId: !uuid 'c243382ef70390b0ba79fb7dd2ed22e949328b23'
+  /public:
+    newFile: !uuid '0d0b0489aefb1a993cacb53841d47cb25038ca1e'
+    oldFile: !uuid 'de2c00a294adef5a317ef33d88058e6b85cce7f5'
+  /public/store:
+    newFile: !uuid 'b69d08bc1a2f0434701051e9b4110cd94dc556a0'
+    oldFile: !uuid '442aa2e950bc4d472db32a5ca643882a8acbe0f5'
+  /public/store/css:
+    newFile: !uuid '4cb8bb933c98452c7dc4f0d7f363cafcc35e3eab'
+    oldFile: !uuid '587e8864728370ad96cecfa821bda45aa7a44b7a'
+  /public/store/css/app.2304a687.css:
+    newFile: !uuid '7cc6928c76f44ce98dfa6865f5a3083699e53d92'
+    oldFile: null
+  /public/store/css/chunk-vendors.e44741d1.css:
+    newFile: !uuid 'e380cee7b5aa343708fd9efa4d0fa4fd82801f0c'
+    oldFile: null
+  /public/store/css/client.3b85af5b.css:
+    newFile: !uuid 'f03a5d04829343065ca9843d751105730791e026'
+    oldFile: null
+  /public/store/css/content.9d0157e9.css:
+    newFile: !uuid '9e6a0dbaeba367d052893c5b261dfa83dc0a5189'
+    oldFile: null
+  /public/store/css/content~goods~manage~market~order~page~store~user.eda49282.css:
+    newFile: !uuid 'a2f04b93adcc386e623dfbb82ad23b68a6704eab'
+    oldFile: null
+  /public/store/css/goods.e654b19d.css:
+    newFile: !uuid '9662be52116669884976cc3b5b85fdf934185c28'
+    oldFile: null
+  /public/store/css/index.b65ed5f8.css:
+    newFile: !uuid '33105353dffde1ece5fc58b34916997088cf8647'
+    oldFile: null
+  /public/store/css/market.5bb7fd4e.css:
+    newFile: !uuid '6aca48a76e7924f525b8f2b78643ed2b3e9073a0'
+    oldFile: null
+  /public/store/css/order.d73ece97.css:
+    newFile: !uuid '3737f09fa14602905dbd54e0527f9ae4a66c4d63'
+    oldFile: null
+  /public/store/css/page.54e779f1.css:
+    newFile: !uuid 'bc2cce5ac67e20ce98951d0cbd34bea4f4b736df'
+    oldFile: null
+  /public/store/css/passport.239bd1c8.css:
+    newFile: !uuid '7197f815f389128ea1e7feeb4531031e1fe1e944'
+    oldFile: null
+  /public/store/css/setting.eaead82c.css:
+    newFile: !uuid '7ba3457102e9db6da61611958a42a22da5daa5cc'
+    oldFile: null
+  /public/store/css/statistics.9e18f348.css:
+    newFile: !uuid '704abceb61aca6aeb25fdf33e8ae9fc007329e29'
+    oldFile: null
+  /public/store/css/store.b0f3de60.css:
+    newFile: !uuid '40f4bb2a113f2678bbba7fe70b9a7aea567cd74e'
+    oldFile: null
+  /public/store/css/user.06543838.css:
+    newFile: !uuid 'f6d8b1a79e25a08b905fd6c7b8a4c5ff38bdd462'
+    oldFile: null
+  /public/store/index.html:
+    newFile: !uuid 'b5cd4c509b54ec034b9d3bea3374031c1922e1f2'
+    oldFile: !uuid '53cfa76f284e6f9bdc61c3dfe0f1f4fe79eda43f'
+  /public/store/js:
+    newFile: !uuid 'bfca14fea98d4ad9638c86b71e816db8ac953a94'
+    oldFile: !uuid '5dbac53985553e6aff8490e8da130029840f87d8'
+  /public/store/js/app.81e80ece.js:
+    newFile: !uuid '73436bb632317e370b437f8cb32ace48dd4a1a37'
+    oldFile: null
+  /public/store/js/chunk-vendors.f7c18ab6.js:
+    newFile: !uuid '011bd4baf9539933fc834c68e225aaabd7385521'
+    oldFile: null
+  /public/store/js/client.3b17b43f.js:
+    newFile: !uuid 'ea20fcc46b55604aa369a2f051fb9ea6f7d178db'
+    oldFile: null
+  /public/store/js/content.e5d2a01d.js:
+    newFile: !uuid '5df42349405ef7de9bd7d08d88e930257a3a9a33'
+    oldFile: null
+  /public/store/js/content~goods~manage~market~order~page~store~user.9ba8d4d8.js:
+    newFile: !uuid '58790ff3d20a81f7f8b4745c77543d99b5c05831'
+    oldFile: null
+  /public/store/js/exception.ec5b1cdd.js:
+    newFile: !uuid 'eeb1725dcaf8d049e010a16a56ca4eb3c6e12643'
+    oldFile: null
+  /public/store/js/goods.1c516a01.js:
+    newFile: !uuid 'eab7a70ceadb2c879128f9a6396da8cc5c235dae'
+    oldFile: null
+  /public/store/js/index.b8fab82c.js:
+    newFile: !uuid '34d65a55369c0d0d423ed30033b544dd81bd2206'
+    oldFile: null
+  /public/store/js/index~statistics.e0a7d411.js:
+    newFile: !uuid '8833de0ecf7a6164384251fae456e23fcc220709'
+    oldFile: null
+  /public/store/js/lang-zh-CN.2c21d126.js:
+    newFile: !uuid 'e32496351929f92ccbd7f58f8ed1f3211fef7f8f'
+    oldFile: null
+  /public/store/js/manage.40456635.js:
+    newFile: !uuid '789365560e9902a1d93fc726e070b163ef3d7803'
+    oldFile: null
+  /public/store/js/market.770c7cbc.js:
+    newFile: !uuid 'a8f4e5665d269adcdee3d893f7776aa14f78d23c'
+    oldFile: null
+  /public/store/js/order.69fac232.js:
+    newFile: !uuid '214f10236ff240cab6082b48771110b77aa79df4'
+    oldFile: null
+  /public/store/js/page.b3f06ae6.js:
+    newFile: !uuid '3f088c2cd4459c5fb092fd5598dc7b1ed374cf03'
+    oldFile: null
+  /public/store/js/passport.01aec9fb.js:
+    newFile: !uuid '1c1c2d6726506f3058832d54c7a9a16dce26c776'
+    oldFile: null
+  /public/store/js/setting.26953690.js:
+    newFile: !uuid 'c9c5e3a10aae91c5747001d0dbdf841581ebd68f'
+    oldFile: null
+  /public/store/js/statistics.5f3c5c54.js:
+    newFile: !uuid 'd98453008e09e80790423d9794ec0ba61658673c'
+    oldFile: null
+  /public/store/js/store.30687b50.js:
+    newFile: !uuid 'f9693f5129d53876c46860bc1f837f2f31a18b63'
+    oldFile: null
+  /public/store/js/user.d9cdd01a.js:
+    newFile: !uuid '5b47e78eb439d70b5cf94416a511b3a406a12ebb'
+    oldFile: null
+  /public/store/static:
+    newFile: !uuid '705fe873ca767c8816512378dd5bd400e86aa09b'
+    oldFile: !uuid '9bd1508a3c7442bb70dcb7edf147dda7835ea340'
+  /public/store/static/UEditor:
+    newFile: !uuid 'e2c340acd872bafea4579842e53c3d2e7e4fe342'
+    oldFile: !uuid '8268ced85221eca09eebc52eff8d1545c697d39d'
+  /public/store/static/UEditor/themes:
+    newFile: !uuid '890eee31ee59b1b6dd0acf299a4d6a73b0451656'
+    oldFile: !uuid 'ad9ab38b35bd9771e45e50f7ef38c222a9890881'
+  /public/store/static/UEditor/themes/iframe.css:
+    newFile: !uuid 'c258d9d54bf9a735adcc48b759c473d5faf52d7f'
+    oldFile: !uuid '0f978eb373c4ddd3b4f28a8edc3a6cb366c6259c'
+gitCommitId: !uuid 'eee5529cdb6f7836c956bc093a55cf697a382bb5'
 renames: {
   }
-revisionId: 214
+revisionId: 215
