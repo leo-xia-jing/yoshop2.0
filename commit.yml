@@ -2,22 +2,16 @@
 branches: {
   }
 fileChange:
-  /data:
-    newFile: !uuid '0fdd52995b5301ea8e028222ae7d7e7578a9f8e8'
-    oldFile: null
-  /data/.gitignore:
-    newFile: !uuid 'c96a04f008ee21e260b28f7701595ed59e2839e3'
-    oldFile: null
   /public:
-    newFile: !uuid 'c9f305b376006f2c6cac24cc1c93382405a2b64c'
-    oldFile: !uuid 'bb380a1782bd6ecd6a4806d327ef8cd97d53c5cf'
+    newFile: !uuid '9cd7eb92f827801ba7cf679586d2b63d7f3ac204'
+    oldFile: !uuid 'c9f305b376006f2c6cac24cc1c93382405a2b64c'
   /public/install:
-    newFile: !uuid 'a5d91184354791d09b36a32a3a3a4fc05d36a4d7'
-    oldFile: !uuid '7bdd5b84719a3fe2967773b55da571f1833b456f'
+    newFile: !uuid 'e1fcb48df9fd767d0b62e6b45c5d828ffeb4e870'
+    oldFile: !uuid 'a5d91184354791d09b36a32a3a3a4fc05d36a4d7'
   /public/install/index.php:
-    newFile: !uuid '37d3ae479d3bed8e88eb3f7cfc8e5003aae4ccf9'
-    oldFile: !uuid '654187439b171ece005b050aee50386785439da4'
-gitCommitId: !uuid '1e4556517a588b3ff2e17b0d91360692736badd1'
+    newFile: !uuid 'c54b516a2d70cec67938fa857096237d63b66186'
+    oldFile: !uuid '37d3ae479d3bed8e88eb3f7cfc8e5003aae4ccf9'
+gitCommitId: !uuid '4f40eb738222cc788407888967bdcb201347a1fb'
 renames: {
   }
-revisionId: 219
+revisionId: 220
