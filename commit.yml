@@ -3,24 +3,21 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid 'e6bb9a880dc18579e12a1c3a1fd5d53543335b49'
-    oldFile: !uuid 'eb3f8bf02d7c275792301079f39067022c9f03de'
-  /app/admin:
-    newFile: !uuid 'db01e8ba08e6ffbe58535620232e71d7c5e5e0c5'
-    oldFile: !uuid '7cb402d3eb607d085785764794df66b4d7d2dfc8'
-  /app/admin/controller:
-    newFile: !uuid '888b3bc2370f8796d334511ec84bda8bf2af4766'
-    oldFile: !uuid '160c0a2fe176cb9fef7c7d8307f63c1478dda544'
-  /app/admin/controller/Controller.php:
-    newFile: !uuid '83566792cf9a67ee3a770a7a02dcb8a310b88433'
-    oldFile: !uuid 'ee0e88effa8c682254fdff10e3815afcb3c556bd'
-  /app/admin/controller/setting:
-    newFile: !uuid '951fef34db6bde40e604c1b38e8a862ba3a335c8'
-    oldFile: !uuid '49c58ca0f7bd0a56864f951c0477815780bebafc'
-  /app/admin/controller/setting/Science.php:
-    newFile: !uuid 'a342b8bc384533cb02d98bcf5e51ca123233419e'
-    oldFile: !uuid '6331fa7b3d34f36b47a8d7225e0b13e5dd4e4364'
-gitCommitId: !uuid 'd0b24980ce48b081ef4eda313d0f8a504696c5e4'
+    newFile: !uuid '79556c407d6d97c9e40b8b8385ea353afbb50d35'
+    oldFile: !uuid 'e6bb9a880dc18579e12a1c3a1fd5d53543335b49'
+  /app/common:
+    newFile: !uuid '24befd50d09ed7e278ce268f1f6496e81ec54f27'
+    oldFile: !uuid 'e65d8b5f17b33a798797ab80d52bebe87ac51299'
+  /app/common/model:
+    newFile: !uuid 'c54a692584210504595ab53c7acbcbfc44b1301f'
+    oldFile: !uuid 'a05997840aaf38bda6c96a66525ebd7c3982cf94'
+  /app/common/model/store:
+    newFile: !uuid '4be8f744b0542a358c41aef0f0e8e4ee6d2af700'
+    oldFile: !uuid '8730c69e0c05ab1f117a3ca7c48e1db9896d6a44'
+  /app/common/model/store/Setting.php:
+    newFile: !uuid '276c960ec4a1e5174fd0980bf4121b5854aafce4'
+    oldFile: !uuid '7a180950f7e7428a8dea454da90718a5d2dd02b9'
+gitCommitId: !uuid '8565ab87946e9907fc04745770e419273d6aa5e1'
 renames: {
   }
-revisionId: 221
+revisionId: 222
