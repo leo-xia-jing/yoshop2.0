@@ -2,28 +2,10 @@
 branches: {
   }
 fileChange:
-  /app:
-    newFile: !uuid '72a37fce4c189e1dc66e74eceb7130003ce1573b'
-    oldFile: !uuid '147c4b97b41b0363b89d048c55c70434996974de'
-  /app/api:
-    newFile: !uuid '5f28965eba0da5cddaa3d6153e35d393b3c435fe'
-    oldFile: !uuid 'b138c9783e19f42724abe0f67e864d14dd529971'
-  /app/api/controller:
-    newFile: !uuid '96c01e8bd0fce9a74960ec72954c2573c4ec4c02'
-    oldFile: !uuid 'e704bd3ad3e653478f961761c795a8964dd96b44'
-  /app/api/controller/Controller.php:
-    newFile: !uuid 'e3975bd1a797135b9f865e89120ff6064ba008d8'
-    oldFile: !uuid '2bfc64858799f114fb262491d445ba3e3e2add77'
-  /app/api/controller/Coupon.php:
-    newFile: !uuid '051634a248da1576f39a7c6baf1ac3dd47f91dc6'
-    oldFile: !uuid '6d6a58447a9a618b7680b1370548abefbae88f6e'
-  /app/api/model:
-    newFile: !uuid '236d67138fecf4ac187f679ed5889c7bc0d21266'
-    oldFile: !uuid '9eb3178e2a4dfdcab195f4c282a5c5133d7ab315'
-  /app/api/model/Coupon.php:
-    newFile: !uuid '538753954cde2ada023fe79e2c31aab3206f73eb'
-    oldFile: !uuid 'd89540f8689f4803c51bc487d26d27401060d773'
-gitCommitId: !uuid '74306297590ef36acfc82d6ecedbbefa0719018a'
+  /数据库修改记录.txt:
+    newFile: !uuid '78a9cfbd1abfb7ece90f8099a51199e8b22ab1be'
+    oldFile: !uuid 'd05a23647bf13950603180228eb8028c0473ba76'
+gitCommitId: !uuid '435cabb6c812d99ac6dd9f8ad98d5f45a13445ca'
 renames: {
   }
-revisionId: 228
+revisionId: 229
