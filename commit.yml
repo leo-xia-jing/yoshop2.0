@@ -3,24 +3,33 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid 'd5a797fd3579a3597d2767e4453bc97434b499f0'
-    oldFile: !uuid '1b6a826cb51e5460abb967254b56799642aeea85'
+    newFile: !uuid 'e92f1baa4e797d48e136fc88f1619574dc54e778'
+    oldFile: !uuid 'd5a797fd3579a3597d2767e4453bc97434b499f0'
+  /app/api:
+    newFile: !uuid '0aba8ddececf6acc490fc27b941c4977d547c1b5'
+    oldFile: !uuid 'f0e87cb1d7b868ea244eee61b6d077479d22df77'
+  /app/api/model:
+    newFile: !uuid '7e45a7435af99cdc811de1998be4eff0034b6c8e'
+    oldFile: !uuid 'faa469fe60b55c880c6465b0b24bcd92479750ef'
+  /app/api/model/Store.php:
+    newFile: !uuid '121a33e9110bd0684e233eb9492ec2aa7cc58089'
+    oldFile: !uuid '6c6a4f73573d1164369cd8cbdb49796918a42d3b'
+  /app/api/service:
+    newFile: !uuid 'c9cec35479952e4387f21b2f88f75b10caeb7d03'
+    oldFile: !uuid 'c3a1c207083e369f597d96841e9ded9fb0d2843c'
+  /app/api/service/Setting.php:
+    newFile: !uuid '111a3b42a022a257983c86c3f08aa93f535c716e'
+    oldFile: !uuid '9c0dcbc9eb0e2e02e10310b03820b2b7ab66393e'
   /app/common:
-    newFile: !uuid '4e28bf353ff7745863f41aa0cbb06b3942d3ddb7'
-    oldFile: !uuid '74b4bc5282ac7ecf3977e0e33d8c9d641ae4a4aa'
-  /app/common/library:
-    newFile: !uuid '287a4d4b477396520e6e46bec7b2c51c3f8f55fe'
-    oldFile: !uuid 'ecb47514411d8f3977a876e436e8d3ab08dcad47'
-  /app/common/library/storage:
-    newFile: !uuid '095c33b4d4ff36d69e8bce86a2ad0bcf31e30736'
-    oldFile: !uuid '084b395a5c180e8b2a54dc2b7747b30b12578d82'
-  /app/common/library/storage/engine:
-    newFile: !uuid 'e142f7896d3787ca54a2ad4924eb65e79e8be304'
-    oldFile: !uuid '0805cbd455422e88a0b6a92781ddbcad783f8e38'
-  /app/common/library/storage/engine/Qiniu.php:
-    newFile: !uuid '6aff9fd3866ebffe225940c666a43be9bf611b45'
-    oldFile: !uuid 'e5aa126430e9ef720b70fdbf73165ad760a515ae'
-gitCommitId: !uuid '4f1176f913db70ec298750a88fc3966701b655a5'
+    newFile: !uuid 'de250c31550de63a385eedc7db978f4d25c0eab5'
+    oldFile: !uuid '4e28bf353ff7745863f41aa0cbb06b3942d3ddb7'
+  /app/common/model:
+    newFile: !uuid '000219fdd6f258d074b9b33b964c63b5d36d413e'
+    oldFile: !uuid 'e72419d08889f80e6bce72037c3e6d5ca8eefc7f'
+  /app/common/model/Store.php:
+    newFile: !uuid 'cca7e093144e4739422157c7040b54a39a11135d'
+    oldFile: !uuid '33bd10fc28613b6765343fac676154e981fff08b'
+gitCommitId: !uuid 'eb768ec463810275a7d339d345c89021dac71686'
 renames: {
   }
-revisionId: 242
+revisionId: 243
