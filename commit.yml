@@ -3,21 +3,27 @@ branches: {
   }
 fileChange:
   /vendor:
-    newFile: !uuid '78d76c8599948c67a82d9cc638504896e5378e35'
-    oldFile: !uuid 'c8db5dd2877a64712abf8eadbe4d758180ec9a10'
-  /vendor/guzzlehttp:
-    newFile: !uuid '5a84e17e98fb2697d3802a714f692ac39f99cb33'
-    oldFile: !uuid 'e6fbaf71572ee1a45939a20aaede824c60320864'
-  /vendor/guzzlehttp/guzzle:
-    newFile: !uuid '59b7a33fa23748a6197460a0a8adda05393910fa'
-    oldFile: !uuid '50729caee33f360944924c1bb8e471150dabef26'
-  /vendor/guzzlehttp/guzzle/src:
-    newFile: !uuid '6ca170afba718e0de0e614b4fbb6e38db9268a6e'
-    oldFile: !uuid 'af6d27fcb6559171da9b47896b0e9d9eb4a40dfd'
-  /vendor/guzzlehttp/guzzle/src/Client.php:
-    newFile: !uuid '2115cf0fe1b6804b8a4d6ddf9abd854af3d74673'
-    oldFile: !uuid '58f1d891a74008ec798e918030236895c9e9fdd3'
-gitCommitId: !uuid 'fa57c638c60dabee9c050f7613e476a918c7305a'
+    newFile: !uuid 'dfacccd6e5095c55618edd650f027218c9838fd0'
+    oldFile: !uuid '78d76c8599948c67a82d9cc638504896e5378e35'
+  /vendor/aliyuncs:
+    newFile: !uuid '288c958c99b984a044f7bdf2e3f1dafc5edec8d3'
+    oldFile: !uuid '0afc73a1563561be2071f51b139bb9d25c861013'
+  /vendor/aliyuncs/oss-sdk-php:
+    newFile: !uuid 'd4dd5abeeeb51e99a7f4c6f1f376e14495545a26'
+    oldFile: !uuid '47787d37421421611f4b38ff02fb4550b6c13162'
+  /vendor/aliyuncs/oss-sdk-php/src:
+    newFile: !uuid 'ee371a84c059db8461a181226f9b497ee70b2db9'
+    oldFile: !uuid 'c4abba5aa50d638b8462d832db4f7902a07150d1'
+  /vendor/aliyuncs/oss-sdk-php/src/OSS:
+    newFile: !uuid '504e8a207e30697fc07639c47e0023f943acc9c1'
+    oldFile: !uuid '3c58fadc8736c12cbe896ede2cfb47025744f6da'
+  /vendor/aliyuncs/oss-sdk-php/src/OSS/Http:
+    newFile: !uuid '36cec3da7934ce6d6758e27ab436d1a661eb1a55'
+    oldFile: !uuid '9ca2147f01d87e98fbc2639896b04e404be1009c'
+  /vendor/aliyuncs/oss-sdk-php/src/OSS/Http/RequestCore.php:
+    newFile: !uuid '15389ba58bf2b5a215394c58532fdd7844b8575e'
+    oldFile: !uuid 'c8089b41948d92605213b8d54ca14bd67656e76e'
+gitCommitId: !uuid '94e110bcc5f3302dbfa3227804bb489825c2c135'
 renames: {
   }
-revisionId: 240
+revisionId: 241
