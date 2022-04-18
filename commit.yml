@@ -2,28 +2,25 @@
 branches: {
   }
 fileChange:
-  /vendor:
-    newFile: !uuid 'dfacccd6e5095c55618edd650f027218c9838fd0'
-    oldFile: !uuid '78d76c8599948c67a82d9cc638504896e5378e35'
-  /vendor/aliyuncs:
-    newFile: !uuid '288c958c99b984a044f7bdf2e3f1dafc5edec8d3'
-    oldFile: !uuid '0afc73a1563561be2071f51b139bb9d25c861013'
-  /vendor/aliyuncs/oss-sdk-php:
-    newFile: !uuid 'd4dd5abeeeb51e99a7f4c6f1f376e14495545a26'
-    oldFile: !uuid '47787d37421421611f4b38ff02fb4550b6c13162'
-  /vendor/aliyuncs/oss-sdk-php/src:
-    newFile: !uuid 'ee371a84c059db8461a181226f9b497ee70b2db9'
-    oldFile: !uuid 'c4abba5aa50d638b8462d832db4f7902a07150d1'
-  /vendor/aliyuncs/oss-sdk-php/src/OSS:
-    newFile: !uuid '504e8a207e30697fc07639c47e0023f943acc9c1'
-    oldFile: !uuid '3c58fadc8736c12cbe896ede2cfb47025744f6da'
-  /vendor/aliyuncs/oss-sdk-php/src/OSS/Http:
-    newFile: !uuid '36cec3da7934ce6d6758e27ab436d1a661eb1a55'
-    oldFile: !uuid '9ca2147f01d87e98fbc2639896b04e404be1009c'
-  /vendor/aliyuncs/oss-sdk-php/src/OSS/Http/RequestCore.php:
-    newFile: !uuid '15389ba58bf2b5a215394c58532fdd7844b8575e'
-    oldFile: !uuid 'c8089b41948d92605213b8d54ca14bd67656e76e'
-gitCommitId: !uuid '94e110bcc5f3302dbfa3227804bb489825c2c135'
+  /app:
+    newFile: !uuid 'd5a797fd3579a3597d2767e4453bc97434b499f0'
+    oldFile: !uuid '1b6a826cb51e5460abb967254b56799642aeea85'
+  /app/common:
+    newFile: !uuid '4e28bf353ff7745863f41aa0cbb06b3942d3ddb7'
+    oldFile: !uuid '74b4bc5282ac7ecf3977e0e33d8c9d641ae4a4aa'
+  /app/common/library:
+    newFile: !uuid '287a4d4b477396520e6e46bec7b2c51c3f8f55fe'
+    oldFile: !uuid 'ecb47514411d8f3977a876e436e8d3ab08dcad47'
+  /app/common/library/storage:
+    newFile: !uuid '095c33b4d4ff36d69e8bce86a2ad0bcf31e30736'
+    oldFile: !uuid '084b395a5c180e8b2a54dc2b7747b30b12578d82'
+  /app/common/library/storage/engine:
+    newFile: !uuid 'e142f7896d3787ca54a2ad4924eb65e79e8be304'
+    oldFile: !uuid '0805cbd455422e88a0b6a92781ddbcad783f8e38'
+  /app/common/library/storage/engine/Qiniu.php:
+    newFile: !uuid '6aff9fd3866ebffe225940c666a43be9bf611b45'
+    oldFile: !uuid 'e5aa126430e9ef720b70fdbf73165ad760a515ae'
+gitCommitId: !uuid '4f1176f913db70ec298750a88fc3966701b655a5'
 renames: {
   }
-revisionId: 241
+revisionId: 242
