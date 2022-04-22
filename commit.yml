@@ -2,31 +2,37 @@
 branches: {
   }
 fileChange:
-  /public:
-    newFile: !uuid 'b0fa522339df11487be4018a85723c0f03f905a1'
-    oldFile: !uuid '6b883d5182355ba182d949d5c9cfa4879dbd53bb'
-  /public/index.html:
-    newFile: !uuid '2a773457ea7bd768c4e33773aa67444cd23039e8'
-    oldFile: !uuid 'ded187a2918bd6302856204f0256df94c7c3a889'
-  /public/static:
-    newFile: !uuid '1071a38a9cbef2150d97498ebd0c5d86284d23b5'
-    oldFile: !uuid '993ffda0a9acdac7953da850b2069ea625831e30'
-  /public/static/js:
-    newFile: !uuid 'b01c50ee029ad3f5e89eb503f45433b6b2f7d486'
-    oldFile: !uuid '71f8a1a09ded85f57323ce357edf9a5932d24998'
-  /public/static/js/index.e2b6aea5.js:
-    newFile: !uuid '2ea73ccd975e1fe303013bfde0dc37906faf9125'
-    oldFile: null
-  /public/static/js/pages-category-index~pages-goods-detail.d7668c2e.js:
-    newFile: !uuid 'f50e174897acf99f622193760bf7353eb404c1ef'
-    oldFile: null
-  /public/static/js/pages-goods-list.15893d6f.js:
-    newFile: !uuid '28dba3560042226a925827db7fe17b35ab279d44'
-    oldFile: null
-  /public/static/js/pages-order-index.0a68e109.js:
-    newFile: !uuid '9b1e04e21a2e3d8ae776249a302361a918fa1743'
-    oldFile: null
-gitCommitId: !uuid '335135b12b3a6a0356ab06a586347065cf30b2c6'
+  /app:
+    newFile: !uuid 'ad51ee6be80ec7815ed0bf1f30b16f8edb79b4a7'
+    oldFile: !uuid 'b9800dddb5041fc1e1f926043ae0cf73e751d9d4'
+  /app/api:
+    newFile: !uuid '458ab016816f3f5f212c2349a4e9210789ae62a5'
+    oldFile: !uuid '557dbaabe0400b271fc51a6313db0e919deb6aec'
+  /app/api/service:
+    newFile: !uuid '763c16ff86e17e23fa6a6175428428edb625d3c2'
+    oldFile: !uuid 'c9cec35479952e4387f21b2f88f75b10caeb7d03'
+  /app/api/service/order:
+    newFile: !uuid 'cbe359369ec0ec2f7726754a414a5fc7ffeff2cf'
+    oldFile: !uuid 'a300697b1198d04c27ffb02de82a7111d8b44afa'
+  /app/api/service/order/Checkout.php:
+    newFile: !uuid '61cf81c21d9076c73bf84e200c7906c2bac3c614'
+    oldFile: !uuid '336ae69129f93e984ff79992e9042bf7b0275ea1'
+  /app/common:
+    newFile: !uuid 'b31c9072b77b843b8e85034086d70a2f6a6005d8'
+    oldFile: !uuid 'f879351036754dffd583829aa8567ab661bf6cb5'
+  /app/common/library:
+    newFile: !uuid '94d1491e89066d54be3b2202e0d484c4acf79bb6'
+    oldFile: !uuid '287a4d4b477396520e6e46bec7b2c51c3f8f55fe'
+  /app/common/library/helper.php:
+    newFile: !uuid '298d47ad5e1bca7f3d633c35cf7cfc636c3d9369'
+    oldFile: !uuid '5278fdded9e484c2066257ac319f647992a1c9a9'
+  /app/common/library/wechat:
+    newFile: !uuid 'afb371616d152b1b3fbb137cfddeabb8d449898e'
+    oldFile: !uuid '25a042bafd343172b7fda238e96b2553c856302b'
+  /app/common/library/wechat/WxPay.php:
+    newFile: !uuid 'c858bb5af2ab44dc02803e7365410e1e8adb10b2'
+    oldFile: !uuid 'b19c7c1769c81376e51e94688b59c950930dbb33'
+gitCommitId: !uuid '5e4e02bc305fb3d66e2e9088becbe7330983738d'
 renames: {
   }
-revisionId: 252
+revisionId: 253
