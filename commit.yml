@@ -3,36 +3,30 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid 'ad51ee6be80ec7815ed0bf1f30b16f8edb79b4a7'
-    oldFile: !uuid 'b9800dddb5041fc1e1f926043ae0cf73e751d9d4'
+    newFile: !uuid '77b62203bfdae19f40c3c21d5e5e9e47f7aa1571'
+    oldFile: !uuid 'ad51ee6be80ec7815ed0bf1f30b16f8edb79b4a7'
   /app/api:
-    newFile: !uuid '458ab016816f3f5f212c2349a4e9210789ae62a5'
-    oldFile: !uuid '557dbaabe0400b271fc51a6313db0e919deb6aec'
+    newFile: !uuid 'cb0a70aea9a9e8f4cfaea5dd6f4ea5cde2718f8f'
+    oldFile: !uuid '458ab016816f3f5f212c2349a4e9210789ae62a5'
   /app/api/service:
-    newFile: !uuid '763c16ff86e17e23fa6a6175428428edb625d3c2'
-    oldFile: !uuid 'c9cec35479952e4387f21b2f88f75b10caeb7d03'
+    newFile: !uuid 'f7f615a62ec31129e74579ef4b7b0d309a2cbede'
+    oldFile: !uuid '763c16ff86e17e23fa6a6175428428edb625d3c2'
   /app/api/service/order:
-    newFile: !uuid 'cbe359369ec0ec2f7726754a414a5fc7ffeff2cf'
-    oldFile: !uuid 'a300697b1198d04c27ffb02de82a7111d8b44afa'
+    newFile: !uuid '8f59bf0a8eca3fb7dfe82eaba9b979ec419c2583'
+    oldFile: !uuid 'cbe359369ec0ec2f7726754a414a5fc7ffeff2cf'
   /app/api/service/order/Checkout.php:
-    newFile: !uuid '61cf81c21d9076c73bf84e200c7906c2bac3c614'
-    oldFile: !uuid '336ae69129f93e984ff79992e9042bf7b0275ea1'
+    newFile: !uuid 'd9c939f837320ecfd7f71c9428184dfdd48eb756'
+    oldFile: !uuid '61cf81c21d9076c73bf84e200c7906c2bac3c614'
   /app/common:
-    newFile: !uuid 'b31c9072b77b843b8e85034086d70a2f6a6005d8'
-    oldFile: !uuid 'f879351036754dffd583829aa8567ab661bf6cb5'
-  /app/common/library:
-    newFile: !uuid '94d1491e89066d54be3b2202e0d484c4acf79bb6'
-    oldFile: !uuid '287a4d4b477396520e6e46bec7b2c51c3f8f55fe'
-  /app/common/library/helper.php:
-    newFile: !uuid '298d47ad5e1bca7f3d633c35cf7cfc636c3d9369'
-    oldFile: !uuid '5278fdded9e484c2066257ac319f647992a1c9a9'
-  /app/common/library/wechat:
-    newFile: !uuid 'afb371616d152b1b3fbb137cfddeabb8d449898e'
-    oldFile: !uuid '25a042bafd343172b7fda238e96b2553c856302b'
-  /app/common/library/wechat/WxPay.php:
-    newFile: !uuid 'c858bb5af2ab44dc02803e7365410e1e8adb10b2'
-    oldFile: !uuid 'b19c7c1769c81376e51e94688b59c950930dbb33'
-gitCommitId: !uuid '5e4e02bc305fb3d66e2e9088becbe7330983738d'
+    newFile: !uuid 'd14dc236190a1b13e025aa89fbc1fb4d7f125df9'
+    oldFile: !uuid 'b31c9072b77b843b8e85034086d70a2f6a6005d8'
+  /app/common/model:
+    newFile: !uuid 'e1cc2edb65bf628891ceb74c4496e2b9b53a9f12'
+    oldFile: !uuid '37d16ae369717e4781d6f7e5a08671cc18da7feb'
+  /app/common/model/UserCoupon.php:
+    newFile: !uuid '76aa17234b80fc9c319e68a00a7c4dca9c1f9f59'
+    oldFile: !uuid '755719604c2a1b816e40935eed69113c58450742'
+gitCommitId: !uuid '9471ce64b1532399a89de59570155ef4b24026b7'
 renames: {
   }
-revisionId: 253
+revisionId: 254
