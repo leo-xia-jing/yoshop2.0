@@ -3,30 +3,36 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid '77b62203bfdae19f40c3c21d5e5e9e47f7aa1571'
-    oldFile: !uuid 'ad51ee6be80ec7815ed0bf1f30b16f8edb79b4a7'
+    newFile: !uuid 'a179aee535333871cbe34d9e98ec3ae87a891129'
+    oldFile: !uuid '77b62203bfdae19f40c3c21d5e5e9e47f7aa1571'
   /app/api:
-    newFile: !uuid 'cb0a70aea9a9e8f4cfaea5dd6f4ea5cde2718f8f'
-    oldFile: !uuid '458ab016816f3f5f212c2349a4e9210789ae62a5'
+    newFile: !uuid 'faaab91e82213ef8d1c8b58257a03c03507c0f1a'
+    oldFile: !uuid 'cb0a70aea9a9e8f4cfaea5dd6f4ea5cde2718f8f'
   /app/api/service:
-    newFile: !uuid 'f7f615a62ec31129e74579ef4b7b0d309a2cbede'
-    oldFile: !uuid '763c16ff86e17e23fa6a6175428428edb625d3c2'
+    newFile: !uuid '2eab8a6771ac8ce453ca68e6902be0081919e43c'
+    oldFile: !uuid 'f7f615a62ec31129e74579ef4b7b0d309a2cbede'
   /app/api/service/order:
-    newFile: !uuid '8f59bf0a8eca3fb7dfe82eaba9b979ec419c2583'
-    oldFile: !uuid 'cbe359369ec0ec2f7726754a414a5fc7ffeff2cf'
+    newFile: !uuid '028dc91404f13caeb4475f672991450654327523'
+    oldFile: !uuid '8f59bf0a8eca3fb7dfe82eaba9b979ec419c2583'
   /app/api/service/order/Checkout.php:
-    newFile: !uuid 'd9c939f837320ecfd7f71c9428184dfdd48eb756'
-    oldFile: !uuid '61cf81c21d9076c73bf84e200c7906c2bac3c614'
-  /app/common:
-    newFile: !uuid 'd14dc236190a1b13e025aa89fbc1fb4d7f125df9'
-    oldFile: !uuid 'b31c9072b77b843b8e85034086d70a2f6a6005d8'
-  /app/common/model:
-    newFile: !uuid 'e1cc2edb65bf628891ceb74c4496e2b9b53a9f12'
-    oldFile: !uuid '37d16ae369717e4781d6f7e5a08671cc18da7feb'
-  /app/common/model/UserCoupon.php:
-    newFile: !uuid '76aa17234b80fc9c319e68a00a7c4dca9c1f9f59'
-    oldFile: !uuid '755719604c2a1b816e40935eed69113c58450742'
-gitCommitId: !uuid '9471ce64b1532399a89de59570155ef4b24026b7'
+    newFile: !uuid '5901d9ba1ca54d8b835f88e2212b0e487eea8c62'
+    oldFile: !uuid 'd9c939f837320ecfd7f71c9428184dfdd48eb756'
+  /app/api/service/points:
+    newFile: !uuid '56bb7ca9f1fed299ca6dc09e5e768610c24b69ed'
+    oldFile: !uuid 'f09bab1996c6eeafa05e42ac8ed3f1197dcb96b8'
+  /app/api/service/points/GoodsDeduct.php:
+    newFile: !uuid 'b0c72944f64c62d9f6c53b5ec9b3960418697d7f'
+    oldFile: !uuid '03ff6434a5c45e1897f8a0ca3620882b966fdbe8'
+  /app/store:
+    newFile: !uuid 'daf458e8c743ae534479fa0d1dc5b8c36059cd01'
+    oldFile: !uuid '94963f98d746746042f7eb90f851ba40b0f95e8c'
+  /app/store/model:
+    newFile: !uuid '7bb3e1fc22870a69a26b46c203cc64239d488a97'
+    oldFile: !uuid '78e3485588f691664cb4c1d52f8bfd30bf2522bb'
+  /app/store/model/GoodsSku.php:
+    newFile: !uuid 'bac62d608b98a40c19e7f7f693a6df6416397ce9'
+    oldFile: !uuid 'ee7eb5aecb3e67fd409d8a86549bead2f78bc3ae'
+gitCommitId: !uuid '2a6cf92d52756b81f8acaf2ffa874d9cfa8d40be'
 renames: {
   }
-revisionId: 254
+revisionId: 255
