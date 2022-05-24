@@ -2,53 +2,22 @@
 branches: {
   }
 fileChange:
-  /public:
-    newFile: !uuid '575e2f03be8f0ee8fcd74c2a59399a6c861eb856'
-    oldFile: !uuid '0cd29b751553298be86398a053024922a70e5b6d'
-  /public/store:
-    newFile: !uuid '626dfc46a2d054c7fbcb2a83f20ed0abf30cf015'
-    oldFile: !uuid '423dbb78a7d0f8f643ec253c5a0715057353ba33'
-  /public/store/css:
-    newFile: !uuid 'eeba479531e75a2e85b6a458b9cfebc0e4660d3c'
-    oldFile: !uuid 'e751cca0bc83fe0f54828e3e64a537d8b30d0a04'
-  /public/store/css/content~goods~manage~market~order~page~store~user.189ceb4b.css:
-    newFile: null
-    oldFile: !uuid 'f17710349124938a1fe6b0f8cc291ed2747f4ae9'
-  /public/store/css/order.a0bb7f06.css:
-    newFile: null
-    oldFile: !uuid 'e016077a2d8638d1fcb370d40b7361c8a4d53f5c'
-  /public/store/css/order.b47600db.css:
-    newFile: !uuid 'e28a4e1c483e0986f391c32ef5229182af99885e'
-    oldFile: null
-  /public/store/css/page.1769a35e.css:
-    newFile: null
-    oldFile: !uuid '9529c71e7724d662744bc6cefe7b4cca16432ee7'
-  /public/store/index.html:
-    newFile: !uuid '27b8b060b2ba207bd6d63a605ccd4895d61bc59b'
-    oldFile: !uuid 'd1630b2ebfa52d3fb5a786eade1484eaaa6cf774'
-  /public/store/js:
-    newFile: !uuid 'c6ad0ff311eb74c3f4f935297c5165d7e517ef2f'
-    oldFile: !uuid 'a3c207e81cc3fbbe1f85e0cb419482bf4ff31f0a'
-  /public/store/js/app.00b47add.js:
-    newFile: null
-    oldFile: !uuid '754c88e7ff0d98e83d264d046d10de776cae4d84'
-  /public/store/js/app.32d4dce4.js:
-    newFile: null
-    oldFile: !uuid '9adaa30b31bd1e1bdb7edb8090bf4cfa653a0cc4'
-  /public/store/js/app.f6764c89.js:
-    newFile: !uuid 'c3dda859d9b5451b7baed0476094e32f79a38c22'
-    oldFile: null
-  /public/store/js/order.605d615c.js:
-    newFile: !uuid 'bcc2e3a07bcc7f2be0e950a9a4a3f2bf33efbca4'
-    oldFile: null
-  /public/store/js/order.e138e8c9.js:
-    newFile: null
-    oldFile: !uuid 'be0bc539900c6a746145a0a71651ba79d408bf85'
-  /public/store/js/page.6d36289a.js:
-    newFile: null
-    oldFile: !uuid '4cf16a5c0f6038ea9f5090e9db7989f7c7b367c7'
-gitCommitId: !uuid '6888b61f372f3252b04a4698faced9a12ec22948'
-renames:
-  /public/store/css/order.b47600db.css: /public/store/css/order.a0bb7f06.css
-  /public/store/js/app.f6764c89.js: /public/store/js/app.32d4dce4.js
-revisionId: 261
+  /app:
+    newFile: !uuid 'd4c602c1d5775e3ba7ce8b16fcd725fc3a030cee'
+    oldFile: !uuid '594ebfdb7f17803e8b51db482efb93d7eb4b157d'
+  /app/common:
+    newFile: !uuid '185773de7221afcdd611638eb9d8bdf3cf604b4d'
+    oldFile: !uuid '3ba7a3dedcaee6942058dd0b902c0e75e45ef474'
+  /app/common/library:
+    newFile: !uuid '2392a38b497dc1ab03d702242222ada588c4c422'
+    oldFile: !uuid '94d1491e89066d54be3b2202e0d484c4acf79bb6'
+  /app/common/library/wechat:
+    newFile: !uuid 'b0672f769a25793e3bbbfe1804089c9b1c84553f'
+    oldFile: !uuid 'afb371616d152b1b3fbb137cfddeabb8d449898e'
+  /app/common/library/wechat/WxPay.php:
+    newFile: !uuid '635d9f288dfc3bded50c7767feae5ed19bf909cc'
+    oldFile: !uuid 'c858bb5af2ab44dc02803e7365410e1e8adb10b2'
+gitCommitId: !uuid 'cdffec6b2e3c7bf8acc1177c5aad8f5907f8ba2c'
+renames: {
+  }
+revisionId: 262
