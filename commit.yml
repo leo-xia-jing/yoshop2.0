@@ -2,22 +2,16 @@
 branches: {
   }
 fileChange:
-  /app:
-    newFile: !uuid '71807511bc9522059d8b74ba73ad83a26375224b'
-    oldFile: !uuid 'd4c602c1d5775e3ba7ce8b16fcd725fc3a030cee'
-  /app/common:
-    newFile: !uuid '0e4a48f06409b920939043f2b36f220b1f556e39'
-    oldFile: !uuid '185773de7221afcdd611638eb9d8bdf3cf604b4d'
-  /app/common/library:
-    newFile: !uuid 'b595a770854cc403b3ba9e7b65c10d3b2cdb433e'
-    oldFile: !uuid '2392a38b497dc1ab03d702242222ada588c4c422'
-  /app/common/library/wechat:
-    newFile: !uuid 'f57b07e66bce35e0e87f9dea9b33dfb843020dff'
-    oldFile: !uuid 'b0672f769a25793e3bbbfe1804089c9b1c84553f'
-  /app/common/library/wechat/WxPay.php:
-    newFile: !uuid 'dbbd74f9a6ecc3e7b90f2e97294a4978d9db6863'
-    oldFile: !uuid '635d9f288dfc3bded50c7767feae5ed19bf909cc'
-gitCommitId: !uuid '0ba8f55a7dac53c1fa8e1d293de18b8ca541e237'
+  /public:
+    newFile: !uuid '9058a94891d01eae7a63b3fd8fe89565355b50b8'
+    oldFile: !uuid '575e2f03be8f0ee8fcd74c2a59399a6c861eb856'
+  /public/install:
+    newFile: !uuid '285ae6f137594248972a339ba6f9c2306ac4969a'
+    oldFile: !uuid '96e1f36aba191cdb08937ae0075d89465851bd45'
+  /public/install/index.php:
+    newFile: !uuid 'bb476b7b5e4eafe17d27750a4dce492a8f2b2ebc'
+    oldFile: !uuid '157ea5d294ff94c10f494823231d04374f414289'
+gitCommitId: !uuid '0829cec2d449c0a765bd0843ce35d3b09756d7f4'
 renames: {
   }
-revisionId: 263
+revisionId: 264
