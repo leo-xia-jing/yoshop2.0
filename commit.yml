@@ -2,67 +2,10 @@
 branches: {
   }
 fileChange:
-  /public:
-    newFile: !uuid '0ad981e326a961d7bccedf63c8330ee784a8b90b'
-    oldFile: !uuid '6574da738263b1da6c0db3f256247b63b67ee0f3'
-  /public/index.html:
-    newFile: !uuid 'f09b5bfe69f0e5986769e7423d6630607f68e8f5'
-    oldFile: !uuid 'ae77fc71915cf820bc73f9139b2d7073b22daa4f'
-  /public/static:
-    newFile: !uuid 'f1c37cf2475de24f81460be0fd7d8a5e998dbab3'
-    oldFile: !uuid '8ffed108fc0a6d4ea9f7e69f7e58b9c289eac21e'
-  /public/static/js:
-    newFile: !uuid 'f71653ae0f4296973d737a3f761f519dd96e0248'
-    oldFile: !uuid '914f4fd8d2bd54510c14d334571c4a8f3031333f'
-  /public/static/js/chunk-vendors.1cf73706.js:
-    newFile: !uuid '100faf748c2cee0d4351b9bfaec414058b69be52'
-    oldFile: null
-  /public/static/js/chunk-vendors.a3dc258b.js:
-    newFile: null
-    oldFile: !uuid '936722540ab5528a8c53e855f6e27058a135ac2d'
-  /public/static/js/index.79287225.js:
-    newFile: null
-    oldFile: !uuid 'baa88c7d3592f0aa8f3c94b6025dfeccdd55e846'
-  /public/static/js/index.b12981af.js:
-    newFile: !uuid 'b173d9d8fa06f28fd8e1aa462a6d12c51b2e6012'
-    oldFile: null
-  /public/static/js/pages-cart-index.2cb2602a.js:
-    newFile: null
-    oldFile: !uuid '7d76034b346176b1fe33b0672b04aab658509133'
-  /public/static/js/pages-cart-index.3f3f22c9.js:
-    newFile: !uuid 'fce4b85d1ac7e53cedc1d7e86a44046e89af4121'
-    oldFile: null
-  /public/static/js/pages-login-index.4ecffa1c.js:
-    newFile: null
-    oldFile: !uuid 'a77d125250703431c748bc15c19ec10e746e9eaf'
-  /public/static/js/pages-login-index.7adcc091.js:
-    newFile: !uuid '694afcce7c16f961f07f70591b0dce8c7aceb797'
-    oldFile: null
-  /public/static/js/pages-order-detail.27d46810.js:
-    newFile: !uuid '8d662957e1e3f91614201248ca25ee696d84f2d7'
-    oldFile: null
-  /public/static/js/pages-order-detail.8fff366e.js:
-    newFile: null
-    oldFile: !uuid '4a99a3b6405cef9847c7b88536bcebd8b07f2f38'
-  /public/static/js/pages-order-index.38a24faf.js:
-    newFile: !uuid '8806cbcf64788c4c38c904b3c23936a5cf38b784'
-    oldFile: null
-  /public/static/js/pages-order-index.c275ac3c.js:
-    newFile: null
-    oldFile: !uuid '81ada600dd716dc0056b4d334b27ecf53ba963f2'
-  /public/static/js/pages-refund-index.84adfdbf.js:
-    newFile: !uuid '8cfe9be33161b234ea74e65ace4ec1363c035280'
-    oldFile: null
-  /public/static/js/pages-refund-index.91f59e83.js:
-    newFile: null
-    oldFile: !uuid '7260bbdf7303433a3f5b143e9db9c5d960ddc251'
-  /public/static/js/pages-search-index.8483c7e6.js:
-    newFile: !uuid '4c972e2101c1260bc349c1c698b33fe94b5def95'
-    oldFile: null
-  /public/static/js/pages-search-index.bd9fd414.js:
-    newFile: null
-    oldFile: !uuid 'd65650589f7a206f569c4589d5c76cee1342d7ac'
-gitCommitId: !uuid '1c3ef1bf0a6077b7acf0fe10508b79fa230164b8'
+  /更新日志.txt:
+    newFile: !uuid 'f03e3ca946c64b6ac93bdadbb944299c205a5d87'
+    oldFile: !uuid 'f425fce0713951e073ad10c147151988eed58895'
+gitCommitId: !uuid 'da022d2fa85308afd6b7483555e672e3b2c30785'
 renames: {
   }
-revisionId: 266
+revisionId: 267
