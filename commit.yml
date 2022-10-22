@@ -3,18 +3,21 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid 'f4ecca40245efa5d0a88d31fc4132cdde1c0b6b6'
-    oldFile: !uuid '9da778a822056cca9520ac01924464890e006d45'
-  /app/store:
-    newFile: !uuid 'a6574db64a29ec35fe980c86ad3e30455c8837e5'
-    oldFile: !uuid '7613f794a1e8ffd5297d8968778bd2b19b8b81d9'
-  /app/store/config:
-    newFile: !uuid '1a9ee6c15006453c3696384db50568cca27dddcb'
-    oldFile: !uuid 'ff6eb0405c864f081a315e97190d01af897d58ca'
-  /app/store/config/allowapi.php:
-    newFile: !uuid '51cd77de19174276d285504bb25831e24ba8febc'
-    oldFile: !uuid 'c342a5fa8d954125867ab79c4d5b570fdc7e990a'
-gitCommitId: !uuid 'c1b6a2a9cb6fe92ebd68e32e78b42e5ee1d14b5b'
+    newFile: !uuid '225b347b0a1deba1ac01e60847d126f04cd96ca9'
+    oldFile: !uuid 'f4ecca40245efa5d0a88d31fc4132cdde1c0b6b6'
+  /app/common:
+    newFile: !uuid '7cc212cd15e0f3fbce8dc994efe74fdaba816772'
+    oldFile: !uuid '7deba652d087bd1363473c764f7deaea72967857'
+  /app/common/library:
+    newFile: !uuid '0d6db14fdba24a3a3faebe149d5e72bdccbbacc9'
+    oldFile: !uuid 'a53045a318957e58cd3fe398b3cab0354cc0f26a'
+  /app/common/library/sms:
+    newFile: !uuid '5185eb095b6f024cbef07f9535ce82958396f81a'
+    oldFile: !uuid 'ceb86fb7ab9d32825369e343c27cffcb5ea97609'
+  /app/common/library/sms/Driver.php:
+    newFile: !uuid '140c093f896cae0c0bc72ed174807029538c9345'
+    oldFile: !uuid '855befbc4bcfad0f0fac3e5709e5d31c02b1756b'
+gitCommitId: !uuid '908ae376135f1fe7ba00b89e34fb60c50ba8b72f'
 renames: {
   }
-revisionId: 273
+revisionId: 274
