@@ -2,28 +2,19 @@
 branches: {
   }
 fileChange:
-  /vendor:
-    newFile: !uuid 'db279e4b40e39a9ac89d924ba3f7a39fef9ee1c1'
-    oldFile: !uuid '39f02e594ecf5f77ccad0fcaf3582a1450bfaca9'
-  /vendor/kosinix:
-    newFile: !uuid 'a8865fe16006581e138c34686d915b233df588ac'
-    oldFile: !uuid '4c2ae0a2d0f8575a20deb223df2d6e4208ffa6af'
-  /vendor/kosinix/grafika:
-    newFile: !uuid 'dab2bc05d488a2f9b3d19ae4e0d1b8949c0388d6'
-    oldFile: !uuid '6517b0dc7d3b39671e1ac81d585ba56a123948f5'
-  /vendor/kosinix/grafika/src:
-    newFile: !uuid '78bcb592dc7d4fcf705c5b52fdcd6cd6780fd695'
-    oldFile: !uuid 'd4621778aa2937c9dc3a07b7487a9a7befeb4939'
-  /vendor/kosinix/grafika/src/Grafika:
-    newFile: !uuid '68e18f90c328817eb4f478a0ed4b008fdb41a33a'
-    oldFile: !uuid 'e9f168bb8a08ad5b096d2f3c14420bb0b2fe1e17'
-  /vendor/kosinix/grafika/src/Grafika/Gd:
-    newFile: !uuid 'b24354b68c8f512968796e1430e7bd5039e5ad52'
-    oldFile: !uuid '3ba0ea78b172ce28906633bd0e641f229209520d'
-  /vendor/kosinix/grafika/src/Grafika/Gd/Editor.php:
-    newFile: !uuid 'e90e13c6c2edc3b796aca985ae808c0a0fdbc860'
-    oldFile: !uuid 'e231ffca43880591dffe3236d0d5faa240aff6f3'
-gitCommitId: !uuid 'a8f3b0b2f61d9936a3e3908f2f10e1a44ba23d4b'
+  /public:
+    newFile: !uuid 'c349d9953be93ced8a24e181da08da56775b4bcb'
+    oldFile: !uuid 'c0543466c82867798574d356c0a49c95b11aa90f'
+  /public/install:
+    newFile: !uuid 'fd43a5a6eaf0a3cac860fcd7dcb9de9ad3190a1b'
+    oldFile: !uuid 'e2412b594c776b271a231e8ffd6237922b6ca342'
+  /public/install/templates:
+    newFile: !uuid '36f366ca3d3772c61e5d6289d0cc232276cacf62'
+    oldFile: !uuid '8f30bbe3ad1afbc8f4d341abee99867cf8faeaea'
+  /public/install/templates/step_1.php:
+    newFile: !uuid '0af5a37f38cf6f988fc724b851c1446ebe3dc946'
+    oldFile: !uuid '0e727f74c07bfb52b8b31492de6d226ee40b0013'
+gitCommitId: !uuid 'a077169b73337671979774fd8eaf5e65cb0f49a8'
 renames: {
   }
-revisionId: 278
+revisionId: 279
