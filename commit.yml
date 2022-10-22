@@ -2,19 +2,19 @@
 branches: {
   }
 fileChange:
-  /public:
-    newFile: !uuid 'c349d9953be93ced8a24e181da08da56775b4bcb'
-    oldFile: !uuid 'c0543466c82867798574d356c0a49c95b11aa90f'
-  /public/install:
-    newFile: !uuid 'fd43a5a6eaf0a3cac860fcd7dcb9de9ad3190a1b'
-    oldFile: !uuid 'e2412b594c776b271a231e8ffd6237922b6ca342'
-  /public/install/templates:
-    newFile: !uuid '36f366ca3d3772c61e5d6289d0cc232276cacf62'
-    oldFile: !uuid '8f30bbe3ad1afbc8f4d341abee99867cf8faeaea'
-  /public/install/templates/step_1.php:
-    newFile: !uuid '0af5a37f38cf6f988fc724b851c1446ebe3dc946'
-    oldFile: !uuid '0e727f74c07bfb52b8b31492de6d226ee40b0013'
-gitCommitId: !uuid 'a077169b73337671979774fd8eaf5e65cb0f49a8'
+  /app:
+    newFile: !uuid 'f94f3f3a160cc3141641a93c66e4afa29d5182fc'
+    oldFile: !uuid 'ea022bfd662705d08f9f041a50af81ca63866b5b'
+  /app/store:
+    newFile: !uuid 'b66cc1d32c2bfe111ffe87f3526410650c558266'
+    oldFile: !uuid 'a6574db64a29ec35fe980c86ad3e30455c8837e5'
+  /app/store/model:
+    newFile: !uuid 'e69319b7d710bb900c0765f996f3dd3484f69b00'
+    oldFile: !uuid '13e8e73cb4a77f83f5e5af5fd961b108688c4d01'
+  /app/store/model/UploadFile.php:
+    newFile: !uuid '90832d39a9ae405c8fe577e7d040797319678ce4'
+    oldFile: !uuid '38332d6f8f509373ae31b4b4b9a8699b53ee6452'
+gitCommitId: !uuid '6c5c481a16dd505b34683cfc678e8a8c685146a6'
 renames: {
   }
-revisionId: 279
+revisionId: 280
