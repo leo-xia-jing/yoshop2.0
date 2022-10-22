@@ -2,10 +2,3418 @@
 branches: {
   }
 fileChange:
+  /.env:
+    newFile: null
+    oldFile: !uuid '9208514ea6bdea296f5c8708662c1a1646f4db55'
+  /.gitignore:
+    newFile: null
+    oldFile: !uuid '321ced8a2c25e57f3750077d241cd27fb4006735'
+  /.travis.yml:
+    newFile: null
+    oldFile: !uuid '80ef29106ee7ef0d122843a948586a7786f251cd'
+  /LICENSE:
+    newFile: null
+    oldFile: !uuid '1af3919ab1c26ba2c01350b589356b2a28b72774'
+  /README.md:
+    newFile: null
+    oldFile: !uuid 'bfebd4d3504723585aaa4458471141a7feed431c'
+  /app:
+    newFile: null
+    oldFile: !uuid '71807511bc9522059d8b74ba73ad83a26375224b'
+  /app/.htaccess:
+    newFile: null
+    oldFile: !uuid '3418e55a68383c1cbc687c52a2994d1e8ed83800'
+  /app/admin:
+    newFile: null
+    oldFile: !uuid '9e824c20667c1922e9188ed0fee1d8391ecbced0'
+  /app/admin/controller:
+    newFile: null
+    oldFile: !uuid '4ed2d0c56cfc7155179d5262e16230a94524169b'
+  /app/admin/controller/Controller.php:
+    newFile: null
+    oldFile: !uuid 'ec0c00e7dbd8c321955025167cebfa5e4b4f14fe'
+  /app/admin/controller/Passport.php:
+    newFile: null
+    oldFile: !uuid 'e64c64589d7ad4f55fa47d5322c6fa35ca2c0d45'
+  /app/admin/controller/Store.php:
+    newFile: null
+    oldFile: !uuid 'bfe06deff966e1a399c8a07f26e95ea52ac0b089'
+  /app/admin/controller/admin:
+    newFile: null
+    oldFile: !uuid '64653c3d25d42202a397e8f04618bbb1b170e8cb'
+  /app/admin/controller/admin/User.php:
+    newFile: null
+    oldFile: !uuid '8418c536ee4ee62cbdc6357731e3b8010c5b74a5'
+  /app/admin/controller/setting:
+    newFile: null
+    oldFile: !uuid 'bcc48b082cebd397cc947b24e7dc3b5cf50922ed'
+  /app/admin/controller/setting/Cache.php:
+    newFile: null
+    oldFile: !uuid 'c235f6c34e336635a95f906944e5d5cae31b533f'
+  /app/admin/controller/setting/Science.php:
+    newFile: null
+    oldFile: !uuid 'e66b058829d3e85584f7cd40ccef4209bfdeba03'
+  /app/admin/controller/store:
+    newFile: null
+    oldFile: !uuid '1876d87e9283370972b0a897adbd9f0c90c60761'
+  /app/admin/controller/store/Api.php:
+    newFile: null
+    oldFile: !uuid '1a871ad5c6a0080152519d0952748959f9c6d69f'
+  /app/admin/controller/store/Menu.php:
+    newFile: null
+    oldFile: !uuid '0167a1e8883f62e60342493b75d2f7bcbdce2057'
+  /app/admin/model:
+    newFile: null
+    oldFile: !uuid 'b24f00fd61e57d4b6439d93e731b468d2e0f1a92'
+  /app/admin/model/Store.php:
+    newFile: null
+    oldFile: !uuid 'ee3f35f18e8da210269e27643b84cbc0c7f13fb1'
+  /app/admin/model/UploadFile.php:
+    newFile: null
+    oldFile: !uuid 'c50eeaadce93b03f1d84b73ca79735fba4ec69b8'
+  /app/admin/model/admin:
+    newFile: null
+    oldFile: !uuid '82b9fa4b4111537dcba41f5f24432e83dbceab26'
+  /app/admin/model/admin/User.php:
+    newFile: null
+    oldFile: !uuid '54578708d3a6da92843cdc9da050315512b9750a'
+  /app/admin/model/store:
+    newFile: null
+    oldFile: !uuid '8dcab37894aa4bbfbe54a6d6dcd6b9d464b6073c'
+  /app/admin/model/store/Api.php:
+    newFile: null
+    oldFile: !uuid 'db680ae2cff1a3638cb4bdbfdcc8e7c16c78eef2'
+  /app/admin/model/store/Menu.php:
+    newFile: null
+    oldFile: !uuid '095f5832dfef5c5bbc639ffc68699224df28236d'
+  /app/admin/model/store/MenuApi.php:
+    newFile: null
+    oldFile: !uuid 'ac27499832bda0bbb91a2bfafaf3b0c2860af3ae'
+  /app/admin/model/store/User.php:
+    newFile: null
+    oldFile: !uuid '8ea035590bad941d09160ecb643c05da66a6faef'
+  /app/admin/service:
+    newFile: null
+    oldFile: !uuid '01f3f5135d083f55e554de287014da7d42ae549e'
+  /app/admin/service/Cache.php:
+    newFile: null
+    oldFile: !uuid 'dbc06c22de9334befa506c7aaebd9f1dc08c509f'
+  /app/admin/service/admin:
+    newFile: null
+    oldFile: !uuid 'b03898bae4b26fda408e3a8ebffe61bdf3d095ed'
+  /app/admin/service/admin/User.php:
+    newFile: null
+    oldFile: !uuid '401bee8dd41e4f5ad94d7f7251d346ea82ca68a1'
+  /app/admin/service/store:
+    newFile: null
+    oldFile: !uuid '2930d29f3d284f5544432630a3d79ccce2fad286'
+  /app/admin/service/store/User.php:
+    newFile: null
+    oldFile: !uuid 'c19a2ec29557958500859ec5b1492edb19367b0f'
+  /app/api:
+    newFile: null
+    oldFile: !uuid '2ca40ef2bc1a3be19c7d56dcf0de20193d7e6464'
+  /app/api/common.php:
+    newFile: null
+    oldFile: !uuid '69bf379a900bc5c843e721294803deb7e21dfc4c'
+  /app/api/config:
+    newFile: null
+    oldFile: !uuid '25d5df3803524dbe37a04e731a1068e2c940aa4b'
+  /app/api/config/captcha.php:
+    newFile: null
+    oldFile: !uuid '52671eb7d931244251f3feba1837ed29ad5c9197'
+  /app/api/controller:
+    newFile: null
+    oldFile: !uuid 'a5e73b7c0d49a766d0fe18c58699c58790ecbe2b'
+  /app/api/controller/Address.php:
+    newFile: null
+    oldFile: !uuid '7cc28176a35bb64b166dc3242c2adce19ab10ca1'
+  /app/api/controller/Article.php:
+    newFile: null
+    oldFile: !uuid 'b2ff646373d6b8fcfcb8b33c6f0050d889a28931'
+  /app/api/controller/Captcha.php:
+    newFile: null
+    oldFile: !uuid '062f18e005bacd00d057ee7320e7ed3883a0b9e0'
+  /app/api/controller/Cart.php:
+    newFile: null
+    oldFile: !uuid '29b29ab48fe9a4f1409ae91b0a01bfe755107fd8'
+  /app/api/controller/Category.php:
+    newFile: null
+    oldFile: !uuid '4e81905ce5c5824b4035ccbb2cb55fbc35a29bc8'
+  /app/api/controller/Checkout.php:
+    newFile: null
+    oldFile: !uuid '361187ab07aa8aeaa539a7b14aa570582add1991'
+  /app/api/controller/Comment.php:
+    newFile: null
+    oldFile: !uuid '429c4b7de6782c73e37338c5bd327ae447427942'
+  /app/api/controller/Controller.php:
+    newFile: null
+    oldFile: !uuid '3216a4b3a871efcb7a772a2006c6e2099052cdf3'
+  /app/api/controller/Coupon.php:
+    newFile: null
+    oldFile: !uuid 'd6358d16ccab37b0da5a5e9942cd99cbc6f5fabc'
+  /app/api/controller/Express.php:
+    newFile: null
+    oldFile: !uuid 'f0865ac96e991a81e538a51ad428f1d71b412b44'
+  /app/api/controller/Goods.php:
+    newFile: null
+    oldFile: !uuid 'aa7c5f3fd57e5fd08283d69b795b4e81a9a541c3'
+  /app/api/controller/Help.php:
+    newFile: null
+    oldFile: !uuid 'ba68be0c3d3e81ff6b310e43dc993bcfcf545f38'
+  /app/api/controller/Index.php:
+    newFile: null
+    oldFile: !uuid 'af97661688aca5324cb9bd69fa054cf8bf581db3'
+  /app/api/controller/MyCoupon.php:
+    newFile: null
+    oldFile: !uuid 'af672f0918e4e69b25defbc795362032717032d1'
+  /app/api/controller/Notify.php:
+    newFile: null
+    oldFile: !uuid '0f5168eb61cf3ee2b82edc4f47456e41381512a7'
+  /app/api/controller/Order.php:
+    newFile: null
+    oldFile: !uuid '7c80cfe7094d526e6686124735a530d4259c7e5b'
+  /app/api/controller/Page.php:
+    newFile: null
+    oldFile: !uuid '4042cf7917bfea9ce189590d7c335326215937c9'
+  /app/api/controller/Passport.php:
+    newFile: null
+    oldFile: !uuid '491304904913c461b4cb290402a84ae324407db8'
+  /app/api/controller/Recharge.php:
+    newFile: null
+    oldFile: !uuid '27aaeccd690997d8cb0ec7d0f8b0d99d1233ea0f'
+  /app/api/controller/Refund.php:
+    newFile: null
+    oldFile: !uuid '3df55f61dbb85976086c405d6c1dff47274648b5'
+  /app/api/controller/Region.php:
+    newFile: null
+    oldFile: !uuid '433e89749b7371c79a56267d4ec45b059e011e20'
+  /app/api/controller/Setting.php:
+    newFile: null
+    oldFile: !uuid 'e2919c31d2adb436959cd6d26e8e46428371f1f8'
+  /app/api/controller/Upload.php:
+    newFile: null
+    oldFile: !uuid 'f270e9ff10ae4c89364292c92e980779471ccc60'
+  /app/api/controller/User.php:
+    newFile: null
+    oldFile: !uuid 'ca875a71c71b7ca69cd0761714e5ad548d365032'
+  /app/api/controller/article:
+    newFile: null
+    oldFile: !uuid '22b158e6dae27298cc7a552ab2d8c3ffc328feb6'
+  /app/api/controller/article/Category.php:
+    newFile: null
+    oldFile: !uuid 'e276cf83f26d509cfad1ab683e4295a6e1020b36'
+  /app/api/controller/balance:
+    newFile: null
+    oldFile: !uuid '16d09d9de5bef9235f94bb72a0c447e0c27d2765'
+  /app/api/controller/balance/Log.php:
+    newFile: null
+    oldFile: !uuid 'd619dfac61e494f2b1dbbec04aab3a7f7f46fd20'
+  /app/api/controller/goods:
+    newFile: null
+    oldFile: !uuid 'de145ea1924297dad258e9eaf307aef91e8bc36f'
+  /app/api/controller/goods/Service.php:
+    newFile: null
+    oldFile: !uuid '5939efb2690d109b75df09104ffaf4985c15c00b'
+  /app/api/controller/order:
+    newFile: null
+    oldFile: !uuid '76739c6a125370622d3e148d301eae661388153b'
+  /app/api/controller/order/Comment.php:
+    newFile: null
+    oldFile: !uuid '39cff1cae0a96fd8ffa12d7d2362a139e6f6505d'
+  /app/api/controller/points:
+    newFile: null
+    oldFile: !uuid 'df0ab15580b1c0fbf0a39466743c8da077ee61af'
+  /app/api/controller/points/Log.php:
+    newFile: null
+    oldFile: !uuid '364fe64430df9ec7ce1d1b21992c367e4b58d1ab'
+  /app/api/controller/recharge:
+    newFile: null
+    oldFile: !uuid 'fdfb76690470456feed6dfb722b9762e7b7eec9e'
+  /app/api/controller/recharge/Order.php:
+    newFile: null
+    oldFile: !uuid '37c178713275cabef73214f57bcdc3f6d3176c67'
+  /app/api/controller/recharge/Plan.php:
+    newFile: null
+    oldFile: !uuid 'f4eb1ff86daf1981debda994ec33f225be7d5d07'
+  /app/api/event.php:
+    newFile: null
+    oldFile: !uuid 'd52fd94240e36925910bb03b8f10502beb4ae19a'
+  /app/api/listener:
+    newFile: null
+    oldFile: !uuid '43c43551dea3c443b555ee71ecb6d8af27640634'
+  /app/api/listener/order:
+    newFile: null
+    oldFile: !uuid '7e0d06a80cc7c4578803f70653866e879e3333e4'
+  /app/api/listener/order/PaySuccess.php:
+    newFile: null
+    oldFile: !uuid '7640bed95aa0ce481f4848d00dba88f45a4833a1'
+  /app/api/model:
+    newFile: null
+    oldFile: !uuid '3584ebcb5f017a753c5950fb9b646544c7ef309d'
+  /app/api/model/Article.php:
+    newFile: null
+    oldFile: !uuid '2be3e5cd86fd9bbbd3a444f038332c97d3e5cdf8'
+  /app/api/model/Cart.php:
+    newFile: null
+    oldFile: !uuid '22fd2ebefa75726e460b7068aa360a048768a052'
+  /app/api/model/Category.php:
+    newFile: null
+    oldFile: !uuid '7ebf2e7ca448d47e05e762c642f9086cae8cebe7'
+  /app/api/model/Comment.php:
+    newFile: null
+    oldFile: !uuid '3f1bbb9058b10036419445f3bd4afff297e62d4b'
+  /app/api/model/CommentImage.php:
+    newFile: null
+    oldFile: !uuid 'f28371cd2afbb5ec75f8d7e4e69ea4c25eeeb94a'
+  /app/api/model/Coupon.php:
+    newFile: null
+    oldFile: !uuid '142bcde37d77da7db78c19b001b6c98337274907'
+  /app/api/model/Delivery.php:
+    newFile: null
+    oldFile: !uuid 'b9ac5e5eef40a0acc2027faceaf24849c9f03a40'
+  /app/api/model/DeliveryRule.php:
+    newFile: null
+    oldFile: !uuid 'd23ea46b825a2db94c0ab53f5191dd31c094d1c9'
+  /app/api/model/Express.php:
+    newFile: null
+    oldFile: !uuid '7b48e639734558f4cd56694d5ab80e897a25a8b4'
+  /app/api/model/Goods.php:
+    newFile: null
+    oldFile: !uuid 'c446ceab4ab3339007b01edae55b1ce819d0aaad'
+  /app/api/model/GoodsImage.php:
+    newFile: null
+    oldFile: !uuid '175a9fd8bc648860b329f702f877ad7f9ce37a4f'
+  /app/api/model/GoodsSku.php:
+    newFile: null
+    oldFile: !uuid 'ce2ab0484f9afc8779af5d7220b2ea81d4ce517d'
+  /app/api/model/GoodsSpecRel.php:
+    newFile: null
+    oldFile: !uuid '15caba15dce9bf8dc44ca4cf3ae5311877bf6256'
+  /app/api/model/Help.php:
+    newFile: null
+    oldFile: !uuid '1958be5889f2df2c6d578348710e43f1c8784c86'
+  /app/api/model/Order.php:
+    newFile: null
+    oldFile: !uuid '5719cd73d9768165461b05b66c59ecd91f42d735'
+  /app/api/model/OrderAddress.php:
+    newFile: null
+    oldFile: !uuid '73a27b000282dc936935a7e6d5b58dbc0bb97629'
+  /app/api/model/OrderGoods.php:
+    newFile: null
+    oldFile: !uuid '77bd1e21d8d841aa9fc5ff56e04bd02f41dd7a2f'
+  /app/api/model/OrderRefund.php:
+    newFile: null
+    oldFile: !uuid '1a13a5d1f706740c116cde3697764f2133ba0111'
+  /app/api/model/OrderRefundAddress.php:
+    newFile: null
+    oldFile: !uuid '24c79d8b70d07c00cb59264ec0b0207d80ff40e1'
+  /app/api/model/OrderRefundImage.php:
+    newFile: null
+    oldFile: !uuid '050f8bb2affb75537dab18f70a2df468ac04a481'
+  /app/api/model/Page.php:
+    newFile: null
+    oldFile: !uuid '27fcacab8ec82c4c2853a307726afa38ff805797'
+  /app/api/model/Region.php:
+    newFile: null
+    oldFile: !uuid 'ff83ce137d98c8cc0f25a3f09ddc97f7fea35934'
+  /app/api/model/Setting.php:
+    newFile: null
+    oldFile: !uuid '6b851cca1b8f5a69f65bafebce69d7ca417023c4'
+  /app/api/model/Spec.php:
+    newFile: null
+    oldFile: !uuid '35be6ca5564d05abba31a0212bf2536ec102cd9e'
+  /app/api/model/SpecValue.php:
+    newFile: null
+    oldFile: !uuid '7805881695fbc23372941af6ac9bd1bd7415cf8d'
+  /app/api/model/Store.php:
+    newFile: null
+    oldFile: !uuid '121a33e9110bd0684e233eb9492ec2aa7cc58089'
+  /app/api/model/UploadFile.php:
+    newFile: null
+    oldFile: !uuid '1b311169b97a84312b85a0b67ed25786689af356'
+  /app/api/model/User.php:
+    newFile: null
+    oldFile: !uuid '63f18212017c81f95a00fa9abd91701c8442f8b4'
+  /app/api/model/UserAddress.php:
+    newFile: null
+    oldFile: !uuid 'f15f6df5ba41f20ef6a2ca31c6372742d3261b6d'
+  /app/api/model/UserCoupon.php:
+    newFile: null
+    oldFile: !uuid '4af9d294d02ba20cf1499ad7ae3f65e72438463e'
+  /app/api/model/UserOauth.php:
+    newFile: null
+    oldFile: !uuid '64aac62ec1863809c0e4aa575cda129dc2250091'
+  /app/api/model/article:
+    newFile: null
+    oldFile: !uuid '78a836c84b8bc14d8e8b79d361dda1d4962562fb'
+  /app/api/model/article/Category.php:
+    newFile: null
+    oldFile: !uuid '01a299b34a8d29c23e0c92a41c51ec7dca729625'
+  /app/api/model/goods:
+    newFile: null
+    oldFile: !uuid 'f6a605ed1fe032e49633e953c9fd1c5f3049d048'
+  /app/api/model/goods/Service.php:
+    newFile: null
+    oldFile: !uuid 'c628c30e2746c38aa93365c3bd6d4c0113901c4e'
+  /app/api/model/goods/ServiceRel.php:
+    newFile: null
+    oldFile: !uuid 'a4377c334d655488e7c518c68a840b21fe584c05'
+  /app/api/model/h5:
+    newFile: null
+    oldFile: !uuid '0b22bcc097b2cb4f5905a9d35e9c035fdeedc6db'
+  /app/api/model/h5/Setting.php:
+    newFile: null
+    oldFile: !uuid 'ee60beb5b5d7657e7cd3aae636b646dbd758c8b6'
+  /app/api/model/recharge:
+    newFile: null
+    oldFile: !uuid '895b01ede65d22d13bf4d3aadc6c93a0b0284f29'
+  /app/api/model/recharge/Order.php:
+    newFile: null
+    oldFile: !uuid 'fb02d58380ef25021ab7707397b5a7a31228de92'
+  /app/api/model/recharge/OrderPlan.php:
+    newFile: null
+    oldFile: !uuid 'bafd4dd3fa4fe5d51dc8918b7a071bc7ddbb43d3'
+  /app/api/model/recharge/Plan.php:
+    newFile: null
+    oldFile: !uuid '2b7f760667cb4a89d6e62fc251a3c2f94921fbf2'
+  /app/api/model/user:
+    newFile: null
+    oldFile: !uuid 'e3129188ce026a4529290c8f66255547a169d78f'
+  /app/api/model/user/BalanceLog.php:
+    newFile: null
+    oldFile: !uuid 'e9b72e6e1e85d48a71a5cfcf3a42d0b74abe6bbd'
+  /app/api/model/user/Grade.php:
+    newFile: null
+    oldFile: !uuid '2774396923cfb0ff06ffde496b7046a3df405cac'
+  /app/api/model/user/GradeLog.php:
+    newFile: null
+    oldFile: !uuid '1beb29b56015ac0fe022fb5c8ec0345704b42852'
+  /app/api/model/user/PointsLog.php:
+    newFile: null
+    oldFile: !uuid '4f1df7e9ccdffe657fca4aa318054363f931258c'
+  /app/api/model/wxapp:
+    newFile: null
+    oldFile: !uuid 'cf19866fb4f2c385da6b8444bceab56e9231eeaa'
+  /app/api/model/wxapp/Setting.php:
+    newFile: null
+    oldFile: !uuid '0ee776b9a356cffdce22e05ed86cbeac1805f0db'
+  /app/api/service:
+    newFile: null
+    oldFile: !uuid '2eab8a6771ac8ce453ca68e6902be0081919e43c'
+  /app/api/service/Cart.php:
+    newFile: null
+    oldFile: !uuid '73322dfe37533dc9d95c1b4cef5133a6840167d8'
+  /app/api/service/Goods.php:
+    newFile: null
+    oldFile: !uuid 'b7fef7a0b2921a6067d46c0379e036dfbea19a9a'
+  /app/api/service/Payment.php:
+    newFile: null
+    oldFile: !uuid '56922ae35b5302baac7b8767debdf1cff84a27e6'
+  /app/api/service/Setting.php:
+    newFile: null
+    oldFile: !uuid '111a3b42a022a257983c86c3f08aa93f535c716e'
+  /app/api/service/User.php:
+    newFile: null
+    oldFile: !uuid '42bd0bf6f90a60f974ec66b79525e27e520f2f9e'
+  /app/api/service/coupon:
+    newFile: null
+    oldFile: !uuid '8269a3d38460922e5eb97f218468776e3448a597'
+  /app/api/service/coupon/GoodsDeduct.php:
+    newFile: null
+    oldFile: !uuid 'bd483a82ce0f0681c1d8a63672ee852ff1b3dca4'
+  /app/api/service/main:
+    newFile: null
+    oldFile: !uuid '118d07c58a030aadeb62f738245c2e01e75cde4d'
+  /app/api/service/main/order:
+    newFile: null
+    oldFile: !uuid 'd41c37b0d8965f958a16d5997b2393254a394fac'
+  /app/api/service/main/order/PaySuccess.php:
+    newFile: null
+    oldFile: !uuid 'b59a6876b10bcb254ac246e575f9245e2ec504ab'
+  /app/api/service/order:
+    newFile: null
+    oldFile: !uuid '028dc91404f13caeb4475f672991450654327523'
+  /app/api/service/order/Checkout.php:
+    newFile: null
+    oldFile: !uuid '5901d9ba1ca54d8b835f88e2212b0e487eea8c62'
+  /app/api/service/order/PaySuccess.php:
+    newFile: null
+    oldFile: !uuid 'a89562da9d91ed7ae230870544de6a5b917893b2'
+  /app/api/service/order/source:
+    newFile: null
+    oldFile: !uuid '61065d7fada39fe0d7634d4d68d869bee854c5f9'
+  /app/api/service/order/source/Basics.php:
+    newFile: null
+    oldFile: !uuid '1e1143963286f1ce2c2d5360c9ee47f472b5b66d'
+  /app/api/service/order/source/Factory.php:
+    newFile: null
+    oldFile: !uuid '79d8d09ec7bda0dd7825740303ac8f675fc409f7'
+  /app/api/service/order/source/Main.php:
+    newFile: null
+    oldFile: !uuid '02b135c8b65cadcef62757301eaa10db97a48a40'
+  /app/api/service/order/source/checkout:
+    newFile: null
+    oldFile: !uuid 'b6374d9e4a7a4b8da4aa630e00d7f89b2d0ae0d5'
+  /app/api/service/order/source/checkout/Basics.php:
+    newFile: null
+    oldFile: !uuid '89294ef74ca78d49365283c9f297e184cfd4d293'
+  /app/api/service/order/source/checkout/Factory.php:
+    newFile: null
+    oldFile: !uuid 'd81d0b33bddfd8ffdd431940a610300e62145b53'
+  /app/api/service/order/source/checkout/Main.php:
+    newFile: null
+    oldFile: !uuid '1598588b13a1d860f802387fc6e6d4d9c168e9b7'
+  /app/api/service/passport:
+    newFile: null
+    oldFile: !uuid '84e1674671067e4107cb7c2ed729b4c8e18c8589'
+  /app/api/service/passport/Captcha.php:
+    newFile: null
+    oldFile: !uuid '3b7043543c14c012c2a7345d3d6580be31e4a28b'
+  /app/api/service/passport/Login.php:
+    newFile: null
+    oldFile: !uuid '14777007bf38b7985664e23eb050980360145e18'
+  /app/api/service/passport/Party.php:
+    newFile: null
+    oldFile: !uuid '705e96debe3d1e7f97f48813ffd3839cfb5b7ea8'
+  /app/api/service/passport/SmsCaptcha.php:
+    newFile: null
+    oldFile: !uuid '66bf184f719f15945af173da5734218077bc5a78'
+  /app/api/service/points:
+    newFile: null
+    oldFile: !uuid '56bb7ca9f1fed299ca6dc09e5e768610c24b69ed'
+  /app/api/service/points/GoodsDeduct.php:
+    newFile: null
+    oldFile: !uuid 'b0c72944f64c62d9f6c53b5ec9b3960418697d7f'
+  /app/api/service/recharge:
+    newFile: null
+    oldFile: !uuid '44288786c9f48e8e0f365ff5a798b35ceb017ac3'
+  /app/api/service/recharge/PaySuccess.php:
+    newFile: null
+    oldFile: !uuid 'aed48b02c49768f36ec83ca4f605b78a5e0dfe59'
+  /app/api/service/user:
+    newFile: null
+    oldFile: !uuid '8e6732f9c33324bb981e462facf13ed09ab6ca15'
+  /app/api/service/user/Avatar.php:
+    newFile: null
+    oldFile: !uuid '321d39ca47a68fddf63971237907412b6d87cf54'
+  /app/api/service/user/Grade.php:
+    newFile: null
+    oldFile: !uuid '046dfe875dd77375719f6573eab0e83be5dde33c'
+  /app/api/service/user/Oauth.php:
+    newFile: null
+    oldFile: !uuid 'cc29ab38711515758769f939f15f8f89b90f2d2d'
+  /app/api/validate:
+    newFile: null
+    oldFile: !uuid 'd0b37461fd252c95af69247de9a8b28d90f414bf'
+  /app/api/validate/order:
+    newFile: null
+    oldFile: !uuid '7a0fa90002dca6e0dbcc0fc6bfdfb3de3ad4e25b'
+  /app/api/validate/order/Checkout.php:
+    newFile: null
+    oldFile: !uuid 'd9973cb201b24501dba2de78ffbd99646bea016e'
+  /app/api/validate/passport:
+    newFile: null
+    oldFile: !uuid 'f6d3537c0a427d2c961ba6a607bc07705c03bd3c'
+  /app/api/validate/passport/Login.php:
+    newFile: null
+    oldFile: !uuid '8b25bf7a042080491d5e140dc074bc9c7c6cb691'
+  /app/api/validate/passport/SmsCaptcha.php:
+    newFile: null
+    oldFile: !uuid '9ac7d593be6a50fdb5531de2662f7a858554be1f'
+  /app/common:
+    newFile: null
+    oldFile: !uuid '0e4a48f06409b920939043f2b36f220b1f556e39'
+  /app/common.php:
+    newFile: null
+    oldFile: !uuid 'fac493358fa142e4128fd20f47a609e70254c27c'
+  /app/common/enum:
+    newFile: null
+    oldFile: !uuid '274046bd05a33ca90ed38d9b4d781eaec6abbc64'
+  /app/common/enum/EnumBasics.php:
+    newFile: null
+    oldFile: !uuid '5f7e206d07767d707567c149d2b32dd7794361cf'
+  /app/common/enum/OrderType.php:
+    newFile: null
+    oldFile: !uuid '2d179d996b01ec347d24c97c0131fe03ac181091'
+  /app/common/enum/PayType.php:
+    newFile: null
+    oldFile: !uuid '870bcfabdc3f89920463e2a3e4088221211406ec'
+  /app/common/enum/Setting.php:
+    newFile: null
+    oldFile: !uuid 'cc7deb422e00a0ceea26069448e77e902f97cf07'
+  /app/common/enum/comment:
+    newFile: null
+    oldFile: !uuid '241ddc34d1bc96b8539faf89c6604dcbbd24df4f'
+  /app/common/enum/comment/Score.php:
+    newFile: null
+    oldFile: !uuid '7fd4b0d076101cca081623182415718f68e34431'
+  /app/common/enum/coupon:
+    newFile: null
+    oldFile: !uuid 'b3b9915e5dd8af696458305017d5df800a222a5a'
+  /app/common/enum/coupon/ApplyRange.php:
+    newFile: null
+    oldFile: !uuid '2c9bb872782fd31e30483a9d28dfa10a81c2cb4a'
+  /app/common/enum/coupon/CouponType.php:
+    newFile: null
+    oldFile: !uuid '184bb99823178f59b8423d0631b25441e78ae598'
+  /app/common/enum/coupon/ExpireType.php:
+    newFile: null
+    oldFile: !uuid 'ddc437fd5d282f31ffc39cb738fbb448e0dfd3b1'
+  /app/common/enum/file:
+    newFile: null
+    oldFile: !uuid '54b9cd2afab54636ee7d609679daf8b331aef989'
+  /app/common/enum/file/FileType.php:
+    newFile: null
+    oldFile: !uuid '7fb58616328ea24724c259c91b21e69e26283043'
+  /app/common/enum/file/Storage.php:
+    newFile: null
+    oldFile: !uuid '3c9a9ae4bfaa1e72569dd1b0c9e1ecc244bb05c7'
+  /app/common/enum/goods:
+    newFile: null
+    oldFile: !uuid '1b7df268a476e5ac71b75e064aebf51dda0af95e'
+  /app/common/enum/goods/DeductStockType.php:
+    newFile: null
+    oldFile: !uuid '70b084c90c7b7823d0246175f4952e5b0df61b21'
+  /app/common/enum/goods/SpecType.php:
+    newFile: null
+    oldFile: !uuid 'ae7dda8c5bf4ce9655a59699d81ad74170253533'
+  /app/common/enum/goods/Status.php:
+    newFile: null
+    oldFile: !uuid 'e09fcd712474f8c322d57aed71acee730fb34f24'
+  /app/common/enum/order:
+    newFile: null
+    oldFile: !uuid '043bbd297e7443c4e64fcda6062e218dc2d62e1e'
+  /app/common/enum/order/DeliveryStatus.php:
+    newFile: null
+    oldFile: !uuid '8dde8ca7e8dafb31f6d6d251b4245bb6c451a678'
+  /app/common/enum/order/DeliveryType.php:
+    newFile: null
+    oldFile: !uuid '9922da55b215b19569885d630f302cee739aa988'
+  /app/common/enum/order/OrderScene.php:
+    newFile: null
+    oldFile: !uuid 'd9bbb496d268b03a81810a8f6c3e2b2ad4da1755'
+  /app/common/enum/order/OrderSource.php:
+    newFile: null
+    oldFile: !uuid 'e6fb181638ac336617dfa2dc4bf5c61535496fd8'
+  /app/common/enum/order/OrderStatus.php:
+    newFile: null
+    oldFile: !uuid '73f88e2a2dddfe550e153805a70f2898cde18250'
+  /app/common/enum/order/PayStatus.php:
+    newFile: null
+    oldFile: !uuid 'ceb1e9e2ec1b49fe60bfcf001b29ee9339a1af42'
+  /app/common/enum/order/PayType.php:
+    newFile: null
+    oldFile: !uuid '6b673dddd552acdbc47194ff45338350cd93a708'
+  /app/common/enum/order/ReceiptStatus.php:
+    newFile: null
+    oldFile: !uuid '462581c1b078e2424496a03f68555f0d1115d1b0'
+  /app/common/enum/order/export:
+    newFile: null
+    oldFile: !uuid '4e908c72506685d811d81a8d2bd59dd37760ad88'
+  /app/common/enum/order/export/ExportStatus.php:
+    newFile: null
+    oldFile: !uuid '0a803f9befe6a4e7040b9122742ecd3cdaf831ea'
+  /app/common/enum/order/refund:
+    newFile: null
+    oldFile: !uuid '8b99cbf47e141428ac1de3366cf97847a45d09f9'
+  /app/common/enum/order/refund/AuditStatus.php:
+    newFile: null
+    oldFile: !uuid '9a0414680e8941e486dd9729d4a92ac2ac7d330d'
+  /app/common/enum/order/refund/RefundStatus.php:
+    newFile: null
+    oldFile: !uuid 'fa58712a000b7a69fb14d8cde4ed4ca23639c9dc'
+  /app/common/enum/order/refund/RefundType.php:
+    newFile: null
+    oldFile: !uuid 'f5ee6bc59a1ecefc503f8ed413fcb6d0bfe01854'
+  /app/common/enum/page:
+    newFile: null
+    oldFile: !uuid 'a10187daa124459416a535d1e2277cb14677253c'
+  /app/common/enum/page/PageType.php:
+    newFile: null
+    oldFile: !uuid 'b0e49f495491dfd9ddae58d8cd6ec592a5db8b9c'
+  /app/common/enum/recharge:
+    newFile: null
+    oldFile: !uuid '7700a93a593e9ddadcb3a517977fb22dbbe60915'
+  /app/common/enum/recharge/order:
+    newFile: null
+    oldFile: !uuid '7e57cfb843b2a886de7755779a2d9456e5a8d22a'
+  /app/common/enum/recharge/order/PayStatus.php:
+    newFile: null
+    oldFile: !uuid 'b042f552102883fb56f4b5fd262fc2c6fc51ca6f'
+  /app/common/enum/recharge/order/RechargeType.php:
+    newFile: null
+    oldFile: !uuid 'ee1a86afcdcb36a4db3f6acbab0daca23b5a93f3'
+  /app/common/enum/setting:
+    newFile: null
+    oldFile: !uuid 'c5f75d1546f209d36e897b9255e74e559aa721cd'
+  /app/common/enum/setting/sms:
+    newFile: null
+    oldFile: !uuid '61583b7fa0e36bf37ec6961f9d3c739bbeaf2bf0'
+  /app/common/enum/setting/sms/Scene.php:
+    newFile: null
+    oldFile: !uuid '2149ffe559b5320238cb4f5341ff793a451e6f50'
+  /app/common/enum/store:
+    newFile: null
+    oldFile: !uuid '862ee40da22ac27cfe9dff9003a81786f197d8a7'
+  /app/common/enum/store/address:
+    newFile: null
+    oldFile: !uuid '44081562676dfa489f53f08b3ac9579fc1ed9853'
+  /app/common/enum/store/address/Type.php:
+    newFile: null
+    oldFile: !uuid '3b8f193bc16dd52730d8458682d07df092c8f439'
+  /app/common/enum/store/page:
+    newFile: null
+    oldFile: !uuid 'd8bf304d0543b7bffe4066da7f57b077989f228c'
+  /app/common/enum/store/page/category:
+    newFile: null
+    oldFile: !uuid 'd89bb02692d916ab53f46dcc467d41370571d186'
+  /app/common/enum/store/page/category/Style.php:
+    newFile: null
+    oldFile: !uuid '20368d3e91db782cb2d0ddfcef85a3c53fabd3be'
+  /app/common/enum/user:
+    newFile: null
+    oldFile: !uuid 'eb308dd6d2f774f6fc6701acc9834f8bbb231f97'
+  /app/common/enum/user/balanceLog:
+    newFile: null
+    oldFile: !uuid '4570a8068cf962a31810e1cc00cf8307269658a4'
+  /app/common/enum/user/balanceLog/Scene.php:
+    newFile: null
+    oldFile: !uuid 'c0b2ffdf48961cb75c6e279cd817d6f8b1567c77'
+  /app/common/enum/user/grade:
+    newFile: null
+    oldFile: !uuid '3feda35c92e9e99e4be99890628f31b8fbd23653'
+  /app/common/enum/user/grade/log:
+    newFile: null
+    oldFile: !uuid '6424e0bf15af68e4eb143df2492a09faa1f64dc0'
+  /app/common/enum/user/grade/log/ChangeType.php:
+    newFile: null
+    oldFile: !uuid 'd16619d0804d7606cfa27af5592fa20a9b15ff82'
+  /app/common/exception:
+    newFile: null
+    oldFile: !uuid 'cb124994237b3af0a1301f705070632a24fa051f'
+  /app/common/exception/BaseException.php:
+    newFile: null
+    oldFile: !uuid 'b5b5280c584d7f4a77b0c28c08d916a2a407d9a7'
+  /app/common/library:
+    newFile: null
+    oldFile: !uuid 'b595a770854cc403b3ba9e7b65c10d3b2cdb433e'
+  /app/common/library/Download.php:
+    newFile: null
+    oldFile: !uuid 'b96654500a8b66485e1f2b2c6733e0ee2f4c7c07'
+  /app/common/library/Lock.php:
+    newFile: null
+    oldFile: !uuid 'c2fdb6219d9d43dadc36d94a119e02f1014a6ccf'
+  /app/common/library/Log.php:
+    newFile: null
+    oldFile: !uuid 'ea7e781d12adbf2a89cdcd710aadb20bd08085d1'
+  /app/common/library/express:
+    newFile: null
+    oldFile: !uuid '65abe06cfa56b4f43d02b904bcdbb3baa0eb0e6d'
+  /app/common/library/express/Kuaidi100.php:
+    newFile: null
+    oldFile: !uuid '6a7981a77ff5ba5ab66117417018f6ae1f369ee5'
+  /app/common/library/helper.php:
+    newFile: null
+    oldFile: !uuid '298d47ad5e1bca7f3d633c35cf7cfc636c3d9369'
+  /app/common/library/sms:
+    newFile: null
+    oldFile: !uuid 'f2bbaa16f2a5cffc26e655523abcd143018fae06'
+  /app/common/library/sms/Config.php:
+    newFile: null
+    oldFile: !uuid '7ade524f214ee69d41bc9229244a4b07bcd24a8d'
+  /app/common/library/sms/Driver.php:
+    newFile: null
+    oldFile: !uuid 'aa3c69a469aee592e80c424c4f3fcfb2f72260ea'
+  /app/common/library/sms/engine:
+    newFile: null
+    oldFile: !uuid '142daf64ba20481e31f33165c700ce44c3bea887'
+  /app/common/library/sms/engine/Aliyun.php:
+    newFile: null
+    oldFile: !uuid '3f93a11fac119fdc86469c2c3517f2dd264e6550'
+  /app/common/library/sms/engine/Server.php:
+    newFile: null
+    oldFile: !uuid '5531e3fe32cdd9bba5bfd1bb043b827446c1a681'
+  /app/common/library/sms/package:
+    newFile: null
+    oldFile: !uuid 'db329acf1fbf81bbaa50c76c07591aba57b59b9e'
+  /app/common/library/sms/package/aliyun:
+    newFile: null
+    oldFile: !uuid 'a9c2c30feb2380a2eab6d3adb038390dfa32f6d6'
+  /app/common/library/sms/package/aliyun/SignatureHelper.php:
+    newFile: null
+    oldFile: !uuid '5fa6ea78abcb9a1cdd94ca87f5520a21107bd635'
+  /app/common/library/storage:
+    newFile: null
+    oldFile: !uuid '095c33b4d4ff36d69e8bce86a2ad0bcf31e30736'
+  /app/common/library/storage/Driver.php:
+    newFile: null
+    oldFile: !uuid 'e1401928dded11b3f8f40eb95ea891e5ea9d8cf7'
+  /app/common/library/storage/FileValidate.php:
+    newFile: null
+    oldFile: !uuid 'c78670033497062199fa2e72eca95d11b8df9ccb'
+  /app/common/library/storage/engine:
+    newFile: null
+    oldFile: !uuid 'e142f7896d3787ca54a2ad4924eb65e79e8be304'
+  /app/common/library/storage/engine/Aliyun.php:
+    newFile: null
+    oldFile: !uuid '5aa0ce6b376a60632814d9867648de9727dd9e58'
+  /app/common/library/storage/engine/Basics.php:
+    newFile: null
+    oldFile: !uuid '3e0e19c34e77b5ee0451ef4ae8b02e3780fe2845'
+  /app/common/library/storage/engine/Local.php:
+    newFile: null
+    oldFile: !uuid '4966a3c7bfd9cf3023363ca8fab6556c06a5534d'
+  /app/common/library/storage/engine/Qcloud.php:
+    newFile: null
+    oldFile: !uuid 'fda5e2bb3dc6446895629025f5981edb52d15f5b'
+  /app/common/library/storage/engine/Qiniu.php:
+    newFile: null
+    oldFile: !uuid '6aff9fd3866ebffe225940c666a43be9bf611b45'
+  /app/common/library/wechat:
+    newFile: null
+    oldFile: !uuid 'f57b07e66bce35e0e87f9dea9b33dfb843020dff'
+  /app/common/library/wechat/ErrorCode.php:
+    newFile: null
+    oldFile: !uuid '43f91594990711215caf6cba0c8922cb0fa0e7b5'
+  /app/common/library/wechat/WXBizDataCrypt.php:
+    newFile: null
+    oldFile: !uuid 'e4aa20a4d5937ae67ca2af23bf06379a868d4410'
+  /app/common/library/wechat/WxBase.php:
+    newFile: null
+    oldFile: !uuid '83d32fb0ff2b5395b2b7903cdb7a9fa4399ea946'
+  /app/common/library/wechat/WxPay.php:
+    newFile: null
+    oldFile: !uuid 'dbbd74f9a6ecc3e7b90f2e97294a4978d9db6863'
+  /app/common/library/wechat/WxUser.php:
+    newFile: null
+    oldFile: !uuid 'acb8d3a4220ab30fcb1f6869b62165f5e21dd14d'
+  /app/common/library/wechat/cert:
+    newFile: null
+    oldFile: !uuid '71d1f1aa02e6ecb4f13e1cc36cd95abb538f0d4a'
+  /app/common/library/wechat/cert/.gitignore:
+    newFile: null
+    oldFile: !uuid 'a3a0c8b5f48c0260a4cb43aa577f9b18896ee280'
+  /app/common/model:
+    newFile: null
+    oldFile: !uuid 'd59bbee9a0721791ad4e63b1afc80332e3a8d269'
+  /app/common/model/Article.php:
+    newFile: null
+    oldFile: !uuid '476bab91efe13ee1f8f2b5cc411e6f1af6ff889e'
+  /app/common/model/Cart.php:
+    newFile: null
+    oldFile: !uuid 'e292b8f13db380e9156b92d8a48b424ea6bd1244'
+  /app/common/model/Category.php:
+    newFile: null
+    oldFile: !uuid 'b9d27f50412fb11a436016cd044621f0e5c1c299'
+  /app/common/model/Comment.php:
+    newFile: null
+    oldFile: !uuid 'ac8aa01a2d9a2ff8b59f506cdbb6975b06fd41bb'
+  /app/common/model/CommentImage.php:
+    newFile: null
+    oldFile: !uuid 'a10d6c9abd05765d1db96fd3b363c976279654b3'
+  /app/common/model/Coupon.php:
+    newFile: null
+    oldFile: !uuid 'd8e2312d39864446cd85c99ef40d6614941cfaac'
+  /app/common/model/Delivery.php:
+    newFile: null
+    oldFile: !uuid '260451ddeaa6de4b368e5b3ebcf27acf08ed017c'
+  /app/common/model/DeliveryRule.php:
+    newFile: null
+    oldFile: !uuid 'f72d3dae842ea0bc5c7c0c0cc03cead6e5ea8813'
+  /app/common/model/Express.php:
+    newFile: null
+    oldFile: !uuid '4c0805bd264a8a89b94d7e7b84eb4880ec74cf22'
+  /app/common/model/Goods.php:
+    newFile: null
+    oldFile: !uuid '9da42cbfaa79da3c3630eff30a7218e2380d96b2'
+  /app/common/model/GoodsCategoryRel.php:
+    newFile: null
+    oldFile: !uuid '29a6c9ba68bf1e46c24fe6c8fbe28fbd03c2fc88'
+  /app/common/model/GoodsImage.php:
+    newFile: null
+    oldFile: !uuid 'a636c0451e1738f6fe8d492a0fe7a8808bef997e'
+  /app/common/model/GoodsSku.php:
+    newFile: null
+    oldFile: !uuid '4279a639307ce3d363cab31bd0f7a0a4a6640fcf'
+  /app/common/model/GoodsSpecRel.php:
+    newFile: null
+    oldFile: !uuid 'cfccd64d0ea8e1bb0e6951a63010ebbdd9b1f593'
+  /app/common/model/Help.php:
+    newFile: null
+    oldFile: !uuid '469e97c1b3203fb21d8d47dca4f5ad3ac62fe768'
+  /app/common/model/Order.php:
+    newFile: null
+    oldFile: !uuid '112f8d659288309778a40fefa921d8847f5d9985'
+  /app/common/model/OrderAddress.php:
+    newFile: null
+    oldFile: !uuid '6a3bba9328a7e6f7fe75c85f79be70457e5d0d5b'
+  /app/common/model/OrderGoods.php:
+    newFile: null
+    oldFile: !uuid '9836f832ace1a7e127a0d1bd68cc1bb3d5acf530'
+  /app/common/model/OrderRefund.php:
+    newFile: null
+    oldFile: !uuid 'e27c8730e7b3beb348aba3f5c4d0b9f652f8eece'
+  /app/common/model/OrderRefundAddress.php:
+    newFile: null
+    oldFile: !uuid '9ea439a04ae6e09a3b66973151a70a1c97f5b053'
+  /app/common/model/OrderRefundImage.php:
+    newFile: null
+    oldFile: !uuid '6265b33e7fc72675f84cf64e1eb1fd2e39b853fa'
+  /app/common/model/Page.php:
+    newFile: null
+    oldFile: !uuid '18d1e4ce6ca3d58bf8108a0e1be5fde294452ca6'
+  /app/common/model/Region.php:
+    newFile: null
+    oldFile: !uuid '8b8913155c7ce15f03681f309903c04762925a8d'
+  /app/common/model/Spec.php:
+    newFile: null
+    oldFile: !uuid 'f9039b64b32c55bf5fec82e28bad3a7c42eaa886'
+  /app/common/model/SpecValue.php:
+    newFile: null
+    oldFile: !uuid '3031a0ea8960056514bb5d2e9026ba3e8b4a052c'
+  /app/common/model/Store.php:
+    newFile: null
+    oldFile: !uuid 'e26a821b5a74d8e23bff69aeb6bcf1200e77734d'
+  /app/common/model/UploadFile.php:
+    newFile: null
+    oldFile: !uuid '1ff6b0ae4995b33a2b58bb050cec5ce5b8df2361'
+  /app/common/model/UploadGroup.php:
+    newFile: null
+    oldFile: !uuid 'fb13e830dee2abc6f845d3892b96d67fc36a19e6'
+  /app/common/model/User.php:
+    newFile: null
+    oldFile: !uuid 'd24ae62b01f4424078280880599cc7fd2ffff0a6'
+  /app/common/model/UserAddress.php:
+    newFile: null
+    oldFile: !uuid '8be4a622dceb837586aa5bcd859daf14d5d7085d'
+  /app/common/model/UserCoupon.php:
+    newFile: null
+    oldFile: !uuid 'f05f3645692c56b23cdfc87ca05d246f8b704acc'
+  /app/common/model/UserOauth.php:
+    newFile: null
+    oldFile: !uuid '52d89a40bdf2fd60bea34ef4e40cf6899c95edbe'
+  /app/common/model/Wxapp.php:
+    newFile: null
+    oldFile: !uuid 'f664c49f4d42e60ef32bfe11a077416c50097b18'
+  /app/common/model/admin:
+    newFile: null
+    oldFile: !uuid '4caece1970018b4af2af3b42775e5033c6a98c00'
+  /app/common/model/admin/User.php:
+    newFile: null
+    oldFile: !uuid '058327d0447d41e129992024f303eefacb27b18d'
+  /app/common/model/article:
+    newFile: null
+    oldFile: !uuid '3385ed66ca9b106e23894f91dc12be206328c141'
+  /app/common/model/article/Category.php:
+    newFile: null
+    oldFile: !uuid '5c86365237bcf8fdb4b88d1d3eb03b8de9700c43'
+  /app/common/model/goods:
+    newFile: null
+    oldFile: !uuid 'bf71c88ffdcbdc85d3267785593964027a4dad18'
+  /app/common/model/goods/Service.php:
+    newFile: null
+    oldFile: !uuid 'f42d801c24ba881979790e3d282bfb68849a3101'
+  /app/common/model/goods/ServiceRel.php:
+    newFile: null
+    oldFile: !uuid 'e174b49056c046c0c515bd08c332772020a691f0'
+  /app/common/model/h5:
+    newFile: null
+    oldFile: !uuid '97e1260e0b5bf65718d0ee33c14f6f77bc24089d'
+  /app/common/model/h5/Setting.php:
+    newFile: null
+    oldFile: !uuid '90970b6ccbb04827a9115a1e28bbb02af5dd83bc'
+  /app/common/model/order:
+    newFile: null
+    oldFile: !uuid '52487965e00d5d36953768821acf09a0b8e2fce8'
+  /app/common/model/order/Export.php:
+    newFile: null
+    oldFile: !uuid '8be50c7aeacd5c6211878bc2eb7088271ff48fcd'
+  /app/common/model/recharge:
+    newFile: null
+    oldFile: !uuid 'fc406c8e682811fe6d7f4dc98c306153498c7d05'
+  /app/common/model/recharge/Order.php:
+    newFile: null
+    oldFile: !uuid 'cca6ddc807e91f7cf785bdaacf79a686c21ca43b'
+  /app/common/model/recharge/OrderPlan.php:
+    newFile: null
+    oldFile: !uuid 'c1e2778038a26212727ec610316de47e64e8b731'
+  /app/common/model/recharge/Plan.php:
+    newFile: null
+    oldFile: !uuid 'd1c51943442665daaa2f5f7a0db4bbf0d9155e05'
+  /app/common/model/store:
+    newFile: null
+    oldFile: !uuid '90d06fcc6dd1e89c88b4fa8479e47621f640971a'
+  /app/common/model/store/Address.php:
+    newFile: null
+    oldFile: !uuid '4ef8f753bfe5f230e336e12eb4b352f1aaa83c73'
+  /app/common/model/store/Api.php:
+    newFile: null
+    oldFile: !uuid '25abc0cca7d7954ab3d433ba68e28616c3ea6c7e'
+  /app/common/model/store/Menu.php:
+    newFile: null
+    oldFile: !uuid '3e755ea0345beff0bbb808c472d7957674001f41'
+  /app/common/model/store/MenuApi.php:
+    newFile: null
+    oldFile: !uuid 'c75df7359abc4c877591763164e41860e015a9c7'
+  /app/common/model/store/Role.php:
+    newFile: null
+    oldFile: !uuid '1cd211c221feb34f07b0be604057a8fe0f40b45f'
+  /app/common/model/store/RoleMenu.php:
+    newFile: null
+    oldFile: !uuid 'd8e8f4eab7db912e145f9d4d7e63c92c4359efd2'
+  /app/common/model/store/Setting.php:
+    newFile: null
+    oldFile: !uuid 'e540b3189579af3a882411936c7d9eb02ac8ae47'
+  /app/common/model/store/User.php:
+    newFile: null
+    oldFile: !uuid '4264ce8f6c8b3eb4ab20d48da386b9acdd9363a2'
+  /app/common/model/store/UserRole.php:
+    newFile: null
+    oldFile: !uuid '90438360f1cbadffffb13c9d3fa2c24bb30c3770'
+  /app/common/model/user:
+    newFile: null
+    oldFile: !uuid '5822df1b9d6ca83288af8c45261d4778f62df6d3'
+  /app/common/model/user/BalanceLog.php:
+    newFile: null
+    oldFile: !uuid '0f3ad5c70d825e2cf65884720b81c3d06a623350'
+  /app/common/model/user/Grade.php:
+    newFile: null
+    oldFile: !uuid '986061fa980fa08daafd6e9bd437545d543b6580'
+  /app/common/model/user/GradeLog.php:
+    newFile: null
+    oldFile: !uuid '3e0db331ca577f329ea423d6a6cb093330499733'
+  /app/common/model/user/PointsLog.php:
+    newFile: null
+    oldFile: !uuid '7c540b87993b0bd4bf7c53106ea336ec18df961d'
+  /app/common/model/wxapp:
+    newFile: null
+    oldFile: !uuid 'f6b58362012c99613e4662a5465606ddf2eafb61'
+  /app/common/model/wxapp/Setting.php:
+    newFile: null
+    oldFile: !uuid 'a21400ba7324353f1afd502665457aa46f50821d'
+  /app/common/service:
+    newFile: null
+    oldFile: !uuid '34a2e24411104cc9709ccb15952791b2c837e2ff'
+  /app/common/service/BaseService.php:
+    newFile: null
+    oldFile: !uuid '7c5e61eb2d03e8d9ee9fdc55f3f75d18a184c5b2'
+  /app/common/service/Goods.php:
+    newFile: null
+    oldFile: !uuid 'bc2065c04c5f4d4f92b575fd5fa601224489012e'
+  /app/common/service/Message.php:
+    newFile: null
+    oldFile: !uuid 'da22af933d72c301870f6840bfa01c3e9560df7e'
+  /app/common/service/Order.php:
+    newFile: null
+    oldFile: !uuid '7108831e465db1711798585c5465608287a9df88'
+  /app/common/service/delivery:
+    newFile: null
+    oldFile: !uuid '053360fbaea9cc8873dd7a62dfdcccc4671ca144'
+  /app/common/service/delivery/Express.php:
+    newFile: null
+    oldFile: !uuid '3808c8ec85d1d7a72efd716749705c45dd15d2e3'
+  /app/common/service/goods:
+    newFile: null
+    oldFile: !uuid '7f5a4ae9282fa2eee1dbe63645ce30155d940ac1'
+  /app/common/service/goods/source:
+    newFile: null
+    oldFile: !uuid '191e8776e3761045786b3229dc9ff4bfc9aeaffb'
+  /app/common/service/goods/source/Basics.php:
+    newFile: null
+    oldFile: !uuid '576f1810d2847378a35b664a04cfc3d76c81d52f'
+  /app/common/service/goods/source/Factory.php:
+    newFile: null
+    oldFile: !uuid '7586faf703f098663c63239f07c9036c1ec1c8ab'
+  /app/common/service/goods/source/Main.php:
+    newFile: null
+    oldFile: !uuid '49d819b23647b2bd313f2fae0989353ceb38a81e'
+  /app/common/service/message:
+    newFile: null
+    oldFile: !uuid '0383ddbd6bf8384b109f6ee64c694a6754e03d26'
+  /app/common/service/message/Basics.php:
+    newFile: null
+    oldFile: !uuid '07c1009fbebe90e7864519df7bd16e68a3852552'
+  /app/common/service/message/order:
+    newFile: null
+    oldFile: !uuid 'eebf10a93ab2884c98fc7f2bf250b0f60dfe4db3'
+  /app/common/service/message/order/Delivery.php:
+    newFile: null
+    oldFile: !uuid '5bcd3753570b32e21157609ed5588defeef9261b'
+  /app/common/service/message/order/Payment.php:
+    newFile: null
+    oldFile: !uuid 'a50886493bfe38ad30a09205ec61b9b98e16a93c'
+  /app/common/service/message/order/Refund.php:
+    newFile: null
+    oldFile: !uuid '1d592b3f9fa6b3a23589ab0c73583b792ce4f307'
+  /app/common/service/message/passport:
+    newFile: null
+    oldFile: !uuid '0274d8dc44e80c1771be8b82108e22cda178de2d'
+  /app/common/service/message/passport/Captcha.php:
+    newFile: null
+    oldFile: !uuid '3571e46eef43229286db10dd367bd310d06f1896'
+  /app/common/service/order:
+    newFile: null
+    oldFile: !uuid '101ab198d59044e8b54d1071ff324839646cb7ac'
+  /app/common/service/order/Complete.php:
+    newFile: null
+    oldFile: !uuid '78b943405ff2c024f5ca4b8e4f4cf7a1e3717eae'
+  /app/common/service/order/Refund.php:
+    newFile: null
+    oldFile: !uuid 'a8691f54ee602443b173ff78b7c0e7a39f52438c'
+  /app/common/service/order/Source.php:
+    newFile: null
+    oldFile: !uuid '488c208ef8f9ddc067fc6a4b94262b9080f7bbb4'
+  /app/common/service/store:
+    newFile: null
+    oldFile: !uuid 'f6fc3fe3150cf5a2d77e555587b2ae5a93e5c80b'
+  /app/common/service/store/User.php:
+    newFile: null
+    oldFile: !uuid '5969089fe8c0dd48aebe5538e828338345f9e588'
+  /app/console:
+    newFile: null
+    oldFile: !uuid '2a19a0b5f9601043fc2b9880351e55906cf5bc9f'
+  /app/console/command:
+    newFile: null
+    oldFile: !uuid 'f5ebe8cedd8af155bb966d07166b5bd8146cf21e'
+  /app/console/command/Timer.php:
+    newFile: null
+    oldFile: !uuid '44acc554b09ed4d8df38ff8690d3f5e8a8052f11'
+  /app/console/library:
+    newFile: null
+    oldFile: !uuid '7a8084edaa36364566ccce4a21ee5f0add22478e'
+  /app/console/library/Tools.php:
+    newFile: null
+    oldFile: !uuid 'd310825690e273c5a83734c80993a81e0966786e'
+  /app/console/model:
+    newFile: null
+    oldFile: !uuid 'd49f58b3a5a8105ddb0a8adfe39bd1139dec4fec'
+  /app/console/model/Express.php:
+    newFile: null
+    oldFile: !uuid '2edf0e049f30a3886ff78758a007eecbf1754e3b'
+  /app/console/model/Goods.php:
+    newFile: null
+    oldFile: !uuid '4f89bb538a2ebc70e022d37748ff6f3833533ca6'
+  /app/console/model/GoodsSku.php:
+    newFile: null
+    oldFile: !uuid 'f82b0cd5ab4b65926d11f4aafae1b03253465fff'
+  /app/console/model/Order.php:
+    newFile: null
+    oldFile: !uuid 'd3b9489fc0f0036eb2c2373ff9736178b1fd183c'
+  /app/console/model/OrderAddress.php:
+    newFile: null
+    oldFile: !uuid '2f15ba16414a165132e6da9616eb2e9939d34b22'
+  /app/console/model/OrderGoods.php:
+    newFile: null
+    oldFile: !uuid 'f4911677655c7dd88fcdd29e410111e4699d6d52'
+  /app/console/model/OrderRefund.php:
+    newFile: null
+    oldFile: !uuid 'bfa8da1e972b5724274e33b046bd99bed6c3205a'
+  /app/console/model/Setting.php:
+    newFile: null
+    oldFile: !uuid '6604f6fb9856b7bb6fbd5afc1b40137ed27b0025'
+  /app/console/model/Store.php:
+    newFile: null
+    oldFile: !uuid '37954879a642e9d4024235d147b07be79de04e31'
+  /app/console/model/User.php:
+    newFile: null
+    oldFile: !uuid '330ff9887a3c74570b1a0bbff607027b69855321'
+  /app/console/model/UserCoupon.php:
+    newFile: null
+    oldFile: !uuid '9bb4add75745ead2fb45ff737accd13da597a73c'
+  /app/console/model/recharge:
+    newFile: null
+    oldFile: !uuid 'faca66ea1828857760c716d7024a3525c9137def'
+  /app/console/model/recharge/Order.php:
+    newFile: null
+    oldFile: !uuid '280853b43af5f245517172e435f1b80931d150b4'
+  /app/console/model/user:
+    newFile: null
+    oldFile: !uuid '1c3378d023680922167a32cc6d1704c6ad9e4eca'
+  /app/console/model/user/BalanceLog.php:
+    newFile: null
+    oldFile: !uuid '90898043d0b7e3ff9c9ab10a9292e416be37f5cb'
+  /app/console/model/user/Grade.php:
+    newFile: null
+    oldFile: !uuid '6bb2c0cb2870e020656536322bead2e96ed071c7'
+  /app/console/model/user/GradeLog.php:
+    newFile: null
+    oldFile: !uuid 'fa7b1deb241be2ab61b7855d971caef32c20f961'
+  /app/console/model/user/PointsLog.php:
+    newFile: null
+    oldFile: !uuid '0cd3356043d4c20e62f2642ec2283e61cb262c4a'
+  /app/console/service:
+    newFile: null
+    oldFile: !uuid 'f9bd257173bd0367a4a092796d61300b2cfe2af4'
+  /app/console/service/Order.php:
+    newFile: null
+    oldFile: !uuid '42ce3e67bb6367215aa021b3d76e08f38556a4d9'
+  /app/console/service/UserCoupon.php:
+    newFile: null
+    oldFile: !uuid '5794bed7091cca241faa13eb03b5f86df4689a25'
+  /app/console/service/UserGrade.php:
+    newFile: null
+    oldFile: !uuid 'c852b6292bb5a4e9378319a1cf98ebced077ec73'
+  /app/console/task:
+    newFile: null
+    oldFile: !uuid '2ef6a230d9badcd008dbfad57cf8851b17f25100'
+  /app/console/task/Order.php:
+    newFile: null
+    oldFile: !uuid '2fd339ae3af6fc61247fb2fdf99b14b99a17c69b'
+  /app/console/task/Store.php:
+    newFile: null
+    oldFile: !uuid '9d53aa8f6689763940f2b0716699fc7d606506c6'
+  /app/console/task/Task.php:
+    newFile: null
+    oldFile: !uuid '24b5ee1f3302076fcd819b991cbccb604f3f5295'
+  /app/console/task/UserCoupon.php:
+    newFile: null
+    oldFile: !uuid '04958a1e5fbbaa02571ce6e9f4fc165398e6a7c9'
+  /app/console/task/UserGrade.php:
+    newFile: null
+    oldFile: !uuid '3a351b4951e92da61a8f8853afb27ed6a0efff15'
+  /app/event.php:
+    newFile: null
+    oldFile: !uuid '5f9c064f56c4031173c12961723e4fa57d1c64cd'
+  /app/middleware.php:
+    newFile: null
+    oldFile: !uuid '8b72ac48e71d670140fffa7d10bab6edc2bf2b6c'
+  /app/provider.php:
+    newFile: null
+    oldFile: !uuid '8f63037576dcec6931749c919a55c63471cfb359'
+  /app/service.php:
+    newFile: null
+    oldFile: !uuid 'f83db13e73400f921eafc264d8c93c82b52f2715'
+  /app/store:
+    newFile: null
+    oldFile: !uuid '2c184ee3389b3caf230a252c59129c6290eb5eed'
+  /app/store/common.php:
+    newFile: null
+    oldFile: !uuid '3ab17226aaec91386c6be4209fefdf5ff1998597'
+  /app/store/config:
+    newFile: null
+    oldFile: !uuid '076b776125a97d2ffa0f3cc76b63cdd385246b3d'
+  /app/store/config/allowapi.php:
+    newFile: null
+    oldFile: !uuid '20441fbd113e475875f9a8de0f70d2dc83cb9760'
+  /app/store/controller:
+    newFile: null
+    oldFile: !uuid 'c429c1a51ff18ba54c48f65c985efa650e084447'
+  /app/store/controller/Category.php:
+    newFile: null
+    oldFile: !uuid '8a3b06b4fe1910205799fdc8ed9e1279084ce377'
+  /app/store/controller/Controller.php:
+    newFile: null
+    oldFile: !uuid '37a106e9e4b115a955e9a910d3da90e05dc16a1d'
+  /app/store/controller/Files.php:
+    newFile: null
+    oldFile: !uuid 'f031071c7f071ab63b4f3d90a749f5fc1186786d'
+  /app/store/controller/Goods.php:
+    newFile: null
+    oldFile: !uuid '1696ed200344da320d7e7c4fa491eb0f44d8308b'
+  /app/store/controller/Home.php:
+    newFile: null
+    oldFile: !uuid 'dd7bcfd8d685d37dd002f7b5606c7e62981e956f'
+  /app/store/controller/Order.php:
+    newFile: null
+    oldFile: !uuid 'e9f0dbc3b866ab2e44df344eb2e53602ab8db957'
+  /app/store/controller/Page.php:
+    newFile: null
+    oldFile: !uuid 'f46a1ea410d13422eb50ce6125880927e038dcd5'
+  /app/store/controller/Passport.php:
+    newFile: null
+    oldFile: !uuid '9e77346c93b56f4fe1fb0981a32a408bdbe9d250'
+  /app/store/controller/Region.php:
+    newFile: null
+    oldFile: !uuid '9c97236169ee85f6b87a5b03ef3bba35cb206e98'
+  /app/store/controller/Setting.php:
+    newFile: null
+    oldFile: !uuid '5d2259b7f3027d722f9d1dd4f6da8a140ea69d94'
+  /app/store/controller/Store.php:
+    newFile: null
+    oldFile: !uuid '737c76032f78188f554bf2905319719e670542bc'
+  /app/store/controller/Upload.php:
+    newFile: null
+    oldFile: !uuid '822c5e2ab83d89fc39f00d836f5e624b96911ab7'
+  /app/store/controller/User.php:
+    newFile: null
+    oldFile: !uuid '80f48288d89f82f411de522a3433463025a2b5ff'
+  /app/store/controller/client:
+    newFile: null
+    oldFile: !uuid '42ca8824c76c861e1a23d7f883a150ab9788e98b'
+  /app/store/controller/client/h5:
+    newFile: null
+    oldFile: !uuid 'd34566d69d283baa9639101e02cb469ef52a15f6'
+  /app/store/controller/client/h5/Setting.php:
+    newFile: null
+    oldFile: !uuid '390d84cc69f4f2f41f74b678d97e6be17c1834c6'
+  /app/store/controller/client/wxapp:
+    newFile: null
+    oldFile: !uuid '72f85d123e91b3d890109e55a6a43cee5b16d120'
+  /app/store/controller/client/wxapp/Setting.php:
+    newFile: null
+    oldFile: !uuid '471aaa3ee0b8dd0c0ac2da880850b934c536f566'
+  /app/store/controller/content:
+    newFile: null
+    oldFile: !uuid '931aecc213f0fff45104793c14bd9c6c57acccea'
+  /app/store/controller/content/Article.php:
+    newFile: null
+    oldFile: !uuid '073f6daa665ddeac3865ab4dea585ebffed9e0a4'
+  /app/store/controller/content/Help.php:
+    newFile: null
+    oldFile: !uuid '711bd548ed0ff8a80b755d5eee0bb5e40ff05aba'
+  /app/store/controller/content/article:
+    newFile: null
+    oldFile: !uuid '38a51f8c47536474ede266d5578423f8131f999f'
+  /app/store/controller/content/article/Category.php:
+    newFile: null
+    oldFile: !uuid 'f6363316b7e522f432be59f931802271455587c7'
+  /app/store/controller/files:
+    newFile: null
+    oldFile: !uuid '099f673e0ab75d55b0b96a7923319b063075cfa1'
+  /app/store/controller/files/Group.php:
+    newFile: null
+    oldFile: !uuid 'c82ed239d20649d42bc159112cba70ee6efbbe1d'
+  /app/store/controller/goods:
+    newFile: null
+    oldFile: !uuid '9f333fef58808602948a1459f7afb20e331e48e8'
+  /app/store/controller/goods/Comment.php:
+    newFile: null
+    oldFile: !uuid 'acfdf3cedf7cb0067e5766795eafb8ef710ed6b0'
+  /app/store/controller/goods/Service.php:
+    newFile: null
+    oldFile: !uuid '5d4cc4ed2dc20b775045bbffd0db2a1c0ca7c971'
+  /app/store/controller/goods/Spec.php:
+    newFile: null
+    oldFile: !uuid 'c9f3497f792d8f36f7d858e3f68f421e6acffd0b'
+  /app/store/controller/market:
+    newFile: null
+    oldFile: !uuid 'b8f1cadbc6756143b02c8a25b739607761661f69'
+  /app/store/controller/market/Coupon.php:
+    newFile: null
+    oldFile: !uuid '0a631ffd83a5b9efd4e6d76aa8709c6be43e1d98'
+  /app/store/controller/market/Points.php:
+    newFile: null
+    oldFile: !uuid 'ad99496c615292754ff6196d2606ee73c309cbea'
+  /app/store/controller/market/recharge:
+    newFile: null
+    oldFile: !uuid '0d3b02fd36a86b20e8e2b6516d5cca3aeaf1e6c1'
+  /app/store/controller/market/recharge/Plan.php:
+    newFile: null
+    oldFile: !uuid '0e73e319789778f08fabff29810dfd5c1fb0c7de'
+  /app/store/controller/order:
+    newFile: null
+    oldFile: !uuid '7d54a660bcc1b2fd6577e6b73c8bf269e9a59baf'
+  /app/store/controller/order/Event.php:
+    newFile: null
+    oldFile: !uuid 'd3089da7217fcb1e5acb2cab3c7cf71a6eeaae29'
+  /app/store/controller/order/Export.php:
+    newFile: null
+    oldFile: !uuid 'be3fe317fed164b209793a83ce454e4e55e3e9c4'
+  /app/store/controller/order/Refund.php:
+    newFile: null
+    oldFile: !uuid 'f8c8cfdba06b434ab0b41c9dfeac2e3326edebbb'
+  /app/store/controller/setting:
+    newFile: null
+    oldFile: !uuid '067f0c1c0e54983b4943b689db7bac93885f08df'
+  /app/store/controller/setting/Cache.php:
+    newFile: null
+    oldFile: !uuid '3bd2c2f98cac6ab791e2b7a3c6715931ddfcf285'
+  /app/store/controller/setting/Delivery.php:
+    newFile: null
+    oldFile: !uuid 'c2bc56009ef9b2402d0026225d9559375dce124a'
+  /app/store/controller/setting/Express.php:
+    newFile: null
+    oldFile: !uuid '81c623468023eab1aae97754210a4487b10ffab9'
+  /app/store/controller/statistics:
+    newFile: null
+    oldFile: !uuid '25bf19b6541d956827c6e6b60903084b54935985'
+  /app/store/controller/statistics/Data.php:
+    newFile: null
+    oldFile: !uuid '8d70ac953dad89e9b9f12211c6522e14f853ab1d'
+  /app/store/controller/store:
+    newFile: null
+    oldFile: !uuid '8bba2e1b8afa1d43707ebfce6436d89c6c11d6a6'
+  /app/store/controller/store/Address.php:
+    newFile: null
+    oldFile: !uuid '445058899e215bd2bd32e420cfa03524aa48d541'
+  /app/store/controller/store/Menu.php:
+    newFile: null
+    oldFile: !uuid '5784ebdf4ae9cd43e941992e31e2484679c050c2'
+  /app/store/controller/store/Role.php:
+    newFile: null
+    oldFile: !uuid 'fc8358908697d941f551e2e07f1a8a75969e159f'
+  /app/store/controller/store/User.php:
+    newFile: null
+    oldFile: !uuid 'e37e2506cf0acceff0c52ff18ac7b4131447766b'
+  /app/store/controller/user:
+    newFile: null
+    oldFile: !uuid 'b8d7283115e528e53074195791daaf2638d7ae91'
+  /app/store/controller/user/Balance.php:
+    newFile: null
+    oldFile: !uuid '2667454ca45778bdf63ff46b1fea7c46140678e3'
+  /app/store/controller/user/Grade.php:
+    newFile: null
+    oldFile: !uuid '79c48cd26afee7c1da88ece807ff906db389fe8e'
+  /app/store/controller/user/Recharge.php:
+    newFile: null
+    oldFile: !uuid '31c1901b195afa96fab4f5f284207aea2af699ac'
+  /app/store/model:
+    newFile: null
+    oldFile: !uuid 'ae0d02cc4bf228067066441e53eecf9e791aa39d'
+  /app/store/model/Article.php:
+    newFile: null
+    oldFile: !uuid '9a9d7a89bbffdf56be3bd1247f7e0e3d0923bcd1'
+  /app/store/model/Category.php:
+    newFile: null
+    oldFile: !uuid '1f3818f89d18a1c6697eed6007510469aa800755'
+  /app/store/model/Comment.php:
+    newFile: null
+    oldFile: !uuid '43038a6e9aaf8065d78019e55bac4f12dd6d7d39'
+  /app/store/model/CommentImage.php:
+    newFile: null
+    oldFile: !uuid 'ff5169f6e6de770e2ea98ccaeea1b4dca0a4d91b'
+  /app/store/model/Coupon.php:
+    newFile: null
+    oldFile: !uuid '457616d65c381de7b254ddb151db275abc91e417'
+  /app/store/model/Delivery.php:
+    newFile: null
+    oldFile: !uuid 'b6b5f83b76028216f12422138a1fe0e53e43dcae'
+  /app/store/model/DeliveryRule.php:
+    newFile: null
+    oldFile: !uuid '4b64795a519a254a2bb4ed9558c94dbcbd448353'
+  /app/store/model/Express.php:
+    newFile: null
+    oldFile: !uuid 'eb051f845d619a71a136948891a7765770ae6779'
+  /app/store/model/Goods.php:
+    newFile: null
+    oldFile: !uuid '7a7aacbe12cadda3c48ebd241fb83bff2faf42d5'
+  /app/store/model/GoodsCategoryRel.php:
+    newFile: null
+    oldFile: !uuid '9858ca3a15f5170e4441cb6d2cd6cc65548619ec'
+  /app/store/model/GoodsImage.php:
+    newFile: null
+    oldFile: !uuid '9958869c630119b8a231e7e65ec9511915dc10d4'
+  /app/store/model/GoodsSku.php:
+    newFile: null
+    oldFile: !uuid 'bac62d608b98a40c19e7f7f693a6df6416397ce9'
+  /app/store/model/GoodsSpecRel.php:
+    newFile: null
+    oldFile: !uuid '628f15befbf1d182d47a9d4b85a37351dd50830d'
+  /app/store/model/Help.php:
+    newFile: null
+    oldFile: !uuid '17f6b731438092e8ca32794d1ac9c636b0cb46f5'
+  /app/store/model/Order.php:
+    newFile: null
+    oldFile: !uuid 'dc745c8ced788cc4d47987eab04b8a0f6c7dd70a'
+  /app/store/model/OrderAddress.php:
+    newFile: null
+    oldFile: !uuid '2dc09ef87874668208c34562826a738c6b232d51'
+  /app/store/model/OrderGoods.php:
+    newFile: null
+    oldFile: !uuid '0035f9a63c07e0ac1e5a097f5a472443f555685c'
+  /app/store/model/OrderRefund.php:
+    newFile: null
+    oldFile: !uuid 'a7a9f80bafe96d122e99370abd820707c70145e9'
+  /app/store/model/OrderRefundAddress.php:
+    newFile: null
+    oldFile: !uuid '7c249b922df9ce317523c0d8e9eee1e6e2a366fc'
+  /app/store/model/OrderRefundImage.php:
+    newFile: null
+    oldFile: !uuid '8c6d645ea742741f05652b999aa37056f9578d31'
+  /app/store/model/Page.php:
+    newFile: null
+    oldFile: !uuid 'd735352e452760f93cda659b95df229538dcabe9'
+  /app/store/model/Region.php:
+    newFile: null
+    oldFile: !uuid '1c8230b7af67ca038fcfbc32b19b43d3561e54b5'
+  /app/store/model/Setting.php:
+    newFile: null
+    oldFile: !uuid 'e986ee5b8089ce2ae522ac7c382f18c1afe136c1'
+  /app/store/model/Spec.php:
+    newFile: null
+    oldFile: !uuid '256785e212357621e6c7c2ade229137dbd06c15d'
+  /app/store/model/SpecValue.php:
+    newFile: null
+    oldFile: !uuid 'd5d6938bf56af3f75874571b66070561de74bce7'
+  /app/store/model/Store.php:
+    newFile: null
+    oldFile: !uuid 'b856aa5ff3965645b7ab7226c681c473921e31a7'
+  /app/store/model/UploadFile.php:
+    newFile: null
+    oldFile: !uuid '051de3d7f3840dffda5688348a6bb1701381b190'
+  /app/store/model/UploadGroup.php:
+    newFile: null
+    oldFile: !uuid '3615c19b42e670012f143727d990b483dd10acb3'
+  /app/store/model/User.php:
+    newFile: null
+    oldFile: !uuid 'ba07d3c17d240d59b8f92a9ca29026b971d7c14a'
+  /app/store/model/UserAddress.php:
+    newFile: null
+    oldFile: !uuid '6d0b434821270c0cb807f4496c06720303834bb6'
+  /app/store/model/UserCoupon.php:
+    newFile: null
+    oldFile: !uuid 'a06270ecb6e93677fb0f0e0f476ba7a279a3a141'
+  /app/store/model/UserOauth.php:
+    newFile: null
+    oldFile: !uuid 'c517479b19b524509509870c92dcda60a0220230'
+  /app/store/model/article:
+    newFile: null
+    oldFile: !uuid '4edc26791af63af1eef4d5fd65f95747ddc81109'
+  /app/store/model/article/Category.php:
+    newFile: null
+    oldFile: !uuid '56b2405775e13d46881f30d49a56903f42951468'
+  /app/store/model/goods:
+    newFile: null
+    oldFile: !uuid '5112bc7b65497e5bcab1c10bb8d6e15dd0799ae7'
+  /app/store/model/goods/Service.php:
+    newFile: null
+    oldFile: !uuid '7ca12078d544f95c7a72451ff9e54cfe946e7a66'
+  /app/store/model/goods/ServiceRel.php:
+    newFile: null
+    oldFile: !uuid '7607b71b17e0ec71c01a7f827a52792d32c6ff2d'
+  /app/store/model/h5:
+    newFile: null
+    oldFile: !uuid '029c105fa45fe272cb485f9eadb64cf2e189fa94'
+  /app/store/model/h5/Setting.php:
+    newFile: null
+    oldFile: !uuid '041a21b9140490ea7bcf10b42b23469301ca9d3f'
+  /app/store/model/order:
+    newFile: null
+    oldFile: !uuid 'd591ea714348c4ae634b3064adae7fb837f55d4b'
+  /app/store/model/order/Export.php:
+    newFile: null
+    oldFile: !uuid '624e8cfb3fb4b08f64dad1a41071a460f7e756ef'
+  /app/store/model/recharge:
+    newFile: null
+    oldFile: !uuid '9fded4243381ad10cfd80a0ad85e2e08d013443d'
+  /app/store/model/recharge/Order.php:
+    newFile: null
+    oldFile: !uuid '41c2b081e35f764d0b0a553e43e33504fe5ef07d'
+  /app/store/model/recharge/OrderPlan.php:
+    newFile: null
+    oldFile: !uuid '407d6ecc28a8e80f2cc80f44bbed9ea07195c5e0'
+  /app/store/model/recharge/Plan.php:
+    newFile: null
+    oldFile: !uuid 'e27c3b129fbd2769c52cc614347363ca954fe4e8'
+  /app/store/model/store:
+    newFile: null
+    oldFile: !uuid 'ed5c6f995d56fc56843870650421cccf8275f23d'
+  /app/store/model/store/Address.php:
+    newFile: null
+    oldFile: !uuid 'c8bd3d6c798497661ad24a574402bae5df8c5030'
+  /app/store/model/store/Api.php:
+    newFile: null
+    oldFile: !uuid '5a4c958fa0b42a08689d7c83ecfac6390b03c923'
+  /app/store/model/store/Menu.php:
+    newFile: null
+    oldFile: !uuid '7ac463638d8f3f039439647d9b232396d1ad0153'
+  /app/store/model/store/MenuApi.php:
+    newFile: null
+    oldFile: !uuid '5453d6c72a708e17785c1ff35617d3396eda6a1a'
+  /app/store/model/store/Role.php:
+    newFile: null
+    oldFile: !uuid '067ab5a0aa43fcdf22b0ff279865aa2698baf3bd'
+  /app/store/model/store/RoleMenu.php:
+    newFile: null
+    oldFile: !uuid '63958c37267d8ba412b3ea65a23750966ca833c9'
+  /app/store/model/store/User.php:
+    newFile: null
+    oldFile: !uuid '65230824fa5fba322ede4695bea32686f5d9e85f'
+  /app/store/model/store/UserRole.php:
+    newFile: null
+    oldFile: !uuid '81adab1963691b39d55bd2707d90fcbc24bc9d57'
+  /app/store/model/user:
+    newFile: null
+    oldFile: !uuid 'd2b5c8eb4ca28b0430641cb673d2e612239749cc'
+  /app/store/model/user/BalanceLog.php:
+    newFile: null
+    oldFile: !uuid '1efd178d4ec060794ad5c4ab210f2612c120c71b'
+  /app/store/model/user/Grade.php:
+    newFile: null
+    oldFile: !uuid '090af98fd81f8ccfc511dabc334ff2a6f57e5adf'
+  /app/store/model/user/GradeLog.php:
+    newFile: null
+    oldFile: !uuid '995a466a3886c9ee55bb53427a1fc265710cc9a5'
+  /app/store/model/user/PointsLog.php:
+    newFile: null
+    oldFile: !uuid '939fb3d6b565e2f322f8bb1e055f0d833efe4c0b'
+  /app/store/model/wxapp:
+    newFile: null
+    oldFile: !uuid '683a8bc8aac4f3cb52c2b5648b25561e67809dbf'
+  /app/store/model/wxapp/Setting.php:
+    newFile: null
+    oldFile: !uuid 'ff5e917e2c40aca60543e9e9cafbfbcc2e99290a'
+  /app/store/service:
+    newFile: null
+    oldFile: !uuid '501bda7c51fb54bbfda824b811a988fa3690ab43'
+  /app/store/service/Auth.php:
+    newFile: null
+    oldFile: !uuid '78e04af4779713af8b5573361a80bb53c9eb67ae'
+  /app/store/service/Goods.php:
+    newFile: null
+    oldFile: !uuid 'ad3a91f2347a7291835930686bc84e3cb53a530e'
+  /app/store/service/Home.php:
+    newFile: null
+    oldFile: !uuid 'eda5b89195ee3bca9d6fb7b0288295fb534e7a36'
+  /app/store/service/goods:
+    newFile: null
+    oldFile: !uuid 'c3ae79bd662f3c8e5accff3b01ee5267a356d960'
+  /app/store/service/goods/Apply.php:
+    newFile: null
+    oldFile: !uuid 'e3d52ad1106d1ebdf7087473318a24a84ad58ceb'
+  /app/store/service/order:
+    newFile: null
+    oldFile: !uuid 'd5f8867dc415cf3213fd112227da1299eb455e18'
+  /app/store/service/order/Export.php:
+    newFile: null
+    oldFile: !uuid 'b8a707e7bf1be6f03248555879f2a6a0f6d7ec4f'
+  /app/store/service/setting:
+    newFile: null
+    oldFile: !uuid '3e468e94e20786ef435053daa8336513b85e234a'
+  /app/store/service/setting/Clear.php:
+    newFile: null
+    oldFile: !uuid 'f69885212e2ed29f9b5364d5d3a08bc5ccd1074b'
+  /app/store/service/statistics:
+    newFile: null
+    oldFile: !uuid 'bfaa1893c3faa73931626c43a6ca11c54ba0d911'
+  /app/store/service/statistics/Data.php:
+    newFile: null
+    oldFile: !uuid '573092e600b2459ff3330cabfd67782c1690e995'
+  /app/store/service/statistics/data:
+    newFile: null
+    oldFile: !uuid '848304aa05a280e363cdeb1ea7065c7ed07c89ca'
+  /app/store/service/statistics/data/GoodsRanking.php:
+    newFile: null
+    oldFile: !uuid 'b5d4e1106bea6ca19c574f394db730def1d6b442'
+  /app/store/service/statistics/data/Survey.php:
+    newFile: null
+    oldFile: !uuid '8b1caf81eb00a0d3f5a8247f289e067b229cdf39'
+  /app/store/service/statistics/data/Trade7days.php:
+    newFile: null
+    oldFile: !uuid '237d8a42cb0f5e4662142c97be189a12dbfae60a'
+  /app/store/service/statistics/data/UserExpendRanking.php:
+    newFile: null
+    oldFile: !uuid '930cf411c2c29e787088dd5c6744124a2d3f55b4'
+  /app/store/service/store:
+    newFile: null
+    oldFile: !uuid '8cf405f6e0c7829f4991e36cd8a8641419085a28'
+  /app/store/service/store/Role.php:
+    newFile: null
+    oldFile: !uuid 'e79fd09979ea69e4f9745ca4ee77c9e107dd1b10'
+  /app/store/service/store/User.php:
+    newFile: null
+    oldFile: !uuid '32d95ea670e321590416ff04744cfba65e501458'
+  /composer.json:
+    newFile: null
+    oldFile: !uuid '9321651dbff0efc10c4166f302fdcd5cba421644'
+  /composer.lock:
+    newFile: null
+    oldFile: !uuid '7370c2b7073a3075b2c24be5312bea2f7f7ef184'
+  /config:
+    newFile: null
+    oldFile: !uuid 'f0ce39dde777393d98d6f1e8c3ecc781d14561fe'
+  /config/app.php:
+    newFile: null
+    oldFile: !uuid '7869b9e5d9c71f820b3c8539b3b5d9203246789a'
+  /config/cache.php:
+    newFile: null
+    oldFile: !uuid '9bf6c569a38358d719838caf3d51bd78981aa226'
+  /config/captcha.php:
+    newFile: null
+    oldFile: !uuid '3ee3b7d84dc7c981c5b82c2cf600a60c4b9c18a2'
+  /config/console.php:
+    newFile: null
+    oldFile: !uuid '78465331b566e274895f7fc691b5908994d16ed6'
+  /config/cookie.php:
+    newFile: null
+    oldFile: !uuid 'ec465d94d3b579888ae9ffe36e35344fbbdabab3'
+  /config/database.php:
+    newFile: null
+    oldFile: !uuid '035cc963a9d7decb87e56f06693c9c82ac5ef868'
+  /config/filesystem.php:
+    newFile: null
+    oldFile: !uuid 'd6d5ca4d36748843b0ce21d29399f9e3a517aeb5'
+  /config/gateway_worker.php:
+    newFile: null
+    oldFile: !uuid '3f6ff6d48dc2c656bd0c3f63da76ffa8168ae991'
+  /config/lang.php:
+    newFile: null
+    oldFile: !uuid '6e5abdc5e72ca1a3974410dcc04119388a32a9f3'
+  /config/log.php:
+    newFile: null
+    oldFile: !uuid 'eebc9ae45e3ff67eecad9eaa5b571e2f8d5cbfb2'
+  /config/middleware.php:
+    newFile: null
+    oldFile: !uuid 'bd3502ec72ee7a615330db955eee59b86eec593c'
+  /config/route.php:
+    newFile: null
+    oldFile: !uuid 'f809d7a22ddc82f8874069854d0df8f01f58ac57'
+  /config/session.php:
+    newFile: null
+    oldFile: !uuid '6cab237442caf8e0939a5a822f6ff55db3f1b6d4'
+  /config/status.php:
+    newFile: null
+    oldFile: !uuid '95f72239837e54c3d1bd5ed5f073e3a22c473ead'
+  /config/trace.php:
+    newFile: null
+    oldFile: !uuid '1c852daff8707f9691c410f5e97eceea2fd19aca'
+  /config/view.php:
+    newFile: null
+    oldFile: !uuid 'b9b7c5cbd590e4cecc94c8310ed6967ec4b6cfe0'
+  /config/worker.php:
+    newFile: null
+    oldFile: !uuid '0196307f22c60cba8e959077dfe8a4f0ede78598'
+  /config/worker_server.php:
+    newFile: null
+    oldFile: !uuid '4e868180908c87ce65e8ad0df6d547356466fb09'
+  /cores:
+    newFile: null
+    oldFile: !uuid 'e12515e6454daa5a73603a82be0fd8c8200dbaab'
+  /cores/AppService.php:
+    newFile: null
+    oldFile: !uuid '13e0962e8651b50a0d87eb7397c4143fff249a6e'
+  /cores/BaseController.php:
+    newFile: null
+    oldFile: !uuid '58455d61a5c5796513a6a5f3251cbdfab5ce9961'
+  /cores/BaseModel.php:
+    newFile: null
+    oldFile: !uuid 'b2ec06ad7069912aa44406efeb39563ede28dfcb'
+  /cores/ExceptionHandle.php:
+    newFile: null
+    oldFile: !uuid '424241a785bb4775aa4f10ceb21e307ee8e3ea2e'
+  /cores/Request.php:
+    newFile: null
+    oldFile: !uuid '5f7c0d48ccbc4c280d6cca4512c94222a8c75e5d'
+  /cores/exception:
+    newFile: null
+    oldFile: !uuid '0299cb8af660c935f0f703a884d4928f3a295a3e'
+  /cores/exception/BaseException.php:
+    newFile: null
+    oldFile: !uuid '2567228d439ccf9cc00def43b4ece6f7267df206'
+  /cores/exception/DebugException.php:
+    newFile: null
+    oldFile: !uuid 'cf40aa368a75ee68e602ec72b13376c931c82d77'
+  /cores/library:
+    newFile: null
+    oldFile: !uuid '5836505b74869238e0d76e3f72ef820c71f035b3'
+  /cores/library/Version.php:
+    newFile: null
+    oldFile: !uuid 'fc9724689ff21ad6621ac27dbae96ea5d466f4db'
+  /cores/middleware:
+    newFile: null
+    oldFile: !uuid 'edd49873aa3f43ae4779cb9b7aeb1848b22fa64c'
+  /cores/middleware/AllowCrossDomain.php:
+    newFile: null
+    oldFile: !uuid '308e10f8406a336be40f4064bde958786872f282'
+  /cores/middleware/AppLog.php:
+    newFile: null
+    oldFile: !uuid 'd05eb03a1c85cfd3bf3220b8b5d2f3e1f2c809c8'
+  /cores/traits:
+    newFile: null
+    oldFile: !uuid 'b1064352bbffe3abc4f3cf710800526eb551d045'
+  /cores/traits/ErrorTrait.php:
+    newFile: null
+    oldFile: !uuid '10ece5a99a7901974f6b43035c2aea9150dcfc5b'
+  /data:
+    newFile: null
+    oldFile: !uuid '71d1f1aa02e6ecb4f13e1cc36cd95abb538f0d4a'
+  /data/.gitignore:
+    newFile: null
+    oldFile: !uuid 'a3a0c8b5f48c0260a4cb43aa577f9b18896ee280'
+  /extend:
+    newFile: null
+    oldFile: !uuid '71d1f1aa02e6ecb4f13e1cc36cd95abb538f0d4a'
+  /extend/.gitignore:
+    newFile: null
+    oldFile: !uuid 'a3a0c8b5f48c0260a4cb43aa577f9b18896ee280'
+  /public:
+    newFile: null
+    oldFile: !uuid '0ad981e326a961d7bccedf63c8330ee784a8b90b'
+  /public/.htaccess:
+    newFile: null
+    oldFile: !uuid '556736a38f43631a7e073e60bd4664c65f70bd8f'
+  /public/admin:
+    newFile: null
+    oldFile: !uuid '8512a2f8392f3965f72cfd79b722ad4d6a5e4ce0'
+  /public/admin/assets:
+    newFile: null
+    oldFile: !uuid 'd804defa4e30e181f74642838a6b6728375194f8'
+  /public/admin/assets/background.5825f033.svg:
+    newFile: null
+    oldFile: !uuid '89c25976468e10e541efc0da486b945b68b86690'
+  /public/admin/config.js:
+    newFile: null
+    oldFile: !uuid 'e4133699b3fb1417e3e062ac5fea23a0bf75c2ba'
+  /public/admin/css:
+    newFile: null
+    oldFile: !uuid 'b211952891fac5674f4687a3a6c6651851c8954a'
+  /public/admin/css/app.cf03b734.css:
+    newFile: null
+    oldFile: !uuid '0044e9d9f7f27252a46bb1739388c1db516f2a79'
+  /public/admin/css/chunk-vendors.91b23277.css:
+    newFile: null
+    oldFile: !uuid '6ad6b459dfc868308a1fd9ab09bfed6b4bde30f4'
+  /public/admin/css/menu.78a8d457.css:
+    newFile: null
+    oldFile: !uuid 'd2678e9547455d7f166845e0c4e8a09b6d83a1b7'
+  /public/admin/css/setting.f40851ed.css:
+    newFile: null
+    oldFile: !uuid '1eaee5a0fe92ea270c0e73ebf3dea66fcbd6fe76'
+  /public/admin/css/user.359d5405.css:
+    newFile: null
+    oldFile: !uuid '46ba387d2a3d3a38863b38b536ccd36d3b5619ba'
+  /public/admin/index.html:
+    newFile: null
+    oldFile: !uuid 'fdba9e65e4c5f1b971c5e5ac88434a6232834e73'
+  /public/admin/js:
+    newFile: null
+    oldFile: !uuid 'e1fc41165755e375b969928d5231efaf91206549'
+  /public/admin/js/app.dde605c0.js:
+    newFile: null
+    oldFile: !uuid '070401cda05dd9c6ea95b7fe9313c1ee66ba27a0'
+  /public/admin/js/chunk-vendors.71ab85de.js:
+    newFile: null
+    oldFile: !uuid '1b0069de7054ceb985ed4333ab9678413a01d24e'
+  /public/admin/js/fail.714aa930.js:
+    newFile: null
+    oldFile: !uuid '22503d31036e08076c8998e450394633f9e35463'
+  /public/admin/js/menu.f5e5356e.js:
+    newFile: null
+    oldFile: !uuid '1302778430b3e741f945ef67f9d3c4817ac3582a'
+  /public/admin/js/setting.38687aaa.js:
+    newFile: null
+    oldFile: !uuid 'fd3cb3991d87ff6b554752eb2fcf5be5b1eee31a'
+  /public/admin/js/store.675530e8.js:
+    newFile: null
+    oldFile: !uuid 'dcca3927c51a3e16d6982fe60ec392c293081f09'
+  /public/admin/js/user.882ff694.js:
+    newFile: null
+    oldFile: !uuid '3e38bdf12b7dbcc4497c87f67677755082e01270'
+  /public/admin/loading:
+    newFile: null
+    oldFile: !uuid 'dee9f0aefe870cee1b103e8727c5a83dedb60ba2'
+  /public/admin/loading/loading.css:
+    newFile: null
+    oldFile: !uuid 'a899eac79069fe77d5c159b86099c0a3a654b884'
+  /public/admin/loading/loading.html:
+    newFile: null
+    oldFile: !uuid '9b9319650f08d9c572d3a096904a371616386f4c'
+  /public/admin/loading/option2:
+    newFile: null
+    oldFile: !uuid 'b367d0e3d7ba6647dd5c5482e13e46fd4c9443f8'
+  /public/admin/loading/option2/html_code_segment.html:
+    newFile: null
+    oldFile: !uuid 'df81b262b359db38515fd6103badc29bf2611bff'
+  /public/admin/loading/option2/loading.css:
+    newFile: null
+    oldFile: !uuid 'c35cd73ad581eb33c9d56fbd73098e03ea8a7c06'
+  /public/admin/loading/option2/loading.svg:
+    newFile: null
+    oldFile: !uuid '7ff7322d7f9a60e159162b20d41fbd2443adcef5'
+  /public/assets:
+    newFile: null
+    oldFile: !uuid '331b63e9111413207e8a8fcf98fca402c297722f'
+  /public/assets/store:
+    newFile: null
+    oldFile: !uuid '18078f9c4a1565b409a0d234bbd25de11d0ca572'
+  /public/assets/store/img:
+    newFile: null
+    oldFile: !uuid '41da70e19b06616907752ad9c59a7107673bed38'
+  /public/assets/store/img/diy:
+    newFile: null
+    oldFile: !uuid '57311f5a7574ce4bfb21d80a457a1cbe80fe911c'
+  /public/assets/store/img/diy/article:
+    newFile: null
+    oldFile: !uuid 'f05238ab22a08e68735a574e443586628024e2ec'
+  /public/assets/store/img/diy/article/01.png:
+    newFile: null
+    oldFile: !uuid '44f3a268b70c26f82799bd8f23e3b099502a0018'
+  /public/assets/store/img/diy/banner:
+    newFile: null
+    oldFile: !uuid '6173645ba4a3fc617c4cabcd13d6d2b18e54bc34'
+  /public/assets/store/img/diy/banner/01.png:
+    newFile: null
+    oldFile: !uuid 'dda085bf06d32bc035fa607d7dfb6f4727ef9574'
+  /public/assets/store/img/diy/circular.png:
+    newFile: null
+    oldFile: !uuid '12f22efb331c667b900f045b3502818a05a3b9b4'
+  /public/assets/store/img/diy/goods:
+    newFile: null
+    oldFile: !uuid '34c5346db078934947b65fb85cb756231d6dc154'
+  /public/assets/store/img/diy/goods/01.png:
+    newFile: null
+    oldFile: !uuid '056587b832ca9c2de6f29e4f4f5bacfe351d8e7d'
+  /public/assets/store/img/diy/navbar:
+    newFile: null
+    oldFile: !uuid 'e1a7ef2b87f45be9b66aad6deeace1ec52381370'
+  /public/assets/store/img/diy/navbar/01.png:
+    newFile: null
+    oldFile: !uuid '12f22efb331c667b900f045b3502818a05a3b9b4'
+  /public/assets/store/img/diy/notice.png:
+    newFile: null
+    oldFile: !uuid '89f7c826519b64e53946cf32b24c70da4a6ac723'
+  /public/assets/store/img/diy/phone-top-black.png:
+    newFile: null
+    oldFile: !uuid '5b170e182d4e1934947dee21ccd095f909bfbcda'
+  /public/assets/store/img/diy/phone-top-white.png:
+    newFile: null
+    oldFile: !uuid '2c1888e924fe98e37368c51845244df4fc44e7d1'
+  /public/assets/store/img/diy/service.png:
+    newFile: null
+    oldFile: !uuid '3a796623b98ad4dc0b5e0715bb2f11c9b44afe7b'
+  /public/assets/store/img/diy/special.png:
+    newFile: null
+    oldFile: !uuid 'e99b9fcbc15acd5f2732e8edce8944afacfb6599'
+  /public/assets/store/img/diy/video_poster.png:
+    newFile: null
+    oldFile: !uuid 'a55c0d53011dc0e3d55bc20b90970df4153f2ec8'
+  /public/assets/store/img/diy/window:
+    newFile: null
+    oldFile: !uuid 'a969a080ebdf9f75bdc864f0c9dc3bc08ee96e50'
+  /public/assets/store/img/diy/window/01.jpg:
+    newFile: null
+    oldFile: !uuid '21319d7590068708f6826e709dc0b7a82bb06a6c'
+  /public/assets/store/img/diy/window/02.jpg:
+    newFile: null
+    oldFile: !uuid '8695283fc48db804c0902b56a2afc5e23269a196'
+  /public/assets/store/img/diy/window/03.jpg:
+    newFile: null
+    oldFile: !uuid '3688e31192f6ece729109d06627c6196916a9762'
+  /public/assets/store/img/diy/window/04.jpg:
+    newFile: null
+    oldFile: !uuid '1993195747517f9e2881569aa5ec26dc7d208846'
+  /public/assets/store/img/file_preview:
+    newFile: null
+    oldFile: !uuid '95f09a41c40973353101a4fda5e4f0fb006d82da'
+  /public/assets/store/img/file_preview/annex.png:
+    newFile: null
+    oldFile: !uuid '76dffa168671e179e145302ca1b89d7a1f6a5a4e'
+  /public/assets/store/img/file_preview/video.png:
+    newFile: null
+    oldFile: !uuid '965ef72515f20bfecfa6c353b219ed013b4408d6'
+  /public/favicon.ico:
+    newFile: null
+    oldFile: !uuid '580ed732e86556ec57f3f3395a210246d679c076'
+  /public/index.html:
+    newFile: null
+    oldFile: !uuid 'f09b5bfe69f0e5986769e7423d6630607f68e8f5'
+  /public/index.php:
+    newFile: null
+    oldFile: !uuid '440ea1cd6030f45975263153de72e553db320a93'
+  /public/install:
+    newFile: null
+    oldFile: !uuid '285ae6f137594248972a339ba6f9c2306ac4969a'
+  /public/install/data:
+    newFile: null
+    oldFile: !uuid '0ac93433d22471fdde2916aee02ea5e0d3de8fc5'
+  /public/install/data/.env.tpl:
+    newFile: null
+    oldFile: !uuid 'f0b58995425a2c4c0719ef25bd09a1bd9b7159f3'
+  /public/install/data/install_data.sql:
+    newFile: null
+    oldFile: !uuid 'eb2e66713527694ce2b3ec7763f9a23530d2e123'
+  /public/install/data/install_struct.sql:
+    newFile: null
+    oldFile: !uuid '0fb79bcfb962d7ebe80d8b656076ef685d7ec1b3'
+  /public/install/index.php:
+    newFile: null
+    oldFile: !uuid 'bb476b7b5e4eafe17d27750a4dce492a8f2b2ebc'
+  /public/install/templates:
+    newFile: null
+    oldFile: !uuid 'ff7b2261f3078b05bd1e253a7a3377aa57d7ef78'
+  /public/install/templates/images:
+    newFile: null
+    oldFile: !uuid '53a654c79de5b665b4bcc9bbdc1c35d17c9991f4'
+  /public/install/templates/images/already.png:
+    newFile: null
+    oldFile: !uuid 'b6372b03d21678e23b1c79bd33e6621948732717'
+  /public/install/templates/images/complete.png:
+    newFile: null
+    oldFile: !uuid 'e2ac15e129096a2c98ff5daa823de07c3a2ba56e'
+  /public/install/templates/images/correctBg.png:
+    newFile: null
+    oldFile: !uuid '345ed429882be49bccc22bc09e661751681c72c9'
+  /public/install/templates/images/errorBg.png:
+    newFile: null
+    oldFile: !uuid 'b2e2e6da90fe0345f2cd4048458567cb453754e9'
+  /public/install/templates/images/inputOnBg.png:
+    newFile: null
+    oldFile: !uuid '4696bf813c41b5f9eeb4dc67eb776f22e2ab2ee5'
+  /public/install/templates/images/logo.png:
+    newFile: null
+    oldFile: !uuid 'd25983f2e7f6bbe4e61dda42cef6cbae2ffb4def'
+  /public/install/templates/js:
+    newFile: null
+    oldFile: !uuid 'f8af8956d99b664d75e7d5aa51c386f916106f5a'
+  /public/install/templates/js/common.js:
+    newFile: null
+    oldFile: !uuid 'e69de29bb2d1d6434b8b29ae775ad8c2e48c5391'
+  /public/install/templates/js/forms.js:
+    newFile: null
+    oldFile: !uuid '5ebc72f3751979b9b39c109377caefcd43fcff86'
+  /public/install/templates/js/jquery.min.js:
+    newFile: null
+    oldFile: !uuid 'c72011dfa05f5e8a71277a221bcb2afdb5fd9e65'
+  /public/install/templates/step_0.php:
+    newFile: null
+    oldFile: !uuid '4ece949c0392a75351fefc7cf4ee4667563f331a'
+  /public/install/templates/step_1.php:
+    newFile: null
+    oldFile: !uuid '4dd8b3b2f9b8e6c2dbe839b7d0bbce9163e56bc9'
+  /public/install/templates/step_2.php:
+    newFile: null
+    oldFile: !uuid 'fbc88d99646a64ecb22ef05fb8526e9280c1f95f'
+  /public/install/templates/step_3.php:
+    newFile: null
+    oldFile: !uuid 'a82003a6c9950967fa00861338e296441768cbc2'
+  /public/install/templates/step_4.php:
+    newFile: null
+    oldFile: !uuid 'd097b6a2c08b54bd24c9ea5cf64095415300ae46'
+  /public/install/templates/step_5.php:
+    newFile: null
+    oldFile: !uuid 'cd76cdc2c48c3c4b7f63a038c09d5a2865919942'
+  /public/install/templates/style:
+    newFile: null
+    oldFile: !uuid '8b6a2ec196b58f7360bfbecb3747aca06cb21bb5'
+  /public/install/templates/style/install.css:
+    newFile: null
+    oldFile: !uuid '0667169c09226e125306ada2dc7183b2d3d7a231'
+  /public/notice.php:
+    newFile: null
+    oldFile: !uuid '78168bcaf87aa7bf9f8c5a962f8a09b5ac43fe69'
+  /public/router.php:
+    newFile: null
+    oldFile: !uuid 'ad261d537d2171326cf8f92819eb93130d71fbc6'
+  /public/static:
+    newFile: null
+    oldFile: !uuid 'f1c37cf2475de24f81460be0fd7d8a5e998dbab3'
+  /public/static/background:
+    newFile: null
+    oldFile: !uuid 'bbd1e0f302fc2941794e9c7a76978ad00028e720'
+  /public/static/background/user-header2.png:
+    newFile: null
+    oldFile: !uuid 'c53235e9495e0a7d5b6711ba13d9415079098f9b'
+  /public/static/channel:
+    newFile: null
+    oldFile: !uuid 'e8f78352ed46befd9d946c163fdc32d7ea0994f6'
+  /public/static/channel/wechat.png:
+    newFile: null
+    oldFile: !uuid '4e62d40c91278de6cd0eb62e68ca22bae86db6d1'
+  /public/static/default-avatar.png:
+    newFile: null
+    oldFile: !uuid '94e0a721c82069ec37bfb30389119618e9f27fe4'
+  /public/static/empty-02.png:
+    newFile: null
+    oldFile: !uuid '3520e868679f33681e2125458e5d558db8b4bbdd'
+  /public/static/empty.png:
+    newFile: null
+    oldFile: !uuid 'f9e360b005bbb2c8addf23e52aa07dca98b14cd5'
+  /public/static/index.a5c69d49.css:
+    newFile: null
+    oldFile: !uuid 'e510699b728583cb93d5b78a30003628c5faabb9'
+  /public/static/js:
+    newFile: null
+    oldFile: !uuid 'f71653ae0f4296973d737a3f761f519dd96e0248'
+  /public/static/js/chunk-vendors.1cf73706.js:
+    newFile: null
+    oldFile: !uuid '100faf748c2cee0d4351b9bfaec414058b69be52'
+  /public/static/js/index.b12981af.js:
+    newFile: null
+    oldFile: !uuid 'b173d9d8fa06f28fd8e1aa462a6d12c51b2e6012'
+  /public/static/js/pages-address-create.3a8fcd91.js:
+    newFile: null
+    oldFile: !uuid '2a62c0711e59f76dcc97cf211a8f95669a4c0a6d'
+  /public/static/js/pages-address-create~pages-address-update.faecb0a7.js:
+    newFile: null
+    oldFile: !uuid 'cfad517654d91c4661c793b88f9049338259ff85'
+  ? /public/static/js/pages-address-create~pages-address-update~pages-cart-index~pages-checkout-index~pages-comment-index~~1f503729.bdbf636b.js
+  : newFile: null
+    oldFile: !uuid 'a7c216a0fa1f5b470f9056341326cba2fc8bf38f'
+  ? /public/static/js/pages-address-create~pages-address-update~pages-checkout-index~pages-goods-detail~pages-order-detail~3d205cd5.061abd42.js
+  : newFile: null
+    oldFile: !uuid '7e72718fba2494842a2db88233911b2ad0f88217'
+  /public/static/js/pages-address-index.faccad77.js:
+    newFile: null
+    oldFile: !uuid 'd4011e5158ce38d452e4b60b7eaacb1ab5437c3e'
+  /public/static/js/pages-address-update.7076299d.js:
+    newFile: null
+    oldFile: !uuid 'f6729e617d9ab4a1a2d678f89abde490d96a71ca'
+  /public/static/js/pages-article-detail.0626d5d0.js:
+    newFile: null
+    oldFile: !uuid 'f6481d7077098ee8a8673d050db7ed4529e02c71'
+  /public/static/js/pages-article-detail~pages-custom-index~pages-goods-detail~pages-index-index.ad5c9a39.js:
+    newFile: null
+    oldFile: !uuid '54c2116ec43986f7f08ad12ee2c2e0ecc8b0ff62'
+  /public/static/js/pages-article-index.0cc836b5.js:
+    newFile: null
+    oldFile: !uuid '248939136d48aaecac64a32f4366efb19e14e330'
+  ? /public/static/js/pages-article-index~pages-category-index~pages-comment-index~pages-goods-list~pages-help-index~pages~a047dfeb.23af0e1d.js
+  : newFile: null
+    oldFile: !uuid '0f407a9fa7497e63d88fca1c4fd8597fd7238c7d'
+  ? /public/static/js/pages-article-index~pages-comment-index~pages-my-coupon-index~pages-order-index~pages-refund-index.2f070107.js
+  : newFile: null
+    oldFile: !uuid '94ee8314123118c0ae8e6d5e432bce6c6df12bb0'
+  /public/static/js/pages-cart-index.3f3f22c9.js:
+    newFile: null
+    oldFile: !uuid 'fce4b85d1ac7e53cedc1d7e86a44046e89af4121'
+  /public/static/js/pages-category-index.cb29a36d.js:
+    newFile: null
+    oldFile: !uuid '1f6de1973aadc4f0cb45363856c0f1d3f94f6508'
+  /public/static/js/pages-category-index~pages-goods-detail.d7668c2e.js:
+    newFile: null
+    oldFile: !uuid 'f50e174897acf99f622193760bf7353eb404c1ef'
+  /public/static/js/pages-checkout-index.899c0e60.js:
+    newFile: null
+    oldFile: !uuid 'c2e9a0b297e3d59465bc93a2347f11db966e1813'
+  /public/static/js/pages-comment-index.06936262.js:
+    newFile: null
+    oldFile: !uuid '7d2201a6cba7f3e162fd6be54f4bf499abb73249'
+  /public/static/js/pages-coupon-index.48151817.js:
+    newFile: null
+    oldFile: !uuid '6812224f34877ad705924b82f08b9ea4cf7b20af'
+  /public/static/js/pages-custom-index.f7010101.js:
+    newFile: null
+    oldFile: !uuid '3ca96e1479e3f7e7f6adcee508f28fab7ea7cd80'
+  /public/static/js/pages-custom-index~pages-index-index.4d9e4c19.js:
+    newFile: null
+    oldFile: !uuid '82ca52c60b3d604a3ce7e49b3056d5d8d4b78d25'
+  /public/static/js/pages-goods-detail.d4484f6a.js:
+    newFile: null
+    oldFile: !uuid '40501259e81765f2cb79c540dddd053f42b6aa22'
+  /public/static/js/pages-goods-list.15893d6f.js:
+    newFile: null
+    oldFile: !uuid '28dba3560042226a925827db7fe17b35ab279d44'
+  /public/static/js/pages-help-index.035ddcc0.js:
+    newFile: null
+    oldFile: !uuid '4da0455ec5e037e151f0141cb693f37a8e22c50e'
+  /public/static/js/pages-index-index.812690b4.js:
+    newFile: null
+    oldFile: !uuid '0c8db49e055acf7b12d7bc7420a1015a2e9e0cfe'
+  /public/static/js/pages-login-index.7adcc091.js:
+    newFile: null
+    oldFile: !uuid '694afcce7c16f961f07f70591b0dce8c7aceb797'
+  /public/static/js/pages-my-coupon-index.31b1abba.js:
+    newFile: null
+    oldFile: !uuid '0e0febbf5d23ede43265f9c8a87716fd6e2b355b'
+  /public/static/js/pages-order-comment-index.6eca9b71.js:
+    newFile: null
+    oldFile: !uuid '74851500e887bc6a3919c61ca727984f3a441bcc'
+  /public/static/js/pages-order-detail.27d46810.js:
+    newFile: null
+    oldFile: !uuid '8d662957e1e3f91614201248ca25ee696d84f2d7'
+  /public/static/js/pages-order-express-index.db7d1104.js:
+    newFile: null
+    oldFile: !uuid '711c8c82591c48699553803977f84e492dd5920f'
+  /public/static/js/pages-order-index.38a24faf.js:
+    newFile: null
+    oldFile: !uuid '8806cbcf64788c4c38c904b3c23936a5cf38b784'
+  /public/static/js/pages-points-log.d740b207.js:
+    newFile: null
+    oldFile: !uuid 'aaf6903447005adf62086ebaaf06040ca574cd82'
+  /public/static/js/pages-refund-apply.319c579e.js:
+    newFile: null
+    oldFile: !uuid '12f4eb8307104af64cc52050383de97a0dc1b167'
+  /public/static/js/pages-refund-detail.62606c35.js:
+    newFile: null
+    oldFile: !uuid 'a5b9cfe8576cca75329e1a323bb485033c0515ec'
+  /public/static/js/pages-refund-index.84adfdbf.js:
+    newFile: null
+    oldFile: !uuid '8cfe9be33161b234ea74e65ace4ec1363c035280'
+  /public/static/js/pages-search-index.8483c7e6.js:
+    newFile: null
+    oldFile: !uuid '4c972e2101c1260bc349c1c698b33fe94b5def95'
+  /public/static/js/pages-user-bind-index.59c31adf.js:
+    newFile: null
+    oldFile: !uuid 'ef7899d82182592417098736133bd2a1e9081bfa'
+  /public/static/js/pages-user-index.563cb989.js:
+    newFile: null
+    oldFile: !uuid 'f2af030e91aa19303cae78f39d0bfcdee2c37faf'
+  /public/static/js/pages-wallet-balance-log.358bad15.js:
+    newFile: null
+    oldFile: !uuid 'c233f216588f1aabfe9f9430ac14e4c195acfa8a'
+  /public/static/js/pages-wallet-index.e2c55461.js:
+    newFile: null
+    oldFile: !uuid 'e3c12178104074987f01ee8420df17bfb90ccbcc'
+  /public/static/js/pages-wallet-recharge-index.53d11c42.js:
+    newFile: null
+    oldFile: !uuid 'f5442e9f68f054fd1dc86dbe0080720216135417'
+  /public/static/js/pages-wallet-recharge-order.69cddf05.js:
+    newFile: null
+    oldFile: !uuid '6f6628781f94f022690c578fd31f92fedf40520c'
+  /public/static/order:
+    newFile: null
+    oldFile: !uuid '42c6a0a0fdd49909f8346ee076a528643e3d707a'
+  /public/static/order/refund-bg.png:
+    newFile: null
+    oldFile: !uuid '817a45e80b34a7e2bd48e8fb8791bae704952a67'
+  /public/static/order/status:
+    newFile: null
+    oldFile: !uuid '26734cd7a263dfc2665bc08e3069743156aba810'
+  /public/static/order/status/close.png:
+    newFile: null
+    oldFile: !uuid 'ca5739ba69d44cf34ad715650f0ae2b5332193b2'
+  /public/static/order/status/received.png:
+    newFile: null
+    oldFile: !uuid '27f8a268124faaf34eca32f6ef03df443765d10d'
+  /public/static/order/status/wait_deliver.png:
+    newFile: null
+    oldFile: !uuid 'b42c2e32cc02bf32f9836612506c3bb669a30b53'
+  /public/static/order/status/wait_pay.png:
+    newFile: null
+    oldFile: !uuid 'fe14070c6f0e4e91a1874de76c9f44353e18bf5e'
+  /public/static/order/status/wait_receipt.png:
+    newFile: null
+    oldFile: !uuid '5837b74d02a2f637c2207c969d1d762e100aae8b'
+  /public/static/tabbar:
+    newFile: null
+    oldFile: !uuid '8ae1e8909be49ca197a9989520531a5c5f11fb5d'
+  /public/static/tabbar/cart-active.png:
+    newFile: null
+    oldFile: !uuid 'e31a406910e76b0fefc1829f0e5e32d77058b32c'
+  /public/static/tabbar/cart.png:
+    newFile: null
+    oldFile: !uuid '7a44d8b986439b9984a09133cad34293854d85a4'
+  /public/static/tabbar/cate-active.png:
+    newFile: null
+    oldFile: !uuid '0718f58aa378954570dc930328cb61a5dccfd62f'
+  /public/static/tabbar/cate.png:
+    newFile: null
+    oldFile: !uuid '8290f99cd3ab10e1dc9d67673d7ffb44affbc30e'
+  /public/static/tabbar/home-active.png:
+    newFile: null
+    oldFile: !uuid 'c4bf42d5199a345ea6459e7742cd9af130e78895'
+  /public/static/tabbar/home.png:
+    newFile: null
+    oldFile: !uuid '1766d72f8f5b98ba32e763fd6092649061408e42'
+  /public/static/tabbar/user-active.png:
+    newFile: null
+    oldFile: !uuid '8db5285b06ff71435d8c9c49f717b566ad06a196'
+  /public/static/tabbar/user.png:
+    newFile: null
+    oldFile: !uuid 'f1a527e023e108acc10e0c5d022c4cf30a420a2a'
+  /public/static/wallet.png:
+    newFile: null
+    oldFile: !uuid 'd343bb52466b8d9b8e3f6287abc3faaae8ffb3b2'
+  /public/store:
+    newFile: null
+    oldFile: !uuid '8c9076feb7b77212ed399e09b16d7bf5dbf47f72'
+  /public/store/assets:
+    newFile: null
+    oldFile: !uuid 'cbd42bff5961f0fea30f763d28e91f1a32e77ab2'
+  /public/store/assets/logo.a3adccf1.svg:
+    newFile: null
+    oldFile: !uuid '01800b46036cfae20fe7011b3d20f7223ae5625e'
+  /public/store/config.js:
+    newFile: null
+    oldFile: !uuid '704f1c9ed341503147abdd0a10329efcfc5a4ccc'
+  /public/store/css:
+    newFile: null
+    oldFile: !uuid '6173660257bac56ea9572a73d77d2359c0ea0ec2'
+  /public/store/css/app.1b689877.css:
+    newFile: null
+    oldFile: !uuid '6754e6a023419ac4827da1af25cbc6ca6592f8e9'
+  /public/store/css/chunk-vendors.e44741d1.css:
+    newFile: null
+    oldFile: !uuid 'e380cee7b5aa343708fd9efa4d0fa4fd82801f0c'
+  /public/store/css/client.3b85af5b.css:
+    newFile: null
+    oldFile: !uuid 'f03a5d04829343065ca9843d751105730791e026'
+  /public/store/css/content.9d0157e9.css:
+    newFile: null
+    oldFile: !uuid '9e6a0dbaeba367d052893c5b261dfa83dc0a5189'
+  /public/store/css/content~goods~manage~market~order~page~store~user.bd1e620b.css:
+    newFile: null
+    oldFile: !uuid '48f51f811e5758cc7556c9aed2faf7a8965575cd'
+  /public/store/css/goods.4fb3ddbe.css:
+    newFile: null
+    oldFile: !uuid 'f52d7664f50e259ba132a4ab23592b7973b4653f'
+  /public/store/css/index.b65ed5f8.css:
+    newFile: null
+    oldFile: !uuid '33105353dffde1ece5fc58b34916997088cf8647'
+  /public/store/css/market.5bb7fd4e.css:
+    newFile: null
+    oldFile: !uuid '6aca48a76e7924f525b8f2b78643ed2b3e9073a0'
+  /public/store/css/order.b47600db.css:
+    newFile: null
+    oldFile: !uuid 'e28a4e1c483e0986f391c32ef5229182af99885e'
+  /public/store/css/page.93faf7fa.css:
+    newFile: null
+    oldFile: !uuid 'ed3a192eb7911f479387482c188260ffde7c0465'
+  /public/store/css/passport.239bd1c8.css:
+    newFile: null
+    oldFile: !uuid '7197f815f389128ea1e7feeb4531031e1fe1e944'
+  /public/store/css/setting.d53f6c09.css:
+    newFile: null
+    oldFile: !uuid 'f5a2688d06e3a9c260142b077df1e40d600b0c1d'
+  /public/store/css/statistics.9e18f348.css:
+    newFile: null
+    oldFile: !uuid '704abceb61aca6aeb25fdf33e8ae9fc007329e29'
+  /public/store/css/store.b0f3de60.css:
+    newFile: null
+    oldFile: !uuid '40f4bb2a113f2678bbba7fe70b9a7aea567cd74e'
+  /public/store/css/user.26a57afe.css:
+    newFile: null
+    oldFile: !uuid 'aba0b563a772c9437eb69a2f95c25afb08703098'
+  /public/store/img:
+    newFile: null
+    oldFile: !uuid 'c1e607fbac4c8f9570e090ca59d147097643a366'
+  /public/store/img/background.6ecf79db.jpg:
+    newFile: null
+    oldFile: !uuid 'eb9277969284b5907a241a9f5600df597aff46a8'
+  /public/store/img/phone-top-black.79cd4211.png:
+    newFile: null
+    oldFile: !uuid '5b170e182d4e1934947dee21ccd095f909bfbcda'
+  /public/store/img/phone-top-white.b2d6121b.png:
+    newFile: null
+    oldFile: !uuid '2c1888e924fe98e37368c51845244df4fc44e7d1'
+  /public/store/index.html:
+    newFile: null
+    oldFile: !uuid '2cc68f85d599b0dca9228c2ff21c2cbadf47ab1c'
+  /public/store/js:
+    newFile: null
+    oldFile: !uuid '29c9ca8c66d6bbe38356f1c0cd046c89f835a813'
+  /public/store/js/app.66f3a6f1.js:
+    newFile: null
+    oldFile: !uuid 'ce566c4b0aff29ab24a7df4b042cbff7490b422f'
+  /public/store/js/chunk-vendors.3435efb7.js:
+    newFile: null
+    oldFile: !uuid 'eb5c3fb37fd24e24504922d129747a7ee777a3ce'
+  /public/store/js/client.a6e9baa5.js:
+    newFile: null
+    oldFile: !uuid 'ea20fcc46b55604aa369a2f051fb9ea6f7d178db'
+  /public/store/js/content.52af1228.js:
+    newFile: null
+    oldFile: !uuid 'a34c369a227c6e47f6ff8cc0195c541c22ef7186'
+  /public/store/js/content~goods~manage~market~order~page~store~user.6b666af9.js:
+    newFile: null
+    oldFile: !uuid '2fc3700365bfe990b895c7d8eea506de59d4903d'
+  /public/store/js/exception.18e0d28e.js:
+    newFile: null
+    oldFile: !uuid 'eeb1725dcaf8d049e010a16a56ca4eb3c6e12643'
+  /public/store/js/goods.04f8461d.js:
+    newFile: null
+    oldFile: !uuid '261c55fe307789696f63e930cc1c4b3750805e13'
+  /public/store/js/index.a3a9146b.js:
+    newFile: null
+    oldFile: !uuid '34d65a55369c0d0d423ed30033b544dd81bd2206'
+  /public/store/js/index~statistics.e0a7d411.js:
+    newFile: null
+    oldFile: !uuid '8833de0ecf7a6164384251fae456e23fcc220709'
+  /public/store/js/lang-zh-CN.2c21d126.js:
+    newFile: null
+    oldFile: !uuid 'e32496351929f92ccbd7f58f8ed1f3211fef7f8f'
+  /public/store/js/manage.05ced199.js:
+    newFile: null
+    oldFile: !uuid '789365560e9902a1d93fc726e070b163ef3d7803'
+  /public/store/js/market.98957cb5.js:
+    newFile: null
+    oldFile: !uuid 'a8f4e5665d269adcdee3d893f7776aa14f78d23c'
+  /public/store/js/order.97f249ea.js:
+    newFile: null
+    oldFile: !uuid 'bcc2e3a07bcc7f2be0e950a9a4a3f2bf33efbca4'
+  /public/store/js/page.06f6c9ea.js:
+    newFile: null
+    oldFile: !uuid '096b784c42fce61783dc2b64cbb677b7bd8869fc'
+  /public/store/js/passport.39c81a1e.js:
+    newFile: null
+    oldFile: !uuid '92176b8f0d39703be8f648918155e060c0687ba6'
+  /public/store/js/setting.8a74b5a4.js:
+    newFile: null
+    oldFile: !uuid '78f98196db55cda6050807191062e0ef8cddfbe2'
+  /public/store/js/statistics.45c2d389.js:
+    newFile: null
+    oldFile: !uuid 'd98453008e09e80790423d9794ec0ba61658673c'
+  /public/store/js/store.633e5acb.js:
+    newFile: null
+    oldFile: !uuid '9593deb3fb5008e5f76dfa92b79d0551ccbf82a2'
+  /public/store/js/user.49ab6b07.js:
+    newFile: null
+    oldFile: !uuid '7df6b508adb6e1a582757ac7962bea4a2aeac427'
+  /public/store/static:
+    newFile: null
+    oldFile: !uuid '1bec9e6d16a889c1b1f5840ac91560e33a425229'
+  /public/store/static/UEditor:
+    newFile: null
+    oldFile: !uuid 'bc0ab8f0de7b8355004cfc270e0a8673e2232803'
+  /public/store/static/UEditor/dialogs:
+    newFile: null
+    oldFile: !uuid '7159aada6897ed4f6d615804144022479c295ca3'
+  /public/store/static/UEditor/dialogs/anchor:
+    newFile: null
+    oldFile: !uuid 'a5069326bde2564c0068da73263e38e9c2067e0f'
+  /public/store/static/UEditor/dialogs/anchor/anchor.html:
+    newFile: null
+    oldFile: !uuid 'a6c40665a55d7c5d9baf1a546f221a068d86e1c4'
+  /public/store/static/UEditor/dialogs/attachment:
+    newFile: null
+    oldFile: !uuid '470af7f04d1a2be082b33004edd5d685a2c7a5f9'
+  /public/store/static/UEditor/dialogs/attachment/attachment.css:
+    newFile: null
+    oldFile: !uuid 'e9d11af25d8be46c6174b6de4eca2b2e290544c5'
+  /public/store/static/UEditor/dialogs/attachment/attachment.html:
+    newFile: null
+    oldFile: !uuid '1a52bb933fa3053e812674df623529269338b410'
+  /public/store/static/UEditor/dialogs/attachment/attachment.js:
+    newFile: null
+    oldFile: !uuid 'bb2557f4e0f695e9530072855e984242b3c0f64b'
+  /public/store/static/UEditor/dialogs/attachment/fileTypeImages:
+    newFile: null
+    oldFile: !uuid '181b3589bcbaccaf134e33a2cfdb00e310ae95bd'
+  /public/store/static/UEditor/dialogs/attachment/fileTypeImages/icon_chm.gif:
+    newFile: null
+    oldFile: !uuid '9ca4fb6a23c7ed528374426575c3e7f67730cfb7'
+  /public/store/static/UEditor/dialogs/attachment/fileTypeImages/icon_default.png:
+    newFile: null
+    oldFile: !uuid '50ac1cb1654c147225f6c99f98fa820d8b1d47d3'
+  /public/store/static/UEditor/dialogs/attachment/fileTypeImages/icon_doc.gif:
+    newFile: null
+    oldFile: !uuid '206fede4ee7495c3d4fa8dbbb76425e23566e9cc'
+  /public/store/static/UEditor/dialogs/attachment/fileTypeImages/icon_exe.gif:
+    newFile: null
+    oldFile: !uuid '2e3b7a28e08d4be8c98dc54ec9c355a3f3d89ccb'
+  /public/store/static/UEditor/dialogs/attachment/fileTypeImages/icon_jpg.gif:
+    newFile: null
+    oldFile: !uuid '5d5dec02627672b415a936eb5ab6526c895646c6'
+  /public/store/static/UEditor/dialogs/attachment/fileTypeImages/icon_mp3.gif:
+    newFile: null
+    oldFile: !uuid 'b351a1f2a294cd0f8e145e20c2c455a38cad2001'
+  /public/store/static/UEditor/dialogs/attachment/fileTypeImages/icon_mv.gif:
+    newFile: null
+    oldFile: !uuid '26019b099d96b382a549fa383bd81315cd6d295c'
+  /public/store/static/UEditor/dialogs/attachment/fileTypeImages/icon_pdf.gif:
+    newFile: null
+    oldFile: !uuid 'bbb65c837dea9a6c28d6209ca1b1140a37988423'
+  /public/store/static/UEditor/dialogs/attachment/fileTypeImages/icon_ppt.gif:
+    newFile: null
+    oldFile: !uuid 'ccb26fbebdff5521eab7418d22e99fbae6c1d08c'
+  /public/store/static/UEditor/dialogs/attachment/fileTypeImages/icon_psd.gif:
+    newFile: null
+    oldFile: !uuid '2e8743a2705b98b9c546c28c97fe724dd4668b16'
+  /public/store/static/UEditor/dialogs/attachment/fileTypeImages/icon_rar.gif:
+    newFile: null
+    oldFile: !uuid '5359e46d2094b9dbb88566d4c5098e91665238ad'
+  /public/store/static/UEditor/dialogs/attachment/fileTypeImages/icon_txt.gif:
+    newFile: null
+    oldFile: !uuid 'e7b8dd21d8ca8121e2c1629bb607cf2ab151c7a3'
+  /public/store/static/UEditor/dialogs/attachment/fileTypeImages/icon_xls.gif:
+    newFile: null
+    oldFile: !uuid 'e86c1c6631b34ecd605b655baf3d7b1ae643d014'
+  /public/store/static/UEditor/dialogs/attachment/images:
+    newFile: null
+    oldFile: !uuid 'f33b990623f580373836996b2df9fb495535c212'
+  /public/store/static/UEditor/dialogs/attachment/images/alignicon.gif:
+    newFile: null
+    oldFile: !uuid '005a5ac65a3ddc9cdac037abdb5fe92267155a0d'
+  /public/store/static/UEditor/dialogs/attachment/images/alignicon.png:
+    newFile: null
+    oldFile: !uuid '4b6c444b78f31f4e9b381ce440ef5c0231bcec1f'
+  /public/store/static/UEditor/dialogs/attachment/images/bg.png:
+    newFile: null
+    oldFile: !uuid '580be0a01dff4c70c72f78a3f40186660ee8eee0'
+  /public/store/static/UEditor/dialogs/attachment/images/file-icons.gif:
+    newFile: null
+    oldFile: !uuid 'd8c02c27e242f0584fc6b214f35b4f6d8caec332'
+  /public/store/static/UEditor/dialogs/attachment/images/file-icons.png:
+    newFile: null
+    oldFile: !uuid '3ff82c8c488f53a7aff67fbe39742e3321183eca'
+  /public/store/static/UEditor/dialogs/attachment/images/icons.gif:
+    newFile: null
+    oldFile: !uuid '78459dea7b12ccbeec81d19ecdab22b1658e93b4'
+  /public/store/static/UEditor/dialogs/attachment/images/icons.png:
+    newFile: null
+    oldFile: !uuid '12e4700163ac87fa38ae3d92a2c39d0fb4690fed'
+  /public/store/static/UEditor/dialogs/attachment/images/image.png:
+    newFile: null
+    oldFile: !uuid '19699f6a9c6b09cb18ec0f488242d9753d2e341b'
+  /public/store/static/UEditor/dialogs/attachment/images/progress.png:
+    newFile: null
+    oldFile: !uuid '717c4865c90a959c6a0e9ad1af9c777d900a2e9c'
+  /public/store/static/UEditor/dialogs/attachment/images/success.gif:
+    newFile: null
+    oldFile: !uuid '8d4f3112b9d1df2147ed3b67d9736163dedd11e1'
+  /public/store/static/UEditor/dialogs/attachment/images/success.png:
+    newFile: null
+    oldFile: !uuid '94f968dc8fd3c7ca8f6cb599d006ef3f23b62c7d'
+  /public/store/static/UEditor/dialogs/background:
+    newFile: null
+    oldFile: !uuid '618910f9e3c69fe625aa6fd40f75ef51ba88fcad'
+  /public/store/static/UEditor/dialogs/background/background.css:
+    newFile: null
+    oldFile: !uuid '43200aa95aa59a44ab7edf285a17497e8b683320'
+  /public/store/static/UEditor/dialogs/background/background.html:
+    newFile: null
+    oldFile: !uuid '8def8a734cce7840ccddca0d7d563b2a6dfae1c0'
+  /public/store/static/UEditor/dialogs/background/background.js:
+    newFile: null
+    oldFile: !uuid '9d63bade902432190590c06c7a66115b2619bcf0'
+  /public/store/static/UEditor/dialogs/background/images:
+    newFile: null
+    oldFile: !uuid '482e1439933fdc723a8e697d79f5d317faadf10b'
+  /public/store/static/UEditor/dialogs/background/images/bg.png:
+    newFile: null
+    oldFile: !uuid '580be0a01dff4c70c72f78a3f40186660ee8eee0'
+  /public/store/static/UEditor/dialogs/background/images/success.png:
+    newFile: null
+    oldFile: !uuid '94f968dc8fd3c7ca8f6cb599d006ef3f23b62c7d'
+  /public/store/static/UEditor/dialogs/charts:
+    newFile: null
+    oldFile: !uuid '3ea3aa69c6a06690ce5636f9e78ffde58ac9fc9a'
+  /public/store/static/UEditor/dialogs/charts/chart.config.js:
+    newFile: null
+    oldFile: !uuid '678b00deb8a77bc445974641ccd6e6db380586df'
+  /public/store/static/UEditor/dialogs/charts/charts.css:
+    newFile: null
+    oldFile: !uuid 'ac3c76458206126b54ca2c225f5481e2e9cbd524'
+  /public/store/static/UEditor/dialogs/charts/charts.html:
+    newFile: null
+    oldFile: !uuid '735274fdd8de13a54ad969cd50b22de1966bee8b'
+  /public/store/static/UEditor/dialogs/charts/charts.js:
+    newFile: null
+    oldFile: !uuid '37344fd129db521348dfefd4b97e278e26144fab'
+  /public/store/static/UEditor/dialogs/charts/images:
+    newFile: null
+    oldFile: !uuid 'e3e49fd9c15ed50b5acb37b82f7492ced49d2e49'
+  /public/store/static/UEditor/dialogs/charts/images/charts0.png:
+    newFile: null
+    oldFile: !uuid '9485e5ed8f83888e782eafae6f7505c79671a985'
+  /public/store/static/UEditor/dialogs/charts/images/charts1.png:
+    newFile: null
+    oldFile: !uuid 'b5a00392866946feb7cf81da39f6c6ec6e0b50b7'
+  /public/store/static/UEditor/dialogs/charts/images/charts2.png:
+    newFile: null
+    oldFile: !uuid '7c91a39ffac43e0867bec1df89b73e10e0b28c43'
+  /public/store/static/UEditor/dialogs/charts/images/charts3.png:
+    newFile: null
+    oldFile: !uuid 'a6bc29bfc163974ece14f8f21a897fa908736b8f'
+  /public/store/static/UEditor/dialogs/charts/images/charts4.png:
+    newFile: null
+    oldFile: !uuid '742006adc9cee3c07b1a390da6991a84d1da99d6'
+  /public/store/static/UEditor/dialogs/charts/images/charts5.png:
+    newFile: null
+    oldFile: !uuid 'c49a29609d8e8f9bdf101e91021d40c1cb3d4175'
+  /public/store/static/UEditor/dialogs/emotion:
+    newFile: null
+    oldFile: !uuid '0e6486e93cc9554cbe0494316cef21388bd2b3b6'
+  /public/store/static/UEditor/dialogs/emotion/emotion.css:
+    newFile: null
+    oldFile: !uuid 'e0a56ddd2ff7d9e3e602658961071c076054c769'
+  /public/store/static/UEditor/dialogs/emotion/emotion.html:
+    newFile: null
+    oldFile: !uuid '363d64c68f18c663b2195d4a64e40d77a8f18c2f'
+  /public/store/static/UEditor/dialogs/emotion/emotion.js:
+    newFile: null
+    oldFile: !uuid 'aa01380824d9339048637e08c8079e323d1e6720'
+  /public/store/static/UEditor/dialogs/emotion/images:
+    newFile: null
+    oldFile: !uuid '5692fea9e2c601f22c53d11731d136ab22159b32'
+  /public/store/static/UEditor/dialogs/emotion/images/0.gif:
+    newFile: null
+    oldFile: !uuid '6964168b947afc2cf76780a85f43d4f77c257b77'
+  /public/store/static/UEditor/dialogs/emotion/images/bface.gif:
+    newFile: null
+    oldFile: !uuid '14fe618ab58a9d46fee90074386b5581d47b92c9'
+  /public/store/static/UEditor/dialogs/emotion/images/cface.gif:
+    newFile: null
+    oldFile: !uuid 'bff947f5216a49d8cd7fdd8d4e825808b3d14f6e'
+  /public/store/static/UEditor/dialogs/emotion/images/fface.gif:
+    newFile: null
+    oldFile: !uuid '0d8a6afeb1cb2cc40c5d76f90630d8a9c1323ffe'
+  /public/store/static/UEditor/dialogs/emotion/images/jxface2.gif:
+    newFile: null
+    oldFile: !uuid 'a959c90f7eb17adc455982b040244fd583eed888'
+  /public/store/static/UEditor/dialogs/emotion/images/neweditor-tab-bg.png:
+    newFile: null
+    oldFile: !uuid '8f398b0958cdc5136a23b9745becc23a833aa325'
+  /public/store/static/UEditor/dialogs/emotion/images/tface.gif:
+    newFile: null
+    oldFile: !uuid '1354f54b961211fb0253ccbd27a81da5dab5a639'
+  /public/store/static/UEditor/dialogs/emotion/images/wface.gif:
+    newFile: null
+    oldFile: !uuid '5667160d8b6228d301fccb56a8c1441b4c4e4b58'
+  /public/store/static/UEditor/dialogs/emotion/images/yface.gif:
+    newFile: null
+    oldFile: !uuid '51608be0e74434388bcfe1f55da5c3c019f0a708'
+  /public/store/static/UEditor/dialogs/gmap:
+    newFile: null
+    oldFile: !uuid 'ffb9f872c6581e87178bde115768b5ce5ec72cb9'
+  /public/store/static/UEditor/dialogs/gmap/gmap.html:
+    newFile: null
+    oldFile: !uuid '4319a6fadeefdb03da45f1a06881211c1206b2a4'
+  /public/store/static/UEditor/dialogs/help:
+    newFile: null
+    oldFile: !uuid '77014dd42f97d63be0c668da335d5a3846e759f7'
+  /public/store/static/UEditor/dialogs/help/help.css:
+    newFile: null
+    oldFile: !uuid '39ade49e58f15cce56a6ce328c01c5e1bc368c31'
+  /public/store/static/UEditor/dialogs/help/help.html:
+    newFile: null
+    oldFile: !uuid '0d6f9efcb5b3a7595c10db6f6ca66f8a44d72acd'
+  /public/store/static/UEditor/dialogs/help/help.js:
+    newFile: null
+    oldFile: !uuid '4ad9e761d10fb035024acba518a13d680a88bf01'
+  /public/store/static/UEditor/dialogs/image:
+    newFile: null
+    oldFile: !uuid '911ccc269d351cd3d2ed8df91d4afcf4ef4cb3d9'
+  /public/store/static/UEditor/dialogs/image/image.css:
+    newFile: null
+    oldFile: !uuid '33310ac8b04aff3e3ef562b1aaaaae76ed2b3b6e'
+  /public/store/static/UEditor/dialogs/image/image.html:
+    newFile: null
+    oldFile: !uuid '81f45ad68092775c1bcb64ef49dceb8394d51714'
+  /public/store/static/UEditor/dialogs/image/image.js:
+    newFile: null
+    oldFile: !uuid 'b078d6a27cc853d8e601a7b28155e4ee199c146a'
+  /public/store/static/UEditor/dialogs/image/images:
+    newFile: null
+    oldFile: !uuid '7e9e2a12d7f1fcb6fa48d3c772c5a7d9f543330c'
+  /public/store/static/UEditor/dialogs/image/images/alignicon.jpg:
+    newFile: null
+    oldFile: !uuid '754755b1b6e2b37d6090f68b80e91867fdcf1042'
+  /public/store/static/UEditor/dialogs/image/images/bg.png:
+    newFile: null
+    oldFile: !uuid '580be0a01dff4c70c72f78a3f40186660ee8eee0'
+  /public/store/static/UEditor/dialogs/image/images/icons.gif:
+    newFile: null
+    oldFile: !uuid '78459dea7b12ccbeec81d19ecdab22b1658e93b4'
+  /public/store/static/UEditor/dialogs/image/images/icons.png:
+    newFile: null
+    oldFile: !uuid '12e4700163ac87fa38ae3d92a2c39d0fb4690fed'
+  /public/store/static/UEditor/dialogs/image/images/image.png:
+    newFile: null
+    oldFile: !uuid '19699f6a9c6b09cb18ec0f488242d9753d2e341b'
+  /public/store/static/UEditor/dialogs/image/images/progress.png:
+    newFile: null
+    oldFile: !uuid '717c4865c90a959c6a0e9ad1af9c777d900a2e9c'
+  /public/store/static/UEditor/dialogs/image/images/success.gif:
+    newFile: null
+    oldFile: !uuid '8d4f3112b9d1df2147ed3b67d9736163dedd11e1'
+  /public/store/static/UEditor/dialogs/image/images/success.png:
+    newFile: null
+    oldFile: !uuid '94f968dc8fd3c7ca8f6cb599d006ef3f23b62c7d'
+  /public/store/static/UEditor/dialogs/insertframe:
+    newFile: null
+    oldFile: !uuid 'f87f254962dbcfffe33f25a3f313a12b9ed0c4e7'
+  /public/store/static/UEditor/dialogs/insertframe/insertframe.html:
+    newFile: null
+    oldFile: !uuid '8271f0b1d2ae941559d0cb9a48945cfa1b8afb5d'
+  /public/store/static/UEditor/dialogs/internal.js:
+    newFile: null
+    oldFile: !uuid '1f6413b395d2ed29b8969a4b67b43838801efb98'
+  /public/store/static/UEditor/dialogs/link:
+    newFile: null
+    oldFile: !uuid '620a5b0eed9c66ce1cd34c9470e09e766b2e37af'
+  /public/store/static/UEditor/dialogs/link/link.html:
+    newFile: null
+    oldFile: !uuid '317a650796e27353f880f4d96b02ad290ab1021c'
+  /public/store/static/UEditor/dialogs/map:
+    newFile: null
+    oldFile: !uuid '32eb5ba7b2d8832e616a65d145417f798fa007a6'
+  /public/store/static/UEditor/dialogs/map/map.html:
+    newFile: null
+    oldFile: !uuid '9857f2f69b6fc84d74fc7ed3944e6031ffd3b982'
+  /public/store/static/UEditor/dialogs/map/show.html:
+    newFile: null
+    oldFile: !uuid '329cfebfb90b0c126bedfc3d719c3520b4740764'
+  /public/store/static/UEditor/dialogs/music:
+    newFile: null
+    oldFile: !uuid '16b14c81ad6bf7cdd3c925358ef8390881717068'
+  /public/store/static/UEditor/dialogs/music/music.css:
+    newFile: null
+    oldFile: !uuid '82d6118b8e9a96edd81798a043c5accff70b2d2f'
+  /public/store/static/UEditor/dialogs/music/music.html:
+    newFile: null
+    oldFile: !uuid '7dad7a7c487a0140ced747a0c5f40df1a9875b8e'
+  /public/store/static/UEditor/dialogs/music/music.js:
+    newFile: null
+    oldFile: !uuid 'e43ea54bff93bb4b629ba8a9e91d710a3e40ed63'
+  /public/store/static/UEditor/dialogs/preview:
+    newFile: null
+    oldFile: !uuid '12bb8a27cb20b2a903a8ed61fca9c5ada30a2d4c'
+  /public/store/static/UEditor/dialogs/preview/preview.html:
+    newFile: null
+    oldFile: !uuid 'f6b433bcf6785eff37cd18ec301a766153c1a82e'
+  /public/store/static/UEditor/dialogs/scrawl:
+    newFile: null
+    oldFile: !uuid '013d392a1e201f3c702a6d376fdfa0611148501b'
+  /public/store/static/UEditor/dialogs/scrawl/images:
+    newFile: null
+    oldFile: !uuid 'bb974bdaa93d3104afa4d7b29bb7feba8d7fc3a7'
+  /public/store/static/UEditor/dialogs/scrawl/images/addimg.png:
+    newFile: null
+    oldFile: !uuid '03a87135bab65fa2633156789ed0f4a906d6c48b'
+  /public/store/static/UEditor/dialogs/scrawl/images/brush.png:
+    newFile: null
+    oldFile: !uuid 'efa6fdb01a8e5cf161dc62bfb20894689a1730bd'
+  /public/store/static/UEditor/dialogs/scrawl/images/delimg.png:
+    newFile: null
+    oldFile: !uuid '5a892e40ad3257f632b34a873b517dd5d590cc9f'
+  /public/store/static/UEditor/dialogs/scrawl/images/delimgH.png:
+    newFile: null
+    oldFile: !uuid '2f0c5c9de33a431d1c8e50cd12da74505921ad7e'
+  /public/store/static/UEditor/dialogs/scrawl/images/empty.png:
+    newFile: null
+    oldFile: !uuid '0375196257ac3c859373b3ebebbabe6f16105587'
+  /public/store/static/UEditor/dialogs/scrawl/images/emptyH.png:
+    newFile: null
+    oldFile: !uuid '838ca723119499465f29e881a745f4d8a051e22c'
+  /public/store/static/UEditor/dialogs/scrawl/images/eraser.png:
+    newFile: null
+    oldFile: !uuid '63e87cecb90ed3ac0e4acbc257c6dddae5311e09'
+  /public/store/static/UEditor/dialogs/scrawl/images/redo.png:
+    newFile: null
+    oldFile: !uuid '12cd9bbefc637c7c0a394d00e9d70333ac0f6ea5'
+  /public/store/static/UEditor/dialogs/scrawl/images/redoH.png:
+    newFile: null
+    oldFile: !uuid 'd9f33d38a3d11ce10447830ce409a0890ecad264'
+  /public/store/static/UEditor/dialogs/scrawl/images/scale.png:
+    newFile: null
+    oldFile: !uuid '935a3f3e1eee04b8a3aa6f70681376298d11e22a'
+  /public/store/static/UEditor/dialogs/scrawl/images/scaleH.png:
+    newFile: null
+    oldFile: !uuid '72e64a9d0f3ef081ffda153c755600dc4a758e5b'
+  /public/store/static/UEditor/dialogs/scrawl/images/size.png:
+    newFile: null
+    oldFile: !uuid '8366845059c94089aef92aa3aeeee79e242732eb'
+  /public/store/static/UEditor/dialogs/scrawl/images/undo.png:
+    newFile: null
+    oldFile: !uuid '084c7cc73f4058c8084e5ea3ab4e51fd105b7991'
+  /public/store/static/UEditor/dialogs/scrawl/images/undoH.png:
+    newFile: null
+    oldFile: !uuid 'fde7eb3c2e8080be0224b603f65c3fa5552418be'
+  /public/store/static/UEditor/dialogs/scrawl/scrawl.css:
+    newFile: null
+    oldFile: !uuid '4ea30c6e6e4251c0a9e3c8021bfcebcfda5604f7'
+  /public/store/static/UEditor/dialogs/scrawl/scrawl.html:
+    newFile: null
+    oldFile: !uuid '13f6ab13f85f9054bb5ad1dbee74a1bffc3dc9c7'
+  /public/store/static/UEditor/dialogs/scrawl/scrawl.js:
+    newFile: null
+    oldFile: !uuid 'cadb0cb2fe5a7c08299f3a9fb3ddcc230a71ca74'
+  /public/store/static/UEditor/dialogs/searchreplace:
+    newFile: null
+    oldFile: !uuid 'de4a62cc163fc5e0bd5ece3e611b9fc727307c8e'
+  /public/store/static/UEditor/dialogs/searchreplace/searchreplace.html:
+    newFile: null
+    oldFile: !uuid 'b3eaaa5c92e75389dfbe0bdca8bd1072cdfc94d2'
+  /public/store/static/UEditor/dialogs/searchreplace/searchreplace.js:
+    newFile: null
+    oldFile: !uuid 'b55bb7ae74dbff4aaf2557e796d2bf4353b88cce'
+  /public/store/static/UEditor/dialogs/snapscreen:
+    newFile: null
+    oldFile: !uuid '104588d1e7ff5242ca844213c4e79bd7f54a3fed'
+  /public/store/static/UEditor/dialogs/snapscreen/snapscreen.html:
+    newFile: null
+    oldFile: !uuid 'f3593268aa049f0f76d95b9e6f8b51a797dd38c9'
+  /public/store/static/UEditor/dialogs/spechars:
+    newFile: null
+    oldFile: !uuid '246cf744ae9fbc663a2834bec4e4aee7140bdd4f'
+  /public/store/static/UEditor/dialogs/spechars/spechars.html:
+    newFile: null
+    oldFile: !uuid 'd92f5150d7e5420e12866cb832b4068f9c97f744'
+  /public/store/static/UEditor/dialogs/spechars/spechars.js:
+    newFile: null
+    oldFile: !uuid 'bd3b36d338f6969f085fc2284bb4bd91c459ab3f'
+  /public/store/static/UEditor/dialogs/table:
+    newFile: null
+    oldFile: !uuid 'c802e540a3b1c3a549bd2f7a7a9a81451627964e'
+  /public/store/static/UEditor/dialogs/table/dragicon.png:
+    newFile: null
+    oldFile: !uuid 'f26203bf3f0026891fc8374f109724a69eb38b22'
+  /public/store/static/UEditor/dialogs/table/edittable.css:
+    newFile: null
+    oldFile: !uuid 'c6f9396c9b04297b63775ef2b9abb68db330b43b'
+  /public/store/static/UEditor/dialogs/table/edittable.html:
+    newFile: null
+    oldFile: !uuid '3c412fb8273d3468f174e8960ea350665093fa44'
+  /public/store/static/UEditor/dialogs/table/edittable.js:
+    newFile: null
+    oldFile: !uuid '11dbee7c50a1968d99dbeb4babf04974c83dacd7'
+  /public/store/static/UEditor/dialogs/table/edittd.html:
+    newFile: null
+    oldFile: !uuid '49a52f71952e3f396120951a9504e287a14ad2b0'
+  /public/store/static/UEditor/dialogs/table/edittip.html:
+    newFile: null
+    oldFile: !uuid '954f7bb66f01b0d58dda32a37cc59241e0671cc3'
+  /public/store/static/UEditor/dialogs/template:
+    newFile: null
+    oldFile: !uuid 'f75a03db6263550b731b33d0842583606999835a'
+  /public/store/static/UEditor/dialogs/template/config.js:
+    newFile: null
+    oldFile: !uuid '42e474b47019b886cdecf3b1e05a8b05e5b12b26'
+  /public/store/static/UEditor/dialogs/template/images:
+    newFile: null
+    oldFile: !uuid '57b9db0028bee512f186342ae5b93d542edac850'
+  /public/store/static/UEditor/dialogs/template/images/bg.gif:
+    newFile: null
+    oldFile: !uuid '8c1d10ad1933e02086e8a1b3c807c7d1e57d51db'
+  /public/store/static/UEditor/dialogs/template/images/pre0.png:
+    newFile: null
+    oldFile: !uuid '8f3c16ab121c6c9b6add955fd3de78247ccfd9a6'
+  /public/store/static/UEditor/dialogs/template/images/pre1.png:
+    newFile: null
+    oldFile: !uuid '5a03f9699886deef9aa0f52a7d252dea84baafef'
+  /public/store/static/UEditor/dialogs/template/images/pre2.png:
+    newFile: null
+    oldFile: !uuid '5a55672c1f9c4d41d5b5cf52d76bb2b7e7c6b186'
+  /public/store/static/UEditor/dialogs/template/images/pre3.png:
+    newFile: null
+    oldFile: !uuid 'd852d29f13bcf743e15df824901ab568123a5aae'
+  /public/store/static/UEditor/dialogs/template/images/pre4.png:
+    newFile: null
+    oldFile: !uuid '0d7bc72ab99fe2c0ed9de1d89fd1c3e82ac3fd43'
+  /public/store/static/UEditor/dialogs/template/template.css:
+    newFile: null
+    oldFile: !uuid '2658bd2f17f1b434ef0f05294164dac6b48c096d'
+  /public/store/static/UEditor/dialogs/template/template.html:
+    newFile: null
+    oldFile: !uuid '9d71eced6a3487fce1f10b7602991ab7fefae523'
+  /public/store/static/UEditor/dialogs/template/template.js:
+    newFile: null
+    oldFile: !uuid '0f1cdad5eebe7ca21f9240e742578eb62fa69fe8'
+  /public/store/static/UEditor/dialogs/video:
+    newFile: null
+    oldFile: !uuid 'c56b3cc3721ca0f8ef1f573ce0c96aa2ca5b55f4'
+  /public/store/static/UEditor/dialogs/video/images:
+    newFile: null
+    oldFile: !uuid '336ceafe8bee10ff61efed8124841728a3698bf3'
+  /public/store/static/UEditor/dialogs/video/images/bg.png:
+    newFile: null
+    oldFile: !uuid '580be0a01dff4c70c72f78a3f40186660ee8eee0'
+  /public/store/static/UEditor/dialogs/video/images/center_focus.jpg:
+    newFile: null
+    oldFile: !uuid '262b02916c51c01ab71f942b7ea9d02382b0df07'
+  /public/store/static/UEditor/dialogs/video/images/file-icons.gif:
+    newFile: null
+    oldFile: !uuid 'd8c02c27e242f0584fc6b214f35b4f6d8caec332'
+  /public/store/static/UEditor/dialogs/video/images/file-icons.png:
+    newFile: null
+    oldFile: !uuid '3ff82c8c488f53a7aff67fbe39742e3321183eca'
+  /public/store/static/UEditor/dialogs/video/images/icons.gif:
+    newFile: null
+    oldFile: !uuid '78459dea7b12ccbeec81d19ecdab22b1658e93b4'
+  /public/store/static/UEditor/dialogs/video/images/icons.png:
+    newFile: null
+    oldFile: !uuid '12e4700163ac87fa38ae3d92a2c39d0fb4690fed'
+  /public/store/static/UEditor/dialogs/video/images/image.png:
+    newFile: null
+    oldFile: !uuid '19699f6a9c6b09cb18ec0f488242d9753d2e341b'
+  /public/store/static/UEditor/dialogs/video/images/left_focus.jpg:
+    newFile: null
+    oldFile: !uuid '7886d276dda2e0aecdae22393eac534ed507babf'
+  /public/store/static/UEditor/dialogs/video/images/none_focus.jpg:
+    newFile: null
+    oldFile: !uuid '7c768dcb47aaa289135afd2bd0e8eb0b6ecb7536'
+  /public/store/static/UEditor/dialogs/video/images/progress.png:
+    newFile: null
+    oldFile: !uuid '717c4865c90a959c6a0e9ad1af9c777d900a2e9c'
+  /public/store/static/UEditor/dialogs/video/images/right_focus.jpg:
+    newFile: null
+    oldFile: !uuid '173e10d2d91026c7283566993afb2f3a0267ea40'
+  /public/store/static/UEditor/dialogs/video/images/success.gif:
+    newFile: null
+    oldFile: !uuid '8d4f3112b9d1df2147ed3b67d9736163dedd11e1'
+  /public/store/static/UEditor/dialogs/video/images/success.png:
+    newFile: null
+    oldFile: !uuid '94f968dc8fd3c7ca8f6cb599d006ef3f23b62c7d'
+  /public/store/static/UEditor/dialogs/video/video.css:
+    newFile: null
+    oldFile: !uuid '8a17284e19a12bf628991b9a3b9305b8988992e5'
+  /public/store/static/UEditor/dialogs/video/video.html:
+    newFile: null
+    oldFile: !uuid '14f10f455fdf14490daa2be0525a71e67e6af46f'
+  /public/store/static/UEditor/dialogs/video/video.js:
+    newFile: null
+    oldFile: !uuid '7b9378bd5ac8328f7facb97b9d038e66f6e9347d'
+  /public/store/static/UEditor/dialogs/webapp:
+    newFile: null
+    oldFile: !uuid '4d05a90787b8bfff988703956e15d7368a0084da'
+  /public/store/static/UEditor/dialogs/webapp/webapp.html:
+    newFile: null
+    oldFile: !uuid '73f8dc23fe42f0be93cee2ff4bb6019fd56ac849'
+  /public/store/static/UEditor/dialogs/wordimage:
+    newFile: null
+    oldFile: !uuid '2c4cd4b05ea309bc7e873b850239dbeb60578c5b'
+  /public/store/static/UEditor/dialogs/wordimage/fClipboard_ueditor.swf:
+    newFile: null
+    oldFile: !uuid 'ac5d27f81d2111c8581a042564c5275edd751e1c'
+  /public/store/static/UEditor/dialogs/wordimage/imageUploader.swf:
+    newFile: null
+    oldFile: !uuid '2a554cadbd136ff622b612dbcf0460fb9a980f40'
+  /public/store/static/UEditor/dialogs/wordimage/tangram.js:
+    newFile: null
+    oldFile: !uuid '2ebd8fd3dc82629ecd4bbece4d5c83da6a86bf0f'
+  /public/store/static/UEditor/dialogs/wordimage/wordimage.html:
+    newFile: null
+    oldFile: !uuid 'f8c09052a2c1ba0cce848baec94d916f38220bf0'
+  /public/store/static/UEditor/dialogs/wordimage/wordimage.js:
+    newFile: null
+    oldFile: !uuid 'e3602639eb85e6112c14553ed215ad0a98d08e0d'
+  /public/store/static/UEditor/index.html:
+    newFile: null
+    oldFile: !uuid 'f02b43c91a72642da99d7ba3315427210ec8ab9a'
+  /public/store/static/UEditor/lang:
+    newFile: null
+    oldFile: !uuid '9776c8c97dc8bcbf98054a486b4307693a66e8ed'
+  /public/store/static/UEditor/lang/en:
+    newFile: null
+    oldFile: !uuid '81495592c9a88d70ca13177d359476a7a8c1d0b6'
+  /public/store/static/UEditor/lang/en/en.js:
+    newFile: null
+    oldFile: !uuid 'c2bdbbbc963eb5b0cc5cfe81bc5a1da521ec0458'
+  /public/store/static/UEditor/lang/en/images:
+    newFile: null
+    oldFile: !uuid 'e7848b565e8c54e1fba64436a881bcebdcfb62c8'
+  /public/store/static/UEditor/lang/en/images/addimage.png:
+    newFile: null
+    oldFile: !uuid '3a2fd17121b9e0d435b2ca082d696c33b9f27b79'
+  /public/store/static/UEditor/lang/en/images/alldeletebtnhoverskin.png:
+    newFile: null
+    oldFile: !uuid '355eeabbd8fc611ec984889883a2ec46e1cb6bb1'
+  /public/store/static/UEditor/lang/en/images/alldeletebtnupskin.png:
+    newFile: null
+    oldFile: !uuid '61658ce6f10164478ce293c05f1f0485a8fa1fc4'
+  /public/store/static/UEditor/lang/en/images/background.png:
+    newFile: null
+    oldFile: !uuid 'd5bf5fdd8ae94b603832031134b208c9bc72edf4'
+  /public/store/static/UEditor/lang/en/images/button.png:
+    newFile: null
+    oldFile: !uuid '098874cb1fa85852d77ba9acbb5850c91c341fb7'
+  /public/store/static/UEditor/lang/en/images/copy.png:
+    newFile: null
+    oldFile: !uuid 'f982e8bcbc6e0d6dde115a2cd5d094b12ad50f4f'
+  /public/store/static/UEditor/lang/en/images/deletedisable.png:
+    newFile: null
+    oldFile: !uuid 'c8ee75094f59f0c1262806fd294d361f30f64f58'
+  /public/store/static/UEditor/lang/en/images/deleteenable.png:
+    newFile: null
+    oldFile: !uuid '26acc883567c5d7fde8de3ba052d7754a5b1c539'
+  /public/store/static/UEditor/lang/en/images/listbackground.png:
+    newFile: null
+    oldFile: !uuid '4f82ccd88fca215709827937769cb4c9216323b1'
+  /public/store/static/UEditor/lang/en/images/localimage.png:
+    newFile: null
+    oldFile: !uuid '12c8e6aefa8fd16287ac77bbecd7d5b58c3fc837'
+  /public/store/static/UEditor/lang/en/images/music.png:
+    newFile: null
+    oldFile: !uuid '2f495fe92ffecdce42b74fd57dca2687414711fb'
+  /public/store/static/UEditor/lang/en/images/rotateleftdisable.png:
+    newFile: null
+    oldFile: !uuid '741526e0d5e6eb5c30eb0a62c9b1d6d558ed9cdf'
+  /public/store/static/UEditor/lang/en/images/rotateleftenable.png:
+    newFile: null
+    oldFile: !uuid 'e164ddbd62a232f3a89826158c9795f6c082cc89'
+  /public/store/static/UEditor/lang/en/images/rotaterightdisable.png:
+    newFile: null
+    oldFile: !uuid '5a78c26062ae546b046ca58d1c2b6647f62d2368'
+  /public/store/static/UEditor/lang/en/images/rotaterightenable.png:
+    newFile: null
+    oldFile: !uuid 'd768531fca400de87d148dca3b9b7ae88bce4b61'
+  /public/store/static/UEditor/lang/en/images/upload.png:
+    newFile: null
+    oldFile: !uuid '7bb15b3d6d6799504cf7093a1600bd7ece0d9ef5'
+  /public/store/static/UEditor/lang/zh-cn:
+    newFile: null
+    oldFile: !uuid 'fcab3fd8034fc3d66d01766c51586abe88a68d8d'
+  /public/store/static/UEditor/lang/zh-cn/images:
+    newFile: null
+    oldFile: !uuid '7d1556d5d8a27e51923918f6a7618ffe8fa26ab1'
+  /public/store/static/UEditor/lang/zh-cn/images/copy.png:
+    newFile: null
+    oldFile: !uuid 'b2536aac72e763b9a872b507462458ecb96990f0'
+  /public/store/static/UEditor/lang/zh-cn/images/localimage.png:
+    newFile: null
+    oldFile: !uuid '7303c364318b6ac27dc4a8ae6717124d8dafaff9'
+  /public/store/static/UEditor/lang/zh-cn/images/music.png:
+    newFile: null
+    oldFile: !uuid '354edebc341b43e56a5e809686e17c279125b026'
+  /public/store/static/UEditor/lang/zh-cn/images/upload.png:
+    newFile: null
+    oldFile: !uuid '08d4d9268204a20ca343bf75784302cc706d2417'
+  /public/store/static/UEditor/lang/zh-cn/zh-cn.js:
+    newFile: null
+    oldFile: !uuid '10ff1516281b7f5a0f34e2dcc0b93f289a627331'
+  /public/store/static/UEditor/php:
+    newFile: null
+    oldFile: !uuid '78d77e2a263080ce59c3ae59cd8c67c3937f3252'
+  /public/store/static/UEditor/php/Uploader.class.php:
+    newFile: null
+    oldFile: !uuid 'ae9818a317e34743bf1f87a43952dbd4ac135a73'
+  /public/store/static/UEditor/php/action_crawler.php:
+    newFile: null
+    oldFile: !uuid 'b9e18dfae4f2b57cacf81c64ccaeeeb7c883e116'
+  /public/store/static/UEditor/php/action_list.php:
+    newFile: null
+    oldFile: !uuid 'bf9cd62c1916f86fa39cd4396117edf1f77c4956'
+  /public/store/static/UEditor/php/action_upload.php:
+    newFile: null
+    oldFile: !uuid 'd55b6591adf0d92e78bd73d83072adec576c5ee0'
+  /public/store/static/UEditor/php/config.json:
+    newFile: null
+    oldFile: !uuid 'dd5bc1743be72231365e73c4f7e19e7305ce6356'
+  /public/store/static/UEditor/php/controller.php:
+    newFile: null
+    oldFile: !uuid 'feac890cee65397c6c22e4d9954e3155068e0e90'
+  /public/store/static/UEditor/themes:
+    newFile: null
+    oldFile: !uuid 'cd8b87e183b414ba3b94bc0aa718794c1060c956'
+  /public/store/static/UEditor/themes/default:
+    newFile: null
+    oldFile: !uuid '1d18d88ca8379c8dbb8e8ba36c915e6a284f1a51'
+  /public/store/static/UEditor/themes/default/css:
+    newFile: null
+    oldFile: !uuid '1661ca1743132d2a64596b2ae1a47cee966c5fcc'
+  /public/store/static/UEditor/themes/default/css/ueditor.css:
+    newFile: null
+    oldFile: !uuid '37b7edf443bf18e1a2f235b81d6a1b1bb540c503'
+  /public/store/static/UEditor/themes/default/css/ueditor.min.css:
+    newFile: null
+    oldFile: !uuid '8ca74eb6c27c08c3cd23a169cf76f7d6644138b2'
+  /public/store/static/UEditor/themes/default/dialogbase.css:
+    newFile: null
+    oldFile: !uuid 'ea712666a3e4e3121653aa09320d88c79d22be26'
+  /public/store/static/UEditor/themes/default/images:
+    newFile: null
+    oldFile: !uuid '8ead3b07ad8d132ba41eb05c65c238d62190572b'
+  /public/store/static/UEditor/themes/default/images/anchor.gif:
+    newFile: null
+    oldFile: !uuid '5aa797b2240a432d9f3f1d166ed5542eaf684937'
+  /public/store/static/UEditor/themes/default/images/arrow.png:
+    newFile: null
+    oldFile: !uuid 'd9008866ba56c4a4715a3f883ccb3be941031206'
+  /public/store/static/UEditor/themes/default/images/arrow_down.png:
+    newFile: null
+    oldFile: !uuid 'e9257e83b00375259f2f724c7cbac03d0df5ceb2'
+  /public/store/static/UEditor/themes/default/images/arrow_up.png:
+    newFile: null
+    oldFile: !uuid '74277af1e6a8ef91f8fe664efde11377a5292dbc'
+  /public/store/static/UEditor/themes/default/images/button-bg.gif:
+    newFile: null
+    oldFile: !uuid 'ec7fa2eabf0705226fe0c488d65198508bf547e9'
+  /public/store/static/UEditor/themes/default/images/cancelbutton.gif:
+    newFile: null
+    oldFile: !uuid 'df4bc2c06d485df4403d689c98ee745a4cde8e97'
+  /public/store/static/UEditor/themes/default/images/charts.png:
+    newFile: null
+    oldFile: !uuid '713965cc4c6971759c80a52290ddef9ab32776b6'
+  /public/store/static/UEditor/themes/default/images/cursor_h.gif:
+    newFile: null
+    oldFile: !uuid 'd7c3e7e9eb5755d57ec03c34097c258244abe61a'
+  /public/store/static/UEditor/themes/default/images/cursor_h.png:
+    newFile: null
+    oldFile: !uuid '2088fc24077a214aab0e758d571678a11dd41ce9'
+  /public/store/static/UEditor/themes/default/images/cursor_v.gif:
+    newFile: null
+    oldFile: !uuid 'bb508db552b6ac3f670f9ce1fcb1e55669db0dd6'
+  /public/store/static/UEditor/themes/default/images/cursor_v.png:
+    newFile: null
+    oldFile: !uuid '6f39ca3d84d5e3c2cea3639b4d97c43df32aa4d7'
+  /public/store/static/UEditor/themes/default/images/dialog-title-bg.png:
+    newFile: null
+    oldFile: !uuid 'f744f267f797ebf9993b746ecaff21b85d556e83'
+  /public/store/static/UEditor/themes/default/images/filescan.png:
+    newFile: null
+    oldFile: !uuid '1d271588692c1726e3521032f71d8354b66fab0e'
+  /public/store/static/UEditor/themes/default/images/highlighted.gif:
+    newFile: null
+    oldFile: !uuid '9272b4915ad2b8d4052a19b4c80a41b7c71cf1f1'
+  /public/store/static/UEditor/themes/default/images/icons-all.gif:
+    newFile: null
+    oldFile: !uuid '21915e59dede0aa22cda8c7097a14f0f1f68906c'
+  /public/store/static/UEditor/themes/default/images/icons.gif:
+    newFile: null
+    oldFile: !uuid '7abd30a1c6516cda6376f335902e3cadbae64c89'
+  /public/store/static/UEditor/themes/default/images/icons.png:
+    newFile: null
+    oldFile: !uuid 'c015e3aac9a84ebad11b932e84722124772d9641'
+  /public/store/static/UEditor/themes/default/images/loaderror.png:
+    newFile: null
+    oldFile: !uuid '35ff3336457d48dbecbc11698ef8245441a94f82'
+  /public/store/static/UEditor/themes/default/images/loading.gif:
+    newFile: null
+    oldFile: !uuid 'b713e27dfba708a01c380e7c731a13b52a34edfc'
+  /public/store/static/UEditor/themes/default/images/lock.gif:
+    newFile: null
+    oldFile: !uuid 'b4e6d7822a5af54c19e555f449a461baf464dc5e'
+  /public/store/static/UEditor/themes/default/images/neweditor-tab-bg.png:
+    newFile: null
+    oldFile: !uuid '8f398b0958cdc5136a23b9745becc23a833aa325'
+  /public/store/static/UEditor/themes/default/images/pagebreak.gif:
+    newFile: null
+    oldFile: !uuid '8d1cffd64af72709b1180b3b0a51bbfe30bcb8c6'
+  /public/store/static/UEditor/themes/default/images/scale.png:
+    newFile: null
+    oldFile: !uuid 'f45adb585717879be556fc978daf9f951de45e57'
+  /public/store/static/UEditor/themes/default/images/sortable.png:
+    newFile: null
+    oldFile: !uuid '1bca649698e187a80e1b1951fde99ddea3d7b038'
+  /public/store/static/UEditor/themes/default/images/spacer.gif:
+    newFile: null
+    oldFile: !uuid '5bfd67a2d6f72ac3a55cbfcea5866e841d22f5d9'
+  /public/store/static/UEditor/themes/default/images/sparator_v.png:
+    newFile: null
+    oldFile: !uuid '8cf5662da8c36a446e1e08eb71b992c730ab8d15'
+  /public/store/static/UEditor/themes/default/images/table-cell-align.png:
+    newFile: null
+    oldFile: !uuid 'ddf42853ea5c00663e74d9195d1f1264ab684252'
+  /public/store/static/UEditor/themes/default/images/tangram-colorpicker.png:
+    newFile: null
+    oldFile: !uuid '738e500cfcf2c746f977189b05a7fe43544e80f0'
+  /public/store/static/UEditor/themes/default/images/toolbar_bg.png:
+    newFile: null
+    oldFile: !uuid '7ab685f4236ad543601b0d7dc43e429e041bee98'
+  /public/store/static/UEditor/themes/default/images/unhighlighted.gif:
+    newFile: null
+    oldFile: !uuid '7ad0b67ae634d41e76848ec0b6696e8ac7e06983'
+  /public/store/static/UEditor/themes/default/images/upload.png:
+    newFile: null
+    oldFile: !uuid '08d4d9268204a20ca343bf75784302cc706d2417'
+  /public/store/static/UEditor/themes/default/images/videologo.gif:
+    newFile: null
+    oldFile: !uuid '555af7417d797f962b4990f437a9330b8caf59a4'
+  /public/store/static/UEditor/themes/default/images/word.gif:
+    newFile: null
+    oldFile: !uuid '9ef5d09b7b30c4f3225f77788462e429cc494b9b'
+  /public/store/static/UEditor/themes/default/images/wordpaste.png:
+    newFile: null
+    oldFile: !uuid '936775810b9ca1531a0973e73f9c3772eb6d69af'
+  /public/store/static/UEditor/themes/iframe.css:
+    newFile: null
+    oldFile: !uuid '95dbdd3efb7cf9880d1ac5649de86d28ff808f08'
+  /public/store/static/UEditor/third-party:
+    newFile: null
+    oldFile: !uuid 'e9cf1679ac2b8d7fc8d370c89485772b72f67660'
+  /public/store/static/UEditor/third-party/SyntaxHighlighter:
+    newFile: null
+    oldFile: !uuid '9c00c7fdb3a9724e8166ae619e77283ef8103239'
+  /public/store/static/UEditor/third-party/SyntaxHighlighter/shCore.js:
+    newFile: null
+    oldFile: !uuid '32491842526a32527bb92877f312b7dd2e94e5ee'
+  /public/store/static/UEditor/third-party/SyntaxHighlighter/shCoreDefault.css:
+    newFile: null
+    oldFile: !uuid 'e156a6f43a256b052703a062806dabeede52934a'
+  /public/store/static/UEditor/third-party/codemirror:
+    newFile: null
+    oldFile: !uuid 'dc060b43245910a457e60efff1a086c704361588'
+  /public/store/static/UEditor/third-party/codemirror/codemirror.css:
+    newFile: null
+    oldFile: !uuid '461ae195ac38e90e06a654372899b2e950b43f55'
+  /public/store/static/UEditor/third-party/codemirror/codemirror.js:
+    newFile: null
+    oldFile: !uuid '083f2421b25d8339c6201fc922866d6302ec6fbd'
+  /public/store/static/UEditor/third-party/highcharts:
+    newFile: null
+    oldFile: !uuid '46e78cde7883dce23ade405276456b251a6a34a7'
+  /public/store/static/UEditor/third-party/highcharts/adapters:
+    newFile: null
+    oldFile: !uuid '1ad078afa31ece958145d518682dd8236f1167e1'
+  /public/store/static/UEditor/third-party/highcharts/adapters/mootools-adapter.js:
+    newFile: null
+    oldFile: !uuid '50fb0f4282037c735dc6d46644b3a11f8f399ee4'
+  /public/store/static/UEditor/third-party/highcharts/adapters/mootools-adapter.src.js:
+    newFile: null
+    oldFile: !uuid 'a310f0b725ca1f66c8b5f08d8f47c748cbef43de'
+  /public/store/static/UEditor/third-party/highcharts/adapters/prototype-adapter.js:
+    newFile: null
+    oldFile: !uuid '8a57ccaef718cbb4206aa778d2860d699b8fc53e'
+  /public/store/static/UEditor/third-party/highcharts/adapters/prototype-adapter.src.js:
+    newFile: null
+    oldFile: !uuid '9c8529e4c4e168be9fe91158a537ffca102aee12'
+  /public/store/static/UEditor/third-party/highcharts/adapters/standalone-framework.js:
+    newFile: null
+    oldFile: !uuid '70a92db80f4a01431c1c4cab16fbbc899c78b711'
+  /public/store/static/UEditor/third-party/highcharts/adapters/standalone-framework.src.js:
+    newFile: null
+    oldFile: !uuid '8e9831d09768b460c0cedd3c170b6dea0de8c068'
+  /public/store/static/UEditor/third-party/highcharts/highcharts-more.js:
+    newFile: null
+    oldFile: !uuid '85af9f569330aebdf4b66b45da0a077439dea977'
+  /public/store/static/UEditor/third-party/highcharts/highcharts-more.src.js:
+    newFile: null
+    oldFile: !uuid '39d49414a5d2aba58bf993f3bbe4712a0f8fd57f'
+  /public/store/static/UEditor/third-party/highcharts/highcharts.js:
+    newFile: null
+    oldFile: !uuid 'f8edd5f3ea95beec61828850266770575adf79fc'
+  /public/store/static/UEditor/third-party/highcharts/highcharts.src.js:
+    newFile: null
+    oldFile: !uuid 'a29b0fad1f1f58863188cdfffb67f8de0f3db850'
+  /public/store/static/UEditor/third-party/highcharts/modules:
+    newFile: null
+    oldFile: !uuid '00605fa286438dd3ddc79ac5a6182cb94e346713'
+  /public/store/static/UEditor/third-party/highcharts/modules/annotations.js:
+    newFile: null
+    oldFile: !uuid '53958c146a8aae7c95c82ce64c72ac7e17a453cc'
+  /public/store/static/UEditor/third-party/highcharts/modules/annotations.src.js:
+    newFile: null
+    oldFile: !uuid '40ce8df36a7d8d8e86f53f386d33fce2226a3b4e'
+  /public/store/static/UEditor/third-party/highcharts/modules/canvas-tools.js:
+    newFile: null
+    oldFile: !uuid '0ddf77ac656182a3129978e26e9dfed9d75beb08'
+  /public/store/static/UEditor/third-party/highcharts/modules/canvas-tools.src.js:
+    newFile: null
+    oldFile: !uuid '3ebbdcf784f5914039cae384c36ff79614baddea'
+  /public/store/static/UEditor/third-party/highcharts/modules/data.js:
+    newFile: null
+    oldFile: !uuid 'e309b39b3a230f2a9f23d7834a5c143ebbe01fd7'
+  /public/store/static/UEditor/third-party/highcharts/modules/data.src.js:
+    newFile: null
+    oldFile: !uuid 'd344799f07a6d8a4e1922ab40a77b440bfbeb0f6'
+  /public/store/static/UEditor/third-party/highcharts/modules/drilldown.js:
+    newFile: null
+    oldFile: !uuid '1df1acce6ce388dd72dcd4ed6aef67e2e6791e44'
+  /public/store/static/UEditor/third-party/highcharts/modules/drilldown.src.js:
+    newFile: null
+    oldFile: !uuid '558aed4df47d00419d337aed6477ed0b2eb72663'
+  /public/store/static/UEditor/third-party/highcharts/modules/exporting.js:
+    newFile: null
+    oldFile: !uuid '8ec202c48f0608b97ccef1dacfb9cde03820a042'
+  /public/store/static/UEditor/third-party/highcharts/modules/exporting.src.js:
+    newFile: null
+    oldFile: !uuid 'dfc825cc4ae9ae27c3d7d3433cec6f67edef778d'
+  /public/store/static/UEditor/third-party/highcharts/modules/funnel.js:
+    newFile: null
+    oldFile: !uuid 'd33b042cc9a0b43a3cda24551272496368b30723'
+  /public/store/static/UEditor/third-party/highcharts/modules/funnel.src.js:
+    newFile: null
+    oldFile: !uuid 'f9f5c0801e10df6cf8dab332c53344d590d316a5'
+  /public/store/static/UEditor/third-party/highcharts/modules/heatmap.js:
+    newFile: null
+    oldFile: !uuid '32f9a3f36677b17f7e19879ebcf6b9f49f2811f9'
+  /public/store/static/UEditor/third-party/highcharts/modules/heatmap.src.js:
+    newFile: null
+    oldFile: !uuid 'b7e356a135359fed6722963eee8c592924bc9e44'
+  /public/store/static/UEditor/third-party/highcharts/modules/map.js:
+    newFile: null
+    oldFile: !uuid '9b8a632d05ef5326b08b93430a05daae85ca3f5c'
+  /public/store/static/UEditor/third-party/highcharts/modules/map.src.js:
+    newFile: null
+    oldFile: !uuid '6af8e21e63914533678be7a86bb7455d5b9f1445'
+  /public/store/static/UEditor/third-party/highcharts/modules/no-data-to-display.js:
+    newFile: null
+    oldFile: !uuid 'c9ff9cac2f65e6272a9888013dbf47e5d068a53b'
+  /public/store/static/UEditor/third-party/highcharts/modules/no-data-to-display.src.js:
+    newFile: null
+    oldFile: !uuid 'bc278a8d9cd358d853f5cf4a1e99b7a33aa20c23'
+  /public/store/static/UEditor/third-party/highcharts/themes:
+    newFile: null
+    oldFile: !uuid 'e00edd2e7ef552538db31c246133e42fd78433c8'
+  /public/store/static/UEditor/third-party/highcharts/themes/dark-blue.js:
+    newFile: null
+    oldFile: !uuid '47e53e0d781bcaeccbb90fba0d284a5959156c17'
+  /public/store/static/UEditor/third-party/highcharts/themes/dark-green.js:
+    newFile: null
+    oldFile: !uuid '5edddf9adc9b3022996656358493204200707b59'
+  /public/store/static/UEditor/third-party/highcharts/themes/gray.js:
+    newFile: null
+    oldFile: !uuid '4e8f82a195a026f2c5787ceb99c861db4ea0e1e6'
+  /public/store/static/UEditor/third-party/highcharts/themes/grid.js:
+    newFile: null
+    oldFile: !uuid 'cee0657d4f63a3269a98d722bb625113a8e05d52'
+  /public/store/static/UEditor/third-party/highcharts/themes/skies.js:
+    newFile: null
+    oldFile: !uuid 'e942648e9dd828a35788044744134bfe8e15ef5e'
+  /public/store/static/UEditor/third-party/jquery-1.10.2.js:
+    newFile: null
+    oldFile: !uuid 'c5c648255c1574dcc95c506b82c25044f0972dfd'
+  /public/store/static/UEditor/third-party/jquery-1.10.2.min.js:
+    newFile: null
+    oldFile: !uuid 'da4170647dd102aa92a57cb4936ff6dfa58d78c2'
+  /public/store/static/UEditor/third-party/jquery-1.10.2.min.map:
+    newFile: null
+    oldFile: !uuid '4dc4920bb828e8bfb5f7efc8f4c074af9e2784ab'
+  /public/store/static/UEditor/third-party/snapscreen:
+    newFile: null
+    oldFile: !uuid '12ea3d9b3126e26280865fa9b3f9f0b76c9230cc'
+  /public/store/static/UEditor/third-party/snapscreen/UEditorSnapscreen.exe:
+    newFile: null
+    oldFile: !uuid 'db685084530d68b0fa1a78c3fc39dcdbeca8f7ab'
+  /public/store/static/UEditor/third-party/video-js:
+    newFile: null
+    oldFile: !uuid '421ff3adb52039167275eebaf1f1ab4ba75283cd'
+  /public/store/static/UEditor/third-party/video-js/font:
+    newFile: null
+    oldFile: !uuid 'dab9543837dd53a40f7458d996fe4210c5cac1b7'
+  /public/store/static/UEditor/third-party/video-js/font/vjs.eot:
+    newFile: null
+    oldFile: !uuid 'a075c19f0b5d7d01c0edf7741d1b733c8b123b72'
+  /public/store/static/UEditor/third-party/video-js/font/vjs.svg:
+    newFile: null
+    oldFile: !uuid 'f1af0e53b5c4824fcad49992ced6ac4df83c32dd'
+  /public/store/static/UEditor/third-party/video-js/font/vjs.ttf:
+    newFile: null
+    oldFile: !uuid 'eb2463791823ded2c3f9b1321e9fa3a331e8a5eb'
+  /public/store/static/UEditor/third-party/video-js/font/vjs.woff:
+    newFile: null
+    oldFile: !uuid 'c3f0f1d80718ac2a16e2daeaf82ce59ed76a3f06'
+  /public/store/static/UEditor/third-party/video-js/video-js.css:
+    newFile: null
+    oldFile: !uuid '2e8c332c450353a667e323050abee61487c76cad'
+  /public/store/static/UEditor/third-party/video-js/video-js.min.css:
+    newFile: null
+    oldFile: !uuid 'd3a1d601c7ac338fc8d1fbac94530c9c8870a369'
+  /public/store/static/UEditor/third-party/video-js/video-js.swf:
+    newFile: null
+    oldFile: !uuid '9cf537a5366c5e5ac7797d3364318839c8fcdcd8'
+  /public/store/static/UEditor/third-party/video-js/video.dev.js:
+    newFile: null
+    oldFile: !uuid 'd01ea600860b0bb258fb126b239544e6ca1cd969'
+  /public/store/static/UEditor/third-party/video-js/video.js:
+    newFile: null
+    oldFile: !uuid '01e5bc8e06934c5ee30a03311e9eb3118d8cd92e'
+  /public/store/static/UEditor/third-party/webuploader:
+    newFile: null
+    oldFile: !uuid '9a11f2430ba6b5fc596eb001bb60ddf6136c0f2b'
+  /public/store/static/UEditor/third-party/webuploader/Uploader.swf:
+    newFile: null
+    oldFile: !uuid '7c37835094f082cde5fc38b788dfaf36d8cd33cd'
+  /public/store/static/UEditor/third-party/webuploader/webuploader.css:
+    newFile: null
+    oldFile: !uuid '12f451f8000bf238769c2d8e0ed7963f71f9d36b'
+  /public/store/static/UEditor/third-party/webuploader/webuploader.custom.js:
+    newFile: null
+    oldFile: !uuid '583a0b8240386c59bc47e40b75f43af98b4362b5'
+  /public/store/static/UEditor/third-party/webuploader/webuploader.custom.min.js:
+    newFile: null
+    oldFile: !uuid '5c256b459491904e3c8e575368e86e0b3a233bde'
+  /public/store/static/UEditor/third-party/webuploader/webuploader.flashonly.js:
+    newFile: null
+    oldFile: !uuid '10f44969ff9ebb4a0026c790fcba3c44e2c349d4'
+  /public/store/static/UEditor/third-party/webuploader/webuploader.flashonly.min.js:
+    newFile: null
+    oldFile: !uuid '49c6b50b87829343f8c64a1146c0e3fc77943f5a'
+  /public/store/static/UEditor/third-party/webuploader/webuploader.html5only.js:
+    newFile: null
+    oldFile: !uuid '5dd481375e1a11c7918e970dd4cd5078644c8707'
+  /public/store/static/UEditor/third-party/webuploader/webuploader.html5only.min.js:
+    newFile: null
+    oldFile: !uuid '866dcde75576b0ab3e9ca6eefbbc3158f75980c7'
+  /public/store/static/UEditor/third-party/webuploader/webuploader.js:
+    newFile: null
+    oldFile: !uuid '39d9351a18954967de53a62a183dd9583a0494eb'
+  /public/store/static/UEditor/third-party/webuploader/webuploader.min.js:
+    newFile: null
+    oldFile: !uuid '8807780cbe2af412e2e90d04b15db8c20184d328'
+  /public/store/static/UEditor/third-party/webuploader/webuploader.withoutimage.js:
+    newFile: null
+    oldFile: !uuid '1b921c3a0ba0cb42fd9b503f46a5fd0f7f78c199'
+  /public/store/static/UEditor/third-party/webuploader/webuploader.withoutimage.min.js:
+    newFile: null
+    oldFile: !uuid '70a7d483bd1ec732b452d0683af563256d3370c8'
+  /public/store/static/UEditor/third-party/xss.min.js:
+    newFile: null
+    oldFile: !uuid '48d7880783e41801b3317a0b28add5b536b40593'
+  /public/store/static/UEditor/third-party/zeroclipboard:
+    newFile: null
+    oldFile: !uuid 'eaf51e940a7b08be617a345c1927d67d4c2cca3b'
+  /public/store/static/UEditor/third-party/zeroclipboard/ZeroClipboard.js:
+    newFile: null
+    oldFile: !uuid '1d5d868d75056ea3564ba01ea4f835ec6a7511f9'
+  /public/store/static/UEditor/third-party/zeroclipboard/ZeroClipboard.min.js:
+    newFile: null
+    oldFile: !uuid 'c500f2380f10b824832ee8de9ab58391bc08c609'
+  /public/store/static/UEditor/third-party/zeroclipboard/ZeroClipboard.swf:
+    newFile: null
+    oldFile: !uuid 'ed1c9d21c3f031d224248296564220a77dcd5265'
+  /public/store/static/UEditor/ueditor.all.js:
+    newFile: null
+    oldFile: !uuid 'dc88412743ffa08b82256d71a0cbc560370104cd'
+  /public/store/static/UEditor/ueditor.all.min.js:
+    newFile: null
+    oldFile: !uuid '1f48238c849e0760ac755e2f30da25cd1f5759ba'
+  /public/store/static/UEditor/ueditor.config.js:
+    newFile: null
+    oldFile: !uuid '948def1f53522a36b094cccc8e7957d4d0d7fd64'
+  /public/store/static/UEditor/ueditor.parse.js:
+    newFile: null
+    oldFile: !uuid '5e770745b11c659535f2d6e3333b5d336d33ba1c'
+  /public/store/static/UEditor/ueditor.parse.min.js:
+    newFile: null
+    oldFile: !uuid 'd996fd0cab40abdf67e98a2c7f55d7e35cf7202d'
+  /public/store/static/getpoint:
+    newFile: null
+    oldFile: !uuid '3035ad88bf3bc73961377f01b0134a0aaa48ec85'
+  /public/store/static/getpoint/index.html:
+    newFile: null
+    oldFile: !uuid '35e43a78084ad3b06b439bc2decb4c1dfc69169e'
+  /public/store/static/img:
+    newFile: null
+    oldFile: !uuid '58a9e1fba469a4dd72f30c07e80746f58a0c3b2d'
+  /public/store/static/img/category:
+    newFile: null
+    oldFile: !uuid '3ffbc3208af4e8f09efda37f56dad066b4f2db6d'
+  /public/store/static/img/category/10.png:
+    newFile: null
+    oldFile: !uuid '3fddf61ba35bccf8bf73b374d57b0cb570cf36bc'
+  /public/store/static/img/category/11.png:
+    newFile: null
+    oldFile: !uuid '8fa8c337d8267d1ff3b83857a5799e0cda324aa1'
+  /public/store/static/img/category/20.png:
+    newFile: null
+    oldFile: !uuid '160eeb962303f0dcfedf42442296ff0fd859c614'
+  /public/store/static/img/category/30.png:
+    newFile: null
+    oldFile: !uuid '18df41a726fe26d118db572fd4f072a1b46ccac7'
+  /public/store/static/img/statistics:
+    newFile: null
+    oldFile: !uuid '5bd4bbb0c0bbed4d02b082e2de4d9beb45a8f4dc'
+  /public/store/static/img/statistics/ranking:
+    newFile: null
+    oldFile: !uuid 'a76daedce09401fbf247429d68f1f1097aa3bd15'
+  /public/store/static/img/statistics/ranking/01.png:
+    newFile: null
+    oldFile: !uuid 'b592767bb66e7b671b6283715fe4d8cb6cd5ea22'
+  /public/store/static/img/statistics/ranking/02.png:
+    newFile: null
+    oldFile: !uuid '4f34bad5701819ef5e42b95916e7d2dbd83afb61'
+  /public/store/static/img/statistics/ranking/03.png:
+    newFile: null
+    oldFile: !uuid '8abd954bfc49082294d846f65cc98e4a521664b8'
+  /public/temp:
+    newFile: null
+    oldFile: !uuid '71d1f1aa02e6ecb4f13e1cc36cd95abb538f0d4a'
+  /public/temp/.gitignore:
+    newFile: null
+    oldFile: !uuid 'a3a0c8b5f48c0260a4cb43aa577f9b18896ee280'
+  /public/uploads:
+    newFile: null
+    oldFile: !uuid '71d1f1aa02e6ecb4f13e1cc36cd95abb538f0d4a'
+  /public/uploads/.gitignore:
+    newFile: null
+    oldFile: !uuid 'a3a0c8b5f48c0260a4cb43aa577f9b18896ee280'
+  /route:
+    newFile: null
+    oldFile: !uuid 'cc9332208091f2e0bb1aa1604c72cb30391babc5'
+  /route/app.php:
+    newFile: null
+    oldFile: !uuid 'e947edd5e434ef4598070bfe68c533915194825e'
+  /runtime:
+    newFile: null
+    oldFile: !uuid '71d1f1aa02e6ecb4f13e1cc36cd95abb538f0d4a'
+  /runtime/.gitignore:
+    newFile: null
+    oldFile: !uuid 'a3a0c8b5f48c0260a4cb43aa577f9b18896ee280'
+  /think:
+    newFile: null
+    oldFile: !uuid '7461bc622d3fef42166340c0af5d601767e36791'
+  /vendor:
+    newFile: !uuid '7ed281e39543faffeb3df66ee57c1bc721fb4af1'
+    oldFile: !uuid 'f56ea47de94593d077fcfdb624153cebef12aeed'
+  /vendor/autoload.php:
+    newFile: null
+    oldFile: !uuid 'ec9eefeb1b1f8ff58fe8294b26d388f5b880124c'
+  /vendor/services.php:
+    newFile: null
+    oldFile: !uuid 'f979bf2d053662420953b0972d7aced979eb9554'
   /version.json:
-    newFile: !uuid '199a03ddebf856f2b427b9a2da5bad6149e6949b'
-    oldFile: !uuid '9d7f1e020ba4b645c43a05d4cb17fc8832cdb120'
-gitCommitId: !uuid '00db7241ce9caf20941d7d34defbf03beacf2f01'
+    newFile: null
+    oldFile: !uuid '199a03ddebf856f2b427b9a2da5bad6149e6949b'
+  /数据库修改记录.txt:
+    newFile: null
+    oldFile: !uuid '12deb6312adffe2958388de2b769ba938cbd9e00'
+  /更新日志.txt:
+    newFile: null
+    oldFile: !uuid 'f03e3ca946c64b6ac93bdadbb944299c205a5d87'
+gitCommitId: !uuid '2c8bb1fc6b88eaadabbb50dbeb63670d09f2651d'
 renames: {
   }
-revisionId: 268
+revisionId: 269
