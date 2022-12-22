@@ -2,31 +2,28 @@
 branches: {
   }
 fileChange:
-  /vendor:
-    newFile: !uuid 'd74e16edf3b4c74dbd3df044ddf29a4bd10ebcaa'
-    oldFile: !uuid 'db279e4b40e39a9ac89d924ba3f7a39fef9ee1c1'
-  /vendor/qiniu:
-    newFile: !uuid 'f0c7ed61652bd0ccdcb647bcd1f7d11d0fde1796'
-    oldFile: !uuid 'dafda59b37554618894344a712102e2a312e020b'
-  /vendor/qiniu/php-sdk:
-    newFile: !uuid '0d7f7333963e185eabfaea700b0eb4a6b1fa6072'
-    oldFile: !uuid 'a47a5398446463435f784a3678eab1a1a65215e3'
-  /vendor/qiniu/php-sdk/src:
-    newFile: !uuid '980f2410852064c462e902b5d28ee03cfb36ea98'
-    oldFile: !uuid '4f1cb31f224078dd46d609d6b337009c486c7810'
-  /vendor/qiniu/php-sdk/src/Qiniu:
-    newFile: !uuid '7cf321fdd2fca0bc86b637864767954ceebeb2b3'
-    oldFile: !uuid 'f8f7adbd2f32ac3fb80853ce5df5f1667e0c44f6'
-  /vendor/qiniu/php-sdk/src/Qiniu/Auth.php:
-    newFile: !uuid '90231e926944ca2d3c76ca4e89bc01dee8703365'
-    oldFile: !uuid '22cd3953e636caa51e7163ac702b017e41b0ffeb'
-  /vendor/qiniu/php-sdk/src/Qiniu/Http:
-    newFile: !uuid '8f55189c07fc40b3654f7d07cd7c805dd7425dd1'
-    oldFile: !uuid '5992eaf0a1cbeff81e1f0b3df175a55e5a0bb282'
-  /vendor/qiniu/php-sdk/src/Qiniu/Http/Header.php:
-    newFile: !uuid '7fa3fafbcf8790c154f11c52be14f0379f71742a'
-    oldFile: !uuid 'cac8d824ea0a0bee718e2f5a724c7484198bf920'
-gitCommitId: !uuid '67880261ef72c71319587b7885f82389752e9d10'
+  /app:
+    newFile: !uuid 'b6646a51b53a243919dd14a8ac3bfa66c0eb8c5a'
+    oldFile: !uuid 'd4ee30cfa3187c747ec0f474eaef5829fc1573bd'
+  /app/api:
+    newFile: !uuid '0581439f2280a2d75df5b3724a414599a493a181'
+    oldFile: !uuid '69abad535e511c47fb15dc0c78af0bb22b260f18'
+  /app/api/controller:
+    newFile: !uuid 'dcbd62bd3f71e30ad5ef1feffd1645ec132f1358'
+    oldFile: !uuid '444c8ba136aeefc6744c7b2888a535582d075ae0'
+  /app/api/controller/Upload.php:
+    newFile: !uuid '3af3f771b92bd8909e761b40aa41ea9dd1ea3110'
+    oldFile: !uuid '46e1572546890f0a73ef3043fdf50f365b57c01a'
+  /app/api/controller/User.php:
+    newFile: !uuid '65c6ad47637134bb42a5b1e8ce8b4a82782d8af3'
+    oldFile: !uuid 'e45cf32474e4b2f35d87f2cf06d217efdf0c9ea5'
+  /app/api/model:
+    newFile: !uuid '7fa1652b20e88d40b0ae44be7ca96f665806e226'
+    oldFile: !uuid '6b812091b9685beab36d5915dcdfba9c6315380e'
+  /app/api/model/User.php:
+    newFile: !uuid 'ab7b660bc1390fa847d00d453891b9a171adc42b'
+    oldFile: !uuid 'e580e5ca53447db7680e3bd5c6bfbaf6f1810582'
+gitCommitId: !uuid '0c5a7453529a49cc324a2a96475d4ae65f90a85f'
 renames: {
   }
-revisionId: 286
+revisionId: 287
