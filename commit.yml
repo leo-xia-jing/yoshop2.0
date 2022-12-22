@@ -3,21 +3,18 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid '1965456d34ffb1aeb28c4273e9806e56dc59e20d'
-    oldFile: !uuid 'b6646a51b53a243919dd14a8ac3bfa66c0eb8c5a'
-  /app/api:
-    newFile: !uuid 'a24a56d93813dc67ffd73ad07258f8c4d6a055b6'
-    oldFile: !uuid '0581439f2280a2d75df5b3724a414599a493a181'
-  /app/api/service:
-    newFile: !uuid '6a22c6ca47dd9dc486cb7630d5a5aee5125a305e'
-    oldFile: !uuid '4544531d21bc3f2f91be7517b416fb3dcce275a4'
-  /app/api/service/passport:
-    newFile: !uuid '7a68586fb046579445d4f322f6db10a3341956c7'
-    oldFile: !uuid '8bb620774c9d7745b926dfcca63671417203eb52'
-  /app/api/service/passport/Login.php:
-    newFile: !uuid '6681ded4c0c8f4dfe4c336fcdb38ea1214116087'
-    oldFile: !uuid 'cea2be9b628a47076cccb64e04d7d3ed9e0afc00'
-gitCommitId: !uuid '8597d1f7c710d0ea0b159e2910ac682eec76a2e2'
+    newFile: !uuid '4795c499642b481601cbfc5cc125a274cfadd4c9'
+    oldFile: !uuid '1965456d34ffb1aeb28c4273e9806e56dc59e20d'
+  /app/store:
+    newFile: !uuid '01b417c8615eac45aa12072dfa12e8eb1d11cb71'
+    oldFile: !uuid 'b66cc1d32c2bfe111ffe87f3526410650c558266'
+  /app/store/model:
+    newFile: !uuid 'a3cb47aa17510f449aaf3aed5729bfa865bc5e1d'
+    oldFile: !uuid 'e69319b7d710bb900c0765f996f3dd3484f69b00'
+  /app/store/model/Order.php:
+    newFile: !uuid '1d1d7837f93a1a835e8a9eb4c4a43113f799d1b8'
+    oldFile: !uuid '17b29d22f323cc5dac45e8cc602436b965737cf9'
+gitCommitId: !uuid '6adc92334b158b00090479c91dec83e8739b12c5'
 renames: {
   }
-revisionId: 288
+revisionId: 289
