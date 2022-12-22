@@ -3,27 +3,21 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid 'b6646a51b53a243919dd14a8ac3bfa66c0eb8c5a'
-    oldFile: !uuid 'd4ee30cfa3187c747ec0f474eaef5829fc1573bd'
+    newFile: !uuid '1965456d34ffb1aeb28c4273e9806e56dc59e20d'
+    oldFile: !uuid 'b6646a51b53a243919dd14a8ac3bfa66c0eb8c5a'
   /app/api:
-    newFile: !uuid '0581439f2280a2d75df5b3724a414599a493a181'
-    oldFile: !uuid '69abad535e511c47fb15dc0c78af0bb22b260f18'
-  /app/api/controller:
-    newFile: !uuid 'dcbd62bd3f71e30ad5ef1feffd1645ec132f1358'
-    oldFile: !uuid '444c8ba136aeefc6744c7b2888a535582d075ae0'
-  /app/api/controller/Upload.php:
-    newFile: !uuid '3af3f771b92bd8909e761b40aa41ea9dd1ea3110'
-    oldFile: !uuid '46e1572546890f0a73ef3043fdf50f365b57c01a'
-  /app/api/controller/User.php:
-    newFile: !uuid '65c6ad47637134bb42a5b1e8ce8b4a82782d8af3'
-    oldFile: !uuid 'e45cf32474e4b2f35d87f2cf06d217efdf0c9ea5'
-  /app/api/model:
-    newFile: !uuid '7fa1652b20e88d40b0ae44be7ca96f665806e226'
-    oldFile: !uuid '6b812091b9685beab36d5915dcdfba9c6315380e'
-  /app/api/model/User.php:
-    newFile: !uuid 'ab7b660bc1390fa847d00d453891b9a171adc42b'
-    oldFile: !uuid 'e580e5ca53447db7680e3bd5c6bfbaf6f1810582'
-gitCommitId: !uuid '0c5a7453529a49cc324a2a96475d4ae65f90a85f'
+    newFile: !uuid 'a24a56d93813dc67ffd73ad07258f8c4d6a055b6'
+    oldFile: !uuid '0581439f2280a2d75df5b3724a414599a493a181'
+  /app/api/service:
+    newFile: !uuid '6a22c6ca47dd9dc486cb7630d5a5aee5125a305e'
+    oldFile: !uuid '4544531d21bc3f2f91be7517b416fb3dcce275a4'
+  /app/api/service/passport:
+    newFile: !uuid '7a68586fb046579445d4f322f6db10a3341956c7'
+    oldFile: !uuid '8bb620774c9d7745b926dfcca63671417203eb52'
+  /app/api/service/passport/Login.php:
+    newFile: !uuid '6681ded4c0c8f4dfe4c336fcdb38ea1214116087'
+    oldFile: !uuid 'cea2be9b628a47076cccb64e04d7d3ed9e0afc00'
+gitCommitId: !uuid '8597d1f7c710d0ea0b159e2910ac682eec76a2e2'
 renames: {
   }
-revisionId: 287
+revisionId: 288
