@@ -2,19 +2,79 @@
 branches: {
   }
 fileChange:
-  /app:
-    newFile: !uuid '4795c499642b481601cbfc5cc125a274cfadd4c9'
-    oldFile: !uuid '1965456d34ffb1aeb28c4273e9806e56dc59e20d'
-  /app/store:
-    newFile: !uuid '01b417c8615eac45aa12072dfa12e8eb1d11cb71'
-    oldFile: !uuid 'b66cc1d32c2bfe111ffe87f3526410650c558266'
-  /app/store/model:
-    newFile: !uuid 'a3cb47aa17510f449aaf3aed5729bfa865bc5e1d'
-    oldFile: !uuid 'e69319b7d710bb900c0765f996f3dd3484f69b00'
-  /app/store/model/Order.php:
-    newFile: !uuid '1d1d7837f93a1a835e8a9eb4c4a43113f799d1b8'
-    oldFile: !uuid '17b29d22f323cc5dac45e8cc602436b965737cf9'
-gitCommitId: !uuid '6adc92334b158b00090479c91dec83e8739b12c5'
-renames: {
-  }
-revisionId: 289
+  /public:
+    newFile: !uuid '1827cc4177e01af0c3e799a15ec24619422be5f9'
+    oldFile: !uuid '2682919fb706ab224b4cb41b4dcd9f52a9573825'
+  /public/index.html:
+    newFile: !uuid 'bdd09e8822608013f5d7f0282823caa566565dc5'
+    oldFile: !uuid 'ecb267cbfda6e442c08bf85a853168437688b134'
+  /public/static:
+    newFile: !uuid 'e61bfcd5975f1e387f0f9dd7f721ffa2e33b0490'
+    oldFile: !uuid 'db0b88b03813769d8bdf68e58df3d5e0216556e3'
+  /public/static/js:
+    newFile: !uuid 'd55db822613777a94ff30cedbf14c4433a523a2b'
+    oldFile: !uuid '58ee809e92640f40d367700e0ab3f2a3849eee28'
+  /public/static/js/index.614775f9.js:
+    newFile: null
+    oldFile: !uuid '2b6e13d22ea262e56c047d06778bcb6e802e6abc'
+  /public/static/js/index.d637ff0b.js:
+    newFile: !uuid '1dc7a01d1f39c139e53c24bfd07aeede36b61e79'
+    oldFile: null
+  /public/static/js/pages-address-index.77b82987.js:
+    newFile: !uuid '664d0473dc7f7dac25706450169137d96e6537fe'
+    oldFile: null
+  /public/static/js/pages-address-index.7e1324fd.js:
+    newFile: null
+    oldFile: !uuid '100f2444438f974b683a3a8e31372ab62ca106ef'
+  /public/static/js/pages-category-index.048ef5a0.js:
+    newFile: !uuid '257bdaf10dd52c56a976457dc51ad5aa4ba7d305'
+    oldFile: null
+  /public/static/js/pages-category-index.3c8d9e10.js:
+    newFile: null
+    oldFile: !uuid '41d6e280411c42f9574c728662db654e7b8bcf57'
+  /public/static/js/pages-category-index~pages-goods-detail.5751cfba.js:
+    newFile: !uuid '6c596f989350423264bd5d7e8d3a05ea583fbf91'
+    oldFile: null
+  /public/static/js/pages-category-index~pages-goods-detail.641b2610.js:
+    newFile: null
+    oldFile: !uuid '1ebc9b148c79ce7a38952241a118ebce7886102c'
+  /public/static/js/pages-checkout-index.a9cd6168.js:
+    newFile: !uuid '66d00ad9fe2001e86112d959552f90fed05024c3'
+    oldFile: null
+  /public/static/js/pages-checkout-index.e39a4c61.js:
+    newFile: null
+    oldFile: !uuid 'ff8ec6d7d1dc48432d5b00e54f7fd7a12531955e'
+  /public/static/js/pages-custom-index~pages-index-index.7c86671d.js:
+    newFile: !uuid 'd62d676284c62b5cdd77c4a1147a30308ce4670e'
+    oldFile: null
+  /public/static/js/pages-custom-index~pages-index-index.a6db4f2e.js:
+    newFile: null
+    oldFile: !uuid 'fb04c96ba22bc741ca7c85f3e262b13d3dc06bc1'
+  /public/static/js/pages-order-comment-index.439bd186.js:
+    newFile: !uuid '44baa680001d954660093b1058ba2eb6b2c06e29'
+    oldFile: null
+  /public/static/js/pages-order-comment-index.959f5662.js:
+    newFile: null
+    oldFile: !uuid 'b55d11b940060aed7a9dcdc07d17c4c232a359e7'
+  /public/static/js/pages-order-detail.682e9b10.js:
+    newFile: null
+    oldFile: !uuid 'b135a1ba30d4010cdda752fb9b5232f47f6b2b4d'
+  /public/static/js/pages-order-detail.fc411614.js:
+    newFile: !uuid '9fe24afc268e936ec4b39ccdb800c6a8059bd32e'
+    oldFile: null
+  /public/static/js/pages-refund-apply.3bcc2370.js:
+    newFile: !uuid 'ae45a313ca5d6a1ab6a15401c397b870eff61b82'
+    oldFile: null
+  /public/static/js/pages-refund-apply.af4136db.js:
+    newFile: null
+    oldFile: !uuid 'f99d93087e1ce138ac455f0a38c44b3a80419a29'
+  /public/static/js/pages-refund-detail.07197294.js:
+    newFile: !uuid '5421ad7e2b537b51941e7fc825c881de77106972'
+    oldFile: null
+  /public/static/js/pages-refund-detail.b9b52614.js:
+    newFile: null
+    oldFile: !uuid '111fe30988cd5c6011bf871af91dc4fc365e3573'
+gitCommitId: !uuid 'd857a17b055e36e608615e03063f7b9912956c90'
+renames:
+  /public/static/js/index.d637ff0b.js: /public/static/js/index.614775f9.js
+revisionId: 290
