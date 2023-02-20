@@ -3,24 +3,21 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid '767264cdd7cb014e2cf53553f1e4e02854178a03'
-    oldFile: !uuid '60e4782d0d97613f88932d0b6af1752ffbe1462d'
-  /app/api:
-    newFile: !uuid '909456ce9096aee2d4277913b160d9c7178d8c37'
-    oldFile: !uuid 'f282fca6179af85aa61e4194c48dffacfb5a17f0'
-  /app/api/controller:
-    newFile: !uuid 'c6c28f933af20d13044ebecf9dc2c8e7dce7a95a'
-    oldFile: !uuid 'dcbd62bd3f71e30ad5ef1feffd1645ec132f1358'
-  /app/api/controller/Category.php:
-    newFile: !uuid '63876756b579a2615be1bfda407a2b896babad31'
-    oldFile: !uuid '94740eeb0b6ac1eaa2c412225a9721ad26b9fda8'
-  /app/api/model:
-    newFile: !uuid '7a3fd1d0344d81e5bcd24da96a7155afea31a5bf'
-    oldFile: !uuid 'baafc013bce5e57ac6817b8110bd089935673be7'
-  /app/api/model/Category.php:
-    newFile: !uuid '8c149812ee3a0e5fd671de0b2c43ecf4245bf89c'
-    oldFile: !uuid '6094978151ae62544b9575fb5c33a3488a4b25d4'
-gitCommitId: !uuid '2b27801d6afa4c516ca19de6f44c458225240699'
+    newFile: !uuid 'd2f01918c28b7f326a761bb471360120f6907e05'
+    oldFile: !uuid '767264cdd7cb014e2cf53553f1e4e02854178a03'
+  /app/common:
+    newFile: !uuid '187626fb84f07cb97e1ac8ebcd2fead5838840ca'
+    oldFile: !uuid '56d18cc6c5c68ecc21265950d61391a744eb7f52'
+  /app/common/model:
+    newFile: !uuid 'cf241bd7cb72ce8575fad5a0de88ad61d877670b'
+    oldFile: !uuid '13788e51bff4f92113aed4e2599ce7a5d0d30636'
+  /app/common/model/Region.php:
+    newFile: !uuid 'bbcf9b35e4432ad7f65ee9631a083003ac40c056'
+    oldFile: !uuid 'b844985e6dc424c9946baf1a0a87143924d4761c'
+  /数据库修改记录.txt:
+    newFile: !uuid 'f4872c8eda701698f7473e4993a3a492500775ce'
+    oldFile: !uuid 'a7de0b5ced1238ee05c1c9a8b4623fa346c9bb58'
+gitCommitId: !uuid '629cae0a76e80aa9aca7cb536b4d1eaa898aac6f'
 renames: {
   }
-revisionId: 301
+revisionId: 302
