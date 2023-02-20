@@ -2,31 +2,13 @@
 branches: {
   }
 fileChange:
-  /app:
-    newFile: !uuid '0bea677564b23405d760a7cb0b783c6f6c4bd493'
-    oldFile: !uuid '06127ee32ac32ce119db5697542bf5a688262f32'
-  /app/admin:
-    newFile: !uuid 'ccc76ff767d34b5089e3fcfeab6777b0bad9322a'
-    oldFile: !uuid '611ad80fc52a3c61a281ad6ae4f097283de0a08a'
-  /app/admin/controller:
-    newFile: !uuid 'c9f6da8def506516bbf57f8f8cb4dcdf673857d7'
-    oldFile: !uuid '60bdb3b2b191d2d2fd40ae71998725ab6bc11219'
-  /app/admin/controller/setting:
-    newFile: !uuid '244c8cdf8b6e37b7a097cd704a2b5b3f2eb9053e'
-    oldFile: !uuid '7eda792a5b4c17d30a129c6abe10142a6d01d28b'
-  /app/admin/controller/setting/Science.php:
-    newFile: !uuid '09222ad6920974e45463ffcd6f91072f51492b9e'
-    oldFile: !uuid '4089f628ba435b94c83541c0c501ece2bb23e0fd'
-  /public:
-    newFile: !uuid 'eb7e9ad1d372f033874317cc60e7c422f770ce9d'
-    oldFile: !uuid '1827cc4177e01af0c3e799a15ec24619422be5f9'
-  /public/install:
-    newFile: !uuid '061f3946d37bcf952b0a23f51d64c28f0538cd2a'
-    oldFile: !uuid '42682bfcdcc662de5870872daa1ee60122fa329f'
-  /public/install/index.php:
-    newFile: !uuid 'c581003e55d48a1d8ba9a32224cb5e6b667ca7e4'
-    oldFile: !uuid 'd376fd1d5bddb1953c164980f0fdd0d2f2eb87e3'
-gitCommitId: !uuid 'c8a02be759c6ba41e851272a51a4b36dd68ff41d'
+  /config:
+    newFile: !uuid '4ec081232323964f28eddfadd2be67064fd06b87'
+    oldFile: !uuid '954fe424f58a669ef7b7cedbb176dd65adc90210'
+  /config/filesystem.php:
+    newFile: !uuid 'cab062a3c9a724987e67bd1837f4efcd55269eab'
+    oldFile: !uuid '8ac3ea57a24fcae3a5ceb9e38b14e96c1ee4f9fa'
+gitCommitId: !uuid '389df9bc01f2894c51a8d84254412031f62fe07b'
 renames: {
   }
-revisionId: 293
+revisionId: 294
