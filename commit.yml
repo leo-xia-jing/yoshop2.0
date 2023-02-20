@@ -3,42 +3,24 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid '4d6c4977f9717d0567c76d1cd8b846e25304849e'
-    oldFile: !uuid 'df1aaf4b9eeaba693bb8717371d6d708107972e6'
-  /app/admin:
-    newFile: !uuid '00b3205dcb0927caefc654c2b167fec64c8ec3c3'
-    oldFile: !uuid 'de27304fba5a52c9d67b56520091130ee14b7f92'
-  /app/admin/service:
-    newFile: !uuid '7060368699ad729748b031b23d020dcf996de014'
-    oldFile: !uuid '1b9f787678f8a3ddc9ad56b9a88aa069b38f780e'
-  /app/admin/service/Cache.php:
-    newFile: !uuid '7dfb4cd556af0a07d267ab03c039d57febad65cb'
-    oldFile: !uuid '311c1d6b8dcad7d3855f00b08b0b9351e75ce93c'
+    newFile: !uuid '60e4782d0d97613f88932d0b6af1752ffbe1462d'
+    oldFile: !uuid '4d6c4977f9717d0567c76d1cd8b846e25304849e'
   /app/api:
-    newFile: !uuid '6253ab3737ce405d9e8a80a50d288442d269b327'
-    oldFile: !uuid 'cd37cd706be14ec3e60233997460e0e94c73f201'
-  /app/api/model:
-    newFile: !uuid 'baafc013bce5e57ac6817b8110bd089935673be7'
-    oldFile: !uuid '7fa1652b20e88d40b0ae44be7ca96f665806e226'
-  /app/api/model/UserAddress.php:
-    newFile: !uuid '5b1406e088973921b4129e06c95b3bf7a71c386b'
-    oldFile: !uuid '2fe3fe2c54a1fa062b0a09d66b86dd5b3926216f'
-  /app/store:
-    newFile: !uuid '72857fc136d6eb4e57d3191d85aae8f0319575aa'
-    oldFile: !uuid 'ff6e55b33d9e8b001a397c7fc74b98064be55a78'
-  /app/store/model:
-    newFile: !uuid '7c5a6716377d007cd053f56dda5805a25ab5c7ba'
-    oldFile: !uuid 'a3cb47aa17510f449aaf3aed5729bfa865bc5e1d'
-  /app/store/model/Goods.php:
-    newFile: !uuid '992b642b4dd79df29084d907fe642afc37cc44e4'
-    oldFile: !uuid '5e6bb95babce9c93be8273f5df661e6a3d90c580'
-  /app/store/model/store:
-    newFile: !uuid '9c8964d789151c181f732e525e2a1967cabf3d66'
-    oldFile: !uuid 'b62486902af715a74988e80d6ca031f1a13bd326'
-  /app/store/model/store/Address.php:
-    newFile: !uuid 'adae8124d1e4d405a61fe3807ed0b555ef30aaf8'
-    oldFile: !uuid 'fd47f2d997521110cd17377be6a981077220094c'
-gitCommitId: !uuid 'ecb60b0462f71b1df008d0e988da5ccdd2c38218'
+    newFile: !uuid 'f282fca6179af85aa61e4194c48dffacfb5a17f0'
+    oldFile: !uuid '6253ab3737ce405d9e8a80a50d288442d269b327'
+  /app/api/service:
+    newFile: !uuid '883fcf914f61c4914aebcb93b080fa7b2e7827ab'
+    oldFile: !uuid 'e38a0ef41b886b3dcefbd7ab833f007ba36f643c'
+  /app/api/service/passport:
+    newFile: !uuid 'e9612246aca8372e6bbf5d33b96e59d110421361'
+    oldFile: !uuid '7a68586fb046579445d4f322f6db10a3341956c7'
+  /app/api/service/passport/Login.php:
+    newFile: !uuid '6a5f2dda3532489e380c279dd2666a48b6fda7e2'
+    oldFile: !uuid '6681ded4c0c8f4dfe4c336fcdb38ea1214116087'
+  /app/api/service/passport/Party.php:
+    newFile: !uuid '39b77d172724935632be1e3f11b505e82c6ed7ce'
+    oldFile: !uuid '75e044462921fb5cdbed5a0efb8c3e2d23accd01'
+gitCommitId: !uuid 'b86b5861fa4ccbd2807a31d2d8f616b5e1775a67'
 renames: {
   }
-revisionId: 299
+revisionId: 300
