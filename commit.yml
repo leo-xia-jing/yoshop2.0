@@ -3,230 +3,78 @@ branches: {
   }
 fileChange:
   /public:
-    newFile: !uuid '88027d6e378efebf57b0c7dfb7d5331ac5508786'
-    oldFile: !uuid 'c6ceea980c930233a9b56ae7e3b43763774fcb07'
-  /public/store:
-    newFile: !uuid '0886ca25e56acdc0a67758317b960b5472bc1175'
-    oldFile: !uuid '8cbea5ae170e4b107bde673a15d247d8fd4912c2'
-  /public/store/config.js:
-    newFile: !uuid 'e40f8fd90a0afc7d26d449d2f27ac3d0b18628c1'
-    oldFile: !uuid 'a6e4d534020f36f2fc891501523297bf62ae7e5d'
-  /public/store/css:
-    newFile: !uuid 'af4753c46625dc7ee6e84c131b46cee3bd3d3970'
-    oldFile: !uuid '6173660257bac56ea9572a73d77d2359c0ea0ec2'
-  /public/store/css/app.1b689877.css:
-    newFile: null
-    oldFile: !uuid '6754e6a023419ac4827da1af25cbc6ca6592f8e9'
-  /public/store/css/app.8d44b29a.css:
-    newFile: !uuid 'b0612020dad9ea3d8b8be463058cd1102547bf70'
+    newFile: !uuid 'c3c71de017ba0087232a7e5f2370202bfa959d6a'
+    oldFile: !uuid '88027d6e378efebf57b0c7dfb7d5331ac5508786'
+  /public/admin:
+    newFile: !uuid '75326c74a12dacbcd46c3b2f273019c83762eb92'
+    oldFile: !uuid '71d82676bb912d4177355ab7cc1abbc6174ec165'
+  /public/admin/css:
+    newFile: !uuid 'ab49847a7b73a6d669ae02a54830fcd4a57c3d16'
+    oldFile: !uuid 'b211952891fac5674f4687a3a6c6651851c8954a'
+  /public/admin/css/app.38802d90.css:
+    newFile: !uuid '0b6e98b14f836946b15c10f7a5267f4029b08a0c'
     oldFile: null
-  /public/store/css/chunk-vendors.48359f83.css:
-    newFile: !uuid 'f53781a0039e38f4ba195509a4926cc5d6c3f889'
-    oldFile: null
-  /public/store/css/chunk-vendors.e44741d1.css:
+  /public/admin/css/app.cf03b734.css:
     newFile: null
-    oldFile: !uuid 'e380cee7b5aa343708fd9efa4d0fa4fd82801f0c'
-  /public/store/css/client.3b85af5b.css:
-    newFile: null
-    oldFile: !uuid 'f03a5d04829343065ca9843d751105730791e026'
-  /public/store/css/client.605b201b.css:
-    newFile: !uuid 'e44466c0030965672b0e94bb1afe39052be06d92'
+    oldFile: !uuid '0044e9d9f7f27252a46bb1739388c1db516f2a79'
+  /public/admin/css/menu.60d77172.css:
+    newFile: !uuid 'bb1e2ab9f421553080cadcd5a87732d105e2908f'
     oldFile: null
-  /public/store/css/content.424a1f6e.css:
-    newFile: !uuid '2f3b8032e9c34d452bf1b3e9a7acf25d2ed46baa'
-    oldFile: null
-  /public/store/css/content.9d0157e9.css:
+  /public/admin/css/menu.78a8d457.css:
     newFile: null
-    oldFile: !uuid '9e6a0dbaeba367d052893c5b261dfa83dc0a5189'
-  /public/store/css/content~goods~manage~market~order~page~store~user.aaf1ea22.css:
-    newFile: !uuid '881ccdba44b27fa11cb79a6f0599efc770c680dc'
+    oldFile: !uuid 'd2678e9547455d7f166845e0c4e8a09b6d83a1b7'
+  /public/admin/index.html:
+    newFile: !uuid 'c0c8a5171b672bf57569d102a4beae85da2fbee9'
+    oldFile: !uuid 'fdba9e65e4c5f1b971c5e5ac88434a6232834e73'
+  /public/admin/js:
+    newFile: !uuid '6f608dd36f6ecd0de66f62015ac9a816e23fdf56'
+    oldFile: !uuid 'e1fc41165755e375b969928d5231efaf91206549'
+  /public/admin/js/app.6ee67261.js:
+    newFile: !uuid 'a6b4cf556576fcc1c74b9ead1994a2664693ce04'
     oldFile: null
-  /public/store/css/content~goods~manage~market~order~page~store~user.bd1e620b.css:
+  /public/admin/js/app.dde605c0.js:
     newFile: null
-    oldFile: !uuid '48f51f811e5758cc7556c9aed2faf7a8965575cd'
-  /public/store/css/goods.4fb3ddbe.css:
-    newFile: null
-    oldFile: !uuid 'f52d7664f50e259ba132a4ab23592b7973b4653f'
-  /public/store/css/goods.85df43fc.css:
-    newFile: !uuid 'caa155d32a989fea74c486eb79651074a19c59b0'
+    oldFile: !uuid '070401cda05dd9c6ea95b7fe9313c1ee66ba27a0'
+  /public/admin/js/chunk-vendors.62fbd43f.js:
+    newFile: !uuid 'f03952d6808990b29153b1439e28f76b152cb1a7'
     oldFile: null
-  /public/store/css/index.b18f577e.css:
-    newFile: !uuid 'bb218330875fa08e3aeaec93c515f54c58c79369'
-    oldFile: null
-  /public/store/css/index.b65ed5f8.css:
+  /public/admin/js/chunk-vendors.71ab85de.js:
     newFile: null
-    oldFile: !uuid '33105353dffde1ece5fc58b34916997088cf8647'
-  /public/store/css/market.4712164c.css:
-    newFile: !uuid '7d3b8225c0f58206916474f7a4a47826c5a4e888'
-    oldFile: null
-  /public/store/css/market.5bb7fd4e.css:
+    oldFile: !uuid '1b0069de7054ceb985ed4333ab9678413a01d24e'
+  /public/admin/js/fail.714aa930.js:
     newFile: null
-    oldFile: !uuid '6aca48a76e7924f525b8f2b78643ed2b3e9073a0'
-  /public/store/css/order.58ad329f.css:
-    newFile: !uuid 'bb36bc3aa96ddfeb9e68df8a72e0621e92aedc36'
+    oldFile: !uuid '22503d31036e08076c8998e450394633f9e35463'
+  /public/admin/js/fail.d2e50570.js:
+    newFile: !uuid '22503d31036e08076c8998e450394633f9e35463'
     oldFile: null
-  /public/store/css/order.b47600db.css:
-    newFile: null
-    oldFile: !uuid 'e28a4e1c483e0986f391c32ef5229182af99885e'
-  /public/store/css/page.1a3c2bd8.css:
-    newFile: !uuid '7553c3342bbc69fb7b8dbcd749878a4afe802b37'
+  /public/admin/js/menu.717c059b.js:
+    newFile: !uuid '66c4da4706c51a8b2857d07c6f9c91f6d04a21c9'
     oldFile: null
-  /public/store/css/page.93faf7fa.css:
+  /public/admin/js/menu.f5e5356e.js:
     newFile: null
-    oldFile: !uuid 'ed3a192eb7911f479387482c188260ffde7c0465'
-  /public/store/css/passport.239bd1c8.css:
+    oldFile: !uuid '1302778430b3e741f945ef67f9d3c4817ac3582a'
+  /public/admin/js/setting.38687aaa.js:
     newFile: null
-    oldFile: !uuid '7197f815f389128ea1e7feeb4531031e1fe1e944'
-  /public/store/css/passport.37f4c92d.css:
-    newFile: !uuid 'e16195753cee42d0838180ad0225752c6ea03eae'
+    oldFile: !uuid 'fd3cb3991d87ff6b554752eb2fcf5be5b1eee31a'
+  /public/admin/js/setting.abb7a4ea.js:
+    newFile: !uuid 'fd3cb3991d87ff6b554752eb2fcf5be5b1eee31a'
     oldFile: null
-  /public/store/css/setting.35d80c3f.css:
-    newFile: !uuid '2032f462b6d51132fb4a9b51f1e3cfc220dd1cad'
+  /public/admin/js/store.3262476c.js:
+    newFile: !uuid 'dcca3927c51a3e16d6982fe60ec392c293081f09'
     oldFile: null
-  /public/store/css/setting.d53f6c09.css:
+  /public/admin/js/store.675530e8.js:
     newFile: null
-    oldFile: !uuid 'f5a2688d06e3a9c260142b077df1e40d600b0c1d'
-  /public/store/css/statistics.1629a69d.css:
-    newFile: !uuid '1b415a9c7b021423dc57cb4c31880a43d9bb600e'
+    oldFile: !uuid 'dcca3927c51a3e16d6982fe60ec392c293081f09'
+  /public/admin/js/user.1009d890.js:
+    newFile: !uuid '3d433ffba64959f2a45613850d951bcd12d18a97'
     oldFile: null
-  /public/store/css/statistics.9e18f348.css:
+  /public/admin/js/user.882ff694.js:
     newFile: null
-    oldFile: !uuid '704abceb61aca6aeb25fdf33e8ae9fc007329e29'
-  /public/store/css/store.12b5d97a.css:
-    newFile: !uuid '286eec05d8189efb9547c058316098645927f92b'
-    oldFile: null
-  /public/store/css/store.b0f3de60.css:
-    newFile: null
-    oldFile: !uuid '40f4bb2a113f2678bbba7fe70b9a7aea567cd74e'
-  /public/store/css/user.26a57afe.css:
-    newFile: null
-    oldFile: !uuid 'aba0b563a772c9437eb69a2f95c25afb08703098'
-  /public/store/css/user.d363de0c.css:
-    newFile: !uuid '20eba24eae649fc8fa00cadf0dd4eafd1a107185'
-    oldFile: null
-  /public/store/index.html:
-    newFile: !uuid 'f42dffc3ef3f338c93e372fded537fc8936bb675'
-    oldFile: !uuid '2cc68f85d599b0dca9228c2ff21c2cbadf47ab1c'
-  /public/store/js:
-    newFile: !uuid '38e835db79012b9b8db582ab433955748fc0f822'
-    oldFile: !uuid '29c9ca8c66d6bbe38356f1c0cd046c89f835a813'
-  /public/store/js/app.34b9622f.js:
-    newFile: !uuid '2ef9e34d342842a37a4515615344486dfbbbfc21'
-    oldFile: null
-  /public/store/js/app.66f3a6f1.js:
-    newFile: null
-    oldFile: !uuid 'ce566c4b0aff29ab24a7df4b042cbff7490b422f'
-  /public/store/js/chunk-vendors.3435efb7.js:
-    newFile: null
-    oldFile: !uuid 'eb5c3fb37fd24e24504922d129747a7ee777a3ce'
-  /public/store/js/chunk-vendors.d8af00dc.js:
-    newFile: !uuid '62e5892d52e0d1549ba7ede2a4e608e2c119a574'
-    oldFile: null
-  /public/store/js/client.a6e9baa5.js:
-    newFile: null
-    oldFile: !uuid 'ea20fcc46b55604aa369a2f051fb9ea6f7d178db'
-  /public/store/js/client.b2cc8d57.js:
-    newFile: !uuid '9bfb9702baa9ad053409626fde82854e4d68ce66'
-    oldFile: null
-  /public/store/js/content.52af1228.js:
-    newFile: null
-    oldFile: !uuid 'a34c369a227c6e47f6ff8cc0195c541c22ef7186'
-  /public/store/js/content.abd68ff5.js:
-    newFile: !uuid 'ccae379e6c77fca7eb52c9fef1ea515d6486c133'
-    oldFile: null
-  /public/store/js/content~goods~manage~market~order~page~store~user.6b666af9.js:
-    newFile: null
-    oldFile: !uuid '2fc3700365bfe990b895c7d8eea506de59d4903d'
-  /public/store/js/content~goods~manage~market~order~page~store~user.eb3c46ac.js:
-    newFile: !uuid 'b9cf05068c3dce4d3c09624bd35f8ab9cdc9dab5'
-    oldFile: null
-  /public/store/js/exception.18e0d28e.js:
-    newFile: null
-    oldFile: !uuid 'eeb1725dcaf8d049e010a16a56ca4eb3c6e12643'
-  /public/store/js/exception.a9362630.js:
-    newFile: !uuid 'a77dce54382615484bbf699c262acc3e17f948f2'
-    oldFile: null
-  /public/store/js/goods.04f8461d.js:
-    newFile: null
-    oldFile: !uuid '261c55fe307789696f63e930cc1c4b3750805e13'
-  /public/store/js/goods.e93c3f1c.js:
-    newFile: !uuid '64115af26ad61d14f94e5f47ec2ef6a0d2ebf7f0'
-    oldFile: null
-  /public/store/js/index.a3a9146b.js:
-    newFile: null
-    oldFile: !uuid '34d65a55369c0d0d423ed30033b544dd81bd2206'
-  /public/store/js/index.ba59c7ae.js:
-    newFile: !uuid '9bbb487e01ad37d7079d79245f59ab555a0f5e76'
-    oldFile: null
-  /public/store/js/index~statistics.abdf5181.js:
-    newFile: !uuid '8833de0ecf7a6164384251fae456e23fcc220709'
-    oldFile: null
-  /public/store/js/index~statistics.e0a7d411.js:
-    newFile: null
-    oldFile: !uuid '8833de0ecf7a6164384251fae456e23fcc220709'
-  /public/store/js/lang-zh-CN.2c21d126.js:
-    newFile: null
-    oldFile: !uuid 'e32496351929f92ccbd7f58f8ed1f3211fef7f8f'
-  /public/store/js/lang-zh-CN.ae72f715.js:
-    newFile: !uuid 'e32496351929f92ccbd7f58f8ed1f3211fef7f8f'
-    oldFile: null
-  /public/store/js/manage.048aefc6.js:
-    newFile: !uuid '4f29ca516192c62b0059022946515122f2adc8ac'
-    oldFile: null
-  /public/store/js/manage.05ced199.js:
-    newFile: null
-    oldFile: !uuid '789365560e9902a1d93fc726e070b163ef3d7803'
-  /public/store/js/market.353e36a1.js:
-    newFile: !uuid '6f95b91c93999137786ceda74b7b27979f1f39ef'
-    oldFile: null
-  /public/store/js/market.98957cb5.js:
-    newFile: null
-    oldFile: !uuid 'a8f4e5665d269adcdee3d893f7776aa14f78d23c'
-  /public/store/js/order.1ed0fcd9.js:
-    newFile: !uuid '2f8806adb9fdb41da02f2cfb973a0dd0f9f1483b'
-    oldFile: null
-  /public/store/js/order.97f249ea.js:
-    newFile: null
-    oldFile: !uuid 'bcc2e3a07bcc7f2be0e950a9a4a3f2bf33efbca4'
-  /public/store/js/page.06f6c9ea.js:
-    newFile: null
-    oldFile: !uuid '096b784c42fce61783dc2b64cbb677b7bd8869fc'
-  /public/store/js/page.c6992a7f.js:
-    newFile: !uuid '525496b640b41a015de2f666cbaffb5fa54fa61c'
-    oldFile: null
-  /public/store/js/passport.39c81a1e.js:
-    newFile: null
-    oldFile: !uuid '92176b8f0d39703be8f648918155e060c0687ba6'
-  /public/store/js/passport.73da4bdb.js:
-    newFile: !uuid '72887ac0b6a2c7084e56dbb8e6a37abaa8b1d5af'
-    oldFile: null
-  /public/store/js/setting.8a74b5a4.js:
-    newFile: null
-    oldFile: !uuid '78f98196db55cda6050807191062e0ef8cddfbe2'
-  /public/store/js/setting.aa4207f9.js:
-    newFile: !uuid '9ba99311894c69ff74b9ed798f0d733c7344a976'
-    oldFile: null
-  /public/store/js/statistics.45c2d389.js:
-    newFile: null
-    oldFile: !uuid 'd98453008e09e80790423d9794ec0ba61658673c'
-  /public/store/js/statistics.65f01962.js:
-    newFile: !uuid 'deaebb3d1b37be3091a5fe6b5e854d76c619698e'
-    oldFile: null
-  /public/store/js/store.633e5acb.js:
-    newFile: null
-    oldFile: !uuid '9593deb3fb5008e5f76dfa92b79d0551ccbf82a2'
-  /public/store/js/store.8e9f6fb8.js:
-    newFile: !uuid '04066f30857f7dc6fe28ac3d68fbe1a122c17c9c'
-    oldFile: null
-  /public/store/js/user.279dee4a.js:
-    newFile: !uuid 'd5d3cea742bed21ee37638539d9dc495013534e0'
-    oldFile: null
-  /public/store/js/user.49ab6b07.js:
-    newFile: null
-    oldFile: !uuid '7df6b508adb6e1a582757ac7962bea4a2aeac427'
-gitCommitId: !uuid '0d3ae0d30c0b056bf8bbb777ad1129f17c1e4f22'
+    oldFile: !uuid '3e38bdf12b7dbcc4497c87f67677755082e01270'
+gitCommitId: !uuid 'd07c06140e9d3c267fff57dc89fe2c468d5c2731'
 renames:
-  /public/store/css/app.8d44b29a.css: /public/store/css/app.1b689877.css
-  /public/store/js/index~statistics.abdf5181.js: /public/store/js/index~statistics.e0a7d411.js
-  /public/store/js/lang-zh-CN.ae72f715.js: /public/store/js/lang-zh-CN.2c21d126.js
-revisionId: 310
+  /public/admin/js/fail.d2e50570.js: /public/admin/js/fail.714aa930.js
+  /public/admin/js/setting.abb7a4ea.js: /public/admin/js/setting.38687aaa.js
+  /public/admin/js/store.3262476c.js: /public/admin/js/store.675530e8.js
+  /public/admin/js/user.1009d890.js: /public/admin/js/user.882ff694.js
+revisionId: 311
