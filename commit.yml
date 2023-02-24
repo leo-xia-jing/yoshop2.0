@@ -3,12 +3,21 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid '6ef75b388a0bc57f6c63db0f35eedd55247bcde2'
-    oldFile: !uuid 'd352831d1b93ddacd0c83968620fac1ef0d2d5b2'
-  /app/common.php:
-    newFile: !uuid '102c9d4b6fd46f90dbdbc0195c802f6c286104cd'
-    oldFile: !uuid '86611485347b33a847d414dfc7656a288286d74b'
-gitCommitId: !uuid '8c49f6ebdc83b328e94933f03f91292f3353854c'
+    newFile: !uuid 'e5e97b7651cc861b84e663fb9e5d386a20a89b98'
+    oldFile: !uuid '6ef75b388a0bc57f6c63db0f35eedd55247bcde2'
+  /app/api:
+    newFile: !uuid '73c1bae5592d219a9633e8d16ac74781b716d2bb'
+    oldFile: !uuid '8f41f359456d867398659d6f3dc9cd2601594802'
+  /app/api/service:
+    newFile: !uuid 'e950e5d9f1c76f79ebfc3f76be78475c1499cb14'
+    oldFile: !uuid '928c06c3e912fecfe86f40fe7b2ebffa03d4fce1'
+  /app/api/service/passport:
+    newFile: !uuid '99170a6c29af5270ad22798b759059aa933cc8be'
+    oldFile: !uuid '187b4ace3ddff432bf81d9703f84df54789d6f99'
+  /app/api/service/passport/Login.php:
+    newFile: !uuid 'd378efe99a55d6da73bd0976193285fb7dc43002'
+    oldFile: !uuid 'dbb318b923ae6d7d157b20d7c00cb7e34c2c69cc'
+gitCommitId: !uuid 'c79bba7a203a16b9afbf8534d485f81a9f123e0a'
 renames: {
   }
-revisionId: 315
+revisionId: 316
