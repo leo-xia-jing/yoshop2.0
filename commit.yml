@@ -3,12 +3,21 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid '79a458fe80f7960f6b7b9a6f779eb6abefef6e06'
-    oldFile: !uuid 'dbfcc6e0d2a6024f508a7dec8e3219c7fd2dcd54'
-  /app/common.php:
-    newFile: !uuid 'a7376ceb20c67665cf2137ef26b5acccff8978ab'
-    oldFile: !uuid '102c9d4b6fd46f90dbdbc0195c802f6c286104cd'
-gitCommitId: !uuid '801d5453a6127dab3fd8318b15f3a4b93e6ce938'
+    newFile: !uuid '056d38d8c9d950112b0ec817cf95826fa4311f13'
+    oldFile: !uuid '79a458fe80f7960f6b7b9a6f779eb6abefef6e06'
+  /app/store:
+    newFile: !uuid '90a0408e416aaf371f95ad5372b5b06de4ab912a'
+    oldFile: !uuid '5aeebd93f62719e8ac9fdfe07aadb99808f9ab37'
+  /app/store/service:
+    newFile: !uuid '7cee7e6d9d9ea23cb9e204a19184dd2b3c644b6a'
+    oldFile: !uuid '8361c2ee9830a953b7a111b3c2f80eb6d9968098'
+  /app/store/service/store:
+    newFile: !uuid '9bfe79a8e9bfc547be59c746dd2712051b34a6f4'
+    oldFile: !uuid '0fb6d9df3a20bb25727aa6975a7068eef3eefb4a'
+  /app/store/service/store/Role.php:
+    newFile: !uuid 'd7d96aebd5b215a18b6373e677e371d53106134d'
+    oldFile: !uuid '43f88bc355df8fff2bd3266f3377467f3df2bf0d'
+gitCommitId: !uuid '0fc0a506cd0281cf9eabd9b0c1993540a8a00fa6'
 renames: {
   }
-revisionId: 334
+revisionId: 335
