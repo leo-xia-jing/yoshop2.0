@@ -2,34 +2,16 @@
 branches: {
   }
 fileChange:
-  /app:
-    newFile: !uuid '2e8919ffe7337436ef6efa52e423602851903443'
-    oldFile: !uuid '3a5ec803e5046c985b38c45494ccb45b9f3c8012'
-  /app/common:
-    newFile: !uuid '23e10db11a6a7d4059573fdf23dc7d8c57fb51e0'
-    oldFile: !uuid 'b88f987a7ed017be2345be00f6a2f9786c186f97'
-  /app/common/model:
-    newFile: !uuid '0d2999a66b9ac6a5f9ddf695d17893e07fbdaf2a'
-    oldFile: !uuid 'aacfbe47276f0961f17c95a8c3ea90dd0a901f45'
-  /app/common/model/user:
-    newFile: !uuid 'd748c6dbe671f9cf1a022411d5fca8789fa57d39'
-    oldFile: !uuid '5d173e54cd64c65712c1156087f288bfc0a9fa4f'
-  /app/common/model/user/GradeLog.php:
-    newFile: !uuid '7a59fef257d3097405e16cab846a248b02067329'
-    oldFile: !uuid '564d8b63a234e8ea9d6511f2368ecb40782d5555'
-  /app/store:
-    newFile: !uuid '38dbc9d6520b7db10d877b84796d2f83bd6cfd29'
-    oldFile: !uuid 'd74e625855e9fa8c6fc018b839d4a95401c64fa6'
-  /app/store/model:
-    newFile: !uuid '44758580266aa27356793a2c828e8a4fb5ec6a0b'
-    oldFile: !uuid 'cb1fb9fb2fb5635ed8dfc069a0caf294e9fbc698'
-  /app/store/model/user:
-    newFile: !uuid '69dbad1088fd95796b17663bff754466c1520e09'
-    oldFile: !uuid '5d7f20f16cd01682b9affdbff12496fa507ea35c'
-  /app/store/model/user/GradeLog.php:
-    newFile: !uuid '1892ab3aeee4886af07c0611d511addb2f87ad64'
-    oldFile: !uuid '61961d034f7b1cdd8a1e43f5b4f82eab07066de7'
-gitCommitId: !uuid '3ece19ee3ab5d32fde8ec7da93865b5b31b02dcd'
+  /public:
+    newFile: !uuid '14eb4f0a9d9f28ad8b82dc479b98887ea2e9514c'
+    oldFile: !uuid '92a9df83652a0792d33f16f18fb27afcc7c9fe16'
+  /public/install:
+    newFile: !uuid 'bd1fe12806f3695f3e6c4f834263b33ed58298f8'
+    oldFile: !uuid 'fbb632f58c9669bb7a5bd7ce5bd757d921fab183'
+  /public/install/index.php:
+    newFile: !uuid '75a86392d0dbe1be833879f71f11418205fed541'
+    oldFile: !uuid 'a06ce79b8a7fd6cc23d969a14c9fa1bc02ad7f2f'
+gitCommitId: !uuid '1e53e4ea75f40bb5cb4659c250311598c50241bc'
 renames: {
   }
-revisionId: 327
+revisionId: 328
