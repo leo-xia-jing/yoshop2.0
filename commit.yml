@@ -3,21 +3,247 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid 'f848298abf9e7a8c808ca117f51fa7f7cdec5fa4'
-    oldFile: !uuid '76a2f14ae675c3256b848bd347889b38c06e7686'
-  /app/common:
-    newFile: !uuid 'b88f987a7ed017be2345be00f6a2f9786c186f97'
-    oldFile: !uuid 'ee1a03577f58637090a5dc5d7a06095b7c03ca0b'
-  /app/common/model:
-    newFile: !uuid 'aacfbe47276f0961f17c95a8c3ea90dd0a901f45'
-    oldFile: !uuid '155400e34f7442ae48d6a93b9b793d0e3029ed42'
-  /app/common/model/Region.php:
-    newFile: !uuid '6d11310e7326f27b508e1c2c2c888943f4b2e18d'
-    oldFile: !uuid '765692c5354c73913df7187a40f7be98caa8d987'
-  /数据库修改记录.txt:
-    newFile: !uuid 'c8ca623bfb7411289088cdc6eb547dfb89fa092e'
-    oldFile: !uuid 'dc9e39519a6a69aa0d03881302ec8d9b8ed6dcde'
-gitCommitId: !uuid 'fe48691712c71197ea3951156d9373c2e3efcb3f'
-renames: {
-  }
-revisionId: 325
+    newFile: !uuid '3a5ec803e5046c985b38c45494ccb45b9f3c8012'
+    oldFile: !uuid 'f848298abf9e7a8c808ca117f51fa7f7cdec5fa4'
+  /app/console:
+    newFile: null
+    oldFile: !uuid 'b1b5d5cac252aaa2ad54ef566a7634e90ece37c5'
+  /app/console/command:
+    newFile: null
+    oldFile: !uuid '3cba4fba2360759b77f294892f9487afffe2dc25'
+  /app/console/command/Timer.php:
+    newFile: null
+    oldFile: !uuid 'ca60586fbb3e350761383f1b8bef967ea2132cbc'
+  /app/console/library:
+    newFile: null
+    oldFile: !uuid 'd426a5c09270465b85d099d7f3c79de8608cf473'
+  /app/console/library/Tools.php:
+    newFile: null
+    oldFile: !uuid 'fb255849476244d0da39acd67e3e11ef504ac724'
+  /app/console/model:
+    newFile: null
+    oldFile: !uuid '60f03ad0d124870f08c2922bc9c32b893b539e02'
+  /app/console/model/Express.php:
+    newFile: null
+    oldFile: !uuid '6e3bdb014b739a6c3ba6f045366c1dfdf292217c'
+  /app/console/model/Goods.php:
+    newFile: null
+    oldFile: !uuid 'a82aeb99dd1f7f8bda681dcfd25ff6b112d6e068'
+  /app/console/model/GoodsSku.php:
+    newFile: null
+    oldFile: !uuid '64422a3d4729a038bb99deeaeee36a0381a3885b'
+  /app/console/model/Order.php:
+    newFile: null
+    oldFile: !uuid '49f39e8868d5717f6355136aa2fcb6befd1eeb24'
+  /app/console/model/OrderAddress.php:
+    newFile: null
+    oldFile: !uuid '14420a9b07983983a0f8f3ccff0f9f3f5b514c80'
+  /app/console/model/OrderGoods.php:
+    newFile: null
+    oldFile: !uuid 'ee26b47a163fc3d374e37a22890a52348304e09b'
+  /app/console/model/OrderRefund.php:
+    newFile: null
+    oldFile: !uuid '3868a684e44db43f7feea22af0a4eeebd7fa2349'
+  /app/console/model/Setting.php:
+    newFile: null
+    oldFile: !uuid 'ed2f45150897273b93f52ea82ba8a572ed905ed9'
+  /app/console/model/Store.php:
+    newFile: null
+    oldFile: !uuid 'bfe2f6b72fc399d298b036e81dc3d8b268c4bdee'
+  /app/console/model/User.php:
+    newFile: null
+    oldFile: !uuid 'c235b463ae1f14b8b2917213e3b477cd5099bcdc'
+  /app/console/model/UserCoupon.php:
+    newFile: null
+    oldFile: !uuid '8af32625108ba670dc657725fe1f0ec635b2ed86'
+  /app/console/model/recharge:
+    newFile: null
+    oldFile: !uuid '99d7b5dd7bc11f8a6acb78f4b24a888c2eb5cf99'
+  /app/console/model/recharge/Order.php:
+    newFile: null
+    oldFile: !uuid 'c9364d55b7b8b09b23eb96c1bb54c4b0ed978e4a'
+  /app/console/model/user:
+    newFile: null
+    oldFile: !uuid '8dd5d2e95942edda7a3566e03be7f3b49ea8105b'
+  /app/console/model/user/BalanceLog.php:
+    newFile: null
+    oldFile: !uuid '1d08f813c440b901929cf67a69f4889e1a8b07c8'
+  /app/console/model/user/Grade.php:
+    newFile: null
+    oldFile: !uuid '3f35bcb8bcc368d606dc4fecbacb0e89a80aec41'
+  /app/console/model/user/GradeLog.php:
+    newFile: null
+    oldFile: !uuid '7290b65131246e7e63941a98c2405c1809b3789c'
+  /app/console/model/user/PointsLog.php:
+    newFile: null
+    oldFile: !uuid '5a275ed14901a386213ed18116d843385b8c96b1'
+  /app/console/service:
+    newFile: null
+    oldFile: !uuid '7ae4fb599d0ea9f794a3f2751fb6afa6ba9a14d4'
+  /app/console/service/Order.php:
+    newFile: null
+    oldFile: !uuid '2f436d035b46bf1928b117c1cb7c748ab21befd6'
+  /app/console/service/UserCoupon.php:
+    newFile: null
+    oldFile: !uuid 'ad688df0ef3502c1ace6adf5848b9d743893ab82'
+  /app/console/service/UserGrade.php:
+    newFile: null
+    oldFile: !uuid '33422aad68cd8205caf8b37b2d195b554f8b1871'
+  /app/console/task:
+    newFile: null
+    oldFile: !uuid 'be86ceb84939b639b2c34e2d9ca1c526e9388b30'
+  /app/console/task/Order.php:
+    newFile: null
+    oldFile: !uuid 'd43b06426a6ec30570d6d5a5c1b6085bf8df7153'
+  /app/console/task/Store.php:
+    newFile: null
+    oldFile: !uuid '3a626b6ac89d3a1840304a1010669b2c51aacc19'
+  /app/console/task/Task.php:
+    newFile: null
+    oldFile: !uuid 'c5bc4a602b92ae84f22f06eaef071be0fd3082fe'
+  /app/console/task/UserCoupon.php:
+    newFile: null
+    oldFile: !uuid '7efce71483624273de9d1c70988a587137585db9'
+  /app/console/task/UserGrade.php:
+    newFile: null
+    oldFile: !uuid 'c56273fdcfd261e77415889b4533db4d61111ca3'
+  /app/timer:
+    newFile: !uuid '08f6f60ad300bbc340e8381ec6128c38daf2373e'
+    oldFile: null
+  /app/timer/command:
+    newFile: !uuid '74e623905370c509cc58dc73d05147ba1bb6d272'
+    oldFile: null
+  /app/timer/command/Timer.php:
+    newFile: !uuid '55e7364dc22285b61730e28629fc1841038daddb'
+    oldFile: null
+  /app/timer/library:
+    newFile: !uuid '0f6f2a6aeccb263deea66383570d82c7baa82cc6'
+    oldFile: null
+  /app/timer/library/Tools.php:
+    newFile: !uuid '9b1709837f9ab4615ebb45e675305bc6e20137b2'
+    oldFile: null
+  /app/timer/model:
+    newFile: !uuid 'a48fc40c30205fbc75fd8713fa984b9db077cc06'
+    oldFile: null
+  /app/timer/model/Express.php:
+    newFile: !uuid '9bc1c0f8bb20911a9cfa83a7a9495b81db22b786'
+    oldFile: null
+  /app/timer/model/Goods.php:
+    newFile: !uuid '8b4a8984628c1806041b8e50446e9e05255250e5'
+    oldFile: null
+  /app/timer/model/GoodsSku.php:
+    newFile: !uuid '1e6897df493c4821957c51d8e26d73b2edb0c145'
+    oldFile: null
+  /app/timer/model/Order.php:
+    newFile: !uuid '5e4489b719eec032b7812673fc63cf65f000a4e5'
+    oldFile: null
+  /app/timer/model/OrderAddress.php:
+    newFile: !uuid '60e66e52011dcfcfa20f43c73bc5ac97a6470eec'
+    oldFile: null
+  /app/timer/model/OrderGoods.php:
+    newFile: !uuid '41933f6ace5c3b7878a08003b7e5f00a04dcfff6'
+    oldFile: null
+  /app/timer/model/OrderRefund.php:
+    newFile: !uuid '85bb252e6b65946066084a913139d7fd3a506924'
+    oldFile: null
+  /app/timer/model/Setting.php:
+    newFile: !uuid 'ad14e85ec6253b0e0f9f3eda0fdc31a072d94134'
+    oldFile: null
+  /app/timer/model/Store.php:
+    newFile: !uuid '835f528df6af420405d061883837e0d988f7631f'
+    oldFile: null
+  /app/timer/model/User.php:
+    newFile: !uuid '9e82b5681bfeac31f7ff5542edaadd9308094452'
+    oldFile: null
+  /app/timer/model/UserCoupon.php:
+    newFile: !uuid '284f63f5bab86f09fcb5d8366865ec77896b8054'
+    oldFile: null
+  /app/timer/model/recharge:
+    newFile: !uuid '181cb916e537cfc0869beab611ada9b32f0dcb0d'
+    oldFile: null
+  /app/timer/model/recharge/Order.php:
+    newFile: !uuid '918096909852f44825e2e6df6182d14e0cc6268e'
+    oldFile: null
+  /app/timer/model/user:
+    newFile: !uuid '547b433ac3c061d5b2f9fc8edf1078c2c3afafde'
+    oldFile: null
+  /app/timer/model/user/BalanceLog.php:
+    newFile: !uuid '695caba09fd8ea7f5cb9f30e1f4cf208c8c43cf2'
+    oldFile: null
+  /app/timer/model/user/Grade.php:
+    newFile: !uuid '249e18f089812b5b8400d05ebd88d183244300db'
+    oldFile: null
+  /app/timer/model/user/GradeLog.php:
+    newFile: !uuid '492ab97b4f08c45288c531b063c921e11b08f835'
+    oldFile: null
+  /app/timer/model/user/PointsLog.php:
+    newFile: !uuid '602aaae1ea06d008482d6badb83a2d6dc7756c99'
+    oldFile: null
+  /app/timer/service:
+    newFile: !uuid '77fd4c7ecf356ff85c69f589b05c7070da7b6ed8'
+    oldFile: null
+  /app/timer/service/Order.php:
+    newFile: !uuid '1be514db9ac5bbad9e9406b24f37fecf60caaeaf'
+    oldFile: null
+  /app/timer/service/UserCoupon.php:
+    newFile: !uuid '04d788b7f2bd13be40bd00485ca0b67ce8c8e8d1'
+    oldFile: null
+  /app/timer/service/UserGrade.php:
+    newFile: !uuid '3fe32efdaac980f4e0a9768827961cccbf9d7367'
+    oldFile: null
+  /app/timer/task:
+    newFile: !uuid '5151635fc27b222a1d522f3e1dcfe2fa03fdcaaa'
+    oldFile: null
+  /app/timer/task/Order.php:
+    newFile: !uuid 'a4c67bd10271e6cef2038e15fc0c61f79ff2dbef'
+    oldFile: null
+  /app/timer/task/Store.php:
+    newFile: !uuid '5d91e5fef1ed413d77f9ff778bd53347d9708981'
+    oldFile: null
+  /app/timer/task/Task.php:
+    newFile: !uuid '7189f69721538770ff89b236f65393c6783d04a0'
+    oldFile: null
+  /app/timer/task/UserCoupon.php:
+    newFile: !uuid 'f6ca3826a06890c3c944ff6d9d163909d00a48bb'
+    oldFile: null
+  /app/timer/task/UserGrade.php:
+    newFile: !uuid '767d60a510f721f1c24b797c5bc9f7b808f07a75'
+    oldFile: null
+  /config:
+    newFile: !uuid '040fda55521c21eef6f6703044dcd6042028ef52'
+    oldFile: !uuid '4ec081232323964f28eddfadd2be67064fd06b87'
+  /config/app.php:
+    newFile: !uuid '2573cba838cb4da4c213328f391a3c0e1c96b525'
+    oldFile: !uuid '88dbbbc5e2fba8ae0490d372985ce9a78511d999'
+  /config/console.php:
+    newFile: !uuid 'f6008bfe73c9e7d452199ec20d7bc5ace61beb1f'
+    oldFile: !uuid '597f5d053f3b8cb45ffdfb541d715a012f88cbe8'
+gitCommitId: !uuid '85891912072b8c617deba52dca82c34d5ab22a94'
+renames:
+  /app/timer/command/Timer.php: /app/console/command/Timer.php
+  /app/timer/library/Tools.php: /app/console/library/Tools.php
+  /app/timer/model/Express.php: /app/console/model/Express.php
+  /app/timer/model/Goods.php: /app/console/model/Goods.php
+  /app/timer/model/GoodsSku.php: /app/console/model/GoodsSku.php
+  /app/timer/model/Order.php: /app/console/model/Order.php
+  /app/timer/model/OrderAddress.php: /app/console/model/OrderAddress.php
+  /app/timer/model/OrderGoods.php: /app/console/model/OrderGoods.php
+  /app/timer/model/OrderRefund.php: /app/console/model/OrderRefund.php
+  /app/timer/model/Setting.php: /app/console/model/Setting.php
+  /app/timer/model/Store.php: /app/console/model/Store.php
+  /app/timer/model/User.php: /app/console/model/User.php
+  /app/timer/model/UserCoupon.php: /app/console/model/UserCoupon.php
+  /app/timer/model/recharge/Order.php: /app/console/model/recharge/Order.php
+  /app/timer/model/user/BalanceLog.php: /app/console/model/user/BalanceLog.php
+  /app/timer/model/user/Grade.php: /app/console/model/user/Grade.php
+  /app/timer/model/user/GradeLog.php: /app/console/model/user/GradeLog.php
+  /app/timer/model/user/PointsLog.php: /app/console/model/user/PointsLog.php
+  /app/timer/service/Order.php: /app/console/service/Order.php
+  /app/timer/service/UserCoupon.php: /app/console/service/UserCoupon.php
+  /app/timer/service/UserGrade.php: /app/console/service/UserGrade.php
+  /app/timer/task/Order.php: /app/console/task/Order.php
+  /app/timer/task/Store.php: /app/console/task/Store.php
+  /app/timer/task/Task.php: /app/console/task/Task.php
+  /app/timer/task/UserCoupon.php: /app/console/task/UserCoupon.php
+  /app/timer/task/UserGrade.php: /app/console/task/UserGrade.php
+revisionId: 326
