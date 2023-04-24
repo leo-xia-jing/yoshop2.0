@@ -3,21 +3,52 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid 'e9201b0d8a008073132bd3200e93a2a43860f699'
-    oldFile: !uuid 'f4680545534785948893024262a16cdfee5876b9'
-  /app/admin:
-    newFile: !uuid 'c8e4c09a94c46d8d643537b9ec69a6a5d28c7240'
-    oldFile: !uuid 'bc41ab5349d3f4a7bf2a7c6bc5f54e1a82fe5e04'
-  /app/admin/controller:
-    newFile: !uuid '604bf0e9a146a398d714689faf7757170da62f91'
-    oldFile: !uuid '432ed48651884448b879218d2227fcb1c08396cb'
-  /app/admin/controller/setting:
-    newFile: !uuid 'bdd3b2b2720e4cb44da935a5c1d3f188836c5597'
-    oldFile: !uuid 'dd33805c2860df3c566f39f522ba9dafa7ae3764'
-  /app/admin/controller/setting/Science.php:
-    newFile: !uuid '30ab92524e2f35e96283639d3e2886bf51f9d0eb'
-    oldFile: !uuid '9a8a38dd8f1e4a1e7e7a10693457369297448867'
-gitCommitId: !uuid '98813325984e6220f94a1a58c9cc395cf22478c6'
-renames: {
-  }
-revisionId: 331
+    newFile: !uuid 'e7c25aeb410569bcc4eda07fae1dc05eca9967d0'
+    oldFile: !uuid 'e9201b0d8a008073132bd3200e93a2a43860f699'
+  /app/timer:
+    newFile: !uuid '826cc86ae0cb592e3bf1d20e0da60ba72fd8aca3'
+    oldFile: !uuid '08f6f60ad300bbc340e8381ec6128c38daf2373e'
+  /app/timer/controller:
+    newFile: !uuid '97cf51f168ca422fa2e6652e372d8fac07fc3320'
+    oldFile: null
+  /app/timer/controller/Order.php:
+    newFile: !uuid 'c8f799614a55a6655b6017f9444e889436694e3e'
+    oldFile: null
+  /app/timer/controller/Store.php:
+    newFile: !uuid '390bf8915bba7789bd4f6bde55bed1ebba7b2148'
+    oldFile: null
+  /app/timer/controller/Task.php:
+    newFile: !uuid '56d068ea2f52c3e30afd415f03c6033fae2c0b90'
+    oldFile: null
+  /app/timer/controller/UserCoupon.php:
+    newFile: !uuid '4744c988ad7e6148b43dc1f483c02e1964e89ac4'
+    oldFile: null
+  /app/timer/controller/UserGrade.php:
+    newFile: !uuid 'fa31fa8f5e69bd92fb6687919f72f8b6d1346f3d'
+    oldFile: null
+  /app/timer/task:
+    newFile: null
+    oldFile: !uuid '5151635fc27b222a1d522f3e1dcfe2fa03fdcaaa'
+  /app/timer/task/Order.php:
+    newFile: null
+    oldFile: !uuid 'a4c67bd10271e6cef2038e15fc0c61f79ff2dbef'
+  /app/timer/task/Store.php:
+    newFile: null
+    oldFile: !uuid '5d91e5fef1ed413d77f9ff778bd53347d9708981'
+  /app/timer/task/Task.php:
+    newFile: null
+    oldFile: !uuid '7189f69721538770ff89b236f65393c6783d04a0'
+  /app/timer/task/UserCoupon.php:
+    newFile: null
+    oldFile: !uuid 'f6ca3826a06890c3c944ff6d9d163909d00a48bb'
+  /app/timer/task/UserGrade.php:
+    newFile: null
+    oldFile: !uuid '767d60a510f721f1c24b797c5bc9f7b808f07a75'
+gitCommitId: !uuid '13dd836b361e3017cdac35df14fc5f19b4871166'
+renames:
+  /app/timer/controller/Order.php: /app/timer/task/Order.php
+  /app/timer/controller/Store.php: /app/timer/task/Store.php
+  /app/timer/controller/Task.php: /app/timer/task/Task.php
+  /app/timer/controller/UserCoupon.php: /app/timer/task/UserCoupon.php
+  /app/timer/controller/UserGrade.php: /app/timer/task/UserGrade.php
+revisionId: 332
