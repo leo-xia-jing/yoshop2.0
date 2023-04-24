@@ -2,10 +2,22 @@
 branches: {
   }
 fileChange:
-  /composer.json:
-    newFile: !uuid '49f8682f17ab97f93767c94bea1fe66aa3450f3c'
-    oldFile: !uuid 'bb2dccdb9f3309a09f262a674717c7c8d0015add'
-gitCommitId: !uuid 'fbff9cb447e51cabc48756109a8d0aac7d7beb49'
+  /app:
+    newFile: !uuid '931ae45fd5e384e76088a98514cad4a8aa71d389'
+    oldFile: !uuid 'c3ae9fa85238cc9c9756aa9ce6539c20f5a78967'
+  /app/common:
+    newFile: !uuid 'ee1a03577f58637090a5dc5d7a06095b7c03ca0b'
+    oldFile: !uuid '836167af730a494572aeddb84217757f42c9c056'
+  /app/common/model:
+    newFile: !uuid '155400e34f7442ae48d6a93b9b793d0e3029ed42'
+    oldFile: !uuid '28714de78ac632cbe44c5c17e2d52488a042eb68'
+  /app/common/model/wxapp:
+    newFile: !uuid 'd0315add79814321d83179df57365adeaff2cf4e'
+    oldFile: !uuid 'f953957ea85f2da444c4d896b6b1201f61a928e5'
+  /app/common/model/wxapp/Setting.php:
+    newFile: !uuid 'a92200321d869d1be89fee5deb113b7325962431'
+    oldFile: !uuid '43b4d23a74e47978ffdec10f586f07bad3318c13'
+gitCommitId: !uuid '7a3ef8b1a383fab5155b8095fc100d507018ead1'
 renames: {
   }
-revisionId: 322
+revisionId: 323
