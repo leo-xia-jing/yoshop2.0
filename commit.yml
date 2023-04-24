@@ -2,72 +2,10 @@
 branches: {
   }
 fileChange:
-  /public:
-    newFile: !uuid '30986b9a304bef1aa3b738aec009cc2255a1c062'
-    oldFile: !uuid '69642d38d7254e4ff49d11b30e14311172393b5f'
-  /public/store:
-    newFile: !uuid 'b1f57c85980516ff6acd0641e3444a14bcb71c30'
-    oldFile: !uuid '0886ca25e56acdc0a67758317b960b5472bc1175'
-  /public/store/css:
-    newFile: !uuid 'fd64fe051043df464babb07da10938cc8cf8df69'
-    oldFile: !uuid 'af4753c46625dc7ee6e84c131b46cee3bd3d3970'
-  /public/store/css/app.8d44b29a.css:
-    newFile: null
-    oldFile: !uuid 'b0612020dad9ea3d8b8be463058cd1102547bf70'
-  /public/store/css/app.b47a3a42.css:
-    newFile: !uuid '048a511c9620f9481120c4e2c1edd852ce76b417'
-    oldFile: null
-  /public/store/css/chunk-vendors.48359f83.css:
-    newFile: null
-    oldFile: !uuid 'f53781a0039e38f4ba195509a4926cc5d6c3f889'
-  /public/store/css/chunk-vendors.b21519f2.css:
-    newFile: !uuid '2412236c59b674720507898f5f5af8748d5c7417'
-    oldFile: null
-  /public/store/css/page.1a3c2bd8.css:
-    newFile: null
-    oldFile: !uuid '7553c3342bbc69fb7b8dbcd749878a4afe802b37'
-  /public/store/css/page.5b4113c6.css:
-    newFile: !uuid '85371fc34f2321c65318796804339674c3be9aa8'
-    oldFile: null
-  /public/store/index.html:
-    newFile: !uuid 'f6d8545f4d9d533541c3a708bc03922766fc9637'
-    oldFile: !uuid 'f42dffc3ef3f338c93e372fded537fc8936bb675'
-  /public/store/js:
-    newFile: !uuid '47a11c3e2e3842fd1f20642f85fde6656ea62fdb'
-    oldFile: !uuid '38e835db79012b9b8db582ab433955748fc0f822'
-  /public/store/js/app.34b9622f.js:
-    newFile: null
-    oldFile: !uuid '2ef9e34d342842a37a4515615344486dfbbbfc21'
-  /public/store/js/app.addd6201.js:
-    newFile: !uuid 'fe68a4092243aaf70e052e7ea5f21f400d9799d2'
-    oldFile: null
-  /public/store/js/chunk-vendors.9a34e4e3.js:
-    newFile: !uuid 'ecb6ed034a25de07c25ec8aeec69979685905aba'
-    oldFile: null
-  /public/store/js/chunk-vendors.d8af00dc.js:
-    newFile: null
-    oldFile: !uuid '62e5892d52e0d1549ba7ede2a4e608e2c119a574'
-  /public/store/js/client.56edafeb.js:
-    newFile: !uuid '48144a24bda180fa31d896d01785dfdc1c80b2e4'
-    oldFile: null
-  /public/store/js/client.b2cc8d57.js:
-    newFile: null
-    oldFile: !uuid '9bfb9702baa9ad053409626fde82854e4d68ce66'
-  /public/store/js/content~goods~manage~market~order~page~store~user.bf034d06.js:
-    newFile: !uuid '5939d16935ddb26eff2c76c676c3669ea085282a'
-    oldFile: null
-  /public/store/js/content~goods~manage~market~order~page~store~user.eb3c46ac.js:
-    newFile: null
-    oldFile: !uuid 'b9cf05068c3dce4d3c09624bd35f8ab9cdc9dab5'
-  /public/store/js/setting.2213448d.js:
-    newFile: !uuid '7d20f02ae5d0368e210ab628a6ecad78903aa2ca'
-    oldFile: null
-  /public/store/js/setting.aa4207f9.js:
-    newFile: null
-    oldFile: !uuid '9ba99311894c69ff74b9ed798f0d733c7344a976'
-gitCommitId: !uuid '895617e07471cfef4ee64985d09327ee3d8231ed'
-renames:
-  /public/store/css/page.5b4113c6.css: /public/store/css/page.1a3c2bd8.css
-  /public/store/js/chunk-vendors.9a34e4e3.js: /public/store/js/chunk-vendors.d8af00dc.js
-  /public/store/js/content~goods~manage~market~order~page~store~user.bf034d06.js: /public/store/js/content~goods~manage~market~order~page~store~user.eb3c46ac.js
-revisionId: 338
+  /version.json:
+    newFile: !uuid '78984146beac03ce6b710eec898be74f33fa0b4f'
+    oldFile: !uuid '085634f169cc315cca20e97ea07fcaf3dca9099c'
+gitCommitId: !uuid '8b3a75eb8b86667bf4bbeeb4366aed3a982375a2'
+renames: {
+  }
+revisionId: 339
