@@ -189,7 +189,7 @@ class Login extends BaseService
             return;
         }
         // 用户不存在: 创建一个新用户
-        $this->createUser($data['mobile'], $data['isParty'], $data['partyData']);
+        $this->createUser($data['mobile'], $data['isParty'], $data['partyData'],$data['realName']);
     }
 
     /**
@@ -203,7 +203,7 @@ class Login extends BaseService
      * @throws \think\db\exception\DbException
      * @throws \think\db\exception\ModelNotFoundException
      */
-    private function createUser(string $mobile, bool $isParty, array $partyData = []): void
+    private function createUser(string $mobile, bool $isParty, array $partyData = [],string $realName = ''): void
     {
         // 用户信息
         $data = [
@@ -211,7 +211,9 @@ class Login extends BaseService
             'nick_name' => !empty($mobile) ? hide_mobile($mobile) : '',
             'platform' => getPlatform(),
             'last_login_time' => time(),
-            'store_id' => $this->storeId
+            'store_id' => $this->storeId,
+            //增加真实姓名
+            'real_name'=>!empty($realName) ? $realName : ''
         ];
         // 写入用户信息(第三方)
         if ($isParty === true && !empty($partyData)) {
@@ -289,7 +291,7 @@ class Login extends BaseService
         }
         // 验证短信验证码是否匹配
 //        if (!CaptchaApi::checkSms($data['smsCode'], $data['mobile'])) {
-        if (false) { 
+        if (false) {
             throwError('短信验证码不正确');
         }
     }
