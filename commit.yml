@@ -2,96 +2,22 @@
 branches: {
   }
 fileChange:
-  /public:
-    newFile: !uuid 'a9f5696bd6c5b44cec81f559cf38ca58a2891e00'
-    oldFile: !uuid '30986b9a304bef1aa3b738aec009cc2255a1c062'
-  /public/admin:
-    newFile: !uuid '4df095d21014a3d4e584915e03f27fd3c3092321'
-    oldFile: !uuid '75326c74a12dacbcd46c3b2f273019c83762eb92'
-  /public/admin/css:
-    newFile: !uuid '1b645a0b5e9da417287c1ad5059958671ed6d8a6'
-    oldFile: !uuid 'ab49847a7b73a6d669ae02a54830fcd4a57c3d16'
-  /public/admin/css/app.38802d90.css:
-    newFile: null
-    oldFile: !uuid '0b6e98b14f836946b15c10f7a5267f4029b08a0c'
-  /public/admin/css/app.785d4a41.css:
-    newFile: !uuid '4473c14554f6b70fad3a2692a47d1780d16bc0be'
-    oldFile: null
-  /public/admin/css/chunk-vendors.00235f47.css:
-    newFile: !uuid 'ccd92fc4c112436e4a5a8187bd9a337fd484df15'
-    oldFile: null
-  /public/admin/css/chunk-vendors.91b23277.css:
-    newFile: null
-    oldFile: !uuid '6ad6b459dfc868308a1fd9ab09bfed6b4bde30f4'
-  /public/admin/css/menu.60d77172.css:
-    newFile: null
-    oldFile: !uuid 'bb1e2ab9f421553080cadcd5a87732d105e2908f'
-  /public/admin/css/menu.e80f05a9.css:
-    newFile: !uuid 'bb1e2ab9f421553080cadcd5a87732d105e2908f'
-    oldFile: null
-  /public/admin/css/setting.d1166568.css:
-    newFile: !uuid '1eaee5a0fe92ea270c0e73ebf3dea66fcbd6fe76'
-    oldFile: null
-  /public/admin/css/setting.f40851ed.css:
-    newFile: null
-    oldFile: !uuid '1eaee5a0fe92ea270c0e73ebf3dea66fcbd6fe76'
-  /public/admin/css/user.264af2fe.css:
-    newFile: !uuid '46ba387d2a3d3a38863b38b536ccd36d3b5619ba'
-    oldFile: null
-  /public/admin/css/user.359d5405.css:
-    newFile: null
-    oldFile: !uuid '46ba387d2a3d3a38863b38b536ccd36d3b5619ba'
-  /public/admin/index.html:
-    newFile: !uuid '6be5228d8727f7ed3fdaccacec82642049f19761'
-    oldFile: !uuid 'c0c8a5171b672bf57569d102a4beae85da2fbee9'
-  /public/admin/js:
-    newFile: !uuid '036faae3570dd85ffd0ab8139dc0809135d1731d'
-    oldFile: !uuid '6f608dd36f6ecd0de66f62015ac9a816e23fdf56'
-  /public/admin/js/app.09e51e0e.js:
-    newFile: !uuid '5e79a0a18021724e5d17128b342341041707fcbb'
-    oldFile: null
-  /public/admin/js/app.6ee67261.js:
-    newFile: null
-    oldFile: !uuid 'a6b4cf556576fcc1c74b9ead1994a2664693ce04'
-  /public/admin/js/chunk-vendors.24aef2d9.js:
-    newFile: !uuid '7ef7e00793849005d3fd22b61ca9646a25bd8900'
-    oldFile: null
-  /public/admin/js/chunk-vendors.62fbd43f.js:
-    newFile: null
-    oldFile: !uuid 'f03952d6808990b29153b1439e28f76b152cb1a7'
-  /public/admin/js/fail.510f7b9e.js:
-    newFile: !uuid '5759789d8dbbdd337e30a97e5a6426c6c3e97b81'
-    oldFile: null
-  /public/admin/js/fail.d2e50570.js:
-    newFile: null
-    oldFile: !uuid '22503d31036e08076c8998e450394633f9e35463'
-  /public/admin/js/menu.717c059b.js:
-    newFile: null
-    oldFile: !uuid '66c4da4706c51a8b2857d07c6f9c91f6d04a21c9'
-  /public/admin/js/menu.bc43c592.js:
-    newFile: !uuid '725468043d2b2943743af2ed7a22eb93253cfc4f'
-    oldFile: null
-  /public/admin/js/setting.6a66fb87.js:
-    newFile: !uuid '2b930fca3c0073730fe4b4641057362c1ea5e6e1'
-    oldFile: null
-  /public/admin/js/setting.abb7a4ea.js:
-    newFile: null
-    oldFile: !uuid 'fd3cb3991d87ff6b554752eb2fcf5be5b1eee31a'
-  /public/admin/js/store.3262476c.js:
-    newFile: null
-    oldFile: !uuid 'dcca3927c51a3e16d6982fe60ec392c293081f09'
-  /public/admin/js/store.e7286e80.js:
-    newFile: !uuid 'a0824f7fce642be290db5f8c637a14de9db354ed'
-    oldFile: null
-  /public/admin/js/user.1009d890.js:
-    newFile: null
-    oldFile: !uuid '3d433ffba64959f2a45613850d951bcd12d18a97'
-  /public/admin/js/user.1680abc8.js:
-    newFile: !uuid '18eb6e72d1e1eb13d40c8c6f5c43b5ae24b3abf4'
-    oldFile: null
-gitCommitId: !uuid '998539bb639e5058fa490cd0dbd8f43793770b58'
-renames:
-  /public/admin/css/menu.e80f05a9.css: /public/admin/css/menu.60d77172.css
-  /public/admin/css/setting.d1166568.css: /public/admin/css/setting.f40851ed.css
-  /public/admin/css/user.264af2fe.css: /public/admin/css/user.359d5405.css
-revisionId: 341
+  /vendor:
+    newFile: !uuid '878fc321117543f12c6ecd55765fead6fa2a18eb'
+    oldFile: !uuid '40d8855d16a7761beba4c8eb3a18e785389e2cec'
+  /vendor/workerman:
+    newFile: !uuid 'fdc44f80b607ab010bc3f7a256f4df3fd6b888a3'
+    oldFile: !uuid '3e3beed8996760e57cace4d38cbea5746083db55'
+  /vendor/workerman/workerman:
+    newFile: !uuid '238edf44a643443f256935ad869f69281d14e4ba'
+    oldFile: !uuid '154a339a8b369ed74d5dee673fef70b79d1fe567'
+  /vendor/workerman/workerman/Events:
+    newFile: !uuid 'b05513167b5f67405b3d9f489588728fed05f05a'
+    oldFile: !uuid '256cdbc141992e13c215689948272bace3217ad4'
+  /vendor/workerman/workerman/Events/Select.php:
+    newFile: !uuid '9461751631d67f170286083a8822ac302c4080d4'
+    oldFile: !uuid '1939ed306aaf53fd61856cd373328da86dc2e724'
+gitCommitId: !uuid '9e9eb79ae6ed2fef981ca6301acb04b2e9e51bb1'
+renames: {
+  }
+revisionId: 342
