@@ -144,7 +144,7 @@ class WxPay extends WxBase
             $this->returnCode(false, '签名失败');
         }
         // 订单支付成功业务处理
-        $status = $model->onPaySuccess(OrderPayTypeEnum::WECHAT, $data);
+        $status = $model->onPaySuccess($order['pay_type'], $data);
         if ($status == false) {
             $this->returnCode(false, $model->getError());
         }

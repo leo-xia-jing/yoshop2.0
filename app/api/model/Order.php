@@ -94,6 +94,9 @@ class Order extends OrderModel
         if ($payType == OrderPayTypeEnum::WECHAT) {
             return $this->onPaymentByWechat($order);
         }
+//        elseif ($payType == OrderPayTypeEnum::CONSTITUTE){
+//            return $this->onPaymentByCONSTITUTE($order);
+//        }
         return [];
     }
 
@@ -162,6 +165,25 @@ class Order extends OrderModel
         $service = new OrderPaySuccesService($orderNo);
         // 发起余额支付
         $status = $service->onPaySuccess(OrderPayTypeEnum::BALANCE);
+        if (!$status) {
+            $this->error = $service->getError();
+        }
+        return $status;
+    }
+
+    /**
+     * 发起组合支付逻辑
+     * @param string $orderNo
+     * @return bool
+     * @author wws
+     * @date 2023-05-08 15:55
+     */
+    public function onPaymentByConstitute(string $orderNo)
+    {
+        // 获取订单详情
+        $service = new OrderPaySuccesService($orderNo);
+        // 扣减余额、更新订单信息
+        $status = $service->onConstitutePay(OrderPayTypeEnum::CONSTITUTE);
         if (!$status) {
             $this->error = $service->getError();
         }

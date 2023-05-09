@@ -80,4 +80,18 @@ class User extends Controller
         return $this->renderError($model->getError() ?: '操作失败');
     }
 
+    /**
+     * 修改组织架构
+     * @param int $userId
+     * @return array
+     */
+    public function org(int $userId)
+    {
+        // 用户详情
+        $model = UserModel::detail($userId);
+        if ($model->updateOrg($this->postForm())) {
+            return $this->renderSuccess('操作成功');
+        }
+        return $this->renderError($model->getError() ?: '操作失败');
+    }
 }

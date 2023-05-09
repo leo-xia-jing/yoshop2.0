@@ -650,6 +650,17 @@ class Checkout extends BaseService
             // 创建订单事件
             return $this->createOrderEvent($order);
         });
+        //判断是否是组合支付
+        if ($status && $order['payType'] == OrderPayTypeEnum::CONSTITUTE) {
+            //余额足够的情况下，把支付方式改为余额支付
+            if($this->user['balance'] >= $this->model['pay_price']){
+                $order['payType'] = OrderPayTypeEnum::BALANCE;
+                $this->model['pay_type'] = OrderPayTypeEnum::BALANCE;
+                $this->param['payType'] = OrderPayTypeEnum::BALANCE;
+            }else{
+                return $this->model->onPaymentByConstitute($this->model['order_no']);
+            }
+        }
         // 余额支付标记订单已支付
         if ($status && $order['payType'] == OrderPayTypeEnum::BALANCE) {
             return $this->model->onPaymentByBalance($this->model['order_no']);
@@ -686,7 +697,7 @@ class Checkout extends BaseService
             UserModel::setIncPoints($this->user['user_id'], -$order['pointsNum'], $describe);
         }
         // 获取订单详情
-        $detail = OrderModel::getUserOrderDetail((int)$this->model['order_id']);
+//        $detail = OrderModel::getUserOrderDetail((int)$this->model['order_id']);
         return $status;
     }
 

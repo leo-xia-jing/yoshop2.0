@@ -10,44 +10,21 @@
 // +----------------------------------------------------------------------
 declare (strict_types=1);
 
-namespace app\common\enum\order;
+namespace app\common\enum\user\org\log;
 
 use app\common\enum\EnumBasics;
 
 /**
- * 枚举类：订单支付方式
- * Class PayType
- * @package app\common\enum\order
+ * 组织架构变更记录表 -> 变更类型
+ * Class ChangeType
+ * @package app\common\enum\user\grade\log
  */
-class PayType extends EnumBasics
+class ChangeType extends EnumBasics
 {
-    // 余额支付
-    const BALANCE = 10;
+    // 后台管理员设置
+    const ADMIN_USER = 10;
 
-    // 微信支付
-    const WECHAT = 20;
-
-    // 组合支付
-    const CONSTITUTE = 30;
-
-
-
-    /**
-     * 获取枚举数据
-     * @return array
-     */
-    public static function data(): array
-    {
-        return [
-            self::BALANCE => [
-                'name' => '余额支付',
-                'value' => self::BALANCE,
-            ],
-            self::WECHAT => [
-                'name' => '微信支付',
-                'value' => self::WECHAT,
-            ],
-        ];
-    }
+    // 自动升级
+    const AUTO_UPGRADE = 20;
 
 }

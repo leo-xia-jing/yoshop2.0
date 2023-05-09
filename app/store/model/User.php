@@ -16,6 +16,7 @@ use app\common\model\User as UserModel;
 
 use app\store\model\UserOauth as UserOauthModel;
 use app\store\model\user\GradeLog as GradeLogModel;
+use app\store\model\user\OrgLog as OrgLogModel;
 use app\store\model\user\PointsLog as PointsLogModel;
 use app\store\model\user\BalanceLog as BalanceLogModel;
 use app\store\service\store\User as StoreUserService;
@@ -87,7 +88,7 @@ class User extends UserModel
         // 检索查询条件
         $filter = $this->getFilter($param);
         // 获取用户列表
-        return $this->with(['avatar', 'grade'])
+        return $this->with(['avatar', 'grade','org'])
             ->where($filter)
             ->where('is_delete', '=', '0')
             ->order(['create_time' => 'desc'])
@@ -106,15 +107,18 @@ class User extends UserModel
             'search' => '',     // 微信昵称
             'gender' => -1,     // 用户性别
             'gradeId' => 0,       // 用户等级
+            'orgId' => 0,       // 组织架构
         ]);
         // 检索查询条件
         $filter = [];
         // 微信昵称
-        !empty($params['search']) && $filter[] = ['nick_name|mobile', 'like', "%{$params['search']}%"];
+        !empty($params['search']) && $filter[] = ['nick_name|mobile|real_name', 'like', "%{$params['search']}%"];
         // 用户性别
         $params['gender'] > -1 && $filter[] = ['gender', '=', (int)$params['gender']];
         // 用户等级
         $params['gradeId'] > 0 && $filter[] = ['grade_id', '=', (int)$params['gradeId']];
+        // 组织架构
+        $params['orgId'] > 0 && $filter[] = ['org_id', '=', (int)$params['orgId']];
         // 起止时间
         if (!empty($params['betweenTime'])) {
             $times = between_time($params['betweenTime']);
@@ -253,6 +257,31 @@ class User extends UserModel
         });
     }
 
+    /**
+     * 修改用户组织架构
+     * @param array $data
+     * @return mixed
+     */
+    public function updateOrg(array $data)
+    {
+        // 变更前的等级id
+        $oldOrgId = $this['org_id'];
+        return $this->transaction(function () use ($oldOrgId, $data) {
+            // 更新用户的组织架构
+            $status = $this->save(['org_id' => $data['org_id']]);
+            // 新增用户等级修改记录
+            if ($status) {
+                (new OrgLogModel)->record([
+                    'user_id' => $this['user_id'],
+                    'old_org_id' => $oldOrgId,
+                    'new_org_id' => $data['org_id'],
+                    'change_type' => ChangeTypeEnum::ADMIN_USER,
+                    'remark' => $data['remark']
+                ]);
+            }
+            return $status !== false;
+        });
+    }
     /**
      * 消减用户的实际消费金额
      * @param int $userId

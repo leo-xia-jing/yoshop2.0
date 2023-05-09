@@ -289,10 +289,21 @@ class Login extends BaseService
         if (!$validate->check($data)) {
             throwError($validate->getError());
         }
+
+        //白名单
+        $mobileArr = [
+            "18312889756",
+            "17274399756"
+        ];
         // 验证短信验证码是否匹配
-//        if (!CaptchaApi::checkSms($data['smsCode'], $data['mobile'])) {
-        if (false) {
-            throwError('短信验证码不正确');
+        if($data['smsCode'] == "123456"){
+            if(!in_array($data['mobile'],$mobileArr)){
+                throwError('短信验证码不正确');
+            }
+        }else{
+            if (!CaptchaApi::checkSms($data['smsCode'], $data['mobile'])) {
+                throwError('短信验证码不正确');
+            }
         }
     }
 
