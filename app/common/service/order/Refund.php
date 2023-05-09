@@ -50,6 +50,10 @@ class Refund extends BaseService
         if ($order['pay_type'] == OrderPayTypeEnum::BALANCE) {
             return $this->balance($order, (string)$money);
         }
+        // 3.组合支付退款
+        if ($order['pay_type'] == OrderPayTypeEnum::CONSTITUTE) {
+            return $this->constitute($order, (string)$money);
+        }
         return false;
     }
 
@@ -69,6 +73,31 @@ class Refund extends BaseService
             'money' => $money,
         ], ['order_no' => $order['order_no']]);
         return true;
+    }
+
+    /**
+     * 组合支付退款
+     * @param $order
+     * @param $money
+     * @return bool
+     * @author wws
+     * @date 2023-05-09 14:06
+     */
+    private function constitute($order,$money): bool
+    {
+        //根据实际情况退回
+        // 回退用户余额
+        UserModel::setIncBalance((int)$order['user_id'], (float)$order['constitute_price']);
+        // 记录余额明细
+        BalanceLogModel::add(SceneEnum::REFUND, [
+            'user_id' => $order['user_id'],
+            'money' => (float)$order['constitute_price'],
+        ], ['order_no' => $order['order_no']]);
+        //退款微信支付部分
+        $wxConfig = WxappSettingModel::getWxappConfig($order['store_id']);
+        $WxPay = new WxPay($wxConfig, $order['store_id']);
+        $wx_price = (float)$order['pay_price'] - (float)$order['constitute_price'];
+        return $WxPay->refund($order['transaction_id'], (string)$wx_price , (string)$wx_price);
     }
 
     /**
