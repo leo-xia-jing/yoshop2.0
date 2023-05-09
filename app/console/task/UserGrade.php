@@ -25,7 +25,7 @@ class UserGrade extends Task
     private $taskKey = 'UserGrade';
 
     // 任务执行间隔时长 (单位:秒)
-    protected $taskExpire = 60 * 30;
+    protected $taskExpire = 60 * 5;
 
     // 当前商城ID
     private $storeId;

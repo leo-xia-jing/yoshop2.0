@@ -80,6 +80,36 @@ class Order extends OrderModel
     }
 
     /**
+     * 订单支付事件
+     * @param int $payType
+     * @return bool
+     * @author wws
+     * @date 2023-05-09 15:26
+     */
+    public function onPay2(int $payType = OrderPayTypeEnum::WECHAT): bool
+    {
+        // 判断订单状态
+        $orderSource = OrderSourceFactory::getFactory($this['order_source']);
+        if (!$orderSource->checkOrderStatusOnPay($this)) {
+            $this->error = $orderSource->getError();
+            return false;
+        }
+
+        //判断订单是否组合支付(特殊性，事先扣除了用户的余额)
+        if($this['pay_type'] == OrderPayTypeEnum::CONSTITUTE && $payType == OrderPayTypeEnum::BALANCE){
+            //组合支付情况下选择余额支付，返回失败，以后再优化
+            $this->error = "组合支付订单不允许再选择消费金支付,请取消原订单再试";
+            return false;
+        }
+
+        // 余额支付
+        if ($payType == OrderPayTypeEnum::BALANCE) {
+            return $this->onPaymentByBalance($this['order_no']);
+        }
+        return true;
+    }
+
+    /**
      * 构建支付请求的参数
      * @param self $order 订单信息
      * @param int $payType 订单支付方式
@@ -94,9 +124,34 @@ class Order extends OrderModel
         if ($payType == OrderPayTypeEnum::WECHAT) {
             return $this->onPaymentByWechat($order);
         }
-//        elseif ($payType == OrderPayTypeEnum::CONSTITUTE){
-//            return $this->onPaymentByCONSTITUTE($order);
-//        }
+        return [];
+    }
+
+    /**
+     * 构建支付请求的参数
+     * @param Order $order
+     * @param int $payType
+     * @return array
+     * @throws BaseException
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\DbException
+     * @throws \think\db\exception\ModelNotFoundException
+     * @author wws
+     * @date 2023-05-09 16:06
+     */
+    public function onOrderPayment2(self $order, int $payType): array
+    {
+        if($order['pay_type'] == OrderPayTypeEnum::CONSTITUTE){
+            return PaymentService::wechat(
+                $order['order_id'],
+                $order['order_no'],
+                $order['pay_price'] - $order['constitute_price'],
+                OrderTypeEnum::ORDER
+            );
+        }
+        if ($payType == OrderPayTypeEnum::WECHAT) {
+            return $this->onPaymentByWechat($order);
+        }
         return [];
     }
 

@@ -144,11 +144,13 @@ class Order extends Controller
         // 获取订单详情
         $model = OrderModel::getUserOrderDetail($orderId);
         // 订单支付事件
-        if (!$model->onPay($payType)) {
+        if (!$model->onPay2($payType)) {
             return $this->renderError($model->getError() ?: '订单支付失败');
         }
+        //判断订单是否是组合支付
+        $payType = $model['pay_type'] == OrderPayTypeEnum::CONSTITUTE?$model['pay_type']:$payType;
         // 构建微信支付请求
-        $payment = $model->onOrderPayment($model, $payType);
+        $payment = $model->onOrderPayment2($model, $payType);
         // 支付状态提醒
         return $this->renderSuccess([
             'order_id' => $model['order_id'],   // 订单id
