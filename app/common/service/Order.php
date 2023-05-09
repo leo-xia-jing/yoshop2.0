@@ -12,6 +12,7 @@ declare (strict_types=1);
 
 namespace app\common\service;
 
+use app\common\enum\order\PayType as OrderPayTypeEnum;
 use app\store\model\User as UserModel;
 use app\store\model\UserCoupon as UserCouponModel;
 use app\common\model\Order as OrderModel;
@@ -47,6 +48,11 @@ class Order extends BaseService
         if ($order['points_num'] > 0) {
             $describe = "订单取消：{$order['order_no']}";
             UserModel::setIncPoints($order['user_id'], $order['points_num'], $describe, $order['store_id']);
+        }
+        //如果是组合支付，需要把订单中先扣除的余额返回
+        if($order['pay_type'] == OrderPayTypeEnum::CONSTITUTE){
+            // 回退用户余额
+            \app\common\model\User::setIncBalance((int)$order['user_id'], (float)$order['constitute_price']);
         }
     }
 }
