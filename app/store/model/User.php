@@ -31,7 +31,7 @@ use app\common\library\helper;
  */
 class User extends UserModel
 {
-    // 充值类型枚举: 余额
+    // 充值类型枚举: 消费金
     const RECHARGE_TYPE_BALANCE = 'balance';
 
     // 充值类型枚举: 积分
@@ -163,7 +163,7 @@ class User extends UserModel
     }
 
     /**
-     * 用户充值：余额
+     * 用户充值：消费金
      * @param string $storeUserName
      * @param array $data
      * @return bool
@@ -184,9 +184,9 @@ class User extends UserModel
         }
         // 更新记录
         $this->transaction(function () use ($storeUserName, $data, $diffMoney) {
-            // 更新账户余额
+            // 更新账户消费金
             static::setIncBalance((int)$this['user_id'], (float)$diffMoney);
-            // 新增余额变动记录
+            // 新增消费金变动记录
             BalanceLogModel::add(SceneEnum::ADMIN, [
                 'user_id' => $this['user_id'],
                 'money' => (float)$diffMoney,

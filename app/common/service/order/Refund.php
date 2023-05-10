@@ -46,7 +46,7 @@ class Refund extends BaseService
         if ($order['pay_type'] == OrderPayTypeEnum::WECHAT) {
             return $this->wxpay($order, (string)$money);
         }
-        // 2.余额支付退款
+        // 2.消费金支付退款
         if ($order['pay_type'] == OrderPayTypeEnum::BALANCE) {
             return $this->balance($order, (string)$money);
         }
@@ -58,16 +58,16 @@ class Refund extends BaseService
     }
 
     /**
-     * 余额支付退款
+     * 消费金支付退款
      * @param $order
      * @param $money
      * @return bool
      */
     private function balance($order, $money): bool
     {
-        // 回退用户余额
+        // 回退用户消费金
         UserModel::setIncBalance((int)$order['user_id'], (float)$money);
-        // 记录余额明细
+        // 记录消费金明细
         BalanceLogModel::add(SceneEnum::REFUND, [
             'user_id' => $order['user_id'],
             'money' => $money,
@@ -86,9 +86,9 @@ class Refund extends BaseService
     private function constitute($order,$money): bool
     {
         //根据实际情况退回
-        // 回退用户余额
+        // 回退用户消费金
         UserModel::setIncBalance((int)$order['user_id'], (float)$order['constitute_price']);
-        // 记录余额明细
+        // 记录消费金明细
         BalanceLogModel::add(SceneEnum::REFUND, [
             'user_id' => $order['user_id'],
             'money' => (float)$order['constitute_price'],

@@ -16,14 +16,14 @@ use app\store\controller\Controller;
 use app\store\model\user\BalanceLog as BalanceLogModel;
 
 /**
- * 余额明细
+ * 消费金明细
  * Class Balance
  * @package app\store\controller\user
  */
 class Balance extends Controller
 {
     /**
-     * 余额明细
+     * 消费金明细
      * @return mixed
      */
     public function log()

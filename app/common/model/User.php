@@ -121,7 +121,7 @@ class User extends BaseModel
     }
 
     /**
-     * 累积用户可用余额
+     * 累积用户可用消费金
      * @param int $userId
      * @param float $money
      * @return mixed
@@ -132,7 +132,7 @@ class User extends BaseModel
     }
 
     /**
-     * 消减用户可用余额
+     * 消减用户可用消费金
      * @param int $userId
      * @param float $money
      * @return mixed

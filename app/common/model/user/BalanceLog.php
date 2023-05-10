@@ -16,7 +16,7 @@ use cores\BaseModel;
 use app\common\enum\user\balanceLog\Scene as SceneEnum;
 
 /**
- * 用户余额变动明细模型
+ * 用户消费金变动明细模型
  * Class BalanceLog
  * @package app\common\model\user
  */

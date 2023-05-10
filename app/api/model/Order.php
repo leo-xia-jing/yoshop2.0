@@ -72,7 +72,7 @@ class Order extends OrderModel
             $this->error = $orderSource->getError();
             return false;
         }
-        // 余额支付
+        // 消费金支付
         if ($payType == OrderPayTypeEnum::BALANCE) {
             return $this->onPaymentByBalance($this['order_no']);
         }
@@ -95,14 +95,14 @@ class Order extends OrderModel
             return false;
         }
 
-        //判断订单是否组合支付(特殊性，事先扣除了用户的余额)
+        //判断订单是否组合支付(特殊性，事先扣除了用户的消费金)
         if($this['pay_type'] == OrderPayTypeEnum::CONSTITUTE && $payType == OrderPayTypeEnum::BALANCE){
-            //组合支付情况下选择余额支付，返回失败，以后再优化
+            //组合支付情况下选择消费金支付，返回失败，以后再优化
             $this->error = "组合支付订单不允许再选择消费金支付,请取消原订单再试";
             return false;
         }
 
-        // 余额支付
+        // 消费金支付
         if ($payType == OrderPayTypeEnum::BALANCE) {
             return $this->onPaymentByBalance($this['order_no']);
         }
@@ -123,6 +123,19 @@ class Order extends OrderModel
     {
         if ($payType == OrderPayTypeEnum::WECHAT) {
             return $this->onPaymentByWechat($order);
+        }
+        if($payType == OrderPayTypeEnum::CONSTITUTE){
+            $order = self::find($order['order_id']);
+            $price = $order['pay_price'] - $order['constitute_price'];
+            if($price){
+                //组合支付情况下，还需要微信支付部分
+                return PaymentService::wechat(
+                    $order['order_id'],
+                    $order['order_no'],
+                    $price,
+                    OrderTypeEnum::ORDER
+                );
+            }
         }
         return [];
     }
@@ -210,7 +223,7 @@ class Order extends OrderModel
     }
 
     /**
-     * 余额支付标记订单已支付
+     * 消费金支付标记订单已支付
      * @param string $orderNo 订单号
      * @return bool
      */
@@ -218,7 +231,7 @@ class Order extends OrderModel
     {
         // 获取订单详情
         $service = new OrderPaySuccesService($orderNo);
-        // 发起余额支付
+        // 发起消费金支付
         $status = $service->onPaySuccess(OrderPayTypeEnum::BALANCE);
         if (!$status) {
             $this->error = $service->getError();
@@ -237,7 +250,7 @@ class Order extends OrderModel
     {
         // 获取订单详情
         $service = new OrderPaySuccesService($orderNo);
-        // 扣减余额、更新订单信息
+        // 扣减消费金、更新订单信息
         $status = $service->onConstitutePay(OrderPayTypeEnum::CONSTITUTE);
         if (!$status) {
             $this->error = $service->getError();

@@ -66,9 +66,9 @@ class PaySuccess extends BaseService
                 'pay_time' => time(),
                 'transaction_id' => $payData['transaction_id']
             ]);
-            // 累积用户余额
+            // 累积用户消费金
             UserModel::setIncBalance((int)$this->user['user_id'], (float)$this->model['actual_money']);
-            // 用户余额变动明细
+            // 用户消费金变动明细
             BalanceLogModel::add(SceneEnum::RECHARGE, [
                 'user_id' => $this->user['user_id'],
                 'money' => $this->model['actual_money'],

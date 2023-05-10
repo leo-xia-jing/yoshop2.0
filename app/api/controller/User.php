@@ -55,7 +55,7 @@ class User extends Controller
         // 返回数据
         return $this->renderSuccess([
             'assets' => [
-                'balance' => $userInfo['balance'],  // 账户余额
+                'balance' => $userInfo['balance'],  // 账户消费金
                 'points' => $userInfo['points'],    // 会员积分
                 'coupon' => $model->getCount($userInfo['user_id']),    // 优惠券数量(可用)
             ]

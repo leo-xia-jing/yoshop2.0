@@ -16,7 +16,7 @@ use app\api\service\User as UserService;
 use app\common\model\user\PointsLog as PointsLogModel;
 
 /**
- * 用户余额变动明细模型
+ * 用户消费金变动明细模型
  * Class PointsLog
  * @package app\api\model\user
  */

@@ -110,9 +110,10 @@ class Checkout extends Controller
         if (!$Checkout->createOrder($orderInfo)) {
             return $this->renderError($Checkout->getError() ?: '订单创建失败', ['is_created' => false]);
         }
+        //增加组合支付后，可能会引起payType变化，所以更新一下
+        $params = $Checkout->getParam();
         // 构建微信支付请求
         $payment = $model->onOrderPayment($Checkout->model, $params['payType']);
-        print_r($payment);
         // 返回结算信息
         return $this->renderSuccess([
             'orderId' => $Checkout->model['order_id'],   // 订单id

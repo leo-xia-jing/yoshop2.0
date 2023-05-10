@@ -37,7 +37,7 @@ class Recharge extends Controller
     public function submit(int $planId = null, $customMoney = null)
     {
         if (getPlatform() !== 'MP-WEIXIN') {
-            return $this->renderError('很抱歉，余额充值暂时仅支持微信小程序端');
+            return $this->renderError('很抱歉，消费金充值暂时仅支持微信小程序端');
         }
         // 生成充值订单
         $model = new OrderModel;

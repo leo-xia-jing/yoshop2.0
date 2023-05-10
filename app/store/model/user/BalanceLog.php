@@ -15,14 +15,14 @@ namespace app\store\model\user;
 use app\common\model\user\BalanceLog as BalanceLogModel;
 
 /**
- * 用户余额变动明细模型
+ * 用户消费金变动明细模型
  * Class BalanceLog
  * @package app\store\model\user
  */
 class BalanceLog extends BalanceLogModel
 {
     /**
-     * 获取余额变动明细列表
+     * 获取消费金变动明细列表
      * @param array $param
      * @return \think\Paginator
      */
@@ -51,7 +51,7 @@ class BalanceLog extends BalanceLogModel
         $params = $this->setQueryDefaultValue($param, [
             'user_id' => 0,         // 用户ID
             'search' => '',         // 用户昵称
-            'scene' => 0,           // 余额变动场景
+            'scene' => 0,           // 消费金变动场景
             'betweenTime' => []    // 起止时间
         ]);
         // 检索查询条件
@@ -60,7 +60,7 @@ class BalanceLog extends BalanceLogModel
         $params['user_id'] > 0 && $filter[] = ['log.user_id', '=', $params['user_id']];
         // 用户昵称
         !empty($params['search']) && $filter[] = ['user.nick_name', 'like', "%{$params['search']}%"];
-        // 余额变动场景
+        // 消费金变动场景
         $params['scene'] > 0 && $filter[] = ['log.scene', '=', (int)$params['scene']];
         // 起止时间
         if (!empty($params['betweenTime'])) {

@@ -652,7 +652,7 @@ class Checkout extends BaseService
         });
         //判断是否是组合支付
         if ($status && $order['payType'] == OrderPayTypeEnum::CONSTITUTE) {
-            //余额足够的情况下，把支付方式改为余额支付
+            //消费金足够的情况下，把支付方式改为消费金支付
             if($this->user['balance'] >= $this->model['pay_price']){
                 $order['payType'] = OrderPayTypeEnum::BALANCE;
                 $this->model['pay_type'] = OrderPayTypeEnum::BALANCE;
@@ -661,7 +661,7 @@ class Checkout extends BaseService
                 return $this->model->onPaymentByConstitute($this->model['order_no']);
             }
         }
-        // 余额支付标记订单已支付
+        // 消费金支付标记订单已支付
         if ($status && $order['payType'] == OrderPayTypeEnum::BALANCE) {
             return $this->model->onPaymentByBalance($this->model['order_no']);
         }
@@ -727,10 +727,10 @@ class Checkout extends BaseService
                 return false;
             }
         }
-        // 余额支付时判断用户余额是否足够
+        // 消费金支付时判断用户消费金是否足够
         if ($order['payType'] == OrderPayTypeEnum::BALANCE) {
             if ($this->user['balance'] < $order['orderPayPrice']) {
-                $this->error = '您的余额不足，无法使用余额支付';
+                $this->error = '您的消费金不足，无法使用消费金支付';
                 return false;
             }
         }

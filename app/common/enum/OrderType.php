@@ -22,7 +22,7 @@ class OrderType extends EnumBasics
     // 商城订单
     const ORDER = 10;
 
-    // 余额充值订单
+    // 消费金充值订单
     const RECHARGE = 100;
 
     /**
@@ -37,7 +37,7 @@ class OrderType extends EnumBasics
                 'value' => self::ORDER,
             ],
             self::RECHARGE => [
-                'name' => '余额充值订单',
+                'name' => '消费金充值订单',
                 'value' => self::RECHARGE,
             ],
         ];

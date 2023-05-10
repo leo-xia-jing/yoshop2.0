@@ -15,7 +15,7 @@ namespace app\common\enum\user\balanceLog;
 use app\common\enum\EnumBasics;
 
 /**
- * 余额变动场景枚举类
+ * 消费金变动场景枚举类
  * Class Scene
  * @package app\common\enum\user\balanceLog
  */

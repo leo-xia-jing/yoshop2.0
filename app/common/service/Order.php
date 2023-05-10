@@ -52,9 +52,9 @@ class Order extends BaseService
             $describe = "订单取消：{$order['order_no']}";
             UserModel::setIncPoints($order['user_id'], $order['points_num'], $describe, $order['store_id']);
         }
-        //如果是组合支付，未支付的订单取消动作，需要把订单中先扣除的余额返回
+        //如果是组合支付，未支付的订单取消动作，需要把订单中先扣除的消费金返回
         if($order['pay_type'] == OrderPayTypeEnum::CONSTITUTE && $order['pay_status'] == OrderPayStatusEnum::PENDING){
-            // 回退用户余额
+            // 回退用户消费金
             \app\common\model\User::setIncBalance((int)$order['user_id'], (float)$order['constitute_price']);
         }
     }
