@@ -47,6 +47,10 @@ class PayType extends EnumBasics
                 'name' => '微信支付',
                 'value' => self::WECHAT,
             ],
+            self::CONSTITUTE => [
+                'name' => '组合支付',
+                'value' => self::CONSTITUTE,
+            ],
         ];
     }
 
