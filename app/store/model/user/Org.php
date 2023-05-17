@@ -128,6 +128,12 @@ class Org extends OrgModel
             $this->error = '该节点下组织架构已存在';
             return false;
         }
+        // 暂时只允许增加一级组织架构
+        $parent = self::get($data['parent_id']);
+        if($parent['parent_id'] > 0){
+            $this->error = '父级请选择顶级架构';
+            return false;
+        }
         return true;
     }
 

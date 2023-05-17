@@ -34,7 +34,7 @@ class Org extends BaseModel
      */
     public static function checkExistByOrgName(string $org_name,int $parent_id): bool
     {
-        return !!(new static)->where('org_name', '=', (int)$org_name)
+        return !!(new static)->where('org_name', '=', $org_name)
             ->where('parent_id', '=', $parent_id)
             ->where('is_delete', '=', 0)
             ->value('id');
