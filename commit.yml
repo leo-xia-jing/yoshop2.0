@@ -3,12 +3,21 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid '5bc4227ba24f3adacb11c8ebfc2e8dcf769918ba'
-    oldFile: !uuid 'c6a8f8debbf73e2f7b46bdd1fc4e340e565a4b01'
-  /app/event.php:
-    newFile: !uuid '621eb0c53d078c78d816fa73d2fba7c6c1a275f7'
-    oldFile: !uuid 'ac7204b37662126167d0aec8a158ca3a9158f17c'
-gitCommitId: !uuid '1eaad25d786f472da6a83e85bbdfe1830c2e2de6'
+    newFile: !uuid 'ed34185c0d410d6aee88dbaaebfdf6f5d1c8740f'
+    oldFile: !uuid '5bc4227ba24f3adacb11c8ebfc2e8dcf769918ba'
+  /app/api:
+    newFile: !uuid 'bc06e9200ac6596a1f573aab9fb0a60ccae7220b'
+    oldFile: !uuid '5d9b06c6b460a4667ef50ef8923f4629b0482369'
+  /app/api/service:
+    newFile: !uuid '991bee19f414c33fdaf468f8c006a9ac1eb42095'
+    oldFile: !uuid '09621447bd6ce739ab4a61dc237d2f9d8de1223a'
+  /app/api/service/user:
+    newFile: !uuid 'db0531254c06a75d077f56a42e63a13890fadd1a'
+    oldFile: !uuid 'aa6c8b5b8bf1b222a7cbed9caa3ca468c6642853'
+  /app/api/service/user/Avatar.php:
+    newFile: !uuid 'ce32d6e4ff60047b852f2235531697509964791d'
+    oldFile: !uuid '77a6f805d8239c5bb39e11f3a1909b4311e4dc98'
+gitCommitId: !uuid '50ad7e8b233e27f9386629d41a09510f9c38654e'
 renames: {
   }
-revisionId: 343
+revisionId: 344
