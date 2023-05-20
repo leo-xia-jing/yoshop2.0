@@ -76,13 +76,17 @@ class Order extends OrderModel
         $filter = $this->getQueryFilter($param);
         // 设置订单类型条件
         $dataTypeFilter = $this->getFilterDataType($dataType);
-        // 获取数据列表
-        return $this->with(['goods.image', 'user.avatar'])
+        $list = $this->with(['goods.image', 'user.avatar'])
             ->alias('order')
             ->field('order.*')
             ->leftJoin('user', 'user.user_id = order.user_id')
-            ->leftJoin('order_address address', 'address.order_id = order.order_id')
-            ->where($dataTypeFilter)
+            ->leftJoin('order_address address', 'address.order_id = order.order_id');
+
+        if(isset($param['orgId']) && $param['orgId'] >0){
+            $list = $list->leftJoin('org', 'user.org_id = org.id');
+        }
+        // 获取数据列表
+        return $list->where($dataTypeFilter)
             ->where($filter)
             ->where('order.is_delete', '=', 0)
             ->order(['order.create_time' => 'desc'])
@@ -101,16 +105,21 @@ class Order extends OrderModel
         $queryFilter = $this->getQueryFilter($query);
         // 设置订单类型条件
         $dataTypeFilter = $this->getFilterDataType($dataType);
-        // 获取数据列表
-        return $this->with(['goods.image', 'address', 'user.avatar', 'express'])
-            ->alias('order')
-            ->field('order.*')
-            ->join('user', 'user.user_id = order.user_id')
-            ->where($dataTypeFilter)
-            ->where($queryFilter)
-            ->where('order.is_delete', '=', 0)
-            ->order(['order.create_time' => 'desc'])
-            ->select();
+        //兼容组织架构
+        $list = $this->with(['goods.image', 'address', 'user.avatar', 'express'])
+                    ->alias('order')
+                    ->field('order.*')
+                    ->join('user', 'user.user_id = order.user_id');
+
+        if(isset($param['orgId']) && $param['orgId'] >0){
+            $list = $list->join('org', 'user.org_id = org.id');
+        }
+
+        return $list->where($dataTypeFilter)
+                    ->where($queryFilter)
+                    ->where('order.is_delete', '=', 0)
+                    ->order(['order.create_time' => 'desc'])
+                    ->select();
     }
 
     /**
@@ -129,6 +138,7 @@ class Order extends OrderModel
             'deliveryType' => -1,   // 配送方式
             'betweenTime' => [],    // 起止时间
             'userId' => 0,          // 会员ID
+            'orgId' => -1,           // 组织架构ID
         ]);
         // 检索查询条件
         $filter = [];
@@ -157,6 +167,8 @@ class Order extends OrderModel
         $params['deliveryType'] > -1 && $filter[] = ['delivery_type', '=', (int)$params['deliveryType']];
         // 用户id
         $params['userId'] > 0 && $filter[] = ['order.user_id', '=', (int)$params['userId']];
+        // 组织架构ID
+        $params['orgId'] > 0 && $filter[] = ['org.id', '=', (int)$params['orgId']];
         return $filter;
     }
 

@@ -40,6 +40,38 @@ class Export extends Controller
     }
 
     /**
+     * 导出发货单
+     * @throws BaseException
+     * @author wws
+     * @date 2023-05-17 20:01
+     */
+    public function exportGoodsTicket()
+    {
+        $model = new ExportService;
+        $filePath = $model->exportGoodsTicket($this->request->param());
+        if (!$filePath) {
+            $this->renderError($model->getError() ?: '导出失败');
+        }
+        return $this->renderSuccess("导出成功，请到导出界面下载");
+    }
+
+    /**
+     * 导出进货单
+     * @throws BaseException
+     * @author wws
+     * @date 2023-05-17 20:01
+     */
+    public function exportProcurementTicket(string $dataType)
+    {
+        $model = new ExportService;
+        $filePath = $model->exportProcurementTicket($dataType,$this->request->param());
+        if (!$filePath) {
+            $this->renderError($model->getError() ?: '导出失败');
+        }
+        return $this->renderSuccess("导出成功，请到导出界面下载");
+    }
+
+    /**
      * 订单导出记录
      * @return Json
      * @throws \think\db\exception\DbException
