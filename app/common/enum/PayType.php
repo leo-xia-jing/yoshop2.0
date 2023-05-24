@@ -22,7 +22,7 @@ class PayType extends EnumBasics
     // 商城订单
     const ORDER = 10;
 
-    // 余额充值
+    // 消费金充值
     const RECHARGE = 100;
 
     /**
@@ -37,7 +37,7 @@ class PayType extends EnumBasics
                 'value' => self::ORDER,
             ],
             self::RECHARGE => [
-                'name' => '余额充值',
+                'name' => '消费金充值',
                 'value' => self::RECHARGE,
             ],
         ];

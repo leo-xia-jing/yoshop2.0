@@ -72,7 +72,37 @@ class Order extends OrderModel
             $this->error = $orderSource->getError();
             return false;
         }
-        // 余额支付
+        // 消费金支付
+        if ($payType == OrderPayTypeEnum::BALANCE) {
+            return $this->onPaymentByBalance($this['order_no']);
+        }
+        return true;
+    }
+
+    /**
+     * 订单支付事件
+     * @param int $payType
+     * @return bool
+     * @author wws
+     * @date 2023-05-09 15:26
+     */
+    public function onPay2(int $payType = OrderPayTypeEnum::WECHAT): bool
+    {
+        // 判断订单状态
+        $orderSource = OrderSourceFactory::getFactory($this['order_source']);
+        if (!$orderSource->checkOrderStatusOnPay($this)) {
+            $this->error = $orderSource->getError();
+            return false;
+        }
+
+        //判断订单是否组合支付(特殊性，事先扣除了用户的消费金)
+        if($this['pay_type'] == OrderPayTypeEnum::CONSTITUTE && $payType == OrderPayTypeEnum::BALANCE){
+            //组合支付情况下选择消费金支付，返回失败，以后再优化
+            $this->error = "组合支付订单不允许再选择消费金支付,请取消原订单再试";
+            return false;
+        }
+
+        // 消费金支付
         if ($payType == OrderPayTypeEnum::BALANCE) {
             return $this->onPaymentByBalance($this['order_no']);
         }
@@ -91,6 +121,47 @@ class Order extends OrderModel
      */
     public function onOrderPayment(self $order, int $payType): array
     {
+        if ($payType == OrderPayTypeEnum::WECHAT) {
+            return $this->onPaymentByWechat($order);
+        }
+        if($payType == OrderPayTypeEnum::CONSTITUTE){
+            $order = self::find($order['order_id']);
+            $price = $order['pay_price'] - $order['constitute_price'];
+            if($price){
+                //组合支付情况下，还需要微信支付部分
+                return PaymentService::wechat(
+                    $order['order_id'],
+                    $order['order_no'],
+                    $price,
+                    OrderTypeEnum::ORDER
+                );
+            }
+        }
+        return [];
+    }
+
+    /**
+     * 构建支付请求的参数
+     * @param Order $order
+     * @param int $payType
+     * @return array
+     * @throws BaseException
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\DbException
+     * @throws \think\db\exception\ModelNotFoundException
+     * @author wws
+     * @date 2023-05-09 16:06
+     */
+    public function onOrderPayment2(self $order, int $payType): array
+    {
+        if($order['pay_type'] == OrderPayTypeEnum::CONSTITUTE){
+            return PaymentService::wechat(
+                $order['order_id'],
+                $order['order_no'],
+                $order['pay_price'] - $order['constitute_price'],
+                OrderTypeEnum::ORDER
+            );
+        }
         if ($payType == OrderPayTypeEnum::WECHAT) {
             return $this->onPaymentByWechat($order);
         }
@@ -152,7 +223,7 @@ class Order extends OrderModel
     }
 
     /**
-     * 余额支付标记订单已支付
+     * 消费金支付标记订单已支付
      * @param string $orderNo 订单号
      * @return bool
      */
@@ -160,8 +231,27 @@ class Order extends OrderModel
     {
         // 获取订单详情
         $service = new OrderPaySuccesService($orderNo);
-        // 发起余额支付
+        // 发起消费金支付
         $status = $service->onPaySuccess(OrderPayTypeEnum::BALANCE);
+        if (!$status) {
+            $this->error = $service->getError();
+        }
+        return $status;
+    }
+
+    /**
+     * 发起组合支付逻辑
+     * @param string $orderNo
+     * @return bool
+     * @author wws
+     * @date 2023-05-08 15:55
+     */
+    public function onPaymentByConstitute(string $orderNo)
+    {
+        // 获取订单详情
+        $service = new OrderPaySuccesService($orderNo);
+        // 扣减消费金、更新订单信息
+        $status = $service->onConstitutePay(OrderPayTypeEnum::CONSTITUTE);
         if (!$status) {
             $this->error = $service->getError();
         }

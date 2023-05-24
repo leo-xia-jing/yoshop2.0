@@ -16,7 +16,7 @@ use app\store\controller\Controller;
 use app\store\model\recharge\Order as OrderModel;
 
 /**
- * 余额记录
+ * 消费金记录
  * Class Recharge
  * @package app\store\controller\user
  */

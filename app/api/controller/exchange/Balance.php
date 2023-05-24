@@ -10,29 +10,45 @@
 // +----------------------------------------------------------------------
 declare (strict_types=1);
 
-namespace app\api\controller\balance;
+namespace app\api\controller\exchange;
 
 use think\response\Json;
 use app\api\controller\Controller;
-use app\api\model\user\BalanceLog as BalanceLogModel;
+use app\api\model\exchange\ExchangeBalance as ExchangeBalanceModel;
 
 /**
  * 消费金账单明细
  * Class Log
  * @package app\api\controller\balance
  */
-class Log extends Controller
+class Balance extends Controller
 {
     /**
-     * 消费金账单明细列表
+     * 消费金兑换列表
      * @return Json
      * @throws \cores\exception\BaseException
      * @throws \think\db\exception\DbException
      */
     public function list(): Json
     {
-        $model = new BalanceLogModel;
+        $model = new ExchangeBalanceModel;
         $list = $model->getList();
         return $this->renderSuccess(compact('list'));
+    }
+
+    /**
+     * 领取消费金
+     * @return Json
+     * @author wws
+     * @date 2023-05-17 14:25
+     */
+
+    public function receive(int $id = 0)
+    {
+        $model = new ExchangeBalanceModel;
+        if (!$model->receiveById($id)) {
+            return $this->renderError($model->getError() ?: '操作失败');
+        }
+        return $this->renderSuccess('领取成功');
     }
 }

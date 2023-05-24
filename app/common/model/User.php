@@ -55,6 +55,16 @@ class User extends BaseModel
     }
 
     /**
+     * 关联会员组织架构表
+     * @return BelongsTo
+     */
+    public function org(): BelongsTo
+    {
+        $module = self::getCalledModule();
+        return $this->belongsTo("app\\{$module}\\model\\user\\Org", 'org_id');
+    }
+
+    /**
      * 关联收货地址表
      * @return HasMany
      */
@@ -111,7 +121,7 @@ class User extends BaseModel
     }
 
     /**
-     * 累积用户可用余额
+     * 累积用户可用消费金
      * @param int $userId
      * @param float $money
      * @return mixed
@@ -122,7 +132,7 @@ class User extends BaseModel
     }
 
     /**
-     * 消减用户可用余额
+     * 消减用户可用消费金
      * @param int $userId
      * @param float $money
      * @return mixed
@@ -141,6 +151,19 @@ class User extends BaseModel
     {
         $model = new static;
         return (bool)$model->where('grade_id', '=', (int)$gradeId)
+            ->where('is_delete', '=', 0)
+            ->value($model->getPk());
+    }
+
+    /**
+     * 指定组织架构下是否存在用户
+     * @param int $orgId
+     * @return bool
+     */
+    public static function checkExistByOrgId(int $orgId): bool
+    {
+        $model = new static;
+        return (bool)$model->where('org_id', '=', (int)$orgId)
             ->where('is_delete', '=', 0)
             ->value($model->getPk());
     }

@@ -10,15 +10,21 @@
 // +----------------------------------------------------------------------
 declare (strict_types=1);
 
-namespace app\timer\model\user;
+namespace app\common\enum\user\org\log;
 
-use app\common\model\user\PointsLog as PointsLogModel;
+use app\common\enum\EnumBasics;
 
 /**
- * 用户消费金变动明细模型
- * Class PointsLog
- * @package app\timer\model\user
+ * 组织架构变更记录表 -> 变更类型
+ * Class ChangeType
+ * @package app\common\enum\user\grade\log
  */
-class PointsLog extends PointsLogModel
+class ChangeType extends EnumBasics
 {
+    // 后台管理员设置
+    const ADMIN_USER = 10;
+
+    // 自动升级
+    const AUTO_UPGRADE = 20;
+
 }

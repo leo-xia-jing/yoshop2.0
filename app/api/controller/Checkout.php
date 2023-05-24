@@ -109,6 +109,8 @@ class Checkout extends Controller
         if (!$Checkout->createOrder($orderInfo)) {
             return $this->renderError($Checkout->getError() ?: '订单创建失败', ['is_created' => false]);
         }
+        //增加组合支付后，可能会引起payType变化，所以更新一下
+        $params = $Checkout->getParam();
         // 构建微信支付请求
         $payment = $model->onOrderPayment($Checkout->model, $params['payType']);
         // 返回结算信息
@@ -133,7 +135,7 @@ class Checkout extends Controller
         $Checkout = new CheckoutService;
         // 订单结算api参数
         $params = $Checkout->setParam($this->getParam());
-        // 购物车ID集
+        // 购物车ID集 打散成数组
         $cartIds = $this->getCartIds();
         // 商品结算信息
         $CartModel = new CartService;
@@ -152,10 +154,13 @@ class Checkout extends Controller
         if ($Checkout->hasError()) {
             return $this->renderError($Checkout->getError(), ['is_created' => false]);
         }
+
         // 创建订单
         if (!$Checkout->createOrder($orderInfo)) {
             return $this->renderError($Checkout->getError() ?: '订单创建失败');
         }
+        //增加组合支付后，可能会引起payType变化，所以更新一下
+        $params = $Checkout->getParam();
         // 移出购物车中已下单的商品
         $CartModel->clear($cartIds);
         // 构建微信支付请求

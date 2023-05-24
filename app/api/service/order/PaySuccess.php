@@ -81,6 +81,31 @@ class PaySuccess extends BaseService
     }
 
     /**
+     * 处理组合支付逻辑
+     * @param $payType
+     * @param array $payData
+     * @return bool
+     * @author wws
+     * @date 2023-05-08 16:06
+     */
+    public function onConstitutePay($payType, $payData = [])
+    {
+        if (empty($this->model)) {
+            $this->error = '未找到该订单信息';
+            return false;
+        }
+        //先减少用户消费金(后续如果不支付再给用户加上)、计算差价，返回生成微信支付参数
+        // 事务处理
+        $this->model->transaction(function () use ($payType, $payData) {
+            // 更新订单状态
+            $this->model->save(['constitute_price'=>$this->user['balance']]);
+            // 扣除用户消费金
+            $this->user->save(['balance'=>0]);
+        });
+        return true;
+    }
+
+    /**
      * 更新付款状态
      * @param $payType
      * @param array $payData
@@ -88,10 +113,10 @@ class PaySuccess extends BaseService
      */
     private function updatePayStatus($payType, $payData = [])
     {
-        // 验证余额支付时用户余额是否满足
+        // 验证消费金支付时用户消费金是否满足
         if ($payType == OrderPayTypeEnum::BALANCE) {
             if ($this->user['balance'] < $this->model['pay_price']) {
-                $this->error = '用户余额不足，无法使用余额支付';
+                $this->error = '用户消费金不足，无法使用消费金支付';
                 return false;
             }
         }
@@ -124,7 +149,7 @@ class PaySuccess extends BaseService
             'pay_status' => PayStatusEnum::SUCCESS,
             'pay_time' => time()
         ];
-        if ($payType == OrderPayTypeEnum::WECHAT) {
+        if ($payType == OrderPayTypeEnum::WECHAT || $payType == OrderPayTypeEnum::CONSTITUTE) {
             $order['transaction_id'] = $payData['transaction_id'];
         }
         // 更新订单状态
@@ -137,14 +162,20 @@ class PaySuccess extends BaseService
      */
     private function updatePayInfo(int $payType)
     {
-        // 余额支付
+        // 消费金支付
         if ($payType == OrderPayTypeEnum::BALANCE) {
-            // 更新用户余额
+            // 更新用户消费金
             UserModel::setDecBalance((int)$this->user['user_id'], (float)$this->model['pay_price']);
-            // 新增余额变动记录
+            // 新增消费金变动记录
             BalanceLogModel::add(SceneEnum::CONSUME, [
                 'user_id' => (int)$this->user['user_id'],
                 'money' => -$this->model['pay_price'],
+            ], ['order_no' => $this->model['order_no']]);
+        }elseif ($payType == OrderPayTypeEnum::CONSTITUTE){
+            // 新增消费金变动记录
+            BalanceLogModel::add(SceneEnum::CONSUME, [
+                'user_id' => (int)$this->user['user_id'],
+                'money' => -$this->model['constitute_price'],
             ], ['order_no' => $this->model['order_no']]);
         }
         // 微信支付

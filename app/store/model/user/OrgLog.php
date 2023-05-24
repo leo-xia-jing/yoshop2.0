@@ -10,15 +10,25 @@
 // +----------------------------------------------------------------------
 declare (strict_types=1);
 
-namespace app\timer\model\user;
+namespace app\store\model\user;
 
-use app\common\model\user\PointsLog as PointsLogModel;
+use app\common\model\user\OrgLog as OrgLogModel;
 
 /**
- * 用户消费金变动明细模型
- * Class PointsLog
- * @package app\timer\model\user
+ * 用户会员等级变更记录模型
+ * Class GradeLog
+ * @package app\store\model\user
  */
-class PointsLog extends PointsLogModel
+class OrgLog extends OrgLogModel
 {
+    /**
+     * 新增变更记录
+     * @param $data
+     * @return int
+     */
+    public function record($data)
+    {
+        return $this->records([$data]);
+    }
+
 }

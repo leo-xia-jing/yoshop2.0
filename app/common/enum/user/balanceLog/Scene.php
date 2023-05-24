@@ -15,7 +15,7 @@ namespace app\common\enum\user\balanceLog;
 use app\common\enum\EnumBasics;
 
 /**
- * 余额变动场景枚举类
+ * 消费金变动场景枚举类
  * Class Scene
  * @package app\common\enum\user\balanceLog
  */
@@ -29,6 +29,9 @@ class Scene extends EnumBasics
 
     // 管理员操作
     const ADMIN = 30;
+
+    // 管理员预充值
+    const EXCHANGE = 50;
 
     // 订单退款
     const REFUND = 40;
@@ -59,6 +62,11 @@ class Scene extends EnumBasics
                 'name' => '订单退款',
                 'value' => self::REFUND,
                 'describe' => '订单退款：%s',
+            ],
+            self::EXCHANGE => [
+                'name' => '管理员预充值',
+                'value' => self::EXCHANGE,
+                'describe' => '管理员预充值：%s',
             ],
         ];
     }

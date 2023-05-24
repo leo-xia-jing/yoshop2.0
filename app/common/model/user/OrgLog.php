@@ -13,17 +13,17 @@ declare (strict_types=1);
 namespace app\common\model\user;
 
 use cores\BaseModel;
-use app\common\enum\user\balanceLog\Scene as SceneEnum;
+use app\common\enum\user\grade\log\ChangeType as ChangeTypeEnum;
 
 /**
- * 用户消费金变动明细模型
- * Class BalanceLog
+ * 用户会员等级变更记录模型
+ * Class GradeLog
  * @package app\common\model\user
  */
-class BalanceLog extends BaseModel
+class OrgLog extends BaseModel
 {
     // 定义表名
-    protected $name = 'user_balance_log';
+    protected $name = 'user_org_log';
 
     // 定义主键
     protected $pk = 'log_id';
@@ -31,29 +31,20 @@ class BalanceLog extends BaseModel
     protected $updateTime = false;
 
     /**
-     * 关联会员记录表
-     * @return \think\model\relation\BelongsTo
+     * 新增变更记录 (批量)
+     * @param $data
+     * @return int
      */
-    public function user()
+    public function records($data)
     {
-        $module = self::getCalledModule();
-        return $this->belongsTo("app\\{$module}\\model\\User");
-    }
-
-    /**
-     * 新增记录
-     * @param int $scene
-     * @param array $data
-     * @param array $describeParam
-     */
-    public static function add(int $scene, array $data, array $describeParam)
-    {
-        $model = new static;
-        $model->save(array_merge([
-            'scene' => $scene,
-            'describe' => vsprintf(SceneEnum::data()[$scene]['describe'], $describeParam),
-            'store_id' => $model::$storeId
-        ], $data));
+        $saveData = [];
+        foreach ($data as $item) {
+            $saveData[] = array_merge([
+                'change_type' => ChangeTypeEnum::ADMIN_USER,
+                'store_id' => static::$storeId
+            ], $item);
+        }
+        return $this->addAll($saveData) !== false;
     }
 
 }

@@ -21,11 +21,16 @@ use app\common\enum\EnumBasics;
  */
 class PayType extends EnumBasics
 {
-    // 余额支付
+    // 消费金支付
     const BALANCE = 10;
 
     // 微信支付
     const WECHAT = 20;
+
+    // 组合支付
+    const CONSTITUTE = 30;
+
+
 
     /**
      * 获取枚举数据
@@ -35,12 +40,16 @@ class PayType extends EnumBasics
     {
         return [
             self::BALANCE => [
-                'name' => '余额支付',
+                'name' => '消费金支付',
                 'value' => self::BALANCE,
             ],
             self::WECHAT => [
                 'name' => '微信支付',
                 'value' => self::WECHAT,
+            ],
+            self::CONSTITUTE => [
+                'name' => '组合支付',
+                'value' => self::CONSTITUTE,
             ],
         ];
     }
