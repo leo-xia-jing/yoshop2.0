@@ -203,9 +203,14 @@ class GoodsDeduct extends BaseService
     private function setGoodsListCouponMoneyDiff($assignedCouponMoney): void
     {
         $tempDiff = $this->actualReducedMoney - $assignedCouponMoney;
-        foreach ($this->rangeGoodsList as &$goods) {
-            if ($tempDiff < 1) break;
-            $goods['coupon_money']++ && $tempDiff--;
+
+        while ($tempDiff > 0){
+            foreach ($this->rangeGoodsList as &$goods) {
+                if ($tempDiff < 1) break;
+                if(!$goods['coupon_money']) continue;
+                $goods['coupon_money']++;
+                $tempDiff--;
+            }
         }
     }
 }
