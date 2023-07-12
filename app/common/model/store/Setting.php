@@ -173,6 +173,7 @@ class Setting extends BaseModel
                             'bucket' => '',
                             'access_key_id' => '',
                             'access_key_secret' => '',
+                            'endpoint' => '<bucket-name>.oss-<region-name>.aliyuncs.com'
                             'domain' => 'http://'
                         ],
                         StorageEnum::QCLOUD => [
