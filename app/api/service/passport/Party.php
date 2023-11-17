@@ -15,6 +15,7 @@ namespace app\api\service\passport;
 use app\api\model\UserOauth as UserOauthModel;
 use app\api\service\user\Oauth as OauthService;
 use app\api\service\user\Avatar as AvatarService;
+use app\common\enum\Client as ClientEnum;
 use app\common\service\BaseService;
 use cores\exception\BaseException;
 
@@ -152,5 +153,22 @@ class Party extends BaseService
             return ['oauth_id' => $wxSession['openid'], 'unionid' => $wxSession['unionid'] ?? null];
         }
         return null;
+    }
+
+    /**
+     * 根据第三方来源生成默认用户昵称
+     * @param array $partyData
+     * @return string
+     */
+    private static function getDefaultNickName(array $partyData): string
+    {
+        $default = [
+            ClientEnum::MP_WEIXIN => '微信',
+            ClientEnum::MP_ALIPAY => '支付宝',
+            ClientEnum::WXOFFICIAL => '公众号',
+            ClientEnum::H5 => 'H5',
+            ClientEnum::APP => 'APP',
+        ];
+        return isset($default[$partyData['oauth']]) ? "{$default[$partyData['oauth']]}用户" : '商城用户';
     }
 }
