@@ -246,7 +246,7 @@ class Login extends BaseService
         // 写入用户信息(第三方)
         // 如果不需要每次登录都更新微信用户头像昵称, 下面4行代码可以屏蔽掉
 //        if ($isParty === true && !empty($partyData)) {
-//            $partyUserInfo = PartyService::partyUserInfo($partyData, true);
+//            $partyUserInfo = PartyService::partyUserInfo($partyData);
 //            $data = array_merge($data, $partyUserInfo);
 //        }
         // 更新用户记录

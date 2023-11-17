@@ -92,21 +92,32 @@ class Party extends BaseService
     /**
      * 第三方用户信息
      * @param array $partyData 第三方用户信息
+     * @param bool $defaultNickName 是否需要生成默认用户昵称 (仅首次注册时)
      * @param bool $isGetAvatarUrl 是否下载头像
      * @return array
      * @throws BaseException
      * @throws \think\Exception
      */
-    public static function partyUserInfo(array $partyData, bool $isGetAvatarUrl = true): array
+    public static function partyUserInfo(array $partyData, bool $defaultNickName = false, bool $isGetAvatarUrl = true): array
     {
-        $partyUserInfo = $partyData['userInfo'];
-        $data = [
-            'nick_name' => $partyUserInfo['nickName'],
-            'gender' => $partyUserInfo['gender']
-        ];
-        // 下载用户头像
+        $partyUserInfo = $partyData['userInfo'] ?? [];
+        $data = [];
+        if (!empty($partyUserInfo['nickName'])) {
+            $data['nick_name'] = $partyUserInfo['nickName'];
+        }
+        // 生成默认的用户昵称
+        if ($defaultNickName && empty($data['nick_name'])) {
+            $data['nick_name'] = self::getDefaultNickName($partyData);
+        }
         if ($isGetAvatarUrl) {
-            $data['avatar_id'] = static::partyAvatar($partyUserInfo['avatarUrl']);
+            // 记录avatarId
+            if (!empty($partyUserInfo['avatarId']) && $partyUserInfo['avatarId'] > 0) {
+                $data['avatar_id'] = (int)$partyUserInfo['avatarId'];
+            }
+            // 通过外链下载头像
+            if (empty($data['avatar_id']) && !empty($partyUserInfo['avatarUrl'])) {
+                $data['avatar_id'] = static::partyAvatar($partyUserInfo['avatarUrl']);
+            }
         }
         return $data;
     }
