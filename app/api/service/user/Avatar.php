@@ -71,12 +71,12 @@ class Avatar extends BaseService
         // 实例化存储驱动
         $storage = new Storage($this->config);
         // 设置上传文件的信息
-        $storage->setUploadFileByReal($filePath)
+        $result = $storage->setUploadFileByReal($filePath)
             ->setRootDirName((string)$this->storeId)
             ->setValidationScene('image')
             ->upload();
         // 执行文件上传
-        if (!$storage->upload()) {
+        if (!$result) {
             throwError('图片上传失败：' . $storage->getError());
         }
         // 文件信息
