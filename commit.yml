@@ -3,27 +3,30 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid '9bee259ea0b1439345d6b56dbf58931141954bd7'
-    oldFile: !uuid 'c7185623b013bfdc7ab4c0dc89440afe80304508'
+    newFile: !uuid 'b5e596f592d2f7d74b8bb2e0ba19524792064fa4'
+    oldFile: !uuid '9bee259ea0b1439345d6b56dbf58931141954bd7'
   /app/api:
-    newFile: !uuid 'c81114a72ae56801e6c93daa4f8f7fdc87198616'
-    oldFile: !uuid '4c7b92f1cd8a42e528a08cea8a3e8b563341159c'
+    newFile: !uuid 'a870fa4e7239749b4a9a4cd2d9c2bd754fe4cb8a'
+    oldFile: !uuid 'c81114a72ae56801e6c93daa4f8f7fdc87198616'
   /app/api/service:
-    newFile: !uuid '22c3510e49f064a8c16965e40bbffe5e4786e60c'
-    oldFile: !uuid '2634f125c656864d8187133c9de5a3ca46cf5193'
-  /app/api/service/coupon:
-    newFile: !uuid 'e1884796739509786f5d36eceec548d740070920'
-    oldFile: !uuid '3e4189e1382826da20be9c97bc43e706ebd99809'
-  /app/api/service/coupon/GoodsDeduct.php:
-    newFile: !uuid '08e13e3f2bf6ddaf4f1933cd1253115548d3a732'
-    oldFile: !uuid 'dd3d677bf5496a213a6ac95f20a7c7c5d055ae50'
-  /app/api/service/user:
-    newFile: !uuid 'db0531254c06a75d077f56a42e63a13890fadd1a'
-    oldFile: !uuid 'aa6c8b5b8bf1b222a7cbed9caa3ca468c6642853'
-  /app/api/service/user/Avatar.php:
-    newFile: !uuid 'ce32d6e4ff60047b852f2235531697509964791d'
-    oldFile: !uuid '77a6f805d8239c5bb39e11f3a1909b4311e4dc98'
-gitCommitId: !uuid '2b8c86cf9743631ff91cf8bbe56cbf4718e1eb03'
+    newFile: !uuid '41f946db5f530b180dd19f7e14bec63ec365da74'
+    oldFile: !uuid '22c3510e49f064a8c16965e40bbffe5e4786e60c'
+  /app/api/service/passport:
+    newFile: !uuid '5cc7a1e8c6e861527d153dd01a722531b70f3a0d'
+    oldFile: !uuid '27de6ae2cf0c33b44d7e5b7dd76f76a872fb95d3'
+  /app/api/service/passport/Party.php:
+    newFile: !uuid '567356e1755107523d80489ca5aad6b1341efde6'
+    oldFile: !uuid '4f3a2db80abbc516d2145a2df68f294e9cd2940f'
+  /app/common:
+    newFile: !uuid 'a3088dfce4dd571443d73a843137f6bfad1c7817'
+    oldFile: !uuid 'cb9647f27d28a85500e12191bbcd14200c950550'
+  /app/common/enum:
+    newFile: !uuid '01823209939e08acb3db9b61d75d25414d1d2acb'
+    oldFile: !uuid '8f2d1fa6b1c0bb0b36d08717f60d87daab95b6d9'
+  /app/common/enum/Client.php:
+    newFile: !uuid 'fd9027bb99307e763d110def22d4d7954356364b'
+    oldFile: null
+gitCommitId: !uuid '74b9b2e940662e595d2f55b72673a6d7a7bd562e'
 renames: {
   }
-revisionId: 346
+revisionId: 347
