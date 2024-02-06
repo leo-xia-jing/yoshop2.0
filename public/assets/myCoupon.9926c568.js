@@ -1,0 +1,1 @@
+import{$ as o}from"./index-3b24b149.js";const s="myCoupon/list",t="myCoupon/receive",r=(t,r)=>{const e={isPrompt:!0,load:!0,...r};return o.get(s,t,e)},e=(s,r,e)=>o.post(t,{couponId:s,...r},e);export{r as l,e as r};
