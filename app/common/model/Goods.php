@@ -311,9 +311,31 @@ class Goods extends BaseModel
             ->with(['images.file'])
             ->where($filter)
             ->where('is_delete', '=', 0)
-            ->orderRaw('field(goods_id, ' . implode(',', $goodsIds) . ')')
+            // field 函数不兼容
+            //->orderRaw('field(goods_id, ' . implode(',', $goodsIds) . ')')
             ->select();
         // 整理列表数据并返回
+        //返回前php排序一下,适配上面SQL排序功能: orderRaw('field(goods_id, ' . implode(',', $goodsIds) . ')')
+        $data->sort(function($a, $b) use ($goodsIds) {
+			$posA = array_search($a['goods_id'], $goodsIds);  
+			$posB = array_search($b['goods_id'], $goodsIds);  
+	  
+			// 如果两个元素都在$goodsIds数组中，按照它们在数组中的位置排序  
+			if ($posA !== false && $posB !== false) {  
+				return $posA - $posB;  
+			}  
+	  
+			// 如果一个元素在$goodsIds数组中而另一个不在，将在数组中的元素排在前面  
+			if ($posA !== false) {  
+				return -1;  
+			}  
+			if ($posB !== false) {  
+				return 1;  
+			}  
+	  
+			// 如果两个元素都不在$goodsIds数组中，保持它们的相对顺序不变（稳定排序）  
+			return 0;  
+		});  
         return $this->setGoodsListData($data);
     }
 
