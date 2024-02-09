@@ -148,7 +148,7 @@ CREATE TABLE `yoshop_delivery` (
   `store_id` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '小程序d',
   `create_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间',
   `update_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '更新时间',
-  PRIMARY KEY (`delivery_id`,`is_delete`),
+  PRIMARY KEY (`delivery_id`), /* delivery_id 已经是AUTO_INCREMENT,确保唯一了,并不需要复合主键 */
   KEY `store_id` (`store_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10001 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='配送模板主表';
 
