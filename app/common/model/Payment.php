@@ -191,6 +191,10 @@ class Payment extends BaseModel
                 PaymentMethodEnum::ALIPAY,
                 PaymentMethodEnum::BALANCE,
             ]),
+            ClientEnum::WXOFFICIAL => $this->defaultGroup(ClientEnum::WXOFFICIAL, [
+                // PaymentMethodEnum::WECHAT,
+                PaymentMethodEnum::BALANCE,
+            ]),
             ClientEnum::APP => $this->defaultGroup(ClientEnum::APP, [
                 PaymentMethodEnum::WECHAT,
                 PaymentMethodEnum::ALIPAY,

@@ -25,6 +25,10 @@ class Client extends EnumBasics
     // H5端
     const H5 = 'H5';
 
+    // 微信公众号端
+    // 相当于H5端运行在微信内置浏览器, 但是需要使用微信的jssdk所以要单独区分
+    const WXOFFICIAL = 'WXOFFICIAL';
+
     // 微信小程序端
     const MP_WEIXIN = 'MP-WEIXIN';
 
@@ -46,7 +50,11 @@ class Client extends EnumBasics
             self::MP_WEIXIN => [
                 'name' => '微信小程序端',
                 'value' => self::MP_WEIXIN,
-            ]
+            ],
+            self::WXOFFICIAL => [
+                'name' => '微信公众号端',
+                'value' => self::WXOFFICIAL,
+            ],
         ];
     }
 
