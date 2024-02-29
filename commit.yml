@@ -2,19 +2,87 @@
 branches: {
   }
 fileChange:
-  /version.json:
-    newFile: !uuid '23a340ea07449292dffa0277254025976305bff4'
-    oldFile: !uuid '87032da008abd34dfdd7caa35bc127a9fdf9c8bc'
-  /数据库修改记录:
-    newFile: !uuid '66a38bbf8ef71c9c6aadd2db52b0ab0947f75a36'
-    oldFile: !uuid '29603085d7f95dd17a2ab056694d522c86fef951'
-  /数据库修改记录/dev.txt:
-    newFile: !uuid 'e69de29bb2d1d6434b8b29ae775ad8c2e48c5391'
-    oldFile: !uuid '88ac767ce3b8df9f4b4fea39d43fc5bface92511'
-  /数据库修改记录/v2.1.1.sql:
-    newFile: !uuid '88ac767ce3b8df9f4b4fea39d43fc5bface92511'
+  /public:
+    newFile: !uuid '0779082b314bd988660dc5b2df89a36223a305a5'
+    oldFile: !uuid '767c659e0e6b57583a4a4a03463380b5d0e04542'
+  /public/store:
+    newFile: !uuid '6e3bf782303ed2b2e51a03784dd0f17d2dbaae56'
+    oldFile: !uuid '1ce4985a3a3a18a658ef9d0be5d4d2537a0883f9'
+  /public/store/css:
+    newFile: !uuid '9891e0e8eea466a7e478c191eb6bc5999f48852f'
+    oldFile: !uuid 'df72497a957bd65002d5b2549f70710a55491c71'
+  /public/store/css/content.8395fa01.css:
+    newFile: !uuid '620fcfe7ce85f7942b31d05ac7387400a10e925c'
     oldFile: null
-gitCommitId: !uuid 'a349a280a299721d7da8f20ba63b3ee83368c10b'
-renames: {
-  }
-revisionId: 367
+  /public/store/css/content.e1ffda87.css:
+    newFile: null
+    oldFile: !uuid '7c738851e85f6bd1cabf3b745d59a70f83578975'
+  /public/store/css/content~goods~manage~market~order~page~setting~store~user.8f8f7bf2.css:
+    newFile: !uuid 'ec72ac1ca1022ee576dab8e1456ecc1c3ea6ead5'
+    oldFile: null
+  /public/store/css/content~goods~manage~market~order~page~setting~store~user.eacc17f4.css:
+    newFile: null
+    oldFile: !uuid '1af27827c3c15a83fd519917b241c67a1750c533'
+  /public/store/css/order.05d698be.css:
+    newFile: !uuid '2584da1cd69513f33b1915aaf6470eee2f7b0184'
+    oldFile: null
+  /public/store/css/order.fa83d225.css:
+    newFile: null
+    oldFile: !uuid '541a1b035b3b9c2f846c905d84591c66655d3465'
+  /public/store/css/setting.486698fe.css:
+    newFile: !uuid 'f4c84e5f17a466ebb8b2fdbaa49f46669bd72cce'
+    oldFile: null
+  /public/store/css/setting.b4536fb9.css:
+    newFile: null
+    oldFile: !uuid '11172515ed6f793878923aeef33b4c5aef33509c'
+  /public/store/index.html:
+    newFile: !uuid '92e302fee3c016f1dd52c1af52d26d0ba8650f7c'
+    oldFile: !uuid '38a6ef38edf0cea857d539b9973cdf3e0e885fca'
+  /public/store/js:
+    newFile: !uuid '4dae31b05d7c0ab5ffefc62c10c2bf59dfba5701'
+    oldFile: !uuid 'da661c41f4f744045f69717e561bfaf9745096ba'
+  /public/store/js/app.33be413b.js:
+    newFile: null
+    oldFile: !uuid '89612277505d60924d988a6fe6f44ea19701f441'
+  /public/store/js/app.575ca99d.js:
+    newFile: !uuid '055246a374826847e240acdbb7e80641f3a6ac5e'
+    oldFile: null
+  /public/store/js/content.5ecf8ebb.js:
+    newFile: null
+    oldFile: !uuid '5c6be26b58f90cd2ebf1b362b28b970eee6cc6d7'
+  /public/store/js/content.68333bb9.js:
+    newFile: !uuid '40e538eaff65fe540d10ddb42eccada07142d0f2'
+    oldFile: null
+  /public/store/js/content~goods~manage~market~order~page~setting~store~user.47b68463.js:
+    newFile: null
+    oldFile: !uuid '32b9b7d83d8ee6430bec985e0e32f7e7745733eb'
+  /public/store/js/content~goods~manage~market~order~page~setting~store~user.c40eafca.js:
+    newFile: !uuid 'fa50f94a5057d24e56036f0eb248b1c4d0105fc9'
+    oldFile: null
+  /public/store/js/market.3aa72aeb.js:
+    newFile: null
+    oldFile: !uuid 'a3354287c83ca8846183b2a187e797f2920275c7'
+  /public/store/js/market.b3587d24.js:
+    newFile: !uuid 'c70d862028a9c8ab53736188406225a8da8789fa'
+    oldFile: null
+  /public/store/js/order.2c084489.js:
+    newFile: null
+    oldFile: !uuid 'ba849cd1c5d616e6e8a6a4dc98ed81c04c59f1de'
+  /public/store/js/order.f3b925c7.js:
+    newFile: !uuid '4c76ec6b1ef1028fe98ecba507749785976a28ea'
+    oldFile: null
+  /public/store/js/setting.0f025956.js:
+    newFile: !uuid 'cc1fe2544e8d130c718d0b2e429236d577b1af58'
+    oldFile: null
+  /public/store/js/setting.6a15eaa0.js:
+    newFile: null
+    oldFile: !uuid '0134483465dd952d3b597f0ed13cb2a9448e9b85'
+gitCommitId: !uuid '2c0bc6879cece5071e735e4dce3514e3f06fe1b8'
+renames:
+  /public/store/css/content~goods~manage~market~order~page~setting~store~user.8f8f7bf2.css: /public/store/css/content~goods~manage~market~order~page~setting~store~user.eacc17f4.css
+  /public/store/css/order.05d698be.css: /public/store/css/order.fa83d225.css
+  /public/store/css/setting.486698fe.css: /public/store/css/setting.b4536fb9.css
+  /public/store/js/app.575ca99d.js: /public/store/js/app.33be413b.js
+  /public/store/js/content~goods~manage~market~order~page~setting~store~user.c40eafca.js: /public/store/js/content~goods~manage~market~order~page~setting~store~user.47b68463.js
+  /public/store/js/market.b3587d24.js: /public/store/js/market.3aa72aeb.js
+revisionId: 368
