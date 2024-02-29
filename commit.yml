@@ -2,25 +2,13 @@
 branches: {
   }
 fileChange:
-  /app:
-    newFile: !uuid '025c6e53b8a45fccb73737189d62a9e934375442'
-    oldFile: !uuid 'e57c87525b41fa936dd81fa6d1844113e372a738'
-  /app/store:
-    newFile: !uuid 'b93d879465a5858ab44638ba5c008026f91e797d'
-    oldFile: !uuid 'e4790f9d9d969cb4f69bc8c96b663544a90c2691'
-  /app/store/config:
-    newFile: !uuid '92872fb98dfa9490716c403d8654aae1b4458277'
-    oldFile: !uuid '17e63dc3abebcb82aba8c9451f2de83c13bd6313'
-  /app/store/config/allowapi.php:
-    newFile: !uuid '657b68d26ef466f13c4b5a55f242234836aef59b'
-    oldFile: !uuid 'a87bf1836b699c34cf64fe3254519af6cc056a3c'
   /数据库修改记录:
-    newFile: !uuid '04daad31df08cd7c6c77714dc5292e1f98c46688'
-    oldFile: !uuid '101c785c491b8a38ecb0616a0c51972a2e1b00f7'
+    newFile: !uuid '0019f4caf0280fae7aa622666025713d7eb31c07'
+    oldFile: !uuid '04daad31df08cd7c6c77714dc5292e1f98c46688'
   /数据库修改记录/dev.txt:
-    newFile: !uuid '3a2aa6c2238b010ecb9b550f5b222dd9da9719cd'
-    oldFile: null
-gitCommitId: !uuid '11119c60a6eb625ef9161bb25a497f9554b8b744'
+    newFile: !uuid '24a35ba30dfe5a9bcf20c0fd54adcb96bfb86b70'
+    oldFile: !uuid '3a2aa6c2238b010ecb9b550f5b222dd9da9719cd'
+gitCommitId: !uuid '52b2b5c0730b5420a1ede7886a35063d6760ecfa'
 renames: {
   }
-revisionId: 356
+revisionId: 357
