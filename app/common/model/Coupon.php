@@ -14,6 +14,7 @@ namespace app\common\model;
 
 use cores\BaseModel;
 use app\common\library\helper;
+use app\common\enum\coupon\ExpireType as ExpireTypeEnum;
 
 /**
  * 优惠券模型
@@ -48,7 +49,7 @@ class Coupon extends BaseModel
         if ($data['total_num'] > -1 && $data['receive_num'] >= $data['total_num']) {
             return ['text' => '已抢光', 'value' => 0];
         }
-        if ($data['expire_type'] == 20 && ($data['end_time'] + 86400) < time()) {
+        if ($data['expire_type'] == ExpireTypeEnum::FIXED_TIME && ($data['end_time'] + 86400) < time()) {
             return ['text' => '已过期', 'value' => 0];
         }
         return ['text' => '正常', 'value' => 1];
@@ -139,7 +140,7 @@ class Coupon extends BaseModel
             $this->error = '很抱歉，当前优惠券已发完';
             return false;
         }
-        if ($couponInfo['expire_type'] == 20 && ($couponInfo->getData('end_time') + 86400) < time()) {
+        if ($couponInfo['expire_type'] == ExpireTypeEnum::FIXED_TIME && ($couponInfo->getData('end_time') + 86400) < time()) {
             $this->error = '很抱歉，当前优惠券已过期';
             return false;
         }

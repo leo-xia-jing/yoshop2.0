@@ -715,7 +715,7 @@ class Checkout extends BaseService
         // 新增订单记录
         $this->add($order, $this->param['remark']);
         // 保存订单数据 (根据订单类型)
-        $order['orderType'] == 10 && $this->saveOrderByPhysical($order);
+        $order['orderType'] == OrderType::PHYSICAL && $this->saveOrderByPhysical($order);
         // 保存订单商品信息
         $this->saveOrderGoods($order);
         // 更新商品库存 (针对下单减库存的商品)
@@ -752,7 +752,7 @@ class Checkout extends BaseService
      */
     private function validateOrderForm(array $order): bool
     {
-        if ($order['orderType'] == 10) {
+        if ($order['orderType'] == OrderType::PHYSICAL) {
             return $this->validateOrderFormByPhysical($order);
         }
         return true;

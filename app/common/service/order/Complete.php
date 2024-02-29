@@ -18,6 +18,8 @@ use app\common\model\Order as OrderModel;
 use app\common\model\store\Setting as SettingModel;
 use app\common\model\user\PointsLog as PointsLogModel;
 use app\common\enum\Setting as SettingEnum;
+use app\common\enum\order\refund\RefundType as RefundTypeEnum;
+use app\common\enum\order\refund\AuditStatus as AuditStatusEnum;
 use app\common\service\BaseService;
 
 /**
@@ -100,8 +102,8 @@ class Complete extends BaseService
             foreach ($order['goods'] as $goods) {
                 if (
                     !empty($goods['refund'])
-                    && $goods['refund']['type'] == 10      // 售后类型：退货退款
-                    && $goods['refund']['audit_status'] == 10  // 商家审核：已同意
+                    && $goods['refund']['type'] == RefundTypeEnum::RETURN      // 售后类型：退货退款
+                    && $goods['refund']['audit_status'] == AuditStatusEnum::REVIEWED  // 商家审核：已同意
                 ) {
                     $pointsBonus -= $goods['points_bonus'];
                 }
@@ -141,8 +143,8 @@ class Complete extends BaseService
             foreach ($order['goods'] as $goods) {
                 if (
                     !empty($goods['refund'])
-                    && $goods['refund']['type'] == 10      // 售后类型：退货退款
-                    && $goods['refund']['audit_status'] == 10  // 商家审核：已同意
+                    && $goods['refund']['type'] == RefundTypeEnum::RETURN      // 售后类型：退货退款
+                    && $goods['refund']['audit_status'] == AuditStatusEnum::REVIEWED  // 商家审核：已同意
                 ) {
                     $expendMoney = helper::bcsub($expendMoney, $goods['refund']['refund_money']);
                 }

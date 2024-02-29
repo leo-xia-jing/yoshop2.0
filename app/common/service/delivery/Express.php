@@ -13,9 +13,10 @@ declare (strict_types=1);
 namespace app\common\service\delivery;
 
 use app\common\library\helper;
-use app\common\enum\Setting as SettingEnum;
 use app\common\model\Delivery as DeliveryModel;
 use app\common\model\store\Setting as SettingModel;
+use app\common\enum\Setting as SettingEnum;
+use app\common\enum\delivery\Method as DeliveryMethodEnum;
 use app\common\service\BaseService;
 
 /**
@@ -218,7 +219,7 @@ class Express extends BaseService
                 $totalNum = helper::bcadd($totalNum, $goodsItem['total_num']);
             }
         }
-        return $item['delivery']['method'] == 10 ? $totalNum : $totalWeight;
+        return $item['delivery']['method'] == DeliveryMethodEnum::QUANTITY ? $totalNum : $totalWeight;
     }
 
     /**

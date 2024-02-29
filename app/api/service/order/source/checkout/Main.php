@@ -13,6 +13,7 @@ declare (strict_types=1);
 namespace app\api\service\order\source\checkout;
 
 use app\api\service\Order as OrderService;
+use app\common\enum\goods\Status as GoodsStatusEnum;
 use app\common\enum\order\OrderSource as OrderSourceEnum;
 
 /**
@@ -50,7 +51,7 @@ class Main extends Basics
     private function validateGoodsStatus(): bool
     {
         foreach ($this->goodsList as $goods) {
-            if ($goods['is_delete'] || $goods['status'] == 20) {
+            if ($goods['is_delete'] || $goods['status'] == GoodsStatusEnum::OFF_SALE) {
                 $this->error = "很抱歉，商品 [{$goods['goods_name']}] 已下架";
                 return false;
             }

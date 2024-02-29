@@ -63,10 +63,6 @@ class Menu extends MenuModel
                 return false;
             }
         }
-        // 如果模块是操作, 不允许修改上级菜单id
-        if ($this['module'] == 20 && isset($data['parent_id'])) {
-            unset($data['parent_id']);
-        }
         return $this->save($data);
     }
 

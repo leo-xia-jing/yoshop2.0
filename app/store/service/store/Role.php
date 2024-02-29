@@ -17,6 +17,7 @@ use app\store\model\store\Menu as MenuModel;
 use app\store\model\store\UserRole as UserRoleModel;
 use app\store\model\store\RoleMenu as RoleMenuModel;
 use app\store\service\store\User as UserService;
+use app\common\enum\menu\Type as MenuTypeEnum;
 use think\db\exception\DataNotFoundException;
 use think\db\exception\DbException;
 use think\db\exception\ModelNotFoundException;
@@ -103,7 +104,7 @@ class Role extends BaseService
             if (!empty($item['children'])) {
                 // 整理actions
                 $item['actions'] = array_filter($item['children'], function ($val) {
-                    return $val['type'] == 20;
+                    return $val['type'] == MenuTypeEnum::ACTION;
                 });
                 // 整理children
                 $item['children'] = static::filterChildrenAction($item['children']);
