@@ -206,7 +206,7 @@ class Order extends OrderModel
         $updatePrice = helper::bcsub($data['order_price'], $this['order_price']);
         // 更新订单记录
         return $this->save([
-                'order_no' => $this->orderNo(), // 修改订单号, 否则微信支付提示重复
+                'order_price' => $data['order_price'],
                 'pay_price' => $payPrice,
                 'update_price' => $updatePrice,
                 'express_price' => $data['express_price']
