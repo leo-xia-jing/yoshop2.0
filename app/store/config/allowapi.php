@@ -28,8 +28,14 @@ return [
 
     // 文件库列表
     '/files/list',
+    // 删除文件
+    '/files/delete',
+    // 移动文件
+    '/files/moveGroup',
     // 文件分组列表
     '/files.group/list',
+    // 新增文件分组
+    '/files.group/add',
     // 上传图片文件
     '/upload/image',
     // 上传视频文件
