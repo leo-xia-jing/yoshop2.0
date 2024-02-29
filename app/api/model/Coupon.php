@@ -76,7 +76,7 @@ class Coupon extends CouponModel
     private function setIsReceive($couponList)
     {
         // 获取用户已领取的优惠券
-        $userInfo = UserService::getCurrentLoginUser();
+        $userInfo = UserService::getCurrentLoginUser(false);
         if ($userInfo !== false) {
             $UserCouponModel = new UserCoupon;
             $userCouponIds = $UserCouponModel->getUserCouponIds($userInfo['user_id']);
