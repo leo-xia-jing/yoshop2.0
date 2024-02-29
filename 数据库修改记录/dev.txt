@@ -13,3 +13,7 @@ INSERT INTO `yoshop_store_api` VALUES ('11354', '移动文件', '/files/moveGrou
 
 UPDATE `yoshop_store_api` SET `sort`='120' WHERE (`api_id`='11016');
 UPDATE `yoshop_store_api` SET `sort`='125' WHERE (`api_id`='11316');
+
+-- 优化后台订单列表加载缓慢
+ALTER TABLE `yoshop_order_address` ADD INDEX (`order_id`);
+
