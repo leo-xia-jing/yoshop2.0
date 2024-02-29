@@ -14,7 +14,7 @@ namespace app\store\model\store;
 
 use app\common\library\helper;
 use app\common\model\store\User as StoreUserModel;
-use app\admin\service\store\User as StoreUserService;
+use app\store\service\store\User as StoreUserService;
 
 /**
  * 商家用户模型
