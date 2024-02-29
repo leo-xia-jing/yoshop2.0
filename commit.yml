@@ -3,39 +3,18 @@ branches: {
   }
 fileChange:
   /app:
-    newFile: !uuid 'df192ef7ed6f4019ab9ddb7991c4bd93dc826f49'
-    oldFile: !uuid '025c6e53b8a45fccb73737189d62a9e934375442'
-  /app/common:
-    newFile: !uuid 'cebc648e65f3f501c297cb3d9c0c62bdb1ebd912'
-    oldFile: !uuid 'c2ce952fbb19632d4cf367bdcda56fae0ed5280e'
-  /app/common/service:
-    newFile: !uuid '93b15f6f0ea1201c9e23e9edff3f94d006a37f70'
-    oldFile: !uuid '36ee10669f1da43290b5004b32b9656ed2d1fc55'
-  /app/common/service/order:
-    newFile: !uuid 'd911dd96701acb7a9fd70fa8b665bdf9336d3d0d'
-    oldFile: !uuid '0db8fedc4da46c813f3d0e305bba598c90862967'
-  /app/common/service/order/Complete.php:
-    newFile: !uuid '455bea9f55269c7ec14d2444009b5f5cee42d71a'
-    oldFile: !uuid '0a5eb135977deec712dc15dbe72fadb0871628f3'
-  /public:
-    newFile: !uuid '767c659e0e6b57583a4a4a03463380b5d0e04542'
-    oldFile: !uuid 'a306ea41f840bb34d9681a11e769e5dbecb4ea3b'
-  /public/install:
-    newFile: !uuid 'e084ce71e40b67372673b983adda983b8efe3e42'
-    oldFile: !uuid '326f7b62cac30afd2524465a5c200d4677b2a0de'
-  /public/install/data:
-    newFile: !uuid 'f8ea11e180388e8b0c6c6b6a265da50e2576f5de'
-    oldFile: !uuid 'da701cdfded7edd2b91d485744ccc1ba31669015'
-  /public/install/data/install.sql:
-    newFile: !uuid '339af9501be9c55bc4ad62315955ac207f624f82'
-    oldFile: !uuid 'dd04bce2e95a310a9cb01a12a03aedfb37a5134f'
-  /数据库修改记录:
-    newFile: !uuid '29603085d7f95dd17a2ab056694d522c86fef951'
-    oldFile: !uuid '0019f4caf0280fae7aa622666025713d7eb31c07'
-  /数据库修改记录/dev.txt:
-    newFile: !uuid '88ac767ce3b8df9f4b4fea39d43fc5bface92511'
-    oldFile: !uuid '24a35ba30dfe5a9bcf20c0fd54adcb96bfb86b70'
-gitCommitId: !uuid '6345f8b5f87a1729838ebd9011c03c0ff96392da'
+    newFile: !uuid '8ff06e39fb576ffe3a49e86a5844770216fa45d7'
+    oldFile: !uuid 'df192ef7ed6f4019ab9ddb7991c4bd93dc826f49'
+  /app/store:
+    newFile: !uuid '704dbd6d7d7e175481bf786344446250df24e229'
+    oldFile: !uuid 'b93d879465a5858ab44638ba5c008026f91e797d'
+  /app/store/model:
+    newFile: !uuid '28554a003da64e62d243dc96bbb1e714f7a2c839'
+    oldFile: !uuid 'c581df4d47ad97df386bc1bfdfb053506eb314d0'
+  /app/store/model/Order.php:
+    newFile: !uuid '627475588771b659267a43c194a616d77c53c556'
+    oldFile: !uuid '1d393af44d2b85b3a2d8442c612abe3d8dd57e89'
+gitCommitId: !uuid 'f953a3579af40f92c3079634d5ed101808586057'
 renames: {
   }
-revisionId: 359
+revisionId: 360
