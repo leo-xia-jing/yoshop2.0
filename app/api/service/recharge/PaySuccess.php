@@ -192,7 +192,7 @@ class PaySuccess extends BaseService
             BalanceLogModel::add(SceneEnum::RECHARGE, [
                 'user_id' => $orderInfo['user_id'],
                 'money' => $orderInfo['actual_money'],
-                'store_id' => $this->getStoreId(),
+                'store_id' => $orderInfo['store_id'],
             ], ['order_no' => $orderInfo['order_no']]);
             // 将第三方交易记录更新为已支付状态
             if (in_array($this->method, [PaymentMethodEnum::WECHAT, PaymentMethodEnum::ALIPAY])) {
