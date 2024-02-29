@@ -390,6 +390,7 @@ CREATE TABLE `yoshop_order` (
   `points_bonus` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '赠送的积分数量',
   `merchant_remark` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '' COMMENT '商家备注',
   `is_settled` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '订单是否已结算(0未结算 1已结算)',
+  `settled_time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '订单结算时间',
   `is_comment` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '是否已评价(0否 1是)',
   `order_source` tinyint(3) unsigned NOT NULL DEFAULT '10' COMMENT '订单来源(10普通订单 20砍价订单 30秒杀订单)',
   `order_source_id` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '来源记录ID',

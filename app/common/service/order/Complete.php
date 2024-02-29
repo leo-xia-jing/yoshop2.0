@@ -56,7 +56,7 @@ class Complete extends BaseService
      * @throws \think\db\exception\DbException
      * @throws \think\db\exception\ModelNotFoundException
      */
-    public function complete(iterable $orderList, int $storeId)
+    public function complete(iterable $orderList, int $storeId): bool
     {
         // 已完成订单结算
         // 条件：后台订单流程设置 - 已完成订单设置0天不允许申请售后
@@ -80,7 +80,7 @@ class Complete extends BaseService
         // 处理订单赠送的积分
         $this->setGiftPointsBonus($orderList);
         // 将订单设置为已结算
-        $this->model->onBatchUpdate($orderIds, ['is_settled' => 1]);
+        $this->model->onBatchUpdate($orderIds, ['is_settled' => 1, 'settled_time' => \time()]);
         return true;
     }
 
