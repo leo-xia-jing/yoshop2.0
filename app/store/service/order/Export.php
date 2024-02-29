@@ -199,6 +199,8 @@ class Export extends BaseService
             'order_status' => '订单状态',
             'is_comment' => '是否已评价',
             'order_source' => '订单来源',
+            'out_trade_no' => '第三方支付订单号',
+            'trade_no' => '支付流水号',
         ];
     }
 
@@ -257,6 +259,8 @@ class Export extends BaseService
                 'order_status' => OrderStatusEnum::data()[$order['order_status']]['name'],
                 'is_comment' => $order['is_comment'] ? '是' : '否',
                 'order_source' => OrderSourceEnum::data()[$order['order_source']]['name'],
+                'out_trade_no' => !empty($order['trade']) ? $this->filterValue($order['trade']['out_trade_no']) : '',
+                'trade_no' => !empty($order['trade']) ? $this->filterValue($order['trade']['trade_no']) : '',
             ];
         }
         return $dataArray;
