@@ -228,6 +228,9 @@ class Order extends OrderModel
      * @param array $data
      * @return bool
      * @throws BaseException
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\DbException
+     * @throws \think\db\exception\ModelNotFoundException
      */
     public function printer(array $data): bool
     {

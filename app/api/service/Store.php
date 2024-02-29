@@ -74,6 +74,9 @@ class Store extends BaseService
     /**
      * 店铺基本信息（名称、简介、logo）
      * @return StoreModel|array|null
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\DbException
+     * @throws \think\db\exception\ModelNotFoundException
      */
     private function storeInfo()
     {

@@ -25,6 +25,9 @@ class Store extends Controller
     /**
      * 获取当前登录的商城信息
      * @return Json
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\DbException
+     * @throws \think\db\exception\ModelNotFoundException
      */
     public function info(): Json
     {
@@ -36,6 +39,9 @@ class Store extends Controller
     /**
      * 更新商城信息
      * @return Json
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\DbException
+     * @throws \think\db\exception\ModelNotFoundException
      */
     public function update(): Json
     {

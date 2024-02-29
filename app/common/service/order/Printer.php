@@ -35,6 +35,9 @@ class Printer extends BaseService
      * @param int $printerId 打印机ID
      * @return bool|mixed
      * @throws BaseException
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\DbException
+     * @throws \think\db\exception\ModelNotFoundException
      */
     public function printEvent($order, int $printerId)
     {
@@ -90,8 +93,11 @@ class Printer extends BaseService
 
     /**
      * 构建订单打印的内容
-     * @param mixed $order
+     * @param $order
      * @return string
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\DbException
+     * @throws \think\db\exception\ModelNotFoundException
      */
     private function getPrintContent($order): string
     {

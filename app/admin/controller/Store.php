@@ -73,6 +73,9 @@ class Store extends Controller
      * 移入回收站
      * @param int $storeId
      * @return Json
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\DbException
+     * @throws \think\db\exception\ModelNotFoundException
      */
     public function recovery(int $storeId): Json
     {
@@ -88,6 +91,9 @@ class Store extends Controller
      * 移出回收站
      * @param int $storeId
      * @return Json
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\DbException
+     * @throws \think\db\exception\ModelNotFoundException
      */
     public function move(int $storeId): Json
     {

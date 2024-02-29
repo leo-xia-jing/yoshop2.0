@@ -46,7 +46,10 @@ class Store extends StoreModel
 
     /**
      * 获取当前商城的基本信息
-     * @return static|array|null
+     * @return Store|array|null
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\DbException
+     * @throws \think\db\exception\ModelNotFoundException
      */
     public static function getInfo()
     {

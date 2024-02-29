@@ -41,17 +41,16 @@ class Store extends BaseModel
      * 详情信息
      * @param int $storeId
      * @return static|array|null
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\DbException
+     * @throws \think\db\exception\ModelNotFoundException
      */
     public static function detail(int $storeId)
     {
-        try {
-            return self::withoutGlobalScope()
-                ->with(['logoImage'])
-                ->where('store_id', '=', $storeId)
-                ->find();
-        } catch (\Exception $e) {
-            return null;
-        }
+        return self::withoutGlobalScope()
+            ->with(['logoImage'])
+            ->where('store_id', '=', $storeId)
+            ->find();
     }
 
     /**

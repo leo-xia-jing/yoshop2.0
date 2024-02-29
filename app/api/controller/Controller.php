@@ -63,6 +63,9 @@ class Controller extends BaseController
      * 验证当前商城状态
      * @return void
      * @throws BaseException
+     * @throws DataNotFoundException
+     * @throws DbException
+     * @throws ModelNotFoundException
      */
     private function checkStore(): void
     {
