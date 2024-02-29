@@ -2,22 +2,19 @@
 branches: {
   }
 fileChange:
-  /app:
-    newFile: !uuid '138ad85919f09d3da9a048e9857e2321a1ecc471'
-    oldFile: !uuid '85a1d709ade7b27ea3a7ea6fa150cc0a578a18d7'
-  /app/api:
-    newFile: !uuid 'e1e1929740ab2af7364eb088c5bf85a0704e5a85'
-    oldFile: !uuid '8fcc03cb1d887b266cb034f01e60ac837d3c0d0b'
-  /app/api/service:
-    newFile: !uuid '20a2a74654aa509740ced41951e9ca53b32428d4'
-    oldFile: !uuid '5974c944e6533f7a01ff2858a58d103468573f70'
-  /app/api/service/recharge:
-    newFile: !uuid '3d3e70057e05a2fcaea0c960b99e664012a8cdcf'
-    oldFile: !uuid '8623255f28236d799da4e6eaca93f6d928219114'
-  /app/api/service/recharge/PaySuccess.php:
-    newFile: !uuid 'dabdc5be995cff6a3729c7c53bebf3479efc48f5'
-    oldFile: !uuid '5354fdce51af8f8a17236719ea9b3681bb46e847'
-gitCommitId: !uuid '88ad591a90c89b2984687404dff54c46ae5c6ac6'
+  /version.json:
+    newFile: !uuid '23a340ea07449292dffa0277254025976305bff4'
+    oldFile: !uuid '87032da008abd34dfdd7caa35bc127a9fdf9c8bc'
+  /数据库修改记录:
+    newFile: !uuid '66a38bbf8ef71c9c6aadd2db52b0ab0947f75a36'
+    oldFile: !uuid '29603085d7f95dd17a2ab056694d522c86fef951'
+  /数据库修改记录/dev.txt:
+    newFile: !uuid 'e69de29bb2d1d6434b8b29ae775ad8c2e48c5391'
+    oldFile: !uuid '88ac767ce3b8df9f4b4fea39d43fc5bface92511'
+  /数据库修改记录/v2.1.1.sql:
+    newFile: !uuid '88ac767ce3b8df9f4b4fea39d43fc5bface92511'
+    oldFile: null
+gitCommitId: !uuid 'a349a280a299721d7da8f20ba63b3ee83368c10b'
 renames: {
   }
-revisionId: 366
+revisionId: 367
