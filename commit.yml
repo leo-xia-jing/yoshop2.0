@@ -2,13 +2,52 @@
 branches: {
   }
 fileChange:
-  /数据库修改记录:
-    newFile: !uuid '0019f4caf0280fae7aa622666025713d7eb31c07'
-    oldFile: !uuid '04daad31df08cd7c6c77714dc5292e1f98c46688'
-  /数据库修改记录/dev.txt:
-    newFile: !uuid '24a35ba30dfe5a9bcf20c0fd54adcb96bfb86b70'
-    oldFile: !uuid '3a2aa6c2238b010ecb9b550f5b222dd9da9719cd'
-gitCommitId: !uuid '52b2b5c0730b5420a1ede7886a35063d6760ecfa'
-renames: {
-  }
-revisionId: 357
+  /public:
+    newFile: !uuid 'a306ea41f840bb34d9681a11e769e5dbecb4ea3b'
+    oldFile: !uuid '6b04a1ebbf30e6e0ab28f379188cad3f3478910b'
+  /public/install:
+    newFile: !uuid '326f7b62cac30afd2524465a5c200d4677b2a0de'
+    oldFile: !uuid '04c108b3a9c71d4469ca20db7bf5e3c9583c838b'
+  /public/install/data:
+    newFile: !uuid 'da701cdfded7edd2b91d485744ccc1ba31669015'
+    oldFile: !uuid '717586223ba22f1cecf2133854871c3588f1870b'
+  /public/install/data/install.sql:
+    newFile: !uuid 'dd04bce2e95a310a9cb01a12a03aedfb37a5134f'
+    oldFile: null
+  /public/install/data/install_data.sql:
+    newFile: null
+    oldFile: !uuid '971bcf3c9a03041bf8851eba55f0925c564d4de6'
+  /public/install/data/install_struct.sql:
+    newFile: null
+    oldFile: !uuid '61f33782844384dbc68bd58a2361912ce9f6800a'
+  /public/install/index.php:
+    newFile: !uuid '68580ed8cc7e366c271ec3a28a3e6b733fcb4c84'
+    oldFile: !uuid '75a86392d0dbe1be833879f71f11418205fed541'
+  /public/install/templates:
+    newFile: !uuid '97133c725b64c3b7e40fabec1e8e904daf935552'
+    oldFile: !uuid '67f204de97a1620c8b3f42e4d17a06baa9e66eb1'
+  /public/install/templates/js:
+    newFile: !uuid '307c08b72abb6b60577b5a3043154a8afcaaa508'
+    oldFile: !uuid 'd2052f9c6d9e12a5f32dd212c17f4493d3ba17b0'
+  /public/install/templates/js/forms.js:
+    newFile: !uuid '5874bb469c3b9c8d80172b76ae6ac663d344fd82'
+    oldFile: !uuid '3457d9a2732a82c43e055f16979c46fdf1353f80'
+  /public/install/templates/step_1.php:
+    newFile: !uuid '74433ed133b118c0c4b766fd622bf028424fffca'
+    oldFile: !uuid '81eb685c66e6d929c23e27bff8e891eee3846be0'
+  /public/install/templates/step_2.php:
+    newFile: !uuid '43a23f168696eb27a69e6327ab38069658f26d23'
+    oldFile: !uuid '417ce3f468438ce4b63d8803569aa4e53c50607e'
+  /public/install/templates/step_3.php:
+    newFile: !uuid '918abb17647e45e9d5b9bd3fc3ded223a85d2265'
+    oldFile: !uuid 'a82003a6c9950967fa00861338e296441768cbc2'
+  /public/install/templates/style:
+    newFile: !uuid 'a3a2bd3883704ff1bf67f00d2a57dc75bb85e7b8'
+    oldFile: !uuid '8b6a2ec196b58f7360bfbecb3747aca06cb21bb5'
+  /public/install/templates/style/install.css:
+    newFile: !uuid '17a8728a91ed7218126d234357e2a78981a384d0'
+    oldFile: !uuid '0667169c09226e125306ada2dc7183b2d3d7a231'
+gitCommitId: !uuid '651580e518c45049e5a2efae3f5aa7f3591f8bae'
+renames:
+  /public/install/data/install.sql: /public/install/data/install_data.sql
+revisionId: 358
