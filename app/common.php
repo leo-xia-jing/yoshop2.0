@@ -76,14 +76,15 @@ function throwError(string $message, ?int $status = null, array $data = [])
 
 /**
  * 下划线转驼峰
- * @param string $uncamelized_words
+ * @param string $str
  * @param string $separator
  * @return string
  */
-function camelize(string $uncamelized_words, string $separator = '_'): string
+function camelize(string $str, string $separator = '_'): string
 {
-    $uncamelized_words = $separator . str_replace($separator, " ", strtolower($uncamelized_words));
-    return ltrim(str_replace(" ", "", ucwords($uncamelized_words)), $separator);
+    $str = ucwords(str_replace($separator, ' ', $str));
+    $str = str_replace(' ', '', $str);
+    return lcfirst($str);
 }
 
 /**
