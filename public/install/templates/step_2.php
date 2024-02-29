@@ -10,7 +10,7 @@
     <script type="text/javascript" src="templates/js/forms.js"></script>
 </head>
 <body>
-<form name="form" id="form" method="post" action="index.php">
+<form name="form" id="form" method="post" action="index.php" autocomplete="off">
     <div class="header"></div>
     <div class="mainBody">
         <div class="table">
@@ -33,19 +33,21 @@
                 <tr>
                     <td height="40" align="right">数据库名称：</td>
                     <td>
-                        <input type="text" name="dbname" id="dbname" class="input" value="yoshop2_db"/>
+                        <input type="text" name="dbname" id="dbname" class="input" value=""/>
                         <span class="cnote">数据库的名称，如果没有请先新增</span>
                     </td>
                 </tr>
                 <tr>
                     <td height="40" align="right">数据库用户名：</td>
-                    <td><input type="text" name="dbuser" id="dbuser" class="input" value="root"/></td>
+                    <td><input type="text" name="dbuser" id="dbuser" class="input" value=""/></td>
                 </tr>
                 <tr>
                     <td height="40" align="right">数据库密码：</td>
-                    <td><input type="password" name="dbpwd" id="dbpwd" class="input" onblur="CheckPwd()"/>
+                    <td>
+                        <input type="password" name="dbpwd" id="dbpwd" class="input" onblur="CheckPwd()"/>
                         <span class="cnote"><span id="cpwdTxt"></span></span>
-                        <input type="hidden" name="cpwd" id="cpwd" value="false"></td>
+                        <input type="hidden" name="cpwd" id="cpwd" value="false">
+                    </td>
                 </tr>
 
                 <tr>
@@ -73,8 +75,9 @@
         </div>
     </div>
     <div class="footer"><span class="step3"></span> <span class="copyright"><?php echo $cfg_copyright; ?></span> <span
-                class="formSubBtn"> <a href="javascript:void(0);" onclick="history.go(-1);return false;" class="back">返 回</a> <a
-                    href="javascript:void(0);" onclick="CheckForm();return false;" class="submit">开始安装</a>
+            class="formSubBtn"> <a href="javascript:void(0);" onclick="history.go(-1);return false;"
+                                   class="back">返 回</a> <a
+                href="javascript:void(0);" onclick="CheckForm();return false;" class="submit">开始安装</a>
 		<input type="hidden" name="s" id="s" value="3">
 		</span></div>
 </form>

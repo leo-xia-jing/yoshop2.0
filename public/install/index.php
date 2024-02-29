@@ -2,7 +2,7 @@
 // +----------------------------------------------------------------------
 // | 萤火商城系统 [ 致力于通过产品和服务，帮助商家高效化开拓市场 ]
 // +----------------------------------------------------------------------
-// | Copyright (c) 2017~2023 https://www.yiovo.com All rights reserved.
+// | Copyright (c) 2017~2024 https://www.yiovo.com All rights reserved.
 // +----------------------------------------------------------------------
 // | Licensed 这不是一个自由软件，不允许对程序代码以任何形式任何目的的再发行
 // +----------------------------------------------------------------------
@@ -26,7 +26,7 @@ define('INSTALL_PATH', str_replace('\\', '/', dirname(__FILE__)));
 define('ROOT_PATH', dirname(INSTALL_PATH, 2));
 
 // 版权信息设置
-$cfg_copyright = '© 2017-2023 YIOVO.COM';
+$cfg_copyright = '© 2017-2024 YIOVO.COM';
 
 // 获取当前步骤
 $s = getStep();
@@ -47,19 +47,19 @@ function getStep()
     // 初始化参数
     $s2 = $_POST['s'] ?? 0;
     // 如果有GET值则覆盖POST值
-    if ($s1 > 0 && in_array($s1, [1, 63832, md5('done')])) {
+    if ($s1 > 0 && in_array($s1, [1, 'checkDbPwd', md5('done')])) {
         $s2 = $s1;
     }
     return $s2;
 }
 
 // 协议说明
-if ($s == 0) {
+if ($s == 0 && is_numeric($s)) {
     require_once(INSTALL_PATH . '/templates/step_0.php');
     exit();
 }
 // 环境检测
-if ($s == 1) {
+if ($s == 1 && is_numeric($s)) {
     // 获取检测的路径数据
     $iswrite_array = getIsWriteArray();
     // 获取检测的函数数据
@@ -71,12 +71,12 @@ if ($s == 1) {
     exit();
 }
 // 配置文件
-if ($s == 2) {
+if ($s == 2 && is_numeric($s)) {
     require_once(INSTALL_PATH . '/templates/step_2.php');
     exit();
 }
 // 正在安装
-if ($s == 3) {
+if ($s == 3 && is_numeric($s)) {
     require_once(INSTALL_PATH . '/templates/step_3.php');
 
     if ($_POST['s'] == 3) {
@@ -114,10 +114,6 @@ if ($s == 3) {
                 insError("创建数据库失败，请检查权限或联系管理员！");
             }
         }
-
-        // 数据库创建完成，开始连接
-        $pdo->query("USE `$dbname`");
-
         // 取出.env模板内容
         $config_str = readDataFile('.env.tpl');
 
@@ -133,62 +129,17 @@ if ($s == 3) {
         $fp = fopen(ROOT_PATH . '/.env', 'w');
         fwrite($fp, $config_str);
         fclose($fp);
-
-        // 防止浏览器缓存
-        $buffer = ini_get('output_buffering');
-        echo str_repeat(' ', $buffer + 1);
-
-        insInfo("数据库连接文件创建完成！");
-        ob_flush();
-        flush();
-
-        // 创建表结构
-        $tbstruct = readDataFile('install_struct.sql');
-        $pdo->exec(trim($tbstruct));
-
-        insInfo("数据库结构导入完成！");
-        ob_flush();
-        flush();
-
-        // 导入其他安装数据
-        $data_str = readDataFile('install_data.sql');
-        $pdo->exec(trim($data_str));
-
-        insInfo("商城默认数据导入完成！");
-        ob_flush();
-        flush();
-
-        // 查看是否需要安装测试数据
-        if ($testdata == 'true') {
-            insInfo("正在加载测试数据！");
-            ob_flush();
-            flush();
-
-            $sqlstr_file = readDataFile('install_testdata.sql');
-            $pdo->exec(trim($sqlstr_file));
-
-            insInfo("测试数据导入完成！");
-            ob_flush();
-            flush();
-        }
-
-        // 结束缓存区
-        ob_end_flush();
-
-        // 安装完成进行跳转
-        echo '<script>setTimeout(function () { location.href="?s=' . md5('done') . '"; }, 2000)</script>';
-        exit();
     }
     exit();
 }
 // 检测数据库信息
-if ($s == 63832) {
-    $dbhost = $_GET['dbhost'] ?? '';
-    $dbuser = $_GET['dbuser'] ?? '';
-    $dbpwd = $_GET['dbpwd'] ?? '';
-    $dbport = $_GET['dbport'] ?? '';
+if ($s === 'checkDbPwd') {
+    $dbhost = $_POST['dbhost'] ?? '';
+    $dbuser = $_POST['dbuser'] ?? '';
+    $dbpwd = $_POST['dbpwd'] ?? '';
+    $dbport = $_POST['dbport'] ?? '';
     try {
-        $dsn = "mysql:host=$dbhost;port={$dbport};charset=utf8";
+        $dsn = "mysql:host={$dbhost};port={$dbport};charset=utf8";
         $pdo = new PDO($dsn, $dbuser, $dbpwd);
         echo 'true';
     } catch (Exception $e) {
@@ -196,8 +147,71 @@ if ($s == 63832) {
     }
     exit();
 }
+// 逐步导入数据库
+if ($s === 'importDb') {
+    // 初始化信息
+    $dbhost = $_POST['dbhost'] ?? '';
+    $dbname = $_POST['dbname'] ?? '';
+    $dbuser = $_POST['dbuser'] ?? '';
+    $dbpwd = $_POST['dbpwd'] ?? '';
+    $dbport = $_POST['dbport'] ?? 3306;
+
+    $testdata = $_POST['testdata'] ?? '';
+
+    // 执行的索引 (某条数据)
+    $index = isset($_POST['index']) ? (int)$_POST['index'] : 1;
+
+    // 连接证数据库
+    try {
+        $dsn = "mysql:host={$dbhost};port={$dbport};charset=utf8";
+        $pdo = new PDO($dsn, $dbuser, $dbpwd);
+        $pdo->query("SET NAMES utf8"); // 设置数据库编码
+    } catch (Exception $e) {
+        insError('数据库连接错误，请检查！');
+    }
+
+    // 数据库创建完成，开始连接
+    $pdo->query("USE `$dbname`");
+
+    // 读取数据库脚本数据
+    $content = readDataFile('install.sql');
+    $data = preg_split('/DROP TABLE IF EXISTS `.*?`;/', $content);
+    if (!isset($data[$index])) {
+        insError('数据库索引不正确');
+    }
+
+    // 获取表名
+    $tableName = parseTableName($data[$index]);
+    if (empty($tableName)) {
+        insError('数据库执行脚本不正确');
+    }
+
+    // 生成sql语句
+    $dropSql = "DROP TABLE IF EXISTS `{$tableName}`;\n";
+    $sql = $dropSql . trim($data[$index]);
+
+    try {
+        // 执行sql内容
+        if ($pdo->exec($sql) !== false) {
+            $message = "创建数据表 [{$tableName}] 完成！";
+            $status = true;
+        } else {
+            $error = $pdo->errorInfo();
+            throw new Exception($error[2] ?? $error[0]);
+        }
+    } catch (\Throwable $e) {
+        $message = "创建数据表 [{$tableName}] 失败！" . $e->getMessage();
+        $status = false;
+    }
+
+    // 是否存在下一步
+    $isNext = $index < count($data) - 1;
+
+    // 返回结果
+    exit(jsonEncode(compact('index', 'message', 'status', 'isNext')));
+}
 // 安装完成
-if ($s == md5('done')) {
+if ($s === md5('done')) {
     require_once(INSTALL_PATH . '/templates/step_4.php');
     $fp = fopen(INSTALL_PATH . '/install.lock', 'w');
     fwrite($fp, '程序已正确安装，重新安装请删除本文件');
@@ -206,7 +220,7 @@ if ($s == md5('done')) {
 }
 
 // 获取扩展要求数据
-function getExtendArray()
+function getExtendArray(): array
 {
     $data = [
         [
@@ -248,7 +262,7 @@ function getExtendArray()
         [
             'name' => 'SimpleXML',
             'status' => extension_loaded('SimpleXML'),
-        ],
+        ]
     ];
     foreach ($data as $item) {
         !$item['status'] && setIsNext(false);
@@ -269,6 +283,21 @@ function getPHPVersion()
     }
 }
 
+// 匹配mysql表名
+function parseTableName(string $sql): ?string
+{
+    preg_match('/CREATE TABLE `(.*?)`/', $sql, $matches);
+    if (empty($matches)) {
+        return null;
+    }
+    return $matches[1];
+}
+
+function jsonEncode(array $data)
+{
+    return json_encode($data, JSON_UNESCAPED_UNICODE);
+}
+
 /**
  * 将版本转为数字
  * @param string $version
@@ -281,11 +310,11 @@ function versionToInteger(string $version): int
 }
 
 // 获取检测的路径数据
-function getIsWriteArray()
+function getIsWriteArray(): array
 {
     return [
         '/.env',
-        // '/data/',
+        '/data/',
         '/public/install/',
         '/public/uploads/',
         '/public/temp/',
@@ -293,9 +322,9 @@ function getIsWriteArray()
 }
 
 // 获取检测的函数数据
-function getExistsFuncArray()
+function getExistsFuncArray(): array
 {
-    return ['curl_init', 'bcadd', 'mb_substr', 'simplexml_load_string'];
+    return ['curl_init', 'chmod', 'bcadd', 'mb_substr', 'simplexml_load_string', 'json_encode', 'imagecreate'];
 }
 
 // 测试可写性
@@ -365,5 +394,17 @@ function insInfo($str)
 function insError($str, $isExit = false)
 {
     insInfo("<span class='col-red'>$str</span>");
+    exit();
+}
+
+/**
+ * 打印调试函数 html
+ * @param $content
+ * @param bool $export
+ */
+function pre($content, bool $export = false)
+{
+    $output = $export ? var_export($content, true) : print_r($content, true);
+    echo "<pre>{$output}</pre>";
     exit();
 }

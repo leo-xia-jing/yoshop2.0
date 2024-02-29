@@ -15,13 +15,13 @@
         <table width="100%" border="0" cellpadding="0" cellspacing="0">
             <tr align="left" class="head">
                 <td width="30%" height="36">项目
-                </th>
+                </td>
                 <td width="30%">所需配置
-                </th>
+                </td>
                 <td width="15%">推荐配置
-                </th>
+                </td>
                 <td width="25%" align="right">当前服务器
-                </th>
+                </td>
             </tr>
             <tr>
                 <td height="26" class="firstCol">操作系统</td>
@@ -69,11 +69,11 @@
         <table width="100%" border="0" cellpadding="0" cellspacing="0">
             <tr align="left" class="head">
                 <td width="60%" height="36">扩展要求
-                </th>
+                </td>
                 <td width="25%">检查结果
-                </th>
+                </td>
                 <td width="15%" align="right">建议
-                </th>
+                </td>
             </tr>
             <?php foreach ($extendArray as $item): ?>
                 <tr>
@@ -89,11 +89,11 @@
         <table width="100%" border="0" cellpadding="0" cellspacing="0">
             <tr align="left" class="head">
                 <td width="60%" height="36">函数名称
-                </th>
+                </td>
                 <td width="25%">检查结果
-                </th>
+                </td>
                 <td width="15%" align="right">建议
-                </th>
+                </td>
             </tr>
             <?php foreach ($exists_array as $v): ?>
                 <tr>
@@ -107,11 +107,11 @@
         <table width="100%" border="0" cellpadding="0" cellspacing="0">
             <tr align="left" class="head">
                 <td width="60%" height="36">文件权限检测
-                </th>
+                </td>
                 <td width="25%">所需状态
-                </th>
+                </td>
                 <td width="15%" align="right">当前状态
-                </th>
+                </td>
             </tr>
             <?php
             foreach ($iswrite_array as $v) {

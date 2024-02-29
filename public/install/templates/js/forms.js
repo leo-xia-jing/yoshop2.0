@@ -80,12 +80,12 @@ function CheckForm() {
         $.ajax({
             url: 'index.php',
             data: {
-                s: 63832,
+                s: 'checkDbPwd',
                 dbhost: $("#dbhost").val(),
                 dbuser: $("#dbuser").val(),
                 dbpwd: $("#dbpwd").val(),
             },
-            type: 'get',
+            type: 'POST',
             dataType: 'html',
             success: function (data) {
                 if (data == 'true') {
@@ -119,13 +119,13 @@ function CheckPwd() {
     $.ajax({
         url: 'index.php',
         data: {
-            s: 63832,
+            s: 'checkDbPwd',
             dbhost: $("#dbhost").val(),
             dbport: $("#dbport").val(),
             dbuser: $("#dbuser").val(),
             dbpwd: $("#dbpwd").val(),
         },
-        type: 'get',
+        type: 'POST',
         dataType: 'html',
         success: function (data) {
             if (data === 'true') {
