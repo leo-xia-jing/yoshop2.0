@@ -40,7 +40,7 @@
 
     下载地址：https://gitee.com/xany/yoshop2.0-uniapp
 
-2. 后台VUE端（指的是商城后台的前端代码，使用vue2编写，分store模块和admin模块）
+2. 后台VUE端（前端工程文件，部署时无需下载，仅前端开发时用到）
 
     下载地址：https://gitee.com/xany/yoshop2.0-store
 
@@ -77,9 +77,8 @@
 
 1. 将后端源码上传至服务器站点，并且将站点运行目录设置为/public
 2. 创建一个数据库，例如：yoshop2_db
-3. 导入数据库表结构文件，路径：/public/install/data/install_struct.sql
-4. 导入数据库默认数据文件，路径：/public/install/data/install_data.sql
-5. 修改数据库连接文件，将数据库用户名密码等信息填写完整，路径/.env
+3. 导入数据库默认数据文件，路径：/public/install/data/install.sql
+4. 修改数据库连接文件，将数据库用户名密码等信息填写完整，路径/.env
 
 #### 后台地址
 
@@ -108,7 +107,7 @@ php think timer start
 
 本项目包含的第三方源码和二进制文件之版权信息另行标注。
 
-版权所有Copyright © 2017-2023 By 萤火科技 (https://www.yiovo.com) All rights reserved。
+版权所有Copyright © 2017-2024 By 萤火科技 (https://www.yiovo.com) All rights reserved。
 
 
 
