@@ -191,16 +191,15 @@ CREATE TABLE `yoshop_express` (
   KEY `express_name` (`express_name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10001 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='物流公司记录表';
 
-INSERT INTO `yoshop_express` VALUES ('10001', '顺丰速运', 'shunfeng', '', '100', '10001', '1614556800', '1614556800');
-INSERT INTO `yoshop_express` VALUES ('10002', '邮政国内', 'yzguonei', '', '100', '10001', '1614556800', '1614556800');
-INSERT INTO `yoshop_express` VALUES ('10003', '圆通速递', 'yuantong', '', '100', '10001', '1614556800', '1614556800');
-INSERT INTO `yoshop_express` VALUES ('10004', '申通快递', 'shentong', '', '100', '10001', '1614556800', '1614556800');
-INSERT INTO `yoshop_express` VALUES ('10005', '韵达快递', 'yunda', '', '100', '10001', '1614556800', '1614556800');
-INSERT INTO `yoshop_express` VALUES ('10006', '百世快递', 'huitongkuaidi', '', '100', '10001', '1614556800', '1614556800');
-INSERT INTO `yoshop_express` VALUES ('10007', '中通快递', 'zhongtong', '', '100', '10001', '1614556800', '1614556800');
-INSERT INTO `yoshop_express` VALUES ('10008', '天天快递', 'tiantian', '', '100', '10001', '1614556800', '1614556800');
-INSERT INTO `yoshop_express` VALUES ('10009', '宅急送', 'zhaijisong', '', '100', '10001', '1614556800', '1614556800');
-INSERT INTO `yoshop_express` VALUES ('10010', '极兔速递', 'jtexpress', '', '100', '10001', '1614556800', '1614556800');
+INSERT INTO `yoshop_express` VALUES ('10001', '顺丰速运', 'shunfeng', 'SF', '100', '10001', '1614556800', '1614556800');
+INSERT INTO `yoshop_express` VALUES ('10002', '邮政国内', 'yzguonei', 'YZPY', '100', '10001', '1614556800', '1614556800');
+INSERT INTO `yoshop_express` VALUES ('10003', '圆通速递', 'yuantong', 'YTO', '100', '10001', '1614556800', '1614556800');
+INSERT INTO `yoshop_express` VALUES ('10004', '申通快递', 'shentong', 'STO', '100', '10001', '1614556800', '1614556800');
+INSERT INTO `yoshop_express` VALUES ('10005', '韵达快递', 'yunda', 'YD', '100', '10001', '1614556800', '1614556800');
+INSERT INTO `yoshop_express` VALUES ('10006', '百世快递', 'huitongkuaidi', 'HTKY', '100', '10001', '1614556800', '1614556800');
+INSERT INTO `yoshop_express` VALUES ('10007', '中通快递', 'zhongtong', 'ZTO', '100', '10001', '1614556800', '1614556800');
+INSERT INTO `yoshop_express` VALUES ('10009', '宅急送', 'zhaijisong', 'ZJS', '100', '10001', '1614556800', '1614556800');
+INSERT INTO `yoshop_express` VALUES ('10010', '极兔速递', 'jtexpress', 'JTSD', '100', '10001', '1614556800', '1614556800');
 
 DROP TABLE IF EXISTS `yoshop_goods`;
 CREATE TABLE `yoshop_goods` (
