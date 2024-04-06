@@ -5891,6 +5891,9 @@ CREATE TABLE `yoshop_system_process` (
   UNIQUE KEY `key` (`key`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='系统进程记录';
 
+INSERT INTO `yoshop_system_process` VALUES ('queue', '消息队列', '1675857756');
+INSERT INTO `yoshop_system_process` VALUES ('timer', '定时任务', '1675859018');
+
 DROP TABLE IF EXISTS `yoshop_upload_file`;
 CREATE TABLE `yoshop_upload_file` (
   `file_id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '文件ID',
