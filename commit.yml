@@ -2,10 +2,19 @@
 branches: {
   }
 fileChange:
-  /更新日志.txt:
-    newFile: !uuid 'a8b46cb3074f4f6cc8292a26dcafa3bafe9950b5'
-    oldFile: !uuid 'e0fd443e2084332b691f574e7fbd925943d4062a'
-gitCommitId: !uuid '016d2a6cd460c8384fb6d7e8b39541604ee363e2'
+  /public:
+    newFile: !uuid '9c34b9e262dcac594d7bdeda7793d61acdf52b88'
+    oldFile: !uuid '5907bdd1666e82c95191798e371d066aee59f161'
+  /public/install:
+    newFile: !uuid '6f2dd03700a89bbdadb898c9406ab12ef7a4c299'
+    oldFile: !uuid 'e084ce71e40b67372673b983adda983b8efe3e42'
+  /public/install/data:
+    newFile: !uuid 'e6492917fec75da9852d28bf4228fa75610ad177'
+    oldFile: !uuid 'f8ea11e180388e8b0c6c6b6a265da50e2576f5de'
+  /public/install/data/install.sql:
+    newFile: !uuid 'fdadb3aac8d8f65060f3b545a6514a4b36ef6546'
+    oldFile: !uuid '339af9501be9c55bc4ad62315955ac207f624f82'
+gitCommitId: !uuid '413b835fa260286a785625bc28c0a6396331f8b3'
 renames: {
   }
-revisionId: 373
+revisionId: 374
