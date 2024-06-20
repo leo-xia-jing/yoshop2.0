@@ -13,8 +13,10 @@ declare (strict_types=1);
 namespace app\store\model\wxapp;
 
 use think\facade\Cache;
-use app\common\library\helper;
 use app\common\model\wxapp\Setting as SettingModel;
+use app\common\library\helper;
+use app\common\library\wechat\Shipping as WechatShippingApi;
+use cores\exception\BaseException;
 
 /**
  * 微信小程序设置模型
@@ -34,12 +36,15 @@ class Setting extends SettingModel
      * @param string $key
      * @param array $values
      * @return bool
+     * @throws BaseException
      */
     public function edit(string $key, array $values): bool
     {
         $model = self::detail($key) ?: $this;
         // 删除小程序设置缓存
         Cache::delete('wxapp_setting_' . self::$storeId);
+        // 设置消息跳转路径
+        $values['enableShipping'] && $this->setMsgJumpPath($values);
         // 保存设置
         return $model->save([
             'key' => $key,
@@ -48,5 +53,23 @@ class Setting extends SettingModel
             'update_time' => time(),
             'store_id' => self::$storeId,
         ]);
+    }
+
+    /**
+     * 微信小程序 -> 发货信息管理 -> 消息跳转路径设置接口
+     * @param array $values
+     * @return true
+     * @throws BaseException
+     */
+    private function setMsgJumpPath(array $values): bool
+    {
+        // 请求API数据
+        $WechatShippingApi = new WechatShippingApi($values['app_id'], $values['app_secret']);
+        // 处理返回结果
+        $response = $WechatShippingApi->setMsgJumpPath([
+            'path' => 'pages/order/index?dataType=received'
+        ]);
+        empty($response) && throwError('微信API请求失败：' . $WechatShippingApi->getError());
+        return true;
     }
 }
