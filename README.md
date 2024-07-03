@@ -63,7 +63,7 @@
 - CentOS 7.0+
 - Nginx 1.10+
 - PHP 7.4
-- MySQL 5.6+
+- MySQL 5.7+
 
 
 #### 安装教程
