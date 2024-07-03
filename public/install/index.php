@@ -170,6 +170,13 @@ if ($s === 'importDb') {
         insError('数据库连接错误，请检查！');
     }
 
+    // 验证数据库版本号
+    // $version = $pdo->query('select version()')->fetchColumn();
+    $version = $pdo->getAttribute(PDO::ATTR_SERVER_VERSION);
+    if (version_compare($version, '5.7.0') == -1) {
+        insError2("很抱歉，数据库版本号不能低于5.7.0，请检查！您当前是 {$version}");
+    }
+
     // 数据库创建完成，开始连接
     $pdo->query("USE `$dbname`");
 
