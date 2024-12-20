@@ -155,7 +155,6 @@ if ($s === 'importDb') {
     $dbuser = $_POST['dbuser'] ?? '';
     $dbpwd = $_POST['dbpwd'] ?? '';
     $dbport = $_POST['dbport'] ?? 3306;
-
     $testdata = $_POST['testdata'] ?? '';
 
     // 执行的索引 (某条数据)
@@ -167,14 +166,14 @@ if ($s === 'importDb') {
         $pdo = new PDO($dsn, $dbuser, $dbpwd);
         $pdo->query("SET NAMES utf8"); // 设置数据库编码
     } catch (Exception $e) {
-        insError('数据库连接错误，请检查！');
+        insError2('数据库连接错误，请检查！');
     }
 
     // 验证数据库版本号
     // $version = $pdo->query('select version()')->fetchColumn();
     $version = $pdo->getAttribute(PDO::ATTR_SERVER_VERSION);
     if (version_compare($version, '5.7.0') == -1) {
-        insError("很抱歉，数据库版本号不能低于5.7.0，请检查！您当前是 {$version}");
+        insError2("很抱歉，数据库版本号不能低于5.7.0，请检查！您当前是 {$version}");
     }
 
     // 数据库创建完成，开始连接
@@ -184,13 +183,13 @@ if ($s === 'importDb') {
     $content = readDataFile('install.sql');
     $data = preg_split('/DROP TABLE IF EXISTS `.*?`;/', $content);
     if (!isset($data[$index])) {
-        insError('数据库索引不正确');
+        insError2('数据库索引不正确');
     }
 
     // 获取表名
     $tableName = parseTableName($data[$index]);
     if (empty($tableName)) {
-        insError('数据库执行脚本不正确');
+        insError2('数据库执行脚本不正确');
     }
 
     // 生成sql语句
@@ -217,6 +216,7 @@ if ($s === 'importDb') {
     // 返回结果
     exit(jsonEncode(compact('index', 'message', 'status', 'isNext')));
 }
+
 // 安装完成
 if ($s === md5('done')) {
     require_once(INSTALL_PATH . '/templates/step_4.php');
@@ -287,6 +287,17 @@ function getPHPVersion()
         setIsNext(false);
     } else {
         echo "<span>{$version}</span>";
+    }
+}
+
+// 检测php位数
+function getPHPArchitecture()
+{
+    if (PHP_INT_SIZE < 8) {
+        echo "<span class=\"col-red\"><strong>32位</strong> (请使用64位的php)</span>";
+        setIsNext(false);
+    } else {
+        echo "<span>64位</span>";
     }
 }
 
@@ -398,10 +409,16 @@ function insInfo($str)
     echo '<script>$("#install").append("' . $str . '<br>");</script>';
 }
 
-function insError($str, $isExit = false)
+function insError($str, $isExit = true)
 {
     insInfo("<span class='col-red'>$str</span>");
-    exit();
+    $isExit && exit();
+}
+
+function insError2($message, $isExit = true)
+{
+    echo jsonEncode(['status' => false, 'message' => $message]);
+    $isExit && exit();
 }
 
 /**

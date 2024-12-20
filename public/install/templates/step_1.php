@@ -36,6 +36,12 @@
                 <td class="endCol"><?php echo getPHPVersion(); ?></td>
             </tr>
             <tr>
+                <td height="26" class="firstCol">PHP 位数</td>
+                <td>64位</td>
+                <td>64位</td>
+                <td class="endCol"><?php echo getPHPArchitecture(); ?></td>
+            </tr>
+            <tr>
                 <td height="26" class="firstCol">附件上传</td>
                 <td>2M</td>
                 <td>2M</td>
@@ -80,7 +86,8 @@
                     <td height="26" class="firstCol"><?= $item['name'] ?></td>
                     <td><?= $item['status'] ? '支持' : '不支持' ?></td>
                     <td class="endCol">
-                        <span class="<?= $item['status'] ? '' : 'col-red' ?>"><?= $item['status'] ? '无' : '需安装' ?></span>
+                        <span
+                            class="<?= $item['status'] ? '' : 'col-red' ?>"><?= $item['status'] ? '无' : '需安装' ?></span>
                     </td>
                 </tr>
             <?php endforeach ?>

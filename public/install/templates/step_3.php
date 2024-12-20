@@ -14,7 +14,7 @@
     <div class="text">
         <h4>正在安装...</h4>
         <div id="install">
-            <p>数据库连接文件创建完成！</p>
+            <p>数据库配置文件创建完成！</p>
         </div>
     </div>
 </div>
@@ -30,12 +30,16 @@
                 dbname: '<?= $_POST['dbname'] ?? '' ?>',
                 dbuser: '<?= $_POST['dbuser'] ?? '' ?>',
                 dbpwd: '<?= $_POST['dbpwd'] ?? '' ?>',
+                dbport: '<?= $_POST['dbport'] ?? 3306 ?>',
                 index: index,
             },
             type: 'POST',
             dataType: 'json',
             success: function (data) {
                 appendMsg(data.message, data.status ? 10 : 30)
+                if (!data.status) {
+                    return
+                }
                 if (data.isNext) {
                     setTimeout(() => importDb(index + 1), 50)
                 } else {
