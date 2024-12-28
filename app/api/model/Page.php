@@ -142,7 +142,8 @@ class Page extends PageModel
     private function getCouponList($item): \think\Collection
     {
         // 获取优惠券数据
-        return (new CouponModel)->getList($item['params']['showNum'], true);
+        $couponIds = helper::getArrayColumn($item['data'], 'coupon_id');
+        return (new CouponModel)->getList($item['params']['showNum'], true, null, $couponIds);
     }
 
     /**

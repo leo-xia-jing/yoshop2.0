@@ -189,7 +189,7 @@ class Page extends BaseModel
                 'name' => '文章组',
                 'type' => 'article',
                 'params' => [
-                    'source' => 'auto', //  数据来源 (choice指定  auto自动获取)
+                    'source' => 'auto',         // 数据来源 (choice手动选择 auto自动获取)
                     'auto' => [
                         'category' => -1,   // -1全部
                         'showNum' => 6
@@ -393,25 +393,36 @@ class Page extends BaseModel
                 'style' => [
                     'paddingTop' => 10,
                     'background' => '#ffffff',
-                    'marginRight' => 20,
-                    'couponBgColor' => '#ffa708',
-                    'receiveBgColor' => '#717070'
+                    'marginRight' => 20,                // 左右间距
+                    'couponBgColor' => '#ffa708',       // 优惠券背景颜色
+                    'couponTextColor' => '#ffffff',     // 优惠券文字颜色
+                    'receiveBgColor' => '#717070',      // 领取按钮颜色
+                    'receiveTextColor' => '#ffffff',    // 领取文字颜色
                 ],
-                'params' => ['showNum' => 5],
-                'data' => [
+                'params' => [
+                    'source' => 'auto',         // 数据来源 (choice手动选择 auto自动获取)
+                    'showNum' => 5
+                ],
+                // '自动获取' => 默认数据
+                'defaultData' => [
                     [
+                        'min_price' => '100.00',
+                        'coupon_type' => 10,
                         'reduce_price' => '10',
-                        'min_price' => '100.00'
                     ],
                     [
-                        'reduce_price' => '10',
-                        'min_price' => '100.00'
+                        'min_price' => '200.00',
+                        'coupon_type' => 10,
+                        'reduce_price' => '20',
                     ],
                     [
-                        'reduce_price' => '10',
-                        'min_price' => '100.00'
+                        'min_price' => '300.00',
+                        'coupon_type' => 10,
+                        'reduce_price' => '30',
                     ]
-                ]
+                ],
+                // '手动选择' => 默认数据
+                'data' => []
             ],
             'special' => [
                 'name' => '头条快报',
