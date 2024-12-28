@@ -77,6 +77,19 @@ class Setting extends BaseModel
     }
 
     /**
+     * 获取是否开启发货信息管理
+     * @param int|null $storeId
+     * @return bool
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\DbException
+     * @throws \think\db\exception\ModelNotFoundException
+     */
+    public static function isEnableShipping(?int $storeId = null): bool
+    {
+        return static::getConfigBasic($storeId)['enableShipping'];
+    }
+
+    /**
      * 获取全部设置
      * @param int|null $storeId
      * @return array

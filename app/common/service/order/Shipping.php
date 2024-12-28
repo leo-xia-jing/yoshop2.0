@@ -66,22 +66,23 @@ class Shipping extends BaseService
             throwError('很抱歉，该订单不存在微信支付交易记录');
         }
         // 请求微信API接口
-        return $this->request($this->buildApiParam($completed, $param));
+        return $this->request($this->buildApiParam($completed, $param), $completed['store_id']);
     }
 
     /**
      * 请求微信API接口
      * @param array $apiParam
+     * @param int $storeId
      * @return true
      * @throws BaseException
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\DbException
      * @throws \think\db\exception\ModelNotFoundException
      */
-    private function request(array $apiParam): bool
+    private function request(array $apiParam, int $storeId): bool
     {
         // 小程序配置信息
-        $wxConfig = WxappSettingModel::getConfigBasic();
+        $wxConfig = WxappSettingModel::getConfigBasic($storeId);
         // 请求API数据
         $WechatShippingApi = new WechatShippingApi($wxConfig['app_id'], $wxConfig['app_secret']);
         // 处理返回结果
@@ -95,6 +96,9 @@ class Shipping extends BaseService
      * @param $completed
      * @param array $param
      * @return array
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\DbException
+     * @throws \think\db\exception\ModelNotFoundException
      */
     private function buildParam($completed, array $param): array
     {
@@ -109,6 +113,8 @@ class Shipping extends BaseService
             // 物流单号
             'expressNo' => '',
         ]);
+        // 是否开启发货信息管理
+        !WxappSettingModel::isEnableShipping($completed['store_id']) && $param['syncMpWeixinShipping'] = 0;
         return $param;
     }
 
