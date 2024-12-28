@@ -38,11 +38,12 @@ abstract class Driver
 
     /**
      * 查询物流轨迹
-     * @param string $code
-     * @param string $expressNo
+     * @param string $code 快递公司的编码
+     * @param string $expressNo 查询的快递单号
+     * @param array $extra 附加数据
      * @return array
      */
-    abstract function query(string $code, string $expressNo): array;
+    abstract function query(string $code, string $expressNo, array $extra = []): array;
 
     /**
      * 设置api配置参数

@@ -28,12 +28,13 @@ class Aliyun extends Driver
 
     /**
      * 查询物流轨迹
-     * @param string $code
-     * @param string $expressNo
+     * @param string $code 快递公司的编码
+     * @param string $expressNo 查询的快递单号
+     * @param array $extra 附加数据
      * @return array
      * @throws BaseException
      */
-    public function query(string $code, string $expressNo): array
+    public function query(string $code, string $expressNo, array $extra = []): array
     {
         // 授权参数
         $appCode = $this->options['appCode'];

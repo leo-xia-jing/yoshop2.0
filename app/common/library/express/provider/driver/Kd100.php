@@ -19,6 +19,7 @@ use cores\exception\BaseException;
 /**
  * 快递100物流查询驱动
  * Class Kd100
+ * 接口文档: https://api.kuaidi100.com/document/5f0ffb5ebc8da837cbd8aefc
  * @package app\common\library\express\provider\driver
  */
 class Kd100 extends Driver
@@ -28,12 +29,13 @@ class Kd100 extends Driver
 
     /**
      * 查询物流轨迹
-     * @param string $code
-     * @param string $expressNo
+     * @param string $code 快递公司的编码
+     * @param string $expressNo 查询的快递单号
+     * @param array $extra 附加数据
      * @return array
      * @throws BaseException
      */
-    public function query(string $code, string $expressNo): array
+    public function query(string $code, string $expressNo, array $extra = []): array
     {
         // 参数设置
         $param = [
@@ -41,7 +43,9 @@ class Kd100 extends Driver
             'param' => helper::jsonEncode([
                 'resultv2' => '1',
                 'com' => $code,
-                'num' => $expressNo
+                'num' => $expressNo,
+                // 顺丰参数 (需传参收、寄件人的电话号码)
+                'phone' =>  $code === 'shunfeng' ? $extra['phone']: ''
             ])
         ];
         $param['sign'] = strtoupper(md5($param['param'] . $this->options['key'] . $param['customer']));

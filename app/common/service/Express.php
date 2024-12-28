@@ -50,13 +50,13 @@ class Express extends BaseService
         }
         // 使用阿里云查询顺丰时 物流单号需要加上手机尾号
         if ($config['default'] == 'aliyun' && $code === 'SF') {
-            $lastPhoneNumber = mb_substr($address['phone'], -4);
+            $lastPhoneNumber = \mb_substr($address['phone'], -4);
             $expressNo = "{$expressNo}:$lastPhoneNumber";
         }
         // 请求API查询物流轨迹
         $result = ExpressFacade::store($config['default'])
             ->setOptions($config['providerConfig'][$config['default']])
-            ->query($code, $expressNo);
+            ->query($code, $expressNo, ['phone' => $address['phone']]);
         // 记录缓存, 有效期60分钟
         Cache::set($cacheIndex, $result, 60 * 60);
         return $result;
