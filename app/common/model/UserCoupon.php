@@ -187,6 +187,7 @@ class UserCoupon extends BaseModel
             'end_time' => $endTime,
             'apply_range' => $couponInfo['apply_range'],
             'apply_range_config' => $couponInfo['apply_range_config'],
+            'describe' => $couponInfo['describe'],
             'user_id' => $userId,
             'store_id' => self::$storeId
         ];

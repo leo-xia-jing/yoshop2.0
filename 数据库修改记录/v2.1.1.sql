@@ -29,3 +29,6 @@ ADD COLUMN `is_delete`  tinyint(3) UNSIGNED NOT NULL DEFAULT 0 COMMENT '是否�
 ALTER TABLE `yoshop_order`
 ADD COLUMN `sync_weixin_shipping`  tinyint(3) UNSIGNED NOT NULL DEFAULT 0 COMMENT '是否已同步微信小程序发货信息管理' AFTER `delivery_time`;
 
+# 用户优惠券记录表 - 优惠券描述
+ALTER TABLE `yoshop_user_coupon`
+ADD COLUMN `describe` varchar(500) NOT NULL DEFAULT '' COMMENT '优惠券描述' AFTER `apply_range_config`;
