@@ -56,8 +56,7 @@ class UploadFile extends UploadFileModel
         // 是否在回收站
         $query->where('is_recycle', '=', (int)$params['isRecycle']);
         // 查询列表数据
-        return $query->where('channel', '=', 10)
-            ->where('is_delete', '=', 0)
+        return $query->where('is_delete', '=', 0)
             ->order(['file_id' => 'desc'])
             ->paginate(15);
     }
