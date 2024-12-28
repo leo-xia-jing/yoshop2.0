@@ -19,14 +19,17 @@ namespace app\common\enum;
  */
 class DiscountType extends EnumBasics
 {
-    // 优惠券
-    const COUPON = 'coupon';
-
     // 积分抵扣
     const POINTS = 'points';
 
     // 会员等级折扣
     const GRADE = 'grade';
+
+    // 优惠券
+    const COUPON = 'coupon';
+
+    // 满额包邮
+    const FULL_FREE = 'full-free';
 
     /**
      * 获取全部类型
@@ -35,10 +38,6 @@ class DiscountType extends EnumBasics
     public static function data(): array
     {
         return [
-            self::COUPON => [
-                'name' => '优惠券',
-                'value' => self::COUPON,
-            ],
             self::POINTS => [
                 'name' => '积分抵扣',
                 'value' => self::POINTS,
@@ -47,6 +46,14 @@ class DiscountType extends EnumBasics
                 'name' => '会员等级折扣',
                 'value' => self::GRADE,
             ],
+            self::COUPON => [
+                'name' => '优惠券',
+                'value' => self::COUPON,
+            ],
+            self::FULL_FREE => [
+                'name' => '满额包邮',
+                'value' => self::FULL_FREE,
+            ]
         ];
     }
 }
