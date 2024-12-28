@@ -13,8 +13,8 @@ declare (strict_types=1);
 namespace app\common\enum;
 
 /**
- * 枚举类：商品的优惠方式
- * Class OrderType
+ * 枚举类：订单优惠方式
+ * Class DiscountType
  * @package app\common\enum
  */
 class DiscountType extends EnumBasics

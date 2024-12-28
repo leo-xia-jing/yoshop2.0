@@ -72,12 +72,12 @@ class Express extends ExpressModel
     /**
      * 根据物流公司名称获取列表记录
      * @param array $expressNames
-     * @return array
+     * @return Express[]|array|\think\Collection
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\DbException
      * @throws \think\db\exception\ModelNotFoundException
      */
-    private function getListByExpressName(array $expressNames): array
+    private function getListByExpressName(array $expressNames)
     {
         return (new static)->where('express_name', 'in', $expressNames)
             ->where('is_delete', '=', 0)
