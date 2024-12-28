@@ -37,7 +37,7 @@ class Page extends PageModel
             ->where($filter)
             ->where(['is_delete' => 0])
             ->order(['create_time' => 'desc', $this->getPk()])
-            ->paginate();
+            ->paginate(15);
     }
 
     /**

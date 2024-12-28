@@ -153,7 +153,7 @@ class Setting extends BaseModel
                     // 小程序AppSecret
                     'app_secret' => '',
                     // 是否开启发货信息管理
-                    'enableShipping' => true,
+                    'enableShipping' => false,
                 ]
             ]
         ];

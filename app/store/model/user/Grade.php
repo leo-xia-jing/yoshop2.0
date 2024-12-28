@@ -55,7 +55,7 @@ class Grade extends GradeModel
         return $this->where($this->getFilter($param))
             ->where('is_delete', '=', 0)
             ->order(['weight', $this->getPk()])
-            ->paginate();
+            ->paginate(15);
     }
 
     /**

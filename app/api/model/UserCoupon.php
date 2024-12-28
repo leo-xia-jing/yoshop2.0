@@ -49,7 +49,7 @@ class UserCoupon extends UserCouponModel
         $filter = $this->getFilter($param);
         return $this->where($filter)
             ->where('user_id', '=', $userId)
-            ->paginate();
+            ->paginate(15);
     }
 
     /**

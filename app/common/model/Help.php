@@ -36,7 +36,7 @@ class Help extends BaseModel
     {
         return $this->where('is_delete', '=', 0)
             ->order(['sort', $this->getPk()])
-            ->paginate();
+            ->paginate(15);
     }
 
     /**

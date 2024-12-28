@@ -66,12 +66,12 @@ class Checkout extends BaseService
      * @var array
      */
     private array $checkoutRule = [
-        'isUserGrade' => true,     // 会员等级折扣
-        'isCoupon' => true,        // 优惠券抵扣
-        'isUsePoints' => true,     // 是否使用积分抵扣
+        'isUserGrade' => true,          // 会员等级折扣
+        'isCoupon' => true,             // 优惠券折扣
+        'isUsePoints' => true,          // 积分抵扣
     ];
 
-    // 记录叠加的优惠
+    // 记录叠加的优惠 (动态计算)
     private array $stackingData = [
         // 已启用的叠加优惠
         'enabled' => [],
@@ -317,7 +317,7 @@ class Checkout extends BaseService
             // 实际抵扣的积分数量
             $goods['points_num'] = 0;
             // 实际抵扣的金额
-            $goods['points_money'] = 0.00;
+            $goods['points_money'] = 0;
         }
     }
 
@@ -340,7 +340,7 @@ class Checkout extends BaseService
             // 是否存在收货地址
             'existAddress' => $this->user['address_id'] > 0,
             // 配送费用
-            'expressPrice' => 0.00,
+            'expressPrice' => '0.00',
             // 当前用户收货城市是否存在配送规则中
             'isIntraRegion' => true,
             // 是否允许使用积分抵扣
@@ -348,7 +348,7 @@ class Checkout extends BaseService
             // 是否使用积分抵扣
             'isUsePoints' => $this->param['isUsePoints'],
             // 积分抵扣金额
-            'pointsMoney' => 0.00,
+            'pointsMoney' => '0.00',
             // 赠送的积分数量
             'pointsBonus' => 0,
         ];
@@ -538,9 +538,9 @@ class Checkout extends BaseService
             // 会员等级抵扣的金额
             'grade_ratio' => 0,
             // 会员折扣的商品单价
-            'grade_goods_price' => 0.00,
+            'grade_goods_price' => 0,
             // 会员折扣的总额差
-            'grade_total_money' => 0.00,
+            'grade_total_money' => 0,
         ], true);
         // 是否开启会员等级折扣
         if (!$this->checkoutRule['isUserGrade']) {
@@ -682,10 +682,6 @@ class Checkout extends BaseService
         helper::setDataAttribute($this->goodsList, [
             'expressPrice' => 0,
         ], true);
-        // 验证订单叠加优惠中是否支持满额包邮
-        if ($this->checkDisabledStacking(DiscountTypeEnum::FULL_FREE)) {
-            return;
-        }
         // 当前用户收货城市ID
         $cityId = $this->user['address_default'] ? (int)$this->user['address_default']['city_id'] : 0;
         // 初始化配送服务类
@@ -822,7 +818,7 @@ class Checkout extends BaseService
             'order_price' => $order['orderPrice'],
             'coupon_id' => $order['couponId'],
             'coupon_money' => $order['couponMoney'],
-            'points_money' => $isExistPointsDeduction ? $order['pointsMoney'] : 0.00,
+            'points_money' => $isExistPointsDeduction ? $order['pointsMoney'] : 0,
             'points_num' => $isExistPointsDeduction ? $order['pointsNum'] : 0,
             'pay_price' => $order['orderPayPrice'],
             'delivery_type' => $order['delivery'],
@@ -877,7 +873,7 @@ class Checkout extends BaseService
                 'grade_goods_price' => $goods['grade_goods_price'],
                 'grade_total_money' => $goods['grade_total_money'],
                 'coupon_money' => $goods['coupon_money'],
-                'points_money' => $isExistPointsDeduction ? $goods['points_money'] : 0.00,
+                'points_money' => $isExistPointsDeduction ? $goods['points_money'] : 0,
                 'points_num' => $isExistPointsDeduction ? $goods['points_num'] : 0,
                 'points_bonus' => $goods['points_bonus'],
                 'total_num' => $goods['total_num'],

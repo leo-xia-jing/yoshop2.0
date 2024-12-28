@@ -50,7 +50,7 @@ class Service extends ServiceModel
         return $this->where($this->getFilter($param))
             ->where('is_delete', '=', 0)
             ->order(['sort', $this->getPk()])
-            ->paginate();
+            ->paginate(15);
     }
 
     /**
