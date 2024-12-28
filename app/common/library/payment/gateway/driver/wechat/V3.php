@@ -459,7 +459,6 @@ class V3
         } catch (\UnexpectedValueException $e) {
             throwError('证书文件(KEY)不正确');
         }
-        return null;
     }
 
     /**
@@ -536,17 +535,18 @@ class V3
     {
         $params = [
             'appid' => $this->config['app_id'],
-            'partnerid' => $this->config['mch_id'],
-            'prepayid' => $prepayId,
-            'noncestr' => Formatter::nonce(),
             'timestamp' => (string)Formatter::timestamp(),
-            'package' => 'Sign=WXPay',
+            'noncestr' => Formatter::nonce(),
+            'prepayid' => $prepayId,
         ];
-        $params += ['sign' => Rsa::sign(
-            Formatter::joinedByLineFeed(...array_values($params)),
-            $this->getMerchantPrivateKeyInstance()
-        )];
-        return $params;
+        return array_merge($params, [
+            'sign' => Rsa::sign(
+                Formatter::joinedByLineFeed(...array_values($params)),
+                $this->getMerchantPrivateKeyInstance()
+            ),
+            'partnerid' => $this->config['mch_id'],
+            'package' => 'Sign=WXPay',
+        ]);
     }
 
     /**
