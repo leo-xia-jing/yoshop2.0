@@ -93,7 +93,23 @@ class Coupon extends BaseModel
      */
     public function getApplyRangeConfigAttr($value)
     {
-        return $value ? helper::jsonDecode($value) : [];
+        $config = $value ? helper::jsonDecode($value) : [];
+        // 兼容历史数据 v2.4.6之前
+        if (!empty($config['applyGoodsIds'])) {
+            $config['goodsIds'] = $config['applyGoodsIds'];
+            unset($config['applyGoodsIds']);
+        }
+        return $config;
+    }
+
+    /**
+     * 获取器：可叠加的优惠方式
+     * @param $value
+     * @return array
+     */
+    public function getStackingAttr($value): array
+    {
+        return !empty($value) ? helper::jsonDecode($value) : [];
     }
 
     /**
@@ -114,6 +130,16 @@ class Coupon extends BaseModel
     public function setApplyRangeConfigAttr($array)
     {
         return helper::jsonEncode($array);
+    }
+
+    /**
+     * 修改器：可叠加的优惠方式
+     * @param $value
+     * @return string
+     */
+    public function setStackingAttr($value): string
+    {
+        return helper::jsonEncode($value);
     }
 
     /**

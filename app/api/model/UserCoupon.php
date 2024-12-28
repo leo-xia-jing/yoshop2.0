@@ -218,20 +218,24 @@ class UserCoupon extends UserCouponModel
     public static function couponListApplyRange(array $couponList, array $orderGoodsIds): array
     {
         // 名词解释(is_apply)：允许用于抵扣当前订单
-        foreach ($couponList as &$item) {
+        foreach ($couponList as $key => &$item) {
             if ($item['apply_range'] == ApplyRangeEnum::ALL) {
                 // 1. 全部商品
                 $item['is_apply'] = true;
             } elseif ($item['apply_range'] == ApplyRangeEnum::SOME) {
                 // 2. 指定商品, 判断订单商品是否存在可用
-                $applyGoodsIds = array_intersect($item['apply_range_config']['applyGoodsIds'], $orderGoodsIds);
+                $applyGoodsIds = array_intersect($item['apply_range_config']['goodsIds'], $orderGoodsIds);
                 $item['is_apply'] = !empty($applyGoodsIds);
             } elseif ($item['apply_range'] == ApplyRangeEnum::EXCLUDE) {
                 // 2. 排除商品, 判断订单商品是否全部都在排除行列
-                $excludedGoodsIds = array_intersect($item['apply_range_config']['excludedGoodsIds'], $orderGoodsIds);
+                $excludedGoodsIds = array_intersect($item['apply_range_config']['goodsIds'], $orderGoodsIds);
                 $item['is_apply'] = count($excludedGoodsIds) != count($orderGoodsIds);
             }
-            !$item['is_apply'] && $item['not_apply_info'] = '该优惠券不支持当前商品';
+            !$item['is_apply'] && $item['not_apply_info'] = '该优惠券不支持当前订单';
+            // 此处改为: 将不支持的优惠券剔除
+            if (!$item['is_apply']) {
+                unset($couponList[$key]);
+            }
         }
         return $couponList;
     }

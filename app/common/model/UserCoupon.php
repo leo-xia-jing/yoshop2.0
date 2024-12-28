@@ -100,7 +100,13 @@ class UserCoupon extends BaseModel
      */
     public function getApplyRangeConfigAttr($value)
     {
-        return $value ? helper::jsonDecode($value) : [];
+        $config = $value ? helper::jsonDecode($value) : [];
+        // 兼容历史数据 v2.4.6之前
+        if (!empty($config['applyGoodsIds'])) {
+            $config['goodsIds'] = $config['applyGoodsIds'];
+            unset($config['applyGoodsIds']);
+        }
+        return $config;
     }
 
     /**
@@ -141,6 +147,7 @@ class UserCoupon extends BaseModel
      */
     public static function setIsUse(int $userCouponId, bool $isUse = true): bool
     {
+        // updateOne
         return static::updateBase(['is_use' => (int)$isUse], $userCouponId);
     }
 

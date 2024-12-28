@@ -14,6 +14,7 @@ namespace app\api\model;
 
 use app\api\service\User as UserService;
 use app\common\model\Coupon as CouponModel;
+use app\common\enum\coupon\ApplyRange as ApplyRangeEnum;
 use cores\exception\BaseException;
 
 /**
@@ -40,14 +41,16 @@ class Coupon extends CouponModel
     /**
      * 获取优惠券列表
      * @param int|null $limit 获取的数量
-     * @param bool $onlyReceive 只显示可领取
+     * @param bool $onlyReceive 只获取可领取的优惠券
+     * @param int|null $goodsId 只获取指定商品ID可用的优惠券
+     * @param array|null $couponIds 指定优惠券ID集
      * @return array|\think\Collection
      * @throws BaseException
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\DbException
      * @throws \think\db\exception\ModelNotFoundException
      */
-    public function getList(int $limit = null, bool $onlyReceive = false)
+    public function getList(int $limit = null, bool $onlyReceive = false, ?int $goodsId = null, ?array $couponIds = [])
     {
         // 查询构造器
         $query = $this->getNewQuery();
@@ -56,15 +59,52 @@ class Coupon extends CouponModel
             $query->where('IF ( `total_num` > - 1, `receive_num` < `total_num`, 1 = 1 )')
                 ->where('IF ( `expire_type` = 20, (`end_time` + 86400) >= ' . time() . ', 1 = 1 )');
         }
-        // 查询数量
-        $limit > 0 && $query->limit($limit);
+        // 指定优惠券ID集
+        if (!empty($couponIds)) {
+            $query->where('coupon_id', 'in', $couponIds);
+            $query->orderRaw('field(coupon_id, ' . implode(',', $couponIds) . ')');
+        } else {
+            $limit > 0 && $query->limit($limit);
+            $query->order(['sort', 'create_time' => 'desc']);
+        }
         // 优惠券列表
-        $couponList = $query->where('status', '=', 1)
+        $list = $query->where('status', '=', 1)
             ->where('is_delete', '=', 0)
-            ->order(['sort', 'create_time' => 'desc'])
             ->select();
         // 获取用户已领取的优惠券
-        return $this->setIsReceive($couponList);
+        $list = $this->setIsReceive($list);
+        // 筛选指定商品ID可用的优惠券
+        return $this->screenByGoodsId($list, $goodsId);
+    }
+
+    /**
+     * 筛选指定商品ID可用的优惠券
+     * @param iterable $couponList
+     * @param int|null $goodsId
+     * @return array|iterable
+     */
+    private function screenByGoodsId(iterable $couponList, ?int $goodsId = null)
+    {
+        if (empty($goodsId)) {
+            return $couponList;
+        }
+        $list = [];
+        foreach ($couponList as $item) {
+            // 优惠券指定商品可用
+            if ($item['apply_range'] == ApplyRangeEnum::SOME
+                && $goodsId > 0
+                && !\in_array($goodsId, $item['apply_range_config']['goodsIds'])) {
+                continue;
+            }
+            // 优惠券指定商品不可用
+            if ($item['apply_range'] == ApplyRangeEnum::EXCLUDE
+                && $goodsId > 0
+                && \in_array($goodsId, $item['apply_range_config']['goodsIds'])) {
+                continue;
+            }
+            $list[] = $item;
+        }
+        return $list;
     }
 
     /**

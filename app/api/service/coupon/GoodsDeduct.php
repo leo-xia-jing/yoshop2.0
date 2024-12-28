@@ -109,12 +109,12 @@ class GoodsDeduct extends BaseService
                     $this->rangeGoodsList[$goodsKey] = $goods;
                     break;
                 case ApplyRangeEnum::SOME:
-                    if (\in_array($goods['goods_id'], $this->couponInfo['apply_range_config']['applyGoodsIds'])) {
+                    if (\in_array($goods['goods_id'], $this->couponInfo['apply_range_config']['goodsIds'])) {
                         $this->rangeGoodsList[$goodsKey] = $goods;
                     }
                     break;
                 case ApplyRangeEnum::EXCLUDE:
-                    if (!\in_array($goods['goods_id'], $this->couponInfo['apply_range_config']['excludedGoodsIds'])) {
+                    if (!\in_array($goods['goods_id'], $this->couponInfo['apply_range_config']['goodsIds'])) {
                         $this->rangeGoodsList[$goodsKey] = $goods;
                     }
                     break;
