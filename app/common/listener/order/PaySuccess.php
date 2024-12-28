@@ -10,8 +10,9 @@
 // +----------------------------------------------------------------------
 declare (strict_types=1);
 
-namespace app\api\listener\order;
+namespace app\common\listener\order;
 
+use app\common\model\Order as OrderModel;
 use app\common\service\Message as MessageService;
 use app\common\service\order\Printer as PrinterService;
 use app\common\enum\OrderType as OrderTypeEnum;
@@ -27,7 +28,7 @@ use cores\exception\BaseException;
 class PaySuccess
 {
     // 订单信息
-    private $order;
+    private ?OrderModel $order;
 
     // 订单类型
     private int $orderType;
@@ -40,7 +41,7 @@ class PaySuccess
      * @var array
      */
     protected array $sourceCallbackClass = [
-        OrderSourceEnum::MAIN => \app\api\service\main\order\PaySuccess::class
+        OrderSourceEnum::MAIN => \app\common\service\main\order\PaySuccess::class,
     ];
 
     /**

@@ -309,4 +309,16 @@ class Order extends BaseModel
     {
         return static::updateBase($data, [['order_id', 'in', $orderIds]]);
     }
+
+    /**
+     * 更新订单来源记录ID
+     * @param int $orderId
+     * @param int $soureId
+     * @return bool
+     */
+    public static function updateOrderSourceId(int $orderId, int $soureId): bool
+    {
+        // updateOne
+        return static::updateBase(['order_source_id' => $soureId], $orderId);
+    }
 }

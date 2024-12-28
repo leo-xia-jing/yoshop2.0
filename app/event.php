@@ -12,6 +12,9 @@ return [
         'LogLevel' => [],
         'LogWrite' => [],
 
+        // 订单支付成功事件 (处理订单来源相关业务)
+        'OrderPaySuccess' => [\app\common\listener\order\PaySuccess::class],
+
         // 定时任务：商城模块
         'StoreTask' => [\app\timer\controller\Store::class],
         // 定时任务：商城订单

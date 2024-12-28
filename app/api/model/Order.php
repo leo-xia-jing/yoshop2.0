@@ -355,15 +355,4 @@ class Order extends OrderModel
         }
         return true;
     }
-
-    /**
-     * 更新订单来源记录ID
-     * @param int $orderId
-     * @param int $soureId
-     * @return bool
-     */
-    public static function updateOrderSourceId(int $orderId, int $soureId): bool
-    {
-        return static::updateBase(['order_source_id' => $soureId], $orderId);
-    }
 }

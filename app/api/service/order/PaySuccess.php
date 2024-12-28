@@ -10,9 +10,16 @@
 // +----------------------------------------------------------------------
 declare (strict_types=1);
 
-// 应用行为扩展定义文件
-return [
-    'listen' => [
+namespace app\api\service\order;
 
-    ]
-];
+use app\common\service\order\PaySuccess as PaySuccessService;
+
+/**
+ * 订单支付成功服务类
+ * Class PaySuccess
+ * @package app\api\service\order
+ */
+class PaySuccess extends PaySuccessService
+{
+
+}

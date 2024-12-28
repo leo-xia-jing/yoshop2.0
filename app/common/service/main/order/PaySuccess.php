@@ -10,14 +10,14 @@
 // +----------------------------------------------------------------------
 declare (strict_types=1);
 
-namespace app\api\service\main\order;
+namespace app\common\service\main\order;
 
 use app\common\service\BaseService;
 
 /**
  * 普通订单支付成功后的回调
  * Class PaySuccess
- * @package app\api\service\main\order
+ * @package app\common\service\main\order
  */
 class PaySuccess extends BaseService
 {
