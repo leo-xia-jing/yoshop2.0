@@ -43,6 +43,7 @@ class Coupon extends BaseModel
      */
     public function getStateAttr($value, array $data): array
     {
+        // mix: is_receive不是数据库字段, 来源于 setIsReceive方法
         if (isset($data['is_receive']) && $data['is_receive']) {
             return ['text' => '已领取', 'value' => 0];
         }
