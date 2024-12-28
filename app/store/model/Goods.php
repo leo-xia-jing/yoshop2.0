@@ -221,7 +221,7 @@ class Goods extends GoodsModel
             // 验证规格值是否合法
             SpecModel::checkSpecData($data['specData']['specList']);
             // 生成多规格数据 (携带id)
-            $data['newSpecList'] = SpecModel::getNewSpecList($data['specData']['specList']);
+            $data['newSpecList'] = SpecModel::getNewSpecList($data['specData']['specList'], self::$storeId);
             // 生成skuList (携带goods_sku_id)
             $data['newSkuList'] = GoodsSkuModel::getNewSkuList($data['newSpecList'], $data['specData']['skuList']);
         } elseif ($data['spec_type'] == GoodsSpecTypeEnum::SINGLE) {
