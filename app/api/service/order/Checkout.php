@@ -187,9 +187,6 @@ class Checkout extends BaseService
         $this->setOrderGoodsPayPrice();
         // 设置订单配送信息
         $this->setDelivery();
-        if ($this->param['delivery'] == DeliveryTypeEnum::EXPRESS) {
-            $this->setOrderExpress();
-        }
         // 计算订单最终金额
         $this->setOrderPayPrice();
         // 计算订单积分赠送数量
