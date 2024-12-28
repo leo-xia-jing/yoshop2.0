@@ -147,7 +147,6 @@ class UserCoupon extends BaseModel
      */
     public static function setIsUse(int $userCouponId, bool $isUse = true): bool
     {
-        // updateOne
         return static::updateBase(['is_use' => (int)$isUse], $userCouponId);
     }
 

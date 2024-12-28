@@ -318,7 +318,6 @@ class Order extends BaseModel
      */
     public static function updateOrderSourceId(int $orderId, int $soureId): bool
     {
-        // updateOne
         return static::updateBase(['order_source_id' => $soureId], $orderId);
     }
 
@@ -330,7 +329,6 @@ class Order extends BaseModel
      */
     public static function updateSyncWeixinShipping(int $orderId, bool $status): bool
     {
-        // updateOne
         return static::updateBase(['sync_weixin_shipping' => (int)$status], $orderId);
     }
 }
