@@ -44,7 +44,7 @@ class Setting extends SettingModel
         return $model->save([
             'key' => $key,
             'describe' => $this->describe[$key],
-            'values' => helper::pick($values, ['enabled', 'app_id', 'app_secret']),
+            'values' => helper::pick($values, ['enabled', 'app_id', 'app_secret', 'enableShipping']),
             'update_time' => time(),
             'store_id' => self::$storeId,
         ]);

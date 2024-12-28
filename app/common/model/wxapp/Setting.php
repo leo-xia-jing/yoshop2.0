@@ -133,12 +133,14 @@ class Setting extends BaseModel
                 'key' => 'basic',
                 'describe' => '基础设置',
                 'values' => [
-                    // 是否启用微信小程序端访问
+                    // 是否开启微信小程序端访问
                     'enabled' => true,
                     // 小程序AppID
                     'app_id' => '',
                     // 小程序AppSecret
-                    'app_secret' => ''
+                    'app_secret' => '',
+                    // 是否开启发货信息管理
+                    'enableShipping' => true,
                 ]
             ]
         ];

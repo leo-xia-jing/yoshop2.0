@@ -15,8 +15,8 @@ namespace app\common\library\wechat;
 use cores\exception\BaseException;
 
 /**
- * 发货信息录入接口
- * Class wechat
+ * 发货信息管理接口
+ * Class Shipping
  * @package app\library
  */
 class Shipping extends WxBase

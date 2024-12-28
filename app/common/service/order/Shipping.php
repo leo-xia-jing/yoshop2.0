@@ -100,7 +100,7 @@ class Shipping extends BaseService
     {
         // 设置默认的参数
         $param = helper::setQueryDefaultValue($param, [
-            // 同步至微信小程序《发货信息录入》
+            // 同步至微信小程序《发货信息管理》
             'syncMpWeixinShipping' => 1,
             // 物流模式：1物流配送 3虚拟商品 4用户自提
             'logisticsType' => self::DELIVERY_EXPRESS,
