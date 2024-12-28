@@ -63,7 +63,7 @@ class Delivery extends BaseService
             // 获取已发货的订单
             $completed = OrderModel::detail($orderId, ['goods', 'trade']);
             // 发货信息同步微信平台
-            (new ShippingService)->syncMpWeixinShipping($completed, [
+            $syncStatus = (new ShippingService)->syncMpWeixinShipping($completed, [
                 // 同步至微信小程序《发货信息管理》
                 'syncMpWeixinShipping' => $param['syncMpWeixinShipping'],
                 // 物流模式：1物流配送 3虚拟商品 4用户自提
@@ -76,6 +76,8 @@ class Delivery extends BaseService
                 // 物流单号
                 'expressNo' => $param['expressNo'],
             ]);
+            // 记录是否已同步微信小程序发货信息管理
+            OrderModel::updateSyncWeixinShipping($orderId, $syncStatus);
             // 发送消息通知 [未实现]
             // $this->sendDeliveryMessage([$completed]);
         });

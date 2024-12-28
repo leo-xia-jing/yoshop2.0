@@ -242,7 +242,7 @@ class Order extends OrderModel
     public static function getUserOrderDetail(int $orderId, bool $onlyCurrentUser = true)
     {
         // 查询订单记录
-        $with = ['goods' => ['image', 'refund'], 'delivery.express', 'address'];
+        $with = ['goods' => ['image', 'refund'], 'trade', 'delivery.express'];
         $order = static::getDetail($orderId, $with, $onlyCurrentUser);
         // 该订单是否允许申请售后
         $order['isAllowRefund'] = static::isAllowRefund($order);

@@ -321,4 +321,16 @@ class Order extends BaseModel
         // updateOne
         return static::updateBase(['order_source_id' => $soureId], $orderId);
     }
+
+    /**
+     * 记录是否已同步微信小程序发货信息管理
+     * @param int $orderId
+     * @param bool $status
+     * @return bool
+     */
+    public static function updateSyncWeixinShipping(int $orderId, bool $status): bool
+    {
+        // updateOne
+        return static::updateBase(['sync_weixin_shipping' => (int)$status], $orderId);
+    }
 }

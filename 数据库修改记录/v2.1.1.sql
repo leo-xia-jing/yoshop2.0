@@ -21,5 +21,11 @@ ALTER TABLE `yoshop_order_address` ADD INDEX (`order_id`);
 ALTER TABLE `yoshop_order`
 ADD COLUMN `settled_time` int UNSIGNED NOT NULL DEFAULT 0 COMMENT '订单结算时间' AFTER `is_settled`;
 
+# 物流公司记录表 - 是否删除
 ALTER TABLE `yoshop_express`
 ADD COLUMN `is_delete`  tinyint(3) UNSIGNED NOT NULL DEFAULT 0 COMMENT '是否删除' AFTER `sort`;
+
+# 订单记录表 - 是否已同步微信小程序发货信息管理
+ALTER TABLE `yoshop_order`
+ADD COLUMN `sync_weixin_shipping`  tinyint(3) UNSIGNED NOT NULL DEFAULT 0 COMMENT '是否已同步微信小程序发货信息管理' AFTER `delivery_time`;
+
