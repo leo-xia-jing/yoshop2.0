@@ -73,6 +73,9 @@ class Order extends Controller
      */
     public function express(int $orderId): Json
     {
+        // 订单详情 (用于验证当前登录用户)
+        $order = OrderModel::getDetail($orderId);
+        // 获取物流信息
         $service = new OrderService;
         $express = $service->express($orderId);
         return $this->renderSuccess(compact('express'));
