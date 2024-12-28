@@ -104,7 +104,7 @@ class Order extends OrderModel
         // 当前用户ID
         $userId = UserService::getCurrentLoginUserId();
         // 查询列表数据
-        return $this->with(['goods.image'])
+        return $this->with(['goods.image', 'trade'])
             ->where($dataTypeFilter)
             ->where('user_id', '=', $userId)
             ->where('is_delete', '=', 0)
