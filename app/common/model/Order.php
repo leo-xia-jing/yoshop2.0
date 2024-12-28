@@ -242,6 +242,17 @@ class Order extends BaseModel
     }
 
     /**
+     * 待支付订单详情
+     * @param string $orderNo 订单号
+     * @return null|static
+     */
+    public static function getPayDetail(string $orderNo): ?Order
+    {
+        $where = ['order_no' => $orderNo, 'is_delete' => 0];
+        return static::detail($where, ['goods', 'user']);
+    }
+
+    /**
      * 批量获取订单列表
      * @param array $orderIds
      * @param array $with

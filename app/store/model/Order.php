@@ -16,6 +16,7 @@ use app\common\model\Order as OrderModel;
 use app\common\service\Order as OrderService;
 use app\common\service\order\Refund as RefundService;
 use app\common\service\order\Printer as PrinterService;
+use app\common\service\order\PaySuccess as OrderPaySuccesService;
 use app\common\enum\order\{
     DataType as DataTypeEnum,
     PayStatus as PayStatusEnum,
@@ -23,6 +24,7 @@ use app\common\enum\order\{
     ReceiptStatus as ReceiptStatusEnum,
     DeliveryStatus as DeliveryStatusEnum
 };
+use app\common\enum\payment\Method as PaymentMethod;
 use app\common\library\helper;
 use cores\exception\BaseException;
 

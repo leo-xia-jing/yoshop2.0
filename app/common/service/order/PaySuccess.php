@@ -10,31 +10,31 @@
 // +----------------------------------------------------------------------
 declare (strict_types=1);
 
-namespace app\api\service\order;
+namespace app\common\service\order;
 
-use think\facade\Event;
-use app\api\model\User as UserModel;
-use app\api\model\Order as OrderModel;
-use app\api\model\PaymentTrade as PaymentTradeModel;
-use app\api\model\user\BalanceLog as BalanceLogModel;
-use app\api\service\order\source\Factory as OrderSourceFactory;
-use app\common\library\Log;
+use app\common\model\User as UserModel;
+use app\common\model\Order as OrderModel;
+use app\common\model\PaymentTrade as PaymentTradeModel;
+use app\common\model\user\BalanceLog as BalanceLogModel;
+use app\common\service\order\source\Factory as OrderSourceFactory;
+use app\common\enum\order\OrderStatus as OrderStatusEnum;
+use app\common\enum\order\PayStatus as PayStatusEnum;
+use app\common\enum\OrderType as OrderTypeEnum;
+use app\common\enum\payment\Method as PaymentMethodEnum;
+use app\common\enum\user\balanceLog\Scene as SceneEnum;
 use app\common\library\Lock;
+use app\common\library\Log;
 use app\common\service\BaseService;
+use app\common\service\goods\source\Factory as StockFactory;
 use app\common\service\Order as OrderService;
 use app\common\service\order\Refund as RefundService;
-use app\common\service\goods\source\Factory as StockFactory;
-use app\common\enum\OrderType as OrderTypeEnum;
-use app\common\enum\order\PayStatus as PayStatusEnum;
-use app\common\enum\user\balanceLog\Scene as SceneEnum;
-use app\common\enum\payment\Method as PaymentMethodEnum;
-use app\common\enum\order\OrderStatus as OrderStatusEnum;
 use cores\exception\BaseException;
+use think\facade\Event;
 
 /**
  * 订单支付成功服务类
  * Class PaySuccess
- * @package app\api\service\order
+ * @package app\common\service\order
  */
 class PaySuccess extends BaseService
 {
@@ -348,7 +348,7 @@ class PaySuccess extends BaseService
             BalanceLogModel::add(SceneEnum::CONSUME, [
                 'user_id' => (int)$orderInfo['user_id'],
                 'money' => -$orderInfo['pay_price'],
-            ], ['order_no' => $orderInfo['order_no']]);
+            ], ['order_no' => $orderInfo['order_no']], $orderInfo['store_id']);
         }
         // 将第三方交易记录更新为已支付状态
         if (in_array($this->method, [PaymentMethodEnum::WECHAT, PaymentMethodEnum::ALIPAY])) {
