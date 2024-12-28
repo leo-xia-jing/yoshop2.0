@@ -48,30 +48,39 @@ class Express extends ExpressModel
      */
     public function remove(): bool
     {
-        // 判断当前物流公司是否已被订单使用
-        $Order = new Order;
-        if ($orderCount = $Order->where(['express_id' => $this['express_id']])->count()) {
-            $this->error = '当前物流公司已被' . $orderCount . '个订单使用，不允许删除';
-            return false;
-        }
-        return $this->delete();
+        return $this->save(['is_delete' => 1]);
     }
 
     /**
      * 根据物流公司名称获取ID集
-     * @param array $expressNameArr
+     * @param array $expressNames
      * @return array
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\DbException
      * @throws \think\db\exception\ModelNotFoundException
      */
-    public static function getExpressIds(array $expressNameArr): array
+    public static function getExpressIds(array $expressNames): array
     {
-        $list = (new static)->where('express_name', 'in', $expressNameArr)->select();
+        $list = (new static)->getListByExpressName($expressNames);
         $data = [];
         foreach ($list as $item) {
             $data[$item['express_name']] = $item['express_id'];
         }
         return $data;
+    }
+
+    /**
+     * 根据物流公司名称获取列表记录
+     * @param array $expressNames
+     * @return array
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\DbException
+     * @throws \think\db\exception\ModelNotFoundException
+     */
+    private function getListByExpressName(array $expressNames): array
+    {
+        return (new static)->where('express_name', 'in', $expressNames)
+            ->where('is_delete', '=', 0)
+            ->select();
     }
 }

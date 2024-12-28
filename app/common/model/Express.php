@@ -40,7 +40,10 @@ class Express extends BaseModel
         // 检索查询条件
         $filter = $this->getFilter($param);
         // 查询列表数据
-        return $this->where($filter)->order(['sort', $this->getPk()])->select();
+        return $this->where($filter)
+            ->where('is_delete', '=', 0)
+            ->order(['sort', $this->getPk()])
+            ->select();
     }
 
     /**
@@ -54,7 +57,10 @@ class Express extends BaseModel
         // 检索查询调价你
         $filter = $this->getFilter($param);
         // 查询列表数据
-        return $this->where($filter)->order(['sort', 'express_id'])->paginate(15);
+        return $this->where($filter)
+            ->where('is_delete', '=', 0)
+            ->order(['sort', $this->getPk()])
+            ->paginate(15);
     }
 
     /**

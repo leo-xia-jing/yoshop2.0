@@ -20,3 +20,6 @@ ALTER TABLE `yoshop_order_address` ADD INDEX (`order_id`);
 # 订单记录表 - 订单结算时间
 ALTER TABLE `yoshop_order`
 ADD COLUMN `settled_time` int UNSIGNED NOT NULL DEFAULT 0 COMMENT '订单结算时间' AFTER `is_settled`;
+
+ALTER TABLE `yoshop_express`
+ADD COLUMN `is_delete`  tinyint(3) UNSIGNED NOT NULL DEFAULT 0 COMMENT '是否删除' AFTER `sort`;
