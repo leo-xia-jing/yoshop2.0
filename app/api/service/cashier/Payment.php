@@ -171,8 +171,14 @@ class Payment extends BaseService
      */
     private function recordPaymentTrade(array $payment): void
     {
-        if ($this->method != PaymentMethodEnum::BALANCE) {
-            PaymentTradeModel::record($this->orderInfo, $this->method, $this->client, OrderTypeEnum::ORDER, $payment);
+        if (!in_array($this->method, [PaymentMethodEnum::BALANCE])) {
+            PaymentTradeModel::record(
+                $this->orderInfo,
+                $this->method,
+                $this->client,
+                OrderTypeEnum::ORDER,
+                $payment
+            );
         }
     }
 

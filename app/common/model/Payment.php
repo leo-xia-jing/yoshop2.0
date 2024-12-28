@@ -242,7 +242,7 @@ class Payment extends BaseModel
             $defaultMethods["{$client}-{$method}"] = array_merge($record, [
                 'key' => $key + 1,
                 'method' => $method,
-                'is_must_template' => $method != PaymentMethodEnum::BALANCE,
+                'is_must_template' => !\in_array($method, [PaymentMethodEnum::BALANCE]),
                 'is_enable' => $method == PaymentMethodEnum::BALANCE,
             ]);
         }
@@ -269,7 +269,7 @@ class Payment extends BaseModel
     /**
      * 根据指定客户端获取可用的支付方式
      * @param string $client 客户端来源
-     * @param bool $balance 是否支持余额支付
+     * @param bool $isRecharge 是否用于余额充值
      * @param int|null $storeId 商城ID
      * @return array
      * @throws \think\db\exception\DataNotFoundException
@@ -277,13 +277,17 @@ class Payment extends BaseModel
      * @throws \think\db\exception\ModelNotFoundException
      * @throws BaseException
      */
-    public function getMethodsByClient(string $client, bool $balance = true, int $storeId = null): array
+    public function getMethodsByClient(string $client, bool $isRecharge = false, int $storeId = null): array
     {
         $storeId = $storeId ?: self::$storeId;
         $group = static::getItem($client, $storeId);
         $methods = [];
         foreach ($group['methods'] as $method) {
-            if ($method['is_enable'] && ($balance || $method['method'] !== PaymentMethodEnum::BALANCE)) {
+            if ($method['is_enable']) {
+                // 条件: 余额充值时余额支付和线下支付不可用
+                if ($isRecharge && \in_array($method['method'], [PaymentMethodEnum::BALANCE])) {
+                    continue;
+                }
                 $methods[] = $method;
             }
         }
@@ -337,7 +341,7 @@ class Payment extends BaseModel
      */
     private function getCurrentMethod(string $method, string $client, int $storeId = null)
     {
-        $methods = $this->getMethodsByClient($client, true, $storeId);
+        $methods = $this->getMethodsByClient($client, false, $storeId);
         $method = helper::arraySearch($methods, 'method', $method);
         if (empty($method)) {
             throwError('很抱歉，当前未找到指定的支付方式');

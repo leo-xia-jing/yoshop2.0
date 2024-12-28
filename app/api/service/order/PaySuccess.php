@@ -222,7 +222,7 @@ class PaySuccess extends BaseService
         // 当前订单信息
         $orderInfo = $this->getOrderInfo();
         // 余额支付直接返回错误信息
-        if ($this->method == PaymentMethodEnum::BALANCE) {
+        if (in_array($this->method, [PaymentMethodEnum::BALANCE])) {
             throwError('当前订单已支付，无需重复支付');
         }
         // 第三方支付判断是否为重复下单 （因异步回调可能存在网络延迟的原因，在并发的情况下会出现同时付款两次，这里需要容错）
@@ -245,7 +245,7 @@ class PaySuccess extends BaseService
         // 当前订单信息
         $orderInfo = $this->getOrderInfo();
         // 余额支付无需退款 (因为是同步执行)
-        if ($this->method === PaymentMethodEnum::BALANCE) {
+        if (in_array($this->method, [PaymentMethodEnum::BALANCE])) {
             return;
         }
         // 执行第三方支付原路退款

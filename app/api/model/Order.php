@@ -18,6 +18,7 @@ use app\common\model\Order as OrderModel;
 use app\common\service\{Order as OrderService, order\Complete as OrderCompleteService};
 use app\common\enum\{
     Setting as SettingEnum,
+    payment\Method as PaymentMethodEnum,
     order\PayStatus as PayStatusEnum,
     order\OrderStatus as OrderStatusEnum,
     order\DeliveryType as DeliveryTypeEnum,

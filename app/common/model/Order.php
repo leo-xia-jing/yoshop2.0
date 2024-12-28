@@ -15,6 +15,7 @@ namespace app\common\model;
 use cores\BaseModel;
 use app\common\service\Order as OrderService;
 use app\common\enum\order\PayStatus as PayStatusEnum;
+use app\common\enum\payment\Method as PaymentMethodEnum;
 use app\common\enum\order\OrderStatus as OrderStatusEnum;
 use app\common\enum\order\ReceiptStatus as ReceiptStatusEnum;
 use app\common\enum\order\DeliveryStatus as DeliveryStatusEnum;

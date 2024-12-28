@@ -76,7 +76,7 @@ class Recharge extends BaseService
         $planList = $PlanModel->getList();
         // 根据指定客户端获取可用的支付方式
         $PaymentModel = new PaymentModel;
-        $methods = $PaymentModel->getMethodsByClient($client, false);
+        $methods = $PaymentModel->getMethodsByClient($client, true);
         // 充值设置
         $setting = SettingModel::getRecharge();
         // 返回数据
