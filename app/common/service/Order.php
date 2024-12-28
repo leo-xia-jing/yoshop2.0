@@ -38,11 +38,12 @@ class Order extends BaseService
     /**
      * 事件：订单取消
      * @param OrderModel $order
+     * @param bool $isPayOrder 是否为已支付订单
      */
-    public static function cancelEvent(OrderModel $order)
+    public static function cancelEvent(OrderModel $order, bool $isPayOrder = true)
     {
         // 回退商品库存
-        FactoryStock::getFactory($order['order_source'])->backGoodsStock($order['goods'], true);
+        FactoryStock::getFactory($order['order_source'])->backGoodsStock($order['goods'], $isPayOrder);
         // 回退用户优惠券
         $order['coupon_id'] > 0 && UserCouponModel::setIsUse($order['coupon_id'], false);
         // 回退用户积分

@@ -131,7 +131,7 @@ class Order extends OrderModel
         // 订单取消事件
         return $this->transaction(function () use ($isPay) {
             // 订单取消事件
-            !$isPay && OrderService::cancelEvent($this);
+            !$isPay && OrderService::cancelEvent($this, false);
             // 更新订单状态: 已付款的订单设置为"待取消", 等待后台审核
             return $this->save(['order_status' => $isPay ? OrderStatusEnum::APPLY_CANCEL : OrderStatusEnum::CANCELLED]);
         });

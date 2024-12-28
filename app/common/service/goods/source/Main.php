@@ -102,10 +102,9 @@ class Main extends Basics
      * 回退商品库存事件 (用于取消订单时调用)
      * @param mixed $goodsList 订单商品列表
      * @param bool $isPayOrder 是否为已支付订单
-     * @return array|false
-     * @throws \Exception
+     * @return bool
      */
-    public function backGoodsStock($goodsList, bool $isPayOrder = false)
+    public function backGoodsStock($goodsList, bool $isPayOrder = false): bool
     {
         $goodsData = [];
         $goodsSkuData = [];
@@ -128,8 +127,7 @@ class Main extends Basics
         // 更新商品总库存
         !empty($goodsData) && $this->updateGoods($goodsData);
         // 更新商品sku库存
-        !empty($goodsSkuData) && $this->updateGoodsSku($goodsSkuData);
-        return true;
+        return !empty($goodsSkuData) && $this->updateGoodsSku($goodsSkuData);
     }
 
     /**
