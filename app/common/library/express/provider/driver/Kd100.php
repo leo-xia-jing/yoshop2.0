@@ -54,7 +54,7 @@ class Kd100 extends Driver
         $data = helper::jsonDecode($result);
         // 记录日志
         log_record(['name' => '查询物流轨迹', 'provider' => 'kd100', 'param' => $param, 'result' => $data]);
-        // 记录错误信息
+        // 错误信息
         if (isset($data['returnCode']) || !isset($data['data'])) {
             throwError('快递100物流查询API失败：' . $data['message']);
         }
