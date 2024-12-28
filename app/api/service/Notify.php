@@ -67,10 +67,10 @@ class Notify
     public function wechatV3(): string
     {
         try {
-            // 通过微信支付v3平台证书序号 获取支付模板
-            $wechatpaySerial = \request()->header('wechatpay-serial');
-            $templateInfo = PaymentTemplateModel::findByWechatpaySerial($wechatpaySerial);
-            empty($templateInfo) && throwError("未找到该平台证书序号：$wechatpaySerial");
+            // 通过微信支付v3平台证书序号或微信支付公钥ID 获取支付模板
+            $platformCertificateSerialOrPublicKeyId = \request()->header('wechatpay-serial');
+            $templateInfo = PaymentTemplateModel::findByWechatpaySerial($platformCertificateSerialOrPublicKeyId);
+            empty($templateInfo) && throwError("未找到该平台证书序号或微信支付公钥ID：$platformCertificateSerialOrPublicKeyId");
 
             // 从支付模板中取出v3apikey 用于解密异步通知的密文
             $apiv3Key = $templateInfo['config']['wechat']['mchType'] === 'provider'

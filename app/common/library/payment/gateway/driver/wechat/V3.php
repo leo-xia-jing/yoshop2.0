@@ -180,17 +180,17 @@ class V3
     /**
      * 支付成功后的异步通知
      * @param string $apiv3Key 微信支付v3秘钥
-     * @param string $platformCertificateFilePath 平台证书路径
+     * @param string $platformCertificateOrPublicKeyFilePath 微信支付公钥或平台证书路径
      * @return bool|string
      */
-    public function notify(string $apiv3Key, string $platformCertificateFilePath)
+    public function notify(string $apiv3Key, string $platformCertificateOrPublicKeyFilePath)
     {
         // 微信异步通知参数
         $header = \request()->header();
         $inBody = file_get_contents('php://input');
 
         // 微信支付平台证书
-        $platformPublicKeyInstance = Rsa::from("file://{$platformCertificateFilePath}", Rsa::KEY_TYPE_PUBLIC);
+        $platformPublicKeyInstance = Rsa::from("file://{$platformCertificateOrPublicKeyFilePath}", Rsa::KEY_TYPE_PUBLIC);
 
         // 检查通知时间偏移量，允许5分钟之内的偏移
         // $timeOffsetStatus = 300 >= abs(Formatter::timestamp() - (int)$inWechatpayTimestamp);
@@ -420,19 +420,16 @@ class V3
     {
         // 从本地文件中加载「商户API私钥」，「商户API私钥」会用来生成请求的签名
         $merchantPrivateKeyInstance = $this->getMerchantPrivateKeyInstance();
-
-        // 从本地文件中加载「微信支付平台证书」，用来验证微信支付应答的签名
-        $platformCertificateFilePath = "file://{$this->config['platform_cert_path']}";
+        // 从本地文件中加载「微信支付平台证书」或者「微信支付平台公钥」，用来验证微信支付应答的签名
+        $platformCertificateOrPublicKeyFilePath = $this->platformCertificateOrPublicKeyFilePath();
         try {
-            $platformPublicKeyInstance = Rsa::from($platformCertificateFilePath, Rsa::KEY_TYPE_PUBLIC);
+            $platformPublicKeyInstance = Rsa::from("file://{$platformCertificateOrPublicKeyFilePath}", Rsa::KEY_TYPE_PUBLIC);
         } catch (\UnexpectedValueException $e) {
             $platformPublicKeyInstance = null;
-            throwError('证书文件(PLATFORM)不正确');
+            throwError('平台证书文件或微信支付平台公钥不正确');
         }
-
-        // 从「微信支付平台证书」中获取「证书序列号」
-        $platformCertificateSerial = PemUtil::parseCertificateSerialNo($platformCertificateFilePath);
-
+        // 「平台证书序列号」及/或「平台公钥ID」
+        $platformCertificateSerialOrPublicKeyId = $this->platformCertificateSerialOrPublicKeyId($platformCertificateOrPublicKeyFilePath);
         // 构造一个 APIv3 客户端实例
         return Builder::factory([
             // 微信支付商户号
@@ -441,10 +438,30 @@ class V3
             'serial' => $this->serialno($this->config['cert_path']),
             'privateKey' => $merchantPrivateKeyInstance,
             'certs' => [
-                // 从「微信支付平台证书」中获取「证书序列号」
-                $platformCertificateSerial => $platformPublicKeyInstance,
+                $platformCertificateSerialOrPublicKeyId => $platformPublicKeyInstance,
             ],
         ]);
+    }
+
+    /**
+     * 获取「微信支付平台证书」或者「微信支付平台公钥」的路径
+     * @return string
+     */
+    private function platformCertificateOrPublicKeyFilePath(): string
+    {
+        return $this->config['signature_method'] == 'publicKey' ? $this->config['public_key_path']
+            : $this->config['platform_cert_path'];
+    }
+
+    /**
+     * 获取「平台证书序列号」及/或「平台公钥ID」
+     * @param string $platformCertificateOrPublicKeyFilePath 「微信支付平台证书」或者「微信支付平台公钥」的路径
+     * @return mixed|string
+     */
+    private function platformCertificateSerialOrPublicKeyId(string $platformCertificateOrPublicKeyFilePath)
+    {
+        return $this->config['signature_method'] == 'publicKey' ? $this->config['public_key_id']
+            : PemUtil::parseCertificateSerialNo("file://{$platformCertificateOrPublicKeyFilePath}");
     }
 
     /**
@@ -489,9 +506,12 @@ class V3
                 'key' => $options['provider']['spApiKey'],
                 'cert_path' => $options['provider']['spApiclientCertPath'],
                 'key_path' => $options['provider']['spApiclientKeyPath'],
-                'platform_cert_path' => $options['provider']['platformCertPath'],
                 'sub_mchid' => $options['provider']['subMchId'],
                 'sub_appid' => $options['provider']['subAppId'],
+                'signature_method' => $options['provider']['spSignatureMethod'],
+                'public_key_id' => $options['provider']['spPublicKeyId'] ?? '',
+                'public_key_path' => $options['provider']['spPublicKeyPath'] ?? '',
+                'platform_cert_path' => $options['provider']['platformCertPath'] ?? ''
             ];
         } else {
             return [
@@ -501,7 +521,10 @@ class V3
                 'key' => $options['normal']['apiKey'],
                 'cert_path' => $options['normal']['apiclientCertPath'],
                 'key_path' => $options['normal']['apiclientKeyPath'],
-                'platform_cert_path' => $options['normal']['platformCertPath'],
+                'signature_method' => $options['normal']['signatureMethod'],
+                'public_key_id' => $options['normal']['publicKeyId'] ?? '',
+                'public_key_path' => $options['normal']['publicKeyPath'] ?? '',
+                'platform_cert_path' => $options['normal']['platformCertPath'] ?? ''
             ];
         }
     }

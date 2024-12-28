@@ -37,7 +37,7 @@ class PaymentTemplate extends PaymentTemplateModel
     ];
 
     /**
-     * 根据微信支付V3平台证书序号查找记录
+     * 根据微信支付V3平台证书序号或微信支付公钥ID查找记录
      * @param string $serial
      * @return static|array|null
      */
