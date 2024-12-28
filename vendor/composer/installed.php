@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'topthink/think',
-        'pretty_version' => 'dev-dev未加密',
-        'version' => 'dev-dev未加密',
-        'reference' => '7f93d97be14576b7507983c17a67048737a63359',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '47b656fb5a821b897ca05c28dbd4da47ab8c12e7',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -622,9 +622,9 @@
             'dev_requirement' => false,
         ),
         'topthink/think' => array(
-            'pretty_version' => 'dev-dev未加密',
-            'version' => 'dev-dev未加密',
-            'reference' => '7f93d97be14576b7507983c17a67048737a63359',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '47b656fb5a821b897ca05c28dbd4da47ab8c12e7',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -685,9 +685,9 @@
             'dev_requirement' => false,
         ),
         'wechatpay/wechatpay' => array(
-            'pretty_version' => '1.4.6',
-            'version' => '1.4.6.0',
-            'reference' => 'edbdb6bb19e0818b0576043b265ff1b1e188d668',
+            'pretty_version' => '1.4.11',
+            'version' => '1.4.11.0',
+            'reference' => '6f2994f04412c909d3561585ba437b50b894306f',
             'type' => 'library',
             'install_path' => __DIR__ . '/../wechatpay/wechatpay',
             'aliases' => array(),

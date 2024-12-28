@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6a7996d88fd82c5b30b1a2ce37fdcce9",
+    "content-hash": "8207fe9341ea69e087b7ad94ad40eb1f",
     "packages": [
         {
             "name": "adbario/php-dot-notation",
@@ -4372,16 +4372,16 @@
         },
         {
             "name": "wechatpay/wechatpay",
-            "version": "1.4.6",
+            "version": "1.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wechatpay-apiv3/wechatpay-php.git",
-                "reference": "edbdb6bb19e0818b0576043b265ff1b1e188d668"
+                "reference": "6f2994f04412c909d3561585ba437b50b894306f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wechatpay-apiv3/wechatpay-php/zipball/edbdb6bb19e0818b0576043b265ff1b1e188d668",
-                "reference": "edbdb6bb19e0818b0576043b265ff1b1e188d668",
+                "url": "https://api.github.com/repos/wechatpay-apiv3/wechatpay-php/zipball/6f2994f04412c909d3561585ba437b50b894306f",
+                "reference": "6f2994f04412c909d3561585ba437b50b894306f",
                 "shasum": ""
             },
             "require": {
@@ -4433,9 +4433,9 @@
             ],
             "support": {
                 "issues": "https://github.com/wechatpay-apiv3/wechatpay-php/issues",
-                "source": "https://github.com/wechatpay-apiv3/wechatpay-php/tree/v1.4.6"
+                "source": "https://github.com/wechatpay-apiv3/wechatpay-php/tree/v1.4.11"
             },
-            "time": "2022-08-19T09:14:39+00:00"
+            "time": "2024-12-27T15:22:15+00:00"
         },
         {
             "name": "workerman/gateway-worker",
@@ -4893,7 +4893,6 @@
         "ext-simplexml": "*",
         "ext-zlib": "*",
         "ext-zip": "*",
-        "ext-redis": "*",
         "ext-fileinfo": "*"
     },
     "platform-dev": [],

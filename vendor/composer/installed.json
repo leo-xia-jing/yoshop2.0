@@ -4753,17 +4753,17 @@
         },
         {
             "name": "wechatpay/wechatpay",
-            "version": "1.4.6",
-            "version_normalized": "1.4.6.0",
+            "version": "1.4.11",
+            "version_normalized": "1.4.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wechatpay-apiv3/wechatpay-php.git",
-                "reference": "edbdb6bb19e0818b0576043b265ff1b1e188d668"
+                "reference": "6f2994f04412c909d3561585ba437b50b894306f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wechatpay-apiv3/wechatpay-php/zipball/edbdb6bb19e0818b0576043b265ff1b1e188d668",
-                "reference": "edbdb6bb19e0818b0576043b265ff1b1e188d668",
+                "url": "https://api.github.com/repos/wechatpay-apiv3/wechatpay-php/zipball/6f2994f04412c909d3561585ba437b50b894306f",
+                "reference": "6f2994f04412c909d3561585ba437b50b894306f",
                 "shasum": ""
             },
             "require": {
@@ -4779,7 +4779,7 @@
                 "phpstan/phpstan": "^0.12.89 || ^1.0",
                 "phpunit/phpunit": "^7.5 || ^8.5.16 || ^9.3.5"
             },
-            "time": "2022-08-19T09:14:39+00:00",
+            "time": "2024-12-27T15:22:15+00:00",
             "bin": [
                 "bin/CertificateDownloader.php"
             ],
@@ -4817,7 +4817,7 @@
             ],
             "support": {
                 "issues": "https://github.com/wechatpay-apiv3/wechatpay-php/issues",
-                "source": "https://github.com/wechatpay-apiv3/wechatpay-php/tree/v1.4.6"
+                "source": "https://github.com/wechatpay-apiv3/wechatpay-php/tree/v1.4.11"
             },
             "install-path": "../wechatpay/wechatpay"
         },

@@ -5,6 +5,7 @@ namespace WeChatPay;
 use function strlen;
 use function sprintf;
 use function in_array;
+use function array_key_exists;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\HandlerStack;
@@ -54,8 +55,6 @@ trait ClientXmlTrait
         '/payitil/report',
         '/risk/getpublickey',
         '/risk/getviolation',
-        '/sandboxnew/pay/downloadbill',
-        '/sandboxnew/pay/getsignkey',
         '/secapi/mch/submchmanage',
         '/xdc/apiv2getsignkey/sign/getsignkey',
     ];
@@ -74,7 +73,12 @@ trait ClientXmlTrait
      * @return callable(callable(RequestInterface, array))
      * @throws \WeChatPay\Exception\InvalidArgumentException
      */
-    public static function transformRequest(?string $mchid = null, string $secret = '', ?array $merchant = null): callable
+    public static function transformRequest(
+        ?string $mchid = null,
+        #[\SensitiveParameter]
+        string $secret = '',
+        ?array $merchant = null
+    ): callable
     {
         return static function (callable $handler) use ($mchid, $secret, $merchant): callable {
             return static function (RequestInterface $request, array $options = []) use ($handler, $mchid, $secret, $merchant): PromiseInterface {
@@ -112,7 +116,10 @@ trait ClientXmlTrait
      *
      * @return callable(callable(RequestInterface, array))
      */
-    public static function transformResponse(string $secret = ''): callable
+    public static function transformResponse(
+        #[\SensitiveParameter]
+        string $secret = ''
+    ): callable
     {
         return static function (callable $handler) use ($secret): callable {
             return static function (RequestInterface $request, array $options = []) use ($secret, $handler): PromiseInterface {
@@ -122,6 +129,14 @@ trait ClientXmlTrait
 
                 return $handler($request, $options)->then(static function(ResponseInterface $response) use ($secret) {
                     $result = Transformer::toArray(static::body($response));
+
+                    if (!(array_key_exists('return_code', $result) && Crypto\Hash::equals('SUCCESS', $result['return_code']))) {
+                        return Create::rejectionFor($response);
+                    }
+
+                    if (array_key_exists('result_code', $result) && !Crypto\Hash::equals('SUCCESS', $result['result_code'])) {
+                        return Create::rejectionFor($response);
+                    }
 
                     /** @var ?string $sign */
                     $sign = $result['sign'] ?? null;
