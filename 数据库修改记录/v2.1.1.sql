@@ -1,6 +1,6 @@
--- ----------------------------
--- 用于记录开发阶段的数据库变更
--- ----------------------------
+
+## 本文件是v2.1.1版本的数据库修改记录，通过查看version.json文件确定当前系统版本号
+## 说明：如果你当前的版本号小于v2.1.1，那么在升级时需要执行本文件的sql内容
 
 UPDATE `yoshop_store_api` SET `sort`='200' WHERE (`api_id`='11017');
 UPDATE `yoshop_store_api` SET `sort`='115' WHERE (`api_id`='11316');
@@ -20,15 +20,3 @@ ALTER TABLE `yoshop_order_address` ADD INDEX (`order_id`);
 # 订单记录表 - 订单结算时间
 ALTER TABLE `yoshop_order`
 ADD COLUMN `settled_time` int UNSIGNED NOT NULL DEFAULT 0 COMMENT '订单结算时间' AFTER `is_settled`;
-
-# 物流公司记录表 - 是否删除
-ALTER TABLE `yoshop_express`
-ADD COLUMN `is_delete`  tinyint(3) UNSIGNED NOT NULL DEFAULT 0 COMMENT '是否删除' AFTER `sort`;
-
-# 订单记录表 - 是否已同步微信小程序发货信息管理
-ALTER TABLE `yoshop_order`
-ADD COLUMN `sync_weixin_shipping`  tinyint(3) UNSIGNED NOT NULL DEFAULT 0 COMMENT '是否已同步微信小程序发货信息管理' AFTER `delivery_time`;
-
-# 用户优惠券记录表 - 优惠券描述
-ALTER TABLE `yoshop_user_coupon`
-ADD COLUMN `describe` varchar(500) NOT NULL DEFAULT '' COMMENT '优惠券描述' AFTER `apply_range_config`;

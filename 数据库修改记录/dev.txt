@@ -1,0 +1,50 @@
+-- ----------------------------
+-- 用于记录开发阶段的数据库变更
+-- ----------------------------
+
+
+# 物流公司记录表 - 是否删除
+ALTER TABLE `yoshop_express`
+ADD COLUMN `is_delete`  tinyint(3) UNSIGNED NOT NULL DEFAULT 0 COMMENT '是否删除' AFTER `sort`;
+
+# 订单记录表 - 是否已同步微信小程序发货信息管理
+ALTER TABLE `yoshop_order`
+ADD COLUMN `sync_weixin_shipping`  tinyint(3) UNSIGNED NOT NULL DEFAULT 0 COMMENT '是否已同步微信小程序发货信息管理' AFTER `delivery_time`;
+
+# 用户优惠券记录表 - 优惠券描述
+ALTER TABLE `yoshop_user_coupon`
+ADD COLUMN `describe` varchar(500) NOT NULL DEFAULT '' COMMENT '优惠券描述' AFTER `apply_range_config`;
+
+# 商城支付模板记录表 - 微信支付V3平台证书序号
+ALTER TABLE `yoshop_payment_template`
+MODIFY COLUMN `wechatpay_serial`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT '微信支付V3平台证书序号或微信支付公钥ID' AFTER `remarks`;
+
+
+
+INSERT INTO `yoshop_store_menu` VALUES ('10288', '10', '复制页面', '/page/copy', '1', '', '', '10028', '107', '1614556800', '1614556800');
+
+INSERT INTO `yoshop_store_api` VALUES ('11367', '查询物流跟踪信息', '/order.delivery/traces', '11318', '125', '1614556800', '1614556800');
+
+DELETE FROM `yoshop_store_menu_api` WHERE (`menu_id`='10055');
+INSERT INTO `yoshop_store_menu_api` VALUES ('11587', '10055', '11078', '1614556800');
+INSERT INTO `yoshop_store_menu_api` VALUES ('11588', '10055', '11180', '1614556800');
+INSERT INTO `yoshop_store_menu_api` VALUES ('11589', '10055', '11165', '1614556800');
+INSERT INTO `yoshop_store_menu_api` VALUES ('11590', '10055', '11169', '1614556800');
+INSERT INTO `yoshop_store_menu_api` VALUES ('11591', '10055', '11171', '1614556800');
+INSERT INTO `yoshop_store_menu_api` VALUES ('11592', '10055', '11253', '1614556800');
+INSERT INTO `yoshop_store_menu_api` VALUES ('11593', '10055', '11254', '1614556800');
+INSERT INTO `yoshop_store_menu_api` VALUES ('11594', '10055', '11261', '1614556800');
+INSERT INTO `yoshop_store_menu_api` VALUES ('11595', '10055', '11367', '1614556800');
+INSERT INTO `yoshop_store_menu_api` VALUES ('11596', '10055', '11132', '1614556800');
+INSERT INTO `yoshop_store_menu_api` VALUES ('11597', '10055', '11076', '1614556800');
+INSERT INTO `yoshop_store_menu_api` VALUES ('11598', '10055', '11170', '1614556800');
+INSERT INTO `yoshop_store_menu_api` VALUES ('11599', '10055', '11154', '1614556800');
+INSERT INTO `yoshop_store_menu_api` VALUES ('11600', '10055', '11164', '1614556800');
+INSERT INTO `yoshop_store_menu_api` VALUES ('11601', '10055', '11252', '1614556800');
+INSERT INTO `yoshop_store_menu_api` VALUES ('11602', '10055', '11020', '1614556800');
+INSERT INTO `yoshop_store_menu_api` VALUES ('11603', '10055', '11259', '1614556800');
+INSERT INTO `yoshop_store_menu_api` VALUES ('11604', '10055', '11318', '1614556800');
+
+
+
+
