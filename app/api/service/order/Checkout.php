@@ -309,7 +309,7 @@ class Checkout extends BaseService
             // 最多可抵扣的积分数量
             $goods['max_points_num'] = 0;
             // 实际抵扣的积分数量
-            $goods['pointsNum'] = 0;
+            $goods['points_num'] = 0;
             // 实际抵扣的金额
             $goods['points_money'] = 0.00;
         }
