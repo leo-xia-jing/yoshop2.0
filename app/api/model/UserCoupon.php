@@ -38,7 +38,7 @@ class UserCoupon extends UserCouponModel
     ];
 
     /**
-     * 获取用户优惠券列表
+     * 获取用户优惠券列表 (分页)
      * @param int $userId
      * @param array $param
      * @return \think\Paginator
@@ -50,6 +50,24 @@ class UserCoupon extends UserCouponModel
         return $this->where($filter)
             ->where('user_id', '=', $userId)
             ->paginate();
+    }
+
+    /**
+     * 获取用户优惠券列表 (全部)
+     * @param int $userId
+     * @param array $param
+     * @return UserCoupon[]|array|\think\Collection
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\DbException
+     * @throws \think\db\exception\ModelNotFoundException
+     */
+    public static function getAllList(int $userId, array $param)
+    {
+        $model = new static;
+        $filter = $model->getFilter($param);
+        return $model->where($filter)
+            ->where('user_id', '=', $userId)
+            ->select();
     }
 
     /**
@@ -163,21 +181,21 @@ class UserCoupon extends UserCouponModel
     }
 
     /**
-     * 订单结算优惠券列表
+     * 根据订单获取可用的优惠券列表 (用于订单结算台)
      * @param int $userId 用户id
      * @param float $orderPayPrice 订单商品总金额
      * @return array
      * @throws \think\db\exception\DbException
      */
-    public static function getUserCouponList(int $userId, float $orderPayPrice): array
+    public static function getListByOrder(int $userId, float $orderPayPrice): array
     {
         // 判断订单商品总金额不能为1分
         if ($orderPayPrice <= 0.01) {
             return [];
         }
         // 获取用户可用的优惠券列表
-        $list = (new static)->getList($userId, ['dataType' => 'isUsable', 'amount' => $orderPayPrice]);
-        $data = $list->isEmpty() ? [] : $list->toArray()['data'];
+        $list = static::getAllList($userId, ['dataType' => 'isUsable', 'amount' => $orderPayPrice]);
+        $data = $list->isEmpty() ? [] : $list->toArray();
         foreach ($data as &$item) {
             // 计算最大能折扣的金额
             if ($item['coupon_type'] == CouponTypeEnum::DISCOUNT) {

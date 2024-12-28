@@ -86,6 +86,15 @@ class GoodsDeduct extends BaseService
     }
 
     /**
+     * 获取实际抵扣的金额
+     * @return int
+     */
+    public function getActualReducedMoney(): int
+    {
+        return $this->actualReducedMoney;
+    }
+
+    /**
      * 设置实际参与优惠券折扣的商品记录
      * @return void
      */
@@ -100,12 +109,12 @@ class GoodsDeduct extends BaseService
                     $this->rangeGoodsList[$goodsKey] = $goods;
                     break;
                 case ApplyRangeEnum::SOME:
-                    if (in_array($goods['goods_id'], $this->couponInfo['apply_range_config']['applyGoodsIds'])) {
+                    if (\in_array($goods['goods_id'], $this->couponInfo['apply_range_config']['applyGoodsIds'])) {
                         $this->rangeGoodsList[$goodsKey] = $goods;
                     }
                     break;
                 case ApplyRangeEnum::EXCLUDE:
-                    if (!in_array($goods['goods_id'], $this->couponInfo['apply_range_config']['excludedGoodsIds'])) {
+                    if (!\in_array($goods['goods_id'], $this->couponInfo['apply_range_config']['excludedGoodsIds'])) {
                         $this->rangeGoodsList[$goodsKey] = $goods;
                     }
                     break;
@@ -126,11 +135,6 @@ class GoodsDeduct extends BaseService
         }
     }
 
-    public function getActualReducedMoney(): int
-    {
-        return $this->actualReducedMoney;
-    }
-
     /**
      * 计算实际抵扣的金额
      */
@@ -138,14 +142,9 @@ class GoodsDeduct extends BaseService
     {
         // 获取当前订单商品总额
         $orderTotalPrice = $this->getOrderTotalPrice();
-        // 计算最大抵扣金额
-        $reducedMoney = 0;
-        foreach ($this->rangeGoodsList as $goods) {
-            $reducedMoney += $goods['total_price'];
-        }
         // 计算打折金额
         if ($this->couponInfo['coupon_type'] == CouponTypeEnum::DISCOUNT) {
-            $reducePrice = $reducedMoney - ($reducedMoney * ($this->couponInfo['discount'] / 10));
+            $reducePrice = $orderTotalPrice - ($orderTotalPrice * ($this->couponInfo['discount'] / 10));
         } else {
             $reducePrice = $this->couponInfo['reduce_price'] * 100;
         }
@@ -173,10 +172,10 @@ class GoodsDeduct extends BaseService
     {
         $orderTotalPrice = helper::getArrayColumnSum($this->rangeGoodsList, 'total_price');
         foreach ($this->rangeGoodsList as &$goods) {
-            $weight = round($goods['total_price'] / $orderTotalPrice, 6);
+            $weight = \round($goods['total_price'] / $orderTotalPrice, 6);
             $goods['weight'] = helper::scToStr((string)$weight, 6);
         }
-        array_sort($this->rangeGoodsList, 'weight', true);
+        \array_sort($this->rangeGoodsList, 'weight', true);
     }
 
     /**

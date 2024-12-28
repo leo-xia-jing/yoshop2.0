@@ -22,8 +22,8 @@ use app\api\service\user\Grade as UserGradeService;
 use app\api\service\coupon\GoodsDeduct as GoodsDeductService;
 use app\api\service\points\GoodsDeduct as PointsDeductService;
 use app\api\service\order\source\checkout\Factory as CheckoutFactory;
-use app\common\enum\order\OrderType;
 use app\common\enum\Setting as SettingEnum;
+use app\common\enum\order\OrderType as OrderTypeEnum;
 use app\common\enum\order\OrderStatus as OrderStatusEnum;
 use app\common\enum\order\OrderSource as OrderSourceEnum;
 use app\common\enum\order\DeliveryType as DeliveryTypeEnum;
@@ -178,7 +178,7 @@ class Checkout extends BaseService
         // 设置订单商品总金额(不含优惠折扣)
         $this->setOrderTotalPrice();
         // 当前用户可用的优惠券列表
-        $couponList = $this->getUserCouponList((float)$this->orderData['orderTotalPrice']);
+        $couponList = $this->getCouponListByOrder((float)$this->orderData['orderTotalPrice']);
         // 计算优惠券抵扣
         $this->setOrderCouponMoney($couponList, (int)$this->param['couponId']);
         // 计算可用积分抵扣
@@ -289,7 +289,7 @@ class Checkout extends BaseService
             // 积分抵扣比例
             $deductionRatio = helper::bcdiv($setting['discount']['max_money_ratio'], 100);
             // 最多可抵扣的金额
-            $totalPayPrice = helper::bcsub($goods['total_price'], $goods['coupon_money']);
+            $totalPayPrice = helper::bcsubs([$goods['total_price'], $goods['coupon_money']]);
             $maxPointsMoney = helper::bcmul($totalPayPrice, $deductionRatio);
             // 最多可抵扣的积分数量
             $goods['max_points_num'] = helper::bcdiv($maxPointsMoney, $setting['discount']['discount_ratio'], 0);
@@ -357,7 +357,7 @@ class Checkout extends BaseService
         // 系统默认的配送方式
         $setting = SettingModel::getItem(SettingEnum::DELIVERY)['delivery_type'];
         // 配送方式：实物订单
-        if ($this->getOrderType() == OrderType::PHYSICAL) {
+        if ($this->getOrderType() == OrderTypeEnum::PHYSICAL) {
             return $this->param['delivery'] > 0 ? $this->param['delivery'] : $setting[0];
         }
         // 配送方式：无需配送
@@ -409,11 +409,11 @@ class Checkout extends BaseService
 
     /**
      * 当前用户可用的优惠券列表
-     * @param float $orderTotalPrice 总金额
+     * @param float $orderTotalPrice 订单商品总金额
      * @return array
      * @throws \think\db\exception\DbException
      */
-    private function getUserCouponList(float $orderTotalPrice): array
+    private function getCouponListByOrder(float $orderTotalPrice): array
     {
         // 是否开启优惠券折扣
         if (!$this->checkoutRule['isCoupon']) {
@@ -422,7 +422,7 @@ class Checkout extends BaseService
         // 整理当前订单所有商品ID集
         $orderGoodsIds = helper::getArrayColumn($this->goodsList, 'goods_id');
         // 当前用户可用的优惠券列表
-        $couponList = UserCouponModel::getUserCouponList($this->user['user_id'], $orderTotalPrice);
+        $couponList = UserCouponModel::getListByOrder($this->user['user_id'], $orderTotalPrice);
         // 判断当前优惠券是否满足订单使用条件 (优惠券适用范围)
         return UserCouponModel::couponListApplyRange($couponList, $orderGoodsIds);
     }
@@ -502,11 +502,12 @@ class Checkout extends BaseService
         // 商品总价 - 优惠抵扣
         foreach ($this->goodsList as &$goods) {
             // 减去优惠券抵扣金额
-            $value = helper::bcsub($goods['total_price'], $goods['coupon_money']);
+            $value = helper::bcsubs([$goods['total_price'], $goods['coupon_money']]);
             // 减去积分抵扣金额
             if ($this->orderData['isAllowPoints'] && $this->orderData['isUsePoints']) {
                 $value = helper::bcsub($value, $goods['points_money']);
             }
+            // 订单商品的实际付款金额
             $goods['total_pay_price'] = helper::number2($value);
         }
     }
@@ -532,7 +533,6 @@ class Checkout extends BaseService
             // 会员折扣的总额差
             'grade_total_money' => 0.00,
         ], true);
-
         // 是否开启会员等级折扣
         if (!$this->checkoutRule['isUserGrade']) {
             return;
@@ -594,8 +594,9 @@ class Checkout extends BaseService
         }
         // 获取优惠券信息
         $couponInfo = $this->getCouponInfo($userCouponId, $couponList);
-        // 计算订单商品优惠券抵扣金额
+        // 商品列表信息格式化
         $goodsListTemp = helper::getArrayColumns($this->goodsList, ['goods_id', 'goods_sku_id', 'total_price']);
+        // 计算订单商品优惠券抵扣金额
         $CouponMoney = new GoodsDeductService;
         $rangeGoodsList = $CouponMoney->setGoodsList($goodsListTemp)
             ->setCouponInfo($couponInfo)
@@ -712,7 +713,7 @@ class Checkout extends BaseService
         // 新增订单记录
         $this->add($order, $this->param['remark']);
         // 保存订单数据 (根据订单类型)
-        $order['orderType'] == OrderType::PHYSICAL && $this->saveOrderByPhysical($order);
+        $order['orderType'] == OrderTypeEnum::PHYSICAL && $this->saveOrderByPhysical($order);
         // 保存订单商品信息
         $this->saveOrderGoods($order);
         // 更新商品库存 (针对下单减库存的商品)
@@ -749,7 +750,7 @@ class Checkout extends BaseService
      */
     private function validateOrderForm(array $order): bool
     {
-        if ($order['orderType'] == OrderType::PHYSICAL) {
+        if ($order['orderType'] == OrderTypeEnum::PHYSICAL) {
             return $this->validateOrderFormByPhysical($order);
         }
         return true;

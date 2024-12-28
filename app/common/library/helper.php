@@ -216,6 +216,15 @@ class helper
         return \bcsub($leftOperand, $rightOperand, $scale);
     }
 
+    public static function bcsubs(array $values, $scale = 2): string
+    {
+        $result = null;
+        foreach ($values as $value) {
+            $result = is_null($result) ? $value : self::bcsub($result, $value, $scale);
+        }
+        return $result;
+    }
+
     public static function bcadd($leftOperand, $rightOperand, $scale = 2): string
     {
         return \bcadd($leftOperand, $rightOperand, $scale);
