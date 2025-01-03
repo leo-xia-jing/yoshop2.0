@@ -118,6 +118,7 @@ class Page extends PageModel
             $data[] = [
                 'goods_id' => $goods['goods_id'],
                 'goods_name' => $goods['goods_name'],
+                'spec_type' => $goods['spec_type'],
                 'selling_point' => $goods['selling_point'],
                 'goods_image' => $goods['goods_image'],
                 'goods_price_min' => $goods['goods_price_min'],
