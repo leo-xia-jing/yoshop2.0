@@ -81,7 +81,7 @@ class Page extends BaseModel
             'search' => [
                 'name' => '搜索框',
                 'type' => 'search',
-                'params' => ['placeholder' => '请输入关键字进行搜索'],
+                'params' => ['placeholder' => '请输入关键字进行搜索', 'sticky' => false],
                 'style' => [
                     'textAlign' => 'left',
                     'searchStyle' => 'square'
@@ -98,10 +98,12 @@ class Page extends BaseModel
                 'data' => [
                     [
                         'imgUrl' => base_url() . 'assets/store/img/diy/banner/01.png',
+                        'imgName' => 'image-1.jpg',
                         'link' => null
                     ],
                     [
                         'imgUrl' => base_url() . 'assets/store/img/diy/banner/01.png',
+                        'imgName' => 'image-1.jpg',
                         'link' => null
                     ]
                 ]
@@ -299,18 +301,29 @@ class Page extends BaseModel
                 'params' => [
                     'source' => 'auto',         // 数据来源 (choice手动选择 auto自动获取)
                     'auto' => [
-                        'category' => 0,       // 商品分类 0为全部
+                        'category' => 0,        // 商品分类 0为全部
                         'goodsSort' => 'all',   // 商品排序 (all默认 sales销量 price价格)
                         'showNum' => 6          // 显示数量
                     ]
                 ],
                 'style' => [
-                    'background' => '#F6F6F6',
                     'display' => 'list',        // 显示类型 (list列表平铺 slide横向滑动)
                     'column' => 2,              // 分列数量
                     'show' => [                 // 显示内容
-                        'goodsName', 'goodsPrice', 'linePrice', 'sellingPoint', 'goodsSales'
-                    ]
+                        'goodsName', 'goodsPrice', 'linePrice', 'sellingPoint', 'goodsSales', 'cartBtn'
+                    ],
+                    'priceColor' => '#ff1051',       // 商品价格颜色
+                    'sellingColor' => '#e3771f',     // 商品卖点颜色
+                    'goodsNameRows' => 'two',        // 商品名称行数 (one单行 two双行)
+                    'btnCartStyle' => 1,             // 购物车按钮风格
+                    'btnCartColor' => '#27c29a',     // 购物车按钮颜色
+                    // 'btnFontColor' => '#ffffff',     // 购物车按钮文字颜色
+                    'cardType' => 'card',            // 卡片样式：flat扁平  card卡片
+                    'borderRadius' => 10,            // 圆角尺寸
+                    'itemMargin' => 10,              // 商品间距
+                    'background' => '#f6f6f6',       // 背景颜色
+                    'paddingY' => 12,                // 上下边距
+                    'paddingX' => 12,                // 左右边距
                 ],
                 // '自动获取' => 默认数据
                 'defaultData' => [
@@ -463,6 +476,32 @@ class Page extends BaseModel
                     'paddingTop' => 6,          // 上下边距
                     'paddingLeft' => 0,         // 左右边距
                     'background' => '#ffffff',  // 背景颜色
+                ]
+            ],
+            'title' => [
+                'name' => '标题文本',
+                'type' => 'title',
+                'params' => [
+                    'title' => '这是标题',               // 标题文字内容
+                    'desc' => '这里是描述',              // 描述文字内容
+                    'titleFontSize' => 15,             // 标题大小: 12px-18px
+                    'titleFontWeight' => 'bold',       // 标题字体: normal常规 bold加粗
+                    'descFontSize' => 12,              // 描述大小: 12px-16px
+                    'descFontWeight' => 'normal',      // 描述字体: normal常规 bold加粗
+                    'more' => [
+                        'enable' => true,              // 是否显示查看更多
+                        'text' => '查看更多',           // 文字内容
+                        'enableIcon' => true,         // 是否显示箭头图标
+                        'link' => null,               // 跳转链接
+                    ]
+                ],
+                'style' => [
+                    // 'textAlign' => 'left',           // 显示位置: left居左、center居中
+                    'titleTextColor' => '#323233',      // 标题文字颜色
+                    'descTextColor' => '#969799',       // 描述文字颜色
+                    'moreTextColor' => '#969799',       // 更多文字颜色
+                    'background' => '#ffffff',          // 背景颜色
+                    'paddingY' => 8,                    // 上下边距
                 ]
             ],
         ];
