@@ -20,23 +20,3 @@ MODIFY COLUMN `wechatpay_serial`  varchar(255) CHARACTER SET utf8 COLLATE utf8_g
 
 
 INSERT INTO `yoshop_store_api` VALUES ('11367', '查询物流跟踪信息', '/order.delivery/traces', '11318', '125', '1614556800', '1614556800');
-
-DELETE FROM `yoshop_store_menu_api` WHERE (`menu_id`='10055');
-INSERT INTO `yoshop_store_menu_api` VALUES ('11587', '10055', '11078', '1614556800');
-INSERT INTO `yoshop_store_menu_api` VALUES ('11588', '10055', '11180', '1614556800');
-INSERT INTO `yoshop_store_menu_api` VALUES ('11589', '10055', '11165', '1614556800');
-INSERT INTO `yoshop_store_menu_api` VALUES ('11590', '10055', '11169', '1614556800');
-INSERT INTO `yoshop_store_menu_api` VALUES ('11591', '10055', '11171', '1614556800');
-INSERT INTO `yoshop_store_menu_api` VALUES ('11592', '10055', '11253', '1614556800');
-INSERT INTO `yoshop_store_menu_api` VALUES ('11593', '10055', '11254', '1614556800');
-INSERT INTO `yoshop_store_menu_api` VALUES ('11594', '10055', '11261', '1614556800');
-INSERT INTO `yoshop_store_menu_api` VALUES ('11595', '10055', '11367', '1614556800');
-INSERT INTO `yoshop_store_menu_api` VALUES ('11596', '10055', '11132', '1614556800');
-INSERT INTO `yoshop_store_menu_api` VALUES ('11597', '10055', '11076', '1614556800');
-INSERT INTO `yoshop_store_menu_api` VALUES ('11598', '10055', '11170', '1614556800');
-INSERT INTO `yoshop_store_menu_api` VALUES ('11599', '10055', '11154', '1614556800');
-INSERT INTO `yoshop_store_menu_api` VALUES ('11600', '10055', '11164', '1614556800');
-INSERT INTO `yoshop_store_menu_api` VALUES ('11601', '10055', '11252', '1614556800');
-INSERT INTO `yoshop_store_menu_api` VALUES ('11602', '10055', '11020', '1614556800');
-INSERT INTO `yoshop_store_menu_api` VALUES ('11603', '10055', '11259', '1614556800');
-INSERT INTO `yoshop_store_menu_api` VALUES ('11604', '10055', '11318', '1614556800');
