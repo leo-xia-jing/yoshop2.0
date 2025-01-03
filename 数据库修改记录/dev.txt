@@ -2,7 +2,6 @@
 -- 用于记录开发阶段的数据库变更
 -- ----------------------------
 
-
 # 物流公司记录表 - 是否删除
 ALTER TABLE `yoshop_express`
 ADD COLUMN `is_delete`  tinyint(3) UNSIGNED NOT NULL DEFAULT 0 COMMENT '是否删除' AFTER `sort`;
@@ -19,9 +18,6 @@ ADD COLUMN `describe` varchar(500) NOT NULL DEFAULT '' COMMENT '优惠券描述'
 ALTER TABLE `yoshop_payment_template`
 MODIFY COLUMN `wechatpay_serial`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT '微信支付V3平台证书序号或微信支付公钥ID' AFTER `remarks`;
 
-
-
-INSERT INTO `yoshop_store_menu` VALUES ('10288', '10', '复制页面', '/page/copy', '1', '', '', '10028', '107', '1614556800', '1614556800');
 
 INSERT INTO `yoshop_store_api` VALUES ('11367', '查询物流跟踪信息', '/order.delivery/traces', '11318', '125', '1614556800', '1614556800');
 
@@ -44,7 +40,3 @@ INSERT INTO `yoshop_store_menu_api` VALUES ('11601', '10055', '11252', '16145568
 INSERT INTO `yoshop_store_menu_api` VALUES ('11602', '10055', '11020', '1614556800');
 INSERT INTO `yoshop_store_menu_api` VALUES ('11603', '10055', '11259', '1614556800');
 INSERT INTO `yoshop_store_menu_api` VALUES ('11604', '10055', '11318', '1614556800');
-
-
-
-

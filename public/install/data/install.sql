@@ -384,6 +384,7 @@ CREATE TABLE `yoshop_order` (
   `express_price` decimal(10,2) unsigned NOT NULL DEFAULT '0.00' COMMENT '运费金额',
   `delivery_status` tinyint(3) unsigned NOT NULL DEFAULT '10' COMMENT '发货状态(10未发货 20已发货 30部分发货)',
   `delivery_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '发货时间',
+  `sync_weixin_shipping`  tinyint(3) UNSIGNED NOT NULL DEFAULT 0 COMMENT '是否已同步微信小程序发货信息管理',
   `receipt_status` tinyint(3) unsigned NOT NULL DEFAULT '10' COMMENT '收货状态(10未收货 20已收货)',
   `receipt_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '收货时间',
   `order_status` tinyint(3) unsigned NOT NULL DEFAULT '10' COMMENT '订单状态(10进行中 20取消 21待取消 30已完成)',
@@ -615,7 +616,7 @@ CREATE TABLE `yoshop_payment_template` (
   `method` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '' COMMENT '支付方式(微信、支付宝、余额)',
   `config` text COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '支付配置(json格式)',
   `remarks` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '' COMMENT '管理员备注',
-  `wechatpay_serial` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '' COMMENT '微信支付V3平台证书序号',
+  `wechatpay_serial` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '' COMMENT '微信支付V3平台证书序号或微信支付公钥ID',
   `sort` int(11) unsigned NOT NULL DEFAULT '100' COMMENT '排序(数字越小越靠前)',
   `is_delete` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '是否删除',
   `store_id` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '商城ID',
@@ -4846,6 +4847,7 @@ INSERT INTO `yoshop_store_api` VALUES ('11351', '新增文件分组', '/files.gr
 INSERT INTO `yoshop_store_api` VALUES ('11352', '文件分组管理', '-', '11008', '115', '1614556800', '1614556800');
 INSERT INTO `yoshop_store_api` VALUES ('11353', '删除文件', '/files/delete', '11008', '105', '1614556800', '1614556800');
 INSERT INTO `yoshop_store_api` VALUES ('11354', '移动文件', '/files/moveGroup', '11008', '110', '1614556800', '1614556800');
+INSERT INTO `yoshop_store_api` VALUES ('11367', '查询物流跟踪信息', '/order.delivery/traces', '11318', '125', '1614556800', '1614556800');
 
 DROP TABLE IF EXISTS `yoshop_store_menu`;
 CREATE TABLE `yoshop_store_menu` (
@@ -6010,6 +6012,7 @@ CREATE TABLE `yoshop_user_coupon` (
   `end_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '有效期结束时间',
   `apply_range` tinyint(3) unsigned NOT NULL DEFAULT '10' COMMENT '适用范围(10全部商品 20指定商品)',
   `apply_range_config` text COLLATE utf8mb4_unicode_ci COMMENT '适用范围配置(json格式)',
+  `describe` varchar(500) NOT NULL DEFAULT '' COMMENT '优惠券描述',
   `is_expire` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '是否过期(0未过期 1已过期)',
   `is_use` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '是否已使用(0未使用 1已使用)',
   `user_id` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '用户ID',
