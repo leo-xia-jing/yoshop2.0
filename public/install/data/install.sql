@@ -91,7 +91,7 @@ CREATE TABLE `yoshop_comment` (
   `goods_id` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '商品ID',
   `order_goods_id` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '订单商品ID',
   `store_id` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '商城ID',
-  `is_delete` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '软删除',
+  `is_delete` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '是否删除',
   `create_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间',
   `update_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '更新时间',
   PRIMARY KEY (`comment_id`),
@@ -105,7 +105,7 @@ DROP TABLE IF EXISTS `yoshop_comment_image`;
 CREATE TABLE `yoshop_comment_image` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键ID',
   `comment_id` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '评价ID',
-  `image_id` int(11) NOT NULL DEFAULT '0' COMMENT '图片id(关联文件记录表)',
+  `image_id` int(11) NOT NULL DEFAULT '0' COMMENT '图片ID(关联文件记录表)',
   `store_id` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '商城ID',
   `create_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间',
   PRIMARY KEY (`id`),
@@ -132,7 +132,7 @@ CREATE TABLE `yoshop_coupon` (
   `describe` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '' COMMENT '优惠券描述',
   `status` tinyint(3) unsigned NOT NULL DEFAULT '1' COMMENT '状态(1显示 0隐藏)',
   `sort` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '排序方式(数字越小越靠前)',
-  `is_delete` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '软删除',
+  `is_delete` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '是否删除',
   `store_id` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '商城ID',
   `create_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间',
   `update_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '更新时间',
@@ -160,7 +160,7 @@ DROP TABLE IF EXISTS `yoshop_delivery_rule`;
 CREATE TABLE `yoshop_delivery_rule` (
   `rule_id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '规则ID',
   `delivery_id` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '配送模板ID',
-  `region` text COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '可配送区域(城市id集)',
+  `region` text COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '可配送区域(城市ID集)',
   `region_text` text COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '可配送区域(文字展示)',
   `first` double unsigned NOT NULL DEFAULT '0' COMMENT '首件(个)/首重(Kg)',
   `first_fee` decimal(10,2) unsigned NOT NULL DEFAULT '0.00' COMMENT '运费(元)',
@@ -182,6 +182,7 @@ CREATE TABLE `yoshop_express` (
   `kuaidi100_code` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '' COMMENT '物流公司编码 (快递100)',
   `kdniao_code` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '' COMMENT '物流公司编码 (快递鸟)',
   `sort` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '排序(数字越小越靠前)',
+  `is_delete` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '是否删除',
   `store_id` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '商城ID',
   `create_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间',
   `update_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '更新时间',
@@ -191,15 +192,15 @@ CREATE TABLE `yoshop_express` (
   KEY `express_name` (`express_name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10001 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='物流公司记录表';
 
-INSERT INTO `yoshop_express` VALUES ('10001', '顺丰速运', 'shunfeng', 'SF', '100', '10001', '1614556800', '1614556800');
-INSERT INTO `yoshop_express` VALUES ('10002', '邮政国内', 'yzguonei', 'YZPY', '100', '10001', '1614556800', '1614556800');
-INSERT INTO `yoshop_express` VALUES ('10003', '圆通速递', 'yuantong', 'YTO', '100', '10001', '1614556800', '1614556800');
-INSERT INTO `yoshop_express` VALUES ('10004', '申通快递', 'shentong', 'STO', '100', '10001', '1614556800', '1614556800');
-INSERT INTO `yoshop_express` VALUES ('10005', '韵达快递', 'yunda', 'YD', '100', '10001', '1614556800', '1614556800');
-INSERT INTO `yoshop_express` VALUES ('10006', '百世快递', 'huitongkuaidi', 'HTKY', '100', '10001', '1614556800', '1614556800');
-INSERT INTO `yoshop_express` VALUES ('10007', '中通快递', 'zhongtong', 'ZTO', '100', '10001', '1614556800', '1614556800');
-INSERT INTO `yoshop_express` VALUES ('10009', '宅急送', 'zhaijisong', 'ZJS', '100', '10001', '1614556800', '1614556800');
-INSERT INTO `yoshop_express` VALUES ('10010', '极兔速递', 'jtexpress', 'JTSD', '100', '10001', '1614556800', '1614556800');
+INSERT INTO `yoshop_express` VALUES ('10001', '顺丰速运', 'shunfeng', 'SF', '100', '0', '10001', '1614556800', '1614556800');
+INSERT INTO `yoshop_express` VALUES ('10002', '邮政国内', 'yzguonei', 'YZPY', '100', '0', '10001', '1614556800', '1614556800');
+INSERT INTO `yoshop_express` VALUES ('10003', '圆通速递', 'yuantong', 'YTO', '100', '0', '10001', '1614556800', '1614556800');
+INSERT INTO `yoshop_express` VALUES ('10004', '申通快递', 'shentong', 'STO', '100', '0', '10001', '1614556800', '1614556800');
+INSERT INTO `yoshop_express` VALUES ('10005', '韵达快递', 'yunda', 'YD', '100', '0', '10001', '1614556800', '1614556800');
+INSERT INTO `yoshop_express` VALUES ('10006', '百世快递', 'huitongkuaidi', 'HTKY', '0', '100', '10001', '1614556800', '1614556800');
+INSERT INTO `yoshop_express` VALUES ('10007', '中通快递', 'zhongtong', 'ZTO', '100', '0', '10001', '1614556800', '1614556800');
+INSERT INTO `yoshop_express` VALUES ('10009', '宅急送', 'zhaijisong', 'ZJS', '100', '0', '10001', '1614556800', '1614556800');
+INSERT INTO `yoshop_express` VALUES ('10010', '极兔速递', 'jtexpress', 'JTSD', '100', '0', '10001', '1614556800', '1614556800');
 
 DROP TABLE IF EXISTS `yoshop_goods`;
 CREATE TABLE `yoshop_goods` (
@@ -261,7 +262,7 @@ DROP TABLE IF EXISTS `yoshop_goods_image`;
 CREATE TABLE `yoshop_goods_image` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键ID',
   `goods_id` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '商品ID',
-  `image_id` int(11) NOT NULL COMMENT '图片id(关联文件记录表)',
+  `image_id` int(11) NOT NULL COMMENT '图片ID(关联文件记录表)',
   `store_id` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '商城ID',
   `create_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间',
   PRIMARY KEY (`id`),
@@ -564,7 +565,7 @@ DROP TABLE IF EXISTS `yoshop_order_refund_image`;
 CREATE TABLE `yoshop_order_refund_image` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键ID',
   `order_refund_id` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '售后单ID',
-  `image_id` int(11) NOT NULL DEFAULT '0' COMMENT '图片id(关联文件记录表)',
+  `image_id` int(11) NOT NULL DEFAULT '0' COMMENT '图片ID(关联文件记录表)',
   `store_id` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '商城ID',
   `create_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间',
   PRIMARY KEY (`id`),
@@ -579,7 +580,7 @@ CREATE TABLE `yoshop_page` (
   `page_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '' COMMENT '页面名称',
   `page_data` longtext COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '页面数据',
   `store_id` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '商城ID',
-  `is_delete` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '软删除',
+  `is_delete` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '是否删除',
   `create_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间',
   `update_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '更新时间',
   PRIMARY KEY (`page_id`),
@@ -6028,7 +6029,7 @@ CREATE TABLE `yoshop_user_grade` (
   `weight` int(11) unsigned NOT NULL DEFAULT '1' COMMENT '等级权重(1-9999)',
   `upgrade` text COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '升级条件',
   `equity` text COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '等级权益(折扣率0-100)',
-  `status` tinyint(3) unsigned NOT NULL DEFAULT '1' COMMENT '状态(1启用 0禁用)',
+  `status` tinyint(3) unsigned NOT NULL DEFAULT '1' COMMENT '状态(1开启 0关闭)',
   `is_delete` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '是否删除',
   `store_id` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '商城ID',
   `create_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间',
