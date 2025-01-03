@@ -71,14 +71,6 @@ class Checkout extends BaseService
         'isUsePoints' => true,          // 积分抵扣
     ];
 
-    // 记录叠加的优惠 (动态计算)
-    private array $stackingData = [
-        // 已启用的叠加优惠
-        'enabled' => [],
-        // 禁用的叠加优惠
-        'disabled' => []
-    ];
-
     /**
      * 订单来源
      * @var array
@@ -597,10 +589,6 @@ class Checkout extends BaseService
         helper::setDataAttribute($this->goodsList, [
             'coupon_money' => 0,    // 优惠券抵扣金额
         ], true);
-        // 验证订单叠加优惠中是否支持满额立减
-        if ($this->checkDisabledStacking(DiscountTypeEnum::COUPON)) {
-            return;
-        }
         // 验证选择的优惠券ID是否合法
         if (!$this->verifyOrderCouponId($userCouponId, $couponList)) {
             return;
@@ -625,8 +613,6 @@ class Checkout extends BaseService
         // 记录订单优惠券信息
         $this->orderData['couponId'] = $userCouponId;
         $this->orderData['couponMoney'] = helper::number2(helper::bcdiv($CouponMoney->getActualReducedMoney(), 100));
-        // 记录启用的叠加优惠
-        $this->updateEnabledStacking(DiscountTypeEnum::COUPON);
     }
 
     /**
@@ -692,11 +678,9 @@ class Checkout extends BaseService
             $notInRuleGoodsName = $ExpressService->getNotInRuleGoodsName();
             $this->setError("很抱歉，您的收货地址不在商品 [{$notInRuleGoodsName}] 的配送范围内");
         }
-        // 是否参与满额包邮
-        $allowFullFree = !$this->checkDisabledStacking(DiscountTypeEnum::FULL_FREE);
         // 订单总运费金额
         $this->orderData['isIntraRegion'] = $isIntraRegion;
-        $this->orderData['expressPrice'] = $ExpressService->getDeliveryFee($allowFullFree);
+        $this->orderData['expressPrice'] = $ExpressService->getDeliveryFee(true);
     }
 
     /**
@@ -924,41 +908,5 @@ class Checkout extends BaseService
             'region_id' => $address['region_id'],
             'detail' => $address['detail'],
         ]);
-    }
-
-    /**
-     * 记录启用的叠加优惠数据
-     * @param string $value
-     * @return void
-     */
-    private function updateEnabledStacking(string $value)
-    {
-        if (!in_array($value, $this->stackingData['enabled'])) {
-            $this->stackingData['enabled'][] = $value;
-        }
-    }
-
-    /**
-     * 记录禁用的叠加优惠数据
-     * @param array $disabled
-     * @return void
-     */
-    private function updateDisabledStacking(array $disabled)
-    {
-        foreach ($disabled as $value) {
-            if (!in_array($value, $this->stackingData['disabled'])) {
-                $this->stackingData['disabled'][] = $value;
-            }
-        }
-    }
-
-    /**
-     * 验证叠加优惠是否禁用
-     * @param string $discountType
-     * @return bool
-     */
-    private function checkDisabledStacking(string $discountType): bool
-    {
-        return \in_array($discountType, $this->stackingData['disabled']);
     }
 }

@@ -103,16 +103,6 @@ class Coupon extends BaseModel
     }
 
     /**
-     * 获取器：可叠加的优惠方式
-     * @param $value
-     * @return array
-     */
-    public function getStackingAttr($value): array
-    {
-        return !empty($value) ? helper::jsonDecode($value) : [];
-    }
-
-    /**
      * 修改器：格式化折扣率
      * @param $value
      * @return float|int
@@ -130,16 +120,6 @@ class Coupon extends BaseModel
     public function setApplyRangeConfigAttr($array)
     {
         return helper::jsonEncode($array);
-    }
-
-    /**
-     * 修改器：可叠加的优惠方式
-     * @param $value
-     * @return string
-     */
-    public function setStackingAttr($value): string
-    {
-        return helper::jsonEncode($value);
     }
 
     /**

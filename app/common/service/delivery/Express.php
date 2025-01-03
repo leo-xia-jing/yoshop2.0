@@ -95,19 +95,18 @@ class Express extends BaseService
     /**
      * 获取订单的配送费用
      * @param bool $allowFullFree 是否参与满额包邮
-     * @param array $enabledStacking 启用的叠加优惠
      * @return string
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\DbException
      * @throws \think\db\exception\ModelNotFoundException
      */
-    public function getDeliveryFee(bool $allowFullFree, array $enabledStacking): string
+    public function getDeliveryFee(bool $allowFullFree): string
     {
         if (empty($this->cityId) || empty($this->goodsList) || $this->notInRuleGoodsId > 0) {
             return helper::number2(0.00);
         }
         // 处理满额包邮
-        $this->freeShipping($allowFullFree, $enabledStacking);
+        $this->freeShipping($allowFullFree);
         // 计算配送金额
         foreach ($this->data as &$item) {
             // 计算当前配送模板的运费
@@ -160,13 +159,12 @@ class Express extends BaseService
     /**
      * 商品满额包邮
      * @param bool $allowFullFree 是否参与满额包邮
-     * @param array $enabledStacking 启用的叠加优惠
      * @return void
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\DbException
      * @throws \think\db\exception\ModelNotFoundException
      */
-    private function freeShipping(bool $allowFullFree, array $enabledStacking): void
+    private function freeShipping(bool $allowFullFree): void
     {
         // 设置默认数据：包邮的商品列表
         helper::setDataAttribute($this->data, ['free_goods_list' => []], true);
