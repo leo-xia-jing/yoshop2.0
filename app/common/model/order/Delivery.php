@@ -63,11 +63,12 @@ class Delivery extends BaseModel
 
     /**
      * 发货单记录详情
-     * @param int $id
+     * @param int $deliveryId 发货单ID
+     * @param array $with 关联查询
      * @return static|array|null
      */
-    public static function detail(int $id)
+    public static function detail(int $deliveryId, array $with = [])
     {
-        return self::get($id);
+        return self::get($deliveryId, $with);
     }
 }

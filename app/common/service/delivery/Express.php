@@ -26,7 +26,7 @@ use app\common\service\BaseService;
  */
 class Express extends BaseService
 {
-    // 用户收货城市id
+    // 用户收货城市ID
     private int $cityId;
 
     // 订单商品列表
@@ -37,6 +37,9 @@ class Express extends BaseService
 
     // 运费模板数据集
     private array $data = [];
+
+    // 是否启用了满额包邮
+    private bool $enabledFullFree = false;
 
     /**
      * 构造方法
@@ -69,7 +72,7 @@ class Express extends BaseService
         foreach ($this->data as $item) {
             $cityIds = [];
             foreach ($item['delivery']['rule'] as $ruleItem) {
-                $cityIds = array_merge($cityIds, $ruleItem['region']);
+                $cityIds = \array_merge($cityIds, $ruleItem['region']);
             }
             if (!in_array($this->cityId, $cityIds)) {
                 $this->notInRuleGoodsId = current($item['goodsList'])['goods_id'];
@@ -91,18 +94,20 @@ class Express extends BaseService
 
     /**
      * 获取订单的配送费用
+     * @param bool $allowFullFree 是否参与满额包邮
+     * @param array $enabledStacking 启用的叠加优惠
      * @return string
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\DbException
      * @throws \think\db\exception\ModelNotFoundException
      */
-    public function getDeliveryFee(): string
+    public function getDeliveryFee(bool $allowFullFree, array $enabledStacking): string
     {
         if (empty($this->cityId) || empty($this->goodsList) || $this->notInRuleGoodsId > 0) {
             return helper::number2(0.00);
         }
-        // 处理商品包邮
-        $this->freeshipping();
+        // 处理满额包邮
+        $this->freeShipping($allowFullFree, $enabledStacking);
         // 计算配送金额
         foreach ($this->data as &$item) {
             // 计算当前配送模板的运费
@@ -110,6 +115,15 @@ class Express extends BaseService
         }
         // 根据运费组合策略获取最终运费金额
         return helper::number2($this->getFinalFreight());
+    }
+
+    /**
+     * 获取是否启用了满额包邮
+     * @return bool
+     */
+    public function getEnabledFullFree(): bool
+    {
+        return $this->enabledFullFree;
     }
 
     /**
@@ -131,13 +145,13 @@ class Express extends BaseService
         // 判断运费组合策略
         switch (SettingModel::getItem('trade')['freight_rule']) {
             case '10':    // 策略1: 叠加
-                $expressPrice = array_sum($expressPriceArr);
+                $expressPrice = \array_sum($expressPriceArr);
                 break;
             case '20':    // 策略2: 以最低运费结算
-                $expressPrice = min($expressPriceArr);
+                $expressPrice = \min($expressPriceArr);
                 break;
             case '30':    // 策略3: 以最高运费结算
-                $expressPrice = max($expressPriceArr);
+                $expressPrice = \max($expressPriceArr);
                 break;
         }
         return $expressPrice;
@@ -145,30 +159,41 @@ class Express extends BaseService
 
     /**
      * 商品满额包邮
+     * @param bool $allowFullFree 是否参与满额包邮
+     * @param array $enabledStacking 启用的叠加优惠
      * @return void
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\DbException
      * @throws \think\db\exception\ModelNotFoundException
      */
-    private function freeshipping(): void
+    private function freeShipping(bool $allowFullFree, array $enabledStacking): void
     {
+        // 设置默认数据：包邮的商品列表
+        helper::setDataAttribute($this->data, ['free_goods_list' => []], true);
         // 订单商品总金额
         $orderTotalPrice = helper::getArrayColumnSum($this->goodsList, 'total_price');
         // 获取满额包邮设置
         $options = SettingModel::getItem(SettingEnum::FULL_FREE);
+        // 判断是否满足条件
+        if (
+            !$allowFullFree
+            || !$options['is_open']
+            || $orderTotalPrice < $options['money']
+            || \in_array($this->cityId, $options['excludedRegions']['cityIds'])
+        ) {
+            return;
+        }
+        // 记录包邮的商品
         foreach ($this->data as &$item) {
             $item['free_goods_list'] = [];
             foreach ($item['goodsList'] as $goodsItem) {
-                if (
-                    $options['is_open']
-                    && $orderTotalPrice >= $options['money']
-                    && !in_array($goodsItem['goods_id'], $options['excludedGoodsIds'])
-                    && !in_array($this->cityId, $options['excludedRegions']['cityIds'])
-                ) {
+                if (!\in_array($goodsItem['goods_id'], $options['excludedGoodsIds'])) {
                     $item['free_goods_list'][] = $goodsItem['goods_id'];
                 }
             }
         }
+        // 记录已启用满额包邮
+        $this->enabledFullFree = true;
     }
 
     /**
@@ -188,16 +213,15 @@ class Express extends BaseService
             return $deliveryRule['first_fee'];
         }
         // 续件or续重 数量
-        $additional = $totality - $deliveryRule['first'];
+        $additional = helper::bcsub($totality, $deliveryRule['first']);
         if ($additional <= $deliveryRule['additional']) {
             return helper::bcadd($deliveryRule['first_fee'], $deliveryRule['additional_fee']);
         }
+        // 续重总费用
+        $additionalFee = 0.00;
         // 计算续重/件金额
-        if ($deliveryRule['additional'] < 1) {
-            // 配送规则中续件为0
-            $additionalFee = 0.00;
-        } else {
-            $additionalFee = helper::bcdiv($deliveryRule['additional_fee'], $deliveryRule['additional']) * $additional;
+        if ($deliveryRule['additional'] > 0) {
+            $additionalFee = \ceil($additional / $deliveryRule['additional']) * $deliveryRule['additional_fee'];
         }
         return helper::bcadd($deliveryRule['first_fee'], $additionalFee);
     }
@@ -213,7 +237,7 @@ class Express extends BaseService
         $totalNum = 0;      // 总数量
         foreach ($item['goodsList'] as $goodsItem) {
             // 如果商品为包邮，则不计算总量中
-            if (!in_array($goodsItem['goods_id'], $item['free_goods_list'])) {
+            if (!\in_array($goodsItem['goods_id'], $item['free_goods_list'])) {
                 $goodsWeight = helper::bcmul($goodsItem['skuInfo']['goods_weight'], $goodsItem['total_num']);
                 $totalWeight = helper::bcadd($totalWeight, $goodsWeight);
                 $totalNum = helper::bcadd($totalNum, $goodsItem['total_num']);
@@ -230,7 +254,7 @@ class Express extends BaseService
     private function getCityDeliveryRule($delivery)
     {
         foreach ($delivery['rule'] as $item) {
-            if (in_array($this->cityId, $item['region'])) {
+            if (\in_array($this->cityId, $item['region'])) {
                 return $item;
             }
         }
@@ -267,7 +291,7 @@ class Express extends BaseService
     private function getDeliveryIds(): array
     {
         $deliveryIds = helper::getArrayColumn($this->goodsList, 'delivery_id');
-        return array_values(array_unique(array_filter($deliveryIds)));
+        return \array_values(array_unique(array_filter($deliveryIds)));
     }
 
     /**

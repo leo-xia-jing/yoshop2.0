@@ -60,4 +60,20 @@ class Delivery extends Controller
         }
         return $this->renderError($service->getError() ?: '发货失败');
     }
+
+    /**
+     * 查询指定发货单的物流跟踪信息
+     * @param int $deliveryId 发货单ID
+     * @return Json
+     * @throws \cores\exception\BaseException
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\DbException
+     * @throws \think\db\exception\ModelNotFoundException
+     */
+    public function traces(int $deliveryId): Json
+    {
+        $model = new DeliveryModel;
+        $traces = $model->getExpressTraces($deliveryId);
+        return $this->renderSuccess(compact('traces'));
+    }
 }
