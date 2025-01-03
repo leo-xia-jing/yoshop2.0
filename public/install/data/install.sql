@@ -278,7 +278,7 @@ CREATE TABLE `yoshop_goods_service` (
   `is_default` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '是否默认(新增商品时)',
   `status` tinyint(3) unsigned NOT NULL DEFAULT '1' COMMENT '状态(1显示 0隐藏)',
   `sort` int(11) unsigned NOT NULL DEFAULT '100' COMMENT '排序方式(数字越小越靠前)',
-  `is_delete` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '是否删除(1已删除)',
+  `is_delete` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '是否删除',
   `store_id` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '商城ID',
   `create_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间',
   `update_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '更新时间',
@@ -287,7 +287,7 @@ CREATE TABLE `yoshop_goods_service` (
 ) ENGINE=InnoDB AUTO_INCREMENT=10001 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='商品服务与承诺记录表';
 
 INSERT INTO `yoshop_goods_service` VALUES ('10001', '七天无理由退货', '满足相应条件时，消费者可申请7天无理由退货', '1', '1', '100', '0', '10001', '1614556800', '1614556800');
-INSERT INTO `yoshop_goods_service` VALUES ('10002', '全场包邮', '所有商品包邮(偏远地区除外)', '0', '1', '100', '0', '10001', '1614556800', '1614556800');
+INSERT INTO `yoshop_goods_service` VALUES ('10002', '全场包邮', '所有商品包邮（偏远地区除外）', '0', '1', '100', '0', '10001', '1614556800', '1614556800');
 INSERT INTO `yoshop_goods_service` VALUES ('10003', '48小时发货', '下单后48小时之内发货', '1', '1', '100', '0', '10001', '1614556800', '1614556800');
 
 DROP TABLE IF EXISTS `yoshop_goods_service_rel`;
@@ -352,7 +352,7 @@ CREATE TABLE `yoshop_help` (
   `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '' COMMENT '帮助标题',
   `content` text COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '帮助内容',
   `sort` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '排序(数字越小越靠前)',
-  `is_delete` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '是否删除(1已删除)',
+  `is_delete` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '是否删除',
   `store_id` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '商城ID',
   `create_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间',
   `update_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '更新时间',
@@ -404,14 +404,14 @@ CREATE TABLE `yoshop_order` (
   `update_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '更新时间',
   PRIMARY KEY (`order_id`),
   UNIQUE KEY `order_no` (`order_no`),
-  KEY `store_id` (`store_id`),
-  KEY `user_id` (`user_id`),
   KEY `pay_status` (`pay_status`),
   KEY `delivery_status` (`delivery_status`),
   KEY `receipt_status` (`receipt_status`),
   KEY `order_status` (`order_status`),
   KEY `is_settled` (`is_settled`),
-  KEY `order_source` (`order_source`)
+  KEY `order_source` (`order_source`),
+  KEY `user_id` (`user_id`),
+  KEY `store_id` (`store_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10001 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='订单记录表';
 
 DROP TABLE IF EXISTS `yoshop_order_address`;
@@ -496,9 +496,9 @@ CREATE TABLE `yoshop_order_goods` (
   `is_user_grade` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '是否存在会员等级折扣',
   `grade_ratio` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '会员折扣比例(0-10)',
   `grade_goods_price` decimal(10,2) unsigned NOT NULL DEFAULT '0.00' COMMENT '会员折扣的商品单价',
-  `grade_total_money` decimal(10,2) unsigned NOT NULL DEFAULT '0.00' COMMENT '会员折扣的总额差',
+  `grade_total_money` decimal(10,2) unsigned NOT NULL DEFAULT '0.00' COMMENT '会员抵扣的总额差',
   `coupon_money` decimal(10,2) unsigned NOT NULL DEFAULT '0.00' COMMENT '优惠券折扣金额',
-  `points_money` decimal(10,2) unsigned NOT NULL DEFAULT '0.00' COMMENT '积分金额',
+  `points_money` decimal(10,2) unsigned NOT NULL DEFAULT '0.00' COMMENT '积分抵扣金额',
   `points_num` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '积分抵扣数量',
   `points_bonus` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '赠送的积分数量',
   `total_num` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '购买数量',
@@ -732,7 +732,7 @@ CREATE TABLE `yoshop_region` (
   `code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '' COMMENT '区划编码',
   `level` tinyint(3) unsigned NOT NULL DEFAULT '1' COMMENT '层级(1省级 2市级 3区/县级)',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10001 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='省市区数据表';
+) ENGINE=InnoDB AUTO_INCREMENT=3930 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='省市区数据表';
 
 INSERT INTO `yoshop_region` VALUES ('1', '北京市', '0', '110000', '1');
 INSERT INTO `yoshop_region` VALUES ('2', '北京市', '1', '110100', '2');
@@ -6561,7 +6561,7 @@ CREATE TABLE `yoshop_user_points_log` (
   PRIMARY KEY (`log_id`),
   KEY `user_id` (`user_id`),
   KEY `store_id` (`store_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='用户积分变动明细表';
+) ENGINE=InnoDB AUTO_INCREMENT=10001 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='用户积分变动明细表';
 
 DROP TABLE IF EXISTS `yoshop_wxapp_setting`;
 CREATE TABLE `yoshop_wxapp_setting` (
