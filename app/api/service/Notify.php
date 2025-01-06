@@ -60,9 +60,6 @@ class Notify
     /**
      * 支付成功异步通知 (微信支付V3)
      * @return string
-     * @throws BaseException
-     * @throws \think\db\exception\DataNotFoundException
-     * @throws \think\db\exception\ModelNotFoundException
      */
     public function wechatV3(): string
     {
@@ -77,15 +74,12 @@ class Notify
                 ? $templateInfo['config']['wechat']['provider']['spApiKey']
                 : $templateInfo['config']['wechat']['normal']['apiKey'];
 
-            // 从支付模板中取出微信支付平台证书文件 用于验证API签名
-            $fileName = $templateInfo['config']['wechat'][$templateInfo['config']['wechat']['mchType']]['platformCert'];
-            $platformCertificateFilePath = PaymentTemplateModel::realPathCertFile(
-                PaymentMethodEnum::WECHAT, $fileName, $templateInfo['store_id']
-            );
+            // 获取「微信支付平台证书」或者「微信支付平台公钥」的路径
+            $platformCertificateOrPublicKeyFilePath = $this->getPlatformCertificateOrPublicKeyFilePath($templateInfo);
 
             // 验证异步通知是否合法并获取第三方支付交易订单号
             $V3 = new WechatPaymentV3();
-            $outTradeNo = $V3->notify($apiv3Key, $platformCertificateFilePath);
+            $outTradeNo = $V3->notify($apiv3Key, $platformCertificateOrPublicKeyFilePath);
             empty($outTradeNo) && throwError('异步通知验证未通过');
 
             // 获取第三方交易记录
@@ -97,6 +91,25 @@ class Notify
             Log::append('Notify-wechat', ['errMessage' => $e->getMessage()]);
         }
         return '';
+    }
+
+    /**
+     * 获取「微信支付平台证书」或者「微信支付平台公钥」的路径
+     * @param $templateInfo
+     * @return false|string
+     */
+    private function getPlatformCertificateOrPublicKeyFilePath($templateInfo)
+    {
+        // $fileName = $templateInfo['config']['wechat'][$templateInfo['config']['wechat']['mchType']]['platformCert'];
+        $mchType = $templateInfo['config']['wechat']['mchType'];
+        $field1 = $mchType == 'normal' ? 'signatureMethod' : 'spSignatureMethod';
+        $field2 = $mchType == 'normal' ? 'publicKey' : 'spPublicKey';
+        $fileName = $templateInfo['config']['wechat'][$mchType][$field1] == 'publicKey'
+            ? $templateInfo['config']['wechat'][$mchType][$field2]
+            : $templateInfo['config']['wechat'][$mchType]['platformCert'];
+        return PaymentTemplateModel::realPathCertFile(
+            PaymentMethodEnum::WECHAT, $fileName, $templateInfo['store_id']
+        );
     }
 
     /**

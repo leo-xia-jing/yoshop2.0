@@ -421,7 +421,7 @@ class V3
         // 从本地文件中加载「商户API私钥」，「商户API私钥」会用来生成请求的签名
         $merchantPrivateKeyInstance = $this->getMerchantPrivateKeyInstance();
         // 从本地文件中加载「微信支付平台证书」或者「微信支付平台公钥」，用来验证微信支付应答的签名
-        $platformCertificateOrPublicKeyFilePath = $this->platformCertificateOrPublicKeyFilePath();
+        $platformCertificateOrPublicKeyFilePath = $this->getPlatformCertificateOrPublicKeyFilePath();
         try {
             $platformPublicKeyInstance = Rsa::from("file://{$platformCertificateOrPublicKeyFilePath}", Rsa::KEY_TYPE_PUBLIC);
         } catch (\UnexpectedValueException $e) {
@@ -447,7 +447,7 @@ class V3
      * 获取「微信支付平台证书」或者「微信支付平台公钥」的路径
      * @return string
      */
-    private function platformCertificateOrPublicKeyFilePath(): string
+    private function getPlatformCertificateOrPublicKeyFilePath(): string
     {
         return $this->config['signature_method'] == 'publicKey' ? $this->config['public_key_path']
             : $this->config['platform_cert_path'];
