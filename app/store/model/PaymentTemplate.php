@@ -53,10 +53,8 @@ class PaymentTemplate extends PaymentTemplateModel
         $data['store_id'] = self::$storeId;
         // 写入证书文件
         $data['config'] = [$data['method'] => $this->certFileName($data['method'], $methodConfig)];
-        // 记录微信支付v3平台证书序号
-        if ($data['method'] === 'wechat' && $data['config']['wechat']['version'] === 'v3') {
-            $data['wechatpay_serial'] = $data['config']['wechat'][$data['config']['wechat']['mchType']]['platformCertSerial'];
-        }
+        // 记录微信支付v3平台证书序号或微信支付公钥ID
+        $data['wechatpay_serial'] = $this->wechatpaySerial($data);
         // 写入到数据库
         return $this->save($data);
     }
@@ -77,12 +75,28 @@ class PaymentTemplate extends PaymentTemplateModel
         $data['config'] = [
             $data['method'] => array_merge($methodConfig, $this->certFileName($data['method'], $methodConfig))
         ];
-        // 记录微信支付v3平台证书序号
-        if ($data['method'] === 'wechat' && $data['config']['wechat']['version'] === 'v3') {
-            $data['wechatpay_serial'] = $data['config']['wechat'][$data['config']['wechat']['mchType']]['platformCertSerial'];
-        }
+        // 记录微信支付v3平台证书序号或微信支付公钥ID
+        $data['wechatpay_serial'] = $this->wechatpaySerial($data);
         // 更新到数据库
         return $this->save($data) !== false;
+    }
+
+    /**
+     * 记录微信支付v3平台证书序号或微信支付公钥ID
+     * @param array $data
+     * @return string
+     */
+    private function wechatpaySerial(array $data): string
+    {
+        if ($data['method'] === 'wechat' && $data['config']['wechat']['version'] === 'v3') {
+            $mchType = $data['config']['wechat']['mchType'];
+            $field1 = $mchType == 'normal' ? 'signatureMethod' : 'spSignatureMethod';
+            $field2 = $mchType == 'normal' ? 'publicKeyId' : 'spPublicKeyId';
+            return $data['config']['wechat'][$mchType][$field1] == 'publicKey'
+                ? $data['config']['wechat'][$mchType][$field2]
+                : $data['config']['wechat'][$mchType]['platformCertSerial'];
+        }
+        return '';
     }
 
     /**
@@ -96,15 +110,21 @@ class PaymentTemplate extends PaymentTemplateModel
     {
         if ($method === PaymentMethodEnum::WECHAT) {
             $config['normal'] = $this->saveCertFileNames($config['normal'], $method, [
+                'publicKey',
                 'apiclientCert',
                 'apiclientKey'
             ], 'pem');
             $config['provider'] = $this->saveCertFileNames($config['provider'], $method, [
+                'spPublicKey',
                 'spApiclientCert',
                 'spApiclientKey'
             ], 'pem');
-            // 微信支付v3下载 [微信平台证书]
-            $config['version'] === 'v3' && $this->downloadPlatformCert($config);
+            // 微信支付v3验签方式是平台证书时, 需自动下载平台证书
+            if ($config['version'] === 'v3') {
+                $mchType = $config['mchType'];
+                $field1 = $mchType == 'normal' ? 'signatureMethod' : 'spSignatureMethod';
+                $config[$mchType][$field1] == 'platformCert' && $this->downloadPlatformCert($config);
+            }
         }
         if ($method === PaymentMethodEnum::ALIPAY && $config['signMode'] == 10) {
             $config = $this->saveCertFileNames($config, $method, [

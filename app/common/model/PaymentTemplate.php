@@ -67,6 +67,9 @@ class PaymentTemplate extends BaseModel
                     'appId' => '',
                     'mchId' => '',
                     'apiKey' => '',
+                    'signatureMethod' => 'platformCert',   // 验签方式（platformCert平台证书 publicKey微信支付公钥）
+                    'publicKeyId' => '',
+                    'publicKey' => '',
                     'apiclientCert' => '',
                     'apiclientKey' => '',
                 ],
@@ -76,6 +79,9 @@ class PaymentTemplate extends BaseModel
                     'spApiKey' => '',
                     'subAppId' => '',
                     'subMchId' => '',
+                    'spSignatureMethod' => 'platformCert', // 验签方式（platformCert平台证书 publicKey微信支付公钥）
+                    'spPublicKeyId' => '',
+                    'spPublicKey' => '',
                     'spApiclientCert' => '',
                     'spApiclientKey' => ''
                 ]
@@ -152,11 +158,13 @@ class PaymentTemplate extends BaseModel
     {
         if ($method === PaymentMethodEnum::WECHAT) {
             $config['normal'] = $this->setCertFileNames($config['normal'], $method, [
+                'publicKey',
                 'apiclientCert',
                 'apiclientKey',
                 'platformCert'
             ], $storeId);
             $config['provider'] = $this->setCertFileNames($config['provider'], $method, [
+                'spPublicKey',
                 'spApiclientCert',
                 'spApiclientKey',
                 'platformCert'

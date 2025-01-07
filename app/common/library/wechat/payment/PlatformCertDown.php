@@ -101,7 +101,6 @@ class PlatformCertDown
             'base_uri' => (string)($opts['baseuri'] ?? self::DEFAULT_BASE_URI),
         ]);
 
-
         /** @var \GuzzleHttp\HandlerStack $stack */
         $stack = $instance->getDriver()->select(ClientDecoratorInterface::JSON_BASED)->getConfig('handler');
         // The response middle stacks were executed one by one on `FILO` order.
@@ -111,17 +110,15 @@ class PlatformCertDown
             'recorder'
         );
 
-
         $instance->chain('v3/certificates')->getAsync(
 //            ['debug' => true]
         )->otherwise(static function ($exception) {
             if ($exception instanceof RequestException && $exception->hasResponse()) {
                 /** @var ResponseInterface $response */
                 $response = $exception->getResponse();
-                throwError((string)$response->getBody());
+                throwError('平台证书文件获取失败：' . (string)$response->getBody());
             }
             throwError($exception->getMessage());
-
         })->wait();
     }
 
