@@ -12,7 +12,9 @@ declare (strict_types=1);
 
 namespace app\store\model\order;
 
+use app\store\model\OrderAddress as OrderAddressModel;
 use app\common\model\order\Delivery as DeliveryModel;
+use app\common\service\Express as ExpressService;
 
 /**
  * 订单发货单模型
@@ -33,7 +35,7 @@ class Delivery extends DeliveryModel
         return $this
             ->with(['orderData' => ['user', 'address'], 'goods.goods.image', 'express'])
             ->alias('delivery')
-            ->field($this->getAliasFields('delivery',['eorder_html']))
+            ->field($this->getAliasFields('delivery', ['eorder_html']))
             ->join('order', 'order.order_id = delivery.order_id')
             ->where($filter)
             ->order(['delivery.create_time' => 'desc', 'delivery.' . $this->getPk() => 'asc'])
@@ -69,5 +71,27 @@ class Delivery extends DeliveryModel
             $filter[] = ['delivery.create_time', '<', $times['end_time'] + 86400];
         }
         return $filter;
+    }
+
+    /**
+     * 查询指定发货单的物流跟踪信息
+     * @param int $deliveryId
+     * @return array
+     * @throws \cores\exception\BaseException
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\DbException
+     * @throws \think\db\exception\ModelNotFoundException
+     */
+    public function getExpressTraces(int $deliveryId): array
+    {
+        // 发货单详情
+        $detail = self::detail($deliveryId, ['express']);
+        empty($detail) && throwError('未找到指定的发货单');
+        // 订单收货地址
+        $address = OrderAddressModel::detail(['order_id' => $detail['order_id']]);
+        // 整理物流跟踪信息
+        $Express = new ExpressService;
+        return empty($detail['express']) ? []
+            : $Express->traces($detail['express'], $detail['express_no'], $address, self::$storeId);
     }
 }
