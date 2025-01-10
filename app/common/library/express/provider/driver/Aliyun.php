@@ -40,8 +40,8 @@ class Aliyun extends Driver
         // 授权参数
         $appCode = $this->options['appCode'];
         $headers = ["Authorization: APPCODE " . $appCode];
-        // 查询顺丰时 物流单号需要加上手机尾号
-        if ($code === 'SF') {
+        // 查询顺丰和中通时 物流单号需要加上手机尾号
+        if ( in_array($code, ['SF', 'ZTO'])) {
             $lastPhoneNumber = \mb_substr($extra['phone'], -4);
             $expressNo = "{$expressNo}:$lastPhoneNumber";
         }
@@ -53,7 +53,7 @@ class Aliyun extends Driver
         // 记录日志
         log_record(['name' => '查询物流轨迹', 'provider' => 'aliyun', 'param' => $querys, 'result' => $data]);
         // 错误信息
-        if ($data['State'] == -1 || !$data['Success']) {
+        if ($data['State'] <= 0 || !$data['Success']) {
             throwError('阿里云物流查询API失败：' . $data['Reason']);
         }
         // 格式化返回的数据
